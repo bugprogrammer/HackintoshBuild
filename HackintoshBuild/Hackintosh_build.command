@@ -13,6 +13,12 @@ cd $dir/Sources
 
 export PATH=$PATH:/usr/local/bin
 
+proxy=$3
+if [ $proxy!='' ]; then
+export http_proxy=$proxy
+export https_proxy=$proxy
+fi
+
 buildArray=(
 'Clover,https://github.com/CloverHackyColor/CloverBootloader.git'
 'OpenCore,https://github.com/acidanthera/OpenCorePkg.git'

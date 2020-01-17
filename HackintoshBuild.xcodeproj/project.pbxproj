@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1193974723D1BF380096297C /* ViewControllerOther.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193974623D1BF380096297C /* ViewControllerOther.swift */; };
+		1193974923D1C1390096297C /* MyTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193974823D1C1390096297C /* MyTool.swift */; };
+		1193974C23D1C7BA0096297C /* MyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193974B23D1C7BA0096297C /* MyLog.swift */; };
+		11D5C27823D1B11300461A78 /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27723D1B11300461A78 /* BaseWindowController.swift */; };
+		11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27923D1B63700461A78 /* MyAsset.swift */; };
 		6A0D773D23C7A917003F5C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0D773C23C7A744003F5C3A /* Main.storyboard */; };
 		6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */; };
-		6ADAEFA623C23DA5008ECF4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA523C23DA5008ECF4B /* ViewController.swift */; };
+		6ADAEFA623C23DA5008ECF4B /* ViewControllerBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */; };
 		6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA723C23DA6008ECF4B /* Assets.xcassets */; };
 		6ADAEFBB23C257E5008ECF4B /* Hackintosh_build.command in Resources */ = {isa = PBXBuildFile; fileRef = 6ADAEFBA23C257E5008ECF4B /* Hackintosh_build.command */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1193974623D1BF380096297C /* ViewControllerOther.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerOther.swift; sourceTree = "<group>"; };
+		1193974823D1C1390096297C /* MyTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTool.swift; sourceTree = "<group>"; };
+		1193974B23D1C7BA0096297C /* MyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLog.swift; sourceTree = "<group>"; };
+		11D5C27723D1B11300461A78 /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
+		11D5C27923D1B63700461A78 /* MyAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsset.swift; sourceTree = "<group>"; };
 		6A0D773C23C7A744003F5C3A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6ADAEFA023C23DA5008ECF4B /* HackintoshBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackintoshBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6ADAEFA523C23DA5008ECF4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuild.swift; sourceTree = "<group>"; };
 		6ADAEFA723C23DA6008ECF4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ADAEFAC23C23DA6008ECF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ADAEFAD23C23DA6008ECF4B /* HackintoshBuild.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackintoshBuild.entitlements; sourceTree = "<group>"; };
@@ -36,6 +46,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1193974A23D1C7690096297C /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				1193974823D1C1390096297C /* MyTool.swift */,
+				11D5C27923D1B63700461A78 /* MyAsset.swift */,
+				1193974B23D1C7BA0096297C /* MyLog.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		11D5C27B23D1B63A00461A78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */,
+				6ADAEFA723C23DA6008ECF4B /* Assets.xcassets */,
+				6ADAEFAC23C23DA6008ECF4B /* Info.plist */,
+				6ADAEFAD23C23DA6008ECF4B /* HackintoshBuild.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6ADAEF9723C23DA5008ECF4B = {
 			isa = PBXGroup;
 			children = (
@@ -55,13 +86,13 @@
 		6ADAEFA223C23DA5008ECF4B /* HackintoshBuild */ = {
 			isa = PBXGroup;
 			children = (
-				6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */,
-				6ADAEFA523C23DA5008ECF4B /* ViewController.swift */,
+				1193974A23D1C7690096297C /* Global */,
+				11D5C27723D1B11300461A78 /* BaseWindowController.swift */,
+				6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */,
+				1193974623D1BF380096297C /* ViewControllerOther.swift */,
 				6A0D773C23C7A744003F5C3A /* Main.storyboard */,
 				6ADAEFBA23C257E5008ECF4B /* Hackintosh_build.command */,
-				6ADAEFA723C23DA6008ECF4B /* Assets.xcassets */,
-				6ADAEFAC23C23DA6008ECF4B /* Info.plist */,
-				6ADAEFAD23C23DA6008ECF4B /* HackintoshBuild.entitlements */,
+				11D5C27B23D1B63A00461A78 /* Supporting Files */,
 			);
 			path = HackintoshBuild;
 			sourceTree = "<group>";
@@ -138,7 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */,
-				6ADAEFA623C23DA5008ECF4B /* ViewController.swift in Sources */,
+				1193974C23D1C7BA0096297C /* MyLog.swift in Sources */,
+				6ADAEFA623C23DA5008ECF4B /* ViewControllerBuild.swift in Sources */,
+				11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */,
+				1193974723D1BF380096297C /* ViewControllerOther.swift in Sources */,
+				11D5C27823D1B11300461A78 /* BaseWindowController.swift in Sources */,
+				1193974923D1C1390096297C /* MyTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +308,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -293,6 +330,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
