@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController,NSTableViewDataSource {
+class ViewControllerBuild: NSViewController {
     
     @IBOutlet var buildText: NSTextView!
     @IBOutlet var stopButton: NSButton!
@@ -20,7 +20,31 @@ class ViewController: NSViewController,NSTableViewDataSource {
     
     @IBOutlet var buildLocation: NSPathControl!
     
-    @objc dynamic var pluginsList : [String] = ["Clover(时间较长)","OpenCore","n-d-k-OpenCore","AppleSupportPkg","Lilu","AirportBrcmFixup","AppleALC","ATH9KFixup","BT4LEContinuityFixup","CPUFriend","HibernationFixup","NoTouchID","RTCMemoryFixup","SystemProfilerMemoryFixup","VirtualSMC","acidanthera_WhateverGreen","bugprogrammer_WhateverGreen","IntelMausiEthernet","AtherosE2200Ethernet","RTL8111","NVMeFix"]
+    @IBOutlet weak var proxyTextField: NSTextField!
+    
+    let pluginsList: [String] = [
+        "Clover(时间较长)",
+        "OpenCore",
+        "n-d-k-OpenCore",
+        "AppleSupportPkg",
+        "Lilu",
+        "AirportBrcmFixup",
+        "AppleALC",
+        "ATH9KFixup",
+        "BT4LEContinuityFixup",
+        "CPUFriend",
+        "HibernationFixup",
+        "NoTouchID",
+        "RTCMemoryFixup",
+        "SystemProfilerMemoryFixup",
+        "VirtualSMC",
+        "acidanthera_WhateverGreen",
+        "bugprogrammer_WhateverGreen",
+        "IntelMausiEthernet",
+        "AtherosE2200Ethernet",
+        "RTL8111",
+        "NVMeFix"
+    ]
 
     
     override func viewDidLoad() {
@@ -30,27 +54,23 @@ class ViewController: NSViewController,NSTableViewDataSource {
         stopButton.isEnabled = false
         progressBar.isHidden = true
         
+        proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
+        proxyTextField.stringValue = ""
+        proxyTextField.resignFirstResponder()
+        
         self.pluginsView.reloadData()
     }
     
-    //MARK: NSTalbeViewDatasource
-    func numberOfRows(in tableView: NSTableView) -> Int {
-        return pluginsList.count
-    }
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        return pluginsList[row]
-    }
-    
-    @objc dynamic var isRunning = false
-    var buildTextPipe:Pipe!
-    var buildTask:Process!
-    var itemsArr:[String] = []
-    var itemsSting:String = ""
+    var isRunning = false
+    var buildTextPipe: Pipe!
+    var buildTask: Process!
+    var itemsArr: [String] = []
+    var itemsSting: String = ""
     
     @IBAction func startBuild(_ sender: Any) {
         
         if let buildURL = buildLocation.url {
-            var arguments:[String] = []
+            var arguments: [String] = []
             
             stopButton.isEnabled = true
             progressBar.isHidden = false
@@ -60,11 +80,11 @@ class ViewController: NSViewController,NSTableViewDataSource {
             itemsSting = itemsArr.joined(separator: ",")
             arguments.append(buildURL.path)
             arguments.append(itemsSting)
+            arguments.append(proxyTextField.stringValue)
 
             runBuildScripts(arguments)
-            print(arguments)
-        }
-        else {
+            MyLog(arguments)
+        } else {
             let alert = NSAlert()
             alert.messageText = "请先选择存储位置！"
             alert.runModal()
@@ -89,10 +109,10 @@ class ViewController: NSViewController,NSTableViewDataSource {
         case .off:
             itemsArr = itemsArr.filter{$0 != String(pluginsView.row(for: sender))}
         case .mixed:
-            print("mixed")
+            MyLog("mixed")
         default: break
         }
-        print(itemsArr)
+        MyLog(itemsArr)
     }
     
     override var representedObject: Any? {
@@ -101,16 +121,15 @@ class ViewController: NSViewController,NSTableViewDataSource {
         }
     }
     
-    func runBuildScripts(_ arguments:[String]) {
+    func runBuildScripts(_ arguments: [String]) {
         isRunning = true
         let taskQueue = DispatchQueue.global(qos: DispatchQoS.QoSClass.background)
         taskQueue.async {
-            if let path = Bundle.main.path(forResource: "Hackintosh_build",ofType:"command") {
+            if let path = Bundle.main.path(forResource: "Hackintosh_build", ofType:"command") {
                 self.buildTask = Process()
                 self.buildTask.launchPath = path
                 self.buildTask.arguments = arguments
-                self.buildTask.terminationHandler = {
-                    task in
+                self.buildTask.terminationHandler = { task in
                     DispatchQueue.main.async(execute: {
                         self.stopButton.isEnabled = false
                         self.buildButton.isEnabled = true
@@ -147,4 +166,16 @@ class ViewController: NSViewController,NSTableViewDataSource {
         }
     }
 
+}
+
+extension ViewControllerBuild: NSTableViewDataSource {
+    
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return pluginsList.count
+    }
+    
+    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        return pluginsList[row]
+    }
+    
 }
