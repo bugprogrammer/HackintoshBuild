@@ -16,7 +16,6 @@ class BaseWindowController: NSWindowController {
     
     override func windowDidLoad() {
         super.windowDidLoad()
-    
         setupToolbar()
     }
     
