@@ -11,6 +11,7 @@ import Cocoa
 class BaseWindowController: NSWindowController {
 
     let buildIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.buildIdentifier")
+    let efiIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.efiIdentifier")
     let otherIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.otherIdentifier")
     
     override func windowDidLoad() {
@@ -34,15 +35,15 @@ class BaseWindowController: NSWindowController {
 extension BaseWindowController: NSToolbarDelegate {
     
     func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, otherIdentifier]
+        return [buildIdentifier, efiIdentifier, otherIdentifier]
     }
     
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, otherIdentifier]
+        return [buildIdentifier, efiIdentifier, otherIdentifier]
     }
     
     func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, otherIdentifier]
+        return [buildIdentifier, efiIdentifier, otherIdentifier]
     }
     
     func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
@@ -54,9 +55,17 @@ extension BaseWindowController: NSToolbarDelegate {
             toolbarItem?.toolTip = "编译一些常用的引导/驱动"
             toolbarItem?.image = MyAsset.NSToolbarItem_Build.image
             break
+            
+        case efiIdentifier:
+            toolbarItem?.label = "常见机型EFI分享"
+            toolbarItem?.paletteLabel = "常见机型EFI分享"
+            toolbarItem?.toolTip = "常见机型EFI分享"
+            toolbarItem?.image = MyAsset.NSToolbarItem_EFI.image
+            break
+            
         case otherIdentifier:
-            toolbarItem?.label = "其他"
-            toolbarItem?.paletteLabel = "其他"
+            toolbarItem?.label = "其他小功能"
+            toolbarItem?.paletteLabel = "其他小功能"
             toolbarItem?.toolTip = "其他一些可能需要的东西"
             toolbarItem?.image = MyAsset.NSToolbarItem_Other.image
         default:
@@ -73,6 +82,9 @@ extension BaseWindowController: NSToolbarDelegate {
         switch item.itemIdentifier {
         case buildIdentifier:
             self.contentViewController = MyTool.getViewControllerFromNib(ViewControllerBuild.self)
+            break
+        case efiIdentifier:
+            self.contentViewController = MyTool.getViewControllerFromNib(ViewControllerEFI.self)
             break
         case otherIdentifier:
             self.contentViewController = MyTool.getViewControllerFromNib(ViewControllerOther.self)

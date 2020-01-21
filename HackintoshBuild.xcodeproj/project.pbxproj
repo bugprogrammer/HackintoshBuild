@@ -13,11 +13,49 @@
 		11D5C27823D1B11300461A78 /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27723D1B11300461A78 /* BaseWindowController.swift */; };
 		11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27923D1B63700461A78 /* MyAsset.swift */; };
 		6A0D773D23C7A917003F5C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0D773C23C7A744003F5C3A /* Main.storyboard */; };
+		6A1A664623D1E870009E24EC /* rebuildCache.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A1A664423D1E870009E24EC /* rebuildCache.command */; };
+		6A1A664723D1E870009E24EC /* unlockSLE.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A1A664523D1E870009E24EC /* unlockSLE.command */; };
+		6AAB82CA23D205E300ACFB81 /* ViewControllerEFI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB82C923D205E300ACFB81 /* ViewControllerEFI.swift */; };
+		6AAB82D023D22C0E00ACFB81 /* getEFI.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB82CF23D22C0E00ACFB81 /* getEFI.command */; };
+		6AB8B6F923D4C0D500A993C5 /* GitHubUpdates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB8B6F623D4C0C800A993C5 /* GitHubUpdates.framework */; };
+		6AB8B6FA23D4C0D500A993C5 /* GitHubUpdates.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB8B6F623D4C0C800A993C5 /* GitHubUpdates.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AB8B6FB23D582FC00A993C5 /* spctl.command */; };
 		6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */; };
 		6ADAEFA623C23DA5008ECF4B /* ViewControllerBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */; };
 		6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA723C23DA6008ECF4B /* Assets.xcassets */; };
 		6ADAEFBB23C257E5008ECF4B /* Hackintosh_build.command in Resources */ = {isa = PBXBuildFile; fileRef = 6ADAEFBA23C257E5008ECF4B /* Hackintosh_build.command */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AB8B6F523D4C0C800A993C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AB8B6F023D4C0C800A993C5 /* GitHubUpdates.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05F82B251EF32EA700EC8A93;
+			remoteInfo = GitHubUpdates;
+		};
+		6AB8B6F723D4C0C800A993C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AB8B6F023D4C0C800A993C5 /* GitHubUpdates.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0555EBA01EF3DDA10016167F;
+			remoteInfo = Relauncher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A6EF7F323D4A6C4003CF9DA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6AB8B6FA23D4C0D500A993C5 /* GitHubUpdates.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1193974623D1BF380096297C /* ViewControllerOther.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerOther.swift; sourceTree = "<group>"; };
@@ -26,6 +64,12 @@
 		11D5C27723D1B11300461A78 /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
 		11D5C27923D1B63700461A78 /* MyAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsset.swift; sourceTree = "<group>"; };
 		6A0D773C23C7A744003F5C3A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A1A664423D1E870009E24EC /* rebuildCache.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = rebuildCache.command; path = /Users/wbx/Desktop/sources/HackintoshBuild/HackintoshBuild/command/rebuildCache.command; sourceTree = "<absolute>"; };
+		6A1A664523D1E870009E24EC /* unlockSLE.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = unlockSLE.command; path = /Users/wbx/Desktop/sources/HackintoshBuild/HackintoshBuild/command/unlockSLE.command; sourceTree = "<absolute>"; };
+		6AAB82C923D205E300ACFB81 /* ViewControllerEFI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEFI.swift; sourceTree = "<group>"; };
+		6AAB82CF23D22C0E00ACFB81 /* getEFI.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = getEFI.command; sourceTree = "<group>"; };
+		6AB8B6F023D4C0C800A993C5 /* GitHubUpdates.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GitHubUpdates.xcodeproj; path = GitHubUpdates/GitHubUpdates.xcodeproj; sourceTree = "<group>"; };
+		6AB8B6FB23D582FC00A993C5 /* spctl.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = spctl.command; sourceTree = "<group>"; };
 		6ADAEFA023C23DA5008ECF4B /* HackintoshBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackintoshBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuild.swift; sourceTree = "<group>"; };
@@ -40,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB8B6F923D4C0D500A993C5 /* GitHubUpdates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,11 +112,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6A1A664323D1E824009E24EC /* command */ = {
+			isa = PBXGroup;
+			children = (
+				6A1A664423D1E870009E24EC /* rebuildCache.command */,
+				6A1A664523D1E870009E24EC /* unlockSLE.command */,
+				6ADAEFBA23C257E5008ECF4B /* Hackintosh_build.command */,
+				6AAB82CF23D22C0E00ACFB81 /* getEFI.command */,
+				6AB8B6FB23D582FC00A993C5 /* spctl.command */,
+			);
+			path = command;
+			sourceTree = "<group>";
+		};
+		6AB8B6F123D4C0C800A993C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AB8B6F623D4C0C800A993C5 /* GitHubUpdates.framework */,
+				6AB8B6F823D4C0C800A993C5 /* Relauncher */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6ADAEF9723C23DA5008ECF4B = {
 			isa = PBXGroup;
 			children = (
+				6AB8B6F023D4C0C800A993C5 /* GitHubUpdates.xcodeproj */,
 				6ADAEFA223C23DA5008ECF4B /* HackintoshBuild */,
 				6ADAEFA123C23DA5008ECF4B /* Products */,
+				6AECB88A23D4B7260069B099 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,15 +154,23 @@
 		6ADAEFA223C23DA5008ECF4B /* HackintoshBuild */ = {
 			isa = PBXGroup;
 			children = (
+				6A1A664323D1E824009E24EC /* command */,
 				1193974A23D1C7690096297C /* Global */,
 				11D5C27723D1B11300461A78 /* BaseWindowController.swift */,
 				6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */,
 				1193974623D1BF380096297C /* ViewControllerOther.swift */,
+				6AAB82C923D205E300ACFB81 /* ViewControllerEFI.swift */,
 				6A0D773C23C7A744003F5C3A /* Main.storyboard */,
-				6ADAEFBA23C257E5008ECF4B /* Hackintosh_build.command */,
 				11D5C27B23D1B63A00461A78 /* Supporting Files */,
 			);
 			path = HackintoshBuild;
+			sourceTree = "<group>";
+		};
+		6AECB88A23D4B7260069B099 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +183,7 @@
 				6ADAEF9C23C23DA5008ECF4B /* Sources */,
 				6ADAEF9D23C23DA5008ECF4B /* Frameworks */,
 				6ADAEF9E23C23DA5008ECF4B /* Resources */,
+				6A6EF7F323D4A6C4003CF9DA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +220,12 @@
 			mainGroup = 6ADAEF9723C23DA5008ECF4B;
 			productRefGroup = 6ADAEFA123C23DA5008ECF4B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6AB8B6F123D4C0C800A993C5 /* Products */;
+					ProjectRef = 6AB8B6F023D4C0C800A993C5 /* GitHubUpdates.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6ADAEF9F23C23DA5008ECF4B /* HackintoshBuild */,
@@ -150,14 +233,35 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6AB8B6F623D4C0C800A993C5 /* GitHubUpdates.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GitHubUpdates.framework;
+			remoteRef = 6AB8B6F523D4C0C800A993C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6AB8B6F823D4C0C800A993C5 /* Relauncher */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Relauncher;
+			remoteRef = 6AB8B6F723D4C0C800A993C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		6ADAEF9E23C23DA5008ECF4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1A664623D1E870009E24EC /* rebuildCache.command in Resources */,
 				6A0D773D23C7A917003F5C3A /* Main.storyboard in Resources */,
 				6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */,
+				6A1A664723D1E870009E24EC /* unlockSLE.command in Resources */,
 				6ADAEFBB23C257E5008ECF4B /* Hackintosh_build.command in Resources */,
+				6AAB82D023D22C0E00ACFB81 /* getEFI.command in Resources */,
+				6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +277,7 @@
 				6ADAEFA623C23DA5008ECF4B /* ViewControllerBuild.swift in Sources */,
 				11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */,
 				1193974723D1BF380096297C /* ViewControllerOther.swift in Sources */,
+				6AAB82CA23D205E300ACFB81 /* ViewControllerEFI.swift in Sources */,
 				11D5C27823D1B11300461A78 /* BaseWindowController.swift in Sources */,
 				1193974923D1C1390096297C /* MyTool.swift in Sources */,
 			);
@@ -299,15 +404,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HackintoshBuild/HackintoshBuild.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = LM4G3WSD5B;
 				INFOPLIST_FILE = HackintoshBuild/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -321,15 +429,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HackintoshBuild/HackintoshBuild.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = LM4G3WSD5B;
 				INFOPLIST_FILE = HackintoshBuild/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.1;
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";

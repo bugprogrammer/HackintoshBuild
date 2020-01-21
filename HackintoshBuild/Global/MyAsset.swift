@@ -23,6 +23,7 @@ extension NSImage {
         }
         
         case NSToolbarItem_Build = "NSToolbarItem_Build"
+        case NSToolbarItem_EFI = "NSToolbarItem_EFI"
         case NSToolbarItem_Other = "NSToolbarItem_Other"
     }
     
