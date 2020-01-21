@@ -44,7 +44,7 @@ fileprivate let argc = CommandLine.argc
 fileprivate let argv = CommandLine.unsafeArgv
 fileprivate let arguments = CommandLine.arguments
 
-let needUpadte = UserDefaults.standard.bool(forKey: "update")
+fileprivate let needUpadte = UserDefaults.standard.bool(forKey: "update")
 
 if needUpadte {
     UserDefaults.standard.set(false, forKey: "update")
