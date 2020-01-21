@@ -14,7 +14,7 @@ import Cocoa
 
 final class MyTool {
     
-    static func getViewControllerFromNib<T>(_ aClass: T.Type) -> T {
+    static func getViewControllerFromMain<T>(_ aClass: T.Type) -> T {
         let name = String(describing: aClass)
         let storyBoard = NSStoryboard(name: "Main", bundle: nil)
         if let vc = storyBoard.instantiateController(withIdentifier: name) as? T {

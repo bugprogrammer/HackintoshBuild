@@ -27,6 +27,7 @@ class BaseWindowController: NSWindowController {
         toolBar.displayMode = .iconAndLabel
         toolBar.sizeMode = .default
         toolBar.delegate = self
+        toolBar.selectedItemIdentifier = buildIdentifier
         self.window?.toolbar = toolBar // retain
     }
 
@@ -81,13 +82,13 @@ extension BaseWindowController: NSToolbarDelegate {
     @objc func toolbarItemDidTapped(_ item: NSToolbarItem) {
         switch item.itemIdentifier {
         case buildIdentifier:
-            self.contentViewController = MyTool.getViewControllerFromNib(ViewControllerBuild.self)
+            self.window?.contentViewController = MyTool.getViewControllerFromMain(ViewControllerBuild.self)
             break
         case efiIdentifier:
-            self.contentViewController = MyTool.getViewControllerFromNib(ViewControllerEFI.self)
+            self.window?.contentViewController = MyTool.getViewControllerFromMain(ViewControllerEFI.self)
             break
         case otherIdentifier:
-            self.contentViewController = MyTool.getViewControllerFromNib(ViewControllerOther.self)
+            self.window?.contentViewController = MyTool.getViewControllerFromMain(ViewControllerOther.self)
             break
         default:
             break
