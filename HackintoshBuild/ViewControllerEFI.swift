@@ -42,6 +42,12 @@ class ViewControllerEFI: NSViewController {
         proxyTextField.stringValue = ""
         proxyTextField.resignFirstResponder()
         
+        if let efiLocation = UserDefaults.standard.url(forKey: "efiLocation") {
+            if FileManager.default.fileExists(atPath: efiLocation.path) {
+                self.efiLocation.url = efiLocation
+            }
+        }
+        
         self.efiTableView.reloadData()
     }
     
@@ -53,6 +59,8 @@ class ViewControllerEFI: NSViewController {
         
     @IBAction func efiStart(_ sender: Any) {
         if let efiURL = efiLocation.url {
+            UserDefaults.standard.set(efiURL, forKey: "efiLocation")
+            
             var arguments: [String] = []
             
             efiStopButton.isEnabled = true

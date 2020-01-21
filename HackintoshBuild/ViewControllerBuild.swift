@@ -58,6 +58,12 @@ class ViewControllerBuild: NSViewController {
         proxyTextField.stringValue = ""
         proxyTextField.resignFirstResponder()
         
+        if let kextLocation = UserDefaults.standard.url(forKey: "kextLocation") {
+            if FileManager.default.fileExists(atPath: kextLocation.path) {
+                self.buildLocation.url = kextLocation
+            }
+        }
+        
         self.pluginsView.reloadData()
     }
     
@@ -70,6 +76,8 @@ class ViewControllerBuild: NSViewController {
     @IBAction func startBuild(_ sender: Any) {
         
         if let buildURL = buildLocation.url {
+            UserDefaults.standard.set(buildURL, forKey: "kextLocation")
+            
             var arguments: [String] = []
             
             stopButton.isEnabled = true
