@@ -8,7 +8,7 @@
 
 import Cocoa
 
-@NSApplicationMain
+//@NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 
