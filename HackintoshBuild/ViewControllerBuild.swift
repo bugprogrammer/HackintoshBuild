@@ -22,6 +22,9 @@ class ViewControllerBuild: NSViewController {
     
     @IBOutlet weak var proxyTextField: NSTextField!
     
+    let taskQueue = DispatchQueue.global(qos: .background)
+    let lock = NSLock()
+    
     let pluginsList: [String] = [
         "Clover(时间较长)",
         "OpenCore",
@@ -131,25 +134,27 @@ class ViewControllerBuild: NSViewController {
     
     func runBuildScripts(_ arguments: [String]) {
         isRunning = true
-        let taskQueue = DispatchQueue.global(qos: DispatchQoS.QoSClass.background)
         taskQueue.async {
             if let path = Bundle.main.path(forResource: "Hackintosh_build", ofType:"command") {
-                self.buildTask = Process()
-                self.buildTask.launchPath = path
-                self.buildTask.arguments = arguments
-                self.buildTask.terminationHandler = { task in
-                    DispatchQueue.main.async(execute: {
+                let buildTask = Process()
+                buildTask.launchPath = path
+                buildTask.arguments = arguments
+                buildTask.terminationHandler = { task in
+                DispatchQueue.main.async(execute: { [weak self] in
+                    guard let `self` = self else { return }
+                    self.lock.lock()
                         self.stopButton.isEnabled = false
                         self.buildButton.isEnabled = true
                         self.progressBar.isHidden = true
                         self.progressBar.stopAnimation(self)
                         self.progressBar.doubleValue = 0.0
                         self.isRunning = false
+                    self.lock.unlock()
                     })
                 }
-                self.buildOutPut(self.buildTask)
-                self.buildTask.launch()
-                self.buildTask.waitUntilExit()
+                self.buildOutPut(buildTask)
+                buildTask.launch()
+                buildTask.waitUntilExit()
             }
         }
     }

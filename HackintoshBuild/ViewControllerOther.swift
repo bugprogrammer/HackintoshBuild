@@ -10,16 +10,38 @@ import Cocoa
 
 class ViewControllerOther: NSViewController {
     
+    @IBOutlet weak var sipLable: NSTextField!
     @IBOutlet var output: NSTextView!
     @IBOutlet var progressBar: NSProgressIndicator!
+    @IBOutlet weak var unclockButton: NSButton!
+    @IBOutlet weak var rebuildButton: NSButton!
+    @IBOutlet weak var spctlButton: NSButton!
     
     var task:Process!
     var outputPipe:Pipe!
+    
+    let taskQueue = DispatchQueue.global(qos: .background)
+    let lock = NSLock()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
         progressBar.isHidden = true
+        let sipStatus = UserDefaults().string(forKey: "sipStatus") ?? ""
+        MyLog(sipStatus)
+        spctlButton.isEnabled = true
+        if sipStatus == "SIP已关闭" {
+            sipLable.textColor = NSColor.green
+            sipLable.stringValue = "SIP已关闭"
+            unclockButton.isEnabled = true
+            rebuildButton.isEnabled = true
+        }
+        else {
+            sipLable.textColor = NSColor.red
+            sipLable.stringValue = "SIP未关闭,请先关闭SIP"
+            unclockButton.isEnabled = false
+            rebuildButton.isEnabled = false
+        }
     }
     
     @IBAction func unlockSLE(_ sender: Any) {
@@ -53,24 +75,26 @@ class ViewControllerOther: NSViewController {
         runBuildScripts("spctl", "已开启未知来源安装")
     }
     func runBuildScripts(_ shell: String,_ alertText: String) {
-        let taskQueue = DispatchQueue.global(qos: DispatchQoS.QoSClass.background)
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
-                self.task = Process()
-                self.task.launchPath = path
-                self.task.terminationHandler = { task in
-                    DispatchQueue.main.async(execute: {
+                let task = Process()
+                task.launchPath = path
+                task.terminationHandler = { task in
+                DispatchQueue.main.async(execute: { [weak self] in
+                    guard let `self` = self else { return }
+                        self.lock.lock()
                         self.progressBar.isHidden = true
                         self.progressBar.stopAnimation(self)
                         self.progressBar.doubleValue = 0.0
                         let alert = NSAlert()
                         alert.messageText = alertText
                         alert.runModal()
+                        self.lock.unlock()
                     })
                 }
-                self.taskOutPut(self.task)
-                self.task.launch()
-                self.task.waitUntilExit()
+                self.taskOutPut(task)
+                task.launch()
+                task.waitUntilExit()
             }
         }
     }

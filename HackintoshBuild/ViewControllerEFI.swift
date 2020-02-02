@@ -18,6 +18,9 @@ class ViewControllerEFI: NSViewController {
     @IBOutlet var efiStopButton: NSButton!
     @IBOutlet weak var proxyTextField: NSTextField!
     
+    let taskQueue = DispatchQueue.global(qos: .background)
+    let lock = NSLock()
+    
     let efiList: [String] = [
         "ASRock-Z390-itx+9900K+Vega56",
         "ASRock-Z390-itx+9900K+rx5700XT",
@@ -111,22 +114,25 @@ class ViewControllerEFI: NSViewController {
         let taskQueue = DispatchQueue.global(qos: DispatchQoS.QoSClass.background)
         taskQueue.async {
             if let path = Bundle.main.path(forResource: "getEFI", ofType:"command") {
-                self.efiTask = Process()
-                self.efiTask.launchPath = path
-                self.efiTask.arguments = arguments
-                self.efiTask.terminationHandler = { task in
-                    DispatchQueue.main.async(execute: {
+                let efiTask = Process()
+                efiTask.launchPath = path
+                efiTask.arguments = arguments
+                efiTask.terminationHandler = { task in
+                DispatchQueue.main.async(execute: { [weak self] in
+                    guard let `self` = self else { return }
+                    self.lock.lock()
                         self.efiStopButton.isEnabled = false
                         self.efiStartButton.isEnabled = true
                         self.progressBar.isHidden = true
                         self.progressBar.stopAnimation(self)
                         self.progressBar.doubleValue = 0.0
                         self.isRunning = false
+                    self.lock.unlock()
                     })
                 }
-                self.efiOutPut(self.efiTask)
-                self.efiTask.launch()
-                self.efiTask.waitUntilExit()
+                self.efiOutPut(efiTask)
+                efiTask.launch()
+                efiTask.waitUntilExit()
             }
         }
     }

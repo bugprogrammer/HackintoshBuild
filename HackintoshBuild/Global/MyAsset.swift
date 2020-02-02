@@ -24,6 +24,9 @@ extension NSImage {
         
         case NSToolbarItem_Build = "NSToolbarItem_Build"
         case NSToolbarItem_EFI = "NSToolbarItem_EFI"
+        case NSNSToolbarItem_Disk = "NSToolbarItem_Disk"
+        case NSNSToolbarItem_Nvram = "NSToolbarItem_Nvram"
+        case NSNSToolbarItem_Lock = "NSNSToolbarItem_Lock"
         case NSToolbarItem_Other = "NSToolbarItem_Other"
     }
     
