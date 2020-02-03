@@ -24,7 +24,7 @@ class ViewControllerLock: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
         guard let enabled = isSIPStatusEnabled else {
-            sipLabel.textColor = NSColor.green
+            sipLabel.textColor = NSColor.red
             sipLabel.stringValue = "SIP状态未知"
             replaceButton.isEnabled = false
             resetButton.isEnabled = false

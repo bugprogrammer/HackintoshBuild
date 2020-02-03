@@ -8,7 +8,7 @@
 
 import Cocoa
 
-var isSIPStatusEnabled: Bool? = nil
+public var isSIPStatusEnabled: Bool? = nil
 
 class BaseWindowController: NSWindowController {
 
@@ -37,26 +37,6 @@ class BaseWindowController: NSWindowController {
                 let task = Process()
                 task.launchPath = path
                 task.arguments = arguments
-                task.terminationHandler = { task in
-                    DispatchQueue.main.async(execute: { [weak self] in
-                        guard let `self` = self else { return }
-                        self.lock.lock()
-                        /** Arabaku fixed*/
-                        let pattern: String = ".*enabled.*"
-                        if let regex = try? NSRegularExpression(pattern: pattern, options: [.caseInsensitive]) {
-                            let matches = regex.matches(in: self.sipStatusOutPut, options: [], range: NSRange(self.sipStatusOutPut.startIndex..., in: self.sipStatusOutPut))
-                            if matches.count == 1 && matches[0].range.location != NSNotFound {
-                                MyLog("SIP status: enabled.")
-                                isSIPStatusEnabled = true
-                            } else {
-                                isSIPStatusEnabled = false
-                                MyLog("SIP status: disabled.")
-                            }
-                        }
-            
-                        self.lock.unlock()
-                    })
-                }
                 self.taskOutPut(task)
                 task.launch()
                 task.waitUntilExit()
@@ -69,15 +49,25 @@ class BaseWindowController: NSWindowController {
         outputPipe = Pipe()
         task.standardOutput = outputPipe
         outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) {
-            notification in
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading, queue: nil) { [weak self] notification in
+            guard let `self` = self else { return }
             let output = self.outputPipe.fileHandleForReading.availableData
             let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-                DispatchQueue.main.async(execute: {
-                    let previousOutput = self.sipStatusOutPut
-                    let nextOutput = previousOutput + outputString
-                    self.sipStatusOutPut = nextOutput
-                })
+            let previousOutput = self.sipStatusOutPut
+            let nextOutput = previousOutput + outputString
+            self.sipStatusOutPut = nextOutput
+            /** Arabaku fixed.*/
+            let pattern: String = ".*enabled.*"
+            if let regex = try? NSRegularExpression(pattern: pattern, options: [.caseInsensitive]) {
+                let matches = regex.matches(in: self.sipStatusOutPut, options: [], range: NSMakeRange(0, self.sipStatusOutPut.count))
+                if matches.count == 1 && matches[0].range.location != NSNotFound {
+                    MyLog("SIP status: enabled.")
+                    isSIPStatusEnabled = true
+                } else {
+                    MyLog("SIP status: disabled.")
+                    isSIPStatusEnabled = false
+                }
+            }
         }
     }
     
