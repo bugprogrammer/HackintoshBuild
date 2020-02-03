@@ -1,3 +1,3 @@
 #!/bin/bash
 
-csrutil status | grep status
+csrutil status | grep status | awk '{print $NF}'

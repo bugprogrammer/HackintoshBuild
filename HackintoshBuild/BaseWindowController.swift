@@ -22,6 +22,7 @@ class BaseWindowController: NSWindowController {
     var task: Process!
     var outputPipe: Pipe!
     var sipStatus: String = ""
+    var sipStatusOutPut: String = ""
     
     override func windowDidLoad() {
         super.windowDidLoad()
@@ -39,13 +40,15 @@ class BaseWindowController: NSWindowController {
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
                         self.lock.lock()
-                        
-                            if self.sipStatus.contains("enabled") {
+                        MyLog(self.sipStatusOutPut)
+                        MyLog(self.sipStatusOutPut == "enabled.")
+                            if self.sipStatusOutPut == "enabled." {
                                 self.sipStatus = "SIP未关闭,请先关闭SIP"
                             }
                             else {
                                 self.sipStatus = "SIP已关闭"
                             }
+                        MyLog(self.sipStatus)
                             
                         UserDefaults().setValue(self.sipStatus, forKey: "sipStatus")
 
@@ -60,7 +63,7 @@ class BaseWindowController: NSWindowController {
     }
     
     func taskOutPut(_ task:Process) {
-        self.sipStatus = ""
+        self.sipStatusOutPut = ""
         outputPipe = Pipe()
         task.standardOutput = outputPipe
         outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
@@ -69,9 +72,9 @@ class BaseWindowController: NSWindowController {
             let output = self.outputPipe.fileHandleForReading.availableData
             let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
                 DispatchQueue.main.async(execute: {
-                    let previousOutput = self.sipStatus
+                    let previousOutput = self.sipStatusOutPut
                     let nextOutput = previousOutput + outputString
-                    self.sipStatus = nextOutput
+                    self.sipStatusOutPut = nextOutput
                 })
         }
     }
