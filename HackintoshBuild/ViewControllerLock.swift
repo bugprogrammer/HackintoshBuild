@@ -16,7 +16,6 @@ class ViewControllerLock: NSViewController {
     @IBOutlet weak var locationImage: NSPathControl!
     @IBOutlet weak var sipLabel: NSTextField!
     var task: Process!
-    var sipStatus: String = ""
     
     let taskQueue = DispatchQueue.global(qos: .background)
     let lock = NSLock()
@@ -24,18 +23,23 @@ class ViewControllerLock: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        sipStatus = UserDefaults().string(forKey: "sipStatus") ?? ""
-        if sipStatus == "SIP已关闭" {
+        guard let enabled = isSIPStatusEnabled else {
+            sipLabel.textColor = NSColor.green
+            sipLabel.stringValue = "SIP状态未知"
+            replaceButton.isEnabled = false
+            resetButton.isEnabled = false
+            return
+        }
+        if enabled {
+            sipLabel.textColor = NSColor.red
+            sipLabel.stringValue = "SIP未关闭，请先关闭SIP"
+            replaceButton.isEnabled = false
+            resetButton.isEnabled = false
+        } else {
             sipLabel.textColor = NSColor.green
             sipLabel.stringValue = "SIP已关闭"
             replaceButton.isEnabled = false
             resetButton.isEnabled = true
-        }
-        else {
-            sipLabel.textColor = NSColor.red
-            sipLabel.stringValue = "SIP未关闭,请先关闭SIP"
-            replaceButton.isEnabled = false
-            resetButton.isEnabled = false
         }
     }
     
@@ -45,16 +49,18 @@ class ViewControllerLock: NSViewController {
             let image: NSImage = NSImage(contentsOf: url as URL)!
             lockImageView.image = image
             return true
-        }
-        else {
+        } else {
             lockImageView.image = NSImage()
-            if self.sipStatus == "SIP已关闭" {
-                self.replaceButton.isEnabled = false
-                self.resetButton.isEnabled = true
+            
+            guard let enabled = isSIPStatusEnabled else {
+                return false
             }
-            else {
+            if enabled {
                 self.replaceButton.isEnabled = false
                 self.resetButton.isEnabled = false
+            } else {
+                self.replaceButton.isEnabled = false
+                self.resetButton.isEnabled = true
             }
             let alert = NSAlert()
             alert.messageText = "请选择PNG格式图片"
@@ -66,7 +72,7 @@ class ViewControllerLock: NSViewController {
     @IBAction func showPicture(_ sender: Any) {
         if let urlImage = locationImage.url {
             let isPNG = selectedImage(urlImage.path)
-            if self.sipStatus == "SIP已关闭" && isPNG {
+            if isSIPStatusEnabled == false && isPNG {
                 replaceButton.isEnabled = true
                 resetButton.isEnabled = true
             }
