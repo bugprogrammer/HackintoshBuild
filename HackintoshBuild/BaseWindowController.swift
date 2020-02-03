@@ -8,6 +8,8 @@
 
 import Cocoa
 
+var isSIPStatusEnabled: Bool? = nil
+
 class BaseWindowController: NSWindowController {
 
     let buildIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.buildIdentifier")
@@ -21,7 +23,6 @@ class BaseWindowController: NSWindowController {
     let lock = NSLock()
     var task: Process!
     var outputPipe: Pipe!
-    var sipStatus: String = ""
     var sipStatusOutPut: String = ""
     
     override func windowDidLoad() {
@@ -40,18 +41,19 @@ class BaseWindowController: NSWindowController {
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
                         self.lock.lock()
-                        MyLog(self.sipStatusOutPut)
-                        MyLog(self.sipStatusOutPut == "enabled.")
-                            if self.sipStatusOutPut == "enabled." {
-                                self.sipStatus = "SIP未关闭,请先关闭SIP"
+                        /** Arabaku fixed*/
+                        let pattern: String = ".*enabled.*"
+                        if let regex = try? NSRegularExpression(pattern: pattern, options: [.caseInsensitive]) {
+                            let matches = regex.matches(in: self.sipStatusOutPut, options: [], range: NSRange(self.sipStatusOutPut.startIndex..., in: self.sipStatusOutPut))
+                            if matches.count == 1 && matches[0].range.location != NSNotFound {
+                                MyLog("SIP status: enabled.")
+                                isSIPStatusEnabled = true
+                            } else {
+                                isSIPStatusEnabled = false
+                                MyLog("SIP status: disabled.")
                             }
-                            else {
-                                self.sipStatus = "SIP已关闭"
-                            }
-                        MyLog(self.sipStatus)
-                            
-                        UserDefaults().setValue(self.sipStatus, forKey: "sipStatus")
-
+                        }
+            
                         self.lock.unlock()
                     })
                 }

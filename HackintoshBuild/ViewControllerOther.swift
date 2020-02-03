@@ -27,20 +27,24 @@ class ViewControllerOther: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
         progressBar.isHidden = true
-        let sipStatus = UserDefaults().string(forKey: "sipStatus") ?? ""
-        MyLog(sipStatus)
         spctlButton.isEnabled = true
-        if sipStatus == "SIP已关闭" {
+        guard let enabled = isSIPStatusEnabled else {
+            sipLable.textColor = NSColor.red
+            sipLable.stringValue = "SIP状态未知"
+            unclockButton.isEnabled = false
+            rebuildButton.isEnabled = false
+            return
+        }
+        if enabled {
+            sipLable.textColor = NSColor.red
+            sipLable.stringValue = "SIP未关闭，请先关闭SIP"
+            unclockButton.isEnabled = false
+            rebuildButton.isEnabled = false
+        } else {
             sipLable.textColor = NSColor.green
             sipLable.stringValue = "SIP已关闭"
             unclockButton.isEnabled = true
             rebuildButton.isEnabled = true
-        }
-        else {
-            sipLable.textColor = NSColor.red
-            sipLable.stringValue = "SIP未关闭,请先关闭SIP"
-            unclockButton.isEnabled = false
-            rebuildButton.isEnabled = false
         }
     }
     

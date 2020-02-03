@@ -136,7 +136,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6A1A664323D1E824009E24EC /* command */ = {
+		6A1A664323D1E824009E24EC /* Command */ = {
 			isa = PBXGroup;
 			children = (
 				116D2D8C23D6C540001FED06 /* rebuildCache.command */,
@@ -152,7 +152,7 @@
 				6AA6EE0623E5859900BF15FD /* resetLockPicture.command */,
 				6A4A9FA223E59F86008D8EF8 /* sipStatus.command */,
 			);
-			path = command;
+			path = Command;
 			sourceTree = "<group>";
 		};
 		6ADAEF9723C23DA5008ECF4B = {
@@ -176,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				11A5716323D6EB4200437951 /* GitHubUpdates.xcodeproj */,
-				6A1A664323D1E824009E24EC /* command */,
+				6A1A664323D1E824009E24EC /* Command */,
 				1193974A23D1C7690096297C /* Global */,
 				11D5C27723D1B11300461A78 /* BaseWindowController.swift */,
 				6A427D1223E459BC00A0B4E3 /* ViewControllerLock.swift */,
@@ -437,7 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = LM4G3WSD5B;
+				DEVELOPMENT_TEAM = B84MTH5WF4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,7 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = LM4G3WSD5B;
+				DEVELOPMENT_TEAM = B84MTH5WF4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
