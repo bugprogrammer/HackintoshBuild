@@ -1519,15 +1519,6 @@
                                     <action selector="showPicture:" target="BhM-XS-jFz" id="NDW-Yu-IAI"/>
                                 </connections>
                             </pathControl>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FNZ-j0-10p">
-                                <rect key="frame" x="306" y="213" width="177" height="16"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="truncatingTail" alignment="center" id="OM2-wg-Yt7">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jaR-yU-WzS">
                                 <rect key="frame" x="237" y="276" width="67" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -1555,7 +1546,6 @@
                         <outlet property="lockImageView" destination="YYV-en-yQ8" id="xcg-Jl-GAf"/>
                         <outlet property="replaceButton" destination="iXm-Pb-o5W" id="kfq-sR-EZM"/>
                         <outlet property="resetButton" destination="jaR-yU-WzS" id="Y1x-Ka-Qqy"/>
-                        <outlet property="sipLabel" destination="FNZ-j0-10p" id="1r1-Zq-jMA"/>
                     </connections>
                 </viewController>
                 <customObject id="gqz-DC-nce" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
