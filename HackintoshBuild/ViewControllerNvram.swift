@@ -46,6 +46,7 @@ class ViewControllerNvram: NSViewController {
                                 self.keysArr.removeFirst()
                             }
                             self.nvramTableView.reloadData()
+                            self.runBuildScripts("nvramValues", [self.keysArr[0]])
                             self.flag = 1
                         }
                         else {

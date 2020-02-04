@@ -33,6 +33,7 @@ class ViewControllerLock: NSViewController {
             return true
         } else {
             lockImageView.image = NSImage()
+            replaceButton.isEnabled = false
             let alert = NSAlert()
             alert.messageText = "请选择PNG格式图片"
             alert.runModal()
