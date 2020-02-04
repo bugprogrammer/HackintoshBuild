@@ -21,7 +21,6 @@ class ViewControllerOther: NSViewController {
     var outputPipe:Pipe!
     
     let taskQueue = DispatchQueue.global(qos: .background)
-    let lock = NSLock()
     
     override func viewDidLoad() {
         super.viewDidLoad()
