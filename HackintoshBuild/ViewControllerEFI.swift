@@ -145,6 +145,7 @@ class ViewControllerEFI: NSViewController {
                 self.efiOutPut.scrollRangeToVisible(range)
                 self.progressBar.increment(by: 1.9)
             })
+            self.efiTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
         }
     }
 }

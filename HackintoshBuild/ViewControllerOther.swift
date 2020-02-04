@@ -78,21 +78,21 @@ class ViewControllerOther: NSViewController {
         runBuildScripts("spctl", "已开启未知来源安装")
     }
     func runBuildScripts(_ shell: String,_ alertText: String) {
+        AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
                 task.launchPath = path
                 task.terminationHandler = { task in
-                DispatchQueue.main.async(execute: { [weak self] in
-                    guard let `self` = self else { return }
-                        self.lock.lock()
+                    DispatchQueue.main.async(execute: { [weak self] in
+                        guard let `self` = self else { return }
                         self.progressBar.isHidden = true
                         self.progressBar.stopAnimation(self)
                         self.progressBar.doubleValue = 0.0
+                        AraHUDViewController.shared.hideHUD()
                         let alert = NSAlert()
                         alert.messageText = alertText
                         alert.runModal()
-                        self.lock.unlock()
                     })
                 }
                 self.taskOutPut(task)

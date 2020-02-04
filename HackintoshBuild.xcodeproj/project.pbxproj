@@ -10,6 +10,9 @@
 		1158FAB023D6E1610095FED5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158FAAF23D6E1610095FED5 /* main.swift */; };
 		116D2D8B23D6C528001FED06 /* unlockSLE.command in Resources */ = {isa = PBXBuildFile; fileRef = 116D2D8A23D6C528001FED06 /* unlockSLE.command */; };
 		116D2D8D23D6C540001FED06 /* rebuildCache.command in Resources */ = {isa = PBXBuildFile; fileRef = 116D2D8C23D6C540001FED06 /* rebuildCache.command */; };
+		117B27B023E9485C00581352 /* AraHUDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117B27AF23E9485C00581352 /* AraHUDView.xib */; };
+		117B27B223E94B8E00581352 /* AraHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117B27B123E94B8E00581352 /* AraHUDViewController.swift */; };
+		117B27B423E957C600581352 /* AraHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117B27B323E957C600581352 /* AraHUDView.swift */; };
 		1193974723D1BF380096297C /* ViewControllerOther.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193974623D1BF380096297C /* ViewControllerOther.swift */; };
 		1193974923D1C1390096297C /* MyTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193974823D1C1390096297C /* MyTool.swift */; };
 		1193974C23D1C7BA0096297C /* MyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193974B23D1C7BA0096297C /* MyLog.swift */; };
@@ -65,6 +68,9 @@
 		1158FAAF23D6E1610095FED5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		116D2D8A23D6C528001FED06 /* unlockSLE.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = unlockSLE.command; sourceTree = "<group>"; };
 		116D2D8C23D6C540001FED06 /* rebuildCache.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = rebuildCache.command; sourceTree = "<group>"; };
+		117B27AF23E9485C00581352 /* AraHUDView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AraHUDView.xib; sourceTree = "<group>"; };
+		117B27B123E94B8E00581352 /* AraHUDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AraHUDViewController.swift; sourceTree = "<group>"; };
+		117B27B323E957C600581352 /* AraHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AraHUDView.swift; sourceTree = "<group>"; };
 		1193974623D1BF380096297C /* ViewControllerOther.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerOther.swift; sourceTree = "<group>"; };
 		1193974823D1C1390096297C /* MyTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTool.swift; sourceTree = "<group>"; };
 		1193974B23D1C7BA0096297C /* MyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLog.swift; sourceTree = "<group>"; };
@@ -106,9 +112,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117B27AB23E947CF00581352 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				117B27B123E94B8E00581352 /* AraHUDViewController.swift */,
+				117B27B323E957C600581352 /* AraHUDView.swift */,
+				117B27AF23E9485C00581352 /* AraHUDView.xib */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
 		1193974A23D1C7690096297C /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				117B27AB23E947CF00581352 /* HUD */,
 				1193974823D1C1390096297C /* MyTool.swift */,
 				11D5C27923D1B63700461A78 /* MyAsset.swift */,
 				1193974B23D1C7BA0096297C /* MyLog.swift */,
@@ -286,6 +303,7 @@
 				6A4A9FA323E59F86008D8EF8 /* sipStatus.command in Resources */,
 				116D2D8B23D6C528001FED06 /* unlockSLE.command in Resources */,
 				6A2D271423DF364300238E46 /* nvramKeys.command in Resources */,
+				117B27B023E9485C00581352 /* AraHUDView.xib in Resources */,
 				6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */,
+				117B27B423E957C600581352 /* AraHUDView.swift in Sources */,
 				1193974C23D1C7BA0096297C /* MyLog.swift in Sources */,
 				1158FAB023D6E1610095FED5 /* main.swift in Sources */,
 				6A427D1323E459BD00A0B4E3 /* ViewControllerLock.swift in Sources */,
@@ -306,6 +325,7 @@
 				6A2D271123DF324100238E46 /* ViewControllerNvram.swift in Sources */,
 				1193974723D1BF380096297C /* ViewControllerOther.swift in Sources */,
 				6AAB82CA23D205E300ACFB81 /* ViewControllerEFI.swift in Sources */,
+				117B27B223E94B8E00581352 /* AraHUDViewController.swift in Sources */,
 				11D5C27823D1B11300461A78 /* BaseWindowController.swift in Sources */,
 				1193974923D1C1390096297C /* MyTool.swift in Sources */,
 				6A7A718C23D82DAE0082FA94 /* ViewControllerDisk.swift in Sources */,
