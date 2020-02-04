@@ -59,7 +59,7 @@ class ViewControllerBuild: NSViewController {
         
         proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
         proxyTextField.stringValue = ""
-        proxyTextField.resignFirstResponder()
+        proxyTextField.refusesFirstResponder = true
         
         if let kextLocation = UserDefaults.standard.url(forKey: "kextLocation") {
             if FileManager.default.fileExists(atPath: kextLocation.path) {
