@@ -11,8 +11,7 @@ import Cocoa
 class ViewControllerDisk: NSViewController {
         
     @IBOutlet weak var diskTableView: NSTableView!
-    var task:Process!
-    var outputPipe:Pipe!
+    
     var diskInfo:String = ""
     var arrayPartition:[String] = []
     var flag:Int = 0
@@ -79,19 +78,21 @@ class ViewControllerDisk: NSViewController {
     
     func taskOutPut(_ task:Process) {
         diskInfo = ""
-        outputPipe = Pipe()
+        let outputPipe = Pipe()
         task.standardOutput = outputPipe
         outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) {
-            notification in
-            let output = self.outputPipe.fileHandleForReading.availableData
-            let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-            DispatchQueue.main.async(execute: {
-                let previousOutput = self.diskInfo
-                let nextOutput = previousOutput + outputString
-                self.diskInfo = nextOutput
-            })
-            self.outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) { notification in
+            let output = outputPipe.fileHandleForReading.availableData
+            if output.count > 0 {
+                outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+                DispatchQueue.main.async(execute: {
+                    let previousOutput = self.diskInfo
+                    let nextOutput = previousOutput + outputString
+                    self.diskInfo = nextOutput
+                })
+            }
         }
     }
     

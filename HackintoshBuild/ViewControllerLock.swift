@@ -15,10 +15,8 @@ class ViewControllerLock: NSViewController {
     @IBOutlet weak var lockImageView: NSImageView!
     @IBOutlet weak var locationImage: NSPathControl!
     @IBOutlet weak var sipLabel: NSTextField!
-    var task: Process!
     
     let taskQueue = DispatchQueue.global(qos: .background)
-    let lock = NSLock()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,19 +90,18 @@ class ViewControllerLock: NSViewController {
     }
     
     func runBuildScripts(_ shell: String,_ arguments: [String], _ alertText: String) {
+        AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
                 task.launchPath = path
                 task.arguments = arguments
                 task.terminationHandler = { task in
-                    DispatchQueue.main.async(execute: { [weak self] in
-                        guard let `self` = self else { return }
-                        self.lock.lock()
+                    DispatchQueue.main.async(execute: {
+                        AraHUDViewController.shared.hideHUD()
                         let alert = NSAlert()
                         alert.messageText = alertText
                         alert.runModal()
-                        self.lock.unlock()
                     })
                 }
                 task.launch()

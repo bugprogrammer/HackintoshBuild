@@ -52,7 +52,6 @@ class ViewControllerEFI: NSViewController {
         self.efiTableView.reloadData()
     }
     
-    var efiTextPipe: Pipe!
     var efiTask: Process!
     var itemsArr: [String] = []
     var itemsSting: String = ""
@@ -129,23 +128,25 @@ class ViewControllerEFI: NSViewController {
         }
     }
     
-    func efiOutPut(_ task:Process) {
-        efiTextPipe = Pipe()
+    func efiOutPut(_ task: Process) {
+        let efiTextPipe = Pipe()
         task.standardOutput = efiTextPipe
         efiTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: efiTextPipe.fileHandleForReading , queue: nil) {
-            notification in
-            let output = self.efiTextPipe.fileHandleForReading.availableData
-            let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-            DispatchQueue.main.async(execute: {
-                let previousOutput = self.efiOutPut.string
-                let nextOutput = previousOutput + "\n" + outputString
-                self.efiOutPut.string = nextOutput
-                let range = NSRange(location:nextOutput.count,length:0)
-                self.efiOutPut.scrollRangeToVisible(range)
-                self.progressBar.increment(by: 1.9)
-            })
-            self.efiTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: efiTextPipe.fileHandleForReading , queue: nil) { notification in
+            let output = efiTextPipe.fileHandleForReading.availableData
+            if output.count > 0 {
+                efiTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+                DispatchQueue.main.async(execute: {
+                    let previousOutput = self.efiOutPut.string
+                    let nextOutput = previousOutput + "\n" + outputString
+                    self.efiOutPut.string = nextOutput
+                    let range = NSRange(location:nextOutput.count, length:0)
+                    self.efiOutPut.scrollRangeToVisible(range)
+                    self.progressBar.increment(by: 1.9)
+                })
+            }
         }
     }
 }

@@ -18,7 +18,6 @@ class ViewControllerOther: NSViewController {
     @IBOutlet weak var spctlButton: NSButton!
     
     var task:Process!
-    var outputPipe:Pipe!
     
     let taskQueue = DispatchQueue.global(qos: .background)
     
@@ -103,22 +102,24 @@ class ViewControllerOther: NSViewController {
     }
     
     func taskOutPut(_ task:Process) {
-        outputPipe = Pipe()
+        let outputPipe = Pipe()
         task.standardOutput = outputPipe
         outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) {
-            notification in
-            let output = self.outputPipe.fileHandleForReading.availableData
-            let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-            DispatchQueue.main.async(execute: {
-                let previousOutput = self.output.string
-                let nextOutput = previousOutput + "\n" + outputString
-                self.output.string = nextOutput
-                let range = NSRange(location:nextOutput.count,length:0)
-                self.output.scrollRangeToVisible(range)
-                self.progressBar.increment(by: 1.9)
-            })
-            self.outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) { notification in
+            let output = outputPipe.fileHandleForReading.availableData
+            if output.count > 0 {
+                outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+                DispatchQueue.main.async(execute: {
+                    let previousOutput = self.output.string
+                    let nextOutput = previousOutput + "\n" + outputString
+                    self.output.string = nextOutput
+                    let range = NSRange(location:nextOutput.count,length:0)
+                    self.output.scrollRangeToVisible(range)
+                    self.progressBar.increment(by: 1.9)
+                })
+            }
         }
     }
     

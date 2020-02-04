@@ -69,7 +69,6 @@ class ViewControllerBuild: NSViewController {
         self.pluginsView.reloadData()
     }
     
-    var buildTextPipe: Pipe!
     var buildTask: Process!
     var itemsArr: [String] = []
     var itemsSting: String = ""
@@ -154,23 +153,25 @@ class ViewControllerBuild: NSViewController {
         }
     }
     
-    func buildOutPut(_ task:Process) {
-        buildTextPipe = Pipe()
+    func buildOutPut(_ task: Process) {
+        let buildTextPipe = Pipe()
         task.standardOutput = buildTextPipe
         buildTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: buildTextPipe.fileHandleForReading , queue: nil) {
-            notification in
-            let output = self.buildTextPipe.fileHandleForReading.availableData
-            let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-            DispatchQueue.main.async(execute: {
-                let previousOutput = self.buildText.string
-                let nextOutput = previousOutput + "\n" + outputString
-                self.buildText.string = nextOutput
-                let range = NSRange(location:nextOutput.count,length:0)
-                self.buildText.scrollRangeToVisible(range)
-                self.progressBar.increment(by: 1.9)
-            })
-            self.buildTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: buildTextPipe.fileHandleForReading , queue: nil) { notification in
+            let output = buildTextPipe.fileHandleForReading.availableData
+            if output.count > 0 {
+                buildTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+                DispatchQueue.main.async(execute: {
+                    let previousOutput = self.buildText.string
+                    let nextOutput = previousOutput + "\n" + outputString
+                    self.buildText.string = nextOutput
+                    let range = NSRange(location:nextOutput.count, length:0)
+                    self.buildText.scrollRangeToVisible(range)
+                    self.progressBar.increment(by: 1.9)
+                })
+            }
         }
     }
 
