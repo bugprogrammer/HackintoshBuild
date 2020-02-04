@@ -12,7 +12,7 @@ class ViewControllerNvram: NSViewController {
 
     @IBOutlet var nvramTextView: NSTextView!
     @IBOutlet weak var nvramTableView: NSTableView!
-    var outputPipe:Pipe!
+    
     var nvramInfo:String = ""
     var keysArr:[String] = []
     var flag:Int = 0
@@ -61,20 +61,21 @@ class ViewControllerNvram: NSViewController {
         }
     }
     
-    func taskOutPut(_ task:Process) {
+    func taskOutPut(_ task: Process) {
         self.nvramInfo = ""
-        outputPipe = Pipe()
+        let outputPipe = Pipe()
         task.standardOutput = outputPipe
         outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) {
-            notification in
-            let output = self.outputPipe.fileHandleForReading.availableData
-            let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-                DispatchQueue.main.async(execute: {
-                    let previousOutput = self.nvramInfo
-                    let nextOutput = previousOutput + outputString
-                    self.nvramInfo = nextOutput
-                })
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) { notification in
+            let output = outputPipe.fileHandleForReading.availableData
+            if output.count > 0 {
+                outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+                let previousOutput = self.nvramInfo
+                let nextOutput = previousOutput + outputString
+                self.nvramInfo = nextOutput
+            }
         }
     }
     

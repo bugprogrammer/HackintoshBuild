@@ -19,7 +19,6 @@ class ViewControllerEFI: NSViewController {
     @IBOutlet weak var proxyTextField: NSTextField!
     
     let taskQueue = DispatchQueue.global(qos: .background)
-    let lock = NSLock()
     
     let efiList: [String] = [
         "ASRock-Z390-itx+9900K+Vega56",
@@ -38,12 +37,11 @@ class ViewControllerEFI: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        efiStopButton.isEnabled = false
-        progressBar.isHidden = true
+        resetStatus(isRunning: false)
         
         proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
         proxyTextField.stringValue = ""
-        proxyTextField.resignFirstResponder()
+        proxyTextField.refusesFirstResponder = true
         
         if let efiLocation = UserDefaults.standard.url(forKey: "efiLocation") {
             if FileManager.default.fileExists(atPath: efiLocation.path) {
@@ -54,28 +52,34 @@ class ViewControllerEFI: NSViewController {
         self.efiTableView.reloadData()
     }
     
-    var isRunning = false
-    var efiTextPipe: Pipe!
     var efiTask: Process!
     var itemsArr: [String] = []
     var itemsSting: String = ""
         
-    @IBAction func efiStart(_ sender: Any) {
-        if let efiURL = efiLocation.url {
-            UserDefaults.standard.set(efiURL, forKey: "efiLocation")
-            
-            var arguments: [String] = []
-            
+    private func resetStatus(isRunning: Bool) {
+        if isRunning {
             efiStopButton.isEnabled = true
             progressBar.isHidden = false
             efiOutPut.string = ""
             efiStartButton.isEnabled = false
             progressBar.startAnimation(self)
+        } else {
+            efiStopButton.isEnabled = false
+            efiStartButton.isEnabled = true
+            progressBar.stopAnimation(self)
+            progressBar.doubleValue = 0.0
+            progressBar.isHidden = true
+        }
+    }
+    
+    @IBAction func efiStart(_ sender: Any) {
+        if let efiURL = efiLocation.url {
+            UserDefaults.standard.set(efiURL, forKey: "efiLocation")
+            var arguments: [String] = []
             itemsSting = itemsArr.joined(separator: ",")
             arguments.append(efiURL.path)
             arguments.append(itemsSting)
             arguments.append(proxyTextField.stringValue)
-
             runBuildScripts(arguments)
             MyLog(arguments)
         } else {
@@ -86,16 +90,11 @@ class ViewControllerEFI: NSViewController {
     }
         
     @IBAction func efiStop(_ sender: Any) {
-        efiStartButton.isEnabled = true
-        efiStopButton.isEnabled = false
-        progressBar.isHidden = true
-        
-        if isRunning  {
-            self.progressBar.doubleValue = 0.0
+        if efiTask.suspend() {
             efiTask.terminate()
         }
     }
-        
+    
     @IBAction func selected(_ sender: NSButton) {
         switch sender.state {
         case .on:
@@ -110,50 +109,44 @@ class ViewControllerEFI: NSViewController {
     }
     
     func runBuildScripts(_ arguments: [String]) {
-        isRunning = true
-        let taskQueue = DispatchQueue.global(qos: DispatchQoS.QoSClass.background)
+        self.resetStatus(isRunning: true)
         taskQueue.async {
             if let path = Bundle.main.path(forResource: "getEFI", ofType:"command") {
-                let efiTask = Process()
-                efiTask.launchPath = path
-                efiTask.arguments = arguments
-                efiTask.terminationHandler = { task in
-                DispatchQueue.main.async(execute: { [weak self] in
-                    guard let `self` = self else { return }
-                    self.lock.lock()
-                        self.efiStopButton.isEnabled = false
-                        self.efiStartButton.isEnabled = true
-                        self.progressBar.isHidden = true
-                        self.progressBar.stopAnimation(self)
-                        self.progressBar.doubleValue = 0.0
-                        self.isRunning = false
-                    self.lock.unlock()
+                self.efiTask = Process()
+                self.efiTask.launchPath = path
+                self.efiTask.arguments = arguments
+                self.efiTask.terminationHandler = { task in
+                    DispatchQueue.main.async(execute: { [weak self] in
+                        guard let `self` = self else { return }
+                        self.resetStatus(isRunning: false)
                     })
                 }
-                self.efiOutPut(efiTask)
-                efiTask.launch()
-                efiTask.waitUntilExit()
+                self.efiOutPut(self.efiTask)
+                self.efiTask.launch()
+                self.efiTask.waitUntilExit()
             }
         }
     }
     
-    func efiOutPut(_ task:Process) {
-        efiTextPipe = Pipe()
+    func efiOutPut(_ task: Process) {
+        let efiTextPipe = Pipe()
         task.standardOutput = efiTextPipe
         efiTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: efiTextPipe.fileHandleForReading , queue: nil) {
-            notification in
-            let output = self.efiTextPipe.fileHandleForReading.availableData
-            let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-            DispatchQueue.main.async(execute: {
-                let previousOutput = self.efiOutPut.string
-                let nextOutput = previousOutput + "\n" + outputString
-                self.efiOutPut.string = nextOutput
-                let range = NSRange(location:nextOutput.count,length:0)
-                self.efiOutPut.scrollRangeToVisible(range)
-                self.progressBar.increment(by: 1.9)
-            })
-            self.efiTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: efiTextPipe.fileHandleForReading , queue: nil) { notification in
+            let output = efiTextPipe.fileHandleForReading.availableData
+            if output.count > 0 {
+                efiTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+                DispatchQueue.main.async(execute: {
+                    let previousOutput = self.efiOutPut.string
+                    let nextOutput = previousOutput + "\n" + outputString
+                    self.efiOutPut.string = nextOutput
+                    let range = NSRange(location:nextOutput.count, length:0)
+                    self.efiOutPut.scrollRangeToVisible(range)
+                    self.progressBar.increment(by: 1.9)
+                })
+            }
         }
     }
 }

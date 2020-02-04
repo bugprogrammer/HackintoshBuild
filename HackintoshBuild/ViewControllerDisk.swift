@@ -11,15 +11,13 @@ import Cocoa
 class ViewControllerDisk: NSViewController {
         
     @IBOutlet weak var diskTableView: NSTableView!
-    var task:Process!
-    var outputPipe:Pipe!
+    
     var diskInfo:String = ""
     var arrayPartition:[String] = []
     var flag:Int = 0
     var mount:String = ""
     
     let taskQueue = DispatchQueue.global(qos: .background)
-    let lock = NSLock()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +27,7 @@ class ViewControllerDisk: NSViewController {
     }
     
     func runBuildScripts(_ shell: String,_ arguments: [String]) {
+        AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
@@ -37,7 +36,7 @@ class ViewControllerDisk: NSViewController {
                 task.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
-                        self.lock.lock()
+                        AraHUDViewController.shared.hideHUD()
                         if self.flag == 0 {
                             self.arrayPartition = self.diskInfo.components(separatedBy:"\n")
                             if self.arrayPartition.last == "" {
@@ -56,18 +55,18 @@ class ViewControllerDisk: NSViewController {
                             if !self.arrayPartition.last!.contains(" ") {
                                 self.arrayPartition.removeLast()
                             }
-                            
-
-                            print(self.diskInfo)
+                            MyLog(self.diskInfo)
                             self.diskTableView.reloadData()
                             self.flag = 1
-                        }
-                        else {
+                        } else {
                             let alert = NSAlert()
-                            alert.messageText = "EFI挂载成功"
+                            if self.diskInfo.contains("mounted") {
+                                alert.messageText = "EFI 挂载成功"
+                            } else {
+                                alert.messageText = "EFI 挂载失败"
+                            }
                             alert.runModal()
                         }
-                        self.lock.unlock()
                     })
                 }
                 self.taskOutPut(task)
@@ -79,19 +78,21 @@ class ViewControllerDisk: NSViewController {
     
     func taskOutPut(_ task:Process) {
         diskInfo = ""
-        outputPipe = Pipe()
+        let outputPipe = Pipe()
         task.standardOutput = outputPipe
         outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) {
-            notification in
-            let output = self.outputPipe.fileHandleForReading.availableData
-            let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-            DispatchQueue.main.async(execute: {
-                let previousOutput = self.diskInfo
-                let nextOutput = previousOutput + outputString
-                self.diskInfo = nextOutput
-            })
-            self.outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading, queue: nil) { notification in
+            let output = outputPipe.fileHandleForReading.availableData
+            if output.count > 0 {
+                outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+                DispatchQueue.main.async(execute: {
+                    let previousOutput = self.diskInfo
+                    let nextOutput = previousOutput + outputString
+                    self.diskInfo = nextOutput
+                })
+            }
         }
     }
     

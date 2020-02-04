@@ -12,12 +12,46 @@ public var isSIPStatusEnabled: Bool? = nil
 
 class BaseWindowController: NSWindowController {
 
+    lazy var buildVC: ViewControllerBuild = {
+        return MyTool.getViewControllerFromMain(ViewControllerBuild.self)
+    }()
+    
+    lazy var EFIVC: ViewControllerEFI = {
+        return MyTool.getViewControllerFromMain(ViewControllerEFI.self)
+    }()
+    
+    lazy var diskVC: ViewControllerDisk = {
+        return MyTool.getViewControllerFromMain(ViewControllerDisk.self)
+    }()
+    
+    lazy var nvramVC: ViewControllerNvram = {
+        return MyTool.getViewControllerFromMain(ViewControllerNvram.self)
+    }()
+    
+    lazy var lockVC: ViewControllerLock = {
+        return MyTool.getViewControllerFromMain(ViewControllerLock.self)
+    }()
+    
+    lazy var otherVC: ViewControllerOther = {
+        return MyTool.getViewControllerFromMain(ViewControllerOther.self)
+    }()
+    
     let buildIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.buildIdentifier")
     let efiIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.efiIdentifier")
     let diskIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.diskIdentifier")
     let nvramIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.nvramIdentifier")
     let lockIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.lockIdentifier")
     let otherIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.otherIdentifier")
+    
+    lazy var toolBar: NSToolbar = {
+        let toolBar = NSToolbar(identifier: "bugprogrammer.HackintoshBuild.NSToolbar.MyToolbar")
+//        toolBar.allowsUserCustomization = false
+//        toolBar.autosavesConfiguration = false
+        toolBar.displayMode = .iconAndLabel
+        toolBar.sizeMode = .default
+        toolBar.delegate = self
+        return toolBar
+    }()
     
     let taskQueue = DispatchQueue.global(qos: .background)
     let lock = NSLock()
@@ -27,7 +61,11 @@ class BaseWindowController: NSWindowController {
     
     override func windowDidLoad() {
         super.windowDidLoad()
-        setupToolbar()
+        
+        self.window?.toolbar = toolBar
+        toolBar.selectedItemIdentifier = buildIdentifier
+        self.window?.contentViewController = buildVC
+        
         runBuildScripts("sipStatus", [], "")
     }
     
@@ -69,17 +107,6 @@ class BaseWindowController: NSWindowController {
                 }
             }
         }
-    }
-    
-    func setupToolbar() {
-        let toolBar = NSToolbar(identifier: "bugprogrammer.HackintoshBuild.NSToolbar.MyToolbar")
-//        toolBar.allowsUserCustomization = false
-//        toolBar.autosavesConfiguration = false
-        toolBar.displayMode = .iconAndLabel
-        toolBar.sizeMode = .default
-        toolBar.delegate = self
-        toolBar.selectedItemIdentifier = buildIdentifier
-        self.window?.toolbar = toolBar // retain
     }
 
 }
@@ -154,23 +181,23 @@ extension BaseWindowController: NSToolbarDelegate {
     @objc func toolbarItemDidTapped(_ item: NSToolbarItem) {
         switch item.itemIdentifier {
         case buildIdentifier:
-            self.window?.contentViewController = MyTool.getViewControllerFromMain(ViewControllerBuild.self)
+            self.window?.contentViewController = buildVC
             break
         case efiIdentifier:
-            self.window?.contentViewController = MyTool.getViewControllerFromMain(ViewControllerEFI.self)
+            self.window?.contentViewController = EFIVC
             break
         case diskIdentifier:
-            self.window?.contentViewController = MyTool.getViewControllerFromMain(ViewControllerDisk.self)
+            self.window?.contentViewController = diskVC
             break
         case nvramIdentifier:
-            self.window?.contentViewController = MyTool.getViewControllerFromMain(ViewControllerNvram.self)
+            self.window?.contentViewController = nvramVC
             break
         
         case lockIdentifier:
-            self.window?.contentViewController = MyTool.getViewControllerFromMain(ViewControllerLock.self)
+            self.window?.contentViewController = lockVC
             break
         case otherIdentifier:
-            self.window?.contentViewController = MyTool.getViewControllerFromMain(ViewControllerOther.self)
+            self.window?.contentViewController = otherVC
             break
         default:
             break

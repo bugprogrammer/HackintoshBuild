@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="AraHUDView" customModule="HackintoshBuild" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="TEY-We-xjQ">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="130"/>
+                    <subviews>
+                        <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y83-tL-WZn">
+                            <rect key="frame" x="0.0" y="35" width="150" height="61"/>
+                            <subviews>
+                                <progressIndicator wantsLayer="YES" maxValue="100" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="4Oy-gm-d7L">
+                                    <rect key="frame" x="59" y="29" width="32" height="32"/>
+                                </progressIndicator>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="GvE-Qa-CxJ">
+                                    <rect key="frame" x="57" y="0.0" width="37" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="kPk-C7-5Q4"/>
+                                    </constraints>
+                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="6pI-C1-jU6">
+                                        <font key="font" usesAppearanceFont="YES"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Y83-tL-WZn" firstAttribute="centerX" secondItem="TEY-We-xjQ" secondAttribute="centerX" id="6jq-id-Dsp"/>
+                        <constraint firstAttribute="height" constant="130" id="DYR-sc-bKX"/>
+                        <constraint firstItem="Y83-tL-WZn" firstAttribute="centerY" secondItem="TEY-We-xjQ" secondAttribute="centerY" id="HJr-Vc-l5p"/>
+                        <constraint firstAttribute="width" constant="150" id="qFg-bT-wpi"/>
+                        <constraint firstItem="Y83-tL-WZn" firstAttribute="leading" secondItem="TEY-We-xjQ" secondAttribute="leading" id="uvW-yZ-Qnn"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="TEY-We-xjQ" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="Vqm-T5-RpT"/>
+                <constraint firstItem="TEY-We-xjQ" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="r7D-jT-k50"/>
+            </constraints>
+            <connections>
+                <outlet property="progressIndicator" destination="4Oy-gm-d7L" id="hMX-TF-N59"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="154"/>
+        </customView>
+    </objects>
+</document>

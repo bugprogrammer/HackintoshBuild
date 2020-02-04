@@ -54,12 +54,11 @@ class ViewControllerBuild: NSViewController {
         
         super.viewDidLoad()
         
-        stopButton.isEnabled = false
-        progressBar.isHidden = true
+        resetStatus(isRunning: false)
         
         proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
         proxyTextField.stringValue = ""
-        proxyTextField.resignFirstResponder()
+        proxyTextField.refusesFirstResponder = true
         
         if let kextLocation = UserDefaults.standard.url(forKey: "kextLocation") {
             if FileManager.default.fileExists(atPath: kextLocation.path) {
@@ -70,29 +69,35 @@ class ViewControllerBuild: NSViewController {
         self.pluginsView.reloadData()
     }
     
-    var isRunning = false
-    var buildTextPipe: Pipe!
     var buildTask: Process!
     var itemsArr: [String] = []
     var itemsSting: String = ""
     
-    @IBAction func startBuild(_ sender: Any) {
-        
-        if let buildURL = buildLocation.url {
-            UserDefaults.standard.set(buildURL, forKey: "kextLocation")
-            
-            var arguments: [String] = []
-            
+    private func resetStatus(isRunning: Bool) {
+        if isRunning {
             stopButton.isEnabled = true
             progressBar.isHidden = false
             buildText.string = ""
             buildButton.isEnabled = false
             progressBar.startAnimation(self)
+        } else {
+            stopButton.isEnabled = false
+            buildButton.isEnabled = true
+            progressBar.stopAnimation(self)
+            progressBar.doubleValue = 0.0
+            progressBar.isHidden = true
+        }
+    }
+    
+    @IBAction func startBuild(_ sender: Any) {
+        
+        if let buildURL = buildLocation.url {
+            UserDefaults.standard.set(buildURL, forKey: "kextLocation")
+            var arguments: [String] = []
             itemsSting = itemsArr.joined(separator: ",")
             arguments.append(buildURL.path)
             arguments.append(itemsSting)
             arguments.append(proxyTextField.stringValue)
-
             runBuildScripts(arguments)
             MyLog(arguments)
         } else {
@@ -104,16 +109,12 @@ class ViewControllerBuild: NSViewController {
     }
     
     @IBAction func stopBuild(_ sender: Any) {
-        stopButton.isEnabled = false
-        progressBar.isHidden = true
-        if isRunning {
-            self.progressBar.doubleValue = 0.0
+        if buildTask.suspend() {
             buildTask.terminate()
         }
     }
     
     @IBAction func CheckClicked(_ sender: NSButton) {
-        
         switch sender.state {
         case .on:
             itemsArr.append(String(pluginsView.row(for: sender)))
@@ -133,49 +134,44 @@ class ViewControllerBuild: NSViewController {
     }
     
     func runBuildScripts(_ arguments: [String]) {
-        isRunning = true
+        self.resetStatus(isRunning: true)
         taskQueue.async {
             if let path = Bundle.main.path(forResource: "Hackintosh_build", ofType:"command") {
-                let buildTask = Process()
-                buildTask.launchPath = path
-                buildTask.arguments = arguments
-                buildTask.terminationHandler = { task in
-                DispatchQueue.main.async(execute: { [weak self] in
-                    guard let `self` = self else { return }
-                    self.lock.lock()
-                        self.stopButton.isEnabled = false
-                        self.buildButton.isEnabled = true
-                        self.progressBar.isHidden = true
-                        self.progressBar.stopAnimation(self)
-                        self.progressBar.doubleValue = 0.0
-                        self.isRunning = false
-                    self.lock.unlock()
+                self.buildTask = Process()
+                self.buildTask.launchPath = path
+                self.buildTask.arguments = arguments
+                self.buildTask.terminationHandler = { task in
+                    DispatchQueue.main.async(execute: { [weak self] in
+                        guard let `self` = self else { return }
+                        self.resetStatus(isRunning: false)
                     })
                 }
-                self.buildOutPut(buildTask)
-                buildTask.launch()
-                buildTask.waitUntilExit()
+                self.buildOutPut(self.buildTask)
+                self.buildTask.launch()
+                self.buildTask.waitUntilExit()
             }
         }
     }
     
-    func buildOutPut(_ task:Process) {
-        buildTextPipe = Pipe()
+    func buildOutPut(_ task: Process) {
+        let buildTextPipe = Pipe()
         task.standardOutput = buildTextPipe
         buildTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: buildTextPipe.fileHandleForReading , queue: nil) {
-            notification in
-            let output = self.buildTextPipe.fileHandleForReading.availableData
-            let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-            DispatchQueue.main.async(execute: {
-                let previousOutput = self.buildText.string
-                let nextOutput = previousOutput + "\n" + outputString
-                self.buildText.string = nextOutput
-                let range = NSRange(location:nextOutput.count,length:0)
-                self.buildText.scrollRangeToVisible(range)
-                self.progressBar.increment(by: 1.9)
-            })
-            self.buildTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: buildTextPipe.fileHandleForReading , queue: nil) { notification in
+            let output = buildTextPipe.fileHandleForReading.availableData
+            if output.count > 0 {
+                buildTextPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+                DispatchQueue.main.async(execute: {
+                    let previousOutput = self.buildText.string
+                    let nextOutput = previousOutput + "\n" + outputString
+                    self.buildText.string = nextOutput
+                    let range = NSRange(location:nextOutput.count, length:0)
+                    self.buildText.scrollRangeToVisible(range)
+                    self.progressBar.increment(by: 1.9)
+                })
+            }
         }
     }
 

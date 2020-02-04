@@ -14,33 +14,15 @@ class ViewControllerLock: NSViewController {
     @IBOutlet weak var resetButton: NSButton!
     @IBOutlet weak var lockImageView: NSImageView!
     @IBOutlet weak var locationImage: NSPathControl!
-    @IBOutlet weak var sipLabel: NSTextField!
-    var task: Process!
     
     let taskQueue = DispatchQueue.global(qos: .background)
-    let lock = NSLock()
+    var output: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        guard let enabled = isSIPStatusEnabled else {
-            sipLabel.textColor = NSColor.red
-            sipLabel.stringValue = "SIP状态未知"
-            replaceButton.isEnabled = false
-            resetButton.isEnabled = false
-            return
-        }
-        if enabled {
-            sipLabel.textColor = NSColor.red
-            sipLabel.stringValue = "SIP未关闭，请先关闭SIP"
-            replaceButton.isEnabled = false
-            resetButton.isEnabled = false
-        } else {
-            sipLabel.textColor = NSColor.green
-            sipLabel.stringValue = "SIP已关闭"
-            replaceButton.isEnabled = false
-            resetButton.isEnabled = true
-        }
+        replaceButton.isEnabled = false
+        resetButton.isEnabled = true
     }
     
     func selectedImage(_ url: String) -> Bool {
@@ -51,17 +33,6 @@ class ViewControllerLock: NSViewController {
             return true
         } else {
             lockImageView.image = NSImage()
-            
-            guard let enabled = isSIPStatusEnabled else {
-                return false
-            }
-            if enabled {
-                self.replaceButton.isEnabled = false
-                self.resetButton.isEnabled = false
-            } else {
-                self.replaceButton.isEnabled = false
-                self.resetButton.isEnabled = true
-            }
             let alert = NSAlert()
             alert.messageText = "请选择PNG格式图片"
             alert.runModal()
@@ -72,11 +43,10 @@ class ViewControllerLock: NSViewController {
     @IBAction func showPicture(_ sender: Any) {
         if let urlImage = locationImage.url {
             let isPNG = selectedImage(urlImage.path)
-            if isSIPStatusEnabled == false && isPNG {
+            if isPNG {
                 replaceButton.isEnabled = true
                 resetButton.isEnabled = true
             }
-            MyLog(urlImage.path)
         }
     }
     
@@ -92,23 +62,47 @@ class ViewControllerLock: NSViewController {
     }
     
     func runBuildScripts(_ shell: String,_ arguments: [String], _ alertText: String) {
+        output = ""
+        AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
                 task.launchPath = path
                 task.arguments = arguments
                 task.terminationHandler = { task in
-                    DispatchQueue.main.async(execute: { [weak self] in
-                        guard let `self` = self else { return }
-                        self.lock.lock()
+                    DispatchQueue.main.async(execute: {
+                        AraHUDViewController.shared.hideHUD()
                         let alert = NSAlert()
-                        alert.messageText = alertText
+                        if self.output.contains("success") {
+                            alert.messageText = alertText
+                        } else {
+                            alert.messageText = "操作失败"
+                        }
                         alert.runModal()
-                        self.lock.unlock()
                     })
                 }
+                self.taskOutPut(task)
                 task.launch()
                 task.waitUntilExit()
+            }
+        }
+    }
+    
+    func taskOutPut(_ task:Process) {
+        let outputPipe = Pipe()
+        task.standardOutput = outputPipe
+        outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) { notification in
+            let output = outputPipe.fileHandleForReading.availableData
+            if output.count > 0 {
+                outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+                DispatchQueue.main.async(execute: {
+                    let previousOutput = self.output
+                    let nextOutput = previousOutput + "\n" + outputString
+                    self.output = nextOutput
+                })
             }
         }
     }
