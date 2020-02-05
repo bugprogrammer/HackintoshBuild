@@ -9,6 +9,7 @@
 import Cocoa
 
 public var isSIPStatusEnabled: Bool? = nil
+public var proxy: String? = UserDefaults.standard.string(forKey: "proxy")
 
 class BaseWindowController: NSWindowController {
 
@@ -54,8 +55,6 @@ class BaseWindowController: NSWindowController {
     }()
     
     let taskQueue = DispatchQueue.global(qos: .background)
-    let lock = NSLock()
-    var task: Process!
     var outputPipe: Pipe!
     var sipStatusOutPut: String = ""
     
