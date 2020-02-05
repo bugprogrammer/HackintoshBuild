@@ -23,7 +23,6 @@ class ViewControllerBuild: NSViewController {
     @IBOutlet weak var proxyTextField: NSTextField!
     
     let taskQueue = DispatchQueue.global(qos: .background)
-    let lock = NSLock()
     
     let pluginsList: [String] = [
         "Clover(时间较长)",
@@ -48,16 +47,20 @@ class ViewControllerBuild: NSViewController {
         "RTL8111",
         "NVMeFix"
     ]
-
+    
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        
+        proxyTextField.stringValue = proxy ?? ""
+    }
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
         resetStatus(isRunning: false)
         
         proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
-        proxyTextField.stringValue = ""
+        proxyTextField.delegate = self
         proxyTextField.refusesFirstResponder = true
         
         if let kextLocation = UserDefaults.standard.url(forKey: "kextLocation") {
@@ -65,7 +68,6 @@ class ViewControllerBuild: NSViewController {
                 self.buildLocation.url = kextLocation
             }
         }
-        
         self.pluginsView.reloadData()
     }
     
@@ -90,7 +92,7 @@ class ViewControllerBuild: NSViewController {
     }
     
     @IBAction func startBuild(_ sender: Any) {
-        
+        UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
         if let buildURL = buildLocation.url {
             UserDefaults.standard.set(buildURL, forKey: "kextLocation")
             var arguments: [String] = []
@@ -185,6 +187,16 @@ extension ViewControllerBuild: NSTableViewDataSource {
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
         return pluginsList[row]
+    }
+    
+}
+
+extension ViewControllerBuild: NSTextFieldDelegate {
+    
+    func controlTextDidChange(_ obj: Notification) {
+        if let textField = obj.object as? NSTextField {
+            proxy = textField.stringValue
+        }
     }
     
 }

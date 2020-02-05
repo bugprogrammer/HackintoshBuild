@@ -34,13 +34,19 @@ class ViewControllerEFI: NSViewController {
         "dell-7000"
     ]
     
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        
+        proxyTextField.stringValue = proxy ?? ""
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         resetStatus(isRunning: false)
         
         proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
-        proxyTextField.stringValue = ""
+        proxyTextField.delegate = self
         proxyTextField.refusesFirstResponder = true
         
         if let efiLocation = UserDefaults.standard.url(forKey: "efiLocation") {
@@ -73,6 +79,7 @@ class ViewControllerEFI: NSViewController {
     }
     
     @IBAction func efiStart(_ sender: Any) {
+        UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
         if let efiURL = efiLocation.url {
             UserDefaults.standard.set(efiURL, forKey: "efiLocation")
             var arguments: [String] = []
@@ -159,6 +166,16 @@ extension ViewControllerEFI: NSTableViewDataSource {
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
         return efiList[row]
+    }
+    
+}
+
+extension ViewControllerEFI: NSTextFieldDelegate {
+    
+    func controlTextDidChange(_ obj: Notification) {
+        if let textField = obj.object as? NSTextField {
+            proxy = textField.stringValue
+        }
     }
     
 }
