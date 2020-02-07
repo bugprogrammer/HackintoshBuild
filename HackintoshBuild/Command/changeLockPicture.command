@@ -1,11 +1,10 @@
-#!/bin/bash
+#!/usr/bin/osascript
 
-userUUID=$(dscl . read /Users/$(whoami) | grep GeneratedUID | awk '{print $NF}')
-cd /Library/Caches/
-if [ ! -e Desktop\ Pictures ]; then
-    mkdir -p Desktop\ Pictures/$userUUID
-fi
-cd Desktop\ Pictures/$userUUID
-cp -f $1 lockscreen.png
+on run argv
+    set userUUID to do shell script "(dscl . read /Users/$(whoami) | grep GeneratedUID | awk '{print $NF}')"
+    do shell script "cd /Library/Caches/; if [ ! -e Desktop\\ Pictures ]; then\n mkdir -p Desktop\\ Pictures/" & quoted form of userUUID & "\n fi" with administrator privileges
+    do shell script "sudo chown -R _securityagent /Library/Caches/Desktop\\ Pictures"  with administrator privileges
+    do shell script "cd /Library/Caches/Desktop\\ Pictures/" & quoted form of userUUID & "; cp -f " & quoted form of (item 1 of argv) & " lockscreen.png" with administrator privileges
+    return "success"
+end run
 
-echo "success"

@@ -21,8 +21,10 @@
 		11D5C27823D1B11300461A78 /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27723D1B11300461A78 /* BaseWindowController.swift */; };
 		11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27923D1B63700461A78 /* MyAsset.swift */; };
 		6A0D773D23C7A917003F5C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0D773C23C7A744003F5C3A /* Main.storyboard */; };
+		6A1E689023EDD26A0070A11E /* timeMachineReset.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A1E688F23EDD26A0070A11E /* timeMachineReset.command */; };
 		6A2D271123DF324100238E46 /* ViewControllerNvram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D271023DF324100238E46 /* ViewControllerNvram.swift */; };
 		6A2D271423DF364300238E46 /* nvramKeys.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A2D271323DF364300238E46 /* nvramKeys.command */; };
+		6A35D15523EDCE500077C92E /* timeMachineOptimize.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A35D15423EDCE500077C92E /* timeMachineOptimize.command */; };
 		6A427D1323E459BD00A0B4E3 /* ViewControllerLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A427D1223E459BC00A0B4E3 /* ViewControllerLock.swift */; };
 		6A427D1623E4618F00A0B4E3 /* changeLockPicture.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */; };
 		6A4A9FA323E59F86008D8EF8 /* sipStatus.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A4A9FA223E59F86008D8EF8 /* sipStatus.command */; };
@@ -78,8 +80,10 @@
 		11D5C27723D1B11300461A78 /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
 		11D5C27923D1B63700461A78 /* MyAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsset.swift; sourceTree = "<group>"; };
 		6A0D773C23C7A744003F5C3A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A1E688F23EDD26A0070A11E /* timeMachineReset.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = timeMachineReset.command; sourceTree = "<group>"; };
 		6A2D271023DF324100238E46 /* ViewControllerNvram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNvram.swift; sourceTree = "<group>"; };
 		6A2D271323DF364300238E46 /* nvramKeys.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = nvramKeys.command; sourceTree = "<group>"; };
+		6A35D15423EDCE500077C92E /* timeMachineOptimize.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = timeMachineOptimize.command; sourceTree = "<group>"; };
 		6A427D1223E459BC00A0B4E3 /* ViewControllerLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLock.swift; sourceTree = "<group>"; };
 		6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = changeLockPicture.command; sourceTree = "<group>"; };
 		6A4A9FA223E59F86008D8EF8 /* sipStatus.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = sipStatus.command; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 				6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */,
 				6AA6EE0623E5859900BF15FD /* resetLockPicture.command */,
 				6A4A9FA223E59F86008D8EF8 /* sipStatus.command */,
+				6A35D15423EDCE500077C92E /* timeMachineOptimize.command */,
+				6A1E688F23EDD26A0070A11E /* timeMachineReset.command */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -299,10 +305,12 @@
 				6A427D1623E4618F00A0B4E3 /* changeLockPicture.command in Resources */,
 				116D2D8D23D6C540001FED06 /* rebuildCache.command in Resources */,
 				6A7A719123D845DB0082FA94 /* diskInfo.command in Resources */,
+				6A1E689023EDD26A0070A11E /* timeMachineReset.command in Resources */,
 				6AAB82D023D22C0E00ACFB81 /* getEFI.command in Resources */,
 				6A4A9FA323E59F86008D8EF8 /* sipStatus.command in Resources */,
 				116D2D8B23D6C528001FED06 /* unlockSLE.command in Resources */,
 				6A2D271423DF364300238E46 /* nvramKeys.command in Resources */,
+				6A35D15523EDCE500077C92E /* timeMachineOptimize.command in Resources */,
 				117B27B023E9485C00581352 /* AraHUDView.xib in Resources */,
 				6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */,
 			);
@@ -456,8 +464,8 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = B84MTH5WF4;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = LM4G3WSD5B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,7 +477,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,8 +494,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = B84MTH5WF4;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = LM4G3WSD5B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -499,7 +507,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
