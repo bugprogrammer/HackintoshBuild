@@ -1,0 +1,9 @@
+[
+{"data":{"title":"LocationID"},"attr":{"id":"47642","ColType":"Number","ColValue":"1508293191"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"47644","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"idVendor"},"attr":{"id":"47646","ColType":"Number","ColValue":"76"}},
+{"data":{"title":"idProduct"},"attr":{"id":"47648","ColType":"Number","ColValue":"617"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"47650","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"KeyholeReportID"},"attr":{"id":"47652","ColType":"Number","ColValue":"242"}},
+{"data":{"title":"Bluetooth Product Name"},"attr":{"id":"47654","ColType":"String","ColValue":"Magic Mouse 2"}}
+]

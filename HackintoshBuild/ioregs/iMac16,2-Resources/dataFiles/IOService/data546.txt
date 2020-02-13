@@ -1,0 +1,8 @@
+[
+{"data":{"title":"autodiskmount"},"attr":{"id":"22041","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Device Characteristics"},"attr":{"id":"22043","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Vendor Name"},"attr":{"id":"22045","ColType":"String","ColValue":"Apple"}},{"data":{"title":"Product Name"},"attr":{"id":"22047","ColType":"String","ColValue":"Disk Image"}},{"data":{"title":"Product Revision Level"},"attr":{"id":"22049","ColType":"String","ColValue":"10.11v415"}}]},
+{"data":{"title":"throttle-unit"},"attr":{"id":"22051","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"22053","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"22055","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"22057","ColType":"String","ColValue":"File"}},{"data":{"title":"Virtual Interface Location Path"},"attr":{"id":"22059","ColType":"Data","ColValue":"&lt;\"/Users/evdakimov/Desktop/Hackintosh Vietnam Tool 1.9.6 (1).dmg\"&gt;"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"22061","ColType":"String","ColValue":"Virtual Interface"}}]},
+{"data":{"title":"device-type"},"attr":{"id":"22063","ColType":"String","ColValue":"Generic"}}
+]

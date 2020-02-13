@@ -1,0 +1,13 @@
+[
+{"data":{"title":"ODSSupported"},"attr":{"id":"5495","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"5497","ColType":"String","ColValue":"IOPlatformPluginDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"5499","ColType":"String","ColValue":"IOPlatformEnabler"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"5501","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"5503","ColType":"String","ColValue":"IOPlatformEnabler"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"5505","ColType":"Number","ColValue":"20000"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"5507","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CFB68B9A-40AF-437A-AFFE-FE671C6193C5"},"attr":{"id":"5509","ColType":"String","ColValue":"ApplePlatformEnabler.kext/Contents/PlugIns/ApplePlatformEnablerLib.plugin"}}]},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"5511","ColType":"String","ColValue":"com.apple.driver.ApplePlatformEnabler"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"5513","ColType":"String","ColValue":"ApplePlatformEnablerUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"5515","ColType":"String","ColValue":"ApplePlatformEnabler"}},
+{"data":{"title":"DVDSupported"},"attr":{"id":"5517","ColType":"Boolean","ColValue":"Yes"}}
+]

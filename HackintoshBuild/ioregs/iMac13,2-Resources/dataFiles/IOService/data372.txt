@@ -1,0 +1,17 @@
+[
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"16135","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"2d9786c6-9ef3-11d4-ad51-000a27052861"},"attr":{"id":"16137","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"idProduct"},"attr":{"id":"16139","ColType":"Number","ColValue":"2077"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"16141","ColType":"String","ColValue":"IOUSBInterfaceUserClientV3"}},
+{"data":{"title":"iInterface"},"attr":{"id":"16143","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bAlternateSetting"},"attr":{"id":"16145","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"16147","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"AppleUSBAudioStreamPropertiesReady"},"attr":{"id":"16149","ColType":"String","ColValue":"Yes"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"16151","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"16153","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"16155","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"idVendor"},"attr":{"id":"16157","ColType":"Number","ColValue":"1133"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"16159","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"locationID"},"attr":{"id":"16161","ColType":"Number","ColValue":"487784448"}},
+{"data":{"title":"bNumEndpoints"},"attr":{"id":"16163","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bcdDevice"},"attr":{"id":"16165","ColType":"Number","ColValue":"16"}}
+]

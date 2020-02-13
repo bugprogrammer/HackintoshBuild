@@ -1,0 +1,15 @@
+[
+{"data":{"title":"efi-boot-device-data"},"attr":{"id":"21134","ColType":"Data","ColValue":"&lt;02010c00d041030a0000000001010600001c01010600000003120a0000000000000004012a0003000000d8ff1b0e00000000000004000000000064e27de924e3d445b3eebad942502a8902027fff0400&gt;"}},
+{"data":{"title":"backlight-level"},"attr":{"id":"21136","ColType":"Data","ColValue":"&lt;72e6&gt;"}},
+{"data":{"title":"bluetoothInternalControllerInfo"},"attr":{"id":"21138","ColType":"Data","ColValue":"&lt;8d82ac05000083148863dfb34c2e&gt;"}},
+{"data":{"title":"boot-gamma"},"attr":{"id":"21140","ColType":"Data","ColValue":"&lt;1006000003ae0000000000003200000000000000020080808080818180800200808080808181808002008080808081818080&gt;"}},
+{"data":{"title":"efi-boot-device"},"attr":{"id":"21142","ColType":"String","ColValue":"<array><dict><key>IOMatch</key><dict><key>IOProviderClass</key><string>IOMedia</string><key>IOPropertyMatch</key><dict><key>UUID</key><string>E97DE264-E324-45D4-B3EE-BAD942502A89</string></dict></dict><key>BLLastBSDName</key><string>disk0s3</string></dict></array>"}},
+{"data":{"title":"LocationServicesEnabled"},"attr":{"id":"21144","ColType":"Data","ColValue":"&lt;01&gt;"}},
+{"data":{"title":"display-config"},"attr":{"id":"21146","ColType":"Data","ColValue":"&lt;000025017308ffff0100&gt;"}},
+{"data":{"title":"SystemAudioVolumeDB"},"attr":{"id":"21148","ColType":"Data","ColValue":"&lt;fd&gt;"}},
+{"data":{"title":"EFIBluetoothDelay"},"attr":{"id":"21150","ColType":"Data","ColValue":"&lt;b80b&gt;"}},
+{"data":{"title":"SystemAudioVolume"},"attr":{"id":"21152","ColType":"Data","ColValue":"&lt;6c&gt;"}},
+{"data":{"title":"bluetoothActiveControllerInfo"},"attr":{"id":"21154","ColType":"Data","ColValue":"&lt;8d82ac050200000083148863dfb34c2e&gt;"}},
+{"data":{"title":"BootCampProcessorPstates"},"attr":{"id":"21156","ColType":"Data","ColValue":"&lt;0e00&gt;"}},
+{"data":{"title":"fmm-computer-name"},"attr":{"id":"21158","ColType":"Data","ColValue":"&lt;\"Left Table RC - iMac (2)\"&gt;"}}
+]

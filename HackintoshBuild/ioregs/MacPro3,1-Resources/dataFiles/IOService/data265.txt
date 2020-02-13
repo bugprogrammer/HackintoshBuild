@@ -1,0 +1,16 @@
+[
+{"data":{"title":"IsochTransmitContextCount"},"attr":{"id":"11838","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"PHY Vendor_ID"},"attr":{"id":"11840","ColType":"Number","ColValue":"524328"}},
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"11842","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"PHY Device_ID"},"attr":{"id":"11844","ColType":"Number","ColValue":"8590086"}},
+{"data":{"title":"IsochReceiveContextCount"},"attr":{"id":"11846","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"11848","ColType":"String","ColValue":"com.apple.driver.AppleFWOHCI"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"11850","ColType":"String","ColValue":"pciclass,0c0010"}},
+{"data":{"title":"IOClass"},"attr":{"id":"11852","ColType":"String","ColValue":"AppleFWOHCI"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"11854","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"11856","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CFBundleVersion"},"attr":{"id":"11858","ColType":"String","ColValue":"4.9.6"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"11860","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"11861","ColType":"String","ColValue":"pciclass,0c0010"}}]},
+{"data":{"title":"RcvPhyPkt"},"attr":{"id":"11863","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"11865","ColType":"String","ColValue":"IOPCIDevice"}}
+]

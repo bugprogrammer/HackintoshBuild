@@ -1,0 +1,21 @@
+[
+{"data":{"title":"Leaf"},"attr":{"id":"6502","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Writable"},"attr":{"id":"6504","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BSD Minor"},"attr":{"id":"6506","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"6508","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"6510","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"Partition ID"},"attr":{"id":"6512","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Preferred Block Size"},"attr":{"id":"6514","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"UUID"},"attr":{"id":"6516","ColType":"String","ColValue":"92BB4E7D-A25B-44E4-AE56-492EEEA965E5"}},
+{"data":{"title":"BSD Major"},"attr":{"id":"6518","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"6520","ColType":"String","ColValue":"disk2s2"}},
+{"data":{"title":"Size"},"attr":{"id":"6522","ColType":"Number","ColValue":"4000443056128"}},
+{"data":{"title":"Content Hint"},"attr":{"id":"6524","ColType":"String","ColValue":"52414944-0000-11AA-AA11-00306543ECAC"}},
+{"data":{"title":"Base"},"attr":{"id":"6526","ColType":"Number","ColValue":"209735680"}},
+{"data":{"title":"Removable"},"attr":{"id":"6528","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Open"},"attr":{"id":"6530","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BSD Unit"},"attr":{"id":"6532","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Whole"},"attr":{"id":"6534","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Content"},"attr":{"id":"6536","ColType":"String","ColValue":"52414944-0000-11AA-AA11-00306543ECAC"}},
+{"data":{"title":"Ejectable"},"attr":{"id":"6538","ColType":"Boolean","ColValue":"No"}}
+]

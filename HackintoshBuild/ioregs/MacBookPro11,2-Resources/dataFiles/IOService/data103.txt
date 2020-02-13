@@ -1,0 +1,20 @@
+[
+{"data":{"title":"Revision ID"},"attr":{"id":"7382","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Route String"},"attr":{"id":"7384","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Thunderbolt Version"},"attr":{"id":"7386","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"DPP Crossed"},"attr":{"id":"7388","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"UID"},"attr":{"id":"7390","ColType":"Number","ColValue":"281539477851280"}},
+{"data":{"title":"Device Vendor ID"},"attr":{"id":"7392","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Device Model Name"},"attr":{"id":"7394","ColType":"String","ColValue":"Macintosh"}},
+{"data":{"title":"Upstream Port Number"},"attr":{"id":"7396","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"Device Vendor Name"},"attr":{"id":"7398","ColType":"String","ColValue":"Apple Inc."}},
+{"data":{"title":"Device Model ID"},"attr":{"id":"7400","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"Max Port Number"},"attr":{"id":"7402","ColType":"Number","ColValue":"12"}},
+{"data":{"title":"Device Model Revision"},"attr":{"id":"7404","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Depth"},"attr":{"id":"7406","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"ROM Version"},"attr":{"id":"7408","ColType":"Number","ColValue":"23"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"7410","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"7412","ColType":"Number","ColValue":"0"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"7414","ColType":"Number","ColValue":"2"}},{"data":{"title":"DesiredPowerState"},"attr":{"id":"7416","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"7418","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"EEPROM Revision"},"attr":{"id":"7420","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Device ID"},"attr":{"id":"7422","ColType":"Number","ColValue":"5485"}},
+{"data":{"title":"Vendor ID"},"attr":{"id":"7424","ColType":"Number","ColValue":"32902"}}
+]

@@ -1,0 +1,6 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3370","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"3372","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3374","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"rom-version"},"attr":{"id":"3376","ColType":"String","ColValue":"03000003"}},{"data":{"title":"acpi-path"},"attr":{"id":"3378","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PEG0@10000/BR00@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"3380","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"3382","ColType":"Boolean","ColValue":"Yes"}}
+]

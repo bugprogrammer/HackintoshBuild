@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"3517","ColType":"String","ColValue":"X86PlatformPlugin"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"3519","ColType":"String","ColValue":"X86PlatformPlugin"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"3521","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"3523","ColType":"String","ColValue":"X86PlatformPlugin"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"3525","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"3527","ColType":"String","ColValue":"com.apple.driver.X86PlatformShim"}},
+{"data":{"title":"IOClass"},"attr":{"id":"3529","ColType":"String","ColValue":"X86PlatformShim"}}
+]

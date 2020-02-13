@@ -1,0 +1,12 @@
+[
+{"data":{"title":"Manufacturer"},"attr":{"id":"48883","ColType":"String","ColValue":"Apple Inc."}},
+{"data":{"title":"Product"},"attr":{"id":"48885","ColType":"String","ColValue":"Apple Internal Keyboard / Trackpad"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"48887","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"48888","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"48890","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"48892","ColType":"Number","ColValue":"2"}}]},{"data":{"title":"1"},"attr":{"id":"48893","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"48895","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"48897","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"ProductID"},"attr":{"id":"48899","ColType":"Number","ColValue":"611"}},
+{"data":{"title":"VendorID"},"attr":{"id":"48901","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"Transport"},"attr":{"id":"48903","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"48905","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"48907","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"LocationID"},"attr":{"id":"48909","ColType":"Number","ColValue":"348127232"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"48911","ColType":"Number","ColValue":"8000"}}
+]

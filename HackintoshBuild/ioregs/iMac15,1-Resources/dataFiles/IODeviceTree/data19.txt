@@ -1,0 +1,11 @@
+[
+{"data":{"title":"StartupPowerEvents"},"attr":{"id":"2716","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},
+{"data":{"title":"Model"},"attr":{"id":"2718","ColType":"Data","ColValue":"&lt;69004d0061006300310035002c0031000000&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"2720","ColType":"Data","ColValue":"&lt;\"platform\"&gt;"}},
+{"data":{"title":"board-id"},"attr":{"id":"2722","ColType":"Data","ColValue":"&lt;\"Mac-42FD25EABCABB274\"&gt;"}},
+{"data":{"title":"InitialTSC"},"attr":{"id":"2724","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},
+{"data":{"title":"system-id"},"attr":{"id":"2726","ColType":"Data","ColValue":"&lt;53d79259f7e43f5e99934ff0124fa68e&gt;"}},
+{"data":{"title":"SystemSerialNumber"},"attr":{"id":"2728","ColType":"Data","ColValue":"&lt;\"C\",\"0\",\"2\",\"N\",\"D\",\"2\",\"V\",\"T\",\"F\",\"Y\",\"1\",\"1\"&gt;"}},
+{"data":{"title":"FSBFrequency"},"attr":{"id":"2730","ColType":"Data","ColValue":"&lt;dd5af20500000000&gt;"}},
+{"data":{"title":"DevicePathsSupported"},"attr":{"id":"2732","ColType":"Data","ColValue":"&lt;01000000&gt;"}}
+]

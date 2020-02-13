@@ -1,0 +1,6 @@
+[
+{"data":{"title":"IOI2CSupportedCommFlags"},"attr":{"id":"7004","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"IOI2CBusType"},"attr":{"id":"7006","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOI2CTransactionTypes"},"attr":{"id":"7008","ColType":"Number","ColValue":"31"}},
+{"data":{"title":"IOI2CInterfaceID"},"attr":{"id":"7010","ColType":"Number","ColValue":"8589934592"}}
+]

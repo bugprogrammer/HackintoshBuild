@@ -1,0 +1,23 @@
+[
+{"data":{"title":"BSD Minor"},"attr":{"id":"4044","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Removable"},"attr":{"id":"4046","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"BSD Unit"},"attr":{"id":"4048","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"UUID"},"attr":{"id":"4050","ColType":"String","ColValue":"853D6D43-4D15-4099-84B5-C3F5A647C19D"}},
+{"data":{"title":"Content"},"attr":{"id":"4052","ColType":"String","ColValue":"7C3457EF-0000-11AA-AA11-00306543ECAC"}},
+{"data":{"title":"GPT Attributes"},"attr":{"id":"4054","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Writable"},"attr":{"id":"4056","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Content Hint"},"attr":{"id":"4058","ColType":"String","ColValue":"7C3457EF-0000-11AA-AA11-00306543ECAC"}},
+{"data":{"title":"Whole"},"attr":{"id":"4060","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"4062","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"4064","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"TierType"},"attr":{"id":"4066","ColType":"String","ColValue":"Main"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"4068","ColType":"String","ColValue":"disk0s2"}},
+{"data":{"title":"Leaf"},"attr":{"id":"4070","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"BSD Major"},"attr":{"id":"4072","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Open"},"attr":{"id":"4074","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Base"},"attr":{"id":"4076","ColType":"Number","ColValue":"314597376"}},
+{"data":{"title":"Preferred Block Size"},"attr":{"id":"4078","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"Partition ID"},"attr":{"id":"4080","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Ejectable"},"attr":{"id":"4082","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Size"},"attr":{"id":"4084","ColType":"Number","ColValue":"121018208256"}}
+]

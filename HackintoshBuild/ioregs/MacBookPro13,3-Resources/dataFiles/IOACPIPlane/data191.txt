@@ -1,0 +1,6 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"6077","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"6079","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"name"},"attr":{"id":"6081","ColType":"Data","ColValue":"&lt;\"APP7777\"&gt;"}},
+{"data":{"title":"device-properties"},"attr":{"id":"6083","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"apple-coprocessor-version"},"attr":{"id":"6085","ColType":"Data","ColValue":"&lt;0000010000000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"6087","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/XHC1@140000/RHUB@0/ASOC@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"6089","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"7517","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"7519","ColType":"Number","ColValue":"1900544"}},
+{"data":{"title":"device-properties"},"attr":{"id":"7521","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"AAPL,device-internal"},"attr":{"id":"7523","ColType":"Number","ColValue":"2"}},{"data":{"title":"acpi-path"},"attr":{"id":"7525","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/EHC1@1d0000"}},{"data":{"title":"acpi-device"},"attr":{"id":"7527","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"7529","ColType":"Number","ColValue":"13"}},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"7531","ColType":"Boolean","ColValue":"Yes"}}
+]

@@ -1,0 +1,18 @@
+[
+{"data":{"title":"device-id"},"attr":{"id":"2091","ColType":"Data","ColValue":"&lt;040d0000&gt;"}},
+{"data":{"title":"vendor-id"},"attr":{"id":"2093","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"IOName"},"attr":{"id":"2095","ColType":"String","ColValue":"pci8086,d04"}},
+{"data":{"title":"subsystem-vendor-id"},"attr":{"id":"2097","ColType":"Data","ColValue":"&lt;6b100000&gt;"}},
+{"data":{"title":"pcidebug"},"attr":{"id":"2099","ColType":"String","ColValue":"0:0:0"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"2101","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/MCHC@0"}},
+{"data":{"title":"revision-id"},"attr":{"id":"2103","ColType":"Data","ColValue":"&lt;08000000&gt;"}},
+{"data":{"title":"reg"},"attr":{"id":"2105","ColType":"Data","ColValue":"&lt;0000000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"built-in"},"attr":{"id":"2107","ColType":"Data","ColValue":"&lt;00&gt;"}},
+{"data":{"title":"IOPCIResourced"},"attr":{"id":"2109","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"class-code"},"attr":{"id":"2111","ColType":"Data","ColValue":"&lt;00000600&gt;"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"2113","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"subsystem-id"},"attr":{"id":"2115","ColType":"Data","ColValue":"&lt;2e010000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"2117","ColType":"Data","ColValue":"&lt;\"pci106b,12e\",\"pci8086,d04\",\"pciclass,060000\",\"MCHC\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"2119","ColType":"Data","ColValue":"&lt;\"pci8086,d04\"&gt;"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"2121","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"2123","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"2125","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"2127","ColType":"Number","ColValue":"3"}}]}
+]

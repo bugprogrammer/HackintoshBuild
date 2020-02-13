@@ -1,0 +1,5 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"4509","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"4511","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"device-properties"},"attr":{"id":"4513","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"kUSBWakePowerSupply"},"attr":{"id":"4515","ColType":"Number","ColValue":"5100"}},{"data":{"title":"kUSBSleepPowerSupply"},"attr":{"id":"4517","ColType":"Number","ColValue":"5100"}},{"data":{"title":"kUSBWakePortCurrentLimit"},"attr":{"id":"4519","ColType":"Number","ColValue":"2100"}},{"data":{"title":"kUSBSleepPortCurrentLimit"},"attr":{"id":"4521","ColType":"Number","ColValue":"2100"}},{"data":{"title":"acpi-path"},"attr":{"id":"4523","ColType":"String","ColValue":"IOACPIPlane:/_SB/USBX@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"4525","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

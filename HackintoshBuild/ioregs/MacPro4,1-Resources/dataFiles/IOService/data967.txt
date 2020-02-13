@@ -1,0 +1,7 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"37790","ColType":"String","ColValue":"AppleProfileKEventAction"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"37792","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37794","ColType":"String","ColValue":"com.apple.driver.AppleProfileKEventAction"}},
+{"data":{"title":"IOClass"},"attr":{"id":"37796","ColType":"String","ColValue":"AppleProfileKEventAction"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"37798","ColType":"String","ColValue":"AppleProfileOSHooks"}}
+]

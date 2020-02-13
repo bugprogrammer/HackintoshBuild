@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"131593","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"131595","ColType":"String","ColValue":"IOUserEthernetResource"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"131597","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"131599","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"131601","ColType":"String","ColValue":"com.apple.iokit.IOUserEthernet"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"131603","ColType":"String","ColValue":"IOUserEthernetResourceUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"131605","ColType":"String","ColValue":"IOUserEthernetResource"}}
+]

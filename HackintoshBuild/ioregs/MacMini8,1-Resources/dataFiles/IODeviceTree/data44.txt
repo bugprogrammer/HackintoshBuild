@@ -1,0 +1,7 @@
+[
+{"data":{"title":"i2c-pin-scl"},"attr":{"id":"3384","ColType":"Data","ColValue":"&lt;0700000000000000&gt;"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"3386","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"i2c-channel-number"},"attr":{"id":"3388","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},
+{"data":{"title":"i2c-pin-sda"},"attr":{"id":"3390","ColType":"Data","ColValue":"&lt;0600000000000000&gt;"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"3392","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/I2C2@150002"}}
+]

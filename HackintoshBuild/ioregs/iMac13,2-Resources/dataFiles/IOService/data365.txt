@@ -1,0 +1,17 @@
+[
+{"data":{"title":"IOAudioEngineGlobalUniqueID"},"attr":{"id":"15711","ColType":"String","ColValue":"AppleUSBAudioEngine:Unknown Manufacturer:Logitech Camera:83312BC0:1"}},
+{"data":{"title":"idProduct"},"attr":{"id":"15713","ColType":"Number","ColValue":"2077"}},
+{"data":{"title":"IOAudioEngineClockDomain"},"attr":{"id":"15715","ColType":"Number","ColValue":"293690112"}},
+{"data":{"title":"IOAudioEngineChannelNames"},"attr":{"id":"15717","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"InputChannel1"},"attr":{"id":"15719","ColType":"String","ColValue":"Front Left"}}]},
+{"data":{"title":"IOAudioEngineSampleOffset"},"attr":{"id":"15721","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioEngineInputSampleLatency"},"attr":{"id":"15723","ColType":"Number","ColValue":"48"}},
+{"data":{"title":"IOAudioEngineFlavor"},"attr":{"id":"15725","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOAudioSampleRate"},"attr":{"id":"15727","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOAudioSampleRateFraction"},"attr":{"id":"15729","ColType":"Number","ColValue":"0"}},{"data":{"title":"IOAudioSampleRateWholeNumber"},"attr":{"id":"15731","ColType":"Number","ColValue":"48000"}}]},
+{"data":{"title":"IOAudioEngineNumActiveUserClients"},"attr":{"id":"15733","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"15735","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOAudioEngineInputSampleOffset"},"attr":{"id":"15737","ColType":"Number","ColValue":"61"}},
+{"data":{"title":"idVendor"},"attr":{"id":"15739","ColType":"Number","ColValue":"1133"}},
+{"data":{"title":"IOAudioStreamSampleFormatByteOrder"},"attr":{"id":"15741","ColType":"String","ColValue":"Little Endian"}},
+{"data":{"title":"IOAudioEngineNumSampleFramesPerBuffer"},"attr":{"id":"15743","ColType":"Number","ColValue":"16384"}},
+{"data":{"title":"IOAudioEngineState"},"attr":{"id":"15745","ColType":"Number","ColValue":"0"}}
+]

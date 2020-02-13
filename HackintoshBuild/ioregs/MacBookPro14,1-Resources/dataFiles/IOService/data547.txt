@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"128747","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"128749","ColType":"String","ColValue":"IOReportHub"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"128751","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"128753","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"128755","ColType":"String","ColValue":"com.apple.iokit.IOReportFamily"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"128757","ColType":"String","ColValue":"IOReportUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"128759","ColType":"String","ColValue":"IOReportHub"}}
+]

@@ -1,0 +1,11 @@
+[
+{"data":{"title":"sample-period"},"attr":{"id":"9623","ColType":"Data","ColValue":"&lt;0000000000989800&gt;"}},
+{"data":{"title":"reg"},"attr":{"id":"9625","ColType":"Data","ColValue":"&lt;00000002&gt;"}},
+{"data":{"title":"polling-period"},"attr":{"id":"9627","ColType":"Data","ColValue":"&lt;0000000100000000&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"9629","ColType":"String","ColValue":"gpu-sensor"}},
+{"data":{"title":"device_type"},"attr":{"id":"9631","ColType":"Data","ColValue":"&lt;\"gpu-sensor\"&gt;"}},
+{"data":{"title":"location"},"attr":{"id":"9633","ColType":"String","ColValue":"GPU"}},
+{"data":{"title":"sensor-id"},"attr":{"id":"9635","ColType":"Data","ColValue":"&lt;00000006&gt;"}},
+{"data":{"title":"version"},"attr":{"id":"9637","ColType":"Data","ColValue":"&lt;00000002&gt;"}},
+{"data":{"title":"zone"},"attr":{"id":"9639","ColType":"Data","ColValue":"&lt;00000002&gt;"}}
+]

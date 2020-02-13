@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"21010","ColType":"String","ColValue":"IOACPIPlatformDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"21012","ColType":"String","ColValue":"PNP0C0C"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"21014","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"21016","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"21017","ColType":"String","ColValue":"PNP0C0C"}},{"data":{"title":"1"},"attr":{"id":"21018","ColType":"String","ColValue":"power-button"}},{"data":{"title":"2"},"attr":{"id":"21019","ColType":"String","ColValue":"PNP0C0E"}},{"data":{"title":"3"},"attr":{"id":"21020","ColType":"String","ColValue":"sleep-button"}}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"21022","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"21024","ColType":"String","ColValue":"com.apple.driver.AppleACPIButtons"}},
+{"data":{"title":"IOClass"},"attr":{"id":"21026","ColType":"String","ColValue":"AppleACPIButton"}}
+]

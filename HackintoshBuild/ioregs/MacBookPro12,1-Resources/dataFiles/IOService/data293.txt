@@ -1,0 +1,13 @@
+[
+{"data":{"title":"LocationID"},"attr":{"id":"7628","ColType":"Number","ColValue":"16777216"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"7630","ColType":"String","ColValue":"AppleIntelSPIDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"7632","ColType":"String","ColValue":"apple-spi-topcase"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"7634","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"7636","ColType":"String","ColValue":"apple-spi-topcase"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"7638","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"7640","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"7642","ColType":"Number","ColValue":"2"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"7644","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"7646","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"7648","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"7650","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"7652","ColType":"String","ColValue":"com.apple.driver.AppleHSSPISupport"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"7654","ColType":"String","ColValue":"AppleHSSPIControllerUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"7656","ColType":"String","ColValue":"AppleHSSPIController"}},
+{"data":{"title":"boot-args"},"attr":{"id":"7658","ColType":"Number","ColValue":"0"}}
+]

@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"53968","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"53970","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"53972","ColType":"String","ColValue":"Internal"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"53974","ColType":"String","ColValue":"PCI"}}]},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"53976","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"24514B7A-2804-11D6-8A02-003065704866"},"attr":{"id":"53978","ColType":"String","ColValue":"SMARTLib.plugin"}}]},
+{"data":{"title":"Device Characteristics"},"attr":{"id":"53980","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Block Size"},"attr":{"id":"53982","ColType":"Number","ColValue":"4096"}},{"data":{"title":"SATA Features"},"attr":{"id":"53984","ColType":"Number","ColValue":"30"}},{"data":{"title":"Product Name"},"attr":{"id":"53986","ColType":"String","ColValue":"APPLE SSD SM0256F                       "}},{"data":{"title":"Product Revision Level"},"attr":{"id":"53988","ColType":"String","ColValue":"UXM2JA1Q"}},{"data":{"title":"Logical Block Size"},"attr":{"id":"53990","ColType":"Number","ColValue":"512"}},{"data":{"title":"Medium Type"},"attr":{"id":"53992","ColType":"String","ColValue":"Solid State"}},{"data":{"title":"Serial Number"},"attr":{"id":"53994","ColType":"String","ColValue":"S1K4NYCF641129      "}}]},
+{"data":{"title":"IOStorageFeatures"},"attr":{"id":"53996","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Unmap"},"attr":{"id":"53998","ColType":"Boolean","ColValue":"Yes"}}]},
+{"data":{"title":"SMART Capable"},"attr":{"id":"54000","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"device-type"},"attr":{"id":"54002","ColType":"String","ColValue":"Generic"}}
+]

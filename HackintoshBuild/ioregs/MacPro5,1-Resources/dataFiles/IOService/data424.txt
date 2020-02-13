@@ -1,0 +1,16 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"87195","ColType":"Number","ColValue":"1914"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"87197","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"Transport"},"attr":{"id":"87199","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"87201","ColType":"Number","ColValue":"4676"}},
+{"data":{"title":"VendorID"},"attr":{"id":"87203","ColType":"Number","ColValue":"1118"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"87205","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"87207","ColType":"Number","ColValue":"12"}},
+{"data":{"title":"BootProtocol"},"attr":{"id":"87209","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"87211","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"87212","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"87214","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"87216","ColType":"Number","ColValue":"1"}}]},{"data":{"title":"1"},"attr":{"id":"87217","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"87219","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"87221","ColType":"Number","ColValue":"65318"}}]},{"data":{"title":"2"},"attr":{"id":"87222","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"87224","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"87226","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"87228","ColType":"String","ColValue":"Mouse"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"87230","ColType":"String","ColValue":"Microsoft"}},
+{"data":{"title":"Product"},"attr":{"id":"87232","ColType":"String","ColValue":"Express Mouse"}},
+{"data":{"title":"LocationID"},"attr":{"id":"87234","ColType":"Number","ColValue":"487653376"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"87236","ColType":"Number","ColValue":"0"}}
+]

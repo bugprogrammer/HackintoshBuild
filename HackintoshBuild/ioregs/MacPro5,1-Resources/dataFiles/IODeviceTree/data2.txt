@@ -1,0 +1,21 @@
+[
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"2300","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"system-type"},"attr":{"id":"2302","ColType":"Data","ColValue":"&lt;03&gt;"}},
+{"data":{"title":"IOConsoleSecurityInterest"},"attr":{"id":"2304","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"2306","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"2307","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"product-name"},"attr":{"id":"2309","ColType":"Data","ColValue":"&lt;\"MacPro5,1\"&gt;"}},
+{"data":{"title":"IOPlatformUUID"},"attr":{"id":"2311","ColType":"String","ColValue":"41F160C6-5AAC-59D0-8A8D-7F3F2C46AECC"}},
+{"data":{"title":"IOPlatformArgs"},"attr":{"id":"2313","ColType":"Data","ColValue":"&lt;00e0462f80ffffff0090462f80ffffff187e4c2f80ffffff0000000000000000&gt;"}},
+{"data":{"title":"board-id"},"attr":{"id":"2315","ColType":"Data","ColValue":"&lt;\"Mac-F221BEC8\"&gt;"}},
+{"data":{"title":"IOPlatformSerialNumber"},"attr":{"id":"2317","ColType":"String","ColValue":"CK151076EUH"}},
+{"data":{"title":"version"},"attr":{"id":"2319","ColType":"Data","ColValue":"&lt;\"0.0\"&gt;"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"2321","ColType":"String","ColValue":"SMCPolledInterface is not serializable"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"2323","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"2324","ColType":"Data","ColValue":"&lt;0900000005000000&gt;"}}]},
+{"data":{"title":"compatible"},"attr":{"id":"2326","ColType":"Data","ColValue":"&lt;\"MacPro5,1\"&gt;"}},
+{"data":{"title":"model"},"attr":{"id":"2328","ColType":"Data","ColValue":"&lt;\"MacPro5,1\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"2330","ColType":"Data","ColValue":"&lt;\"/\"&gt;"}},
+{"data":{"title":"clock-frequency"},"attr":{"id":"2332","ColType":"Data","ColValue":"&lt;ffffffff&gt;"}},
+{"data":{"title":"serial-number"},"attr":{"id":"2334","ColType":"Data","ColValue":"&lt;45554800000000000000000000434b31353130373645554800000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"manufacturer"},"attr":{"id":"2336","ColType":"Data","ColValue":"&lt;\"Apple Inc.\"&gt;"}},
+{"data":{"title":"processor-memory-board-serial-number"},"attr":{"id":"2338","ColType":"String","ColValue":"J514900RZBH8C     "}}
+]

@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"6016","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"_ADR"},"attr":{"id":"6018","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"6020","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"6022","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"6024","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"6026","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"device-properties"},"attr":{"id":"6028","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"pci-functions-dependent"},"attr":{"id":"6030","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"6032","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP17@1b0000/ANS2@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"6034","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"6036","ColType":"Boolean","ColValue":"Yes"}}
+]

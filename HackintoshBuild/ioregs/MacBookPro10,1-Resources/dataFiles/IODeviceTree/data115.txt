@@ -1,0 +1,9 @@
+[
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"4720","ColType":"Number","ColValue":"22"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"4722","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4723","ColType":"Data","ColValue":"&lt;1b00000001000000&gt;"}}]},
+{"data":{"title":"name"},"attr":{"id":"4725","ColType":"Data","ColValue":"&lt;\"APP000B\"&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"4727","ColType":"Data","ColValue":"&lt;\"gmux\"&gt;"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"4729","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4730","ColType":"String","ColValue":"ACPIEventController"}}]},
+{"data":{"title":"_STA"},"attr":{"id":"4732","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"acpi-wake-system-state"},"attr":{"id":"4734","ColType":"Number","ColValue":"3"}}
+]

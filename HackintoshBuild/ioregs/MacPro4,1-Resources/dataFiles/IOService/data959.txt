@@ -1,0 +1,6 @@
+[
+{"data":{"title":"ApplePerformanceCounterState"},"attr":{"id":"37696","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ApplePerformanceCounterUnit"},"attr":{"id":"37698","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOClass"},"attr":{"id":"37700","ColType":"String","ColValue":"AppleOSXPerformanceCounter"}},
+{"data":{"title":"ApplePerformanceCounterRegisteredName"},"attr":{"id":"37702","ColType":"String","ColValue":"os1"}}
+]

@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"6877","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"6879","ColType":"String","ColValue":"pci8086,154"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"6881","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"6883","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"6884","ColType":"String","ColValue":"pci8086,27a0"}},{"data":{"title":"1"},"attr":{"id":"6885","ColType":"String","ColValue":"pci8086,2a00"}},{"data":{"title":"2"},"attr":{"id":"6886","ColType":"String","ColValue":"pci8086,44"}},{"data":{"title":"3"},"attr":{"id":"6887","ColType":"String","ColValue":"pci8086,100"}},{"data":{"title":"4"},"attr":{"id":"6888","ColType":"String","ColValue":"pci8086,104"}},{"data":{"title":"5"},"attr":{"id":"6889","ColType":"String","ColValue":"pci8086,154"}}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"6891","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"6893","ColType":"String","ColValue":"com.apple.driver.AppleSMCPDRC"}},
+{"data":{"title":"IOClass"},"attr":{"id":"6895","ColType":"String","ColValue":"AppleSMCPDRC"}}
+]

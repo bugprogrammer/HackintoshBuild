@@ -1,0 +1,12 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"195648","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"195650","ColType":"String","ColValue":"AppleKeyStore"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"195652","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOPlatformWakeAction"},"attr":{"id":"195654","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"195656","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"195658","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"195660","ColType":"String","ColValue":"com.apple.driver.AppleKeyStore"}},
+{"data":{"title":"IOKitDebug"},"attr":{"id":"195662","ColType":"Number","ColValue":"65535"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"195664","ColType":"String","ColValue":"AppleKeyStoreUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"195666","ColType":"String","ColValue":"AppleKeyStore"}}
+]

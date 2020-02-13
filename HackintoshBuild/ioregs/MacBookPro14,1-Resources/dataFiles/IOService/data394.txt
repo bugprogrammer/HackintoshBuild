@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOProbeScore"},"attr":{"id":"19056","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"19058","ColType":"String","ColValue":"AppleOnboardSerialBSDClient"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"19060","ColType":"String","ColValue":"com.apple.driver.AppleOnboardSerial"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"19062","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"IOClass"},"attr":{"id":"19064","ColType":"String","ColValue":"AppleOnboardSerialBSDClient"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"19066","ColType":"String","ColValue":"AppleOnboardSerialSync"}}
+]

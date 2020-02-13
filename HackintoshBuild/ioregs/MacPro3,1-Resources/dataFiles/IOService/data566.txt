@@ -1,0 +1,17 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"37003","ColType":"Number","ColValue":"781"}},
+{"data":{"title":"Transport"},"attr":{"id":"37005","ColType":"String","ColValue":"Bluetooth"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"37007","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"37009","ColType":"Number","ColValue":"135"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"37011","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"VendorID"},"attr":{"id":"37013","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"37015","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"37017","ColType":"Number","ColValue":"11250"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"37019","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"37020","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"37022","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"37024","ColType":"Number","ColValue":"2"}}]},{"data":{"title":"1"},"attr":{"id":"37025","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"37027","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"37029","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"37031","ColType":"String","ColValue":"Mouse"}},
+{"data":{"title":"SerialNumber"},"attr":{"id":"37033","ColType":"String","ColValue":"78-ca-39-eb-b6-de"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"37035","ColType":"String","ColValue":"Apple"}},
+{"data":{"title":"Product"},"attr":{"id":"37037","ColType":"String","ColValue":""}},
+{"data":{"title":"LocationID"},"attr":{"id":"37039","ColType":"Number","ColValue":"971749086"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"37041","ColType":"Number","ColValue":"0"}}
+]

@@ -1,0 +1,18 @@
+[
+{"data":{"title":"bcdDevice"},"attr":{"id":"13926","ColType":"Number","ColValue":"549"}},
+{"data":{"title":"idProduct"},"attr":{"id":"13928","ColType":"Number","ColValue":"610"}},
+{"data":{"title":"locationID"},"attr":{"id":"13930","ColType":"Number","ColValue":"348127232"}},
+{"data":{"title":"iInterface"},"attr":{"id":"13932","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"bAlternateSetting"},"attr":{"id":"13934","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"13936","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"USB Interface Name"},"attr":{"id":"13938","ColType":"String","ColValue":"Apple Internal Keyboard"}},
+{"data":{"title":"ExtendedData"},"attr":{"id":"13940","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"13941","ColType":"Number","ColValue":"50399521"}},{"data":{"title":"1"},"attr":{"id":"13942","ColType":"Number","ColValue":"50465057"}}]},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"13944","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"13946","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"13948","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"idVendor"},"attr":{"id":"13950","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"13952","ColType":"String","ColValue":"IOUSBInterfaceUserClientV3"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"13954","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"2d9786c6-9ef3-11d4-ad51-000a27052861"},"attr":{"id":"13956","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"bNumEndpoints"},"attr":{"id":"13958","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"13960","ColType":"Number","ColValue":"3"}}
+]

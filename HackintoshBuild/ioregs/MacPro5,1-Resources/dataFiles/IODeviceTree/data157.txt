@@ -1,0 +1,12 @@
+[
+{"data":{"title":"bluetoothActiveControllerInfo"},"attr":{"id":"7523","ColType":"Data","ColValue":"&lt;1582ac05b88d124c59ef&gt;"}},
+{"data":{"title":"prev-lang:kbd"},"attr":{"id":"7525","ColType":"Data","ColValue":"&lt;\"English:0\"&gt;"}},
+{"data":{"title":"efi-boot-device-data"},"attr":{"id":"7527","ColType":"Data","ColValue":"&lt;02010c00d041030a0000000001010600021f03120a0001000000000004012a00020000002840060000000000783ba40b0000000038e083b90fb5354989ae6d60478dd14e02027fff0400&gt;"}},
+{"data":{"title":"BootCampHD"},"attr":{"id":"7529","ColType":"Data","ColValue":"&lt;02010c00d041030a0000000001010600021f03120a000100000000007fff0400&gt;"}},
+{"data":{"title":"SystemAudioVolume"},"attr":{"id":"7531","ColType":"Data","ColValue":"&lt;35&gt;"}},
+{"data":{"title":"fmm-computer-name"},"attr":{"id":"7533","ColType":"Data","ColValue":"&lt;\"Admin’s Mac Pro\"&gt;"}},
+{"data":{"title":"EFIBluetoothDelay"},"attr":{"id":"7535","ColType":"Data","ColValue":"&lt;b80b&gt;"}},
+{"data":{"title":"LocationServicesEnabled"},"attr":{"id":"7537","ColType":"Data","ColValue":"&lt;01&gt;"}},
+{"data":{"title":"boot-gamma"},"attr":{"id":"7539","ColType":"Data","ColValue":"&lt;c31500008617000000000000b6000000000000000d000101e304020205080404290d0707a1130e0e34201818542f2323f83d3030a74d3d3d275c4e4ed76d72720b909a9a90b2c9c9fbd70d000101e304020205080404290d0707a1130e0e34201818542f2323f83d3030a74d3d3d275c4e4ed76d72720b909a9a90b2c9c9fbd70d000101e304020205080404290d0707a1130e0e34201818542f2323f83d3030a74d3d3d275c4e4ed76d72720b909a9a90b2c9c9fbd7&gt;"}},
+{"data":{"title":"efi-boot-device"},"attr":{"id":"7541","ColType":"Data","ColValue":"&lt;\"<array><dict><key>IOMatch</key><dict><key>IOProviderClass</key><string>IOMedia</string><key>IOPropertyMatch</key><dict><key>UUID</key><string>B983E038-B50F-4935-89AE-6D60478DD14E</string></dict></dict><key>BLLastBSDName</key><string>disk0s2</string></dict></array>\"&gt;"}}
+]

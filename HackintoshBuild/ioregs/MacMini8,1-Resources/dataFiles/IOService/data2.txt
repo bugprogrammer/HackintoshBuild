@@ -1,0 +1,21 @@
+[
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"2808","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"system-type"},"attr":{"id":"2810","ColType":"Data","ColValue":"&lt;01&gt;"}},
+{"data":{"title":"IOPlatformSystemSleepPolicy"},"attr":{"id":"2812","ColType":"Data","ColValue":"&lt;534c50540200080020000000200000000000000000000000050000000000000000cd87010000000040060000000000000800000008000000050000000000000000cd87010000000040061000000010002040000020400000020000000800000000cd87010000000040060000000000002000000020000000050000000000000000cd87010000000040060000000000000880000008800000050000000000000000cd870100000000400600000000000000c0000000c00000020000000800000000cd87010000000040060000000000000000000000000000020000000100000000cd87010000000000000000000000000000000000000000020000000000000000cd870100000000&gt;"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"2814","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"2815","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"product-name"},"attr":{"id":"2817","ColType":"Data","ColValue":"&lt;\"Macmini8,1\"&gt;"}},
+{"data":{"title":"IOPlatformUUID"},"attr":{"id":"2819","ColType":"String","ColValue":"09********************************A7"}},
+{"data":{"title":"board-id"},"attr":{"id":"2821","ColType":"Data","ColValue":"&lt;\"Mac-7BA5B2DFE22DDD8C\"&gt;"}},
+{"data":{"title":"IOPlatformSerialNumber"},"attr":{"id":"2823","ColType":"String","ColValue":"C**********Y"}},
+{"data":{"title":"version"},"attr":{"id":"2825","ColType":"Data","ColValue":"&lt;\"1.0\"&gt;"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"2827","ColType":"String","ColValue":"SMCPolledInterface is not serializable"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"2829","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"2830","ColType":"Data","ColValue":"&lt;0900000005000000&gt;"}}]},
+{"data":{"title":"compatible"},"attr":{"id":"2832","ColType":"Data","ColValue":"&lt;\"Macmini8,1\"&gt;"}},
+{"data":{"title":"model"},"attr":{"id":"2834","ColType":"Data","ColValue":"&lt;\"Macmini8,1\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"2836","ColType":"Data","ColValue":"&lt;\"/\"&gt;"}},
+{"data":{"title":"clock-frequency"},"attr":{"id":"2838","ColType":"Data","ColValue":"&lt;0084d717&gt;"}},
+{"data":{"title":"target-type"},"attr":{"id":"2840","ColType":"Data","ColValue":"&lt;\"Mac\"&gt;"}},
+{"data":{"title":"serial-number"},"attr":{"id":"2842","ColType":"Data","ColValue":"&lt;4a595****************************************************************************00000&gt;"}},
+{"data":{"title":"manufacturer"},"attr":{"id":"2844","ColType":"Data","ColValue":"&lt;\"Apple Inc.\"&gt;"}},
+{"data":{"title":"platform-feature"},"attr":{"id":"2846","ColType":"Data","ColValue":"&lt;2000000000000000&gt;"}}
+]

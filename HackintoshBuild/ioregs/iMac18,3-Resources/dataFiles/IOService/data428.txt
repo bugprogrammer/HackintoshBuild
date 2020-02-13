@@ -1,0 +1,6 @@
+[
+{"data":{"title":"Device Characteristics"},"attr":{"id":"129649","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Product Revision Level"},"attr":{"id":"129651","ColType":"String","ColValue":""}},{"data":{"title":"Vendor Name"},"attr":{"id":"129653","ColType":"String","ColValue":"WDC WD30"}},{"data":{"title":"Product Name"},"attr":{"id":"129655","ColType":"String","ColValue":"EZRX-00DC0B0"}}]},
+{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"129657","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"129659","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"129661","ColType":"String","ColValue":"USB"}},{"data":{"title":"SCSI Logical Unit Number"},"attr":{"id":"129663","ColType":"Number","ColValue":"0"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"129665","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"129667","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"129669","ColType":"Number","ColValue":"30000"}}]},
+{"data":{"title":"device-type"},"attr":{"id":"129671","ColType":"String","ColValue":"Generic"}}
+]

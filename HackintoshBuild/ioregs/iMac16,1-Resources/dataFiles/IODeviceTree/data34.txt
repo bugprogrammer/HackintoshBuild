@@ -1,0 +1,7 @@
+[
+{"data":{"title":"acpi-device"},"attr":{"id":"2544","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"sata-express-power-off"},"attr":{"id":"2546","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"use-msi"},"attr":{"id":"2548","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ssd-off-in-S4"},"attr":{"id":"2550","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"2552","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP06@1c0005/SSD0@0"}}
+]

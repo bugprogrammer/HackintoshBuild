@@ -1,0 +1,8 @@
+[
+{"data":{"title":"fv-main-address"},"attr":{"id":"2600","ColType":"Number","ColValue":"18446744073702801408"}},
+{"data":{"title":"rom-size"},"attr":{"id":"2602","ColType":"Number","ColValue":"8388608"}},
+{"data":{"title":"vendor"},"attr":{"id":"2604","ColType":"Data","ColValue":"&lt;\"Apple Inc.\"&gt;"}},
+{"data":{"title":"fv-main-size"},"attr":{"id":"2606","ColType":"Number","ColValue":"1507328"}},
+{"data":{"title":"release-date"},"attr":{"id":"2608","ColType":"Data","ColValue":"&lt;\"06/23/2016\"&gt;"}},
+{"data":{"title":"version"},"attr":{"id":"2610","ColType":"Data","ColValue":"&lt;\"MBP121.88Z.0167.B17.1606231721\"&gt;"}}
+]

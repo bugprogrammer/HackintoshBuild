@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOAudioControlChannelName"},"attr":{"id":"32941","ColType":"String","ColValue":"Left"}},
+{"data":{"title":"IOAudioControlChannelNumber"},"attr":{"id":"32943","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOAudioControlID"},"attr":{"id":"32945","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"IOAudioControlValue"},"attr":{"id":"32947","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioControlChannelID"},"attr":{"id":"32949","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOAudioControlUsage"},"attr":{"id":"32951","ColType":"Number","ColValue":"1869968496"}},
+{"data":{"title":"IOAudioControlType"},"attr":{"id":"32953","ColType":"Number","ColValue":"1953458028"}},
+{"data":{"title":"IOAudioControlSubType"},"attr":{"id":"32955","ColType":"Number","ColValue":"1836414053"}}
+]

@@ -1,0 +1,15 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"23576","ColType":"Number","ColValue":"34304"}},
+{"data":{"title":"VendorID"},"attr":{"id":"23578","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"23580","ColType":"Number","ColValue":"65"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"23582","ColType":"String","ColValue":"com.apple.driver.AppleHIDALSService"}},
+{"data":{"title":"IOClass"},"attr":{"id":"23584","ColType":"String","ColValue":"AppleUSBALSService"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"23586","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"23587","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"23589","ColType":"Number","ColValue":"32"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"23591","ColType":"Number","ColValue":"65"}}]},{"data":{"title":"1"},"attr":{"id":"23592","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"23594","ColType":"Number","ColValue":"65298"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"23596","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"23598","ColType":"Number","ColValue":"7200"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"23600","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"23602","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"HIDServiceSupport"},"attr":{"id":"23604","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"23606","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"0516B563-B15B-11DA-96EB-0014519758EF"},"attr":{"id":"23608","ColType":"String","ColValue":"AppleHIDALSService.kext/Contents/PlugIns/AppleHIDALS.plugin"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"23610","ColType":"String","ColValue":"IOHIDInterface"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"23612","ColType":"Number","ColValue":"32"}}
+]

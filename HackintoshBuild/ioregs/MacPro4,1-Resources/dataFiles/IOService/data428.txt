@@ -1,0 +1,14 @@
+[
+{"data":{"title":"idProduct"},"attr":{"id":"12187","ColType":"Number","ColValue":"37151"}},
+{"data":{"title":"iInterface"},"attr":{"id":"12189","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bAlternateSetting"},"attr":{"id":"12191","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"12193","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"12195","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"12197","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"12199","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"idVendor"},"attr":{"id":"12201","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"12203","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"locationID"},"attr":{"id":"12205","ColType":"Number","ColValue":"18446744073609936896"}},
+{"data":{"title":"bNumEndpoints"},"attr":{"id":"12207","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bcdDevice"},"attr":{"id":"12209","ColType":"Number","ColValue":"1"}}
+]

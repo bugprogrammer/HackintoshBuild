@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"39499","ColType":"String","ColValue":"AGDCPluginDisplayMetrics"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"39501","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"39503","ColType":"String","ColValue":"com.apple.AGDCPluginDisplayMetrics"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"39505","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOClass"},"attr":{"id":"39507","ColType":"String","ColValue":"AGDCPluginDisplayMetrics"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"39509","ColType":"String","ColValue":"AppleGraphicsDeviceControlPlugin"}}
+]

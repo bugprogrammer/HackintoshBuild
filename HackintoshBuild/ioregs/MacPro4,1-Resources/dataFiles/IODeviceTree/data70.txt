@@ -1,0 +1,13 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"3175","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"3177","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"IOPCIResourced"},"attr":{"id":"3179","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"name"},"attr":{"id":"3181","ColType":"String","ColValue":"pci8086,3438"}},
+{"data":{"title":"vendor-id"},"attr":{"id":"3183","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"revision-id"},"attr":{"id":"3185","ColType":"Data","ColValue":"&lt;13000000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"3187","ColType":"Data","ColValue":"&lt;\"pci8086,3438\",\"pciclass,080000\"&gt;"}},
+{"data":{"title":"class-code"},"attr":{"id":"3189","ColType":"Data","ColValue":"&lt;00000800&gt;"}},
+{"data":{"title":"IOName"},"attr":{"id":"3191","ColType":"String","ColValue":"pci8086,3438"}},
+{"data":{"title":"reg"},"attr":{"id":"3193","ColType":"Data","ColValue":"&lt;00a3000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"pcidebug"},"attr":{"id":"3195","ColType":"String","ColValue":"0:20:3"}},
+{"data":{"title":"device-id"},"attr":{"id":"3197","ColType":"Data","ColValue":"&lt;38340000&gt;"}}
+]

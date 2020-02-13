@@ -1,0 +1,15 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"83129","ColType":"Number","ColValue":"615"}},
+{"data":{"title":"Transport"},"attr":{"id":"83131","ColType":"String","ColValue":"Bluetooth"}},
+{"data":{"title":"LocationID"},"attr":{"id":"83133","ColType":"Number","ColValue":"2026314642"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"83135","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"83137","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"VendorID"},"attr":{"id":"83139","ColType":"Number","ColValue":"76"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"83141","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"83143","ColType":"Number","ColValue":"11250"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"83145","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"83146","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"83148","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"83150","ColType":"Number","ColValue":"6"}}]},{"data":{"title":"1"},"attr":{"id":"83151","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"83153","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"83155","ColType":"Number","ColValue":"1"}}]},{"data":{"title":"2"},"attr":{"id":"83156","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"83158","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"83160","ColType":"Number","ColValue":"6"}}]}]},
+{"data":{"title":"SerialNumber"},"attr":{"id":"83162","ColType":"String","ColValue":"04-69-f8-c7-1b-92"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"83164","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Product"},"attr":{"id":"83166","ColType":"String","ColValue":"Magic Keyboard"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"83168","ColType":"Number","ColValue":"33"}}
+]

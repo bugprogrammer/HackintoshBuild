@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"42539","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"42541","ColType":"String","ColValue":"AppleMobileFileIntegrity"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"42543","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"42545","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"42547","ColType":"String","ColValue":"com.apple.driver.AppleMobileFileIntegrity"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"42549","ColType":"String","ColValue":"AppleMobileFileIntegrityUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"42551","ColType":"String","ColValue":"AppleMobileFileIntegrity"}}
+]

@@ -1,0 +1,12 @@
+[
+{"data":{"title":"IOPersonalityPublisher"},"attr":{"id":"79768","ColType":"String","ColValue":"com.apple.driver.AppleMobileDevice"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"79770","ColType":"String","ColValue":"IOUSBDevice"}},
+{"data":{"title":"bDeviceClass"},"attr":{"id":"79772","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"idVendor"},"attr":{"id":"79774","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"79776","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"79778","ColType":"Number","ColValue":"98500"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"79780","ColType":"String","ColValue":"com.apple.kpi.iokit"}},
+{"data":{"title":"idProductMask"},"attr":{"id":"79782","ColType":"Number","ColValue":"65520"}},
+{"data":{"title":"idProduct"},"attr":{"id":"79784","ColType":"Number","ColValue":"4768"}},
+{"data":{"title":"IOClass"},"attr":{"id":"79786","ColType":"String","ColValue":"IOService"}}
+]

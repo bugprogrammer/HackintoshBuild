@@ -1,0 +1,10 @@
+[
+{"data":{"title":"StartupPowerEvents"},"attr":{"id":"3018","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},
+{"data":{"title":"Model"},"attr":{"id":"3020","ColType":"Data","ColValue":"&lt;4d0061006300500072006f0036002c0031000000&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"3022","ColType":"Data","ColValue":"&lt;\"platform\"&gt;"}},
+{"data":{"title":"InitialTSC"},"attr":{"id":"3024","ColType":"Data","ColValue":"&lt;c3d1660200000000&gt;"}},
+{"data":{"title":"system-id"},"attr":{"id":"3026","ColType":"Data","ColValue":"&lt;1c0b10fb43a7b550bb86bf11a401449b&gt;"}},
+{"data":{"title":"SystemSerialNumber"},"attr":{"id":"3028","ColType":"Data","ColValue":"&lt;\"F\",\"5\",\"K\",\"M\",\"7\",\"0\",\"H\",\"0\",\"F\",\"9\",\"V\",\"N\"&gt;"}},
+{"data":{"title":"DevicePathsSupported"},"attr":{"id":"3030","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"FSBFrequency"},"attr":{"id":"3032","ColType":"Data","ColValue":"&lt;00e1f50500000000&gt;"}}
+]

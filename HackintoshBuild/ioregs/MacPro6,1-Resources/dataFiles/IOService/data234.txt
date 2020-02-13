@@ -1,0 +1,16 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"23877","ColType":"Number","ColValue":"2850"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"23879","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"Transport"},"attr":{"id":"23881","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"23883","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"VendorID"},"attr":{"id":"23885","ColType":"Number","ColValue":"1240"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"23887","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"23889","ColType":"Number","ColValue":"65280"}},
+{"data":{"title":"BootProtocol"},"attr":{"id":"23891","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"23893","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"23894","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"23896","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"23898","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"23900","ColType":"String","ColValue":""}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"23902","ColType":"String","ColValue":"Microchip Technology Inc."}},
+{"data":{"title":"Product"},"attr":{"id":"23904","ColType":"String","ColValue":"Simple HID Device Demo"}},
+{"data":{"title":"LocationID"},"attr":{"id":"23906","ColType":"Number","ColValue":"1188608"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"23908","ColType":"Number","ColValue":"0"}}
+]

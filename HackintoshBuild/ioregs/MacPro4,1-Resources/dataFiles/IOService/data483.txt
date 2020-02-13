@@ -1,0 +1,18 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"28030","ColType":"Number","ColValue":"524"}},
+{"data":{"title":"Transport"},"attr":{"id":"28032","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"HIDKind"},"attr":{"id":"28034","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"28036","ColType":"Number","ColValue":"1056"}},
+{"data":{"title":"VendorID"},"attr":{"id":"28038","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"28040","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"HIDDeviceEventID"},"attr":{"id":"28042","ColType":"Number","ColValue":"447692544"}},
+{"data":{"title":"HIDSubinterfaceID"},"attr":{"id":"28044","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"HIDKeyMapping"},"attr":{"id":"28046","ColType":"Data","ColValue":"&lt;00000000001800000101020203030404050506060707080809090a0a0b0b0c0c0d0d0e0e0f0f10101111121213131414151516161717&gt;"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"28048","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"28049","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"28051","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"28053","ColType":"Number","ColValue":"128"}}]},{"data":{"title":"1"},"attr":{"id":"28054","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"28056","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"28058","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"HIDInterfaceID"},"attr":{"id":"28060","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"28062","ColType":"String","ColValue":"Mitsumi Electric"}},
+{"data":{"title":"HIDVirtualDevice"},"attr":{"id":"28064","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Product"},"attr":{"id":"28066","ColType":"String","ColValue":"Apple Extended USB Keyboard"}},
+{"data":{"title":"LocationID"},"attr":{"id":"28068","ColType":"Number","ColValue":"18446744073612242944"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"28070","ColType":"Number","ColValue":"0"}}
+]

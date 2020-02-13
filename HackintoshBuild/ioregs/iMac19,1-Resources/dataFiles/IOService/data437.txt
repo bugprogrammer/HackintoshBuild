@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"33069","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"33071","ColType":"String","ColValue":"IONetworkStack"}},
+{"data":{"title":"IONetworkMbufDMADrivers"},"attr":{"id":"33073","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"33074","ColType":"String","ColValue":"com.apple.iokit.AppleBCM5701Ethernet"}}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"33076","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"33078","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"33080","ColType":"String","ColValue":"com.apple.iokit.IONetworkingFamily"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"33082","ColType":"String","ColValue":"IONetworkStackUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"33084","ColType":"String","ColValue":"IONetworkStack"}}
+]

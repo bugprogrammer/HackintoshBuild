@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"58974","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"58976","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"58978","ColType":"Number","ColValue":"3"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"58980","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"58982","ColType":"Number","ColValue":"258"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"58984","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"58986","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"58988","ColType":"Number","ColValue":"18446744073709551516"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"58990","ColType":"String","ColValue":"com.apple.iokit.IOPCIFamily"}},
+{"data":{"title":"IOPCIClassMatch"},"attr":{"id":"58992","ColType":"String","ColValue":"0x06040000&0xffff0000"}},
+{"data":{"title":"IOClass"},"attr":{"id":"58994","ColType":"String","ColValue":"IOPCI2PCIBridge"}}
+]

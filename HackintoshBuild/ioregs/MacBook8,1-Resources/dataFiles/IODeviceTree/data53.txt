@@ -1,0 +1,19 @@
+[
+{"data":{"title":"ioVoltageSelect"},"attr":{"id":"3123","ColType":"Data","ColValue":"&lt;0300000000000000&gt;"}},
+{"data":{"title":"sclHcnt"},"attr":{"id":"3125","ColType":"Data","ColValue":"&lt;7d00000000000000&gt;"}},
+{"data":{"title":"sdaSetup"},"attr":{"id":"3127","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},
+{"data":{"title":"powerStrategy"},"attr":{"id":"3129","ColType":"Data","ColValue":"&lt;4254000000000000&gt;"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"3131","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/I2C1@150002/HPM0@0"}},
+{"data":{"title":"sdaHold"},"attr":{"id":"3133","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},
+{"data":{"title":"ltrEnb"},"attr":{"id":"3135","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},
+{"data":{"title":"sclHz"},"attr":{"id":"3137","ColType":"Data","ColValue":"&lt;801a060000000000&gt;"}},
+{"data":{"title":"addrWidth"},"attr":{"id":"3139","ColType":"Data","ColValue":"&lt;0700000000000000&gt;"}},
+{"data":{"title":"ltrSWMode"},"attr":{"id":"3141","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"3143","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"sclMode"},"attr":{"id":"3145","ColType":"Data","ColValue":"&lt;0200000000000000&gt;"}},
+{"data":{"title":"i2cAddress"},"attr":{"id":"3147","ColType":"Data","ColValue":"&lt;1200000000000000&gt;"}},
+{"data":{"title":"dataWidth"},"attr":{"id":"3149","ColType":"Data","ColValue":"&lt;0800000000000000&gt;"}},
+{"data":{"title":"i2cSize"},"attr":{"id":"3151","ColType":"Data","ColValue":"&lt;1000000000000000&gt;"}},
+{"data":{"title":"sclPeriod"},"attr":{"id":"3153","ColType":"Data","ColValue":"&lt;c409000000000000&gt;"}},
+{"data":{"title":"sclLcnt"},"attr":{"id":"3155","ColType":"Data","ColValue":"&lt;7d00000000000000&gt;"}}
+]

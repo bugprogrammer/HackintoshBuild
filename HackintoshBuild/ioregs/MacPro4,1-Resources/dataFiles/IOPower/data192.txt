@@ -1,0 +1,14 @@
+[
+{"data":{"title":"ShutdownCause"},"attr":{"id":"21255","ColType":"String","ColValue":"3"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"21257","ColType":"String","ColValue":"com.apple.driver.AppleSMC"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"21259","ColType":"String","ColValue":"APP0001"}},
+{"data":{"title":"IOClass"},"attr":{"id":"21261","ColType":"String","ColValue":"AppleSMC"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"21263","ColType":"Number","ColValue":"20000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"21265","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"21267","ColType":"String","ColValue":"APP0001"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"21269","ColType":"String","ColValue":"AppleSMCClient"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"21271","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"21273","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"smc-version"},"attr":{"id":"21275","ColType":"String","ColValue":"1.25f4"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"21277","ColType":"String","ColValue":"IOACPIPlatformDevice"}},
+{"data":{"title":"smc-count"},"attr":{"id":"21279","ColType":"Number","ColValue":"1"}}
+]

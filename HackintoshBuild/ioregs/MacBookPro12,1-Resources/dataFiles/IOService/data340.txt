@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOAudioSelectorControlAvailableSelections"},"attr":{"id":"89182","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"89183","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOAudioSelectorControlSelectionValue"},"attr":{"id":"89185","ColType":"Number","ColValue":"1768778083"}},{"data":{"title":"IOAudioSelectorControlSelectionDescriptionKey"},"attr":{"id":"89187","ColType":"String","ColValue":"InternalMic"}}]}]},
+{"data":{"title":"IOAudioControlChannelNumber"},"attr":{"id":"89189","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioControlID"},"attr":{"id":"89191","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioControlValue"},"attr":{"id":"89193","ColType":"Number","ColValue":"1768778083"}},
+{"data":{"title":"IOAudioControlChannelID"},"attr":{"id":"89195","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioControlUsage"},"attr":{"id":"89197","ColType":"Number","ColValue":"1768845428"}},
+{"data":{"title":"IOAudioControlType"},"attr":{"id":"89199","ColType":"Number","ColValue":"1936483188"}},
+{"data":{"title":"IOAudioControlSubType"},"attr":{"id":"89201","ColType":"Number","ColValue":"1768845428"}}
+]

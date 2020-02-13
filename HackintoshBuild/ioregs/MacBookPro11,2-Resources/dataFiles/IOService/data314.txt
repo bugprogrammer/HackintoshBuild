@@ -1,0 +1,17 @@
+[
+{"data":{"title":"Write Time Out Duration"},"attr":{"id":"50360","ColType":"Number","ColValue":"30000"}},
+{"data":{"title":"Read Time Out Duration"},"attr":{"id":"50362","ColType":"Number","ColValue":"30000"}},
+{"data":{"title":"IOUnit"},"attr":{"id":"50364","ColType":"Number","ColValue":"19"}},
+{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"50366","ColType":"String","ColValue":"External"}},
+{"data":{"title":"No INQUIRY VPD Pages"},"attr":{"id":"50368","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"50370","ColType":"String","ColValue":"com.apple.iokit.IOUSBMassStorageClass"}},
+{"data":{"title":"IOClass"},"attr":{"id":"50372","ColType":"String","ColValue":"IOUSBMassStorageClass"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"50374","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"50376","ColType":"String","ColValue":"USB"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"50378","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"50380","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"50382","ColType":"Number","ColValue":"30000"}}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"50384","ColType":"Number","ColValue":"50000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"50386","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"50388","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"Physical Interconnect"},"attr":{"id":"50390","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"50392","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"50394","ColType":"String","ColValue":"IOUSBInterface"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"50396","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"50398","ColType":"Number","ColValue":"1"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"50400","ColType":"Number","ColValue":"1"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"50402","ColType":"Number","ColValue":"1"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"50404","ColType":"Number","ColValue":"1"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"50406","ColType":"Number","ColValue":"1"}}]}
+]

@@ -1,0 +1,13 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"16733","ColType":"String","ColValue":"IOSCSIProtocolServices"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"16735","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"16737","ColType":"String","ColValue":"USB"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"16739","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"16741","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"16743","ColType":"Number","ColValue":"30000"}}]},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"16745","ColType":"String","ColValue":"SCSITaskUserClientIniter"}},
+{"data":{"title":"TPGS Information"},"attr":{"id":"16747","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"16749","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Product Revision Level"},"attr":{"id":"16751","ColType":"String","ColValue":""}},
+{"data":{"title":"Product Identification"},"attr":{"id":"16753","ColType":"String","ColValue":"EX PLUS"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"16755","ColType":"String","ColValue":"com.apple.iokit.IOSCSIArchitectureModelFamily"}},
+{"data":{"title":"Vendor Identification"},"attr":{"id":"16757","ColType":"String","ColValue":"OCZ VERT"}},
+{"data":{"title":"IOClass"},"attr":{"id":"16759","ColType":"String","ColValue":"IOSCSIPeripheralDeviceNub"}},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"16761","ColType":"Number","ColValue":"0"}}
+]

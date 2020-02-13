@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOAudioSelectorControlAvailableSelections"},"attr":{"id":"81841","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"81842","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOAudioSelectorControlSelectionValue"},"attr":{"id":"81844","ColType":"Number","ColValue":"927101028"}},{"data":{"title":"IOAudioSelectorControlTransportValue"},"attr":{"id":"81846","ColType":"Number","ColValue":"1685090932"}},{"data":{"title":"IOAudioSelectorControlSelectionDescriptionKey"},"attr":{"id":"81848","ColType":"String","ColValue":"LG Ultra HD"}}]}]},
+{"data":{"title":"IOAudioControlChannelNumber"},"attr":{"id":"81850","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioControlID"},"attr":{"id":"81852","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioControlValue"},"attr":{"id":"81854","ColType":"Number","ColValue":"927101028"}},
+{"data":{"title":"IOAudioControlChannelID"},"attr":{"id":"81856","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioControlUsage"},"attr":{"id":"81858","ColType":"Number","ColValue":"1869968496"}},
+{"data":{"title":"IOAudioControlType"},"attr":{"id":"81860","ColType":"Number","ColValue":"1936483188"}},
+{"data":{"title":"IOAudioControlSubType"},"attr":{"id":"81862","ColType":"Number","ColValue":"1869968496"}}
+]

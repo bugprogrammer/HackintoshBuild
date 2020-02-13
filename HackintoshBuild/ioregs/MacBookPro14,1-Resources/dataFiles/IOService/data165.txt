@@ -1,0 +1,4 @@
+[
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"5057","ColType":"String","ColValue":"AppleIntelMEUserClient"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"5059","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"5061","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"5063","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"5065","ColType":"Number","ColValue":"32768"}}]}
+]

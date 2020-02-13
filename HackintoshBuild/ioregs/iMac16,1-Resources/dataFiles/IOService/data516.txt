@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"42858","ColType":"String","ColValue":"com.apple.iokit.IOSCSIArchitectureModelFamily"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"42860","ColType":"String","ColValue":"com.apple.iokit.SCSISubsystemGlobals"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"42862","ColType":"String","ColValue":"com.apple.iokit.IOSCSIArchitectureModelFamily"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"42864","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"42866","ColType":"String","ColValue":"AppleSCSISubsystemGlobals"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"42868","ColType":"String","ColValue":"IOResources"}}
+]

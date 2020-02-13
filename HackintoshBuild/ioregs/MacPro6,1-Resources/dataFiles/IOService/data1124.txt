@@ -1,0 +1,20 @@
+[
+{"data":{"title":"device-id"},"attr":{"id":"67882","ColType":"Data","ColValue":"&lt;280e0000&gt;"}},
+{"data":{"title":"vendor-id"},"attr":{"id":"67884","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"IOName"},"attr":{"id":"67886","ColType":"String","ColValue":"pci8086,e28"}},
+{"data":{"title":"pcidebug"},"attr":{"id":"67888","ColType":"String","ColValue":"0:5:0"}},
+{"data":{"title":"IOPCIExpressLinkStatus"},"attr":{"id":"67890","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"67892","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/IOC0@50000"}},
+{"data":{"title":"revision-id"},"attr":{"id":"67894","ColType":"Data","ColValue":"&lt;04000000&gt;"}},
+{"data":{"title":"reg"},"attr":{"id":"67896","ColType":"Data","ColValue":"&lt;0028000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"built-in"},"attr":{"id":"67898","ColType":"Data","ColValue":"&lt;00&gt;"}},
+{"data":{"title":"IOPCIResourced"},"attr":{"id":"67900","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"class-code"},"attr":{"id":"67902","ColType":"Data","ColValue":"&lt;00800800&gt;"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"67904","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"pci-aspm-default"},"attr":{"id":"67906","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"compatible"},"attr":{"id":"67908","ColType":"Data","ColValue":"&lt;\"pci8086,e28\",\"pciclass,088000\",\"IOC0\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"67910","ColType":"Data","ColValue":"&lt;\"pci8086,e28\"&gt;"}},
+{"data":{"title":"IOPCIExpressLinkCapabilities"},"attr":{"id":"67912","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOPCIExpressCapabilities"},"attr":{"id":"67914","ColType":"Number","ColValue":"146"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"67916","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"67918","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"67920","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"67922","ColType":"Number","ColValue":"3"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"67924","ColType":"Number","ColValue":"258"}}]}
+]

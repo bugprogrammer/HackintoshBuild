@@ -1,0 +1,7 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"5499","ColType":"String","ColValue":"AppleProfileReadCounterAction"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"5501","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"5503","ColType":"String","ColValue":"com.apple.driver.AppleProfileReadCounterAction"}},
+{"data":{"title":"IOClass"},"attr":{"id":"5505","ColType":"String","ColValue":"AppleProfileReadCounterAction"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"5507","ColType":"String","ColValue":"ApplePerformanceCounterManager"}}
+]

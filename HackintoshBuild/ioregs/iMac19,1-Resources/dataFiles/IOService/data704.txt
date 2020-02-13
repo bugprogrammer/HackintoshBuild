@@ -1,0 +1,19 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"119816","ColType":"Number","ColValue":"615"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"119818","ColType":"Number","ColValue":"11250"}},
+{"data":{"title":"Transport"},"attr":{"id":"119820","ColType":"String","ColValue":"Bluetooth"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"119822","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"119824","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"VendorID"},"attr":{"id":"119826","ColType":"Number","ColValue":"76"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"119828","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"119830","ColType":"Number","ColValue":"65280"}},
+{"data":{"title":"MaxInputReportSize"},"attr":{"id":"119832","ColType":"Number","ColValue":"108"}},
+{"data":{"title":"MaxFeatureReportSize"},"attr":{"id":"119834","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"MaxOutputReportSize"},"attr":{"id":"119836","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"119838","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"119839","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"119841","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"119843","ColType":"Number","ColValue":"3"}}]}]},
+{"data":{"title":"ReportDescriptor"},"attr":{"id":"119845","ColType":"Data","ColValue":"&lt;0600ff0903a1010600ff0903150026ff0085c0966b0075088102c0&gt;"}},
+{"data":{"title":"SerialNumber"},"attr":{"id":"119847","ColType":"String","ColValue":"68-fe-f7-4b-f8-6f"}},
+{"data":{"title":"Product"},"attr":{"id":"119849","ColType":"String","ColValue":"Magic Keyboard"}},
+{"data":{"title":"LocationID"},"attr":{"id":"119851","ColType":"Number","ColValue":"2001467503"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"119853","ColType":"Number","ColValue":"0"}}
+]

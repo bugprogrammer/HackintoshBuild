@@ -1,0 +1,5 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3616","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"3618","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3620","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"io-device-location"},"attr":{"id":"3622","ColType":"Data","ColValue":"&lt;\"Bay 2\"&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"3624","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SATA@1f0002/PRT1@1"}},{"data":{"title":"acpi-device"},"attr":{"id":"3626","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

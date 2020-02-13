@@ -1,0 +1,14 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"190975","ColType":"Number","ColValue":"632"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"190977","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"Transport"},"attr":{"id":"190979","ColType":"String","ColValue":"SPI"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"190981","ColType":"Number","ColValue":"2169"}},
+{"data":{"title":"VendorID"},"attr":{"id":"190983","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"190985","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"190987","ColType":"Number","ColValue":"65280"}},
+{"data":{"title":"BootProtocol"},"attr":{"id":"190989","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"190991","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"190992","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"190994","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"190996","ColType":"Number","ColValue":"3"}}]}]},
+{"data":{"title":"Product"},"attr":{"id":"190998","ColType":"String","ColValue":"Apple Internal Keyboard / Trackpad"}},
+{"data":{"title":"LocationID"},"attr":{"id":"191000","ColType":"Number","ColValue":"16777216"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"191002","ColType":"Number","ColValue":"0"}}
+]

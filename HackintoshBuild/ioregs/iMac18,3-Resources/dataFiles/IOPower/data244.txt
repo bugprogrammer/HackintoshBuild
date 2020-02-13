@@ -1,0 +1,6 @@
+[
+{"data":{"title":"max-value"},"attr":{"id":"17171","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"17173","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"17175","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"17177","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"Heuristic-ID"},"attr":{"id":"17179","ColType":"Data","ColValue":"&lt;ffffffff&gt;"}},
+{"data":{"title":"min-value"},"attr":{"id":"17181","ColType":"Number","ColValue":"0"}}
+]

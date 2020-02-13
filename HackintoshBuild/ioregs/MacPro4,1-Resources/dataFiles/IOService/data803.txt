@@ -1,0 +1,15 @@
+[
+{"data":{"title":"IOTTYSuffix"},"attr":{"id":"33576","ColType":"String","ColValue":""}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"33578","ColType":"String","ColValue":"com.apple.iokit.IOSerialFamily"}},
+{"data":{"title":"IOClass"},"attr":{"id":"33580","ColType":"String","ColValue":"IOSerialBSDClient"}},
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"33582","ColType":"String","ColValue":"ZTEUSBModem_"}},
+{"data":{"title":"IOSerialBSDClientType"},"attr":{"id":"33584","ColType":"String","ColValue":"IOModemSerialStream"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"33586","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"33588","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"33590","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOTTYDevice"},"attr":{"id":"33592","ColType":"String","ColValue":"ZTEUSBModem_"}},
+{"data":{"title":"IOCalloutDevice"},"attr":{"id":"33594","ColType":"String","ColValue":"/dev/cu.ZTEUSBModem_"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"33596","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IODialinDevice"},"attr":{"id":"33598","ColType":"String","ColValue":"/dev/tty.ZTEUSBModem_"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"33600","ColType":"String","ColValue":"IOSerialStreamSync"}}
+]

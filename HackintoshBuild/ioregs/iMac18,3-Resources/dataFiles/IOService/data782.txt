@@ -1,0 +1,16 @@
+[
+{"data":{"title":"OpenConnectionAuthenticationRequired"},"attr":{"id":"148019","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"ConnectionMode"},"attr":{"id":"148021","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"MaxACLPacketSize"},"attr":{"id":"148023","ColType":"Number","ColValue":"1021"}},
+{"data":{"title":"IsInitiator"},"attr":{"id":"148025","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BluetoothObjectID"},"attr":{"id":"148027","ColType":"Number","ColValue":"1247794304"}},
+{"data":{"title":"ProcessName"},"attr":{"id":"148029","ColType":"String","ColValue":"bluetoothd"}},
+{"data":{"title":"BD_ADDR"},"attr":{"id":"148031","ColType":"Data","ColValue":"&lt;28cfe967248a&gt;"}},
+{"data":{"title":"Link Level Encryption"},"attr":{"id":"148033","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ConnectionModeInterval"},"attr":{"id":"148035","ColType":"Number","ColValue":"18"}},
+{"data":{"title":"ConnectionHandle"},"attr":{"id":"148037","ColType":"Number","ColValue":"12"}},
+{"data":{"title":"ClassOfDevice"},"attr":{"id":"148039","ColType":"Number","ColValue":"9536"}},
+{"data":{"title":"CodecType"},"attr":{"id":"148041","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"148043","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"AuthenticationAttempted"},"attr":{"id":"148045","ColType":"Boolean","ColValue":"Yes"}}
+]

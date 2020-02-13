@@ -1,0 +1,13 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"36735","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"36737","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"36739","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"36741","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"36743","ColType":"String","ColValue":"IOACPIPlatformDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"36745","ColType":"String","ColValue":"smbus"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"36747","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"36749","ColType":"String","ColValue":"smbus"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"36751","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOPlatformSleepAction"},"attr":{"id":"36753","ColType":"Number","ColValue":"100000"}},
+{"data":{"title":"IOPropertyMatch"},"attr":{"id":"36755","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"bus-architecture"},"attr":{"id":"36757","ColType":"String","ColValue":"ICH"}},{"data":{"title":"contains-device"},"attr":{"id":"36759","ColType":"String","ColValue":"true"}}]},
+{"data":{"title":"IOPlatformWakeAction"},"attr":{"id":"36761","ColType":"Number","ColValue":"100000"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"36763","ColType":"String","ColValue":"com.apple.driver.AppleSMBusController"}},
+{"data":{"title":"IOClass"},"attr":{"id":"36765","ColType":"String","ColValue":"AppleSMBusControllerICH"}}
+]

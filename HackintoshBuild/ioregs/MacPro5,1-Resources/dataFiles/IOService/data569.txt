@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"92628","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"92630","ColType":"String","ColValue":"IOSurfaceRoot"}},
+{"data":{"title":"SurfaceInfo"},"attr":{"id":"92632","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"User Clients"},"attr":{"id":"92634","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"92635","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Client Surfaces"},"attr":{"id":"92637","ColType":"Array","ColValue":"0_values"},"children":[]},{"data":{"title":"name"},"attr":{"id":"92639","ColType":"String","ColValue":"WindowServer"}}]}]},{"data":{"title":"Global Surfaces"},"attr":{"id":"92641","ColType":"Array","ColValue":"0_values"},"children":[]}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"92643","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"92645","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"92647","ColType":"String","ColValue":"com.apple.iokit.IOSurface"}},
+{"data":{"title":"IOClass"},"attr":{"id":"92649","ColType":"String","ColValue":"IOSurfaceRoot"}}
+]

@@ -1,0 +1,11 @@
+[
+{"data":{"title":"gspi-channels-count"},"attr":{"id":"3394","ColType":"Data","ColValue":"&lt;0200000000000000&gt;"}},
+{"data":{"title":"gspi-channel-number"},"attr":{"id":"3396","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},
+{"data":{"title":"gspi-pin-cs"},"attr":{"id":"3398","ColType":"Data","ColValue":"&lt;5700000000000000&gt;"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"3400","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"gspi-pin-mosi"},"attr":{"id":"3402","ColType":"Data","ColValue":"&lt;5900000000000000&gt;"}},
+{"data":{"title":"gspi-sys-clock-period"},"attr":{"id":"3404","ColType":"Data","ColValue":"&lt;0a00000000000000&gt;"}},
+{"data":{"title":"gspi-pin-clk"},"attr":{"id":"3406","ColType":"Data","ColValue":"&lt;5800000000000000&gt;"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"3408","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SPI1@1e0003"}},
+{"data":{"title":"gspi-pin-miso"},"attr":{"id":"3410","ColType":"Data","ColValue":"&lt;5a00000000000000&gt;"}}
+]

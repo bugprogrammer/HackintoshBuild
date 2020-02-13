@@ -1,0 +1,20 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"35933","ColType":"Number","ColValue":"626"}},
+{"data":{"title":"Transport"},"attr":{"id":"35935","ColType":"String","ColValue":"SPI"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"35937","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"35939","ColType":"Number","ColValue":"1570"}},
+{"data":{"title":"VendorID"},"attr":{"id":"35941","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"35943","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"HIDKind"},"attr":{"id":"35945","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"HIDDeviceEventID"},"attr":{"id":"35947","ColType":"Number","ColValue":"85432"}},
+{"data":{"title":"HIDSubinterfaceID"},"attr":{"id":"35949","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"alt_sender_id"},"attr":{"id":"35951","ColType":"Number","ColValue":"4295052726"}},
+{"data":{"title":"HIDKeyMapping"},"attr":{"id":"35953","ColType":"Data","ColValue":"&lt;00000000001800000101020203030404050506060707080809090a0a0b0b0c0c0d0d0e0e0f0f10101111121213131414151516161717&gt;"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"35955","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"35956","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"35958","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"35960","ColType":"Number","ColValue":"6"}}]},{"data":{"title":"1"},"attr":{"id":"35961","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"35963","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"35965","ColType":"Number","ColValue":"1"}}]},{"data":{"title":"2"},"attr":{"id":"35966","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"35968","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"35970","ColType":"Number","ColValue":"6"}}]},{"data":{"title":"3"},"attr":{"id":"35971","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"35973","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"35975","ColType":"Number","ColValue":"15"}}]}]},
+{"data":{"title":"HIDResetKeyboard"},"attr":{"id":"35977","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"HIDInterfaceID"},"attr":{"id":"35979","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"HIDVirtualDevice"},"attr":{"id":"35981","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Product"},"attr":{"id":"35983","ColType":"String","ColValue":"Apple Internal Keyboard / Trackpad"}},
+{"data":{"title":"LocationID"},"attr":{"id":"35985","ColType":"Number","ColValue":"16777216"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"35987","ColType":"Number","ColValue":"33"}}
+]

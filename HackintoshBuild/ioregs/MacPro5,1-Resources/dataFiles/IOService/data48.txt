@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"3070","ColType":"String","ColValue":"ACPI_SMC_PlatformPlugin"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"3072","ColType":"String","ColValue":"AppleTyMCEDriver"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"3074","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3075","ColType":"Data","ColValue":"&lt;00000000&gt;"}}]},
+{"data":{"title":"InterruptControllerName"},"attr":{"id":"3077","ColType":"String","ColValue":"AppleTyMCEInterruptController"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"3079","ColType":"Number","ColValue":"4000"}},
+{"data":{"title":"ECCInterruptMode"},"attr":{"id":"3081","ColType":"String","ColValue":"Enabled"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"3083","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3084","ColType":"String","ColValue":"AppleTyMCEInterruptController"}}]},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"3086","ColType":"String","ColValue":"com.apple.driver.AppleTyMCEDriver"}},
+{"data":{"title":"IOClass"},"attr":{"id":"3088","ColType":"String","ColValue":"AppleTyMCEDriver"}}
+]

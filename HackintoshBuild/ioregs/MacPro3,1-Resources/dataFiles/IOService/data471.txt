@@ -1,0 +1,11 @@
+[
+{"data":{"title":"Control Block Address"},"attr":{"id":"30907","ColType":"Number","ColValue":"12536"}},
+{"data":{"title":"Interrupt Vector"},"attr":{"id":"30909","ColType":"Number","ColValue":"20"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"30911","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"30913","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"30914","ColType":"Data","ColValue":"&lt;1400000007000000&gt;"}}]},
+{"data":{"title":"Channel Number"},"attr":{"id":"30916","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"30918","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"30919","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"Channel Mode"},"attr":{"id":"30921","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"30923","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PATA@1f0001/SECD@1"}},
+{"data":{"title":"Command Block Address"},"attr":{"id":"30925","ColType":"Number","ColValue":"12512"}}
+]

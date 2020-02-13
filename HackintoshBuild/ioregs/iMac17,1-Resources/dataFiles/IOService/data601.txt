@@ -1,0 +1,17 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"105535","ColType":"Number","ColValue":"613"}},
+{"data":{"title":"Transport"},"attr":{"id":"105537","ColType":"String","ColValue":"Bluetooth"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"105539","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"105541","ColType":"Number","ColValue":"98"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"105543","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"VendorID"},"attr":{"id":"105545","ColType":"Number","ColValue":"76"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"105547","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"105549","ColType":"Number","ColValue":"11250"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"105551","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"105552","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsage"},"attr":{"id":"105554","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsagePage"},"attr":{"id":"105556","ColType":"Number","ColValue":"0"}}]}]},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"105558","ColType":"String","ColValue":"Trackpad"}},
+{"data":{"title":"SerialNumber"},"attr":{"id":"105560","ColType":"String","ColValue":"d0-03-4b-dc-f7-00"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"105562","ColType":"String","ColValue":"Apple"}},
+{"data":{"title":"Product"},"attr":{"id":"105564","ColType":"String","ColValue":"Apple’s Trackpad"}},
+{"data":{"title":"LocationID"},"attr":{"id":"105566","ColType":"Number","ColValue":"1272772352"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"105568","ColType":"Number","ColValue":"0"}}
+]

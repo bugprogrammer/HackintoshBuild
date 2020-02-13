@@ -1,0 +1,21 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"71108","ColType":"Number","ColValue":"617"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"71110","ColType":"Number","ColValue":"11250"}},
+{"data":{"title":"Transport"},"attr":{"id":"71112","ColType":"String","ColValue":"Bluetooth"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"71114","ColType":"Number","ColValue":"112"}},
+{"data":{"title":"VendorID"},"attr":{"id":"71116","ColType":"Number","ColValue":"76"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"71118","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"71120","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"71122","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"MaxInputReportSize"},"attr":{"id":"71124","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"MaxFeatureReportSize"},"attr":{"id":"71126","ColType":"Number","ColValue":"65"}},
+{"data":{"title":"MaxOutputReportSize"},"attr":{"id":"71128","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"71130","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"71131","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"71133","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"71135","ColType":"Number","ColValue":"2"}}]},{"data":{"title":"1"},"attr":{"id":"71136","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"71138","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"71140","ColType":"Number","ColValue":"1"}}]},{"data":{"title":"2"},"attr":{"id":"71141","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"71143","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"71145","ColType":"Number","ColValue":"20"}}]}]},
+{"data":{"title":"ReportDescriptor"},"attr":{"id":"71147","ColType":"Data","ColValue":"&lt;05010902a10185120509190129021500250195027501810295017506810305010901a1001601f826ff073601fb46ff046513550d09300931751095028106750895028101c00602ff09558555150026ff0075089540b1a2c00600ff0914a101859005847501950315002501096105850944094681029505810175089501150026ff0009658102c0&gt;"}},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"71149","ColType":"String","ColValue":"Mouse"}},
+{"data":{"title":"SerialNumber"},"attr":{"id":"71151","ColType":"String","ColValue":"94-f6-d6-c2-42-c3"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"71153","ColType":"String","ColValue":"Apple"}},
+{"data":{"title":"Product"},"attr":{"id":"71155","ColType":"String","ColValue":"System Administrator’s Mouse"}},
+{"data":{"title":"LocationID"},"attr":{"id":"71157","ColType":"Number","ColValue":"1455571651"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"71159","ColType":"Number","ColValue":"0"}}
+]

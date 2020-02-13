@@ -1,0 +1,13 @@
+[
+{"data":{"title":"fault-len"},"attr":{"id":"5955","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"skey"},"attr":{"id":"5957","ColType":"Number","ColValue":"1279546178"}},
+{"data":{"title":"type"},"attr":{"id":"5959","ColType":"Number","ColValue":"1228030720"}},
+{"data":{"title":"address"},"attr":{"id":"5961","ColType":"Number","ColValue":"44"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"5963","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"fault-off"},"attr":{"id":"5965","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"refnum"},"attr":{"id":"5967","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"command"},"attr":{"id":"5969","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"version"},"attr":{"id":"5971","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"smask"},"attr":{"id":"5973","ColType":"Number","ColValue":"255"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"5975","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SBUS@1f0003/BUS0@0/BLC0@0"}}
+]

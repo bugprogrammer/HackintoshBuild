@@ -1,0 +1,8 @@
+[
+{"data":{"title":"DigitalAudioCapabilities"},"attr":{"id":"7513","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"HDMI"},"attr":{"id":"7515","ColType":"Number","ColValue":"1"}},{"data":{"title":"DisplayPort"},"attr":{"id":"7517","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"7519","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"7521","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"7523","ColType":"String","ColValue":"com.apple.iokit.IOHDAFamily"}},
+{"data":{"title":"IOClass"},"attr":{"id":"7525","ColType":"String","ColValue":"IOHDACodecDriver"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"7527","ColType":"String","ColValue":"IOHDACodecDevice"}}
+]

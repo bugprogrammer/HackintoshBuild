@@ -1,0 +1,14 @@
+[
+{"data":{"title":"Revision ID"},"attr":{"id":"10897","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"Thunderbolt Version"},"attr":{"id":"10899","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Max In Hop ID"},"attr":{"id":"10901","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"Port Number"},"attr":{"id":"10903","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"Hop Table"},"attr":{"id":"10905","ColType":"Array","ColValue":"0_values"},"children":[]},
+{"data":{"title":"Adapter Type"},"attr":{"id":"10907","ColType":"Number","ColValue":"917761"}},
+{"data":{"title":"Max Credits"},"attr":{"id":"10909","ColType":"Number","ColValue":"16"}},
+{"data":{"title":"Max Out Hop ID"},"attr":{"id":"10911","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"Description"},"attr":{"id":"10913","ColType":"String","ColValue":"DP or HDMI Adapter"}},
+{"data":{"title":"Sink"},"attr":{"id":"10915","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Device ID"},"attr":{"id":"10917","ColType":"Number","ColValue":"5587"}},
+{"data":{"title":"Vendor ID"},"attr":{"id":"10919","ColType":"Number","ColValue":"32902"}}
+]

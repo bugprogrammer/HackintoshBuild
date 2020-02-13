@@ -1,0 +1,14 @@
+[
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"8968","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Hardware Owner"},"attr":{"id":"8970","ColType":"String","ColValue":"AppleThunderboltNHIType2"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"8972","ColType":"String","ColValue":"com.apple.driver.AppleThunderboltNHI"}},
+{"data":{"title":"IOClass"},"attr":{"id":"8974","ColType":"String","ColValue":"AppleThunderboltHAL"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"8976","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"8978","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOPCIClassMatch"},"attr":{"id":"8980","ColType":"String","ColValue":"0x08800000&0xffff0000"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"8982","ColType":"String","ColValue":"AppleThunderboltNHIUserClient"}},
+{"data":{"title":"IOPCIMatch"},"attr":{"id":"8984","ColType":"String","ColValue":"0x15008086&0xff00ffff"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"8986","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"8988","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"8990","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"8992","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"8994","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"8996","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IOPlatformSleepAction"},"attr":{"id":"8998","ColType":"Number","ColValue":"200000"}}
+]

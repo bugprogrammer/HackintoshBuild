@@ -1,0 +1,12 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"3102","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"3104","ColType":"Number","ColValue":"0"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"3106","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"acpi-dstate-mask"},"attr":{"id":"3108","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"acpi-pci-routing-table"},"attr":{"id":"3110","ColType":"Data","ColValue":"&lt;1800000000000000ffff00000000000011000000000000001800000001000000ffff00000000000012000000000000001800000002000000ffff00000000000013000000000000001800000003000000ffff0000000000001000000000000000000000000000000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"3112","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"_ADR"},"attr":{"id":"3114","ColType":"Number","ColValue":"1835009"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3116","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"3118","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP02@1c0001"}},{"data":{"title":"acpi-device"},"attr":{"id":"3120","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"3122","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"acpi-dstate"},"attr":{"id":"3124","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"_STA"},"attr":{"id":"3126","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"acpi-wake-system-state"},"attr":{"id":"3128","ColType":"Number","ColValue":"3"}}
+]

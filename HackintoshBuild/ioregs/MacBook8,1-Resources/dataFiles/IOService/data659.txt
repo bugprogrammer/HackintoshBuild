@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"103560","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"103562","ColType":"String","ColValue":"IOBluetoothSerialManager"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"103564","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOPropertyMatch"},"attr":{"id":"103566","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOSerialManagerMustLoad"},"attr":{"id":"103568","ColType":"Boolean","ColValue":"Yes"}}]},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"103570","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"103572","ColType":"String","ColValue":"com.apple.iokit.IOBluetoothSerialManager"}},
+{"data":{"title":"IOClass"},"attr":{"id":"103574","ColType":"String","ColValue":"IOBluetoothSerialManager"}}
+]

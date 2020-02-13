@@ -1,0 +1,13 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"37555","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"37557","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"37559","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"37561","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"37563","ColType":"String","ColValue":"IOService"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"37565","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"0516B563-B15B-11DA-96EB-0014519758EF"},"attr":{"id":"37567","ColType":"String","ColValue":"AppleSMCLMU.kext/Contents/PlugIns/AmbientLightSensorHID.plugin"}}]},
+{"data":{"title":"IONameMatched"},"attr":{"id":"37569","ColType":"String","ColValue":"ACPI0008"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"37571","ColType":"String","ColValue":"ACPI0008"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"37573","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"37575","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"37577","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37579","ColType":"String","ColValue":"com.apple.driver.AppleSMCLMU"}},
+{"data":{"title":"HIDServiceSupport"},"attr":{"id":"37581","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOClass"},"attr":{"id":"37583","ColType":"String","ColValue":"AppleLMUController"}}
+]

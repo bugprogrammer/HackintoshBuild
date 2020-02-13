@@ -1,0 +1,21 @@
+[
+{"data":{"title":"USBPortType"},"attr":{"id":"21474","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"idProduct"},"attr":{"id":"21476","ColType":"Number","ColValue":"33421"}},
+{"data":{"title":"kUSBVendorString"},"attr":{"id":"21478","ColType":"String","ColValue":"Apple Inc."}},
+{"data":{"title":"sessionID"},"attr":{"id":"21480","ColType":"Number","ColValue":"1632518674"}},
+{"data":{"title":"AppleUSBAlternateServiceRegistryID"},"attr":{"id":"21482","ColType":"Number","ColValue":"4294968808"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"21484","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"9dc7b780-9ec0-11d4-a54f-000a27052861"},"attr":{"id":"21486","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"USBSpeed"},"attr":{"id":"21488","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"kUSBCurrentConfiguration"},"attr":{"id":"21490","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bDeviceClass"},"attr":{"id":"21492","ColType":"Number","ColValue":"255"}},
+{"data":{"title":"bDeviceProtocol"},"attr":{"id":"21494","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOClassNameOverride"},"attr":{"id":"21496","ColType":"String","ColValue":"IOUSBDevice"}},
+{"data":{"title":"USB Product Name"},"attr":{"id":"21498","ColType":"String","ColValue":"Bluetooth USB Host Controller"}},
+{"data":{"title":"bDeviceSubClass"},"attr":{"id":"21500","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"21502","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"idVendor"},"attr":{"id":"21504","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"21506","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DevicePowerState"},"attr":{"id":"21508","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"21510","ColType":"Number","ColValue":"32768"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"21512","ColType":"Number","ColValue":"0"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"21514","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"21516","ColType":"Number","ColValue":"2"}},{"data":{"title":"PowerOverrideOn"},"attr":{"id":"21518","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"21520","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"locationID"},"attr":{"id":"21522","ColType":"Number","ColValue":"487665664"}},
+{"data":{"title":"USB Vendor Name"},"attr":{"id":"21524","ColType":"String","ColValue":"Apple Inc."}},
+{"data":{"title":"bcdDevice"},"attr":{"id":"21526","ColType":"Number","ColValue":"274"}}
+]

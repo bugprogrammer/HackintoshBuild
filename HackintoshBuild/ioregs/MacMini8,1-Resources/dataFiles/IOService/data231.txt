@@ -1,0 +1,5 @@
+[
+{"data":{"title":"NeedsPolicyDriver"},"attr":{"id":"9853","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"9855","ColType":"String","ColValue":"AppleGraphicsDeviceControlClient"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"9857","ColType":"String","ColValue":"IOCommand is not serializable"}}
+]

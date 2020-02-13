@@ -1,0 +1,23 @@
+[
+{"data":{"title":"AppleUSBAlternateServiceRegistryID"},"attr":{"id":"6915","ColType":"Number","ColValue":"4294968669"}},
+{"data":{"title":"IOClassNameOverride"},"attr":{"id":"6917","ColType":"String","ColValue":"IOUSBDevice"}},
+{"data":{"title":"kUSBSerialNumberString"},"attr":{"id":"6919","ColType":"String","ColValue":"CC2F6J01Q2G9L0F0"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"6921","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"bDeviceClass"},"attr":{"id":"6923","ColType":"Number","ColValue":"239"}},
+{"data":{"title":"USBPortType"},"attr":{"id":"6925","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"kUSBVendorString"},"attr":{"id":"6927","ColType":"String","ColValue":"Apple Inc."}},
+{"data":{"title":"USB Product Name"},"attr":{"id":"6929","ColType":"String","ColValue":"FaceTime HD Camera (Built-in)"}},
+{"data":{"title":"USB Serial Number"},"attr":{"id":"6931","ColType":"String","ColValue":"CC2F6J01Q2G9L0F0"}},
+{"data":{"title":"USB Vendor Name"},"attr":{"id":"6933","ColType":"String","ColValue":"Apple Inc."}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"6935","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"9dc7b780-9ec0-11d4-a54f-000a27052861"},"attr":{"id":"6937","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"bcdDevice"},"attr":{"id":"6939","ColType":"Number","ColValue":"29232"}},
+{"data":{"title":"bDeviceSubClass"},"attr":{"id":"6941","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"USBSpeed"},"attr":{"id":"6943","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"sessionID"},"attr":{"id":"6945","ColType":"Number","ColValue":"794048086320"}},
+{"data":{"title":"locationID"},"attr":{"id":"6947","ColType":"Number","ColValue":"340787200"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"6949","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"6951","ColType":"Number","ColValue":"1"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"6953","ColType":"Number","ColValue":"1"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"6955","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"6957","ColType":"Number","ColValue":"1"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"6959","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"6961","ColType":"Number","ColValue":"65536"}}]},
+{"data":{"title":"kUSBCurrentConfiguration"},"attr":{"id":"6963","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"idProduct"},"attr":{"id":"6965","ColType":"Number","ColValue":"34065"}},
+{"data":{"title":"bDeviceProtocol"},"attr":{"id":"6967","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"idVendor"},"attr":{"id":"6969","ColType":"Number","ColValue":"1452"}}
+]

@@ -1,0 +1,18 @@
+[
+{"data":{"title":"NCQ"},"attr":{"id":"54684","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"54686","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"Physical Block Size"},"attr":{"id":"54688","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"Revision"},"attr":{"id":"54690","ColType":"String","ColValue":"CXM90A1Q"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"54692","ColType":"String","ColValue":"com.apple.iokit.IOAHCIBlockStorage"}},
+{"data":{"title":"IOClass"},"attr":{"id":"54694","ColType":"String","ColValue":"AppleAHCIDiskDriver"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"54696","ColType":"String","ColValue":"not serializable"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"54698","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"SATA Features"},"attr":{"id":"54700","ColType":"Number","ColValue":"30"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"54702","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"Serial Number"},"attr":{"id":"54704","ColType":"String","ColValue":"S119NYAC717591      "}},
+{"data":{"title":"Model"},"attr":{"id":"54706","ColType":"String","ColValue":"APPLE SSD SM768E                        "}},
+{"data":{"title":"Logical Block Size"},"attr":{"id":"54708","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"54710","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"54712","ColType":"String","ColValue":"IOAHCIDevice"}},
+{"data":{"title":"Queue Depth"},"attr":{"id":"54714","ColType":"Number","ColValue":"32"}}
+]

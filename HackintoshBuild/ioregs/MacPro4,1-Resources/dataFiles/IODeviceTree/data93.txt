@@ -1,0 +1,18 @@
+[
+{"data":{"title":"device-id"},"attr":{"id":"4361","ColType":"Data","ColValue":"&lt;183a0000&gt;"}},
+{"data":{"title":"vendor-id"},"attr":{"id":"4363","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"IOName"},"attr":{"id":"4365","ColType":"String","ColValue":"pci8086,3a16"}},
+{"data":{"title":"subsystem-vendor-id"},"attr":{"id":"4367","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"pcidebug"},"attr":{"id":"4369","ColType":"String","ColValue":"0:31:0"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"4371","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/LPCB@1f0000"}},
+{"data":{"title":"revision-id"},"attr":{"id":"4373","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"reg"},"attr":{"id":"4375","ColType":"Data","ColValue":"&lt;00f8000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"built-in"},"attr":{"id":"4377","ColType":"Data","ColValue":"&lt;00&gt;"}},
+{"data":{"title":"IOPCIResourced"},"attr":{"id":"4379","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"class-code"},"attr":{"id":"4381","ColType":"Data","ColValue":"&lt;00010600&gt;"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"4383","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"subsystem-id"},"attr":{"id":"4385","ColType":"Data","ColValue":"&lt;32530000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"4387","ColType":"Data","ColValue":"&lt;\"pci8086,5332\",\"pci8086,3a18\",\"pciclass,060100\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"4389","ColType":"String","ColValue":"pci8086,3a16"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"4391","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"ChildrenPowerState"},"attr":{"id":"4393","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"4395","ColType":"Number","ColValue":"2"}}]}
+]

@@ -1,0 +1,11 @@
+[
+{"data":{"title":"TPGS Information"},"attr":{"id":"51667","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"51669","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"51671","ColType":"String","ColValue":"USB"}},{"data":{"title":"SCSI Logical Unit Number"},"attr":{"id":"51673","ColType":"Number","ColValue":"0"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"51675","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"51677","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"51679","ColType":"Number","ColValue":"30000"}}]},
+{"data":{"title":"SCSI Logical Unit Number"},"attr":{"id":"51681","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Product Revision Level"},"attr":{"id":"51683","ColType":"String","ColValue":"1.00"}},
+{"data":{"title":"IOUnitLUN"},"attr":{"id":"51685","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"51687","ColType":"String","ColValue":"SCSITaskUserClientIniter"}},
+{"data":{"title":"Product Identification"},"attr":{"id":"51689","ColType":"String","ColValue":"SD/MMC/MS/MSPRO"}},
+{"data":{"title":"Vendor Identification"},"attr":{"id":"51691","ColType":"String","ColValue":"Generic-"}},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"51693","ColType":"Number","ColValue":"0"}}
+]

@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"38090","ColType":"String","ColValue":"IONetworkStack"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"38092","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"38094","ColType":"String","ColValue":"com.apple.iokit.IONetworkingFamily"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"38096","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"38098","ColType":"String","ColValue":"IONetworkStack"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"38100","ColType":"String","ColValue":"IOResources"}}
+]

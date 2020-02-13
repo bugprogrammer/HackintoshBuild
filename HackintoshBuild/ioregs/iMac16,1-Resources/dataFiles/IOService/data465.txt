@@ -1,0 +1,12 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"41620","ColType":"String","ColValue":"IOACPIPlatformDevice"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"41622","ColType":"String","ColValue":"IODisplayParameters"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"41624","ColType":"String","ColValue":"backlight"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"41626","ColType":"String","ColValue":"backlight"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"41628","ColType":"Number","ColValue":"5000"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"41630","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"41632","ColType":"String","ColValue":"com.apple.driver.AppleMCCSControl"}},
+{"data":{"title":"IOKitDebug"},"attr":{"id":"41634","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"41636","ColType":"String","ColValue":"AppleMCCSControlCello"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"41638","ColType":"String","ColValue":"AppleMCCSUserClient"}}
+]

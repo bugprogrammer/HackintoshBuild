@@ -1,0 +1,4 @@
+[
+{"data":{"title":"IOUserClientCreator"},"attr":{"id":"34463","ColType":"String","ColValue":"pid 96, hidd"}},
+{"data":{"title":"DebugState"},"attr":{"id":"34465","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"LastEventTime"},"attr":{"id":"34467","ColType":"Number","ColValue":"24815657181"}},{"data":{"title":"EnqueueEventCount"},"attr":{"id":"34469","ColType":"Number","ColValue":"358"}},{"data":{"title":"EventQueue"},"attr":{"id":"34471","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"head"},"attr":{"id":"34473","ColType":"Number","ColValue":"6528"}},{"data":{"title":"tail"},"attr":{"id":"34475","ColType":"Number","ColValue":"6528"}}]},{"data":{"title":"LastEventType"},"attr":{"id":"34477","ColType":"Number","ColValue":"3"}}]}
+]

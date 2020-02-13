@@ -1,0 +1,13 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"4463","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"4465","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"4467","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"4469","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"IOPCIResourced"},"attr":{"id":"4471","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"name"},"attr":{"id":"4473","ColType":"String","ColValue":"pci8086,3427"}},
+{"data":{"title":"vendor-id"},"attr":{"id":"4475","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"revision-id"},"attr":{"id":"4477","ColType":"Data","ColValue":"&lt;22000000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"4479","ColType":"Data","ColValue":"&lt;\"pci8086,3427\",\"pciclass,080000\"&gt;"}},
+{"data":{"title":"class-code"},"attr":{"id":"4481","ColType":"Data","ColValue":"&lt;00000800&gt;"}},
+{"data":{"title":"IOName"},"attr":{"id":"4483","ColType":"String","ColValue":"pci8086,3427"}},
+{"data":{"title":"reg"},"attr":{"id":"4485","ColType":"Data","ColValue":"&lt;0088000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"pcidebug"},"attr":{"id":"4487","ColType":"String","ColValue":"0:17:0"}},
+{"data":{"title":"device-id"},"attr":{"id":"4489","ColType":"Data","ColValue":"&lt;27340000&gt;"}}
+]

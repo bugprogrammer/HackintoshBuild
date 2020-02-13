@@ -1,0 +1,12 @@
+[
+{"data":{"title":"BTPSM"},"attr":{"id":"42303","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"42305","ColType":"String","ColValue":"Bluetooth-PDA-Sync"}},
+{"data":{"title":"BTTTYName"},"attr":{"id":"42307","ColType":"String","ColValue":"Bluetooth-PDA-Sync"}},
+{"data":{"title":"BTAuthenticationRequired"},"attr":{"id":"42309","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"BTRFCOMMChannel"},"attr":{"id":"42311","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"BTName"},"attr":{"id":"42313","ColType":"String","ColValue":"incoming port - Bluetooth-PDA-Sync"}},
+{"data":{"title":"BTSerialConnectionType"},"attr":{"id":"42315","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"P49SerialPort"},"attr":{"id":"42317","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"HiddenPort"},"attr":{"id":"42319","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BTEncryptionType"},"attr":{"id":"42321","ColType":"Boolean","ColValue":"No"}}
+]

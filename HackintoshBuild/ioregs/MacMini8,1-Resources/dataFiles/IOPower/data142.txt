@@ -1,0 +1,22 @@
+[
+{"data":{"title":"AppleUSBAlternateServiceRegistryID"},"attr":{"id":"7953","ColType":"Number","ColValue":"4294968601"}},
+{"data":{"title":"IOServiceLegacyMatchingRegistryID"},"attr":{"id":"7955","ColType":"Number","ColValue":"4294968601"}},
+{"data":{"title":"IOClassNameOverride"},"attr":{"id":"7957","ColType":"String","ColValue":"IOUSBDevice"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"7959","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"bDeviceClass"},"attr":{"id":"7961","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"USBPortType"},"attr":{"id":"7963","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"kUSBVendorString"},"attr":{"id":"7965","ColType":"String","ColValue":" "}},
+{"data":{"title":"USB Product Name"},"attr":{"id":"7967","ColType":"String","ColValue":"USB Keyboard"}},
+{"data":{"title":"USB Vendor Name"},"attr":{"id":"7969","ColType":"String","ColValue":" "}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"7971","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"9dc7b780-9ec0-11d4-a54f-000a27052861"},"attr":{"id":"7973","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"bcdDevice"},"attr":{"id":"7975","ColType":"Number","ColValue":"592"}},
+{"data":{"title":"bDeviceSubClass"},"attr":{"id":"7977","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"USBSpeed"},"attr":{"id":"7979","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"sessionID"},"attr":{"id":"7981","ColType":"Number","ColValue":"1482249002"}},
+{"data":{"title":"locationID"},"attr":{"id":"7983","ColType":"Number","ColValue":"336723968"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"7985","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DevicePowerState"},"attr":{"id":"7987","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"7989","ColType":"Number","ColValue":"32768"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"7991","ColType":"Number","ColValue":"0"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"7993","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"7995","ColType":"Number","ColValue":"2"}},{"data":{"title":"PowerOverrideOn"},"attr":{"id":"7997","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"7999","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"kUSBCurrentConfiguration"},"attr":{"id":"8001","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"idProduct"},"attr":{"id":"8003","ColType":"Number","ColValue":"608"}},
+{"data":{"title":"bDeviceProtocol"},"attr":{"id":"8005","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"idVendor"},"attr":{"id":"8007","ColType":"Number","ColValue":"2522"}}
+]

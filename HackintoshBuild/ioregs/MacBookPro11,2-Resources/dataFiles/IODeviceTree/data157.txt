@@ -1,0 +1,8 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"4831","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"4833","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4834","ColType":"Data","ColValue":"&lt;0600000000000000&gt;"}}]},
+{"data":{"title":"compatible"},"attr":{"id":"4836","ColType":"Data","ColValue":"&lt;\"smc-huronriver\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"4838","ColType":"Data","ColValue":"&lt;\"APP0001\"&gt;"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"4840","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4841","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"IODeviceMemory"},"attr":{"id":"4843","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4844","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4845","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"4847","ColType":"Number","ColValue":"768"}},{"data":{"title":"length"},"attr":{"id":"4849","ColType":"Number","ColValue":"32"}}]}]},{"data":{"title":"1"},"attr":{"id":"4850","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4851","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"4853","ColType":"Number","ColValue":"4277141504"}},{"data":{"title":"length"},"attr":{"id":"4855","ColType":"Number","ColValue":"65536"}}]}]}]}
+]

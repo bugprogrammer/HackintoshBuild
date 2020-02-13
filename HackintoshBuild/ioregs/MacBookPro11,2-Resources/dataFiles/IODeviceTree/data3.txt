@@ -1,0 +1,11 @@
+[
+{"data":{"title":"boot-uuid"},"attr":{"id":"1776","ColType":"Data","ColValue":"&lt;\"3321148E-B351-3B44-93BE-00F5CCE2A34E\"&gt;"}},
+{"data":{"title":"boot-args"},"attr":{"id":"1778","ColType":"Data","ColValue":"&lt;00&gt;"}},
+{"data":{"title":"IOScreenLockState"},"attr":{"id":"1780","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"1782","ColType":"Data","ColValue":"&lt;\"chosen\"&gt;"}},
+{"data":{"title":"boot-device-path"},"attr":{"id":"1784","ColType":"Data","ColValue":"&lt;02010c00d041030a0000000001010600041c01010600000003120a0000000000000004012a0002000000284006000000000010c41e1d0000000092c39b6c7225194caa31b5b1637a23b102027fff0400&gt;"}},
+{"data":{"title":"machine-signature"},"attr":{"id":"1786","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"boot-file-path"},"attr":{"id":"1788","ColType":"Data","ColValue":"&lt;040450005c00530079007300740065006d005c004c006900620072006100720079005c0043006f0072006500530065007200760069006300650073005c0062006f006f0074002e0065006600690000007fff0400&gt;"}},
+{"data":{"title":"boot-file"},"attr":{"id":"1790","ColType":"Data","ColValue":"&lt;\"mach_kernel\"&gt;"}},
+{"data":{"title":"boot-kernelcache-adler32"},"attr":{"id":"1792","ColType":"Data","ColValue":"&lt;d4c67f9d&gt;"}}
+]

@@ -1,0 +1,14 @@
+[
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"16763","ColType":"Number","ColValue":"256"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"16765","ColType":"String","ColValue":"com.apple.iokit.IOSCSIBlockCommandsDevice"}},
+{"data":{"title":"IOClass"},"attr":{"id":"16767","ColType":"String","ColValue":"IOSCSIPeripheralDeviceType00"}},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"16769","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMaximumByteCountWrite"},"attr":{"id":"16771","ColType":"Number","ColValue":"131072"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"16773","ColType":"Number","ColValue":"5000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"16775","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOMediaIcon"},"attr":{"id":"16777","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"16779","ColType":"String","ColValue":"com.apple.iokit.IOSCSIArchitectureModelFamily"}},{"data":{"title":"IOBundleResourceFile"},"attr":{"id":"16781","ColType":"String","ColValue":"USBHD.icns"}}]},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"16783","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"16785","ColType":"Number","ColValue":"4"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"16787","ColType":"Number","ColValue":"4"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"16789","ColType":"Number","ColValue":"4"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"16791","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"16793","ColType":"Number","ColValue":"256"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"16795","ColType":"String","ColValue":"IOSCSIPeripheralDeviceNub"}},
+{"data":{"title":"IOMaximumByteCountRead"},"attr":{"id":"16797","ColType":"Number","ColValue":"131072"}}
+]

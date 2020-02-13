@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"71921","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"71923","ColType":"Number","ColValue":"1"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"71925","ColType":"Number","ColValue":"1"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"71927","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"71929","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"71931","ColType":"String","ColValue":"IORS232SerialStreamSync"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"71933","ColType":"String","ColValue":"apple-uart-blth"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"71935","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"71937","ColType":"String","ColValue":"apple-uart-blth"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"71939","ColType":"Number","ColValue":"2000"}},
+{"data":{"title":"SupportNewIdlePolicy"},"attr":{"id":"71941","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"71943","ColType":"String","ColValue":"com.apple.iokit.IOBluetoothHostControllerUARTTransport"}},
+{"data":{"title":"IOClass"},"attr":{"id":"71945","ColType":"String","ColValue":"IOBluetoothHostControllerUARTTransport"}}
+]

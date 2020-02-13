@@ -1,0 +1,15 @@
+[
+{"data":{"title":"Revision ID"},"attr":{"id":"78154","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Thunderbolt Version"},"attr":{"id":"78156","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Max In Hop ID"},"attr":{"id":"78158","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"Port Number"},"attr":{"id":"78160","ColType":"Number","ColValue":"12"}},
+{"data":{"title":"Hop Table"},"attr":{"id":"78162","ColType":"Array","ColValue":"0_values"},"children":[]},
+{"data":{"title":"Adapter Type"},"attr":{"id":"78164","ColType":"Number","ColValue":"917761"}},
+{"data":{"title":"Port Affinity"},"attr":{"id":"78166","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"78167","ColType":"Number","ColValue":"3"}},{"data":{"title":"1"},"attr":{"id":"78168","ColType":"Number","ColValue":"4"}}]},
+{"data":{"title":"Max Credits"},"attr":{"id":"78170","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"Max Out Hop ID"},"attr":{"id":"78172","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"Description"},"attr":{"id":"78174","ColType":"String","ColValue":"DisplayPort or HDMI Adapter"}},
+{"data":{"title":"Preferred Null Port"},"attr":{"id":"78176","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"Device ID"},"attr":{"id":"78178","ColType":"Number","ColValue":"5485"}},
+{"data":{"title":"Vendor ID"},"attr":{"id":"78180","ColType":"Number","ColValue":"32902"}}
+]

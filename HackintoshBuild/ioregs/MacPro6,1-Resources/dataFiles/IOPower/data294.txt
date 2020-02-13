@@ -1,0 +1,20 @@
+[
+{"data":{"title":"Revision ID"},"attr":{"id":"11306","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Route String"},"attr":{"id":"11308","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"Thunderbolt Version"},"attr":{"id":"11310","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Device Vendor ID"},"attr":{"id":"11312","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"UID"},"attr":{"id":"11314","ColType":"Number","ColValue":"281483646656432"}},
+{"data":{"title":"Device Model Name"},"attr":{"id":"11316","ColType":"String","ColValue":"Thunderbolt to Gigabit Ethernet Adapter"}},
+{"data":{"title":"Upstream Port Number"},"attr":{"id":"11318","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Device Vendor Name"},"attr":{"id":"11320","ColType":"String","ColValue":"Apple, Inc."}},
+{"data":{"title":"Device Model ID"},"attr":{"id":"11322","ColType":"Number","ColValue":"32771"}},
+{"data":{"title":"Apple Serial Number"},"attr":{"id":"11324","ColType":"String","ColValue":"DTN534403MWDWKHBL"}},
+{"data":{"title":"Max Port Number"},"attr":{"id":"11326","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Device Model Revision"},"attr":{"id":"11328","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Depth"},"attr":{"id":"11330","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ROM Version"},"attr":{"id":"11332","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"11334","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"11336","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"11338","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"11340","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"11342","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"11344","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"EEPROM Revision"},"attr":{"id":"11346","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"Device ID"},"attr":{"id":"11348","ColType":"Number","ColValue":"5449"}},
+{"data":{"title":"Vendor ID"},"attr":{"id":"11350","ColType":"Number","ColValue":"32902"}}
+]

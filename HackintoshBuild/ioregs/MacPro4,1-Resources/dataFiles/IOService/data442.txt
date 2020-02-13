@@ -1,0 +1,12 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"13484","ColType":"String","ColValue":"IOSCSIProtocolServices"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"13486","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"13488","ColType":"String","ColValue":"USB"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"13490","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"13492","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"13494","ColType":"Number","ColValue":"30000"}}]},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"13496","ColType":"String","ColValue":"SCSITaskUserClientIniter"}},
+{"data":{"title":"Product Revision Level"},"attr":{"id":"13498","ColType":"String","ColValue":"PMAP"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"13500","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Product Identification"},"attr":{"id":"13502","ColType":"String","ColValue":"Silicon-Power16G"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"13504","ColType":"String","ColValue":"com.apple.iokit.IOSCSIArchitectureModelFamily"}},
+{"data":{"title":"Vendor Identification"},"attr":{"id":"13506","ColType":"String","ColValue":"UFD 2.0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"13508","ColType":"String","ColValue":"IOSCSIPeripheralDeviceNub"}},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"13510","ColType":"Number","ColValue":"0"}}
+]

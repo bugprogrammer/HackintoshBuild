@@ -1,0 +1,14 @@
+[
+{"data":{"title":"idProduct"},"attr":{"id":"87148","ColType":"Number","ColValue":"626"}},
+{"data":{"title":"wMaxInputPacketLength"},"attr":{"id":"87150","ColType":"Number","ColValue":"16"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"87152","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"wMaxOutputPacketLength"},"attr":{"id":"87154","ColType":"Number","ColValue":"64"}},
+{"data":{"title":"wMaxControlRequestPacketLength"},"attr":{"id":"87156","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"87158","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"87160","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"idVendor"},"attr":{"id":"87162","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"SPI Product Name"},"attr":{"id":"87164","ColType":"String","ColValue":"Apple Internal Keyboard / Trackpad"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"87166","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"LocationID"},"attr":{"id":"87168","ColType":"Number","ColValue":"16777216"}},
+{"data":{"title":"bcdDevice"},"attr":{"id":"87170","ColType":"Number","ColValue":"1570"}}
+]

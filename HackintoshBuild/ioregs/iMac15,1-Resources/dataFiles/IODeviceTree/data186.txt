@@ -1,0 +1,11 @@
+[
+{"data":{"title":"fault-len"},"attr":{"id":"7033","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"type"},"attr":{"id":"7035","ColType":"Number","ColValue":"1228030720"}},
+{"data":{"title":"address"},"attr":{"id":"7037","ColType":"Number","ColValue":"44"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"7039","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"fault-off"},"attr":{"id":"7041","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"refnum"},"attr":{"id":"7043","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"command"},"attr":{"id":"7045","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"version"},"attr":{"id":"7047","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"7049","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SBUS@1f0003/BUS0@0/BLC0@0"}}
+]

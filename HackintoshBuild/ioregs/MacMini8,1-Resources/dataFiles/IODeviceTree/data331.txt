@@ -1,0 +1,18 @@
+[
+{"data":{"title":"IOTTYSuffix"},"attr":{"id":"8210","ColType":"String","ColValue":""}},
+{"data":{"title":"serial baud rate"},"attr":{"id":"8212","ColType":"Number","ColValue":"6000000"}},
+{"data":{"title":"serial stop bits"},"attr":{"id":"8214","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"HiddenPort"},"attr":{"id":"8216","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"serial data width"},"attr":{"id":"8218","ColType":"Number","ColValue":"16"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"8220","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/URT0@1e0000/BLTH@0"}},
+{"data":{"title":"parity"},"attr":{"id":"8222","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"8224","ColType":"String","ColValue":"BLTH"}},
+{"data":{"title":"serial state"},"attr":{"id":"8226","ColType":"Number","ColValue":"18446744073246867559"}},
+{"data":{"title":"baud"},"attr":{"id":"8228","ColType":"Data","ColValue":"&lt;c0c62d0000000000&gt;"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"8230","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"stopBits"},"attr":{"id":"8232","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"8234","ColType":"Data","ColValue":"&lt;\"apple-uart-blth\"&gt;"}},
+{"data":{"title":"dataBits"},"attr":{"id":"8236","ColType":"Data","ColValue":"&lt;0800000000000000&gt;"}},
+{"data":{"title":"serial parity"},"attr":{"id":"8238","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"serial flow control"},"attr":{"id":"8240","ColType":"Number","ColValue":"36"}}
+]

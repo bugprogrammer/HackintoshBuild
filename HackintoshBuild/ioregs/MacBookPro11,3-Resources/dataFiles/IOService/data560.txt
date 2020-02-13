@@ -1,0 +1,20 @@
+[
+{"data":{"title":"AHCI-Ejectable"},"attr":{"id":"67747","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"AHCI-Built-In"},"attr":{"id":"67749","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"sata-express"},"attr":{"id":"67751","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"67753","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Chipset Name"},"attr":{"id":"67755","ColType":"String","ColValue":"SSD Controller"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"67757","ColType":"String","ColValue":"com.apple.driver.AppleAHCIPort"}},
+{"data":{"title":"IOClass"},"attr":{"id":"67759","ColType":"String","ColValue":"AppleAHCI"}},
+{"data":{"title":"sata-express-power-off"},"attr":{"id":"67761","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Vendor Name"},"attr":{"id":"67763","ColType":"String","ColValue":"Apple"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"67765","ColType":"Number","ColValue":"800"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"67767","ColType":"String","ColValue":"AppleAHCIPolledAdapter is not serializable"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"67769","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOPCIClassMatch"},"attr":{"id":"67771","ColType":"String","ColValue":"0x01060100&0xffffff00"}},
+{"data":{"title":"IOPMResetPowerStateOnWake"},"attr":{"id":"67773","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"AHCI-CAP"},"attr":{"id":"67775","ColType":"Number","ColValue":"18446744072689590144"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"67777","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"67779","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"67781","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"67783","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"67785","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"67787","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"67789","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IOPCIPauseCompatible"},"attr":{"id":"67791","ColType":"Boolean","ColValue":"Yes"}}
+]

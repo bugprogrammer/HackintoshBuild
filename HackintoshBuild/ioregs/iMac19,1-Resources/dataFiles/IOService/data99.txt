@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"5362","ColType":"String","ColValue":"IOPlatformPluginDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"5364","ColType":"String","ColValue":"AGPMEnabler"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"5366","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"5368","ColType":"String","ColValue":"AGPMEnabler"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"5370","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Machine"},"attr":{"id":"5372","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"iMac19,1"},"attr":{"id":"5374","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"GFX0"},"attr":{"id":"5376","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"control-id"},"attr":{"id":"5378","ColType":"Number","ColValue":"17"}},{"data":{"title":"AGDCEnabled"},"attr":{"id":"5380","ColType":"Number","ColValue":"1"}},{"data":{"title":"min-power-state"},"attr":{"id":"5382","ColType":"Number","ColValue":"0"}},{"data":{"title":"Heuristic"},"attr":{"id":"5384","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"ID"},"attr":{"id":"5386","ColType":"Number","ColValue":"18446744073709551615"}}]},{"data":{"title":"max-power-state"},"attr":{"id":"5388","ColType":"Number","ColValue":"15"}}]},{"data":{"title":"IGPU"},"attr":{"id":"5390","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"control-id"},"attr":{"id":"5392","ColType":"Number","ColValue":"16"}},{"data":{"title":"Heuristic"},"attr":{"id":"5394","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"ID"},"attr":{"id":"5396","ColType":"Number","ColValue":"2"}},{"data":{"title":"EnableOverride"},"attr":{"id":"5398","ColType":"Number","ColValue":"0"}}]}]}]}]},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"5400","ColType":"String","ColValue":"com.apple.driver.AGPM"}},
+{"data":{"title":"IOClass"},"attr":{"id":"5402","ColType":"String","ColValue":"AGPMController"}}
+]

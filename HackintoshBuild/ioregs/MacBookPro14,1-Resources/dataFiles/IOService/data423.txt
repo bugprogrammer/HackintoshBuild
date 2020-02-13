@@ -1,0 +1,7 @@
+[
+{"data":{"title":"ActuatorRevision"},"attr":{"id":"119723","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"119725","ColType":"String","ColValue":"AppleActuatorDeviceUserClient"}},
+{"data":{"title":"Transport"},"attr":{"id":"119727","ColType":"String","ColValue":"SPI"}},
+{"data":{"title":"LocationID"},"attr":{"id":"119729","ColType":"Number","ColValue":"16777216"}},
+{"data":{"title":"Multitouch Actuator ID"},"attr":{"id":"119731","ColType":"Number","ColValue":"144115188092633088"}}
+]

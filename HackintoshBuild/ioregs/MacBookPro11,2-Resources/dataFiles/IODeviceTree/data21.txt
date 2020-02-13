@@ -1,0 +1,14 @@
+[
+{"data":{"title":"device_type"},"attr":{"id":"1900","ColType":"Data","ColValue":"&lt;\"processor\"&gt;"}},
+{"data":{"title":"processor-id"},"attr":{"id":"1902","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"timebase-frequency"},"attr":{"id":"1904","ColType":"Data","ColValue":"&lt;00ca9a3b&gt;"}},
+{"data":{"title":"bus-frequency"},"attr":{"id":"1906","ColType":"Data","ColValue":"&lt;00e1f505&gt;"}},
+{"data":{"title":"plugin-type"},"attr":{"id":"1908","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"cpu-type"},"attr":{"id":"1910","ColType":"Data","ColValue":"&lt;0507&gt;"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"1912","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"name"},"attr":{"id":"1914","ColType":"Data","ColValue":"&lt;\"CPU0\"&gt;"}},
+{"data":{"title":"processor-number"},"attr":{"id":"1916","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"clock-frequency"},"attr":{"id":"1918","ColType":"Data","ColValue":"&lt;00562183&gt;"}},
+{"data":{"title":"processor-index"},"attr":{"id":"1920","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"processor-lapic"},"attr":{"id":"1922","ColType":"Number","ColValue":"0"}}
+]

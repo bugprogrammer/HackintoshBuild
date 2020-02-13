@@ -1,0 +1,4 @@
+[
+{"data":{"title":"IOUnit"},"attr":{"id":"67851","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"67853","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"67855","ColType":"String","ColValue":"Internal"}},{"data":{"title":"AHCI Port Number"},"attr":{"id":"67857","ColType":"Number","ColValue":"0"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"67859","ColType":"String","ColValue":"PCI"}}]}
+]

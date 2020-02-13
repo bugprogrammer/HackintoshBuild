@@ -1,0 +1,5 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3116","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"_ADR"},"attr":{"id":"3118","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3120","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"3122","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP05@1c0004/UPSB@0/DSB1@30000/UPS0@0/DSB4@40000/UPS0@0/DSB0@0/DEV0@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"3124","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

@@ -1,0 +1,10 @@
+[
+{"data":{"title":"boot-uuid"},"attr":{"id":"1732","ColType":"Data","ColValue":"&lt;\"42C9317F-4743-36B0-95EA-DCED3DBE866B\"&gt;"}},
+{"data":{"title":"boot-args"},"attr":{"id":"1734","ColType":"Data","ColValue":"&lt;00&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"1736","ColType":"Data","ColValue":"&lt;\"chosen\"&gt;"}},
+{"data":{"title":"boot-device-path"},"attr":{"id":"1738","ColType":"Data","ColValue":"&lt;02010c00d041030a0000000001010600021f03120a0000000000000004012a000200000028400600000000008082ab4b000000007b8dc71e1e8a77498a8e420181f2a60d02027fff0400&gt;"}},
+{"data":{"title":"machine-signature"},"attr":{"id":"1740","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"boot-file-path"},"attr":{"id":"1742","ColType":"Data","ColValue":"&lt;040450005c00530079007300740065006d005c004c006900620072006100720079005c0043006f0072006500530065007200760069006300650073005c0062006f006f0074002e0065006600690000007fff0400&gt;"}},
+{"data":{"title":"boot-file"},"attr":{"id":"1744","ColType":"Data","ColValue":"&lt;\"mach_kernel\"&gt;"}},
+{"data":{"title":"boot-kernelcache-adler32"},"attr":{"id":"1746","ColType":"Data","ColValue":"&lt;40c10b3c&gt;"}}
+]

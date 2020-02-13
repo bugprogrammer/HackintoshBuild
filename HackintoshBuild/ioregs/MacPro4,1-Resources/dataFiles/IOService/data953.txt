@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"37620","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"37622","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"37624","ColType":"String","ColValue":"AppleProfileOSHooks"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"37626","ColType":"String","ColValue":"AppleProfileTimeTrigger"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"37628","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"37630","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37632","ColType":"String","ColValue":"com.apple.iokit.AppleProfileFamily"}},
+{"data":{"title":"IOClass"},"attr":{"id":"37634","ColType":"String","ColValue":"AppleProfileTimeTrigger"}}
+]

@@ -1,0 +1,16 @@
+[
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"78211","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Errata"},"attr":{"id":"78213","ColType":"Number","ColValue":"18432"}},
+{"data":{"title":"Statistics"},"attr":{"id":"78215","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Resets"},"attr":{"id":"78217","ColType":"Number","ColValue":"3"}},{"data":{"title":"ControlBulkTxOut"},"attr":{"id":"78219","ColType":"Number","ColValue":"0"}},{"data":{"title":"Timeouts (New)"},"attr":{"id":"78221","ColType":"Number","ColValue":"0"}},{"data":{"title":"Access Count"},"attr":{"id":"78223","ColType":"Number","ColValue":"7"}},{"data":{"title":"Bytes (New)"},"attr":{"id":"78225","ColType":"Number","ColValue":"0"}},{"data":{"title":"Timeouts"},"attr":{"id":"78227","ColType":"Number","ColValue":"0"}},{"data":{"title":"ms (Current)"},"attr":{"id":"78229","ColType":"Number","ColValue":"819267"}},{"data":{"title":"Debug Flags"},"attr":{"id":"78231","ColType":"Number","ColValue":"0"}},{"data":{"title":"Bytes"},"attr":{"id":"78233","ColType":"Number","ColValue":"288567070"}},{"data":{"title":"Errors (New)"},"attr":{"id":"78235","ColType":"Number","ColValue":"0"}},{"data":{"title":"Errors (Total)"},"attr":{"id":"78237","ColType":"Number","ColValue":"1"}},{"data":{"title":"Resets (New)"},"attr":{"id":"78239","ColType":"Number","ColValue":"0"}},{"data":{"title":"Bytes (New)/ms"},"attr":{"id":"78241","ColType":"Number","ColValue":"0"}},{"data":{"title":"ms (since last read)"},"attr":{"id":"78243","ColType":"Number","ColValue":"1169"}}]},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"78245","ColType":"String","ColValue":"com.apple.driver.AppleUSBEHCI"}},
+{"data":{"title":"IOClass"},"attr":{"id":"78247","ColType":"String","ColValue":"AppleUSBEHCI"}},
+{"data":{"title":"64bit"},"attr":{"id":"78249","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"78251","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Card Type"},"attr":{"id":"78253","ColType":"String","ColValue":"Built-in"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"78255","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOPCIClassMatch"},"attr":{"id":"78257","ColType":"String","ColValue":"0x0c032000"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"78259","ColType":"String","ColValue":"IOUSBControllerUserClient"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"78261","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"78263","ColType":"Number","ColValue":"4"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"78265","ColType":"Number","ColValue":"3"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"78267","ColType":"Number","ColValue":"4"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"78269","ColType":"Number","ColValue":"4"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"78271","ColType":"Number","ColValue":"3"}}]},
+{"data":{"title":"this"},"attr":{"id":"78273","ColType":"Number","ColValue":"18446743525407297536"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"78275","ColType":"String","ColValue":"IOPCIDevice"}}
+]

@@ -1,0 +1,12 @@
+[
+{"data":{"title":"spiSclkPeriod"},"attr":{"id":"5899","ColType":"Data","ColValue":"&lt;7d00000000000000&gt;"}},
+{"data":{"title":"spiBitOrder"},"attr":{"id":"5901","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},
+{"data":{"title":"spiSPO"},"attr":{"id":"5903","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},
+{"data":{"title":"spiSPH"},"attr":{"id":"5905","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},
+{"data":{"title":"spiWordSize"},"attr":{"id":"5907","ColType":"Data","ColValue":"&lt;0800000000000000&gt;"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"5909","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"resetA2RUsec"},"attr":{"id":"5911","ColType":"Data","ColValue":"&lt;0a00000000000000&gt;"}},
+{"data":{"title":"resetRecUsec"},"attr":{"id":"5913","ColType":"Data","ColValue":"&lt;0a00000000000000&gt;"}},
+{"data":{"title":"spiCSDelay"},"attr":{"id":"5915","ColType":"Data","ColValue":"&lt;0a00000000000000&gt;"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"5917","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SPI1@1e0003/SPIT@0"}}
+]

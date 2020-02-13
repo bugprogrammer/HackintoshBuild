@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3244","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"_ADR"},"attr":{"id":"3246","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"_UID"},"attr":{"id":"3248","ColType":"String","ColValue":"1"}},
+{"data":{"title":"compatible"},"attr":{"id":"3250","ColType":"Data","ColValue":"&lt;\"apple-uart-ssdc\"&gt;"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3252","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"stopBits"},"attr":{"id":"3254","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},{"data":{"title":"parity"},"attr":{"id":"3256","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},{"data":{"title":"dataBits"},"attr":{"id":"3258","ColType":"Data","ColValue":"&lt;0800000000000000&gt;"}},{"data":{"title":"baud"},"attr":{"id":"3260","ColType":"Data","ColValue":"&lt;d012130000000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"3262","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/URT0@150005/SSDC@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"3264","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

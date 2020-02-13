@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3176","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"acpi-wake-system-state"},"attr":{"id":"3178","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"_ADR"},"attr":{"id":"3180","ColType":"Number","ColValue":"1900546"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3182","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"3184","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/UHC3@1d0002"}},{"data":{"title":"acpi-device"},"attr":{"id":"3186","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"3188","ColType":"Number","ColValue":"12"}}
+]

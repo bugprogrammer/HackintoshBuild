@@ -1,0 +1,18 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"36847","ColType":"Number","ColValue":"630"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"36849","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"Transport"},"attr":{"id":"36851","ColType":"String","ColValue":"SPI"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"36853","ColType":"Number","ColValue":"2197"}},
+{"data":{"title":"VendorID"},"attr":{"id":"36855","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"36857","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"36859","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"MaxInputReportSize"},"attr":{"id":"36861","ColType":"Number","ColValue":"65"}},
+{"data":{"title":"ReportDescriptor"},"attr":{"id":"36863","ColType":"Data","ColValue":"&lt;05010906a1018501050719e029e71500250175019508810295017508810195057501050819012905910295017503910195067508150026ff000507190029ff8100050c7501950109b815002501810205ff0903750795018102c0050c0901a1018552150025017501950109cd810209b3810209b4810209b5810209b68102810181018101850915002501750895010601ff090bb10275089502b101c00600ff0906a1010600ff0906150026ff0075089540853f8122c00600ff090fa1010600ff090f150026ff007508950f85bf8102c0&gt;"}},
+{"data":{"title":"MaxFeatureReportSize"},"attr":{"id":"36865","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"MaxOutputReportSize"},"attr":{"id":"36867","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"36869","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"36870","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"36872","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"36874","ColType":"Number","ColValue":"6"}}]},{"data":{"title":"1"},"attr":{"id":"36875","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"36877","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"36879","ColType":"Number","ColValue":"1"}}]},{"data":{"title":"2"},"attr":{"id":"36880","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"36882","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"36884","ColType":"Number","ColValue":"6"}}]},{"data":{"title":"3"},"attr":{"id":"36885","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"36887","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"36889","ColType":"Number","ColValue":"15"}}]}]},
+{"data":{"title":"BootProtocol"},"attr":{"id":"36891","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Product"},"attr":{"id":"36893","ColType":"String","ColValue":"Apple Internal Keyboard / Trackpad"}},
+{"data":{"title":"LocationID"},"attr":{"id":"36895","ColType":"Number","ColValue":"16777216"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"36897","ColType":"Number","ColValue":"33"}}
+]

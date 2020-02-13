@@ -1,0 +1,20 @@
+[
+{"data":{"title":"Revision ID"},"attr":{"id":"9038","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"Route String"},"attr":{"id":"9040","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Thunderbolt Version"},"attr":{"id":"9042","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"DPP Crossed"},"attr":{"id":"9044","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"UID"},"attr":{"id":"9046","ColType":"Number","ColValue":"281531161039168"}},
+{"data":{"title":"Device Vendor ID"},"attr":{"id":"9048","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Device Model Name"},"attr":{"id":"9050","ColType":"String","ColValue":"Macintosh"}},
+{"data":{"title":"Upstream Port Number"},"attr":{"id":"9052","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"Device Vendor Name"},"attr":{"id":"9054","ColType":"String","ColValue":"Apple, Inc."}},
+{"data":{"title":"Device Model ID"},"attr":{"id":"9056","ColType":"Number","ColValue":"10"}},
+{"data":{"title":"Max Port Number"},"attr":{"id":"9058","ColType":"Number","ColValue":"12"}},
+{"data":{"title":"Device Model Revision"},"attr":{"id":"9060","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Depth"},"attr":{"id":"9062","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"ROM Version"},"attr":{"id":"9064","ColType":"Number","ColValue":"17"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"9066","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"9068","ColType":"Number","ColValue":"1"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"9070","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"9072","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"EEPROM Revision"},"attr":{"id":"9074","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Device ID"},"attr":{"id":"9076","ColType":"Number","ColValue":"5447"}},
+{"data":{"title":"Vendor ID"},"attr":{"id":"9078","ColType":"Number","ColValue":"32902"}}
+]

@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"162936","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"162938","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"162940","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"162942","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"162944","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"162946","ColType":"String","ColValue":"pci8086,9cc3"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"162948","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"162950","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"162951","ColType":"String","ColValue":"pci8086,9cc1"}},{"data":{"title":"1"},"attr":{"id":"162952","ColType":"String","ColValue":"pci8086,9cc2"}},{"data":{"title":"2"},"attr":{"id":"162953","ColType":"String","ColValue":"pci8086,9cc3"}},{"data":{"title":"3"},"attr":{"id":"162954","ColType":"String","ColValue":"pci8086,9cc5"}},{"data":{"title":"4"},"attr":{"id":"162955","ColType":"String","ColValue":"pci8086,9cc6"}},{"data":{"title":"5"},"attr":{"id":"162956","ColType":"String","ColValue":"pci8086,9cc7"}},{"data":{"title":"6"},"attr":{"id":"162957","ColType":"String","ColValue":"pci8086,9cc9"}}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"162959","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"162961","ColType":"String","ColValue":"com.apple.driver.AppleLPC"}},
+{"data":{"title":"LCTL_Offset"},"attr":{"id":"162963","ColType":"Number","ColValue":"80"}},
+{"data":{"title":"IOClass"},"attr":{"id":"162965","ColType":"String","ColValue":"AppleLPC"}}
+]

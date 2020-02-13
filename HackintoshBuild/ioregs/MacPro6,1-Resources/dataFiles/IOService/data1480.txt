@@ -1,0 +1,20 @@
+[
+{"data":{"title":"IOFBUIScale"},"attr":{"id":"87844","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"IOFramebufferOpenGLIndex"},"attr":{"id":"87846","ColType":"Number","ColValue":"7"}},
+{"data":{"title":"IODisplayParameters"},"attr":{"id":"87848","ColType":"String","ColValue":"IOFramebufferParameterHandler is not serializable"}},
+{"data":{"title":"IOPMStrictTreeOrder"},"attr":{"id":"87850","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOFBTransform"},"attr":{"id":"87852","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOFBMemorySize"},"attr":{"id":"87854","ColType":"Number","ColValue":"36336848"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"87856","ColType":"String","ColValue":"com.avatron.AVExFramebuffer"}},
+{"data":{"title":"IOClass"},"attr":{"id":"87858","ColType":"String","ColValue":"AVExFramebuffer"}},
+{"data":{"title":"IOPropertyMatch"},"attr":{"id":"87860","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"compatible"},"attr":{"id":"87862","ColType":"String","ColValue":"AVVirtualDisplay"}}]},
+{"data":{"title":"IOFBWaitCursorFrames"},"attr":{"id":"87864","ColType":"Number","ColValue":"29"}},
+{"data":{"title":"IOFBConfig"},"attr":{"id":"87866","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOFB0Hz"},"attr":{"id":"87868","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"IOFBModes"},"attr":{"id":"87870","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"87871","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"ID"},"attr":{"id":"87873","ColType":"Number","ColValue":"18446744073709551360"}},{"data":{"title":"DM"},"attr":{"id":"87875","ColType":"Data","ColValue":"&lt;010000000100000000000000000000000700000000000000000000000000000000000000&gt;"}},{"data":{"title":"AID"},"attr":{"id":"87877","ColType":"Number","ColValue":"550"}}]}]}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"87879","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"87881","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOAccelIndex"},"attr":{"id":"87883","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"87885","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOFBWaitCursorPeriod"},"attr":{"id":"87887","ColType":"Number","ColValue":"33333333"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"87889","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"87891","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"87893","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"87895","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"87897","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"87899","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"87901","ColType":"String","ColValue":"AVExDisplay"}}
+]

@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"11318","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"TimeSinceLastTickle"},"attr":{"id":"11320","ColType":"Number","ColValue":"26758"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"11322","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"11324","ColType":"Number","ColValue":"65536"}},{"data":{"title":"ActivityTickles"},"attr":{"id":"11326","ColType":"Number","ColValue":"0"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"11328","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"11330","ColType":"Number","ColValue":"1"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"11332","ColType":"Number","ColValue":"2"}},{"data":{"title":"IdleTimerPeriod"},"attr":{"id":"11334","ColType":"Number","ColValue":"3000"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"11336","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"SPI Product Name"},"attr":{"id":"11338","ColType":"String","ColValue":"Apple Internal Keyboard / Trackpad"}},
+{"data":{"title":"SPI Vendor Name"},"attr":{"id":"11340","ColType":"String","ColValue":"Apple Inc."}},
+{"data":{"title":"idVendor"},"attr":{"id":"11342","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"bcdDevice"},"attr":{"id":"11344","ColType":"Number","ColValue":"2197"}},
+{"data":{"title":"SPI Serial"},"attr":{"id":"11346","ColType":"String","ColValue":"FM77241071AGJCQA9+RDN"}},
+{"data":{"title":"idProduct"},"attr":{"id":"11348","ColType":"Number","ColValue":"630"}},
+{"data":{"title":"ProtocolVersion"},"attr":{"id":"11350","ColType":"Number","ColValue":"17"}},
+{"data":{"title":"LocationID"},"attr":{"id":"11352","ColType":"Number","ColValue":"16777216"}}
+]

@@ -1,0 +1,15 @@
+[
+{"data":{"title":"AHCI-Built-In"},"attr":{"id":"34632","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Chipset Name"},"attr":{"id":"34634","ColType":"String","ColValue":"ESB2 AHCI"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"34636","ColType":"String","ColValue":"com.apple.driver.AppleAHCIPort"}},
+{"data":{"title":"IOPCIPrimaryMatch"},"attr":{"id":"34638","ColType":"String","ColValue":"0x26818086"}},
+{"data":{"title":"IOClass"},"attr":{"id":"34640","ColType":"String","ColValue":"AppleAHCI"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"34642","ColType":"String","ColValue":"AppleAHCIPolledAdapter is not serializable"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"34644","ColType":"Number","ColValue":"2000"}},
+{"data":{"title":"Vendor Name"},"attr":{"id":"34646","ColType":"String","ColValue":"Intel"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"34648","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"AHCI-CAP"},"attr":{"id":"34650","ColType":"Number","ColValue":"18446744073292283845"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"34652","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"ChildrenPowerState"},"attr":{"id":"34654","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"34656","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"34658","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"AHCI-Ejectable"},"attr":{"id":"34660","ColType":"Boolean","ColValue":"No"}}
+]

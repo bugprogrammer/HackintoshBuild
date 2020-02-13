@@ -1,0 +1,11 @@
+[
+{"data":{"title":"TPGS Information"},"attr":{"id":"129581","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"129583","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"129585","ColType":"String","ColValue":"USB"}},{"data":{"title":"SCSI Logical Unit Number"},"attr":{"id":"129587","ColType":"Number","ColValue":"0"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"129589","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"129591","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"129593","ColType":"Number","ColValue":"30000"}}]},
+{"data":{"title":"SCSI Logical Unit Number"},"attr":{"id":"129595","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Product Revision Level"},"attr":{"id":"129597","ColType":"String","ColValue":""}},
+{"data":{"title":"IOUnitLUN"},"attr":{"id":"129599","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"129601","ColType":"String","ColValue":"SCSITaskUserClientIniter"}},
+{"data":{"title":"Product Identification"},"attr":{"id":"129603","ColType":"String","ColValue":"EZRX-00DC0B0"}},
+{"data":{"title":"Vendor Identification"},"attr":{"id":"129605","ColType":"String","ColValue":"WDC WD30"}},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"129607","ColType":"Number","ColValue":"0"}}
+]

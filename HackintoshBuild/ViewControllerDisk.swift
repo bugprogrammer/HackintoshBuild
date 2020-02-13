@@ -11,21 +11,34 @@ import Cocoa
 class ViewControllerDisk: NSViewController {
         
     @IBOutlet weak var diskTableView: NSTableView!
+    @IBOutlet weak var refreshButton: NSButton!
     
     var diskInfo:String = ""
     var arrayPartition:[String] = []
-    var flag:Int = 0
     var mount:String = ""
     
     let taskQueue = DispatchQueue.global(qos: .background)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        refreshButton.isEnabled = false
+        arrayPartition = []
+        diskTableView.reloadData()
         runBuildScripts("diskInfo",[])
         diskTableView.target = self
         diskTableView.doubleAction = #selector(tableViewDoubleClick(_:))
     }
     
+    @IBAction func Refresh(_ sender: Any) {
+        refreshButton.isEnabled = false
+        arrayPartition = []
+        diskTableView.reloadData()
+        runBuildScripts("diskInfo",[])
+    }
     func runBuildScripts(_ shell: String,_ arguments: [String]) {
         AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
         taskQueue.async {
@@ -37,7 +50,7 @@ class ViewControllerDisk: NSViewController {
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
                         AraHUDViewController.shared.hideHUD()
-                        if self.flag == 0 {
+                        if shell == "diskInfo" {
                             self.arrayPartition = self.diskInfo.components(separatedBy:"\n")
                             if self.arrayPartition.last == "" {
                                 self.arrayPartition.removeLast()
@@ -57,7 +70,6 @@ class ViewControllerDisk: NSViewController {
                             }
                             MyLog(self.diskInfo)
                             self.diskTableView.reloadData()
-                            self.flag = 1
                         } else {
                             let alert = NSAlert()
                             if self.diskInfo.contains("mounted") {
@@ -67,6 +79,7 @@ class ViewControllerDisk: NSViewController {
                             }
                             alert.runModal()
                         }
+                        self.refreshButton.isEnabled = true
                     })
                 }
                 self.taskOutPut(task)
@@ -97,7 +110,8 @@ class ViewControllerDisk: NSViewController {
     }
     
     @objc func tableViewDoubleClick(_ sender:AnyObject) {
-        if diskTableView.selectedRow != -1 {
+        if diskTableView.selectedRow != -1 && diskTableView.selectedRow % 2 != 0 {
+            refreshButton.isEnabled = false
             let arrayMount = arrayPartition[diskTableView.selectedRow].components(separatedBy:" ")
             if arrayMount.last! == "当前引导分区" {
                 runBuildScripts("diskMount", [mount])

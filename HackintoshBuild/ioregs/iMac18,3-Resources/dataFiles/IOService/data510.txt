@@ -1,0 +1,20 @@
+[
+{"data":{"title":"IOMaximumSegmentByteCountWrite"},"attr":{"id":"139858","ColType":"Number","ColValue":"32768"}},
+{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"139860","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"139862","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMaximumSegmentByteCountRead"},"attr":{"id":"139864","ColType":"Number","ColValue":"32768"}},
+{"data":{"title":"IOReportLegend"},"attr":{"id":"139866","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"139867","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOReportGroupName"},"attr":{"id":"139869","ColType":"String","ColValue":"SDXC Controller"}},{"data":{"title":"IOReportChannelInfo"},"attr":{"id":"139871","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOReportChannelUnit"},"attr":{"id":"139873","ColType":"Number","ColValue":"72058100844068865"}}]},{"data":{"title":"IOReportChannels"},"attr":{"id":"139875","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"139876","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"139877","ColType":"Number","ColValue":"6000017649479735122"}},{"data":{"title":"1"},"attr":{"id":"139878","ColType":"Number","ColValue":"17180000258"}},{"data":{"title":"2"},"attr":{"id":"139879","ColType":"String","ColValue":"AppleSDXC Power State"}}]}]}]}]},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"139881","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"139883","ColType":"String","ColValue":"Internal"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"139885","ColType":"String","ColValue":"Secure Digital"}}]},
+{"data":{"title":"IONameMatched"},"attr":{"id":"139887","ColType":"String","ColValue":"pci14e4,16bc"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"139889","ColType":"String","ColValue":"com.apple.driver.AppleSDXC"}},
+{"data":{"title":"IOClass"},"attr":{"id":"139891","ColType":"String","ColValue":"AppleSDXC"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"139893","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"139895","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"139897","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"139898","ColType":"String","ColValue":"pci14e4,16bc"}}]},
+{"data":{"title":"IOMaximumSegmentCountWrite"},"attr":{"id":"139900","ColType":"Number","ColValue":"1024"}},
+{"data":{"title":"IOReportLegendPublic"},"attr":{"id":"139902","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMaximumSegmentCountRead"},"attr":{"id":"139904","ColType":"Number","ColValue":"1024"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"139906","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"139908","ColType":"Number","ColValue":"1"}},{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"139910","ColType":"Number","ColValue":"3"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"139912","ColType":"Number","ColValue":"3"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"139914","ColType":"Number","ColValue":"1"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"139916","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"139918","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"139920","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IOPCIPauseCompatible"},"attr":{"id":"139922","ColType":"Boolean","ColValue":"Yes"}}
+]

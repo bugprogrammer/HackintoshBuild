@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"37568","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"37570","ColType":"String","ColValue":"at_obdev_LSNKE"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"37572","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"37574","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37576","ColType":"String","ColValue":"at.obdev.nke.LittleSnitch"}},
+{"data":{"title":"IOKitDebug"},"attr":{"id":"37578","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"IOClass"},"attr":{"id":"37580","ColType":"String","ColValue":"at_obdev_LSNKE"}}
+]

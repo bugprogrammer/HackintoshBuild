@@ -1,0 +1,20 @@
+[
+{"data":{"title":"Name"},"attr":{"id":"138457","ColType":"String","ColValue":"DriverLogs"}},
+{"data":{"title":"LogIdentifier"},"attr":{"id":"138459","ColType":"String","ColValue":"Brcm4360"}},
+{"data":{"title":"Owner"},"attr":{"id":"138461","ColType":"String","ColValue":"com.apple.driver.AirPort.Brcm4360.0"}},
+{"data":{"title":"IOReportLegend"},"attr":{"id":"138463","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"138464","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOReportSubGroupName"},"attr":{"id":"138466","ColType":"String","ColValue":"Pipe DriverLogs"}},{"data":{"title":"IOReportChannels"},"attr":{"id":"138468","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"138469","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"138470","ColType":"Number","ColValue":"4846805723627135008"}},{"data":{"title":"1"},"attr":{"id":"138471","ColType":"Number","ColValue":"6443499521"}},{"data":{"title":"2"},"attr":{"id":"138472","ColType":"String","ColValue":"                              Log Calls"}}]},{"data":{"title":"3"},"attr":{"id":"138473","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"138474","ColType":"Number","ColValue":"4846805723630093378"}},{"data":{"title":"1"},"attr":{"id":"138475","ColType":"Number","ColValue":"6443499521"}},{"data":{"title":"2"},"attr":{"id":"138476","ColType":"String","ColValue":"   Log Messages Dropped Short Of Buffer"}}]},{"data":{"title":"3"},"attr":{"id":"138477","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"138478","ColType":"Number","ColValue":"4846805723629441568"}},{"data":{"title":"1"},"attr":{"id":"138479","ColType":"Number","ColValue":"6443499521"}},{"data":{"title":"2"},"attr":{"id":"138480","ColType":"String","ColValue":"                       Capture Requests"}}]}]},{"data":{"title":"IOReportGroupName"},"attr":{"id":"138482","ColType":"String","ColValue":"CoreCapture"}},{"data":{"title":"IOReportChannelInfo"},"attr":{"id":"138484","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOReportChannelUnit"},"attr":{"id":"138486","ColType":"Number","ColValue":"7205759403792793600"}}]}]}]},
+{"data":{"title":"LogType"},"attr":{"id":"138488","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"LogDataType"},"attr":{"id":"138490","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"NumberOfFiles"},"attr":{"id":"138492","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"LogPolicy"},"attr":{"id":"138494","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"138496","ColType":"String","ColValue":"CCLogPipe"}},
+{"data":{"title":"PipeSize"},"attr":{"id":"138498","ColType":"Number","ColValue":"16777216"}},
+{"data":{"title":"FileSize"},"attr":{"id":"138500","ColType":"Number","ColValue":"33554432"}},
+{"data":{"title":"NotifyThreshold"},"attr":{"id":"138502","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"MinLogSizeToNotify"},"attr":{"id":"138504","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"PipeType"},"attr":{"id":"138506","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Filename"},"attr":{"id":"138508","ColType":"String","ColValue":"AirPortBrcm4360_Logs"}},
+{"data":{"title":"DirectoryName"},"attr":{"id":"138510","ColType":"String","ColValue":""}},
+{"data":{"title":"IOReportLegendPublic"},"attr":{"id":"138512","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"FileOptions"},"attr":{"id":"138514","ColType":"Number","ColValue":"0"}}
+]

@@ -1,0 +1,8 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"4250","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"4252","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"4254","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"4256","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"4258","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"_ADR"},"attr":{"id":"4260","ColType":"Number","ColValue":"1310720"}},
+{"data":{"title":"device-properties"},"attr":{"id":"4262","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"4264","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/XHC1@140000"}},{"data":{"title":"acpi-device"},"attr":{"id":"4266","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"4268","ColType":"Number","ColValue":"13"}},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"4270","ColType":"Boolean","ColValue":"Yes"}}
+]

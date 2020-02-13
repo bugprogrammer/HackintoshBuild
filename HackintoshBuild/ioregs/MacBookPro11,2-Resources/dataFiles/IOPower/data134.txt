@@ -1,0 +1,5 @@
+[
+{"data":{"title":"sata-express-power-off"},"attr":{"id":"41862","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOPMResetPowerStateOnWake"},"attr":{"id":"41864","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"41866","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"TimeSinceDeviceIdle"},"attr":{"id":"41868","ColType":"Number","ColValue":"122181"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"41870","ColType":"Number","ColValue":"3"}},{"data":{"title":"ActivityTickles"},"attr":{"id":"41872","ColType":"Number","ColValue":"15028"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"41874","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"41876","ColType":"Number","ColValue":"3"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"41878","ColType":"Number","ColValue":"3"}},{"data":{"title":"IdleTimerPeriod"},"attr":{"id":"41880","ColType":"Number","ColValue":"600000"}},{"data":{"title":"TimeSinceLastTickle"},"attr":{"id":"41882","ColType":"Number","ColValue":"0"}}]}
+]

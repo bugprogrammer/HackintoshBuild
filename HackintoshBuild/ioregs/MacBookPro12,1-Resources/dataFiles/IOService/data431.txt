@@ -1,0 +1,5 @@
+[
+{"data":{"title":"IO80211VirtualInterfaceRole"},"attr":{"id":"160256","ColType":"String","ColValue":"AirLink"}},
+{"data":{"title":"IOMACAddress"},"attr":{"id":"160258","ColType":"Data","ColValue":"&lt;a202f3ac74c800000000&gt;"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"160260","ColType":"String","ColValue":"awdl0"}}
+]

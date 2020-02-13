@@ -1,0 +1,23 @@
+[
+{"data":{"title":"BSD Minor"},"attr":{"id":"13547","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"BSD Unit"},"attr":{"id":"13549","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Removable"},"attr":{"id":"13551","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"UUID"},"attr":{"id":"13553","ColType":"String","ColValue":"C267F44C-E787-4C38-A777-FFE7FEC66BB3"}},
+{"data":{"title":"Content"},"attr":{"id":"13555","ColType":"String","ColValue":"EF57347C-0000-11AA-AA11-00306543ECAC"}},
+{"data":{"title":"Writable"},"attr":{"id":"13557","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Content Hint"},"attr":{"id":"13559","ColType":"String","ColValue":"EF57347C-0000-11AA-AA11-00306543ECAC"}},
+{"data":{"title":"Logical Block Size"},"attr":{"id":"13561","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"Whole"},"attr":{"id":"13563","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"13565","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"13567","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"13569","ColType":"String","ColValue":"disk2"}},
+{"data":{"title":"Leaf"},"attr":{"id":"13571","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"IOStorageFeatures"},"attr":{"id":"13573","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Barrier"},"attr":{"id":"13575","ColType":"Boolean","ColValue":"No"}},{"data":{"title":"Priority"},"attr":{"id":"13577","ColType":"Boolean","ColValue":"No"}},{"data":{"title":"Unmap"},"attr":{"id":"13579","ColType":"Boolean","ColValue":"Yes"}}]},
+{"data":{"title":"BSD Major"},"attr":{"id":"13581","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Open"},"attr":{"id":"13583","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Preferred Block Size"},"attr":{"id":"13585","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"Physical Block Size"},"attr":{"id":"13587","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"EncryptionBlockSize"},"attr":{"id":"13589","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"Ejectable"},"attr":{"id":"13591","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Size"},"attr":{"id":"13593","ColType":"Number","ColValue":"1027546296320"}}
+]

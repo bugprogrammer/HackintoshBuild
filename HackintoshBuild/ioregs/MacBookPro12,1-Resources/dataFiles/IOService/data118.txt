@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"3733","ColType":"String","ColValue":"IOPlatformDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"3735","ColType":"String","ColValue":"io-apic"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"3737","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"3739","ColType":"String","ColValue":"io-apic"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"3741","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Base Vector Number"},"attr":{"id":"3743","ColType":"Number","ColValue":"64"}},
+{"data":{"title":"Vector Count"},"attr":{"id":"3745","ColType":"Number","ColValue":"40"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"3747","ColType":"String","ColValue":"com.apple.driver.AppleAPIC"}},
+{"data":{"title":"IOClass"},"attr":{"id":"3749","ColType":"String","ColValue":"AppleAPICInterruptController"}}
+]

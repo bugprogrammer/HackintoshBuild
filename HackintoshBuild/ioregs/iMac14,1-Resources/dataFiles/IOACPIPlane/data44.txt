@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3012","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_UID"},"attr":{"id":"3014","ColType":"String","ColValue":"0"}},
+{"data":{"title":"name"},"attr":{"id":"3016","ColType":"Data","ColValue":"&lt;\"PNP0C09\"&gt;"}},
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"3018","ColType":"Number","ColValue":"35"}},
+{"data":{"title":"IODeviceMemory"},"attr":{"id":"3020","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3021","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3022","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"3024","ColType":"Number","ColValue":"98"}},{"data":{"title":"length"},"attr":{"id":"3026","ColType":"Number","ColValue":"1"}}]}]},{"data":{"title":"1"},"attr":{"id":"3027","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3028","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"3030","ColType":"Number","ColValue":"102"}},{"data":{"title":"length"},"attr":{"id":"3032","ColType":"Number","ColValue":"1"}}]}]}]}
+]

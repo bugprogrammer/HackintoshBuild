@@ -1,0 +1,17 @@
+[
+{"data":{"title":"IOPlatformMaxBusDelay"},"attr":{"id":"2318","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"2319","ColType":"Number","ColValue":"18446744073709551615"}},{"data":{"title":"1"},"attr":{"id":"2320","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"IOPlatformMaxInterruptDelay"},"attr":{"id":"2322","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"2323","ColType":"Number","ColValue":"18446744073709551615"}},{"data":{"title":"1"},"attr":{"id":"2324","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"IOPlatformMapperPresent"},"attr":{"id":"2326","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"2328","ColType":"String","ColValue":"ACPI"}},
+{"data":{"title":"Platform Memory Ranges"},"attr":{"id":"2330","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"2331","ColType":"Number","ColValue":"0"}},{"data":{"title":"1"},"attr":{"id":"2332","ColType":"Number","ColValue":"4294967295"}}]},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"2334","ColType":"String","ColValue":"com.apple.driver.AppleACPIPlatform"}},
+{"data":{"title":"IOClass"},"attr":{"id":"2336","ColType":"String","ColValue":"AppleACPIPlatformExpert"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"2338","ColType":"Number","ColValue":"10000"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"2340","ColType":"String","ColValue":"AppleACPIEventPoller is not serializable"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"2342","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"2344","ColType":"String","ColValue":"ACPI"}},
+{"data":{"title":"ACPI Statistics"},"attr":{"id":"2346","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MethodCount"},"attr":{"id":"2348","ColType":"Number","ColValue":"22580"}},{"data":{"title":"FixedEventCount"},"attr":{"id":"2350","ColType":"Number","ColValue":"1"}},{"data":{"title":"GpeCount"},"attr":{"id":"2352","ColType":"Number","ColValue":"3050515"}},{"data":{"title":"GpeLastDispatched"},"attr":{"id":"2354","ColType":"Number","ColValue":"28"}},{"data":{"title":"SciCount"},"attr":{"id":"2356","ColType":"Number","ColValue":"3050171"}}]},
+{"data":{"title":"Wake Reason"},"attr":{"id":"2358","ColType":"Data","ColValue":"&lt;0000000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"2360","ColType":"String","ColValue":"IOPlatformExpertDevice"}},
+{"data":{"title":"acpi-mmcfg-seg0"},"attr":{"id":"2362","ColType":"Number","ColValue":"3758096384"}}
+]

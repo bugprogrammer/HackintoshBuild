@@ -1,0 +1,5 @@
+[
+{"data":{"title":"IOUnit"},"attr":{"id":"130325","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Trace ID"},"attr":{"id":"130327","ColType":"Number","ColValue":"1507328"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"130329","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"130331","ColType":"String","ColValue":"SATA"}},{"data":{"title":"AHCI Port Number"},"attr":{"id":"130333","ColType":"Number","ColValue":"0"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"130335","ColType":"String","ColValue":"Internal"}},{"data":{"title":"Port Speed"},"attr":{"id":"130337","ColType":"String","ColValue":"6 Gigabit"}}]}
+]

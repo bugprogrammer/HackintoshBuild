@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"77632","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"77634","ColType":"String","ColValue":"AppleIntelCPUPowerManagement"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"77636","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOPropertyMatch"},"attr":{"id":"77638","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"intel_cpupm_matching"},"attr":{"id":"77640","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"77642","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"77644","ColType":"String","ColValue":"com.apple.driver.AppleIntelCPUPowerManagement"}},
+{"data":{"title":"IOClass"},"attr":{"id":"77646","ColType":"String","ColValue":"AppleIntelCPUPowerManagement"}}
+]

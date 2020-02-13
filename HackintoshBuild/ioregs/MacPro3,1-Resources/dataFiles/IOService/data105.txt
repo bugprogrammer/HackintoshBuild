@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"5101","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"5103","ColType":"String","ColValue":"AMDSupport"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"5105","ColType":"Number","ColValue":"65050"}},
+{"data":{"title":"iofb_version"},"attr":{"id":"5107","ColType":"String","ColValue":"1.1.36"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"5109","ColType":"String","ColValue":"com.apple.kext.AMDSupport"}},
+{"data":{"title":"IOPCIClassMatch"},"attr":{"id":"5111","ColType":"String","ColValue":"0x03000000&0xFF000000"}},
+{"data":{"title":"IOClass"},"attr":{"id":"5113","ColType":"String","ColValue":"AMDSupport"}},
+{"data":{"title":"IOPCIMatch"},"attr":{"id":"5115","ColType":"String","ColValue":"0x00001002&0x0000FFFF"}}
+]

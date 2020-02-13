@@ -1,0 +1,6 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"5358","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"5360","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"device-properties"},"attr":{"id":"5362","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Tunnel Endpoint Device Model ID"},"attr":{"id":"5364","ColType":"Data","ColValue":"&lt;01000000&gt;"}},{"data":{"title":"Tunnel Endpoint Device Vendor ID"},"attr":{"id":"5366","ColType":"Data","ColValue":"&lt;0b000000&gt;"}},{"data":{"title":"Tunnel Endpoint GUID"},"attr":{"id":"5368","ColType":"Data","ColValue":"&lt;c0b80e0001000b00&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"5370","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PEG0@10000/BR00@0/BR12@90000/UFS2@0/DSB1@30000/UPS0@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"5372","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"5374","ColType":"Boolean","ColValue":"Yes"}}
+]

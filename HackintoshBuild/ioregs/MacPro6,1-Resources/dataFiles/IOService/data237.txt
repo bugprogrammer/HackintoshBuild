@@ -1,0 +1,18 @@
+[
+{"data":{"title":"USBPortType"},"attr":{"id":"23914","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"idProduct"},"attr":{"id":"23916","ColType":"Number","ColValue":"8500"}},
+{"data":{"title":"AppleUSBAlternateServiceRegistryID"},"attr":{"id":"23918","ColType":"Number","ColValue":"4294968848"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"23920","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bAlternateSetting"},"attr":{"id":"23922","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"23924","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"2d9786c6-9ef3-11d4-ad51-000a27052861"},"attr":{"id":"23926","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"USBSpeed"},"attr":{"id":"23928","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"23930","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"IOClassNameOverride"},"attr":{"id":"23932","ColType":"String","ColValue":"IOUSBInterface"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"23934","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"23936","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"idVendor"},"attr":{"id":"23938","ColType":"Number","ColValue":"1060"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"23940","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"locationID"},"attr":{"id":"23942","ColType":"Number","ColValue":"1187840"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"23944","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"bcdDevice"},"attr":{"id":"23946","ColType":"Number","ColValue":"20480"}}
+]

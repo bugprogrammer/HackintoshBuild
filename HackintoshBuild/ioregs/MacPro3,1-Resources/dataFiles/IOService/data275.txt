@@ -1,0 +1,12 @@
+[
+{"data":{"title":"Model_ID"},"attr":{"id":"12179","ColType":"Number","ColValue":"65606"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"12181","ColType":"String","ColValue":"FireWire Unit"}},
+{"data":{"title":"FireWire Product Name"},"attr":{"id":"12183","ColType":"String","ColValue":"FW 410"}},
+{"data":{"title":"GUID"},"attr":{"id":"12185","ColType":"Number","ColValue":"3777926264278865"}},
+{"data":{"title":"FireWire Vendor Name"},"attr":{"id":"12187","ColType":"String","ColValue":"M-AUDIO"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"12189","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CDCFCA94-F197-11D4-87E6-000502072F80"},"attr":{"id":"12191","ColType":"String","ColValue":"IOFireWireFamily.kext/Contents/PlugIns/IOFireWireLib.plugin"}}]},
+{"data":{"title":"Unit_SW_Version"},"attr":{"id":"12193","ColType":"Number","ColValue":"81921"}},
+{"data":{"title":"Vendor_ID"},"attr":{"id":"12195","ColType":"Number","ColValue":"3436"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"12197","ColType":"String","ColValue":"IOFireWireUserClient"}},
+{"data":{"title":"Unit_Spec_ID"},"attr":{"id":"12199","ColType":"Number","ColValue":"41005"}}
+]

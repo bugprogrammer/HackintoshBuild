@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3683","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"3685","ColType":"Number","ColValue":"1769472"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3687","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"PinConfigurations"},"attr":{"id":"3689","ColType":"Data","ColValue":"&lt;0001a6900001a6900000000000000000&gt;"}},{"data":{"title":"acpi-device"},"attr":{"id":"3691","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"layout-id"},"attr":{"id":"3693","ColType":"Data","ColValue":"&lt;7a000000&gt;"}},{"data":{"title":"MaximumBootBeepVolume"},"attr":{"id":"3695","ColType":"Data","ColValue":"&lt;ee&gt;"}},{"data":{"title":"multiEQDevicePresence"},"attr":{"id":"3697","ColType":"Data","ColValue":"&lt;00000100&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"3699","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/HDEF@1b0000"}},{"data":{"title":"MaximumBootBeepVolumeAlt"},"attr":{"id":"3701","ColType":"Data","ColValue":"&lt;ee&gt;"}}]},
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"3703","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"3705","ColType":"Boolean","ColValue":"Yes"}}
+]

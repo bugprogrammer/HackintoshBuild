@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"147114","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"147116","ColType":"String","ColValue":"com_apple_AVEBridge"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"147118","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"147120","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"147122","ColType":"String","ColValue":"com.apple.AVEBridge"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"147124","ColType":"String","ColValue":"com_apple_AVEBridgeUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"147126","ColType":"String","ColValue":"com_apple_AVEBridge"}}
+]

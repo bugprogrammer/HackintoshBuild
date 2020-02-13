@@ -1,0 +1,15 @@
+[
+{"data":{"title":"Companion"},"attr":{"id":"32557","ColType":"String","ColValue":"yes"}},
+{"data":{"title":"Errata"},"attr":{"id":"32559","ColType":"Number","ColValue":"2156544"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"32561","ColType":"String","ColValue":"com.apple.driver.AppleUSBUHCI"}},
+{"data":{"title":"IOClass"},"attr":{"id":"32563","ColType":"String","ColValue":"AppleUSBUHCI"}},
+{"data":{"title":"Need contiguous memory for isoch"},"attr":{"id":"32565","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"32567","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Card Type"},"attr":{"id":"32569","ColType":"String","ColValue":"Built-in"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"32571","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOPCIClassMatch"},"attr":{"id":"32573","ColType":"String","ColValue":"0x0C030000"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"32575","ColType":"String","ColValue":"IOUSBControllerUserClient"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"32577","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"32579","ColType":"Number","ColValue":"3"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"32581","ColType":"Number","ColValue":"3"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"32583","ColType":"Number","ColValue":"3"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"32585","ColType":"Number","ColValue":"3"}}]},
+{"data":{"title":"this"},"attr":{"id":"32587","ColType":"Number","ColValue":"421474304"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"32589","ColType":"String","ColValue":"IOPCIDevice"}}
+]

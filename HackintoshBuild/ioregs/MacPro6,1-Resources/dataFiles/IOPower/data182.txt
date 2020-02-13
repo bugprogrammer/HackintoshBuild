@@ -1,0 +1,21 @@
+[
+{"data":{"title":"Revision ID"},"attr":{"id":"8097","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Route String"},"attr":{"id":"8099","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Thunderbolt Version"},"attr":{"id":"8101","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"DPP Crossed"},"attr":{"id":"8103","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"UID"},"attr":{"id":"8105","ColType":"Number","ColValue":"281535109477088"}},
+{"data":{"title":"Device Vendor ID"},"attr":{"id":"8107","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Device Model Name"},"attr":{"id":"8109","ColType":"String","ColValue":"Macintosh"}},
+{"data":{"title":"EEPROM Revision"},"attr":{"id":"8111","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Upstream Port Number"},"attr":{"id":"8113","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"Device Vendor Name"},"attr":{"id":"8115","ColType":"String","ColValue":"Apple Inc."}},
+{"data":{"title":"Device Model ID"},"attr":{"id":"8117","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"Max Port Number"},"attr":{"id":"8119","ColType":"Number","ColValue":"12"}},
+{"data":{"title":"Device Model Revision"},"attr":{"id":"8121","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Depth"},"attr":{"id":"8123","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"ROM Version"},"attr":{"id":"8125","ColType":"Number","ColValue":"25"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"8127","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"8129","ColType":"Number","ColValue":"0"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"8131","ColType":"Number","ColValue":"2"}},{"data":{"title":"DesiredPowerState"},"attr":{"id":"8133","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"8135","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"8137","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"Self-Reset Count"},"attr":{"id":"8139","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Device ID"},"attr":{"id":"8141","ColType":"Number","ColValue":"5485"}},
+{"data":{"title":"Vendor ID"},"attr":{"id":"8143","ColType":"Number","ColValue":"32902"}}
+]

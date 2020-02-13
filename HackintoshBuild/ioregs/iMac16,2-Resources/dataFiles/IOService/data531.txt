@@ -1,0 +1,20 @@
+[
+{"data":{"title":"Leaf"},"attr":{"id":"21600","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Writable"},"attr":{"id":"21602","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"BSD Minor"},"attr":{"id":"21604","ColType":"Number","ColValue":"25"}},
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"21606","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"21608","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"Partition ID"},"attr":{"id":"21610","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Preferred Block Size"},"attr":{"id":"21612","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"BSD Major"},"attr":{"id":"21614","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"21616","ColType":"String","ColValue":"disk9s2"}},
+{"data":{"title":"Size"},"attr":{"id":"21618","ColType":"Number","ColValue":"20938752"}},
+{"data":{"title":"Content Hint"},"attr":{"id":"21620","ColType":"String","ColValue":"Apple_HFS"}},
+{"data":{"title":"Base"},"attr":{"id":"21622","ColType":"Number","ColValue":"32768"}},
+{"data":{"title":"Removable"},"attr":{"id":"21624","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Open"},"attr":{"id":"21626","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BSD Unit"},"attr":{"id":"21628","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"Whole"},"attr":{"id":"21630","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Content"},"attr":{"id":"21632","ColType":"String","ColValue":"Apple_HFS"}},
+{"data":{"title":"Ejectable"},"attr":{"id":"21634","ColType":"Boolean","ColValue":"Yes"}}
+]

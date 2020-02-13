@@ -1,0 +1,8 @@
+[
+{"data":{"title":"autodiskmount"},"attr":{"id":"21725","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Device Characteristics"},"attr":{"id":"21727","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Vendor Name"},"attr":{"id":"21729","ColType":"String","ColValue":"Apple"}},{"data":{"title":"Product Name"},"attr":{"id":"21731","ColType":"String","ColValue":"Disk Image"}},{"data":{"title":"Product Revision Level"},"attr":{"id":"21733","ColType":"String","ColValue":"10.11v415"}}]},
+{"data":{"title":"throttle-unit"},"attr":{"id":"21735","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"21737","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"21739","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"21741","ColType":"String","ColValue":"File"}},{"data":{"title":"Virtual Interface Location Path"},"attr":{"id":"21743","ColType":"Data","ColValue":"&lt;\"/Users/evdakimov/Desktop/SW_DVD5_Office_Mac_Standard_2011w_SP4_Russian_-2_ISO_MLF_X19-67682.ISO\"&gt;"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"21745","ColType":"String","ColValue":"Virtual Interface"}}]},
+{"data":{"title":"device-type"},"attr":{"id":"21747","ColType":"String","ColValue":"Generic"}}
+]

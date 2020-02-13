@@ -1,0 +1,10 @@
+[
+{"data":{"title":"fv-main-size"},"attr":{"id":"3756","ColType":"Number","ColValue":"1486848"}},
+{"data":{"title":"vendor"},"attr":{"id":"3758","ColType":"Data","ColValue":"&lt;\"Apple Inc.\"&gt;"}},
+{"data":{"title":"fv-main-address"},"attr":{"id":"3760","ColType":"Number","ColValue":"18446744073702641664"}},
+{"data":{"title":"rom-size"},"attr":{"id":"3762","ColType":"Number","ColValue":"8388608"}},
+{"data":{"title":"version"},"attr":{"id":"3764","ColType":"Data","ColValue":"&lt;\"IM183.88Z.0151.B00.1708080034\"&gt;"}},
+{"data":{"title":"firmware-features"},"attr":{"id":"3766","ColType":"Number","ColValue":"4245681462"}},
+{"data":{"title":"release-date"},"attr":{"id":"3768","ColType":"Data","ColValue":"&lt;\"08/08/2017\"&gt;"}},
+{"data":{"title":"apple-rom-info"},"attr":{"id":"3770","ColType":"Data","ColValue":"&lt;4170706c6520524f4d2056657273696f6e0a202042494f532049443a202020202020494d3138332e38385a2e303135312e4230302e313730383038303033340a20204275696c742062793a20202020205f74727573746576616c40786170703135370a2020446174653a202020202020202020547565204175672020382030303a33343a323920323031370a20205265766973696f6e3a20202020203135312028422649290a2020524f4d2056657273696f6e3a2020303135315f4230300a20204275696c6420547970653a2020204f6666696369616c204275696c640a2020436f6d70696c65723a20202020204170706c65204c4c564d2076657273696f6e20362e312e302028636c616e672d3630322e302e35332920286261736564206f6e204c4c564d20332e362e3073766e290a00&gt;"}}
+]

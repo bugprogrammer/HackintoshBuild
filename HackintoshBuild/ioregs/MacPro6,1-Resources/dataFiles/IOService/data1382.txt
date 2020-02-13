@@ -1,0 +1,11 @@
+[
+{"data":{"title":"OutgoingMTU"},"attr":{"id":"85834","ColType":"Number","ColValue":"185"}},
+{"data":{"title":"PSM"},"attr":{"id":"85836","ColType":"Number","ColValue":"19"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"85838","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"ChannelState"},"attr":{"id":"85840","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"BluetoothObjectID"},"attr":{"id":"85842","ColType":"Number","ColValue":"1001900544"}},
+{"data":{"title":"IncomingMTU"},"attr":{"id":"85844","ColType":"Number","ColValue":"65535"}},
+{"data":{"title":"LocalChannelID"},"attr":{"id":"85846","ColType":"Number","ColValue":"65"}},
+{"data":{"title":"RemoteChannelID"},"attr":{"id":"85848","ColType":"Number","ColValue":"71"}},
+{"data":{"title":"IsInitiator"},"attr":{"id":"85850","ColType":"Boolean","ColValue":"Yes"}}
+]

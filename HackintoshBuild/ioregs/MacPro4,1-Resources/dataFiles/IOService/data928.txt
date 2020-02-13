@@ -1,0 +1,10 @@
+[
+{"data":{"title":"efi-boot-device"},"attr":{"id":"37237","ColType":"Data","ColValue":"&lt;\"<array><dict><key>IOMatch</key><dict><key>IOProviderClass</key><string>IOMedia</string><key>IOPropertyMatch</key><dict><key>UUID</key><string>0654EFD9-0690-4D51-A3A7-81F827BF1996</string></dict></dict></dict></array>\"&gt;"}},
+{"data":{"title":"BackgroundClear"},"attr":{"id":"37239","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"efi-boot-device-data"},"attr":{"id":"37241","ColType":"Data","ColValue":"&lt;02010c00d041080a0000000001010600021f03120a0001000000000004012a00020000002840060000000000880bef0d00000000d9ef54069006514da3a781f827bf199602027fff0400&gt;"}},
+{"data":{"title":"prev-lang:kbd"},"attr":{"id":"37243","ColType":"Data","ColValue":"&lt;\"ru:0\"&gt;"}},
+{"data":{"title":"SystemAudioVolume"},"attr":{"id":"37245","ColType":"Data","ColValue":"&lt;10&gt;"}},
+{"data":{"title":"platform-uuid"},"attr":{"id":"37247","ColType":"Data","ColValue":"&lt;860d131c42c7552cb36110cf3c9725e0&gt;"}},
+{"data":{"title":"boot-args"},"attr":{"id":"37249","ColType":"String","ColValue":"-v -f"}},
+{"data":{"title":"security-mode"},"attr":{"id":"37251","ColType":"String","ColValue":"none"}}
+]

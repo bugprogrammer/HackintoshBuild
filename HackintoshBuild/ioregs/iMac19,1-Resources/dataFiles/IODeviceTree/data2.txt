@@ -1,0 +1,21 @@
+[
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"4186","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"system-type"},"attr":{"id":"4188","ColType":"Data","ColValue":"&lt;01&gt;"}},
+{"data":{"title":"IOPlatformSystemSleepPolicy"},"attr":{"id":"4190","ColType":"Data","ColValue":"&lt;534c505402000800200000002000000000000000000000000500000000000000002d000000000000400600000000000008000000080020000500000000000000002d000000000000400610000000100020400000204000000200000008000000002d000000000000400600000000000020000000200020000500000000000000002d000000000000400600000000000008800000088020000500000000000000002d000000000000400600000000000000c0000000c000000200000008000000002d000000000000400600000000000000000000000000000200000001000000002d000000000000000000000000000000000000000000000200000000000000002d000000000000&gt;"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"4192","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4193","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"product-name"},"attr":{"id":"4195","ColType":"Data","ColValue":"&lt;\"iMac19,1\"&gt;"}},
+{"data":{"title":"IOPlatformUUID"},"attr":{"id":"4197","ColType":"String","ColValue":"67C622D3-7510-5F2A-81D0-2A874FC0E6B8"}},
+{"data":{"title":"board-id"},"attr":{"id":"4199","ColType":"Data","ColValue":"&lt;\"Mac-AA95B1DDAB278B95\"&gt;"}},
+{"data":{"title":"IOPlatformSerialNumber"},"attr":{"id":"4201","ColType":"String","ColValue":"C02Y862SJV3N"}},
+{"data":{"title":"version"},"attr":{"id":"4203","ColType":"Data","ColValue":"&lt;\"1.0\"&gt;"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"4205","ColType":"String","ColValue":"SMCPolledInterface is not serializable"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"4207","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4208","ColType":"Data","ColValue":"&lt;0900000005000000&gt;"}}]},
+{"data":{"title":"compatible"},"attr":{"id":"4210","ColType":"Data","ColValue":"&lt;\"iMac19,1\"&gt;"}},
+{"data":{"title":"model"},"attr":{"id":"4212","ColType":"Data","ColValue":"&lt;\"iMac19,1\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"4214","ColType":"Data","ColValue":"&lt;\"/\"&gt;"}},
+{"data":{"title":"clock-frequency"},"attr":{"id":"4216","ColType":"Data","ColValue":"&lt;0084d717&gt;"}},
+{"data":{"title":"target-type"},"attr":{"id":"4218","ColType":"Data","ColValue":"&lt;\"Mac\"&gt;"}},
+{"data":{"title":"serial-number"},"attr":{"id":"4220","ColType":"Data","ColValue":"&lt;4a56334e00000000000000000043303259383632534a56334e000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"manufacturer"},"attr":{"id":"4222","ColType":"Data","ColValue":"&lt;\"Apple Inc.\"&gt;"}},
+{"data":{"title":"platform-feature"},"attr":{"id":"4224","ColType":"Data","ColValue":"&lt;2200000000000000&gt;"}}
+]

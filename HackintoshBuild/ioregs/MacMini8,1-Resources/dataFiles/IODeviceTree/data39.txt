@@ -1,0 +1,11 @@
+[
+{"data":{"title":"slot-names"},"attr":{"id":"3294","ColType":"Data","ColValue":"&lt;\"   \",\"BANK 0/ChannelA-DIMM0\",\"BANK 2/ChannelB-DIMM0\"&gt;"}},
+{"data":{"title":"dimm-types"},"attr":{"id":"3296","ColType":"Data","ColValue":"&lt;\"DDR4\",\"DDR4\"&gt;"}},
+{"data":{"title":"dimm-speeds"},"attr":{"id":"3298","ColType":"Data","ColValue":"&lt;\"2667 MHz\",\"2667 MHz\"&gt;"}},
+{"data":{"title":"dimm-serial-number"},"attr":{"id":"3300","ColType":"Data","ColValue":"&lt;\"532887D2\",\"542874D2\"&gt;"}},
+{"data":{"title":"dimm-part-number"},"attr":{"id":"3302","ColType":"Data","ColValue":"&lt;\"KHX2666C15S4/16G\",\"KHX2666C15S4/16G\"&gt;"}},
+{"data":{"title":"ecc-enabled"},"attr":{"id":"3304","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"dimm-info"},"attr":{"id":"3306","ColType":"Data","ColValue":"&lt;00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"reg"},"attr":{"id":"3308","ColType":"Data","ColValue":"&lt;04000000000000000400000000000000&gt;"}},
+{"data":{"title":"dimm-manufacturer"},"attr":{"id":"3310","ColType":"Data","ColValue":"&lt;\"Kingston\",\"Kingston\"&gt;"}}
+]

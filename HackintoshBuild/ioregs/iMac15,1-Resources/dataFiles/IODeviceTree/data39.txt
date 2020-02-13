@@ -1,0 +1,17 @@
+[
+{"data":{"title":"AAPL,gray-value"},"attr":{"id":"3469","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"device_type"},"attr":{"id":"3471","ColType":"String","ColValue":"display"}},
+{"data":{"title":"AAPL,gray-page"},"attr":{"id":"3473","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"IOFBDependentID"},"attr":{"id":"3475","ColType":"Number","ColValue":"4294967768"}},
+{"data":{"title":"display-connect-flags"},"attr":{"id":"3477","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"port-number"},"attr":{"id":"3479","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"IOFBDependentIndex"},"attr":{"id":"3481","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"ATY,ControlFlags"},"attr":{"id":"3483","ColType":"Number","ColValue":"772"}},
+{"data":{"title":"av-signal-type"},"attr":{"id":"3485","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"3487","ColType":"Data","ColValue":"&lt;\"ATY,Namako\"&gt;"}},
+{"data":{"title":"display-type"},"attr":{"id":"3489","ColType":"String","ColValue":"NONE"}},
+{"data":{"title":"name"},"attr":{"id":"3491","ColType":"String","ColValue":"ATY,Namako"}},
+{"data":{"title":"connector-type"},"attr":{"id":"3493","ColType":"Number","ColValue":"1024"}},
+{"data":{"title":"ATY,ActiveFlags"},"attr":{"id":"3495","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"audio-codec-info"},"attr":{"id":"3497","ColType":"Data","ColValue":"&lt;00010700&gt;"}}
+]

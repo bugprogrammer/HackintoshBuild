@@ -1,0 +1,6 @@
+[
+{"data":{"title":"UsbCompanionPortPresent"},"attr":{"id":"6079","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"UsbCPortNumber"},"attr":{"id":"6081","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"6083","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PEG2@10002/UPSB@0/DSB2@20000/XHC3@0/RHUB@0/SSP1@3"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"6085","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}
+]

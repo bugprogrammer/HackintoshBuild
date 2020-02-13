@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"166111","ColType":"String","ColValue":"AppleVirtIO9PVFS"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"166113","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"166115","ColType":"String","ColValue":"com.apple.driver.AppleVirtIO"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"166117","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"166119","ColType":"String","ColValue":"AppleVirtIO9PVFS"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"166121","ColType":"String","ColValue":"IOResources"}}
+]

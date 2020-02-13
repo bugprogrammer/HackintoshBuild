@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"6615","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"name"},"attr":{"id":"6617","ColType":"Data","ColValue":"&lt;\"APP000C\"&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"6619","ColType":"Data","ColValue":"&lt;\"smc-dppt\"&gt;"}},
+{"data":{"title":"device-properties"},"attr":{"id":"6621","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"hbr2-edm"},"attr":{"id":"6623","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"hbr2-edm"},"attr":{"id":"6625","ColType":"Number","ColValue":"1"}}
+]

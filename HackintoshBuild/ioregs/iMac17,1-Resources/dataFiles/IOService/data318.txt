@@ -1,0 +1,5 @@
+[
+{"data":{"title":"IO80211VirtualInterfaceRole"},"attr":{"id":"16153","ColType":"String","ColValue":"P2P Device"}},
+{"data":{"title":"IOMACAddress"},"attr":{"id":"16155","ColType":"Data","ColValue":"&lt;0af076106b9600000000&gt;"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"16157","ColType":"String","ColValue":"p2p0"}}
+]

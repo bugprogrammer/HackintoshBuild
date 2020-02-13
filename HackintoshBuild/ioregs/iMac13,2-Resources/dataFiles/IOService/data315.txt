@@ -1,0 +1,19 @@
+[
+{"data":{"title":"Revision ID"},"attr":{"id":"14009","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"Thunderbolt Version"},"attr":{"id":"14011","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Max In Hop ID"},"attr":{"id":"14013","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"Dual-Link Port RID"},"attr":{"id":"14015","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Port Number"},"attr":{"id":"14017","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Hop Table"},"attr":{"id":"14019","ColType":"Array","ColValue":"0_values"},"children":[]},
+{"data":{"title":"Micro Type"},"attr":{"id":"14021","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"Adapter Type"},"attr":{"id":"14023","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Micro Version"},"attr":{"id":"14025","ColType":"Number","ColValue":"4361"}},
+{"data":{"title":"Lane"},"attr":{"id":"14027","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Micro Address"},"attr":{"id":"14029","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Max Out Hop ID"},"attr":{"id":"14031","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"Description"},"attr":{"id":"14033","ColType":"String","ColValue":"Thunderbolt Port"}},
+{"data":{"title":"Dual-Link Port"},"attr":{"id":"14035","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Micro Route String"},"attr":{"id":"14037","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Device ID"},"attr":{"id":"14039","ColType":"Number","ColValue":"5447"}},
+{"data":{"title":"Vendor ID"},"attr":{"id":"14041","ColType":"Number","ColValue":"32902"}}
+]

@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"37664","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"37666","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"37668","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"37670","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"37672","ColType":"String","ColValue":"AppleIntelAzulController"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"37674","ColType":"String","ColValue":"AppleMEClientController"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"37676","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37678","ColType":"String","ColValue":"com.apple.driver.AppleIntelFramebufferAzul"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"37680","ColType":"String","ColValue":"AppleSNBFBUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"37682","ColType":"String","ColValue":"AppleMEClientController"}},
+{"data":{"title":"RetryCount"},"attr":{"id":"37684","ColType":"Number","ColValue":"3"}}
+]

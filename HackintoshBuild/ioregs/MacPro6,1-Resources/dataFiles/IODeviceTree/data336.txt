@@ -1,0 +1,17 @@
+[
+{"data":{"title":"AAPL,gray-value"},"attr":{"id":"9630","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"device_type"},"attr":{"id":"9632","ColType":"String","ColValue":"display"}},
+{"data":{"title":"AAPL,gray-page"},"attr":{"id":"9634","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"IOFBDependentID"},"attr":{"id":"9636","ColType":"Number","ColValue":"4294968256"}},
+{"data":{"title":"display-connect-flags"},"attr":{"id":"9638","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"port-number"},"attr":{"id":"9640","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOFBDependentIndex"},"attr":{"id":"9642","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"ATY,ControlFlags"},"attr":{"id":"9644","ColType":"Number","ColValue":"772"}},
+{"data":{"title":"av-signal-type"},"attr":{"id":"9646","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"9648","ColType":"Data","ColValue":"&lt;\"ATY,IkuraS\"&gt;"}},
+{"data":{"title":"display-type"},"attr":{"id":"9650","ColType":"String","ColValue":"NONE"}},
+{"data":{"title":"name"},"attr":{"id":"9652","ColType":"String","ColValue":"ATY,IkuraS"}},
+{"data":{"title":"connector-type"},"attr":{"id":"9654","ColType":"Number","ColValue":"1024"}},
+{"data":{"title":"ATY,ActiveFlags"},"attr":{"id":"9656","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"audio-codec-info"},"attr":{"id":"9658","ColType":"Data","ColValue":"&lt;00010700&gt;"}}
+]

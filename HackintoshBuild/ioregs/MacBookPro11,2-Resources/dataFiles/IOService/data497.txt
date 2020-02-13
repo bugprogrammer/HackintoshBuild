@@ -1,0 +1,13 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"55986","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DevicePowerState"},"attr":{"id":"55988","ColType":"Number","ColValue":"4"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"55990","ColType":"Number","ColValue":"4"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"55992","ColType":"Number","ColValue":"4"}}]},
+{"data":{"title":"IOGraphicsIgnoreParameters"},"attr":{"id":"55994","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"aupc"},"attr":{"id":"55996","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"auph"},"attr":{"id":"55998","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"aums"},"attr":{"id":"56000","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":" bpc"},"attr":{"id":"56002","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"aupp"},"attr":{"id":"56004","ColType":"Boolean","ColValue":"Yes"}}]},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"56006","ColType":"String","ColValue":"IOGraphics"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"56008","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"56010","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"56012","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"56014","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"56016","ColType":"String","ColValue":"com.apple.iokit.IOGraphicsFamily"}},
+{"data":{"title":"IOGraphicsPrefsParameters"},"attr":{"id":"56018","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"vbst"},"attr":{"id":"56020","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"tsat"},"attr":{"id":"56022","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"thue"},"attr":{"id":"56024","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"pscn"},"attr":{"id":"56026","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"cyuv"},"attr":{"id":"56028","ColType":"Number","ColValue":"268435456"}},{"data":{"title":"tbri"},"attr":{"id":"56030","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"oscn"},"attr":{"id":"56032","ColType":"Boolean","ColValue":"Yes"}}]},
+{"data":{"title":"IOClass"},"attr":{"id":"56034","ColType":"String","ColValue":"IODisplayWrangler"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"56036","ColType":"String","ColValue":"IOAccelerationUserClient"}}
+]

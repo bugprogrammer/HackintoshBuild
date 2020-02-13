@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"6474","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"6476","ColType":"String","ColValue":"AMDRadeonX4000HWServices"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"6478","ColType":"Number","ColValue":"65051"}},
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"6480","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOPropertyMatch"},"attr":{"id":"6482","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"LoadHWServices"},"attr":{"id":"6484","ColType":"Boolean","ColValue":"Yes"}}]},
+{"data":{"title":"LoadPlugIn"},"attr":{"id":"6486","ColType":"String","ColValue":"Load4400"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"6488","ColType":"String","ColValue":"com.apple.kext.AMDRadeonX4000HWServices"}},
+{"data":{"title":"IOPCIMatch"},"attr":{"id":"6490","ColType":"String","ColValue":"0x67C01002 0x67C11002 0x67C21002 0x67C41002 0x67C71002 0x67DF1002 0x67D01002 0x67C81002 0x67C91002 0x67CA1002 0x67CC1002 0x67CF1002 0x67E01002 0x67E31002 0x67E81002 0x67EB1002 0x67EF1002 0x67FF1002 0x67E11002 0x67E71002 0x67E91002"}},
+{"data":{"title":"IOClass"},"attr":{"id":"6492","ColType":"String","ColValue":"AMDRadeonX4000_AMDRadeonHWServicesPolaris"}}
+]

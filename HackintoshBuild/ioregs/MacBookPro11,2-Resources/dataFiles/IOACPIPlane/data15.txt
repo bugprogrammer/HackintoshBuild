@@ -1,0 +1,6 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"2022","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"_ADR"},"attr":{"id":"2024","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"device-properties"},"attr":{"id":"2026","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"2028","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"PCI-Thunderbolt"},"attr":{"id":"2030","ColType":"Number","ColValue":"1"}},{"data":{"title":"acpi-path"},"attr":{"id":"2032","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/P0P2@10000/UPSB@0"}}]},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"2034","ColType":"Boolean","ColValue":"Yes"}}
+]

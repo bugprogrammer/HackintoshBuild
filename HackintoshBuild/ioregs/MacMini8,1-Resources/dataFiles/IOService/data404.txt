@@ -1,0 +1,10 @@
+[
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"62970","ColType":"Number","ColValue":"13"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"62972","ColType":"String","ColValue":"IOUSBHostInterface"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"62974","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"62976","ColType":"String","ColValue":"*"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"62978","ColType":"Number","ColValue":"59000"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"62980","ColType":"String","ColValue":"com.apple.driver.usb.cdc.ncm"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"62982","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"IOClass"},"attr":{"id":"62984","ColType":"String","ColValue":"AppleUSBNCMControl"}}
+]

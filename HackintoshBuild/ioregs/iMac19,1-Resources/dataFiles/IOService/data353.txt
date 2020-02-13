@@ -1,0 +1,23 @@
+[
+{"data":{"title":"BSD Minor"},"attr":{"id":"15188","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"Removable"},"attr":{"id":"15190","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"BSD Unit"},"attr":{"id":"15192","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"UUID"},"attr":{"id":"15194","ColType":"String","ColValue":"A7837DA3-947B-439B-951F-C8AC60194A1D"}},
+{"data":{"title":"Content"},"attr":{"id":"15196","ColType":"String","ColValue":"7C3457EF-0000-11AA-AA11-00306543ECAC"}},
+{"data":{"title":"GPT Attributes"},"attr":{"id":"15198","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Writable"},"attr":{"id":"15200","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Content Hint"},"attr":{"id":"15202","ColType":"String","ColValue":"7C3457EF-0000-11AA-AA11-00306543ECAC"}},
+{"data":{"title":"Whole"},"attr":{"id":"15204","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"15206","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"15208","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"TierType"},"attr":{"id":"15210","ColType":"String","ColValue":"Main"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"15212","ColType":"String","ColValue":"disk0s2"}},
+{"data":{"title":"Leaf"},"attr":{"id":"15214","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"BSD Major"},"attr":{"id":"15216","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Open"},"attr":{"id":"15218","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Base"},"attr":{"id":"15220","ColType":"Number","ColValue":"314597376"}},
+{"data":{"title":"Preferred Block Size"},"attr":{"id":"15222","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"Partition ID"},"attr":{"id":"15224","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Ejectable"},"attr":{"id":"15226","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Size"},"attr":{"id":"15228","ColType":"Number","ColValue":"27551166464"}}
+]

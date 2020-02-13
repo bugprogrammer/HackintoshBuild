@@ -1,0 +1,17 @@
+[
+{"data":{"title":"Name"},"attr":{"id":"15921","ColType":"String","ColValue":"DriverLogs"}},
+{"data":{"title":"LogIdentifier"},"attr":{"id":"15923","ColType":"String","ColValue":"Brcm4360"}},
+{"data":{"title":"Owner"},"attr":{"id":"15925","ColType":"String","ColValue":"com.apple.driver.AirPort.Brcm4360.0"}},
+{"data":{"title":"LogType"},"attr":{"id":"15927","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"LogDataType"},"attr":{"id":"15929","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"NumberOfFiles"},"attr":{"id":"15931","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"LogPolicy"},"attr":{"id":"15933","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"15935","ColType":"String","ColValue":"CCLogPipe"}},
+{"data":{"title":"PipeSize"},"attr":{"id":"15937","ColType":"Number","ColValue":"4194304"}},
+{"data":{"title":"FileSize"},"attr":{"id":"15939","ColType":"Number","ColValue":"2097152"}},
+{"data":{"title":"NotifyThreshold"},"attr":{"id":"15941","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"MinLogSizeToNotify"},"attr":{"id":"15943","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"PipeType"},"attr":{"id":"15945","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Filename"},"attr":{"id":"15947","ColType":"String","ColValue":"AirPortBrcm4360_Logs"}},
+{"data":{"title":"FileOptions"},"attr":{"id":"15949","ColType":"Number","ColValue":"0"}}
+]

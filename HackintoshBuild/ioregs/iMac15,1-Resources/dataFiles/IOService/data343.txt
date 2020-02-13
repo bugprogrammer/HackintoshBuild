@@ -1,0 +1,8 @@
+[
+{"data":{"title":"Using Bus Power"},"attr":{"id":"16585","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"User Client Version"},"attr":{"id":"16587","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"16589","ColType":"String","ColValue":"IOThunderboltFamilyUserClient"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"16591","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"16593","ColType":"Number","ColValue":"0"}},{"data":{"title":"DesiredPowerState"},"attr":{"id":"16595","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"16597","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"16599","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"16601","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"16603","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"16605","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"3A0F596B-5D02-41D3-99D4-E27D4F218A54"},"attr":{"id":"16607","ColType":"String","ColValue":"IOThunderboltFamily.kext/Contents/PlugIns/IOThunderboltLib.plugin"}}]},
+{"data":{"title":"Generation"},"attr":{"id":"16609","ColType":"Number","ColValue":"1"}}
+]

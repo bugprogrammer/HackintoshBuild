@@ -1,0 +1,8 @@
+[
+{"data":{"title":"name"},"attr":{"id":"3150","ColType":"Data","ColValue":"&lt;\"CP0E\"&gt;"}},
+{"data":{"title":"processor-index"},"attr":{"id":"3152","ColType":"Number","ColValue":"14"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"3154","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"device_type"},"attr":{"id":"3156","ColType":"Data","ColValue":"&lt;\"processor\"&gt;"}},
+{"data":{"title":"processor-id"},"attr":{"id":"3158","ColType":"Number","ColValue":"14"}},
+{"data":{"title":"cpu-type"},"attr":{"id":"3160","ColType":"Data","ColValue":"&lt;010a&gt;"}}
+]

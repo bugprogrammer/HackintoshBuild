@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"55814","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"55816","ColType":"String","ColValue":"AppleHWAccess"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"55818","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"55820","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"55822","ColType":"String","ColValue":"com.apple.driver.AppleHWAccess"}},
+{"data":{"title":"IOKitDebug"},"attr":{"id":"55824","ColType":"Number","ColValue":"65535"}},
+{"data":{"title":"IOClass"},"attr":{"id":"55826","ColType":"String","ColValue":"AppleHWAccess"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"55828","ColType":"String","ColValue":"AppleHWAccessUserClient"}}
+]

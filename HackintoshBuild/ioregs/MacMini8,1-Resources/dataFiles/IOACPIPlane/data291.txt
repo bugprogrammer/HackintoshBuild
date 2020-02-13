@@ -1,0 +1,6 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"6485","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"6487","ColType":"Number","ColValue":"2031619"}},
+{"data":{"title":"device-properties"},"attr":{"id":"6489","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"hda-gfx"},"attr":{"id":"6491","ColType":"Data","ColValue":"&lt;\"onboard-1\"&gt;"}},{"data":{"title":"No-idle-support"},"attr":{"id":"6493","ColType":"Data","ColValue":"&lt;\"0\"&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"6495","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/HDEF@1f0003"}},{"data":{"title":"acpi-device"},"attr":{"id":"6497","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"6499","ColType":"Boolean","ColValue":"Yes"}}
+]

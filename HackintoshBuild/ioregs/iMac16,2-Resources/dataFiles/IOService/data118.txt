@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"4394","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"4396","ColType":"Number","ColValue":"0"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"4398","ColType":"Number","ColValue":"2"}},{"data":{"title":"DesiredPowerState"},"attr":{"id":"4400","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"4402","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"4404","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"4406","ColType":"String","ColValue":"IOThunderboltLocalNode"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"4408","ColType":"String","ColValue":"AppleThunderboltEDMSink"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"4410","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"IOPCIPauseCompatible"},"attr":{"id":"4412","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"4414","ColType":"String","ColValue":"com.apple.driver.AppleThunderboltEDMSink"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"4416","ColType":"String","ColValue":"AppleThunderboltEDMSinkUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"4418","ColType":"String","ColValue":"AppleThunderboltEDMSink"}},
+{"data":{"title":"EDM State"},"attr":{"id":"4420","ColType":"Number","ColValue":"1"}}
+]

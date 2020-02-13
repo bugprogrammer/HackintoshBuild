@@ -1,0 +1,6 @@
+[
+{"data":{"title":"Device Characteristics"},"attr":{"id":"50115","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Product Revision Level"},"attr":{"id":"50117","ColType":"String","ColValue":"1.00"}},{"data":{"title":"Vendor Name"},"attr":{"id":"50119","ColType":"String","ColValue":"Generic-"}},{"data":{"title":"Product Name"},"attr":{"id":"50121","ColType":"String","ColValue":"MS/MS-Pro"}}]},
+{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"50123","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"50125","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"50127","ColType":"String","ColValue":"USB"}},{"data":{"title":"SCSI Logical Unit Number"},"attr":{"id":"50129","ColType":"Number","ColValue":"3"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"50131","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"50133","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"50135","ColType":"Number","ColValue":"30000"}}]},
+{"data":{"title":"device-type"},"attr":{"id":"50137","ColType":"String","ColValue":"Generic"}}
+]

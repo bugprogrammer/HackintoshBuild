@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import GitHubUpdates
 
 public var isSIPStatusEnabled: Bool? = nil
 public var proxy: String? = UserDefaults.standard.string(forKey: "proxy")
@@ -33,6 +34,14 @@ class BaseWindowController: NSWindowController {
         return MyTool.getViewControllerFromMain(ViewControllerLock.self)
     }()
     
+    lazy var infoVC: ViewControllerInfo = {
+        return MyTool.getViewControllerFromMain(ViewControllerInfo.self)
+    }()
+    
+    lazy var ioregVC: ViewControllerIoreg = {
+        return MyTool.getViewControllerFromMain(ViewControllerIoreg.self)
+    }()
+    
     lazy var otherVC: ViewControllerOther = {
         return MyTool.getViewControllerFromMain(ViewControllerOther.self)
     }()
@@ -42,6 +51,8 @@ class BaseWindowController: NSWindowController {
     let diskIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.diskIdentifier")
     let nvramIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.nvramIdentifier")
     let lockIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.lockIdentifier")
+    let infoIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.infoIdentifier")
+    let ioregIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.ioregIdentifier")
     let otherIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.otherIdentifier")
     
     lazy var toolBar: NSToolbar = {
@@ -60,6 +71,10 @@ class BaseWindowController: NSWindowController {
     
     override func windowDidLoad() {
         super.windowDidLoad()
+        let updater = GitHubUpdater()
+        updater.checkForUpdatesInBackground()
+        updater.user = "bugprogrammer"
+        updater.repository = "HackintoshBuild"
         
         self.window?.toolbar = toolBar
         toolBar.selectedItemIdentifier = buildIdentifier
@@ -113,15 +128,15 @@ class BaseWindowController: NSWindowController {
 extension BaseWindowController: NSToolbarDelegate {
     
     func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, otherIdentifier]
+        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier,  ioregIdentifier, otherIdentifier]
     }
     
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, otherIdentifier]
+        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier]
     }
     
     func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, otherIdentifier]
+        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier]
     }
     
     func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
@@ -145,21 +160,35 @@ extension BaseWindowController: NSToolbarDelegate {
             toolbarItem?.label = "EFI分区挂载"
             toolbarItem?.paletteLabel = "EFI分区挂载"
             toolbarItem?.toolTip = "EFI分区挂载"
-            toolbarItem?.image = MyAsset.NSNSToolbarItem_Disk.image
+            toolbarItem?.image = MyAsset.NSToolbarItem_Disk.image
             break
             
         case nvramIdentifier:
             toolbarItem?.label = "NVRAM信息"
             toolbarItem?.paletteLabel = "NVRAM信息"
             toolbarItem?.toolTip = "NVRAM信息"
-            toolbarItem?.image = MyAsset.NSNSToolbarItem_Nvram.image
+            toolbarItem?.image = MyAsset.NSToolbarItem_Nvram.image
             break
             
         case lockIdentifier:
             toolbarItem?.label = "更换登录壁纸"
             toolbarItem?.paletteLabel = "更换登录壁纸"
             toolbarItem?.toolTip = "更换登录壁纸"
-            toolbarItem?.image = MyAsset.NSNSToolbarItem_Lock.image
+            toolbarItem?.image = MyAsset.NSToolbarItem_Lock.image
+            break
+            
+        case infoIdentifier:
+            toolbarItem?.label = "系统详情"
+            toolbarItem?.paletteLabel = "系统详情"
+            toolbarItem?.toolTip = "系统详情"
+            toolbarItem?.image = MyAsset.NSToolbarItem_Info.image
+            break
+            
+        case ioregIdentifier:
+            toolbarItem?.label = "白苹果ioreg信息"
+            toolbarItem?.paletteLabel = "白苹果ioreg信息"
+            toolbarItem?.toolTip = "白苹果ioreg信息"
+            toolbarItem?.image = MyAsset.NSToolbarItem_Ioreg.image
             break
             
         case otherIdentifier:
@@ -191,9 +220,14 @@ extension BaseWindowController: NSToolbarDelegate {
         case nvramIdentifier:
             self.window?.contentViewController = nvramVC
             break
-        
         case lockIdentifier:
             self.window?.contentViewController = lockVC
+            break
+        case infoIdentifier:
+            self.window?.contentViewController = infoVC
+            break
+        case ioregIdentifier:
+            self.window?.contentViewController = ioregVC
             break
         case otherIdentifier:
             self.window?.contentViewController = otherVC

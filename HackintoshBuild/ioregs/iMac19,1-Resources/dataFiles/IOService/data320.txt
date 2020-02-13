@@ -1,0 +1,22 @@
+[
+{"data":{"title":"Revision"},"attr":{"id":"13228","ColType":"String","ColValue":"AQ04    "}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"13230","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"13232","ColType":"String","ColValue":"com.apple.iokit.IOAHCIBlockStorage"}},
+{"data":{"title":"SATA Features"},"attr":{"id":"13234","ColType":"Number","ColValue":"47"}},
+{"data":{"title":"Time To Ready"},"attr":{"id":"13236","ColType":"Number","ColValue":"5665"}},
+{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"13238","ColType":"String","ColValue":"Internal"}},
+{"data":{"title":"Logical Block Size"},"attr":{"id":"13240","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"IOPlatformPanicAction"},"attr":{"id":"13242","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"13244","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Serial Number"},"attr":{"id":"13246","ColType":"String","ColValue":"            Z4YGGDQN"}},
+{"data":{"title":"IOClass"},"attr":{"id":"13248","ColType":"String","ColValue":"AppleAHCIDiskDriver"}},
+{"data":{"title":"Trace ID"},"attr":{"id":"13250","ColType":"Number","ColValue":"1507328"}},
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"13252","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"13254","ColType":"String","ColValue":"IOAHCIDevice"}},
+{"data":{"title":"Physical Block Size"},"attr":{"id":"13256","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"NCQ"},"attr":{"id":"13258","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"13260","ColType":"String","ColValue":"AppleAHCIDiskPolledInterface is not serializable"}},
+{"data":{"title":"Model"},"attr":{"id":"13262","ColType":"String","ColValue":"APPLE HDD ST1000DM003                   "}},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"13264","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"Queue Depth"},"attr":{"id":"13266","ColType":"Number","ColValue":"32"}}
+]

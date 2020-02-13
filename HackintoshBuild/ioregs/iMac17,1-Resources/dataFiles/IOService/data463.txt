@@ -1,0 +1,6 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"22798","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"22800","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"compatible"},"attr":{"id":"22802","ColType":"Data","ColValue":"&lt;\"mikey\"&gt;"}},
+{"data":{"title":"device-properties"},"attr":{"id":"22804","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"22806","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"address"},"attr":{"id":"22808","ColType":"Number","ColValue":"57"}},{"data":{"title":"ramp-control-address"},"attr":{"id":"22810","ColType":"Number","ColValue":"59"}},{"data":{"title":"resprg"},"attr":{"id":"22812","ColType":"Number","ColValue":"3"}},{"data":{"title":"hdet"},"attr":{"id":"22814","ColType":"Number","ColValue":"1"}},{"data":{"title":"refnum"},"attr":{"id":"22816","ColType":"Number","ColValue":"0"}},{"data":{"title":"device-id"},"attr":{"id":"22818","ColType":"Number","ColValue":"3282"}},{"data":{"title":"acpi-path"},"attr":{"id":"22820","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SBUS@1f0004/BUS0@0/MKY0@0"}}]}
+]

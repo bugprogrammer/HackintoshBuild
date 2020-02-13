@@ -1,0 +1,20 @@
+[
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"1974","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"system-type"},"attr":{"id":"1976","ColType":"Data","ColValue":"&lt;02&gt;"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"1978","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"1979","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"product-name"},"attr":{"id":"1981","ColType":"Data","ColValue":"&lt;\"MacBookPro11,3\"&gt;"}},
+{"data":{"title":"IOPlatformUUID"},"attr":{"id":"1983","ColType":"String","ColValue":"936FE47C-7365-528E-9B74-43EBAB93388F"}},
+{"data":{"title":"board-id"},"attr":{"id":"1985","ColType":"Data","ColValue":"&lt;\"Mac-2BD1B31983FE1663\"&gt;"}},
+{"data":{"title":"IOPlatformSerialNumber"},"attr":{"id":"1987","ColType":"String","ColValue":"C02MLF75FD57"}},
+{"data":{"title":"version"},"attr":{"id":"1989","ColType":"Data","ColValue":"&lt;\"1.0\"&gt;"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"1991","ColType":"String","ColValue":"SMCPolledInterface is not serializable"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"1993","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"1994","ColType":"Data","ColValue":"&lt;0900000005000000&gt;"}}]},
+{"data":{"title":"model"},"attr":{"id":"1996","ColType":"Data","ColValue":"&lt;\"MacBookPro11,3\"&gt;"}},
+{"data":{"title":"manufacturer"},"attr":{"id":"1998","ColType":"Data","ColValue":"&lt;\"Apple Inc.\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"2000","ColType":"Data","ColValue":"&lt;\"/\"&gt;"}},
+{"data":{"title":"clock-frequency"},"attr":{"id":"2002","ColType":"Data","ColValue":"&lt;00e1f505&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"2004","ColType":"Data","ColValue":"&lt;\"MacBookPro11,3\"&gt;"}},
+{"data":{"title":"serial-number"},"attr":{"id":"2006","ColType":"Data","ColValue":"&lt;464435370000000000000000004330324d4c46373546443537000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"platform-feature"},"attr":{"id":"2008","ColType":"Data","ColValue":"&lt;0200000000000000&gt;"}},
+{"data":{"title":"IOPlatformSystemSleepPolicy"},"attr":{"id":"2010","ColType":"Data","ColValue":"&lt;534c505402001200841e120004000000001400000004000006000000000000000f25000000000000841e120004000000001800000008000005000000000000000f25000000000000841e120004000000081000000800000005000000000000000f250000000000002000000020000000000000000000000005000000000000000f2500000000000008000000080000000000000000000000040000000000000000010000010000000000040000000400000000000000000005000000000000000f250000000000000000010000000100000000000000000004000000000000000001000000000000c416000000000000080000000800000005000000000000000f25000000000000c416100000001000204000002040000002000000080000000f3d000000000000c416000000000000200000002000000005000000000000000f25000000000000d416000010000000000000000000000005000000000000000f25000000000000c41e120044000000061000000600000003000000020000000f3d000000000000841e120004000000001000000000000002000000020000000f3d000000000000c41600000000000000c0000000c0000002000000080000000f3d000000000000c416000000000000088000000880000005000000000000000f25000000000000c416000000000000000000000000000002000000010000000f3d0000000000004000000040000000060000000600000003000000000000000f350000000000000000000000000000000000000000000002000000000000000f35000000000000&gt;"}}
+]

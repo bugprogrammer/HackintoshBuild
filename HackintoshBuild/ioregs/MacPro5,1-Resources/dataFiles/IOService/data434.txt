@@ -1,0 +1,12 @@
+[
+{"data":{"title":"Manufacturer"},"attr":{"id":"88131","ColType":"String","ColValue":"Microsoft"}},
+{"data":{"title":"Product"},"attr":{"id":"88133","ColType":"String","ColValue":"Express Mouse"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"88135","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"88136","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"88138","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"88140","ColType":"Number","ColValue":"2"}}]},{"data":{"title":"1"},"attr":{"id":"88141","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"88143","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"88145","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"ProductID"},"attr":{"id":"88147","ColType":"Number","ColValue":"1914"}},
+{"data":{"title":"VendorID"},"attr":{"id":"88149","ColType":"Number","ColValue":"1118"}},
+{"data":{"title":"Transport"},"attr":{"id":"88151","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"88153","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"88155","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"LocationID"},"attr":{"id":"88157","ColType":"Number","ColValue":"487653376"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"88159","ColType":"Number","ColValue":"8000"}}
+]

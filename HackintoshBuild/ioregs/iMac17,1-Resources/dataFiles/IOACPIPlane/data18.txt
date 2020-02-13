@@ -1,0 +1,5 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3364","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"3366","ColType":"Number","ColValue":"131072"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3368","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"3370","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"AAPL,ig-platform-id"},"attr":{"id":"3372","ColType":"Data","ColValue":"&lt;01001219&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"3374","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/IGPU@20000"}}]}
+]

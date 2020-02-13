@@ -1,0 +1,19 @@
+[
+{"data":{"title":"controller-statistics"},"attr":{"id":"3819","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"kControllerStatPowerStateTime"},"attr":{"id":"3821","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"kPowerStateSleep"},"attr":{"id":"3823","ColType":"String","ColValue":"687425ms (24%)"}},{"data":{"title":"kPowerStateOn"},"attr":{"id":"3825","ColType":"String","ColValue":"1976491ms (71%)"}},{"data":{"title":"kPowerStateOff"},"attr":{"id":"3827","ColType":"String","ColValue":"0ms (0%)"}},{"data":{"title":"kPowerStateSuspended"},"attr":{"id":"3829","ColType":"String","ColValue":"103883ms (3%)"}}]},{"data":{"title":"kControllerStatSpuriousInterruptCount"},"attr":{"id":"3831","ColType":"Number","ColValue":"138"}},{"data":{"title":"kControllerStatIOCount"},"attr":{"id":"3833","ColType":"Number","ColValue":"54242"}}]},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"3835","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"3837","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"3839","ColType":"String","ColValue":"com.apple.driver.usb.AppleUSBXHCIPCI"}},
+{"data":{"title":"IOClass"},"attr":{"id":"3841","ColType":"String","ColValue":"AppleUSBXHCIWPT"}},
+{"data":{"title":"64bit"},"attr":{"id":"3843","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOPCIPrimaryMatch"},"attr":{"id":"3845","ColType":"String","ColValue":"0x9cb18086"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"3847","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"kUSBSleepPortCurrentLimit"},"attr":{"id":"3849","ColType":"Number","ColValue":"2100"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"3851","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"kUSBWakePortCurrentLimit"},"attr":{"id":"3853","ColType":"Number","ColValue":"2100"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3855","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"3857","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/XHC1@140000"}},{"data":{"title":"acpi-device"},"attr":{"id":"3859","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"name"},"attr":{"id":"3861","ColType":"Data","ColValue":"&lt;\"XHC1\"&gt;"}},
+{"data":{"title":"locationID"},"attr":{"id":"3863","ColType":"Number","ColValue":"335544320"}},
+{"data":{"title":"kUSBSleepSupported"},"attr":{"id":"3865","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"3867","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"3869","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"3871","ColType":"Number","ColValue":"3"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"3873","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"3875","ColType":"Number","ColValue":"3"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"3877","ColType":"Number","ColValue":"3"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"3879","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"3881","ColType":"Number","ColValue":"32768"}}]}
+]

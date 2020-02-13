@@ -1,0 +1,13 @@
+[
+{"data":{"title":"Vendor ID"},"attr":{"id":"8559","ColType":"Number","ColValue":"32902"}},
+{"data":{"title":"Revision ID"},"attr":{"id":"8561","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"Port Number"},"attr":{"id":"8563","ColType":"Number","ColValue":"12"}},
+{"data":{"title":"Max Credits"},"attr":{"id":"8565","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"Device ID"},"attr":{"id":"8567","ColType":"Number","ColValue":"5610"}},
+{"data":{"title":"Max In Hop ID"},"attr":{"id":"8569","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"Max Out Hop ID"},"attr":{"id":"8571","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"Description"},"attr":{"id":"8573","ColType":"String","ColValue":"Port is inactive"}},
+{"data":{"title":"Thunderbolt Version"},"attr":{"id":"8575","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Hop Table"},"attr":{"id":"8577","ColType":"Array","ColValue":"0_values"},"children":[]},
+{"data":{"title":"Adapter Type"},"attr":{"id":"8579","ColType":"Number","ColValue":"0"}}
+]

@@ -1,0 +1,5 @@
+[
+{"data":{"title":"acpi-device"},"attr":{"id":"5365","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"fwhub"},"attr":{"id":"5367","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"5369","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PCIB@1e0000/FRWR@b0000"}}
+]

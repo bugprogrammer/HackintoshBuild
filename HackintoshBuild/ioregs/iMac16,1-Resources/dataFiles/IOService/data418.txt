@@ -1,0 +1,20 @@
+[
+{"data":{"title":"NCQ"},"attr":{"id":"40245","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"40247","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"Physical Block Size"},"attr":{"id":"40249","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"40251","ColType":"String","ColValue":"Internal"}},
+{"data":{"title":"Revision"},"attr":{"id":"40253","ColType":"String","ColValue":"2BA30007"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"40255","ColType":"String","ColValue":"com.apple.iokit.IOAHCIBlockStorage"}},
+{"data":{"title":"IOClass"},"attr":{"id":"40257","ColType":"String","ColValue":"AppleAHCIDiskDriver"}},
+{"data":{"title":"Time To Ready"},"attr":{"id":"40259","ColType":"Number","ColValue":"3540"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"40261","ColType":"String","ColValue":"AppleAHCIDiskPolledInterface is not serializable"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"40263","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"SATA Features"},"attr":{"id":"40265","ColType":"Number","ColValue":"14"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"40267","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"Serial Number"},"attr":{"id":"40269","ColType":"String","ColValue":"S35RJ9DG814378      "}},
+{"data":{"title":"Model"},"attr":{"id":"40271","ColType":"String","ColValue":"APPLE HDD ST1000LM024                   "}},
+{"data":{"title":"Logical Block Size"},"attr":{"id":"40273","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"40275","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"40277","ColType":"String","ColValue":"IOAHCIDevice"}},
+{"data":{"title":"Queue Depth"},"attr":{"id":"40279","ColType":"Number","ColValue":"32"}}
+]

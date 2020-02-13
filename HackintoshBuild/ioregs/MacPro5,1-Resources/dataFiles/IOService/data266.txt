@@ -1,0 +1,17 @@
+[
+{"data":{"title":"IOAudioEngineGlobalUniqueID"},"attr":{"id":"9957","ColType":"String","ColValue":"AppleHDAEngineInput:1B,0,1,2:5"}},
+{"data":{"title":"IOAudioEngineClientDescription"},"attr":{"id":"9959","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"kind"},"attr":{"id":"9961","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"IOAudioEngineDescription"},"attr":{"id":"9963","ColType":"String","ColValue":"DevShortNameSpdi"}},
+{"data":{"title":"IOAudioEngineCoreAudioPlugIn"},"attr":{"id":"9965","ColType":"String","ColValue":"AppleHDA.kext/Contents/PlugIns/AppleHDAHALPlugIn.bundle"}},
+{"data":{"title":"IOAudioEngineClockDomain"},"attr":{"id":"9967","ColType":"Number","ColValue":"1476362252"}},
+{"data":{"title":"IOAudioEngineSampleOffset"},"attr":{"id":"9969","ColType":"Number","ColValue":"22"}},
+{"data":{"title":"IOAudioEngineInputSampleLatency"},"attr":{"id":"9971","ColType":"Number","ColValue":"16"}},
+{"data":{"title":"IOAudioEngineOutputSampleLatency"},"attr":{"id":"9973","ColType":"Number","ColValue":"16"}},
+{"data":{"title":"IOAudioEngineFlavor"},"attr":{"id":"9975","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOAudioSampleRate"},"attr":{"id":"9977","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOAudioSampleRateFraction"},"attr":{"id":"9979","ColType":"Number","ColValue":"0"}},{"data":{"title":"IOAudioSampleRateWholeNumber"},"attr":{"id":"9981","ColType":"Number","ColValue":"44100"}}]},
+{"data":{"title":"IOAudioEngineGlobalUniqueIDLegacy"},"attr":{"id":"9983","ColType":"String","ColValue":"AppleHDAEngineInput:5"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"9985","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOAudioDeviceCanBeDefaults"},"attr":{"id":"9987","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOAudioEngineState"},"attr":{"id":"9989","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioEngineNumSampleFramesPerBuffer"},"attr":{"id":"9991","ColType":"Number","ColValue":"6144"}}
+]

@@ -1,0 +1,18 @@
+[
+{"data":{"title":"device-id"},"attr":{"id":"42125","ColType":"Data","ColValue":"&lt;571e0000&gt;"}},
+{"data":{"title":"vendor-id"},"attr":{"id":"42127","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"IOName"},"attr":{"id":"42129","ColType":"String","ColValue":"pci8086,1e57"}},
+{"data":{"title":"subsystem-vendor-id"},"attr":{"id":"42131","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"pcidebug"},"attr":{"id":"42133","ColType":"String","ColValue":"0:31:0"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"42135","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/LPCB@1f0000"}},
+{"data":{"title":"revision-id"},"attr":{"id":"42137","ColType":"Data","ColValue":"&lt;04000000&gt;"}},
+{"data":{"title":"reg"},"attr":{"id":"42139","ColType":"Data","ColValue":"&lt;00f8000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"built-in"},"attr":{"id":"42141","ColType":"Data","ColValue":"&lt;00&gt;"}},
+{"data":{"title":"IOPCIResourced"},"attr":{"id":"42143","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"class-code"},"attr":{"id":"42145","ColType":"Data","ColValue":"&lt;00010600&gt;"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"42147","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"subsystem-id"},"attr":{"id":"42149","ColType":"Data","ColValue":"&lt;70720000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"42151","ColType":"Data","ColValue":"&lt;\"pci8086,7270\",\"pci8086,1e57\",\"pciclass,060100\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"42153","ColType":"String","ColValue":"pci8086,1e57"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"42155","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"42157","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"42159","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"42161","ColType":"Number","ColValue":"2"}}]}
+]

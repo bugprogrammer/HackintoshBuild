@@ -1,0 +1,23 @@
+[
+{"data":{"title":"port-number"},"attr":{"id":"7660","ColType":"Data","ColValue":"&lt;02000000&gt;"}},
+{"data":{"title":"AAPL,ndrv-interrupt-set"},"attr":{"id":"7662","ColType":"String","ColValue":"IONDRVInterruptSet is not serializable"}},
+{"data":{"title":"IODeviceMemory"},"attr":{"id":"7664","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"7665","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"7666","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"7668","ColType":"Number","ColValue":"3221225472"}},{"data":{"title":"length"},"attr":{"id":"7670","ColType":"Number","ColValue":"16777216"}}]}]},{"data":{"title":"1"},"attr":{"id":"7671","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"7672","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"7674","ColType":"Number","ColValue":"66035122176"}},{"data":{"title":"length"},"attr":{"id":"7676","ColType":"Number","ColValue":"268435456"}}]}]},{"data":{"title":"1"},"attr":{"id":"7677","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"7678","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"7680","ColType":"Number","ColValue":"66303557632"}},{"data":{"title":"length"},"attr":{"id":"7682","ColType":"Number","ColValue":"33554432"}}]}]},{"data":{"title":"1"},"attr":{"id":"7683","ColType":"String","ColValue":"IOSubMemoryDescriptor is not serializable"}},{"data":{"title":"2"},"attr":{"id":"7684","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"7685","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"7687","ColType":"Number","ColValue":"3238002688"}},{"data":{"title":"length"},"attr":{"id":"7689","ColType":"Number","ColValue":"524288"}}]}]}]},
+{"data":{"title":"display-cfg"},"attr":{"id":"7691","ColType":"Data","ColValue":"&lt;ffffffff&gt;"}},
+{"data":{"title":"IOFBDependentID"},"attr":{"id":"7693","ColType":"Number","ColValue":"18446743524522809088"}},
+{"data":{"title":"connector-type"},"attr":{"id":"7695","ColType":"Data","ColValue":"&lt;00040000&gt;"}},
+{"data":{"title":"AAPL,RegEntryID"},"attr":{"id":"7697","ColType":"Data","ColValue":"&lt;0066bd2280ffffffff9942dd7f000000656d6953000000007a6c755200000000&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"7699","ColType":"Data","ColValue":"&lt;\"NVDA,Display-C\"&gt;"}},
+{"data":{"title":"AAPL,gray-value"},"attr":{"id":"7701","ColType":"Data","ColValue":"&lt;c38c6400&gt;"}},
+{"data":{"title":"AAPL,ndrv-dev"},"attr":{"id":"7703","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"device_type"},"attr":{"id":"7705","ColType":"Data","ColValue":"&lt;\"display\"&gt;"}},
+{"data":{"title":"driver-ist"},"attr":{"id":"7707","ColType":"Data","ColValue":"&lt;c0a0402380ffffff0100000081ffffffc0a0402380ffffff0200000081ffffffc0a0402380ffffff0300000081ffffff&gt;"}},
+{"data":{"title":"av-signal-type"},"attr":{"id":"7709","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"NVDA,UnderscanMin"},"attr":{"id":"7711","ColType":"Data","ColValue":"&lt;52000000&gt;"}},
+{"data":{"title":"IOFBDependentIndex"},"attr":{"id":"7713","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"nativeNDRV"},"attr":{"id":"7715","ColType":"Data","ColValue":"&lt;\"advn\"&gt;"}},
+{"data":{"title":"display-connect-flags"},"attr":{"id":"7717","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"7719","ColType":"Data","ColValue":"&lt;\"NVDA,NVMac\"&gt;"}},
+{"data":{"title":"AAPL,iokit-ndrv"},"attr":{"id":"7721","ColType":"Data","ColValue":"&lt;a0c791807fffffff&gt;"}},
+{"data":{"title":"noNVRAM"},"attr":{"id":"7723","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"AAPL,gray-page"},"attr":{"id":"7725","ColType":"Data","ColValue":"&lt;01000000&gt;"}}
+]

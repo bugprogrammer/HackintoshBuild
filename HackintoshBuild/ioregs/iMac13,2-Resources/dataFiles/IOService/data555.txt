@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"38928","ColType":"String","ColValue":"com_parallels_kext_Prlnet"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"38930","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"38932","ColType":"String","ColValue":"com.parallels.kext.prl_netbridge"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"38934","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"38936","ColType":"String","ColValue":"com_parallels_kext_Prlnet"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"38938","ColType":"String","ColValue":"IOResources"}}
+]

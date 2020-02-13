@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"17434","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"17436","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"17438","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"17440","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"17442","ColType":"String","ColValue":"IOACPIPlatformDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"17444","ColType":"String","ColValue":"ACPI000E"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"17446","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"17448","ColType":"String","ColValue":"ACPI000E"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"17450","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOPlatformWakeAction"},"attr":{"id":"17452","ColType":"Number","ColValue":"10000"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"17454","ColType":"String","ColValue":"com.apple.driver.AppleSMCRTC"}},
+{"data":{"title":"IOClass"},"attr":{"id":"17456","ColType":"String","ColValue":"AppleSMCRTC"}}
+]

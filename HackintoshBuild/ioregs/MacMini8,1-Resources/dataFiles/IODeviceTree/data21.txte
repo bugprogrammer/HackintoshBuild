@@ -1,0 +1,13 @@
+[
+{"data":{"title":"StartupPowerEvents"},"attr":{"id":"2988","ColType":"Data","ColValue":"&lt;4f0******0000000&gt;"}},
+{"data":{"title":"Model"},"attr":{"id":"2990","ColType":"Data","ColValue":"&lt;\"*\",\"a\",\"c\",\"m\",\"i\",\"n\",\"i\",\"*\",\",\",\"1\"&gt;"}},
+{"data":{"title":"apple-coprocessor-version"},"attr":{"id":"2992","ColType":"Data","ColValue":"&lt;00000200&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"2994","ColType":"Data","ColValue":"&lt;\"platform\"&gt;"}},
+{"data":{"title":"board-id"},"attr":{"id":"2996","ColType":"Data","ColValue":"&lt;\"*ac-7BA5B2DFE22DDD8C\"&gt;"}},
+{"data":{"title":"board-rev"},"attr":{"id":"2998","ColType":"Data","ColValue":"&lt;01&gt;"}},
+{"data":{"title":"InitialTSC"},"attr":{"id":"3000","ColType":"Data","ColValue":"&lt;f75a89030******0&gt;"}},
+{"data":{"title":"system-id"},"attr":{"id":"3002","ColType":"Data","ColValue":"&lt;5******************************8&gt;"}},
+{"data":{"title":"SystemSerialNumber"},"attr":{"id":"3004","ColType":"Data","ColValue":"&lt;\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\"&gt;"}},
+{"data":{"title":"DevicePathsSupported"},"attr":{"id":"3006","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"FSBFrequency"},"attr":{"id":"3008","ColType":"Data","ColValue":"&lt;00105e5f0******0&gt;"}}
+]

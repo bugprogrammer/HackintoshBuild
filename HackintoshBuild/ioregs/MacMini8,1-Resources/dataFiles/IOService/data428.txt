@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"64579","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"64581","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"64583","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"64585","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"64587","ColType":"String","ColValue":"IOBufferCopyEngine"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"64589","ColType":"String","ColValue":"com_apple_AVEBridge"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"64591","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"64593","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"64595","ColType":"String","ColValue":"com.apple.driver.AppleAVEBridge"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"64597","ColType":"String","ColValue":"com_apple_AVEBridgeUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"64599","ColType":"String","ColValue":"com_apple_AVEBridge"}},
+{"data":{"title":"IOAVEHEVCEncode"},"attr":{"id":"64601","ColType":"String","ColValue":"1"}}
+]

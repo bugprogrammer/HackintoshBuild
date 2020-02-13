@@ -1,0 +1,8 @@
+[
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"35068","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"35070","ColType":"String","ColValue":"Internal"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"35072","ColType":"String","ColValue":"SATA"}}]},
+{"data":{"title":"Device Characteristics"},"attr":{"id":"35074","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Block Size"},"attr":{"id":"35076","ColType":"Number","ColValue":"512"}},{"data":{"title":"SATA Features"},"attr":{"id":"35078","ColType":"Number","ColValue":"15"}},{"data":{"title":"Product Name"},"attr":{"id":"35080","ColType":"String","ColValue":"INTEL SSDSC2CW120A3                     "}},{"data":{"title":"Product Revision Level"},"attr":{"id":"35082","ColType":"String","ColValue":"400i    "}},{"data":{"title":"Logical Block Size"},"attr":{"id":"35084","ColType":"Number","ColValue":"512"}},{"data":{"title":"Medium Type"},"attr":{"id":"35086","ColType":"String","ColValue":"Solid State"}},{"data":{"title":"Serial Number"},"attr":{"id":"35088","ColType":"String","ColValue":"CVCV245100K2120BGN  "}}]},
+{"data":{"title":"SMART Capable"},"attr":{"id":"35090","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"35092","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"35094","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"24514B7A-2804-11D6-8A02-003065704866"},"attr":{"id":"35096","ColType":"String","ColValue":"SMARTLib.plugin"}}]},
+{"data":{"title":"device-type"},"attr":{"id":"35098","ColType":"String","ColValue":"Generic"}}
+]

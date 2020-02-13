@@ -1,0 +1,14 @@
+[
+{"data":{"title":"Capacity"},"attr":{"id":"64555","ColType":"Number","ColValue":"4032"}},
+{"data":{"title":"Generation"},"attr":{"id":"64557","ColType":"Number","ColValue":"14"}},
+{"data":{"title":"UnitSize"},"attr":{"id":"64559","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"GroupIndex"},"attr":{"id":"64561","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"VersionMajor"},"attr":{"id":"64563","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"CopiesPerUnit"},"attr":{"id":"64565","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"64567","ColType":"String","ColValue":"AppleEffaceableStorageUserClient"}},
+{"data":{"title":"IsFormatted"},"attr":{"id":"64569","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"VersionMinor"},"attr":{"id":"64571","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"CopySize"},"attr":{"id":"64573","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"UnitsPerGroup"},"attr":{"id":"64575","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"GroupCount"},"attr":{"id":"64577","ColType":"Number","ColValue":"1"}}
+]

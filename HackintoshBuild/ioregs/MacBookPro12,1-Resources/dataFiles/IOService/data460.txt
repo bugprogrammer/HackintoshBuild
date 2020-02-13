@@ -1,0 +1,18 @@
+[
+{"data":{"title":"Revision ID"},"attr":{"id":"161351","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Thunderbolt Version"},"attr":{"id":"161353","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Max In Hop ID"},"attr":{"id":"161355","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"PCI Device"},"attr":{"id":"161357","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"Port Number"},"attr":{"id":"161359","ColType":"Number","ColValue":"7"}},
+{"data":{"title":"Hop Table"},"attr":{"id":"161361","ColType":"Array","ColValue":"0_values"},"children":[]},
+{"data":{"title":"PCI Function"},"attr":{"id":"161363","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Adapter Type"},"attr":{"id":"161365","ColType":"Number","ColValue":"1048833"}},
+{"data":{"title":"Link Bandwidth"},"attr":{"id":"161367","ColType":"Number","ColValue":"100"}},
+{"data":{"title":"PCI Path"},"attr":{"id":"161369","ColType":"String","ColValue":"IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/RP05@1C,4/IOPP/UPSB@0/IOPP/DSB2@4"}},
+{"data":{"title":"PCI Entry ID"},"attr":{"id":"161371","ColType":"Number","ColValue":"4294967813"}},
+{"data":{"title":"Max Credits"},"attr":{"id":"161373","ColType":"Number","ColValue":"7"}},
+{"data":{"title":"Max Out Hop ID"},"attr":{"id":"161375","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"Description"},"attr":{"id":"161377","ColType":"String","ColValue":"PCIe Adapter"}},
+{"data":{"title":"Device ID"},"attr":{"id":"161379","ColType":"Number","ColValue":"5485"}},
+{"data":{"title":"Vendor ID"},"attr":{"id":"161381","ColType":"Number","ColValue":"32902"}}
+]

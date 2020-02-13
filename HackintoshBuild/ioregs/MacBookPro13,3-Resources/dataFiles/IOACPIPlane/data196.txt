@@ -1,0 +1,5 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"6221","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"6223","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"device-properties"},"attr":{"id":"6225","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"6227","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"acpi-path"},"attr":{"id":"6229","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/XHC1@140000/RHUB@0/HS05@5"}},{"data":{"title":"UsbCPortNumber"},"attr":{"id":"6231","ColType":"Number","ColValue":"1"}}]}
+]

@@ -1,0 +1,8 @@
+[
+{"data":{"title":"command"},"attr":{"id":"5855","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"type"},"attr":{"id":"5857","ColType":"Number","ColValue":"1228030720"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"5859","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"5861","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SBUS@1f0003/BUS0@0/BLC0@0"}},
+{"data":{"title":"refnum"},"attr":{"id":"5863","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"address"},"attr":{"id":"5865","ColType":"Number","ColValue":"44"}}
+]

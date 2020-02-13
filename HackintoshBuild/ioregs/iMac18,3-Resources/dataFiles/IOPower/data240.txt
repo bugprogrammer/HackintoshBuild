@@ -1,0 +1,15 @@
+[
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"16698","ColType":"Number","ColValue":"2048"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"16700","ColType":"String","ColValue":"com.apple.iokit.IOSCSIBlockCommandsDevice"}},
+{"data":{"title":"IOClass"},"attr":{"id":"16702","ColType":"String","ColValue":"IOSCSIPeripheralDeviceType00"}},
+{"data":{"title":"WriteCacheState"},"attr":{"id":"16704","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"16706","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMaximumByteCountWrite"},"attr":{"id":"16708","ColType":"Number","ColValue":"1048576"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"16710","ColType":"Number","ColValue":"5000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"16712","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOMediaIcon"},"attr":{"id":"16714","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"16716","ColType":"String","ColValue":"com.apple.iokit.IOSCSIArchitectureModelFamily"}},{"data":{"title":"IOBundleResourceFile"},"attr":{"id":"16718","ColType":"String","ColValue":"USBHD.icns"}}]},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"16720","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"16722","ColType":"Number","ColValue":"4"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"16724","ColType":"Number","ColValue":"4"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"16726","ColType":"Number","ColValue":"4"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"16728","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"16730","ColType":"Number","ColValue":"49216"}}]},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"16732","ColType":"Number","ColValue":"2048"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"16734","ColType":"String","ColValue":"IOSCSIPeripheralDeviceNub"}},
+{"data":{"title":"IOMaximumByteCountRead"},"attr":{"id":"16736","ColType":"Number","ColValue":"1048576"}}
+]

@@ -1,0 +1,14 @@
+[
+{"data":{"title":"IOAudioEngineGlobalUniqueID"},"attr":{"id":"57299","ColType":"String","ColValue":"Audio_IPC"}},
+{"data":{"title":"IOAudioEngineDescription"},"attr":{"id":"57301","ColType":"String","ColValue":"Audio IPC"}},
+{"data":{"title":"IOAudioEngineCoreAudioPlugIn"},"attr":{"id":"57303","ColType":"String","ColValue":"AudioIPCDriver.kext/Contents/Resources/AudioIPCPlugIn.bundle"}},
+{"data":{"title":"IOAudioEngineClockDomain"},"attr":{"id":"57305","ColType":"Number","ColValue":"143570176"}},
+{"data":{"title":"IOAudioEngineIsHidden"},"attr":{"id":"57307","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOAudioEngineSampleOffset"},"attr":{"id":"57309","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"IOAudioEngineFlavor"},"attr":{"id":"57311","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOAudioSampleRate"},"attr":{"id":"57313","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOAudioSampleRateFraction"},"attr":{"id":"57315","ColType":"Number","ColValue":"0"}},{"data":{"title":"IOAudioSampleRateWholeNumber"},"attr":{"id":"57317","ColType":"Number","ColValue":"44100"}}]},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"57319","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"com.apple.AudioIPC.NumberChannels"},"attr":{"id":"57321","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioEngineState"},"attr":{"id":"57323","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioEngineNumSampleFramesPerBuffer"},"attr":{"id":"57325","ColType":"Number","ColValue":"16384"}}
+]

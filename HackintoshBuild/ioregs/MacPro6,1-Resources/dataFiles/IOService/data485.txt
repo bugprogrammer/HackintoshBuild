@@ -1,0 +1,21 @@
+[
+{"data":{"title":"Leaf"},"attr":{"id":"57574","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Writable"},"attr":{"id":"57576","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"RAID"},"attr":{"id":"57578","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BSD Minor"},"attr":{"id":"57580","ColType":"Number","ColValue":"12"}},
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"57582","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"Preferred Block Size"},"attr":{"id":"57584","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"IOBootDevice"},"attr":{"id":"57586","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"57587","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOBootDeviceSize"},"attr":{"id":"57589","ColType":"Number","ColValue":"4000443056128"}},{"data":{"title":"IOBootDevicePath"},"attr":{"id":"57591","ColType":"String","ColValue":"IODeviceTree:/PCI0@0/PEG0@1/BR00@0/BR12@9/UFS2@0/DSB1@3/UPS0@0/pci-bridge@3/pci1b21,612@0/PRT0@0/PMP@0/@0:2"}}]},{"data":{"title":"1"},"attr":{"id":"57592","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOBootDeviceSize"},"attr":{"id":"57594","ColType":"Number","ColValue":"4000443056128"}},{"data":{"title":"IOBootDevicePath"},"attr":{"id":"57596","ColType":"String","ColValue":"IODeviceTree:/PCI0@0/PEG0@1/BR00@0/BR12@9/UFS2@0/DSB1@3/UPS0@0/pci-bridge@3/pci1b21,612@0/PRT1@1/PMP@0/@0:2"}}]}]},
+{"data":{"title":"UUID"},"attr":{"id":"57598","ColType":"String","ColValue":"7E04729E-E384-4685-9EB7-F683F21BBEB0"}},
+{"data":{"title":"BSD Major"},"attr":{"id":"57600","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"57602","ColType":"String","ColValue":"disk3"}},
+{"data":{"title":"Size"},"attr":{"id":"57604","ColType":"Number","ColValue":"8000886079488"}},
+{"data":{"title":"Content Hint"},"attr":{"id":"57606","ColType":"String","ColValue":"Apple_HFS"}},
+{"data":{"title":"Removable"},"attr":{"id":"57608","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Open"},"attr":{"id":"57610","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"57612","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"BSD Unit"},"attr":{"id":"57614","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"Whole"},"attr":{"id":"57616","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Content"},"attr":{"id":"57618","ColType":"String","ColValue":"Apple_HFS"}},
+{"data":{"title":"Ejectable"},"attr":{"id":"57620","ColType":"Boolean","ColValue":"No"}}
+]

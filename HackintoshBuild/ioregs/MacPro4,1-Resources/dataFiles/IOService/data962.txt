@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"37726","ColType":"String","ColValue":"ApplePerformanceCounterManager"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"37728","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37730","ColType":"String","ColValue":"com.apple.iokit.AppleProfileFamily"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"37732","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"37734","ColType":"String","ColValue":"ApplePerformanceCounterManager"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"37736","ColType":"String","ColValue":"AppleProfileOSHooks"}}
+]

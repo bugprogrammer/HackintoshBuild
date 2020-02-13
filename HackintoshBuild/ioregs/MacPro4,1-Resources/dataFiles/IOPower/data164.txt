@@ -1,0 +1,14 @@
+[
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"20822","ColType":"Number","ColValue":"65535"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"20824","ColType":"String","ColValue":"com.apple.iokit.IOSCSIMultimediaCommandsDevice"}},
+{"data":{"title":"DVD Features"},"attr":{"id":"20826","ColType":"Number","ColValue":"511"}},
+{"data":{"title":"IOClass"},"attr":{"id":"20828","ColType":"String","ColValue":"IOSCSIPeripheralDeviceType05"}},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"20830","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"20832","ColType":"Number","ColValue":"5000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"20834","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CD Features"},"attr":{"id":"20836","ColType":"Number","ColValue":"2047"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"20838","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DevicePowerState"},"attr":{"id":"20840","ColType":"Number","ColValue":"4"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"20842","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"20844","ColType":"Number","ColValue":"4"}}]},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"20846","ColType":"Number","ColValue":"65535"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"20848","ColType":"String","ColValue":"IOSCSIPeripheralDeviceNub"}},
+{"data":{"title":"BD Features"},"attr":{"id":"20850","ColType":"Number","ColValue":"0"}}
+]

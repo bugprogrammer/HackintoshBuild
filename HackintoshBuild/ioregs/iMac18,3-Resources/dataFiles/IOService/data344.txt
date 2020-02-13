@@ -1,0 +1,14 @@
+[
+{"data":{"title":"IOAudioControlUsage"},"attr":{"id":"11653","ColType":"Number","ColValue":"1869968496"}},
+{"data":{"title":"IOAudioControlSubType"},"attr":{"id":"11655","ColType":"Number","ColValue":"1986817381"}},
+{"data":{"title":"IOAudioLevelControlMinDB"},"attr":{"id":"11657","ColType":"Number","ColValue":"18446744073704833024"}},
+{"data":{"title":"IOAudioControlValue"},"attr":{"id":"11659","ColType":"Number","ColValue":"7200"}},
+{"data":{"title":"IOAudioControlID"},"attr":{"id":"11661","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioControlChannelID"},"attr":{"id":"11663","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioLevelControlMaxDB"},"attr":{"id":"11665","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioLevelControlMaxValue"},"attr":{"id":"11667","ColType":"Number","ColValue":"7200"}},
+{"data":{"title":"IOAudioControlType"},"attr":{"id":"11669","ColType":"Number","ColValue":"1818588780"}},
+{"data":{"title":"IOAudioLevelControlMinValue"},"attr":{"id":"11671","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioLevelControlUseLinearScale"},"attr":{"id":"11673","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOAudioControlChannelNumber"},"attr":{"id":"11675","ColType":"Number","ColValue":"0"}}
+]

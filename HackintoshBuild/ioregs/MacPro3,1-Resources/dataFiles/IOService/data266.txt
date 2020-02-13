@@ -1,0 +1,5 @@
+[
+{"data":{"title":"FireWire Self IDs"},"attr":{"id":"11867","ColType":"Data","ColValue":"&lt;803fc458817fc8da827f89d0&gt;"}},
+{"data":{"title":"FireWire Generation ID"},"attr":{"id":"11869","ColType":"String","ColValue":"2"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"11871","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"11873","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"11875","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"11877","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"11879","ColType":"Number","ColValue":"2"}}]}
+]

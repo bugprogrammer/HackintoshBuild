@@ -1,0 +1,8 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"2268","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"2270","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"2272","ColType":"Number","ColValue":"0"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"2274","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"_ADR"},"attr":{"id":"2276","ColType":"Number","ColValue":"65535"}},
+{"data":{"title":"acpi-dstate-mask"},"attr":{"id":"2278","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"compatible"},"attr":{"id":"2280","ColType":"Data","ColValue":"&lt;\"hdd-power-off\"&gt;"}},
+{"data":{"title":"device-properties"},"attr":{"id":"2282","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"2284","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PEG2@10002/SATA@0/PRT0@ffff"}},{"data":{"title":"acpi-device"},"attr":{"id":"2286","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

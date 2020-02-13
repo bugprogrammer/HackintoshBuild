@@ -1,0 +1,14 @@
+[
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"29890","ColType":"Number","ColValue":"256"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"29892","ColType":"String","ColValue":"com.apple.iokit.IOSCSIBlockCommandsDevice"}},
+{"data":{"title":"IOClass"},"attr":{"id":"29894","ColType":"String","ColValue":"IOSCSIPeripheralDeviceType00"}},
+{"data":{"title":"WriteCacheState"},"attr":{"id":"29896","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"29898","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMaximumByteCountWrite"},"attr":{"id":"29900","ColType":"Number","ColValue":"131072"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"29902","ColType":"Number","ColValue":"5000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"29904","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"29906","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DevicePowerState"},"attr":{"id":"29908","ColType":"Number","ColValue":"4"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"29910","ColType":"Number","ColValue":"49216"}},{"data":{"title":"ActivityTickles"},"attr":{"id":"29912","ColType":"Number","ColValue":"7791"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"29914","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"29916","ColType":"Number","ColValue":"4"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"29918","ColType":"Number","ColValue":"4"}},{"data":{"title":"IdleTimerPeriod"},"attr":{"id":"29920","ColType":"Number","ColValue":"200000"}},{"data":{"title":"IdleTimerElapsedTime"},"attr":{"id":"29922","ColType":"Number","ColValue":"46120"}},{"data":{"title":"TimeSinceLastTickle"},"attr":{"id":"29924","ColType":"Number","ColValue":"1487"}}]},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"29926","ColType":"Number","ColValue":"256"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"29928","ColType":"String","ColValue":"IOSCSIPeripheralDeviceNub"}},
+{"data":{"title":"IOMaximumByteCountRead"},"attr":{"id":"29930","ColType":"Number","ColValue":"131072"}}
+]

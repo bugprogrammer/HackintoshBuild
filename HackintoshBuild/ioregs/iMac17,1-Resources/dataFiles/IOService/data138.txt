@@ -1,0 +1,17 @@
+[
+{"data":{"title":"AAPL,gray-value"},"attr":{"id":"6455","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"device_type"},"attr":{"id":"6457","ColType":"String","ColValue":"display"}},
+{"data":{"title":"AAPL,gray-page"},"attr":{"id":"6459","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"IOFBDependentID"},"attr":{"id":"6461","ColType":"Number","ColValue":"4294967762"}},
+{"data":{"title":"display-connect-flags"},"attr":{"id":"6463","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"port-number"},"attr":{"id":"6465","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"IOFBDependentIndex"},"attr":{"id":"6467","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"ATY,ControlFlags"},"attr":{"id":"6469","ColType":"Number","ColValue":"772"}},
+{"data":{"title":"av-signal-type"},"attr":{"id":"6471","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"6473","ColType":"Data","ColValue":"&lt;\"ATY,Tako\"&gt;"}},
+{"data":{"title":"display-type"},"attr":{"id":"6475","ColType":"String","ColValue":"NONE"}},
+{"data":{"title":"name"},"attr":{"id":"6477","ColType":"String","ColValue":"ATY,Tako"}},
+{"data":{"title":"connector-type"},"attr":{"id":"6479","ColType":"Number","ColValue":"1024"}},
+{"data":{"title":"ATY,ActiveFlags"},"attr":{"id":"6481","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"audio-codec-info"},"attr":{"id":"6483","ColType":"Data","ColValue":"&lt;00010300&gt;"}}
+]

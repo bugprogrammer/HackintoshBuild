@@ -1,0 +1,7 @@
+[
+{"data":{"title":"max-value"},"attr":{"id":"45731","ColType":"Number","ColValue":"20"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"45733","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"45735","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"GPUInternalSingleSlice"},"attr":{"id":"45737","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"min-value"},"attr":{"id":"45739","ColType":"Number","ColValue":"0"}},{"data":{"title":"max-value"},"attr":{"id":"45741","ColType":"Number","ColValue":"20"}}]},
+{"data":{"title":"Heuristic-ID"},"attr":{"id":"45743","ColType":"Data","ColValue":"&lt;02000000&gt;"}},
+{"data":{"title":"min-value"},"attr":{"id":"45745","ColType":"Number","ColValue":"0"}}
+]

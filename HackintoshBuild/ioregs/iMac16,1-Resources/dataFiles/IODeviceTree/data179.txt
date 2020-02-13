@@ -1,0 +1,14 @@
+[
+{"data":{"title":"efi-boot-device-data"},"attr":{"id":"6072","ColType":"Data","ColValue":"&lt;02010c00d041030a0000000001010600021f03120a0000000000000004012a0003000000680e5d7400000000205f130000000000466c893312d7c9409549462aa89c1ae002027fff0400&gt;"}},
+{"data":{"title":"backlight-level"},"attr":{"id":"6074","ColType":"Data","ColValue":"&lt;b6d7&gt;"}},
+{"data":{"title":"bluetoothInternalControllerInfo"},"attr":{"id":"6076","ColType":"Data","ColValue":"&lt;9482ac050000601428f07603d5bf&gt;"}},
+{"data":{"title":"efi-boot-device"},"attr":{"id":"6078","ColType":"Data","ColValue":"&lt;\"<array><dict><key>IOMatch</key><dict><key>IOProviderClass</key><string>IOMedia</string><key>IOPropertyMatch</key><dict><key>UUID</key><string>33896C46-D712-40C9-9549-462AA89C1AE0</string></dict></dict><key>BLLastBSDName</key><string>disk0s4</string></dict></array>\"&gt;"}},
+{"data":{"title":"LocationServicesEnabled"},"attr":{"id":"6080","ColType":"Data","ColValue":"&lt;01&gt;"}},
+{"data":{"title":"display-config"},"attr":{"id":"6082","ColType":"Data","ColValue":"&lt;000025017308ffff0100&gt;"}},
+{"data":{"title":"SystemAudioVolumeDB"},"attr":{"id":"6084","ColType":"Data","ColValue":"&lt;ef&gt;"}},
+{"data":{"title":"EFIBluetoothDelay"},"attr":{"id":"6086","ColType":"Data","ColValue":"&lt;b80b&gt;"}},
+{"data":{"title":"SystemAudioVolume"},"attr":{"id":"6088","ColType":"Data","ColValue":"&lt;5d&gt;"}},
+{"data":{"title":"bluetoothActiveControllerInfo"},"attr":{"id":"6090","ColType":"Data","ColValue":"&lt;9482ac0500000000601428f07603d5bf&gt;"}},
+{"data":{"title":"BootCampProcessorPstates"},"attr":{"id":"6092","ColType":"Data","ColValue":"&lt;0c00&gt;"}},
+{"data":{"title":"fmm-computer-name"},"attr":{"id":"6094","ColType":"Data","ColValue":"&lt;694d6163c2a0e2809420694d6163&gt;"}}
+]

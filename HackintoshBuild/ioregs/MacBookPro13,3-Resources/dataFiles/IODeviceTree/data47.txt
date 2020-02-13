@@ -1,0 +1,17 @@
+[
+{"data":{"title":"AAPL,gray-value"},"attr":{"id":"4109","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"device_type"},"attr":{"id":"4111","ColType":"String","ColValue":"display"}},
+{"data":{"title":"AAPL,gray-page"},"attr":{"id":"4113","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"IOFBDependentID"},"attr":{"id":"4115","ColType":"Number","ColValue":"4294967821"}},
+{"data":{"title":"display-connect-flags"},"attr":{"id":"4117","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"port-number"},"attr":{"id":"4119","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"IOFBDependentIndex"},"attr":{"id":"4121","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"ATY,ControlFlags"},"attr":{"id":"4123","ColType":"Number","ColValue":"772"}},
+{"data":{"title":"av-signal-type"},"attr":{"id":"4125","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"4127","ColType":"Data","ColValue":"&lt;\"ATY,Berbice\"&gt;"}},
+{"data":{"title":"display-type"},"attr":{"id":"4129","ColType":"String","ColValue":"NONE"}},
+{"data":{"title":"name"},"attr":{"id":"4131","ColType":"String","ColValue":"ATY,Berbice"}},
+{"data":{"title":"connector-type"},"attr":{"id":"4133","ColType":"Number","ColValue":"1024"}},
+{"data":{"title":"ATY,ActiveFlags"},"attr":{"id":"4135","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"audio-codec-info"},"attr":{"id":"4137","ColType":"Data","ColValue":"&lt;00010b00&gt;"}}
+]

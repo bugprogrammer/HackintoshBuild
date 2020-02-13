@@ -1,0 +1,16 @@
+[
+{"data":{"title":"IOTTYSuffix"},"attr":{"id":"24860","ColType":"String","ColValue":"2"}},
+{"data":{"title":"Product Name"},"attr":{"id":"24862","ColType":"String","ColValue":"LPSS Serial Adapter (2)"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"24864","ColType":"String","ColValue":"com.apple.iokit.IOSerialFamily"}},
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"24866","ColType":"String","ColValue":"lpss-serial"}},
+{"data":{"title":"IOClass"},"attr":{"id":"24868","ColType":"String","ColValue":"IOSerialBSDClient"}},
+{"data":{"title":"IOSerialBSDClientType"},"attr":{"id":"24870","ColType":"String","ColValue":"IORS232SerialStream"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"24872","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"24874","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"24876","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOTTYDevice"},"attr":{"id":"24878","ColType":"String","ColValue":"lpss-serial2"}},
+{"data":{"title":"IOCalloutDevice"},"attr":{"id":"24880","ColType":"String","ColValue":"/dev/cu.lpss-serial2"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"24882","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IODialinDevice"},"attr":{"id":"24884","ColType":"String","ColValue":"/dev/tty.lpss-serial2"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"24886","ColType":"String","ColValue":"IOSerialStreamSync"}}
+]

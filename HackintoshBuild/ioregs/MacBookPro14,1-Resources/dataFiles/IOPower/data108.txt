@@ -1,0 +1,16 @@
+[
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"10775","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"10777","ColType":"String","ColValue":"com.apple.driver.AppleCameraInterface"}},
+{"data":{"title":"CameraActive"},"attr":{"id":"10779","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"IOClass"},"attr":{"id":"10781","ColType":"String","ColValue":"AppleCamIn"}},
+{"data":{"title":"CameraModuleSerialString"},"attr":{"id":"10783","ColType":"String","ColValue":"DJH7233ESPWGJKD1H"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"10785","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"10787","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CFBundleVersion"},"attr":{"id":"10789","ColType":"String","ColValue":"1.0.0"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"10791","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOPCIMatch"},"attr":{"id":"10793","ColType":"String","ColValue":"0x157014E4"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"10795","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"10797","ColType":"Number","ColValue":"0"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"10799","ColType":"Number","ColValue":"0"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"10801","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"10803","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"CameraSensorSerialNumber"},"attr":{"id":"10805","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"10807","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"CameraModuleSerialNumber"},"attr":{"id":"10809","ColType":"Data","ColValue":"&lt;04de0800&gt;"}}
+]

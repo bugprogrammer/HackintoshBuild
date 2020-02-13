@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"42351","ColType":"String","ColValue":"Bluetooth-Modem"}},
+{"data":{"title":"BTTTYName"},"attr":{"id":"42353","ColType":"String","ColValue":"Bluetooth-Modem"}},
+{"data":{"title":"BTAuthenticationRequired"},"attr":{"id":"42355","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"BTRFCOMMChannel"},"attr":{"id":"42357","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"BTName"},"attr":{"id":"42359","ColType":"String","ColValue":"Bluetooth-Modem"}},
+{"data":{"title":"BTAddress"},"attr":{"id":"42361","ColType":"Data","ColValue":"&lt;&gt;"}},
+{"data":{"title":"P49SerialPort"},"attr":{"id":"42363","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BTPSM"},"attr":{"id":"42365","ColType":"Number","ColValue":"0"}}
+]

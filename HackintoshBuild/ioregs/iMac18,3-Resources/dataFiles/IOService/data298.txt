@@ -1,0 +1,6 @@
+[
+{"data":{"title":"DigitalAudioCapabilities"},"attr":{"id":"8778","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"HDMI"},"attr":{"id":"8780","ColType":"Number","ColValue":"1"}},{"data":{"title":"DisplayPort"},"attr":{"id":"8782","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"IOHDACodecAddress"},"attr":{"id":"8784","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOHDACodecRevisionID"},"attr":{"id":"8786","ColType":"Number","ColValue":"1050368"}},
+{"data":{"title":"IOHDACodecVendorID"},"attr":{"id":"8788","ColType":"Number","ColValue":"268610049"}}
+]

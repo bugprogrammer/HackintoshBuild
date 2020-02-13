@@ -1,0 +1,22 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"75336","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"75338","ColType":"String","ColValue":"com.apple.driver.usb.AppleUSBEHCIPCI"}},
+{"data":{"title":"kUSBSleepPortCurrentLimit"},"attr":{"id":"75340","ColType":"Number","ColValue":"2100"}},
+{"data":{"title":"name"},"attr":{"id":"75342","ColType":"Data","ColValue":"&lt;\"EHC1\"&gt;"}},
+{"data":{"title":"Errata"},"attr":{"id":"75344","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"75346","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"75348","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"75350","ColType":"String","ColValue":"AppleUSBEHCIPCI"}},
+{"data":{"title":"kUSBWakePortCurrentLimit"},"attr":{"id":"75352","ColType":"Number","ColValue":"2100"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"75354","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"locationID"},"attr":{"id":"75356","ColType":"Number","ColValue":"486539264"}},
+{"data":{"title":"64bit"},"attr":{"id":"75358","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"75360","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"75362","ColType":"Number","ColValue":"3"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"75364","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"75366","ColType":"Number","ColValue":"3"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"75368","ColType":"Number","ColValue":"3"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"75370","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"75372","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"port-count"},"attr":{"id":"75374","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"controller-statistics"},"attr":{"id":"75376","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"kControllerStatPowerStateTime"},"attr":{"id":"75378","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"kPowerStateSleep"},"attr":{"id":"75380","ColType":"String","ColValue":"0ms (0%)"}},{"data":{"title":"kPowerStateOn"},"attr":{"id":"75382","ColType":"String","ColValue":"11938027ms (99%)"}},{"data":{"title":"kPowerStateOff"},"attr":{"id":"75384","ColType":"String","ColValue":"0ms (0%)"}},{"data":{"title":"kPowerStateSuspended"},"attr":{"id":"75386","ColType":"String","ColValue":"1ms (0%)"}}]},{"data":{"title":"kControllerStatSpuriousInterruptCount"},"attr":{"id":"75388","ColType":"Number","ColValue":"0"}},{"data":{"title":"kControllerStatIOCount"},"attr":{"id":"75390","ColType":"Number","ColValue":"250290"}}]},
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"75392","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOPCIClassMatch"},"attr":{"id":"75394","ColType":"String","ColValue":"0x0c032000"}},
+{"data":{"title":"kUSBSleepSupported"},"attr":{"id":"75396","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"device-properties"},"attr":{"id":"75398","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"AAPL,device-internal"},"attr":{"id":"75400","ColType":"Number","ColValue":"2"}},{"data":{"title":"acpi-path"},"attr":{"id":"75402","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/EHC1@1d0000"}},{"data":{"title":"acpi-device"},"attr":{"id":"75404","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"ports"},"attr":{"id":"75406","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"PRT1"},"attr":{"id":"75408","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"UsbConnector"},"attr":{"id":"75410","ColType":"Number","ColValue":"255"}},{"data":{"title":"port"},"attr":{"id":"75412","ColType":"Data","ColValue":"&lt;01000000&gt;"}}]}]}
+]

@@ -1,0 +1,17 @@
+[
+{"data":{"title":"Ignore transactions for ms after wake"},"attr":{"id":"15011","ColType":"Number","ColValue":"250"}},
+{"data":{"title":"idProduct"},"attr":{"id":"15013","ColType":"Number","ColValue":"524"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"15015","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"2d9786c6-9ef3-11d4-ad51-000a27052861"},"attr":{"id":"15017","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"iInterface"},"attr":{"id":"15019","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bAlternateSetting"},"attr":{"id":"15021","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"15023","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"15025","ColType":"String","ColValue":"IOUSBInterfaceUserClientV2"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"15027","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"15029","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"15031","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"idVendor"},"attr":{"id":"15033","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"15035","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"locationID"},"attr":{"id":"15037","ColType":"Number","ColValue":"18446744073612242944"}},
+{"data":{"title":"bNumEndpoints"},"attr":{"id":"15039","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bcdDevice"},"attr":{"id":"15041","ColType":"Number","ColValue":"1056"}}
+]

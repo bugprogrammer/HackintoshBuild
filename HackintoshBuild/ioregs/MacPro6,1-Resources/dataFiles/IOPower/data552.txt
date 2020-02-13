@@ -1,0 +1,19 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"27653","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"27655","ColType":"Number","ColValue":"1"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"27657","ColType":"Number","ColValue":"1"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"27659","ColType":"Number","ColValue":"1"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"27661","ColType":"Number","ColValue":"1"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"27663","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"27665","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"idProduct"},"attr":{"id":"27667","ColType":"Number","ColValue":"775"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"27669","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"27671","ColType":"String","ColValue":"External"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"27673","ColType":"String","ColValue":"com.apple.iokit.IOUSBMassStorageDriver"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"27675","ColType":"Number","ColValue":"80"}},
+{"data":{"title":"IOClass"},"attr":{"id":"27677","ColType":"String","ColValue":"IOUSBMassStorageDriverNub"}},
+{"data":{"title":"USB Device Info"},"attr":{"id":"27679","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"idProduct"},"attr":{"id":"27681","ColType":"Number","ColValue":"775"}},{"data":{"title":"kUSBVendorString"},"attr":{"id":"27683","ColType":"String","ColValue":"Realtek"}},{"data":{"title":"bConfigurationValue"},"attr":{"id":"27685","ColType":"Number","ColValue":"1"}},{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"27687","ColType":"Number","ColValue":"80"}},{"data":{"title":"USB Product Name"},"attr":{"id":"27689","ColType":"String","ColValue":"USB3.0 Card Reader"}},{"data":{"title":"bInterfaceNumber"},"attr":{"id":"27691","ColType":"Number","ColValue":"0"}},{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"27693","ColType":"Number","ColValue":"6"}},{"data":{"title":"idVendor"},"attr":{"id":"27695","ColType":"Number","ColValue":"3034"}},{"data":{"title":"locationID"},"attr":{"id":"27697","ColType":"Number","ColValue":"5390336"}},{"data":{"title":"kUSBSerialNumberString"},"attr":{"id":"27699","ColType":"String","ColValue":"T13000003854"}},{"data":{"title":"bInterfaceClass"},"attr":{"id":"27701","ColType":"Number","ColValue":"8"}},{"data":{"title":"bcdDevice"},"attr":{"id":"27703","ColType":"Number","ColValue":"355"}}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"27705","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"27707","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"27709","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"27711","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"idVendor"},"attr":{"id":"27713","ColType":"Number","ColValue":"3034"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"27715","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"Physical Interconnect"},"attr":{"id":"27717","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"27719","ColType":"String","ColValue":"IOUSBMassStorageInterfaceNub"}},
+{"data":{"title":"USB Mass Storage Trace ID"},"attr":{"id":"27721","ColType":"Number","ColValue":"853998407945175040"}}
+]

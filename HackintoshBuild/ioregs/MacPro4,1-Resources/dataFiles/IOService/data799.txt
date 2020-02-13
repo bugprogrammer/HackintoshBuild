@@ -1,0 +1,15 @@
+[
+{"data":{"title":"IOTTYSuffix"},"attr":{"id":"33482","ColType":"String","ColValue":""}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"33484","ColType":"String","ColValue":"com.apple.iokit.IOSerialFamily"}},
+{"data":{"title":"IOClass"},"attr":{"id":"33486","ColType":"String","ColValue":"IOSerialBSDClient"}},
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"33488","ColType":"String","ColValue":"ZTEUSBATPort_"}},
+{"data":{"title":"IOSerialBSDClientType"},"attr":{"id":"33490","ColType":"String","ColValue":"IOSerialStream"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"33492","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"33494","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"33496","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOTTYDevice"},"attr":{"id":"33498","ColType":"String","ColValue":"ZTEUSBATPort_"}},
+{"data":{"title":"IOCalloutDevice"},"attr":{"id":"33500","ColType":"String","ColValue":"/dev/cu.ZTEUSBATPort_"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"33502","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IODialinDevice"},"attr":{"id":"33504","ColType":"String","ColValue":"/dev/tty.ZTEUSBATPort_"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"33506","ColType":"String","ColValue":"IOSerialStreamSync"}}
+]

@@ -1,0 +1,5 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"2694","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"_ADR"},"attr":{"id":"2696","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"device-properties"},"attr":{"id":"2698","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"hda-gfx"},"attr":{"id":"2700","ColType":"Data","ColValue":"&lt;\"onboard-2\"&gt;"}},{"data":{"title":"layout-id"},"attr":{"id":"2702","ColType":"Data","ColValue":"&lt;00000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"2704","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/HDAU@1"}},{"data":{"title":"PinConfigurations"},"attr":{"id":"2706","ColType":"Data","ColValue":"&lt;e0005628&gt;"}},{"data":{"title":"acpi-device"},"attr":{"id":"2708","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

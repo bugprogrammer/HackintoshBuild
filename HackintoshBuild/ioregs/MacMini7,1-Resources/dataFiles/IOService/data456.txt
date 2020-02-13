@@ -1,0 +1,22 @@
+[
+{"data":{"title":"CountryCode"},"attr":{"id":"104955","ColType":"Number","ColValue":"13"}},
+{"data":{"title":"alt_sender_id"},"attr":{"id":"104957","ColType":"Number","ColValue":"4294968396"}},
+{"data":{"title":"SerialNumber"},"attr":{"id":"104959","ColType":"String","ColValue":"68-d9-3c-d8-ea-9e"}},
+{"data":{"title":"ProductID"},"attr":{"id":"104961","ColType":"Number","ColValue":"598"}},
+{"data":{"title":"HIDKeyMapping"},"attr":{"id":"104963","ColType":"Data","ColValue":"&lt;00000000001800000101020203030404050506060707080809090a0a0b0b0c0c0d0d0e0e0f0f10101111121213131414151516161717&gt;"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"104965","ColType":"Number","ColValue":"80"}},
+{"data":{"title":"HIDVirtualDevice"},"attr":{"id":"104967","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Product"},"attr":{"id":"104969","ColType":"String","ColValue":"Apple Wireless Keyboard"}},
+{"data":{"title":"HIDKind"},"attr":{"id":"104971","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"104973","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"HIDInterfaceID"},"attr":{"id":"104975","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Transport"},"attr":{"id":"104977","ColType":"String","ColValue":"Bluetooth"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"104979","ColType":"Number","ColValue":"11250"}},
+{"data":{"title":"HIDSubinterfaceID"},"attr":{"id":"104981","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"104983","ColType":"String","ColValue":"Apple"}},
+{"data":{"title":"HIDResetKeyboard"},"attr":{"id":"104985","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"VendorID"},"attr":{"id":"104987","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"HIDDeviceEventID"},"attr":{"id":"104989","ColType":"Number","ColValue":"1104"}},
+{"data":{"title":"LocationID"},"attr":{"id":"104991","ColType":"Number","ColValue":"1020848798"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"104993","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"104994","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"104996","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"104998","ColType":"Number","ColValue":"6"}}]},{"data":{"title":"1"},"attr":{"id":"104999","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"105001","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"105003","ColType":"Number","ColValue":"1"}}]}]}
+]

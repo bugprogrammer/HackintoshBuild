@@ -1,0 +1,18 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"88165","ColType":"Number","ColValue":"1914"}},
+{"data":{"title":"Transport"},"attr":{"id":"88167","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"HIDKind"},"attr":{"id":"88169","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"88171","ColType":"Number","ColValue":"4676"}},
+{"data":{"title":"VendorID"},"attr":{"id":"88173","ColType":"Number","ColValue":"1118"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"88175","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"HIDDeviceEventID"},"attr":{"id":"88177","ColType":"Number","ColValue":"92329088"}},
+{"data":{"title":"HIDSubinterfaceID"},"attr":{"id":"88179","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"HIDKeyMapping"},"attr":{"id":"88181","ColType":"Data","ColValue":"&lt;00000000001800000101020203030404050506060707080809090a0a0b0b0c0c0d0d0e0e0f0f10101111121213131414151516161717&gt;"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"88183","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"88184","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"88186","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"88188","ColType":"Number","ColValue":"1"}}]},{"data":{"title":"1"},"attr":{"id":"88189","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"88191","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"88193","ColType":"Number","ColValue":"65318"}}]},{"data":{"title":"2"},"attr":{"id":"88194","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"88196","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"88198","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"HIDInterfaceID"},"attr":{"id":"88200","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"88202","ColType":"String","ColValue":"Microsoft"}},
+{"data":{"title":"HIDVirtualDevice"},"attr":{"id":"88204","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Product"},"attr":{"id":"88206","ColType":"String","ColValue":"Express Mouse"}},
+{"data":{"title":"LocationID"},"attr":{"id":"88208","ColType":"Number","ColValue":"487653376"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"88210","ColType":"Number","ColValue":"0"}}
+]

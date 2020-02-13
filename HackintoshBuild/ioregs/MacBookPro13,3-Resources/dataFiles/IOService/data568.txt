@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOProbeScore"},"attr":{"id":"191405","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"191407","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"191409","ColType":"String","ColValue":"com.apple.driver.AppleHDA"}},
+{"data":{"title":"IOHDACodecFunctionGroupType"},"attr":{"id":"191411","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOClass"},"attr":{"id":"191413","ColType":"String","ColValue":"AppleHDACodecGeneric"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"191415","ColType":"String","ColValue":"IOHDACodecFunction"}}
+]

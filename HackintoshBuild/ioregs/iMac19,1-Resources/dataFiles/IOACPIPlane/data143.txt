@@ -1,0 +1,5 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"6709","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"6711","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"device-properties"},"attr":{"id":"6713","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"kUSBWakePortCurrentLimit"},"attr":{"id":"6715","ColType":"Number","ColValue":"3000"}},{"data":{"title":"UsbCPortNumber"},"attr":{"id":"6717","ColType":"Number","ColValue":"2"}},{"data":{"title":"UsbPowerSource"},"attr":{"id":"6719","ColType":"Number","ColValue":"2"}},{"data":{"title":"kUSBSleepPortCurrentLimit"},"attr":{"id":"6721","ColType":"Number","ColValue":"3000"}},{"data":{"title":"acpi-path"},"attr":{"id":"6723","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/XHC1@140000/RHUB@0/HS05@5"}},{"data":{"title":"acpi-device"},"attr":{"id":"6725","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

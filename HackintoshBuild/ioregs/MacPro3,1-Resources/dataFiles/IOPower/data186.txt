@@ -1,0 +1,23 @@
+[
+{"data":{"title":"built-in"},"attr":{"id":"19980","ColType":"Data","ColValue":"&lt;00&gt;"}},
+{"data":{"title":"IODeviceMemory"},"attr":{"id":"19982","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"19983","ColType":"String","ColValue":"IOSubMemoryDescriptor is not serializable"}},{"data":{"title":"1"},"attr":{"id":"19984","ColType":"String","ColValue":"IOSubMemoryDescriptor is not serializable"}},{"data":{"title":"2"},"attr":{"id":"19985","ColType":"String","ColValue":"IOSubMemoryDescriptor is not serializable"}},{"data":{"title":"3"},"attr":{"id":"19986","ColType":"String","ColValue":"IOSubMemoryDescriptor is not serializable"}},{"data":{"title":"4"},"attr":{"id":"19987","ColType":"String","ColValue":"IOSubMemoryDescriptor is not serializable"}},{"data":{"title":"5"},"attr":{"id":"19988","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"19989","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"19991","ColType":"Number","ColValue":"2696970240"}},{"data":{"title":"length"},"attr":{"id":"19993","ColType":"Number","ColValue":"1024"}}]}]}]},
+{"data":{"title":"acpi-pmcap-offset"},"attr":{"id":"19995","ColType":"Number","ColValue":"112"}},
+{"data":{"title":"device-id"},"attr":{"id":"19997","ColType":"Data","ColValue":"&lt;81260000&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"19999","ColType":"String","ColValue":"pci8086,2681"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"20001","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SATA@1f0002"}},
+{"data":{"title":"IOName"},"attr":{"id":"20003","ColType":"String","ColValue":"pci8086,2681"}},
+{"data":{"title":"vendor-id"},"attr":{"id":"20005","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"revision-id"},"attr":{"id":"20007","ColType":"Data","ColValue":"&lt;09000000&gt;"}},
+{"data":{"title":"IOPCIResourced"},"attr":{"id":"20009","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"20011","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"subsystem-vendor-id"},"attr":{"id":"20013","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"20015","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"20016","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"pcidebug"},"attr":{"id":"20018","ColType":"String","ColValue":"0:31:2"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"20020","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"20022","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"20024","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"20026","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"20028","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"class-code"},"attr":{"id":"20030","ColType":"Data","ColValue":"&lt;01060100&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"20032","ColType":"Data","ColValue":"&lt;\"pci8086,7270\",\"pci8086,2681\",\"pciclass,010601\"&gt;"}},
+{"data":{"title":"subsystem-id"},"attr":{"id":"20034","ColType":"Data","ColValue":"&lt;70720000&gt;"}},
+{"data":{"title":"assigned-addresses"},"attr":{"id":"20036","ColType":"Data","ColValue":"&lt;10fa008100000000d8300000000000000800000014fa008100000000f4300000000000000400000018fa008100000000d030000000000000080000001cfa008100000000f0300000000000000400000020fa00810000000020300000000000002000000024fa0082000000000080c0a00000000000040000&gt;"}},
+{"data":{"title":"reg"},"attr":{"id":"20038","ColType":"Data","ColValue":"&lt;00fa00000000000000000000000000000000000010fa00010000000000000000000000000800000014fa00010000000000000000000000000400000018fa0001000000000000000000000000080000001cfa00010000000000000000000000000400000020fa00010000000000000000000000002000000024fa000200000000000000000000000000040000&gt;"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"20040","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"20041","ColType":"Data","ColValue":"&lt;1500000007000000&gt;"}}]}
+]

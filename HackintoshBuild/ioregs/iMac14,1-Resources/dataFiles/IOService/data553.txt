@@ -1,0 +1,5 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"20767","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"name"},"attr":{"id":"20769","ColType":"Data","ColValue":"&lt;\"INT0800\"&gt;"}},
+{"data":{"title":"IODeviceMemory"},"attr":{"id":"20771","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"20772","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"20773","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"20775","ColType":"Number","ColValue":"4278190080"}},{"data":{"title":"length"},"attr":{"id":"20777","ColType":"Number","ColValue":"16777216"}}]}]}]}
+]

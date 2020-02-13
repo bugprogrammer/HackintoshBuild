@@ -1,0 +1,20 @@
+[
+{"data":{"title":"Revision ID"},"attr":{"id":"56422","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Thunderbolt Version"},"attr":{"id":"56424","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Max In Hop ID"},"attr":{"id":"56426","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"PCI Device"},"attr":{"id":"56428","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"Port Number"},"attr":{"id":"56430","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"Hop Table"},"attr":{"id":"56432","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"56433","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Dst Port"},"attr":{"id":"56435","ColType":"Number","ColValue":"3"}},{"data":{"title":"Dst Hop ID"},"attr":{"id":"56437","ColType":"Number","ColValue":"8"}},{"data":{"title":"Hop ID"},"attr":{"id":"56439","ColType":"Number","ColValue":"8"}},{"data":{"title":"Inherited From EFI"},"attr":{"id":"56441","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"Path"},"attr":{"id":"56443","ColType":"String","ColValue":"15A46646-FD84-4CA4-9C39-C5F75FA70424"}}]}]},
+{"data":{"title":"PCI Function"},"attr":{"id":"56445","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Adapter Type"},"attr":{"id":"56447","ColType":"Number","ColValue":"1048833"}},
+{"data":{"title":"Link Bandwidth"},"attr":{"id":"56449","ColType":"Number","ColValue":"140"}},
+{"data":{"title":"PCI Path"},"attr":{"id":"56451","ColType":"String","ColValue":"IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/PEG0@1/IOPP/BR00@0/IOPP/BR12@9/IOPP/UFS2@0/IOPP/DSB1@3"}},
+{"data":{"title":"PCI Entry ID"},"attr":{"id":"56453","ColType":"Number","ColValue":"4294968161"}},
+{"data":{"title":"Max Credits"},"attr":{"id":"56455","ColType":"Number","ColValue":"7"}},
+{"data":{"title":"Max Out Hop ID"},"attr":{"id":"56457","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"Description"},"attr":{"id":"56459","ColType":"String","ColValue":"PCIe Adapter"}},
+{"data":{"title":"Required Bandwidth Allocated"},"attr":{"id":"56461","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Maximum Bandwidth Allocated"},"attr":{"id":"56463","ColType":"Number","ColValue":"50"}},
+{"data":{"title":"Device ID"},"attr":{"id":"56465","ColType":"Number","ColValue":"5485"}},
+{"data":{"title":"Vendor ID"},"attr":{"id":"56467","ColType":"Number","ColValue":"32902"}}
+]

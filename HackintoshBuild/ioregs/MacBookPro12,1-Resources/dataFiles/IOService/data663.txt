@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"167544","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"167546","ColType":"String","ColValue":"org_virtualbox_VBoxUSB"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"167548","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"167550","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"167552","ColType":"String","ColValue":"org.virtualbox.kext.VBoxUSB"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"167554","ColType":"String","ColValue":"org_virtualbox_VBoxUSBClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"167556","ColType":"String","ColValue":"org_virtualbox_VBoxUSB"}}
+]

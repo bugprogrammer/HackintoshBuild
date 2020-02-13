@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"21841","ColType":"String","ColValue":"IOMedia"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"21843","ColType":"String","ColValue":"IOStorage"}},
+{"data":{"title":"Content Mask"},"attr":{"id":"21845","ColType":"String","ColValue":"Apple_partition_scheme"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"21847","ColType":"Number","ColValue":"4000"}},
+{"data":{"title":"IOPropertyMatch"},"attr":{"id":"21849","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"21850","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Whole"},"attr":{"id":"21852","ColType":"Boolean","ColValue":"Yes"}}]},{"data":{"title":"1"},"attr":{"id":"21853","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Content Hint"},"attr":{"id":"21855","ColType":"String","ColValue":"CD_ROM_Mode_1"}},{"data":{"title":"Writable"},"attr":{"id":"21857","ColType":"Boolean","ColValue":"No"}}]},{"data":{"title":"2"},"attr":{"id":"21858","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Content Hint"},"attr":{"id":"21860","ColType":"String","ColValue":"CD_ROM_Mode_2_Form_1"}},{"data":{"title":"Writable"},"attr":{"id":"21862","ColType":"Boolean","ColValue":"No"}}]}]},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"21864","ColType":"String","ColValue":"com.apple.iokit.IOStorageFamily"}},
+{"data":{"title":"IOClass"},"attr":{"id":"21866","ColType":"String","ColValue":"IOApplePartitionScheme"}}
+]

@@ -1,0 +1,22 @@
+[
+{"data":{"title":"Vendor ID"},"attr":{"id":"10463","ColType":"Number","ColValue":"32902"}},
+{"data":{"title":"Device Model Name"},"attr":{"id":"10465","ColType":"String","ColValue":"Macintosh"}},
+{"data":{"title":"EEPROM Revision"},"attr":{"id":"10467","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"Device Model ID"},"attr":{"id":"10469","ColType":"Number","ColValue":"12"}},
+{"data":{"title":"Route String"},"attr":{"id":"10471","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"ROM Version"},"attr":{"id":"10473","ColType":"Number","ColValue":"25"}},
+{"data":{"title":"UID"},"attr":{"id":"10475","ColType":"Number","ColValue":"387493175235841"}},
+{"data":{"title":"Firmware Mode"},"attr":{"id":"10477","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Device Vendor ID"},"attr":{"id":"10479","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Self-Reset Count"},"attr":{"id":"10481","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Upstream Port Number"},"attr":{"id":"10483","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"Revision ID"},"attr":{"id":"10485","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"Device Vendor Name"},"attr":{"id":"10487","ColType":"String","ColValue":"Apple Inc."}},
+{"data":{"title":"Depth"},"attr":{"id":"10489","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"10491","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"10493","ColType":"Number","ColValue":"0"}},{"data":{"title":"DesiredPowerState"},"attr":{"id":"10495","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"10497","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"10499","ColType":"Number","ColValue":"0"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"10501","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"10503","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"Device ID"},"attr":{"id":"10505","ColType":"Number","ColValue":"5587"}},
+{"data":{"title":"DPP Crossed"},"attr":{"id":"10507","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Thunderbolt Version"},"attr":{"id":"10509","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Max Port Number"},"attr":{"id":"10511","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"Device Model Revision"},"attr":{"id":"10513","ColType":"Number","ColValue":"1"}}
+]

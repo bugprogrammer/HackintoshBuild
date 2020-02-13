@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"41869","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"41871","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"41873","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"41875","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"41877","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"41879","ColType":"String","ColValue":"AppleCredentialManager"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"41881","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"41883","ColType":"String","ColValue":"com.apple.driver.AppleCredentialManager"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"41885","ColType":"String","ColValue":"AppleCredentialManagerUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"41887","ColType":"String","ColValue":"AppleCredentialManager"}}
+]

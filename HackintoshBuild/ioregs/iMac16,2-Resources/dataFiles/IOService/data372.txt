@@ -1,0 +1,11 @@
+[
+{"data":{"title":"ConsoleFlag"},"attr":{"id":"16495","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CoreCaptureFlag"},"attr":{"id":"16497","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Id"},"attr":{"id":"16499","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"CoreCaptureLevel"},"attr":{"id":"16501","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"Name"},"attr":{"id":"16503","ColType":"String","ColValue":"DriverLogs"}},
+{"data":{"title":"ConsoleLevel"},"attr":{"id":"16505","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"MiscInfo"},"attr":{"id":"16507","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"LogIdentifier"},"attr":{"id":"16509","ColType":"String","ColValue":"Brcm4360"}},
+{"data":{"title":"IOClass"},"attr":{"id":"16511","ColType":"String","ColValue":"CCLogStream"}}
+]

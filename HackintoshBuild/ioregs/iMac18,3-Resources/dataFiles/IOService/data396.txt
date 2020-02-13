@@ -1,0 +1,21 @@
+[
+{"data":{"title":"USBPortType"},"attr":{"id":"127886","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"idProduct"},"attr":{"id":"127888","ColType":"Number","ColValue":"257"}},
+{"data":{"title":"AppleUSBAlternateServiceRegistryID"},"attr":{"id":"127890","ColType":"Number","ColValue":"4294968131"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"127892","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bAlternateSetting"},"attr":{"id":"127894","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOReportLegend"},"attr":{"id":"127896","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"127897","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOReportSubGroupName"},"attr":{"id":"127899","ColType":"String","ColValue":"Idle Policy"}},{"data":{"title":"IOReportChannels"},"attr":{"id":"127901","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"127902","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"127903","ColType":"Number","ColValue":"5288471043487301632"}},{"data":{"title":"1"},"attr":{"id":"127904","ColType":"Number","ColValue":"4295098369"}},{"data":{"title":"2"},"attr":{"id":"127905","ColType":"String","ColValue":"Interface Idle Policy"}}]},{"data":{"title":"3"},"attr":{"id":"127906","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"127907","ColType":"Number","ColValue":"5288471044650205440"}},{"data":{"title":"1"},"attr":{"id":"127908","ColType":"Number","ColValue":"4295098369"}},{"data":{"title":"2"},"attr":{"id":"127909","ColType":"String","ColValue":"0x81 interrupt"}}]}]},{"data":{"title":"IOReportGroupName"},"attr":{"id":"127911","ColType":"String","ColValue":"Power"}},{"data":{"title":"IOReportChannelInfo"},"attr":{"id":"127913","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOReportChannelUnit"},"attr":{"id":"127915","ColType":"Number","ColValue":"72058126613872640"}}]}]}]},
+{"data":{"title":"USBSpeed"},"attr":{"id":"127917","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"127919","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"2d9786c6-9ef3-11d4-ad51-000a27052861"},"attr":{"id":"127921","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"127923","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"127925","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClassNameOverride"},"attr":{"id":"127927","ColType":"String","ColValue":"IOUSBInterface"}},
+{"data":{"title":"IOServiceLegacyMatchingRegistryID"},"attr":{"id":"127929","ColType":"Number","ColValue":"4294968131"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"127931","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"127933","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"idVendor"},"attr":{"id":"127935","ColType":"Number","ColValue":"6720"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"127937","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"locationID"},"attr":{"id":"127939","ColType":"Number","ColValue":"338690048"}},
+{"data":{"title":"IOReportLegendPublic"},"attr":{"id":"127941","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"bcdDevice"},"attr":{"id":"127943","ColType":"Number","ColValue":"273"}}
+]

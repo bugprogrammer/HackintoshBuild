@@ -1,0 +1,17 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"94001","ColType":"Number","ColValue":"598"}},
+{"data":{"title":"Transport"},"attr":{"id":"94003","ColType":"String","ColValue":"Bluetooth"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"94005","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"94007","ColType":"Number","ColValue":"80"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"94009","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"VendorID"},"attr":{"id":"94011","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"94013","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"94015","ColType":"Number","ColValue":"11250"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"94017","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"94018","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"94020","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"94022","ColType":"Number","ColValue":"6"}}]},{"data":{"title":"1"},"attr":{"id":"94023","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"94025","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"94027","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"94029","ColType":"String","ColValue":""}},
+{"data":{"title":"SerialNumber"},"attr":{"id":"94031","ColType":"String","ColValue":"68-d9-3c-d8-ea-9e"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"94033","ColType":"String","ColValue":"Apple"}},
+{"data":{"title":"Product"},"attr":{"id":"94035","ColType":"String","ColValue":"Apple Wireless Keyboard"}},
+{"data":{"title":"LocationID"},"attr":{"id":"94037","ColType":"Number","ColValue":"1020848798"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"94039","ColType":"Number","ColValue":"13"}}
+]

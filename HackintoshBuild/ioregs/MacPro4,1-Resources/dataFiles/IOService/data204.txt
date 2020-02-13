@@ -1,0 +1,10 @@
+[
+{"data":{"title":"stepping"},"attr":{"id":"6579","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"ApplePerformanceCounterState"},"attr":{"id":"6581","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ApplePerformanceCounterHardwareInstance"},"attr":{"id":"6583","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"ApplePerformanceCounterUnit"},"attr":{"id":"6585","ColType":"Number","ColValue":"22"}},
+{"data":{"title":"variant"},"attr":{"id":"6587","ColType":"String","ColValue":"Gainstown"}},
+{"data":{"title":"ApplePerformanceCounterRegisteredName"},"attr":{"id":"6589","ColType":"String","ColValue":"ia32gp22"}},
+{"data":{"title":"IOClass"},"attr":{"id":"6591","ColType":"String","ColValue":"AppleIntelNehalemGeneralPurposeCounter"}},
+{"data":{"title":"logical-core"},"attr":{"id":"6593","ColType":"Number","ColValue":"3"}}
+]

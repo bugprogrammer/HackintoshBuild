@@ -1,0 +1,23 @@
+[
+{"data":{"title":"BSD Minor"},"attr":{"id":"6399","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"Removable"},"attr":{"id":"6401","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"BSD Unit"},"attr":{"id":"6403","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"UUID"},"attr":{"id":"6405","ColType":"String","ColValue":"3C0A9BF2-568E-45AC-925A-8D8EC7DBB1D6"}},
+{"data":{"title":"Content"},"attr":{"id":"6407","ColType":"String","ColValue":"7C3457EF-0000-11AA-AA11-00306543ECAC"}},
+{"data":{"title":"GPT Attributes"},"attr":{"id":"6409","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Writable"},"attr":{"id":"6411","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Content Hint"},"attr":{"id":"6413","ColType":"String","ColValue":"7C3457EF-0000-11AA-AA11-00306543ECAC"}},
+{"data":{"title":"Whole"},"attr":{"id":"6415","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"6417","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"6419","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"TierType"},"attr":{"id":"6421","ColType":"String","ColValue":"Secondary"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"6423","ColType":"String","ColValue":"disk1s2"}},
+{"data":{"title":"Leaf"},"attr":{"id":"6425","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"BSD Major"},"attr":{"id":"6427","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Open"},"attr":{"id":"6429","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Base"},"attr":{"id":"6431","ColType":"Number","ColValue":"209735680"}},
+{"data":{"title":"Preferred Block Size"},"attr":{"id":"6433","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"Partition ID"},"attr":{"id":"6435","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Ejectable"},"attr":{"id":"6437","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Size"},"attr":{"id":"6439","ColType":"Number","ColValue":"999995129856"}}
+]

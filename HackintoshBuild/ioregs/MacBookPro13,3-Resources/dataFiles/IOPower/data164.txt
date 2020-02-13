@@ -1,0 +1,16 @@
+[
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"9625","ColType":"String","ColValue":"com.apple.driver.AppleIntelLpssUARTv1"}},
+{"data":{"title":"IOClass"},"attr":{"id":"9627","ColType":"String","ColValue":"AppleIntelLpssUARTv1"}},
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"9629","ColType":"String","ColValue":"lpss-serial"}},
+{"data":{"title":"Master Clock"},"attr":{"id":"9631","ColType":"Number","ColValue":"1843200"}},
+{"data":{"title":"LpssUartUseSclkRange"},"attr":{"id":"9633","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"9635","ColType":"Number","ColValue":"1600"}},
+{"data":{"title":"IOKitDebug"},"attr":{"id":"9637","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"9639","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOPCIMatch"},"attr":{"id":"9641","ColType":"String","ColValue":"0x81208086&0xc3b0ffff"}},
+{"data":{"title":"compatible"},"attr":{"id":"9643","ColType":"Data","ColValue":"&lt;\"apple-uart-soc-als\"&gt;"}},
+{"data":{"title":"Location"},"attr":{"id":"9645","ColType":"String","ColValue":"PCI Bus=0 Dev=25 Func=0"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"9647","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"9649","ColType":"Number","ColValue":"1"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"9651","ColType":"Number","ColValue":"1"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"9653","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"9655","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"HasPCIPowermanagement"},"attr":{"id":"9657","ColType":"String","ColValue":"false"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"9659","ColType":"String","ColValue":"IOPCIDevice"}}
+]

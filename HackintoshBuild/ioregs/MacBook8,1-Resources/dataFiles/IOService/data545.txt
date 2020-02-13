@@ -1,0 +1,17 @@
+[
+{"data":{"title":"Name"},"attr":{"id":"99478","ColType":"String","ColValue":"IO80211AWDLPeerManager"}},
+{"data":{"title":"LogIdentifier"},"attr":{"id":"99480","ColType":"String","ColValue":""}},
+{"data":{"title":"Owner"},"attr":{"id":"99482","ColType":"String","ColValue":"com.apple.iokit.IO80211Family"}},
+{"data":{"title":"LogType"},"attr":{"id":"99484","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"LogDataType"},"attr":{"id":"99486","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"NumberOfFiles"},"attr":{"id":"99488","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"LogPolicy"},"attr":{"id":"99490","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"99492","ColType":"String","ColValue":"CCLogPipe"}},
+{"data":{"title":"PipeSize"},"attr":{"id":"99494","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"FileSize"},"attr":{"id":"99496","ColType":"Number","ColValue":"41943040"}},
+{"data":{"title":"NotifyThreshold"},"attr":{"id":"99498","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"MinLogSizeToNotify"},"attr":{"id":"99500","ColType":"Number","ColValue":"26214"}},
+{"data":{"title":"PipeType"},"attr":{"id":"99502","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Filename"},"attr":{"id":"99504","ColType":"String","ColValue":"io80211Family"}},
+{"data":{"title":"FileOptions"},"attr":{"id":"99506","ColType":"Number","ColValue":"0"}}
+]

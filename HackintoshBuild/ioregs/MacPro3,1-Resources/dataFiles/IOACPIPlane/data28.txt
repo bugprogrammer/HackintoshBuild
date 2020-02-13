@@ -1,0 +1,6 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"2938","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"2940","ColType":"Number","ColValue":"1769472"}},
+{"data":{"title":"device-properties"},"attr":{"id":"2942","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"layout-id"},"attr":{"id":"2944","ColType":"Data","ColValue":"&lt;0c000000&gt;"}},{"data":{"title":"MaximumBootBeepVolume"},"attr":{"id":"2946","ColType":"Data","ColValue":"&lt;40&gt;"}},{"data":{"title":"platformFamily"},"attr":{"id":"2948","ColType":"Data","ColValue":"&lt;00&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"2950","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/HDEF@1b0000"}},{"data":{"title":"PinConfigurations"},"attr":{"id":"2952","ColType":"Data","ColValue":"&lt;5041010140402102103081013001109060e1450120e1c501&gt;"}},{"data":{"title":"acpi-device"},"attr":{"id":"2954","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"2956","ColType":"Boolean","ColValue":"Yes"}}
+]

@@ -1,0 +1,10 @@
+[
+{"data":{"title":"_ADR"},"attr":{"id":"3080","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3082","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"3084","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP01@1c0000/SDXC@1"}},{"data":{"title":"acpi-device"},"attr":{"id":"3086","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"3088","ColType":"Number","ColValue":"30"}},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"3090","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"3092","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3093","ColType":"Data","ColValue":"&lt;2300000001000000&gt;"}}]},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"3095","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3096","ColType":"String","ColValue":"ACPIEventController"}}]},
+{"data":{"title":"_STA"},"attr":{"id":"3098","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"acpi-wake-system-state"},"attr":{"id":"3100","ColType":"Number","ColValue":"3"}}
+]

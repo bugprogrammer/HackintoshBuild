@@ -1,0 +1,8 @@
+[
+{"data":{"title":"name"},"attr":{"id":"71947","ColType":"String","ColValue":"LpssEmbDev00000000"}},
+{"data":{"title":"compatible"},"attr":{"id":"71949","ColType":"String","ColValue":"apple-uart-blth"}},
+{"data":{"title":"parity"},"attr":{"id":"71951","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"baud"},"attr":{"id":"71953","ColType":"Number","ColValue":"3000000"}},
+{"data":{"title":"dataBits"},"attr":{"id":"71955","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"stopBits"},"attr":{"id":"71957","ColType":"Number","ColValue":"1"}}
+]

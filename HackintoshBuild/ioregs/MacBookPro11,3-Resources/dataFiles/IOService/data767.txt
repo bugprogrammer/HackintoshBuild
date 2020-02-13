@@ -1,0 +1,17 @@
+[
+{"data":{"title":"HiddenPort"},"attr":{"id":"73024","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"PortDeviceName"},"attr":{"id":"73026","ColType":"Data","ColValue":"&lt;\"iPhone (nastya)\"&gt;"}},
+{"data":{"title":"BTAuthenticationRequired"},"attr":{"id":"73028","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"BTPSM"},"attr":{"id":"73030","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"BTSerialConnectionType"},"attr":{"id":"73032","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BTName"},"attr":{"id":"73034","ColType":"String","ColValue":"outgoing port - iPhonenastya-WirelessiAP"}},
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"73036","ColType":"String","ColValue":"iPhonenastya-WirelessiAP"}},
+{"data":{"title":"PortDeviceService"},"attr":{"id":"73038","ColType":"String","ColValue":"Wireless iAP"}},
+{"data":{"title":"BTRFCOMMChannel"},"attr":{"id":"73040","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BTTTYName"},"attr":{"id":"73042","ColType":"String","ColValue":"iPhonenastya-WirelessiAP"}},
+{"data":{"title":"BTBSDTTYType"},"attr":{"id":"73044","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BTAddress"},"attr":{"id":"73046","ColType":"Data","ColValue":"&lt;3010e415ba0d&gt;"}},
+{"data":{"title":"P49SerialPort"},"attr":{"id":"73048","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BTEanbledState"},"attr":{"id":"73050","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BTEncryptionType"},"attr":{"id":"73052","ColType":"Boolean","ColValue":"Yes"}}
+]

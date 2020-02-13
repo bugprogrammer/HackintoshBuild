@@ -1,0 +1,4 @@
+[
+{"data":{"title":"IOUnit"},"attr":{"id":"4792","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"4794","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"4796","ColType":"String","ColValue":"SATA"}},{"data":{"title":"AHCI Port Number"},"attr":{"id":"4798","ColType":"Number","ColValue":"0"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"4800","ColType":"String","ColValue":"Internal"}},{"data":{"title":"Port Speed"},"attr":{"id":"4802","ColType":"String","ColValue":"1.5 Gigabit"}},{"data":{"title":"ATAPI"},"attr":{"id":"4804","ColType":"Boolean","ColValue":"Yes"}}]}
+]

@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"13708","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"13710","ColType":"Number","ColValue":"1"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"13712","ColType":"Number","ColValue":"1"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"13714","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"13716","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"13718","ColType":"Number","ColValue":"65536"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"13720","ColType":"String","ColValue":"IOUSBHostDevice"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"13722","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"idVendor"},"attr":{"id":"13724","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"13726","ColType":"Number","ColValue":"100000"}},
+{"data":{"title":"bcdDevice"},"attr":{"id":"13728","ColType":"Number","ColValue":"257"}},
+{"data":{"title":"idProduct"},"attr":{"id":"13730","ColType":"Number","ColValue":"34304"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"13732","ColType":"String","ColValue":"com.apple.driver.usb.AppleUSBiBridge"}},
+{"data":{"title":"IOClass"},"attr":{"id":"13734","ColType":"String","ColValue":"AppleUSBiBridge"}}
+]

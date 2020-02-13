@@ -1,0 +1,15 @@
+[
+{"data":{"title":"IOAudioDeviceModelID"},"attr":{"id":"46680","ColType":"String","ColValue":"Audio_IPC"}},
+{"data":{"title":"IOAudioDeviceShortName"},"attr":{"id":"46682","ColType":"String","ColValue":"Audio IPC"}},
+{"data":{"title":"IOAudioDeviceManufacturerName"},"attr":{"id":"46684","ColType":"String","ColValue":"Apple, Inc."}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"46686","ColType":"String","ColValue":"com.apple.driver.AudioIPCDriver"}},
+{"data":{"title":"IOClass"},"attr":{"id":"46688","ColType":"String","ColValue":"com_apple_driver_AudioIPCDevice"}},
+{"data":{"title":"IOAudioDeviceTransportType"},"attr":{"id":"46690","ColType":"Number","ColValue":"1986622068"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"46692","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"46694","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"46696","ColType":"String","ColValue":"com_apple_driver_AudioIPCDevice"}},
+{"data":{"title":"IOAudioDeviceCanBeDefaults"},"attr":{"id":"46698","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioDeviceName"},"attr":{"id":"46700","ColType":"String","ColValue":"Audio IPC"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"46702","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"46704","ColType":"Number","ColValue":"1"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"46706","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"46708","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"46710","ColType":"String","ColValue":"IOResources"}}
+]

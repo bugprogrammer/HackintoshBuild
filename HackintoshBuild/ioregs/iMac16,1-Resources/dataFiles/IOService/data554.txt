@@ -1,0 +1,15 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"72225","ColType":"Number","ColValue":"617"}},
+{"data":{"title":"Transport"},"attr":{"id":"72227","ColType":"String","ColValue":"Bluetooth"}},
+{"data":{"title":"LocationID"},"attr":{"id":"72229","ColType":"Number","ColValue":"853371726"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"72231","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"72233","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"VendorID"},"attr":{"id":"72235","ColType":"Number","ColValue":"76"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"72237","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"72239","ColType":"Number","ColValue":"11250"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"72241","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"72242","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"72244","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"72246","ColType":"Number","ColValue":"3"}}]}]},
+{"data":{"title":"SerialNumber"},"attr":{"id":"72248","ColType":"String","ColValue":"ac-bc-32-dd-6b-4e"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"72250","ColType":"Number","ColValue":"65280"}},
+{"data":{"title":"Product"},"attr":{"id":"72252","ColType":"String","ColValue":"Magic Mouse 2"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"72254","ColType":"Number","ColValue":"0"}}
+]

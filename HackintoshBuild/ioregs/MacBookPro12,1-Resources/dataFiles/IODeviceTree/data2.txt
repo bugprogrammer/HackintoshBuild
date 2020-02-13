@@ -1,0 +1,21 @@
+[
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"2278","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"system-type"},"attr":{"id":"2280","ColType":"Data","ColValue":"&lt;02&gt;"}},
+{"data":{"title":"IOPlatformSystemSleepPolicy"},"attr":{"id":"2282","ColType":"Data","ColValue":"&lt;534c505402001300841e120004000000001400000004000006000000000000000f250000000000000000400000004000000010000000100007000000000000000f25000000000000841e120004000000001800000008000005000000000000000f25000000000000841e120004000000081000000800000005000000000000000f250000000000002000000020000000000000000000000005000000000000000f2500000000000008000000080000000000000000000000060000000000000000010000010000000000040000000400000000000000000005000000000000000f250000000000000000010000000100000000000000000006000000000000000001000000000000c416000000000000080000000800000005000000000000000f25000000000000c416100000001000204000002040000007000000080000000f3d000000000000c416000000000000200000002000000005000000000000000f25000000000000d416000010000000000000000000000005000000000000000f25000000000000c41e120044000000061000000600000007000000020000000f3d000000000000841e120004000000001000000000000007000000020000000f3d000000000000c41600000000000000c0000000c0000007000000080000000f3d000000000000c416000000000000088000000880000005000000000000000f25000000000000c416000000000000000000000000000007000000010000000f3d0000000000004000000040000000060000000600000007000000000000000f350000000000000000000000000000000000000000000007000000000000000f35000000000000&gt;"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"2284","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"2285","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"product-name"},"attr":{"id":"2287","ColType":"Data","ColValue":"&lt;\"MacBookPro12,1\"&gt;"}},
+{"data":{"title":"IOPlatformUUID"},"attr":{"id":"2289","ColType":"String","ColValue":"AF25D9F5-D0FB-5303-803A-4636967E934E"}},
+{"data":{"title":"board-id"},"attr":{"id":"2291","ColType":"Data","ColValue":"&lt;\"Mac-E43C1C25D4880AD6\"&gt;"}},
+{"data":{"title":"IOPlatformSerialNumber"},"attr":{"id":"2293","ColType":"String","ColValue":"C02RQSMCFVH3"}},
+{"data":{"title":"version"},"attr":{"id":"2295","ColType":"Data","ColValue":"&lt;\"1.0\"&gt;"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"2297","ColType":"String","ColValue":"SMCPolledInterface is not serializable"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"2299","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"2300","ColType":"Data","ColValue":"&lt;0900000005000000&gt;"}}]},
+{"data":{"title":"compatible"},"attr":{"id":"2302","ColType":"Data","ColValue":"&lt;\"MacBookPro12,1\"&gt;"}},
+{"data":{"title":"model"},"attr":{"id":"2304","ColType":"Data","ColValue":"&lt;\"MacBookPro12,1\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"2306","ColType":"Data","ColValue":"&lt;\"/\"&gt;"}},
+{"data":{"title":"clock-frequency"},"attr":{"id":"2308","ColType":"Data","ColValue":"&lt;00e1f505&gt;"}},
+{"data":{"title":"target-type"},"attr":{"id":"2310","ColType":"Data","ColValue":"&lt;\"Mac\"&gt;"}},
+{"data":{"title":"serial-number"},"attr":{"id":"2312","ColType":"Data","ColValue":"&lt;465648330000000000000000004330325251534d4346564833000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"manufacturer"},"attr":{"id":"2314","ColType":"Data","ColValue":"&lt;\"Apple Inc.\"&gt;"}},
+{"data":{"title":"platform-feature"},"attr":{"id":"2316","ColType":"Data","ColValue":"&lt;0200000000000000&gt;"}}
+]

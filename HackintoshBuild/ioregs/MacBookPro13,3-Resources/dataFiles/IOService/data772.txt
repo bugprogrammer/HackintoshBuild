@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"263949","ColType":"String","ColValue":"Dont_Steal_Mac_OS_X"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"263951","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"263953","ColType":"String","ColValue":"com.apple.Dont_Steal_Mac_OS_X"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"263955","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"263957","ColType":"String","ColValue":"Dont_Steal_Mac_OS_X"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"263959","ColType":"String","ColValue":"IOResources"}}
+]

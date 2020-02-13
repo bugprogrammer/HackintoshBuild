@@ -1,0 +1,17 @@
+[
+{"data":{"title":"AAPL,gray-value"},"attr":{"id":"8527","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"device_type"},"attr":{"id":"8529","ColType":"String","ColValue":"display"}},
+{"data":{"title":"AAPL,gray-page"},"attr":{"id":"8531","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"IOFBDependentID"},"attr":{"id":"8533","ColType":"Number","ColValue":"4294967781"}},
+{"data":{"title":"display-connect-flags"},"attr":{"id":"8535","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"port-number"},"attr":{"id":"8537","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"IOFBDependentIndex"},"attr":{"id":"8539","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"ATY,ControlFlags"},"attr":{"id":"8541","ColType":"Number","ColValue":"256"}},
+{"data":{"title":"av-signal-type"},"attr":{"id":"8543","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"8545","ColType":"Data","ColValue":"&lt;\"ATY,Florin\"&gt;"}},
+{"data":{"title":"display-type"},"attr":{"id":"8547","ColType":"String","ColValue":"NONE"}},
+{"data":{"title":"name"},"attr":{"id":"8549","ColType":"String","ColValue":"ATY,Florin"}},
+{"data":{"title":"connector-type"},"attr":{"id":"8551","ColType":"Number","ColValue":"1024"}},
+{"data":{"title":"ATY,ActiveFlags"},"attr":{"id":"8553","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"audio-codec-info"},"attr":{"id":"8555","ColType":"Data","ColValue":"&lt;00010d00&gt;"}}
+]

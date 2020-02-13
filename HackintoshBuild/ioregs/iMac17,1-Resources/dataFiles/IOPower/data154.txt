@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"12586","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"12588","ColType":"Number","ColValue":"0"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"12590","ColType":"Number","ColValue":"2"}},{"data":{"title":"DesiredPowerState"},"attr":{"id":"12592","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"12594","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"12596","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"12598","ColType":"String","ColValue":"IOThunderboltPort"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"12600","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"DP State"},"attr":{"id":"12602","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"12604","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"12606","ColType":"String","ColValue":"com.apple.driver.AppleThunderboltDPOutAdapter"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"12608","ColType":"String","ColValue":"AppleThunderboltDPOutAdapterUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"12610","ColType":"String","ColValue":"AppleThunderboltDPOutAdapter"}},
+{"data":{"title":"Adapter Type"},"attr":{"id":"12612","ColType":"Number","ColValue":"917762"}}
+]

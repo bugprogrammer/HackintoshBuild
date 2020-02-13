@@ -1,0 +1,6 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3746","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"3748","ColType":"Number","ColValue":"87"}},
+{"data":{"title":"compatible"},"attr":{"id":"3750","ColType":"Data","ColValue":"&lt;\"diagsvault\"&gt;"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3752","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"3754","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"address"},"attr":{"id":"3756","ColType":"Number","ColValue":"87"}},{"data":{"title":"acpi-path"},"attr":{"id":"3758","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SBUS@1f0003/BUS0@0/DVL0@57"}}]}
+]

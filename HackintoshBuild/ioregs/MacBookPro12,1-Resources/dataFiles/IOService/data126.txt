@@ -1,0 +1,18 @@
+[
+{"data":{"title":"device-id"},"attr":{"id":"3918","ColType":"Data","ColValue":"&lt;04160000&gt;"}},
+{"data":{"title":"vendor-id"},"attr":{"id":"3920","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"IOName"},"attr":{"id":"3922","ColType":"String","ColValue":"pci8086,1604"}},
+{"data":{"title":"subsystem-vendor-id"},"attr":{"id":"3924","ColType":"Data","ColValue":"&lt;6b100000&gt;"}},
+{"data":{"title":"pcidebug"},"attr":{"id":"3926","ColType":"String","ColValue":"0:0:0"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"3928","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/MCHC@0"}},
+{"data":{"title":"revision-id"},"attr":{"id":"3930","ColType":"Data","ColValue":"&lt;09000000&gt;"}},
+{"data":{"title":"reg"},"attr":{"id":"3932","ColType":"Data","ColValue":"&lt;0000000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"built-in"},"attr":{"id":"3934","ColType":"Data","ColValue":"&lt;00&gt;"}},
+{"data":{"title":"IOPCIResourced"},"attr":{"id":"3936","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"class-code"},"attr":{"id":"3938","ColType":"Data","ColValue":"&lt;00000600&gt;"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"3940","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"subsystem-id"},"attr":{"id":"3942","ColType":"Data","ColValue":"&lt;3f010000&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"3944","ColType":"Data","ColValue":"&lt;\"pci106b,13f\",\"pci8086,1604\",\"pciclass,060000\",\"MCHC\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"3946","ColType":"Data","ColValue":"&lt;\"pci8086,1604\"&gt;"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"3948","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"3950","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"3952","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"3954","ColType":"Number","ColValue":"3"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"3956","ColType":"Number","ColValue":"258"}}]}
+]

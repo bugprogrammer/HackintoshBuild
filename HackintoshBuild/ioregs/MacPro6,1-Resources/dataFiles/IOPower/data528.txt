@@ -1,0 +1,12 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"23351","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"23353","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"23355","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"23357","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"23359","ColType":"String","ColValue":"IOPlatformExpertDevice"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"23361","ColType":"String","ColValue":"AppleIntelMCEReporting"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"23363","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"23364","ColType":"Data","ColValue":"&lt;00000000&gt;"}}]},
+{"data":{"title":"InterruptControllerName"},"attr":{"id":"23366","ColType":"String","ColValue":"AppleIntelMCE_InterruptController"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"23368","ColType":"Number","ColValue":"4000"}},
+{"data":{"title":"IOPropertyMatch"},"attr":{"id":"23370","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"board-id"},"attr":{"id":"23372","ColType":"String","ColValue":"Mac-F60DEB81FF30ACF6"}}]},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"23374","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"23375","ColType":"String","ColValue":"AppleIntelMCE_InterruptController"}}]},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"23377","ColType":"String","ColValue":"com.apple.driver.AppleIntelMCEReporter"}},
+{"data":{"title":"IOClass"},"attr":{"id":"23379","ColType":"String","ColValue":"AppleIntelMCEReporting"}}
+]

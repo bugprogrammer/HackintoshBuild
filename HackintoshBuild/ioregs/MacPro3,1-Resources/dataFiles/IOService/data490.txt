@@ -1,0 +1,19 @@
+[
+{"data":{"title":"NCQ"},"attr":{"id":"31488","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"31490","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"Physical Block Size"},"attr":{"id":"31492","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"31494","ColType":"String","ColValue":"Internal"}},
+{"data":{"title":"Revision"},"attr":{"id":"31496","ColType":"String","ColValue":"80.00A80"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"31498","ColType":"String","ColValue":"com.apple.iokit.IOAHCIBlockStorage"}},
+{"data":{"title":"IOClass"},"attr":{"id":"31500","ColType":"String","ColValue":"AppleAHCIDiskDriver"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"31502","ColType":"String","ColValue":"not serializable"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"31504","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"SATA Features"},"attr":{"id":"31506","ColType":"Number","ColValue":"14"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"31508","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"Serial Number"},"attr":{"id":"31510","ColType":"String","ColValue":"     WD-WCAVY3642202"}},
+{"data":{"title":"Model"},"attr":{"id":"31512","ColType":"String","ColValue":"WDC WD20EARS-00S8B1                     "}},
+{"data":{"title":"Logical Block Size"},"attr":{"id":"31514","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"31516","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"31518","ColType":"String","ColValue":"IOAHCIDevice"}},
+{"data":{"title":"Queue Depth"},"attr":{"id":"31520","ColType":"Number","ColValue":"32"}}
+]

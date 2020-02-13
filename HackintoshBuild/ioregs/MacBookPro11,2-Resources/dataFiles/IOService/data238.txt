@@ -1,0 +1,20 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"23777","ColType":"Number","ColValue":"611"}},
+{"data":{"title":"Transport"},"attr":{"id":"23779","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"23781","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"23783","ColType":"Number","ColValue":"549"}},
+{"data":{"title":"VendorID"},"attr":{"id":"23785","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"23787","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"HIDKind"},"attr":{"id":"23789","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"HIDDeviceEventID"},"attr":{"id":"23791","ColType":"Number","ColValue":"58847136"}},
+{"data":{"title":"HIDSubinterfaceID"},"attr":{"id":"23793","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"HIDKeyMapping"},"attr":{"id":"23795","ColType":"Data","ColValue":"&lt;00000000001800000101020203030404050506060707080809090a0a0b0b0c0c0d0d0e0e0f0f10101111121213131414151516161717&gt;"}},
+{"data":{"title":"HIDResetKeyboard"},"attr":{"id":"23797","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"23799","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"23800","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"23802","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"23804","ColType":"Number","ColValue":"6"}}]},{"data":{"title":"1"},"attr":{"id":"23805","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"23807","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"23809","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"HIDInterfaceID"},"attr":{"id":"23811","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"23813","ColType":"String","ColValue":"Apple Inc."}},
+{"data":{"title":"HIDVirtualDevice"},"attr":{"id":"23815","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Product"},"attr":{"id":"23817","ColType":"String","ColValue":"Apple Internal Keyboard / Trackpad"}},
+{"data":{"title":"LocationID"},"attr":{"id":"23819","ColType":"Number","ColValue":"348127232"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"23821","ColType":"Number","ColValue":"13"}}
+]

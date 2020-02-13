@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOProbeScore"},"attr":{"id":"40755","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"40757","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"40759","ColType":"String","ColValue":"com.apple.driver.AppleSMBusPCI"}},
+{"data":{"title":"IOPCIClassMatch"},"attr":{"id":"40761","ColType":"String","ColValue":"0x0C050000"}},
+{"data":{"title":"IOClass"},"attr":{"id":"40763","ColType":"String","ColValue":"AppleSMBusPCI"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"40765","ColType":"String","ColValue":"IOPCIDevice"}}
+]

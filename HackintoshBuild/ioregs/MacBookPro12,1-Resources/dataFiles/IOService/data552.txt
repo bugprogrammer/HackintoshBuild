@@ -1,0 +1,12 @@
+[
+{"data":{"title":"TPGS Information"},"attr":{"id":"165051","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"165053","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"165055","ColType":"String","ColValue":"USB"}},{"data":{"title":"SCSI Logical Unit Number"},"attr":{"id":"165057","ColType":"Number","ColValue":"0"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"165059","ColType":"String","ColValue":"Internal"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"165061","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"165063","ColType":"Number","ColValue":"30000"}}]},
+{"data":{"title":"SCSI Logical Unit Number"},"attr":{"id":"165065","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Product Revision Level"},"attr":{"id":"165067","ColType":"String","ColValue":"3.00"}},
+{"data":{"title":"IOUnitLUN"},"attr":{"id":"165069","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"165071","ColType":"String","ColValue":"SCSITaskUserClientIniter"}},
+{"data":{"title":"Product Identification"},"attr":{"id":"165073","ColType":"String","ColValue":"SD Card Reader"}},
+{"data":{"title":"SCSI Device Characteristics"},"attr":{"id":"165075","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"165077","ColType":"Number","ColValue":"8192"}},{"data":{"title":"IOMaximumByteCountWrite"},"attr":{"id":"165079","ColType":"Number","ColValue":"4194304"}},{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"165081","ColType":"Number","ColValue":"8192"}},{"data":{"title":"IOMaximumByteCountRead"},"attr":{"id":"165083","ColType":"Number","ColValue":"4194304"}}]},
+{"data":{"title":"Vendor Identification"},"attr":{"id":"165085","ColType":"String","ColValue":"APPLE"}},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"165087","ColType":"Number","ColValue":"0"}}
+]

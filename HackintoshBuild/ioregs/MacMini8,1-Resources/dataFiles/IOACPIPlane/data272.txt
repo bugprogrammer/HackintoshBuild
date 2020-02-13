@@ -1,0 +1,8 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"5934","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"_ADR"},"attr":{"id":"5936","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"acpi-wake-type"},"attr":{"id":"5938","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"device-properties"},"attr":{"id":"5940","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"module-instance"},"attr":{"id":"5942","ColType":"String","ColValue":"lanai"}},{"data":{"title":"acpi-path"},"attr":{"id":"5944","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP01@1c0000/ARPT@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"5946","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"5948","ColType":"Number","ColValue":"105"}},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"5950","ColType":"Boolean","ColValue":"Yes"}}
+]

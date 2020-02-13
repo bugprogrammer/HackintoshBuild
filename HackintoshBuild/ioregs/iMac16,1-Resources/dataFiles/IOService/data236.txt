@@ -1,0 +1,16 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"28845","ColType":"Number","ColValue":"33428"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"28847","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"Transport"},"attr":{"id":"28849","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"28851","ColType":"Number","ColValue":"273"}},
+{"data":{"title":"VendorID"},"attr":{"id":"28853","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"28855","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"28857","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BootProtocol"},"attr":{"id":"28859","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"28861","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"28862","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"28864","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"28866","ColType":"Number","ColValue":"2"}}]},{"data":{"title":"1"},"attr":{"id":"28867","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"28869","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"28871","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"28873","ColType":"String","ColValue":"Mouse"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"28875","ColType":"String","ColValue":"Broadcom Corp."}},
+{"data":{"title":"Product"},"attr":{"id":"28877","ColType":"String","ColValue":"Bluetooth USB Host Controller"}},
+{"data":{"title":"LocationID"},"attr":{"id":"28879","ColType":"Number","ColValue":"341835776"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"28881","ColType":"Number","ColValue":"0"}}
+]

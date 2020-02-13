@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"55135","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"55137","ColType":"Number","ColValue":"1"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"55139","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"55141","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"55143","ColType":"String","ColValue":"IOACPIPlatformDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"55145","ColType":"String","ColValue":"smbus"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"55147","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"55149","ColType":"String","ColValue":"smbus"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"55151","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOPropertyMatch"},"attr":{"id":"55153","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"bus-architecture"},"attr":{"id":"55155","ColType":"String","ColValue":"ICH"}},{"data":{"title":"contains-device"},"attr":{"id":"55157","ColType":"String","ColValue":"true"}}]},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"55159","ColType":"String","ColValue":"com.apple.driver.AppleSMBusController"}},
+{"data":{"title":"IOClass"},"attr":{"id":"55161","ColType":"String","ColValue":"AppleSMBusControllerICH"}}
+]

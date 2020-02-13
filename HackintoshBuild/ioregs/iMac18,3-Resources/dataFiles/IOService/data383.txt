@@ -1,0 +1,4 @@
+[
+{"data":{"title":"IOUserClientCreator"},"attr":{"id":"36426","ColType":"String","ColValue":"pid 99, hidd"}},
+{"data":{"title":"DebugState"},"attr":{"id":"36428","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"EventQueue"},"attr":{"id":"36430","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"head"},"attr":{"id":"36432","ColType":"Number","ColValue":"0"}},{"data":{"title":"tail"},"attr":{"id":"36434","ColType":"Number","ColValue":"0"}}]}]}
+]

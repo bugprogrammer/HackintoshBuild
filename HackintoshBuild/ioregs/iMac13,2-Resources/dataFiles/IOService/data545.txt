@@ -1,0 +1,14 @@
+[
+{"data":{"title":"IOTTYSuffix"},"attr":{"id":"38762","ColType":"String","ColValue":""}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"38764","ColType":"String","ColValue":"com.apple.iokit.IOSerialFamily"}},
+{"data":{"title":"IOClass"},"attr":{"id":"38766","ColType":"String","ColValue":"IOSerialBSDClient"}},
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"38768","ColType":"String","ColValue":"Nokia8800-COM1"}},
+{"data":{"title":"IOSerialBSDClientType"},"attr":{"id":"38770","ColType":"String","ColValue":"IORS232SerialStream"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"38772","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"38774","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"38776","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOTTYDevice"},"attr":{"id":"38778","ColType":"String","ColValue":"Nokia8800-COM1"}},
+{"data":{"title":"IOCalloutDevice"},"attr":{"id":"38780","ColType":"String","ColValue":"/dev/cu.Nokia8800-COM1"}},
+{"data":{"title":"IODialinDevice"},"attr":{"id":"38782","ColType":"String","ColValue":"/dev/tty.Nokia8800-COM1"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"38784","ColType":"String","ColValue":"IOSerialStreamSync"}}
+]

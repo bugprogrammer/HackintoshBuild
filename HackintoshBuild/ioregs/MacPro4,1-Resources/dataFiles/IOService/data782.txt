@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"32960","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"32962","ColType":"String","ColValue":"OMI_EHCI"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"32964","ColType":"Number","ColValue":"10"}},
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"32966","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"32968","ColType":"String","ColValue":"com.apple.kpi.iokit"}},
+{"data":{"title":"IOPCIClassMatch"},"attr":{"id":"32970","ColType":"String","ColValue":"0x0c032000"}},
+{"data":{"title":"IOClass"},"attr":{"id":"32972","ColType":"String","ColValue":"IOService"}},
+{"data":{"title":"IOPersonalityPublisher"},"attr":{"id":"32974","ColType":"String","ColValue":"com.apple.driver.AppleUSBEHCI"}}
+]

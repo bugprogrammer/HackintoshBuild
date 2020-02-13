@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"6737","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"6739","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"6741","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"6743","ColType":"String","ColValue":"IOUSBDevice"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"6745","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"idVendor"},"attr":{"id":"6747","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"6749","ColType":"Number","ColValue":"90000"}},
+{"data":{"title":"idProduct"},"attr":{"id":"6751","ColType":"Number","ColValue":"33286"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"6753","ColType":"String","ColValue":"com.apple.iokit.CSRBluetoothHCIControllerUSBTransport"}},
+{"data":{"title":"IOClass"},"attr":{"id":"6755","ColType":"String","ColValue":"CSRBluetoothHCIControllerUSBTransport"}},
+{"data":{"title":"ActiveBluetoothControllerVendor"},"attr":{"id":"6757","ColType":"String","ColValue":"CSR"}}
+]

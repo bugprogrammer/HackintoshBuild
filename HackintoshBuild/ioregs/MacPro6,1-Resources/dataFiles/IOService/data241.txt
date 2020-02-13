@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"24088","ColType":"String","ColValue":"IOUSBHostDevice"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"24090","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"idVendor"},"attr":{"id":"24092","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"idProductArray"},"attr":{"id":"24094","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"24095","ColType":"Number","ColValue":"4101"}},{"data":{"title":"1"},"attr":{"id":"24096","ColType":"Number","ColValue":"4102"}}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"24098","ColType":"Number","ColValue":"90000"}},
+{"data":{"title":"locationID"},"attr":{"id":"24100","ColType":"Number","ColValue":"1191936"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"24102","ColType":"String","ColValue":"com.apple.driver.usb.AppleUSBHub"}},
+{"data":{"title":"IOClass"},"attr":{"id":"24104","ColType":"String","ColValue":"AppleUSB20KeyboardHub"}}
+]

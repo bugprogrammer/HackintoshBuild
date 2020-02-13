@@ -1,0 +1,13 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"19613","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"19615","ColType":"Number","ColValue":"4"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"19617","ColType":"Number","ColValue":"4"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"19619","ColType":"Number","ColValue":"4"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"19621","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"19623","ColType":"String","ColValue":"IOSCSIPeripheralDeviceNub"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"19625","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOMaximumByteCountWrite"},"attr":{"id":"19627","ColType":"Number","ColValue":"131072"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"19629","ColType":"Number","ColValue":"5000"}},
+{"data":{"title":"IOMaximumByteCountRead"},"attr":{"id":"19631","ColType":"Number","ColValue":"131072"}},
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"19633","ColType":"Number","ColValue":"65535"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"19635","ColType":"String","ColValue":"com.apple.iokit.IOSCSIBlockCommandsDevice"}},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"19637","ColType":"Number","ColValue":"65535"}},
+{"data":{"title":"IOClass"},"attr":{"id":"19639","ColType":"String","ColValue":"IOSCSIPeripheralDeviceType00"}},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"19641","ColType":"Number","ColValue":"0"}}
+]

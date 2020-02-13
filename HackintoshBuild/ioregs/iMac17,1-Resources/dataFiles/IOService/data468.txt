@@ -1,0 +1,19 @@
+[
+{"data":{"title":"HIDKind"},"attr":{"id":"23707","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ProductID"},"attr":{"id":"23709","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"23711","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"23713","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"VendorID"},"attr":{"id":"23715","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"23717","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"HIDDeviceEventID"},"attr":{"id":"23719","ColType":"Number","ColValue":"1009"}},
+{"data":{"title":"HIDSubinterfaceID"},"attr":{"id":"23721","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"alt_sender_id"},"attr":{"id":"23723","ColType":"Number","ColValue":"4294968304"}},
+{"data":{"title":"HIDKeyMapping"},"attr":{"id":"23725","ColType":"Data","ColValue":"&lt;00000000001800000101020203030404050506060707080809090a0a0b0b0c0c0d0d0e0e0f0f10101111121213131414151516161717&gt;"}},
+{"data":{"title":"HIDResetKeyboard"},"attr":{"id":"23727","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"23729","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"23730","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"23732","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"23734","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"HIDInterfaceID"},"attr":{"id":"23736","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"HIDVirtualDevice"},"attr":{"id":"23738","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Product"},"attr":{"id":"23740","ColType":"String","ColValue":"Apple Mikey HID Driver"}},
+{"data":{"title":"LocationID"},"attr":{"id":"23742","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"23744","ColType":"Number","ColValue":"0"}}
+]

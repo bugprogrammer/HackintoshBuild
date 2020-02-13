@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"2782","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"_ADR"},"attr":{"id":"2784","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"acpi-wake-type"},"attr":{"id":"2786","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"device-properties"},"attr":{"id":"2788","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"built-in"},"attr":{"id":"2790","ColType":"Data","ColValue":"&lt;00&gt;"}},{"data":{"title":"device_type"},"attr":{"id":"2792","ColType":"Data","ColValue":"&lt;\"Ethernet\"&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"2794","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PEX2@1c0002/GIGE@0"}},{"data":{"title":"model"},"attr":{"id":"2796","ColType":"Data","ColValue":"&lt;\"Unknown\"&gt;"}},{"data":{"title":"acpi-device"},"attr":{"id":"2798","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"2800","ColType":"Boolean","ColValue":"Yes"}}
+]

@@ -1,0 +1,23 @@
+[
+{"data":{"title":"AppleUSBAlternateServiceRegistryID"},"attr":{"id":"6445","ColType":"Number","ColValue":"4294968740"}},
+{"data":{"title":"IOClassNameOverride"},"attr":{"id":"6447","ColType":"String","ColValue":"IOUSBDevice"}},
+{"data":{"title":"kUSBSerialNumberString"},"attr":{"id":"6449","ColType":"String","ColValue":"4C530011231226108050"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"6451","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"bDeviceClass"},"attr":{"id":"6453","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"USBPortType"},"attr":{"id":"6455","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"kUSBVendorString"},"attr":{"id":"6457","ColType":"String","ColValue":"SanDisk"}},
+{"data":{"title":"USB Product Name"},"attr":{"id":"6459","ColType":"String","ColValue":"Cruzer Fit"}},
+{"data":{"title":"USB Serial Number"},"attr":{"id":"6461","ColType":"String","ColValue":"4C530011231226108050"}},
+{"data":{"title":"USB Vendor Name"},"attr":{"id":"6463","ColType":"String","ColValue":"SanDisk"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"6465","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"9dc7b780-9ec0-11d4-a54f-000a27052861"},"attr":{"id":"6467","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"bcdDevice"},"attr":{"id":"6469","ColType":"Number","ColValue":"294"}},
+{"data":{"title":"bDeviceSubClass"},"attr":{"id":"6471","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"USBSpeed"},"attr":{"id":"6473","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"sessionID"},"attr":{"id":"6475","ColType":"Number","ColValue":"6125448883344"}},
+{"data":{"title":"locationID"},"attr":{"id":"6477","ColType":"Number","ColValue":"341835776"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"6479","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DevicePowerState"},"attr":{"id":"6481","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"6483","ColType":"Number","ColValue":"32768"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"6485","ColType":"Number","ColValue":"0"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"6487","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"6489","ColType":"Number","ColValue":"2"}},{"data":{"title":"PowerOverrideOn"},"attr":{"id":"6491","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"6493","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"kUSBCurrentConfiguration"},"attr":{"id":"6495","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"idProduct"},"attr":{"id":"6497","ColType":"Number","ColValue":"21873"}},
+{"data":{"title":"bDeviceProtocol"},"attr":{"id":"6499","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"idVendor"},"attr":{"id":"6501","ColType":"Number","ColValue":"1921"}}
+]

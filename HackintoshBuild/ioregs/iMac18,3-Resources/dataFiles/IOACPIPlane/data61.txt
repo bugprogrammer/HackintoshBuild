@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"4488","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"4490","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"4492","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"4494","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"_ADR"},"attr":{"id":"4496","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"4498","ColType":"Number","ColValue":"109"}},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"4500","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"4502","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"_STA"},"attr":{"id":"4504","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"device-properties"},"attr":{"id":"4506","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"4508","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"UsbCompanionControllerPresent"},"attr":{"id":"4510","ColType":"Number","ColValue":"1"}},{"data":{"title":"USBBusNumber"},"attr":{"id":"4512","ColType":"Number","ColValue":"0"}},{"data":{"title":"acpi-path"},"attr":{"id":"4514","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP05@1c0004/UPSB@0/DSB2@20000/XHC2@0"}},{"data":{"title":"AAPL,xhci-clock-id"},"attr":{"id":"4516","ColType":"Number","ColValue":"1"}}]}
+]

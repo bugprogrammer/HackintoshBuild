@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOProbeScore"},"attr":{"id":"62315","ColType":"Number","ColValue":"31000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"62317","ColType":"String","ColValue":"IOMediaBSDClient"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"62319","ColType":"String","ColValue":"com.apple.filesystems.apfs"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"62321","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"IOClass"},"attr":{"id":"62323","ColType":"String","ColValue":"AppleAPFSVolumeBSDClient"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"62325","ColType":"String","ColValue":"AppleAPFSVolume"}}
+]

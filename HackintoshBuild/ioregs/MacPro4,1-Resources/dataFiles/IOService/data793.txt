@@ -1,0 +1,15 @@
+[
+{"data":{"title":"idProduct"},"attr":{"id":"33352","ColType":"Number","ColValue":"279"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"33354","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"33356","ColType":"String","ColValue":"com.ZTE.driver.ZTEUSBCDCACMData"}},
+{"data":{"title":"IOClass"},"attr":{"id":"33358","ColType":"String","ColValue":"ZTEUSBCDCACMData"}},
+{"data":{"title":"OutputBuffers"},"attr":{"id":"33360","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"InputBuffers"},"attr":{"id":"33362","ColType":"Number","ColValue":"16"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"33364","ColType":"Number","ColValue":"90000"}},
+{"data":{"title":"IOProviderMergeProperties"},"attr":{"id":"33366","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"ResetOnClose"},"attr":{"id":"33368","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"SuppressWarning"},"attr":{"id":"33370","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"EnumerateOnWake"},"attr":{"id":"33372","ColType":"Boolean","ColValue":"Yes"}}]},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"33374","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"33376","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"ZPortNameValue"},"attr":{"id":"33378","ColType":"String","ColValue":"diag.0"}},
+{"data":{"title":"idVendor"},"attr":{"id":"33380","ColType":"Number","ColValue":"6610"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"33382","ColType":"String","ColValue":"IOUSBInterface"}}
+]

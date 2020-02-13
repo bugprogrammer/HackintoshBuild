@@ -1,0 +1,17 @@
+[
+{"data":{"title":"HiddenPort"},"attr":{"id":"130999","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"PortDeviceName"},"attr":{"id":"131001","ColType":"Data","ColValue":"&lt;416972506f64732028d0a1d0b0d188d0b029&gt;"}},
+{"data":{"title":"BTAuthenticationRequired"},"attr":{"id":"131003","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"BTPSM"},"attr":{"id":"131005","ColType":"Number","ColValue":"3"}},
+{"data":{"title":"BTSerialConnectionType"},"attr":{"id":"131007","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BTName"},"attr":{"id":"131009","ColType":"String","ColValue":"outgoing port - AirPods-WirelessiAP-4"}},
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"131011","ColType":"String","ColValue":"AirPods-WirelessiAP-4"}},
+{"data":{"title":"PortDeviceService"},"attr":{"id":"131013","ColType":"String","ColValue":"Wireless iAP"}},
+{"data":{"title":"BTRFCOMMChannel"},"attr":{"id":"131015","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BTTTYName"},"attr":{"id":"131017","ColType":"String","ColValue":"AirPods-WirelessiAP-4"}},
+{"data":{"title":"BTBSDTTYType"},"attr":{"id":"131019","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BTAddress"},"attr":{"id":"131021","ColType":"Data","ColValue":"&lt;7c04d08b03bc&gt;"}},
+{"data":{"title":"P49SerialPort"},"attr":{"id":"131023","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BTEanbledState"},"attr":{"id":"131025","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BTEncryptionType"},"attr":{"id":"131027","ColType":"Boolean","ColValue":"Yes"}}
+]

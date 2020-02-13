@@ -1,0 +1,8 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3478","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"3480","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3481","ColType":"Data","ColValue":"&lt;0600000000000000&gt;"}}]},
+{"data":{"title":"compatible"},"attr":{"id":"3483","ColType":"Data","ColValue":"&lt;\"smc-napa\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"3485","ColType":"Data","ColValue":"&lt;\"APP0001\"&gt;"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"3487","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3488","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"IODeviceMemory"},"attr":{"id":"3490","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3491","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3492","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"3494","ColType":"Number","ColValue":"768"}},{"data":{"title":"length"},"attr":{"id":"3496","ColType":"Number","ColValue":"32"}}]}]}]}
+]

@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"64785","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"64787","ColType":"String","ColValue":"SEPM"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"64789","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"64791","ColType":"String","ColValue":"SEPM"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"64793","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"64795","ColType":"String","ColValue":"com.apple.driver.AppleSEPManager"}},
+{"data":{"title":"IOClass"},"attr":{"id":"64797","ColType":"String","ColValue":"AppleSEPIntelIOP"}}
+]

@@ -11,14 +11,16 @@ import Cocoa
 class ViewControllerEFI: NSViewController {
 
     @IBOutlet var efiLocation: NSPathControl!
+    @IBOutlet weak var logsLocation: NSPathControl!
     @IBOutlet weak var efiTableView: NSTableView!
-    @IBOutlet var progressBar: NSProgressIndicator!    
+    @IBOutlet var progressBar: NSProgressIndicator!
     @IBOutlet var efiOutPut: NSTextView!
     @IBOutlet var efiStartButton: NSButton!
     @IBOutlet var efiStopButton: NSButton!
     @IBOutlet weak var proxyTextField: NSTextField!
     
     let taskQueue = DispatchQueue.global(qos: .background)
+    let alert = NSAlert()
     
     let efiList: [String] = [
         "ASRock-Z390-itx+9900K+Vega56",
@@ -87,10 +89,16 @@ class ViewControllerEFI: NSViewController {
             arguments.append(efiURL.path)
             arguments.append(itemsSting)
             arguments.append(proxyTextField.stringValue)
-            runBuildScripts(arguments)
+            arguments.append(logsLocation.url?.path ?? "")
+            if itemsSting != "" {
+                runBuildScripts(arguments)
+            }
+            else {
+                alert.messageText = "未选择任何条目"
+                alert.runModal()
+            }
             MyLog(arguments)
         } else {
-            let alert = NSAlert()
             alert.messageText = "请先选择存储位置！"
             alert.runModal()
         }
@@ -179,3 +187,4 @@ extension ViewControllerEFI: NSTextFieldDelegate {
     }
     
 }
+

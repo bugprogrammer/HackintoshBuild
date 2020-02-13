@@ -1,0 +1,11 @@
+[
+{"data":{"title":"slot-names"},"attr":{"id":"2020","ColType":"Data","ColValue":"&lt;\"   \",\"BANK 0/DIMM0\",\"BANK 1/DIMM0\"&gt;"}},
+{"data":{"title":"dimm-types"},"attr":{"id":"2022","ColType":"Data","ColValue":"&lt;\"DDR3\",\"DDR3\"&gt;"}},
+{"data":{"title":"dimm-speeds"},"attr":{"id":"2024","ColType":"Data","ColValue":"&lt;\"1600 MHz\",\"1600 MHz\"&gt;"}},
+{"data":{"title":"dimm-serial-number"},"attr":{"id":"2026","ColType":"Data","ColValue":"&lt;\"0x00000000\",\"0x00000000\"&gt;"}},
+{"data":{"title":"dimm-part-number"},"attr":{"id":"2028","ColType":"Data","ColValue":"&lt;\"0x484D5434314753364D465238432D50422020\",\"0x484D5434314753364D465238432D50422020\"&gt;"}},
+{"data":{"title":"ecc-enabled"},"attr":{"id":"2030","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"dimm-info"},"attr":{"id":"2032","ColType":"Data","ColValue":"&lt;92110b0304210209035201080a00fe00697869306911188120083c3c00f08305000000000000000000000000000000000000000000000000000000000f110101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080ad01000000000000bb7d92110b0304210209035201080a00fe00697869306911188120083c3c00f08305000000000000000000000000000000000000000000000000000000000f110101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080ad01000000000000bb7d&gt;"}},
+{"data":{"title":"reg"},"attr":{"id":"2034","ColType":"Data","ColValue":"&lt;02000000000000000200000000000000&gt;"}},
+{"data":{"title":"dimm-manufacturer"},"attr":{"id":"2036","ColType":"Data","ColValue":"&lt;\"0x80AD\",\"0x80AD\"&gt;"}}
+]

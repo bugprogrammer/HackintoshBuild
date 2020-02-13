@@ -1,0 +1,5 @@
+[
+{"data":{"title":"io-device-location"},"attr":{"id":"2554","ColType":"Data","ColValue":"&lt;\"SSD\"&gt;"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"2556","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP06@1c0005/SSD0@0/PRT0@ffff"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"2558","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}
+]

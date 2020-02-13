@@ -1,0 +1,5 @@
+[
+{"data":{"title":"acpi-device"},"attr":{"id":"6591","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"6593","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/XHC1@140000/RHUB@0/HS02@2"}},
+{"data":{"title":"UsbCPortNumber"},"attr":{"id":"6595","ColType":"Number","ColValue":"3"}}
+]

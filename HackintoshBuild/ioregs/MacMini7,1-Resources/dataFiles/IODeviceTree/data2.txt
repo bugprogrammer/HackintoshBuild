@@ -1,0 +1,20 @@
+[
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"1814","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"system-type"},"attr":{"id":"1816","ColType":"Data","ColValue":"&lt;01&gt;"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"1818","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"1819","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"product-name"},"attr":{"id":"1821","ColType":"Data","ColValue":"&lt;\"Macmini7,1\"&gt;"}},
+{"data":{"title":"IOPlatformUUID"},"attr":{"id":"1823","ColType":"String","ColValue":"EE0EE84C-4E07-5444-91CF-ED7B2CA6E224"}},
+{"data":{"title":"board-id"},"attr":{"id":"1825","ColType":"Data","ColValue":"&lt;\"Mac-35C5E08120C7EEAF\"&gt;"}},
+{"data":{"title":"IOPlatformSerialNumber"},"attr":{"id":"1827","ColType":"String","ColValue":"C07NJ0M8G1HV"}},
+{"data":{"title":"version"},"attr":{"id":"1829","ColType":"Data","ColValue":"&lt;\"1.0\"&gt;"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"1831","ColType":"String","ColValue":"SMCPolledInterface is not serializable"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"1833","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"1834","ColType":"Data","ColValue":"&lt;0900000005000000&gt;"}}]},
+{"data":{"title":"model"},"attr":{"id":"1836","ColType":"Data","ColValue":"&lt;\"Macmini7,1\"&gt;"}},
+{"data":{"title":"manufacturer"},"attr":{"id":"1838","ColType":"Data","ColValue":"&lt;\"Apple Inc.\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"1840","ColType":"Data","ColValue":"&lt;\"/\"&gt;"}},
+{"data":{"title":"clock-frequency"},"attr":{"id":"1842","ColType":"Data","ColValue":"&lt;00e1f505&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"1844","ColType":"Data","ColValue":"&lt;\"Macmini7,1\"&gt;"}},
+{"data":{"title":"serial-number"},"attr":{"id":"1846","ColType":"Data","ColValue":"&lt;473148560000000000000000004330374e4a304d3847314856000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"platform-feature"},"attr":{"id":"1848","ColType":"Data","ColValue":"&lt;0300000000000000&gt;"}},
+{"data":{"title":"IOPlatformSystemSleepPolicy"},"attr":{"id":"1850","ColType":"Data","ColValue":"&lt;534c505402001200001a120000000000000500000005000006000000000000000025000000000000200000002000000000000000000000000500000000000000002500000000000000000400000004000000000000000000060000000000000000250000000000000000010000000100000000000000000004000000000000000001000000000000401a12000000000018010000180100000500000002000000002d0000000000004002000000000000180000001800000005000000000000000025000000000000401a12000000000028010000200100000500000002000000002d0000000000004002000000000000280000002000000005000000000000000025000000000000501a12001000000000010000000100000500000002000000002d0000000000005002000010000000000000000000000005000000000000000025000000000000001a120000000000000900000009000006000000000000000025000000000000001a120000000000080100000801000006000000000000000025000000000000001a120000000000400100004001000006000000000000000025000000000000401a120040000000060100000601000003000000020000000029000000000000401a120040000000000100000001000002000000020000000029000000000000400200000000000000000000000000000200000001000000002900000000000040000000400000000600000006000000030000000000000000210000000000000000000000000000000000000000000002000000000000000021000000000000&gt;"}}
+]

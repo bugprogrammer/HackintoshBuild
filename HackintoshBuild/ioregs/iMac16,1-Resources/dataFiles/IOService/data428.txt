@@ -1,0 +1,11 @@
+[
+{"data":{"title":"com.apple.corestorage.pv.uuid"},"attr":{"id":"40525","ColType":"String","ColValue":"C6E727B4-FEFA-4EEC-92BB-EBEA0386F463"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"40527","ColType":"String","ColValue":"IOMedia"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"40529","ColType":"String","ColValue":"IOStorage"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"40531","ColType":"Number","ColValue":"500"}},
+{"data":{"title":"IOPropertyMatch"},"attr":{"id":"40533","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"40534","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Content Hint"},"attr":{"id":"40536","ColType":"String","ColValue":"53746F72-6167-11AA-AA11-00306543ECAC"}}]}]},
+{"data":{"title":"com.apple.corestorage.lvg.uuid"},"attr":{"id":"40538","ColType":"String","ColValue":"18EB25E2-6DD1-4314-8B65-983A53E6A5D2"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"40540","ColType":"String","ColValue":"com.apple.driver.CoreStorage"}},
+{"data":{"title":"com.apple.corestorage.pv.status"},"attr":{"id":"40542","ColType":"String","ColValue":"Online"}},
+{"data":{"title":"IOClass"},"attr":{"id":"40544","ColType":"String","ColValue":"CoreStoragePhysical"}}
+]

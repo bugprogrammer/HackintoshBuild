@@ -1,0 +1,15 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"120323","ColType":"Number","ColValue":"615"}},
+{"data":{"title":"Transport"},"attr":{"id":"120325","ColType":"String","ColValue":"Bluetooth"}},
+{"data":{"title":"LocationID"},"attr":{"id":"120327","ColType":"Number","ColValue":"2025637784"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"120329","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"120331","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"VendorID"},"attr":{"id":"120333","ColType":"Number","ColValue":"76"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"120335","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"120337","ColType":"Number","ColValue":"11250"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"120339","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"120340","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"120342","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"120344","ColType":"Number","ColValue":"11"}}]},{"data":{"title":"1"},"attr":{"id":"120345","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"120347","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"120349","ColType":"Number","ColValue":"20"}}]}]},
+{"data":{"title":"SerialNumber"},"attr":{"id":"120351","ColType":"String","ColValue":"04-69-f8-bc-c7-98"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"120353","ColType":"Number","ColValue":"65280"}},
+{"data":{"title":"Product"},"attr":{"id":"120355","ColType":"String","ColValue":"Magic Keyboard"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"120357","ColType":"Number","ColValue":"0"}}
+]

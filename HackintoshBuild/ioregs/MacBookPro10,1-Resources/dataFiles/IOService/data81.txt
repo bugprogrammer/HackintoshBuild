@@ -1,0 +1,12 @@
+[
+{"data":{"title":"zone"},"attr":{"id":"7402","ColType":"Data","ColValue":"&lt;ff000002&gt;"}},
+{"data":{"title":"polling-period"},"attr":{"id":"7404","ColType":"Data","ColValue":"&lt;0000000100000000&gt;"}},
+{"data":{"title":"sample-period"},"attr":{"id":"7406","ColType":"Data","ColValue":"&lt;0000000100000000&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"7408","ColType":"Data","ColValue":"&lt;\"gpu-sensor\"&gt;"}},
+{"data":{"title":"compatible"},"attr":{"id":"7410","ColType":"Data","ColValue":"&lt;\"gpu-sensor\"&gt;"}},
+{"data":{"title":"device_type"},"attr":{"id":"7412","ColType":"Data","ColValue":"&lt;\"gpu-sensor\"&gt;"}},
+{"data":{"title":"location"},"attr":{"id":"7414","ColType":"String","ColValue":"GPU"}},
+{"data":{"title":"sensor-id"},"attr":{"id":"7416","ColType":"Data","ColValue":"&lt;00000006&gt;"}},
+{"data":{"title":"reg"},"attr":{"id":"7418","ColType":"Data","ColValue":"&lt;00000007&gt;"}},
+{"data":{"title":"version"},"attr":{"id":"7420","ColType":"Data","ColValue":"&lt;00000002&gt;"}}
+]

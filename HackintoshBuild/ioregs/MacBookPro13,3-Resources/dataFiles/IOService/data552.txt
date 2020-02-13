@@ -1,0 +1,14 @@
+[
+{"data":{"title":"VendorID"},"attr":{"id":"185908","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"IOPersonalityPublisher"},"attr":{"id":"185910","ColType":"String","ColValue":"com.apple.driver.AppleTopCaseActuatorHIDDriver"}},
+{"data":{"title":"DefaultActuatorProperties"},"attr":{"id":"185912","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"ActuatorRevision"},"attr":{"id":"185914","ColType":"Number","ColValue":"6"}}]},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"185916","ColType":"String","ColValue":"com.apple.driver.AppleMultitouchDriver"}},
+{"data":{"title":"IOClass"},"attr":{"id":"185918","ColType":"String","ColValue":"AppleActuatorHIDEventDriver"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"185920","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"185921","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsage"},"attr":{"id":"185923","ColType":"Number","ColValue":"13"}},{"data":{"title":"DeviceUsagePage"},"attr":{"id":"185925","ColType":"Number","ColValue":"65280"}}]}]},
+{"data":{"title":"ProductIDArray"},"attr":{"id":"185927","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"185928","ColType":"Number","ColValue":"632"}}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"185930","ColType":"Number","ColValue":"7175"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"185932","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"LocationID"},"attr":{"id":"185934","ColType":"Number","ColValue":"16777216"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"185936","ColType":"String","ColValue":"IOHIDInterface"}},
+{"data":{"title":"Transport"},"attr":{"id":"185938","ColType":"String","ColValue":"SPI"}}
+]

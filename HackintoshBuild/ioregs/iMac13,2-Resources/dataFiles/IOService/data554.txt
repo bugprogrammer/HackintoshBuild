@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"38914","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"38916","ColType":"String","ColValue":"com_parallels_hid_hook"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"38918","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"38920","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"38922","ColType":"String","ColValue":"com.parallels.kext.prl_hid_hook"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"38924","ColType":"String","ColValue":"com_parallels_hid_hook_client"}},
+{"data":{"title":"IOClass"},"attr":{"id":"38926","ColType":"String","ColValue":"com_parallels_hid_hook"}}
+]

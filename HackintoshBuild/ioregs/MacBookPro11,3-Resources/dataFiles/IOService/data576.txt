@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOProbeScore"},"attr":{"id":"68248","ColType":"Number","ColValue":"31000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"68250","ColType":"String","ColValue":"IOMediaBSDClient"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"68252","ColType":"String","ColValue":"com.apple.driver.CoreStorage"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"68254","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"IOClass"},"attr":{"id":"68256","ColType":"String","ColValue":"CoreStorageLogicalBSDClient"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"68258","ColType":"String","ColValue":"CoreStorageLogical"}}
+]

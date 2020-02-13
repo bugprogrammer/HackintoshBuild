@@ -1,0 +1,16 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"27620","ColType":"Number","ColValue":"524"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"27622","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"Transport"},"attr":{"id":"27624","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"27626","ColType":"Number","ColValue":"1072"}},
+{"data":{"title":"VendorID"},"attr":{"id":"27628","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"27630","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"27632","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BootProtocol"},"attr":{"id":"27634","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"27636","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"27637","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"27639","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"27641","ColType":"Number","ColValue":"6"}}]}]},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"27643","ColType":"String","ColValue":""}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"27645","ColType":"String","ColValue":"Mitsumi Electric"}},
+{"data":{"title":"Product"},"attr":{"id":"27647","ColType":"String","ColValue":"Apple Extended USB Keyboard"}},
+{"data":{"title":"LocationID"},"attr":{"id":"27649","ColType":"Number","ColValue":"487784448"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"27651","ColType":"Number","ColValue":"13"}}
+]

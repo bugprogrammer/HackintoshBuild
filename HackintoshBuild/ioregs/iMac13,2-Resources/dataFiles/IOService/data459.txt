@@ -1,0 +1,6 @@
+[
+{"data":{"title":"Base Vector Number"},"attr":{"id":"19468","ColType":"Number","ColValue":"144"}},
+{"data":{"title":"InterruptControllerName"},"attr":{"id":"19470","ColType":"String","ColValue":"IOPCIMessagedInterruptController"}},
+{"data":{"title":"Vector Count"},"attr":{"id":"19472","ColType":"Number","ColValue":"64"}},
+{"data":{"title":"MSIFree"},"attr":{"id":"19474","ColType":"Number","ColValue":"47"}}
+]

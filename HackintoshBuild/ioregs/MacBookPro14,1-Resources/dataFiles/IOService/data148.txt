@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"4310","ColType":"String","ColValue":"IOACPIPlatformDevice"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"4312","ColType":"String","ColValue":"boot-ec"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"4314","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"4316","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4317","ColType":"String","ColValue":"PNP0C09"}},{"data":{"title":"1"},"attr":{"id":"4318","ColType":"String","ColValue":"boot-ec"}}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"4320","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Statistics"},"attr":{"id":"4322","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MissingSCI"},"attr":{"id":"4324","ColType":"Number","ColValue":"0"}},{"data":{"title":"IBFPollTimeout"},"attr":{"id":"4326","ColType":"Number","ColValue":"0"}},{"data":{"title":"SpuriousSCI"},"attr":{"id":"4328","ColType":"Number","ColValue":"536"}},{"data":{"title":"CommandCount"},"attr":{"id":"4330","ColType":"Number","ColValue":"51615"}},{"data":{"title":"MaxLatency"},"attr":{"id":"4332","ColType":"Number","ColValue":"39394803"}},{"data":{"title":"OBFSciTimeout"},"attr":{"id":"4334","ColType":"Number","ColValue":"0"}},{"data":{"title":"SCIActive"},"attr":{"id":"4336","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"OBFPollTimeout"},"attr":{"id":"4338","ColType":"Number","ColValue":"0"}},{"data":{"title":"SpuriousQuery"},"attr":{"id":"4340","ColType":"Number","ColValue":"2"}},{"data":{"title":"CommandRetry"},"attr":{"id":"4342","ColType":"Number","ColValue":"0"}},{"data":{"title":"IBFSciTimeout"},"attr":{"id":"4344","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"4346","ColType":"String","ColValue":"com.apple.driver.AppleACPIEC"}},
+{"data":{"title":"IOClass"},"attr":{"id":"4348","ColType":"String","ColValue":"AppleACPIEC"}}
+]

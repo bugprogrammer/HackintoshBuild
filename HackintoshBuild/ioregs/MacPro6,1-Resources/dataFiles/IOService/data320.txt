@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"50995","ColType":"String","ColValue":"IOUSBHostDevice"}},
+{"data":{"title":"bDeviceClass"},"attr":{"id":"50997","ColType":"Number","ColValue":"9"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"50999","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"locationID"},"attr":{"id":"51001","ColType":"Number","ColValue":"5382144"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"51003","ColType":"Number","ColValue":"50100"}},
+{"data":{"title":"USBSpeed"},"attr":{"id":"51005","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"bDeviceSubClass"},"attr":{"id":"51007","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"51009","ColType":"String","ColValue":"com.apple.driver.usb.AppleUSBHub"}},
+{"data":{"title":"IOClass"},"attr":{"id":"51011","ColType":"String","ColValue":"AppleUSB30Hub"}}
+]

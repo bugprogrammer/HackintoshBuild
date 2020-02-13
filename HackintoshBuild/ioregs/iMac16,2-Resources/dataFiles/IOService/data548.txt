@@ -1,0 +1,19 @@
+[
+{"data":{"title":"Leaf"},"attr":{"id":"22107","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Writable"},"attr":{"id":"22109","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"BSD Minor"},"attr":{"id":"22111","ColType":"Number","ColValue":"29"}},
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"22113","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"22115","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"Preferred Block Size"},"attr":{"id":"22117","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"BSD Major"},"attr":{"id":"22119","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"22121","ColType":"String","ColValue":"disk11"}},
+{"data":{"title":"Size"},"attr":{"id":"22123","ColType":"Number","ColValue":"63963136"}},
+{"data":{"title":"Content Hint"},"attr":{"id":"22125","ColType":"String","ColValue":""}},
+{"data":{"title":"IOMediaIcon"},"attr":{"id":"22127","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"22129","ColType":"String","ColValue":"com.apple.iokit.IOStorageFamily"}},{"data":{"title":"IOBundleResourceFile"},"attr":{"id":"22131","ColType":"String","ColValue":"Removable.icns"}}]},
+{"data":{"title":"Removable"},"attr":{"id":"22133","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Open"},"attr":{"id":"22135","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BSD Unit"},"attr":{"id":"22137","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"Whole"},"attr":{"id":"22139","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Content"},"attr":{"id":"22141","ColType":"String","ColValue":"Apple_partition_scheme"}},
+{"data":{"title":"Ejectable"},"attr":{"id":"22143","ColType":"Boolean","ColValue":"Yes"}}
+]

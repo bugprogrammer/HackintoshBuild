@@ -1,0 +1,6 @@
+[
+{"data":{"title":"Id"},"attr":{"id":"74409","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"LogIdentifier"},"attr":{"id":"74411","ColType":"String","ColValue":"Brcm4360"}},
+{"data":{"title":"IOClass"},"attr":{"id":"74413","ColType":"String","ColValue":"CCDataStream"}},
+{"data":{"title":"Name"},"attr":{"id":"74415","ColType":"String","ColValue":"StateSnapshots"}}
+]

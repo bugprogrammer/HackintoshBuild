@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"57529","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"57531","ColType":"String","ColValue":"IOSurfaceRoot"}},
+{"data":{"title":"SurfaceInfo"},"attr":{"id":"57533","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"User Clients"},"attr":{"id":"57535","ColType":"Array","ColValue":"0_values"},"children":[]},{"data":{"title":"Global Surfaces"},"attr":{"id":"57537","ColType":"Array","ColValue":"0_values"},"children":[]}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"57539","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"57541","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"57543","ColType":"String","ColValue":"com.apple.iokit.IOSurface"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"57545","ColType":"String","ColValue":"IOSurfaceRootUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"57547","ColType":"String","ColValue":"IOSurfaceRoot"}}
+]

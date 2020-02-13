@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"26190","ColType":"String","ColValue":"com.apple.driver.CoreCaptureResponder"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"26192","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"26194","ColType":"String","ColValue":"com.apple.driver.CoreCaptureResponder"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"26196","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"26198","ColType":"String","ColValue":"CoreCaptureResponder"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"26200","ColType":"String","ColValue":"IOResources"}}
+]

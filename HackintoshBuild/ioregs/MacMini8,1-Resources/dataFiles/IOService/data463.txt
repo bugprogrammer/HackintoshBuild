@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"76244","ColType":"String","ColValue":"IOImageLoader"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"76246","ColType":"String","ColValue":"BCMWLANFirmware4377_Hashstore"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"76248","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOPropertyMatch"},"attr":{"id":"76250","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"consumer-id"},"attr":{"id":"76252","ColType":"String","ColValue":"com.apple.driver.AppleBCMWLANCore"}}]},
+{"data":{"title":"consumer-id"},"attr":{"id":"76254","ColType":"String","ColValue":"com.apple.driver.AppleBCMWLANCore"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"76256","ColType":"String","ColValue":"com.apple.driver.BCMWLANFirmware4377.Hashstore"}},
+{"data":{"title":"IOClass"},"attr":{"id":"76258","ColType":"String","ColValue":"BCMWLANFirmware4377_Hashstore"}}
+]

@@ -1,0 +1,8 @@
+[
+{"data":{"title":"kUSBWakePortCurrentLimit"},"attr":{"id":"5953","ColType":"Number","ColValue":"3000"}},
+{"data":{"title":"UsbCPortNumber"},"attr":{"id":"5955","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"UsbPowerSource"},"attr":{"id":"5957","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"kUSBSleepPortCurrentLimit"},"attr":{"id":"5959","ColType":"Number","ColValue":"3000"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"5961","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/XHC1@140000/RHUB@0/HS05@5"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"5963","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}
+]

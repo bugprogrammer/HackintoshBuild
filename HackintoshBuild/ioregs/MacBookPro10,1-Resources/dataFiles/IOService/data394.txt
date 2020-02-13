@@ -1,0 +1,8 @@
+[
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"55641","ColType":"Number","ColValue":"12"}},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"55643","ColType":"String","ColValue":""}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"55645","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"55647","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"55648","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"55650","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"55652","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"Product"},"attr":{"id":"55654","ColType":"String","ColValue":"Apple Mikey HID Driver"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"55656","ColType":"Number","ColValue":"1"}}
+]

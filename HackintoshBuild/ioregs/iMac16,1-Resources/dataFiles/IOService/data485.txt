@@ -1,0 +1,12 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"41921","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"41923","ColType":"String","ColValue":"AppleUSBHostResources"}},
+{"data":{"title":"kUSBSleepPowerSupply"},"attr":{"id":"41925","ColType":"Number","ColValue":"5100"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"41927","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"kUSBSleepPortCurrentLimit"},"attr":{"id":"41929","ColType":"Number","ColValue":"2100"}},
+{"data":{"title":"kUSBWakePowerSupply"},"attr":{"id":"41931","ColType":"Number","ColValue":"5100"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"41933","ColType":"String","ColValue":"IORTC"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"41935","ColType":"String","ColValue":"com.apple.iokit.IOUSBHostFamily"}},
+{"data":{"title":"kUSBWakePortCurrentLimit"},"attr":{"id":"41937","ColType":"Number","ColValue":"2100"}},
+{"data":{"title":"IOClass"},"attr":{"id":"41939","ColType":"String","ColValue":"AppleUSBHostResources"}}
+]

@@ -1,0 +1,13 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"127512","ColType":"String","ColValue":"IOACPIPlatformDevice"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"127514","ColType":"String","ColValue":"AppleBusPowerController"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"127516","ColType":"String","ColValue":"EC"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"127518","ColType":"String","ColValue":"EC"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"127520","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"kUSBSleepPortCurrentLimit"},"attr":{"id":"127522","ColType":"Number","ColValue":"3000"}},
+{"data":{"title":"UsbBusCurrentPoolID"},"attr":{"id":"127524","ColType":"Number","ColValue":"4294967970"}},
+{"data":{"title":"kUSBWakePortCurrentLimit"},"attr":{"id":"127526","ColType":"Number","ColValue":"3000"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"127528","ColType":"String","ColValue":"com.apple.driver.AppleBusPowerController"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"127530","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOClass"},"attr":{"id":"127532","ColType":"String","ColValue":"AppleBusPowerControllerSMC"}}
+]

@@ -1,0 +1,8 @@
+[
+{"data":{"title":"autodiskmount"},"attr":{"id":"19703","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Device Characteristics"},"attr":{"id":"19705","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Vendor Name"},"attr":{"id":"19707","ColType":"String","ColValue":"Apple"}},{"data":{"title":"Product Name"},"attr":{"id":"19709","ColType":"String","ColValue":"Disk Image"}},{"data":{"title":"Product Revision Level"},"attr":{"id":"19711","ColType":"String","ColValue":"10.11v415"}}]},
+{"data":{"title":"throttle-unit"},"attr":{"id":"19713","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"19715","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"19717","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"19719","ColType":"String","ColValue":"File"}},{"data":{"title":"Virtual Interface Location Path"},"attr":{"id":"19721","ColType":"Data","ColValue":"&lt;\"/Users/evdakimov/Downloads/AdobeFlashPlayer_22_a_install.dmg\"&gt;"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"19723","ColType":"String","ColValue":"Virtual Interface"}}]},
+{"data":{"title":"device-type"},"attr":{"id":"19725","ColType":"String","ColValue":"Generic"}}
+]

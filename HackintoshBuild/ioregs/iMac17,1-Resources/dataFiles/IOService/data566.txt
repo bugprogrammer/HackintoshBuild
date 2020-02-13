@@ -1,0 +1,15 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"31269","ColType":"Number","ColValue":"613"}},
+{"data":{"title":"Transport"},"attr":{"id":"31271","ColType":"String","ColValue":"Bluetooth"}},
+{"data":{"title":"LocationID"},"attr":{"id":"31273","ColType":"Number","ColValue":"1272772352"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"31275","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"31277","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"VendorID"},"attr":{"id":"31279","ColType":"Number","ColValue":"76"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"31281","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"31283","ColType":"Number","ColValue":"11250"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"31285","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"31286","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"31288","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"31290","ColType":"Number","ColValue":"11"}}]},{"data":{"title":"1"},"attr":{"id":"31291","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"31293","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"31295","ColType":"Number","ColValue":"20"}}]}]},
+{"data":{"title":"SerialNumber"},"attr":{"id":"31297","ColType":"String","ColValue":"d0-03-4b-dc-f7-00"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"31299","ColType":"Number","ColValue":"65280"}},
+{"data":{"title":"Product"},"attr":{"id":"31301","ColType":"String","ColValue":"Magic Trackpad 2"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"31303","ColType":"Number","ColValue":"0"}}
+]

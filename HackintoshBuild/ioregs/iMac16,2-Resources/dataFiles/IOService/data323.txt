@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOAudioControlChannelName"},"attr":{"id":"11842","ColType":"String","ColValue":"All Channels"}},
+{"data":{"title":"IOAudioSelectorControlAvailableSelections"},"attr":{"id":"11844","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"11845","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOAudioSelectorControlSelectionValue"},"attr":{"id":"11847","ColType":"Number","ColValue":"1635087471"}},{"data":{"title":"IOAudioSelectorControlSelectionDescriptionKey"},"attr":{"id":"11849","ColType":"String","ColValue":"HwSrcAutomatic"}}]},{"data":{"title":"1"},"attr":{"id":"11850","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOAudioSelectorControlSelectionValue"},"attr":{"id":"11852","ColType":"Number","ColValue":"1936876389"}},{"data":{"title":"IOAudioSelectorControlSelectionDescriptionKey"},"attr":{"id":"11854","ColType":"String","ColValue":"HwSrcEnable"}}]},{"data":{"title":"2"},"attr":{"id":"11855","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOAudioSelectorControlSelectionValue"},"attr":{"id":"11857","ColType":"Number","ColValue":"1936876388"}},{"data":{"title":"IOAudioSelectorControlSelectionDescriptionKey"},"attr":{"id":"11859","ColType":"String","ColValue":"HwSrcDisable"}}]}]},
+{"data":{"title":"IOAudioControlID"},"attr":{"id":"11861","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioControlValue"},"attr":{"id":"11863","ColType":"Number","ColValue":"1936876388"}},
+{"data":{"title":"IOAudioControlChannelNumber"},"attr":{"id":"11865","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioControlChannelID"},"attr":{"id":"11867","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOAudioControlUsage"},"attr":{"id":"11869","ColType":"Number","ColValue":"1768845428"}},
+{"data":{"title":"IOAudioControlType"},"attr":{"id":"11871","ColType":"Number","ColValue":"1936483188"}},
+{"data":{"title":"IOAudioControlSubType"},"attr":{"id":"11873","ColType":"Number","ColValue":"1752396387"}}
+]

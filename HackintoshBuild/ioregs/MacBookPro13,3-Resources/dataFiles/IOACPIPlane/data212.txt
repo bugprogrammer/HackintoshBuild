@@ -1,0 +1,5 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"6404","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"6406","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"device-properties"},"attr":{"id":"6408","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"kUSBWakePortCurrentLimit"},"attr":{"id":"6410","ColType":"Number","ColValue":"3000"}},{"data":{"title":"kUSBSleepPortCurrentLimit"},"attr":{"id":"6412","ColType":"Number","ColValue":"3000"}},{"data":{"title":"acpi-path"},"attr":{"id":"6414","ColType":"String","ColValue":"IOACPIPlane:/_SB/USBX@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"6416","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

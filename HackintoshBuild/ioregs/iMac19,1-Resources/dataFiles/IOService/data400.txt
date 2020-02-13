@@ -1,0 +1,5 @@
+[
+{"data":{"title":"IO80211VirtualInterfaceRole"},"attr":{"id":"29062","ColType":"String","ColValue":"SoftAP"}},
+{"data":{"title":"IOMACAddress"},"attr":{"id":"29064","ColType":"Data","ColValue":"&lt;3af9d394a8c401000000&gt;"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"29066","ColType":"String","ColValue":"ap1"}}
+]

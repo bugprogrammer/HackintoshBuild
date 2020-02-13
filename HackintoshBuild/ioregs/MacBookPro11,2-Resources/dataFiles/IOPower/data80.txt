@@ -1,0 +1,15 @@
+[
+{"data":{"title":"idProduct"},"attr":{"id":"4445","ColType":"Number","ColValue":"33417"}},
+{"data":{"title":"ActiveBluetoothControllerVendor"},"attr":{"id":"4447","ColType":"String","ColValue":"Broadcom"}},
+{"data":{"title":"LMPLoggingEnabled"},"attr":{"id":"4449","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"LMPLoggingAvailable"},"attr":{"id":"4451","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"4453","ColType":"String","ColValue":"com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport"}},
+{"data":{"title":"IOClass"},"attr":{"id":"4455","ColType":"String","ColValue":"BroadcomBluetoothHostControllerUSBTransport"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"4457","ColType":"Number","ColValue":"90000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"4459","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"idVendor"},"attr":{"id":"4461","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"locationID"},"attr":{"id":"4463","ColType":"Number","ColValue":"344129536"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"4465","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"4467","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"4469","ColType":"Number","ColValue":"0"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"4471","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"4473","ColType":"String","ColValue":"IOUSBDevice"}},
+{"data":{"title":"Remote-Wake"},"attr":{"id":"4475","ColType":"Boolean","ColValue":"Yes"}}
+]

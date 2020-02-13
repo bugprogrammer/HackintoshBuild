@@ -1,0 +1,6 @@
+[
+{"data":{"title":"Id"},"attr":{"id":"36989","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"LogIdentifier"},"attr":{"id":"36991","ColType":"String","ColValue":"AssociationEventHistory"}},
+{"data":{"title":"IOClass"},"attr":{"id":"36993","ColType":"String","ColValue":"CCDataStream"}},
+{"data":{"title":"Name"},"attr":{"id":"36995","ColType":"String","ColValue":"com.apple.iokit.IO80211Family"}}
+]

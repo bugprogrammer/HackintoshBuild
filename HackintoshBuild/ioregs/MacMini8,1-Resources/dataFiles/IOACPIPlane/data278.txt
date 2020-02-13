@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"6060","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"_ADR"},"attr":{"id":"6062","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"6064","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"6066","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"6068","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"6070","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"device-properties"},"attr":{"id":"6072","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"6074","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"pci-msi-flags"},"attr":{"id":"6076","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"6078","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP17@1b0000/SEPM@2"}}]},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"6080","ColType":"Boolean","ColValue":"Yes"}}
+]

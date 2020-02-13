@@ -1,0 +1,19 @@
+[
+{"data":{"title":"bcdDevice"},"attr":{"id":"22490","ColType":"Number","ColValue":"29232"}},
+{"data":{"title":"idProduct"},"attr":{"id":"22492","ColType":"Number","ColValue":"34065"}},
+{"data":{"title":"locationID"},"attr":{"id":"22494","ColType":"Number","ColValue":"340787200"}},
+{"data":{"title":"iInterface"},"attr":{"id":"22496","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"bAlternateSetting"},"attr":{"id":"22498","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"22500","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"USB Interface Name"},"attr":{"id":"22502","ColType":"String","ColValue":"FaceTime HD Camera (Built-in)"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"22504","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"22506","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClassNameOverride"},"attr":{"id":"22508","ColType":"String","ColValue":"IOUSBInterface"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"22510","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"22512","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"idVendor"},"attr":{"id":"22514","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"22516","ColType":"String","ColValue":"IOUSBInterfaceUserClientV3"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"22518","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"2d9786c6-9ef3-11d4-ad51-000a27052861"},"attr":{"id":"22520","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"bNumEndpoints"},"attr":{"id":"22522","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"22524","ColType":"Number","ColValue":"14"}}
+]

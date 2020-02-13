@@ -1,0 +1,11 @@
+[
+{"data":{"title":"Vendor ID"},"attr":{"id":"5986","ColType":"Number","ColValue":"40"}},
+{"data":{"title":"UUID"},"attr":{"id":"5988","ColType":"String","ColValue":"0C8C470D-B283-8993-F449-C7313A73F47D"}},
+{"data":{"title":"RID"},"attr":{"id":"5990","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Version"},"attr":{"id":"5992","ColType":"Number","ColValue":"419328"}},
+{"data":{"title":"Device ID"},"attr":{"id":"5994","ColType":"Number","ColValue":"826622785"}},
+{"data":{"title":"Route String"},"attr":{"id":"5996","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Revision"},"attr":{"id":"5998","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"Revision ID"},"attr":{"id":"6000","ColType":"Number","ColValue":"48"}},
+{"data":{"title":"Address"},"attr":{"id":"6002","ColType":"Number","ColValue":"0"}}
+]

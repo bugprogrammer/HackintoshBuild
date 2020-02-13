@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3836","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"name"},"attr":{"id":"3838","ColType":"Data","ColValue":"&lt;\"PNP0C0C\"&gt;"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"3840","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3841","ColType":"Data","ColValue":"&lt;0200000000000000&gt;"}}]},
+{"data":{"title":"acpi-wake-type"},"attr":{"id":"3843","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"3845","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3846","ColType":"String","ColValue":"ACPIEventController"}}]}
+]

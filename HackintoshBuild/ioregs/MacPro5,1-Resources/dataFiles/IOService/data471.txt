@@ -1,0 +1,13 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"89440","ColType":"String","ColValue":"IOSCSIProtocolServices"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"89442","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"89444","ColType":"String","ColValue":"USB"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"89446","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"89448","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"89450","ColType":"Number","ColValue":"30000"}}]},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"89452","ColType":"String","ColValue":"SCSITaskUserClientIniter"}},
+{"data":{"title":"TPGS Information"},"attr":{"id":"89454","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"89456","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Product Revision Level"},"attr":{"id":"89458","ColType":"String","ColValue":"8.02"}},
+{"data":{"title":"Product Identification"},"attr":{"id":"89460","ColType":"String","ColValue":"Cruzer"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"89462","ColType":"String","ColValue":"com.apple.iokit.IOSCSIArchitectureModelFamily"}},
+{"data":{"title":"Vendor Identification"},"attr":{"id":"89464","ColType":"String","ColValue":"SanDisk"}},
+{"data":{"title":"IOClass"},"attr":{"id":"89466","ColType":"String","ColValue":"IOSCSIPeripheralDeviceNub"}},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"89468","ColType":"Number","ColValue":"0"}}
+]

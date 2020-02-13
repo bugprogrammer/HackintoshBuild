@@ -1,0 +1,13 @@
+[
+{"data":{"title":"Physical Interconnect"},"attr":{"id":"30637","ColType":"String","ColValue":"ATA"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"30639","ColType":"String","ColValue":"AppleIntelPIIXATAChannel"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"30641","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"30643","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"30645","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"30647","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"30649","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"Serial ATA"},"attr":{"id":"30651","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"30653","ColType":"Number","ColValue":"800"}},
+{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"30655","ColType":"String","ColValue":"Internal"}},
+{"data":{"title":"Drive 0 PIO Mode"},"attr":{"id":"30657","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"30659","ColType":"String","ColValue":"com.apple.driver.AppleIntelPIIXATA"}},
+{"data":{"title":"Drive 0 Ultra DMA Mode"},"attr":{"id":"30661","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"IOClass"},"attr":{"id":"30663","ColType":"String","ColValue":"AppleIntelPIIXPATA"}}
+]

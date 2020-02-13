@@ -1,0 +1,12 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"7457","ColType":"String","ColValue":"AppleACPICPU"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"7459","ColType":"String","ColValue":"AppleRawAddressSpace"}},
+{"data":{"title":"stepping"},"attr":{"id":"7461","ColType":"Number","ColValue":"5"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"7463","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"variant"},"attr":{"id":"7465","ColType":"String","ColValue":"Gainstown"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"7467","ColType":"String","ColValue":"chudxnu"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"7469","ColType":"String","ColValue":"com.apple.driver.AppleIntelNehalemProfile"}},
+{"data":{"title":"AppleRawAddressSpaceType"},"attr":{"id":"7471","ColType":"String","ColValue":"SPR"}},
+{"data":{"title":"IOClass"},"attr":{"id":"7473","ColType":"String","ColValue":"AppleIntelNehalemSPR"}},
+{"data":{"title":"AppleRawSPRAddressSpaceLogicalCore"},"attr":{"id":"7475","ColType":"Number","ColValue":"7"}}
+]

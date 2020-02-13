@@ -1,0 +1,18 @@
+[
+{"data":{"title":"Leaf"},"attr":{"id":"64205","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Writable"},"attr":{"id":"64207","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BSD Minor"},"attr":{"id":"64209","ColType":"Number","ColValue":"17"}},
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"64211","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"Preferred Block Size"},"attr":{"id":"64213","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"BSD Major"},"attr":{"id":"64215","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"64217","ColType":"String","ColValue":"disk6"}},
+{"data":{"title":"Size"},"attr":{"id":"64219","ColType":"Number","ColValue":"2000365289472"}},
+{"data":{"title":"Content Hint"},"attr":{"id":"64221","ColType":"String","ColValue":""}},
+{"data":{"title":"Removable"},"attr":{"id":"64223","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Open"},"attr":{"id":"64225","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"64227","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"BSD Unit"},"attr":{"id":"64229","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"Whole"},"attr":{"id":"64231","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Content"},"attr":{"id":"64233","ColType":"String","ColValue":"FDisk_partition_scheme"}},
+{"data":{"title":"Ejectable"},"attr":{"id":"64235","ColType":"Boolean","ColValue":"No"}}
+]

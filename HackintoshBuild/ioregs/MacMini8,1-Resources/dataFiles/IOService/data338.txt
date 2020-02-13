@@ -1,0 +1,20 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"23513","ColType":"Number","ColValue":"608"}},
+{"data":{"title":"Transport"},"attr":{"id":"23515","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"LocationID"},"attr":{"id":"23517","ColType":"Number","ColValue":"336723968"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"23519","ColType":"Number","ColValue":"592"}},
+{"data":{"title":"VendorID"},"attr":{"id":"23521","ColType":"Number","ColValue":"2522"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"23523","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"23525","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"MaxInputReportSize"},"attr":{"id":"23527","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"ReportDescriptor"},"attr":{"id":"23529","ColType":"Data","ColValue":"&lt;05010906a101050719e029e7150025017501950881029501750881019503750105081901290391029505750191019506750826ff000507190029918100c0&gt;"}},
+{"data":{"title":"MaxFeatureReportSize"},"attr":{"id":"23531","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"MaxOutputReportSize"},"attr":{"id":"23533","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"23535","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"23536","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"23538","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"23540","ColType":"Number","ColValue":"6"}}]}]},
+{"data":{"title":"BootProtocol"},"attr":{"id":"23542","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"23544","ColType":"String","ColValue":""}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"23546","ColType":"String","ColValue":" "}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"23548","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Product"},"attr":{"id":"23550","ColType":"String","ColValue":"USB Keyboard"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"23552","ColType":"Number","ColValue":"0"}}
+]

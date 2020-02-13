@@ -1,0 +1,20 @@
+[
+{"data":{"title":"Leaf"},"attr":{"id":"100513","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Writable"},"attr":{"id":"100515","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BSD Minor"},"attr":{"id":"100517","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"100519","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"100521","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOPolledInterfaceStack"},"attr":{"id":"100523","ColType":"String","ColValue":"IOPolledFilePollers is not serializable"}},
+{"data":{"title":"Preferred Block Size"},"attr":{"id":"100525","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"BSD Major"},"attr":{"id":"100527","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"100529","ColType":"String","ColValue":"disk0"}},
+{"data":{"title":"Size"},"attr":{"id":"100531","ColType":"Number","ColValue":"500277788672"}},
+{"data":{"title":"Content Hint"},"attr":{"id":"100533","ColType":"String","ColValue":""}},
+{"data":{"title":"IOMediaIcon"},"attr":{"id":"100535","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"100537","ColType":"String","ColValue":"com.apple.iokit.IOStorageFamily"}},{"data":{"title":"IOBundleResourceFile"},"attr":{"id":"100539","ColType":"String","ColValue":"Internal.icns"}}]},
+{"data":{"title":"Removable"},"attr":{"id":"100541","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Open"},"attr":{"id":"100543","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BSD Unit"},"attr":{"id":"100545","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Whole"},"attr":{"id":"100547","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Content"},"attr":{"id":"100549","ColType":"String","ColValue":"GUID_partition_scheme"}},
+{"data":{"title":"Ejectable"},"attr":{"id":"100551","ColType":"Boolean","ColValue":"No"}}
+]

@@ -1,0 +1,8 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3810","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"acpi-wake-system-state"},"attr":{"id":"3812","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"_ADR"},"attr":{"id":"3814","ColType":"Number","ColValue":"1703936"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3816","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"AAPL,current-available"},"attr":{"id":"3818","ColType":"Number","ColValue":"2100"}},{"data":{"title":"acpi-path"},"attr":{"id":"3820","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/EHC2@1a0000"}},{"data":{"title":"acpi-device"},"attr":{"id":"3822","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"AAPL,device-internal"},"attr":{"id":"3824","ColType":"Number","ColValue":"2"}},{"data":{"title":"AAPL,current-extra-in-sleep"},"attr":{"id":"3826","ColType":"Number","ColValue":"2700"}},{"data":{"title":"AAPL,max-port-current-in-sleep"},"attr":{"id":"3828","ColType":"Number","ColValue":"2100"}},{"data":{"title":"AAPL,current-extra"},"attr":{"id":"3830","ColType":"Number","ColValue":"2700"}}]},
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"3832","ColType":"Number","ColValue":"13"}},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"3834","ColType":"Boolean","ColValue":"Yes"}}
+]

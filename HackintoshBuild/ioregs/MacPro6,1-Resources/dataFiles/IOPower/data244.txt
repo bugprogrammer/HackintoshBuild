@@ -1,0 +1,16 @@
+[
+{"data":{"title":"IOPCIPauseCompatible"},"attr":{"id":"9874","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"AHCI-Built-In"},"attr":{"id":"9876","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"9878","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Chipset Name"},"attr":{"id":"9880","ColType":"String","ColValue":"AHCI Controller"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"9882","ColType":"String","ColValue":"com.apple.driver.AppleAHCIPort"}},
+{"data":{"title":"IOClass"},"attr":{"id":"9884","ColType":"String","ColValue":"AppleAHCI"}},
+{"data":{"title":"Vendor Name"},"attr":{"id":"9886","ColType":"String","ColValue":"Thunderbolt"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"9888","ColType":"Number","ColValue":"800"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"9890","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOPCIClassMatch"},"attr":{"id":"9892","ColType":"String","ColValue":"0x01060100&0xffffff00"}},
+{"data":{"title":"AHCI-CAP"},"attr":{"id":"9894","ColType":"Number","ColValue":"18446744073360572321"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"9896","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"9898","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"9900","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"9902","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"9904","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"9906","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"9908","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"9910","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"AHCI-Ejectable"},"attr":{"id":"9912","ColType":"Boolean","ColValue":"No"}}
+]

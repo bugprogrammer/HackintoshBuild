@@ -1,0 +1,8 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"165589","ColType":"String","ColValue":"AppleCredentialManager"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"165591","ColType":"String","ColValue":"AppleCredentialManagerUserClient"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"165593","ColType":"String","ColValue":"com.apple.driver.AppleCredentialManager"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"165595","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClass"},"attr":{"id":"165597","ColType":"String","ColValue":"AppleCredentialManager"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"165599","ColType":"String","ColValue":"IOResources"}}
+]

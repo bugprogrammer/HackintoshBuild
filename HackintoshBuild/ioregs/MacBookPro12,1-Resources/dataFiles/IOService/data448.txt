@@ -1,0 +1,16 @@
+[
+{"data":{"title":"IOMinPacketSize"},"attr":{"id":"160905","ColType":"Number","ColValue":"64"}},
+{"data":{"title":"IORevision"},"attr":{"id":"160907","ColType":"String","ColValue":"MODULE_VERSION"}},
+{"data":{"title":"IOMaxPacketSize"},"attr":{"id":"160909","ColType":"Number","ColValue":"9018"}},
+{"data":{"title":"IOPacketFilters"},"attr":{"id":"160911","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IONetworkFilterGroup"},"attr":{"id":"160913","ColType":"Number","ColValue":"3"}},{"data":{"title":"IOEthernetWakeOnLANFilterGroup"},"attr":{"id":"160915","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"IOVendor"},"attr":{"id":"160917","ColType":"String","ColValue":"Apple"}},
+{"data":{"title":"IOSelectedMedium"},"attr":{"id":"160919","ColType":"String","ColValue":"00100020"}},
+{"data":{"title":"IOLinkStatus"},"attr":{"id":"160921","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOActiveMedium"},"attr":{"id":"160923","ColType":"String","ColValue":"00100020"}},
+{"data":{"title":"IOFeatures"},"attr":{"id":"160925","ColType":"Number","ColValue":"56"}},
+{"data":{"title":"IOMACAddress"},"attr":{"id":"160927","ColType":"Data","ColValue":"&lt;4a00062e3c61&gt;"}},
+{"data":{"title":"IOLocation"},"attr":{"id":"160929","ColType":"String","ColValue":"2"}},
+{"data":{"title":"IOMediumDictionary"},"attr":{"id":"160931","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"00100020"},"attr":{"id":"160933","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Flags"},"attr":{"id":"160935","ColType":"Number","ColValue":"0"}},{"data":{"title":"Index"},"attr":{"id":"160937","ColType":"Number","ColValue":"0"}},{"data":{"title":"Speed"},"attr":{"id":"160939","ColType":"Number","ColValue":"10000000000"}},{"data":{"title":"Type"},"attr":{"id":"160941","ColType":"Number","ColValue":"1048608"}}]}]},
+{"data":{"title":"IOLinkSpeed"},"attr":{"id":"160943","ColType":"Number","ColValue":"10000000000"}},
+{"data":{"title":"IOModel"},"attr":{"id":"160945","ColType":"String","ColValue":"ThunderboltIP"}}
+]

@@ -1,0 +1,22 @@
+[
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"164893","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"USB Mass Storage Trace ID"},"attr":{"id":"164895","ColType":"Number","ColValue":"408846827830378496"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"164897","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"164899","ColType":"String","ColValue":"com.apple.driver.AppleUSBCardReader"}},
+{"data":{"title":"PlatformSettings"},"attr":{"id":"164901","ColType":"Number","ColValue":"4030"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"164903","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"164905","ColType":"String","ColValue":"Internal"}},
+{"data":{"title":"PowerGating"},"attr":{"id":"164907","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"164909","ColType":"Number","ColValue":"50000"}},
+{"data":{"title":"kUSBVendorString"},"attr":{"id":"164911","ColType":"String","ColValue":"Apple"}},
+{"data":{"title":"IOClass"},"attr":{"id":"164913","ColType":"String","ColValue":"com_apple_driver_AppleUSBCardReaderDriverNub"}},
+{"data":{"title":"USB Product Name"},"attr":{"id":"164915","ColType":"String","ColValue":"Card Reader"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"164917","ColType":"String","ColValue":"com_apple_driver_AppleUSBCardReaderInterfaceNub"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"164919","ColType":"Number","ColValue":"80"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"164921","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"164923","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"164925","ColType":"Number","ColValue":"0"}},{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"164927","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"164929","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"164931","ColType":"Number","ColValue":"0"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"164933","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"164935","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"idProduct"},"attr":{"id":"164937","ColType":"Number","ColValue":"33798"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"164939","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"USB Device Info"},"attr":{"id":"164941","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"idProduct"},"attr":{"id":"164943","ColType":"Number","ColValue":"33798"}},{"data":{"title":"kUSBVendorString"},"attr":{"id":"164945","ColType":"String","ColValue":"Apple"}},{"data":{"title":"bConfigurationValue"},"attr":{"id":"164947","ColType":"Number","ColValue":"1"}},{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"164949","ColType":"Number","ColValue":"80"}},{"data":{"title":"USB Product Name"},"attr":{"id":"164951","ColType":"String","ColValue":"Card Reader"}},{"data":{"title":"bInterfaceNumber"},"attr":{"id":"164953","ColType":"Number","ColValue":"0"}},{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"164955","ColType":"Number","ColValue":"6"}},{"data":{"title":"idVendor"},"attr":{"id":"164957","ColType":"Number","ColValue":"1452"}},{"data":{"title":"locationID"},"attr":{"id":"164959","ColType":"Number","ColValue":"341835776"}},{"data":{"title":"kUSBSerialNumberString"},"attr":{"id":"164961","ColType":"String","ColValue":"000000000820"}},{"data":{"title":"bInterfaceClass"},"attr":{"id":"164963","ColType":"Number","ColValue":"8"}},{"data":{"title":"bcdDevice"},"attr":{"id":"164965","ColType":"Number","ColValue":"2080"}}]},
+{"data":{"title":"idVendor"},"attr":{"id":"164967","ColType":"Number","ColValue":"1452"}}
+]

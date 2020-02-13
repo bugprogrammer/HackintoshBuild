@@ -1,0 +1,16 @@
+[
+{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"5336","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"IOMaximumSegmentByteCountRead"},"attr":{"id":"5338","ColType":"Number","ColValue":"32768"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"5340","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"5342","ColType":"String","ColValue":"Internal"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"5344","ColType":"String","ColValue":"Secure Digital"}}]},
+{"data":{"title":"IONameMatched"},"attr":{"id":"5346","ColType":"String","ColValue":"pci14e4,16bc"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"5348","ColType":"String","ColValue":"com.apple.driver.AppleSDXC"}},
+{"data":{"title":"IOClass"},"attr":{"id":"5350","ColType":"String","ColValue":"AppleSDXC"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"5352","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"5354","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"5356","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"5357","ColType":"String","ColValue":"pci14e4,16bc"}}]},
+{"data":{"title":"IOMaximumSegmentCountWrite"},"attr":{"id":"5359","ColType":"Number","ColValue":"1024"}},
+{"data":{"title":"IOMaximumSegmentCountRead"},"attr":{"id":"5361","ColType":"Number","ColValue":"1024"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"5363","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"5365","ColType":"Number","ColValue":"1"}},{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"5367","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"5369","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"5371","ColType":"Number","ColValue":"1"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"5373","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"5375","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"IOMaximumSegmentByteCountWrite"},"attr":{"id":"5377","ColType":"Number","ColValue":"32768"}}
+]

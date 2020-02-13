@@ -1,0 +1,20 @@
+[
+{"data":{"title":"NCQ"},"attr":{"id":"79029","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"79031","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"Physical Block Size"},"attr":{"id":"79033","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"79035","ColType":"String","ColValue":"Internal"}},
+{"data":{"title":"Revision"},"attr":{"id":"79037","ColType":"String","ColValue":"GG2AB990"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"79039","ColType":"String","ColValue":"com.apple.iokit.IOAHCIBlockStorage"}},
+{"data":{"title":"IOClass"},"attr":{"id":"79041","ColType":"String","ColValue":"AppleAHCIDiskDriver"}},
+{"data":{"title":"Time To Ready"},"attr":{"id":"79043","ColType":"Number","ColValue":"3027"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"79045","ColType":"String","ColValue":"AppleAHCIDiskPolledInterface is not serializable"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"79047","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"SATA Features"},"attr":{"id":"79049","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"79051","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"Serial Number"},"attr":{"id":"79053","ColType":"String","ColValue":"      TNS5193T2PG1EH"}},
+{"data":{"title":"Model"},"attr":{"id":"79055","ColType":"String","ColValue":"APPLE HDD HTS545050A7E362               "}},
+{"data":{"title":"Logical Block Size"},"attr":{"id":"79057","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"79059","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"79061","ColType":"String","ColValue":"IOAHCIDevice"}},
+{"data":{"title":"Queue Depth"},"attr":{"id":"79063","ColType":"Number","ColValue":"32"}}
+]

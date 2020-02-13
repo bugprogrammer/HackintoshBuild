@@ -1,0 +1,11 @@
+[
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"27387","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"27389","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"27391","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"27393","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"27395","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"27397","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"27399","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"incompatibleModels"},"attr":{"id":"27401","ColType":"Array","ColValue":"0_values"},"children":[]},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"27403","ColType":"String","ColValue":"AVExVideo"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"27405","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"27407","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"27409","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"27411","ColType":"String","ColValue":"com.avatron.AVExVideo"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"27413","ColType":"String","ColValue":"AVExVideoUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"27415","ColType":"String","ColValue":"AVExVideo"}}
+]

@@ -1,0 +1,13 @@
+[
+{"data":{"title":"FireWire Speed"},"attr":{"id":"12153","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Model_ID"},"attr":{"id":"12155","ColType":"Number","ColValue":"65606"}},
+{"data":{"title":"GUID"},"attr":{"id":"12157","ColType":"Number","ColValue":"3777926264278865"}},
+{"data":{"title":"FireWire Product Name"},"attr":{"id":"12159","ColType":"String","ColValue":"FW 410"}},
+{"data":{"title":"FireWire Device ROM"},"attr":{"id":"12161","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Offset 0"},"attr":{"id":"12163","ColType":"Data","ColValue":"&lt;0429569931333934f0648122000d6c0100f84f510009d1ce040000040c0083c0030007f581000012170100468100001513ffffffd1000002d40000060004bb4e1200a02d130140011701004681000012000637c7120007f5130000013affffc73b1000003cffffc73d6000000004073e00000000000000004d2d415544494f000004aad0000000000000000046572034313000000004aad000000000000000004657203431300000&gt;"}}]},
+{"data":{"title":"FireWire Vendor Name"},"attr":{"id":"12165","ColType":"String","ColValue":"M-AUDIO"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"12167","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CDCFCA94-F197-11D4-87E6-000502072F80"},"attr":{"id":"12169","ColType":"String","ColValue":"IOFireWireFamily.kext/Contents/PlugIns/IOFireWireLib.plugin"}}]},
+{"data":{"title":"Vendor_ID"},"attr":{"id":"12171","ColType":"Number","ColValue":"2037"}},
+{"data":{"title":"FireWire Self IDs"},"attr":{"id":"12173","ColType":"Data","ColValue":"&lt;827f89d0&gt;"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"12175","ColType":"String","ColValue":"IOFireWireUserClient"}},
+{"data":{"title":"FireWire Node ID"},"attr":{"id":"12177","ColType":"Number","ColValue":"65474"}}
+]

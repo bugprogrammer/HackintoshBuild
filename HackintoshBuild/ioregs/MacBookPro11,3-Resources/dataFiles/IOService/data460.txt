@@ -1,0 +1,15 @@
+[
+{"data":{"title":"SCSI Logical Unit Number"},"attr":{"id":"64359","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Vendor Identification"},"attr":{"id":"64361","ColType":"String","ColValue":"WD"}},
+{"data":{"title":"Product Identification"},"attr":{"id":"64363","ColType":"String","ColValue":"SES Device"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"64365","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"64367","ColType":"String","ColValue":"USB"}},{"data":{"title":"SCSI Logical Unit Number"},"attr":{"id":"64369","ColType":"Number","ColValue":"1"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"64371","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"64373","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"64375","ColType":"Number","ColValue":"30000"}}]},
+{"data":{"title":"Peripheral Device Type"},"attr":{"id":"64377","ColType":"Number","ColValue":"13"}},
+{"data":{"title":"TPGS Information"},"attr":{"id":"64379","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"SCSITaskUserClient GUID"},"attr":{"id":"64381","ColType":"Data","ColValue":"&lt;c6957e478e84422d951a785d0e7442ff&gt;"}},
+{"data":{"title":"IOUnitLUN"},"attr":{"id":"64383","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"64385","ColType":"String","ColValue":"SCSITaskUserClientIniter"}},
+{"data":{"title":"SCSITaskDeviceCategory"},"attr":{"id":"64387","ColType":"String","ColValue":"SCSITaskUserClientDevice"}},
+{"data":{"title":"Product Revision Level"},"attr":{"id":"64389","ColType":"String","ColValue":"1007"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"64391","ColType":"String","ColValue":"SCSITaskUserClient"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"64393","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"7D66678E-08A2-11D5-A1B8-0030657D052A"},"attr":{"id":"64395","ColType":"String","ColValue":"IOSCSIArchitectureModelFamily.kext/Contents/PlugIns/SCSITaskUserClient.kext/Contents/PlugIns/SCSITaskLib.plugin"}}]}
+]

@@ -1,0 +1,21 @@
+[
+{"data":{"title":"NCQ"},"attr":{"id":"18426","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"18428","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"Physical Block Size"},"attr":{"id":"18430","ColType":"Number","ColValue":"4096"}},
+{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"18432","ColType":"String","ColValue":"Internal"}},
+{"data":{"title":"Revision"},"attr":{"id":"18434","ColType":"String","ColValue":"JA0AB5D0"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"18436","ColType":"String","ColValue":"com.apple.iokit.IOAHCIBlockStorage"}},
+{"data":{"title":"IOClass"},"attr":{"id":"18438","ColType":"String","ColValue":"AppleAHCIDiskDriver"}},
+{"data":{"title":"Time To Ready"},"attr":{"id":"18440","ColType":"Number","ColValue":"3473"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"18442","ColType":"String","ColValue":"AppleAHCIDiskPolledInterface is not serializable"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"18444","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"SATA Features"},"attr":{"id":"18446","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"18448","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"Trace ID"},"attr":{"id":"18450","ColType":"Number","ColValue":"2032128"}},
+{"data":{"title":"Model"},"attr":{"id":"18452","ColType":"String","ColValue":"APPLE HDD HTS541010A9E662               "}},
+{"data":{"title":"Serial Number"},"attr":{"id":"18454","ColType":"String","ColValue":"      J88000EZGRLBXB"}},
+{"data":{"title":"Logical Block Size"},"attr":{"id":"18456","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"18458","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"18460","ColType":"String","ColValue":"IOAHCIDevice"}},
+{"data":{"title":"Queue Depth"},"attr":{"id":"18462","ColType":"Number","ColValue":"32"}}
+]

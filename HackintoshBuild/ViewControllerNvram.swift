@@ -3,19 +3,19 @@
 //  HackintoshBuild
 //
 //  Created by bugprogrammer on 2020/1/27.
-//  Copyright © 2020 bugprogrammer. All rights reserved.
+//  Copyright © 2020 bugprogrammer,Arabaku. All rights reserved.
 //
 
 import Cocoa
 
 class ViewControllerNvram: NSViewController {
 
+    @IBOutlet weak var refreshButton: NSButton!
     @IBOutlet var nvramTextView: NSTextView!
     @IBOutlet weak var nvramTableView: NSTableView!
     
     var nvramInfo:String = ""
     var keysArr:[String] = []
-    var flag:Int = 0
     
     let taskQueue = DispatchQueue.global(qos: .background)
     let lock = NSLock()
@@ -27,6 +27,9 @@ class ViewControllerNvram: NSViewController {
         nvramTableView.action = #selector(tableViewClick(_:))
     }
     
+    @IBAction func Refresh(_ sender: Any) {
+        runBuildScripts("nvramKeys",[])
+    }
     func runBuildScripts(_ shell: String, _ arguments: [String]) {
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
@@ -37,7 +40,7 @@ class ViewControllerNvram: NSViewController {
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
                         self.lock.lock()
-                        if self.flag == 0 {
+                        if shell == "nvramKeys" {
                             self.keysArr =  self.nvramInfo.components(separatedBy:"\n")
                             if self.keysArr.last == "" {
                                 self.keysArr.removeLast()
@@ -47,7 +50,6 @@ class ViewControllerNvram: NSViewController {
                             }
                             self.nvramTableView.reloadData()
                             self.runBuildScripts("nvramValues", [self.keysArr[0]])
-                            self.flag = 1
                         }
                         else {
                             self.nvramTextView.string = self.nvramInfo

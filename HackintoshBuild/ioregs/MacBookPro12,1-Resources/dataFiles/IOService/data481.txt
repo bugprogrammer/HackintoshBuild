@@ -1,0 +1,22 @@
+[
+{"data":{"title":"Chipset Name"},"attr":{"id":"162317","ColType":"String","ColValue":"SSD Controller"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"162319","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"162321","ColType":"String","ColValue":"com.apple.driver.AppleAHCIPort"}},
+{"data":{"title":"sata-express-power-off"},"attr":{"id":"162323","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"AHCI-Built-In"},"attr":{"id":"162325","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"162327","ColType":"Number","ColValue":"800"}},
+{"data":{"title":"IOPMResetPowerStateOnWake"},"attr":{"id":"162329","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOClass"},"attr":{"id":"162331","ColType":"String","ColValue":"AppleAHCI"}},
+{"data":{"title":"Trace ID"},"attr":{"id":"162333","ColType":"Number","ColValue":"67108864"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"162335","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"Vendor Name"},"attr":{"id":"162337","ColType":"String","ColValue":"Apple"}},
+{"data":{"title":"sata-express"},"attr":{"id":"162339","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Controller Characteristics"},"attr":{"id":"162341","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Low Power Mode"},"attr":{"id":"162343","ColType":"Boolean","ColValue":"Yes"}}]},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"162345","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"162347","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildProxyPowerState"},"attr":{"id":"162349","ColType":"Number","ColValue":"2"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"162351","ColType":"Number","ColValue":"2"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"162353","ColType":"Number","ColValue":"2"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"162355","ColType":"Number","ColValue":"32768"}}]},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"162357","ColType":"String","ColValue":"AppleAHCIPolledAdapter is not serializable"}},
+{"data":{"title":"AHCI-Ejectable"},"attr":{"id":"162359","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"162361","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOPCIPauseCompatible"},"attr":{"id":"162363","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOPCIClassMatch"},"attr":{"id":"162365","ColType":"String","ColValue":"0x01060100&0xffffff00"}},
+{"data":{"title":"AHCI-CAP"},"attr":{"id":"162367","ColType":"Number","ColValue":"18446744072689590144"}}
+]

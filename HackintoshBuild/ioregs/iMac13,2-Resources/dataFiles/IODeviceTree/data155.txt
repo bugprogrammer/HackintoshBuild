@@ -1,0 +1,12 @@
+[
+{"data":{"title":"_ADR"},"attr":{"id":"5693","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"5695","ColType":"String","ColValue":"IOACPIPlane:/_SB/PNLF@0"}},
+{"data":{"title":"type"},"attr":{"id":"5697","ColType":"Number","ColValue":"1296253779"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"5699","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"name"},"attr":{"id":"5701","ColType":"Data","ColValue":"&lt;\"APP0002\"&gt;"}},
+{"data":{"title":"_UID"},"attr":{"id":"5703","ColType":"String","ColValue":"10"}},
+{"data":{"title":"compatible"},"attr":{"id":"5705","ColType":"Data","ColValue":"&lt;\"backlight\"&gt;"}},
+{"data":{"title":"refnum"},"attr":{"id":"5707","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"_STA"},"attr":{"id":"5709","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"device-properties"},"attr":{"id":"5711","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"type"},"attr":{"id":"5713","ColType":"Number","ColValue":"1296253779"}},{"data":{"title":"acpi-path"},"attr":{"id":"5715","ColType":"String","ColValue":"IOACPIPlane:/_SB/PNLF@0"}},{"data":{"title":"refnum"},"attr":{"id":"5717","ColType":"Number","ColValue":"0"}},{"data":{"title":"acpi-device"},"attr":{"id":"5719","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

@@ -1,0 +1,18 @@
+[
+{"data":{"title":"NCQ"},"attr":{"id":"57227","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"57229","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"Physical Block Size"},"attr":{"id":"57231","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"57233","ColType":"String","ColValue":"External"}},
+{"data":{"title":"Revision"},"attr":{"id":"57235","ColType":"String","ColValue":"01.01K03"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"57237","ColType":"String","ColValue":"com.apple.iokit.IOAHCIBlockStorage"}},
+{"data":{"title":"IOClass"},"attr":{"id":"57239","ColType":"String","ColValue":"AppleAHCIDiskDriver"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"57241","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"SATA Features"},"attr":{"id":"57243","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"57245","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"Serial Number"},"attr":{"id":"57247","ColType":"String","ColValue":"     WD-WMC130F1J2MC"}},
+{"data":{"title":"Model"},"attr":{"id":"57249","ColType":"String","ColValue":"WDC WD4000FYYZ-01UL1B2                  "}},
+{"data":{"title":"Logical Block Size"},"attr":{"id":"57251","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"57253","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"57255","ColType":"String","ColValue":"IOAHCIDevice"}},
+{"data":{"title":"Queue Depth"},"attr":{"id":"57257","ColType":"Number","ColValue":"32"}}
+]

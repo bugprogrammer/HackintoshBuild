@@ -1,0 +1,7 @@
+[
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"165728","ColType":"String","ColValue":"AppleUSBHostPacketFilterService"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"165730","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"165732","ColType":"String","ColValue":"com.apple.driver.usb.AppleUSBHostPacketFilter"}},
+{"data":{"title":"IOClass"},"attr":{"id":"165734","ColType":"String","ColValue":"AppleUSBHostPacketFilterService"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"165736","ColType":"String","ColValue":"AppleUSBHostResources"}}
+]

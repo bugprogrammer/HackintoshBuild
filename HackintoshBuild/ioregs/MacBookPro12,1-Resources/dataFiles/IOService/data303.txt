@@ -1,0 +1,14 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"23578","ColType":"Number","ColValue":"627"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"23580","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"Transport"},"attr":{"id":"23582","ColType":"String","ColValue":"SPI"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"23584","ColType":"Number","ColValue":"1570"}},
+{"data":{"title":"VendorID"},"attr":{"id":"23586","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"23588","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"23590","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BootProtocol"},"attr":{"id":"23592","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"23594","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"23595","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"23597","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"23599","ColType":"Number","ColValue":"6"}}]},{"data":{"title":"1"},"attr":{"id":"23600","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"23602","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"23604","ColType":"Number","ColValue":"1"}}]},{"data":{"title":"2"},"attr":{"id":"23605","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"23607","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"23609","ColType":"Number","ColValue":"6"}}]}]},
+{"data":{"title":"Product"},"attr":{"id":"23611","ColType":"String","ColValue":"Apple Internal Keyboard / Trackpad"}},
+{"data":{"title":"LocationID"},"attr":{"id":"23613","ColType":"Number","ColValue":"16777216"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"23615","ColType":"Number","ColValue":"33"}}
+]

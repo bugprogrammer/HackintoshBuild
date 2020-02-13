@@ -1,0 +1,9 @@
+[
+{"data":{"title":"acpi-device"},"attr":{"id":"5118","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"address"},"attr":{"id":"5120","ColType":"Number","ColValue":"57"}},
+{"data":{"title":"ramp-control-address"},"attr":{"id":"5122","ColType":"Number","ColValue":"59"}},
+{"data":{"title":"hdet"},"attr":{"id":"5124","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"refnum"},"attr":{"id":"5126","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"device-id"},"attr":{"id":"5128","ColType":"Number","ColValue":"3282"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"5130","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SBUS@1f0003/BUS0@0/MKY0@0"}}
+]

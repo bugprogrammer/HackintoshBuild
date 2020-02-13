@@ -1,0 +1,13 @@
+[
+{"data":{"title":"_ADR"},"attr":{"id":"8965","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"8967","ColType":"String","ColValue":"IOACPIPlane:/_SB/PNLF@0"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"8969","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"AppleNumBrightLevels"},"attr":{"id":"8971","ColType":"Number","ColValue":"1024"}},
+{"data":{"title":"name"},"attr":{"id":"8973","ColType":"Data","ColValue":"&lt;\"APP0002\"&gt;"}},
+{"data":{"title":"AppleRestoreBacklight"},"attr":{"id":"8975","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"_UID"},"attr":{"id":"8977","ColType":"String","ColValue":"16"}},
+{"data":{"title":"compatible"},"attr":{"id":"8979","ColType":"Data","ColValue":"&lt;\"backlight\"&gt;"}},
+{"data":{"title":"ApplePanelRawBrightness"},"attr":{"id":"8981","ColType":"Number","ColValue":"140"}},
+{"data":{"title":"_STA"},"attr":{"id":"8983","ColType":"Number","ColValue":"11"}},
+{"data":{"title":"device-properties"},"attr":{"id":"8985","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"8987","ColType":"String","ColValue":"IOACPIPlane:/_SB/PNLF@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"8989","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

@@ -1,0 +1,8 @@
+[
+{"data":{"title":"stopBits"},"attr":{"id":"3346","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},
+{"data":{"title":"parity"},"attr":{"id":"3348","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},
+{"data":{"title":"dataBits"},"attr":{"id":"3350","ColType":"Data","ColValue":"&lt;0800000000000000&gt;"}},
+{"data":{"title":"baud"},"attr":{"id":"3352","ColType":"Data","ColValue":"&lt;d012130000000000&gt;"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"3354","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/URT0@150005/SSDC@0"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"3356","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}
+]

@@ -1,0 +1,21 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"147325","ColType":"Number","ColValue":"615"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"147327","ColType":"Number","ColValue":"11250"}},
+{"data":{"title":"Transport"},"attr":{"id":"147329","ColType":"String","ColValue":"Bluetooth"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"147331","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"VendorID"},"attr":{"id":"147333","ColType":"Number","ColValue":"76"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"147335","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"HIDKind"},"attr":{"id":"147337","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"HIDDeviceEventID"},"attr":{"id":"147339","ColType":"Number","ColValue":"1266"}},
+{"data":{"title":"HIDSubinterfaceID"},"attr":{"id":"147341","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"alt_sender_id"},"attr":{"id":"147343","ColType":"Number","ColValue":"4294968559"}},
+{"data":{"title":"HIDKeyMapping"},"attr":{"id":"147345","ColType":"Data","ColValue":"&lt;00000000001800000101020203030404050506060707080809090a0a0b0b0c0c0d0d0e0e0f0f10101111121213131414151516161717&gt;"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"147347","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"147348","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"147350","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"147352","ColType":"Number","ColValue":"6"}}]},{"data":{"title":"1"},"attr":{"id":"147353","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"147355","ColType":"Number","ColValue":"12"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"147357","ColType":"Number","ColValue":"1"}}]},{"data":{"title":"2"},"attr":{"id":"147358","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"147360","ColType":"Number","ColValue":"65280"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"147362","ColType":"Number","ColValue":"6"}}]}]},
+{"data":{"title":"HIDResetKeyboard"},"attr":{"id":"147364","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"SerialNumber"},"attr":{"id":"147366","ColType":"String","ColValue":"04-69-f8-bc-c7-98"}},
+{"data":{"title":"HIDInterfaceID"},"attr":{"id":"147368","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"HIDVirtualDevice"},"attr":{"id":"147370","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Product"},"attr":{"id":"147372","ColType":"String","ColValue":"Magic Keyboard"}},
+{"data":{"title":"LocationID"},"attr":{"id":"147374","ColType":"Number","ColValue":"2025637784"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"147376","ColType":"Number","ColValue":"33"}}
+]

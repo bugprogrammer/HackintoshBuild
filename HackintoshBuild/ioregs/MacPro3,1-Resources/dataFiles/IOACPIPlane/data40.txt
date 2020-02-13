@@ -1,0 +1,5 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"3134","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"3136","ColType":"Number","ColValue":"720896"}},
+{"data":{"title":"device-properties"},"attr":{"id":"3138","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"3140","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"fwhub"},"attr":{"id":"3142","ColType":"Data","ColValue":"&lt;00000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"3144","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PCIB@1e0000/FRWR@b0000"}}]}
+]

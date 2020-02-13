@@ -1,0 +1,15 @@
+[
+{"data":{"title":"IOTTYSuffix"},"attr":{"id":"105665","ColType":"String","ColValue":""}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"105667","ColType":"String","ColValue":"com.apple.iokit.IOSerialFamily"}},
+{"data":{"title":"IOClass"},"attr":{"id":"105669","ColType":"String","ColValue":"IOSerialBSDClient"}},
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"105671","ColType":"String","ColValue":"Bluetooth-Modem"}},
+{"data":{"title":"IOSerialBSDClientType"},"attr":{"id":"105673","ColType":"String","ColValue":"IOModemSerialStream"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"105675","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"105677","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"105679","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOTTYDevice"},"attr":{"id":"105681","ColType":"String","ColValue":"Bluetooth-Modem"}},
+{"data":{"title":"IOCalloutDevice"},"attr":{"id":"105683","ColType":"String","ColValue":"/dev/cu.Bluetooth-Modem"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"105685","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IODialinDevice"},"attr":{"id":"105687","ColType":"String","ColValue":"/dev/tty.Bluetooth-Modem"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"105689","ColType":"String","ColValue":"IOSerialStreamSync"}}
+]

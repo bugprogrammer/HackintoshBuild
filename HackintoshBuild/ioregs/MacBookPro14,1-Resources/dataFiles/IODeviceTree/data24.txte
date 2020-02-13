@@ -1,0 +1,13 @@
+[
+{"data":{"title":"StartupPowerEvents"},"attr":{"id":"2760","ColType":"Data","ColValue":"&lt;0******00******0&gt;"}},
+{"data":{"title":"Model"},"attr":{"id":"2762","ColType":"Data","ColValue":"&lt;\"*\",\"a\",\"c\",\"B\",\"o\",\"o\",\"k\",\"P\",\"r\",\"o\",\"1\",\"4\",\",\",\"1\"&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"2764","ColType":"Data","ColValue":"&lt;\"platform\"&gt;"}},
+{"data":{"title":"board-id"},"attr":{"id":"2766","ColType":"Data","ColValue":"&lt;\"*ac-B4831CEBD52A0C4C\"&gt;"}},
+{"data":{"title":"board-rev"},"attr":{"id":"2768","ColType":"Data","ColValue":"&lt;1b&gt;"}},
+{"data":{"title":"InitialTSC"},"attr":{"id":"2770","ColType":"Data","ColValue":"&lt;0******00******0&gt;"}},
+{"data":{"title":"device-colors"},"attr":{"id":"2772","ColType":"Data","ColValue":"&lt;00020000a09d9d0******00******000&gt;"}},
+{"data":{"title":"system-id"},"attr":{"id":"2774","ColType":"Data","ColValue":"&lt;8******************************2&gt;"}},
+{"data":{"title":"SystemSerialNumber"},"attr":{"id":"2776","ColType":"Data","ColValue":"&lt;\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\",\"*\"&gt;"}},
+{"data":{"title":"DevicePathsSupported"},"attr":{"id":"2778","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"FSBFrequency"},"attr":{"id":"2780","ColType":"Data","ColValue":"&lt;00105e5f0******0&gt;"}}
+]

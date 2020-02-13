@@ -1,0 +1,14 @@
+[
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"43609","ColType":"String","ColValue":"com.apple.driver.AppleSMCLMU"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"43611","ColType":"String","ColValue":"ACPI0008"}},
+{"data":{"title":"IOClass"},"attr":{"id":"43613","ColType":"String","ColValue":"AppleLMUController"}},
+{"data":{"title":"KeyboardBacklightBrightness"},"attr":{"id":"43615","ColType":"Number","ColValue":"806"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"43617","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"43619","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"43621","ColType":"String","ColValue":"ACPI0008"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"43623","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"43625","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"43627","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"43629","ColType":"Number","ColValue":"1"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"43631","ColType":"Number","ColValue":"2"}}]},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"43633","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"0516B563-B15B-11DA-96EB-0014519758EF"},"attr":{"id":"43635","ColType":"String","ColValue":"AppleSMCLMU.kext/Contents/PlugIns/AmbientLightSensorHID.plugin"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"43637","ColType":"String","ColValue":"IOService"}},
+{"data":{"title":"HIDServiceSupport"},"attr":{"id":"43639","ColType":"Boolean","ColValue":"Yes"}}
+]

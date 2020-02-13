@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"3548","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3549","ColType":"Data","ColValue":"&lt;00000000&gt;"}}]},
+{"data":{"title":"Base Vector Number"},"attr":{"id":"3551","ColType":"Number","ColValue":"64"}},
+{"data":{"title":"InterruptControllerName"},"attr":{"id":"3553","ColType":"String","ColValue":"io-apic-0"}},
+{"data":{"title":"APIC ID"},"attr":{"id":"3555","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Physical Address"},"attr":{"id":"3557","ColType":"Number","ColValue":"18446744073688580096"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"3559","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3560","ColType":"String","ColValue":"IOPlatformInterruptController"}}]},
+{"data":{"title":"Destination APIC ID"},"attr":{"id":"3562","ColType":"Number","ColValue":"0"}}
+]

@@ -1,0 +1,16 @@
+[
+{"data":{"title":"boot-device-path"},"attr":{"id":"2164","ColType":"Data","ColValue":"&lt;02010c00d041030a0000000001010600021f03120a0000000000000004012a0002000000284006000000000040ce567400000000bfda8fb7886b1e478d5483d0b369559602027fff0400&gt;"}},
+{"data":{"title":"random-seed"},"attr":{"id":"2166","ColType":"Data","ColValue":"&lt;00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"IOScreenLockState"},"attr":{"id":"2168","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
+{"data":{"title":"booter-build-time"},"attr":{"id":"2170","ColType":"Data","ColValue":"&lt;\"Tue Feb  9 17:15:24 PST 2016\"&gt;"}},
+{"data":{"title":"boot-uuid"},"attr":{"id":"2172","ColType":"Data","ColValue":"&lt;\"045ADCA2-A96F-3E6D-8103-35017B02B110\"&gt;"}},
+{"data":{"title":"boot-file-path"},"attr":{"id":"2174","ColType":"Data","ColValue":"&lt;040450005c00530079007300740065006d005c004c006900620072006100720079005c0043006f0072006500530065007200760069006300650073005c0062006f006f0074002e0065006600690000007fff0400&gt;"}},
+{"data":{"title":"boot-kernelcache-adler32"},"attr":{"id":"2176","ColType":"Data","ColValue":"&lt;191e8711&gt;"}},
+{"data":{"title":"machine-signature"},"attr":{"id":"2178","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
+{"data":{"title":"IOProgressColorTheme"},"attr":{"id":"2180","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"boot-args"},"attr":{"id":"2182","ColType":"Data","ColValue":"&lt;00&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"2184","ColType":"Data","ColValue":"&lt;\"chosen\"&gt;"}},
+{"data":{"title":"booter-name"},"attr":{"id":"2186","ColType":"Data","ColValue":"&lt;\"boot.efi\"&gt;"}},
+{"data":{"title":"booter-version"},"attr":{"id":"2188","ColType":"Data","ColValue":"&lt;\"version:307.40.6\"&gt;"}},
+{"data":{"title":"boot-file"},"attr":{"id":"2190","ColType":"Data","ColValue":"&lt;\"System\\Library\\PrelinkedKernels\\prelinkedkernel\"&gt;"}}
+]

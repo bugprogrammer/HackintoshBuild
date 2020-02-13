@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"92789","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"92791","ColType":"String","ColValue":"DirectHWService"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"92793","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"92795","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"92797","ColType":"String","ColValue":"com.coresystems.driver.DirectHW"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"92799","ColType":"String","ColValue":"DirectHWUserClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"92801","ColType":"String","ColValue":"DirectHWService"}}
+]

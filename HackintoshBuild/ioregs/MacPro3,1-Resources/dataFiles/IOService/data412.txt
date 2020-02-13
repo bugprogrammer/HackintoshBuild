@@ -1,0 +1,16 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"28458","ColType":"Number","ColValue":"545"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"28460","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"Transport"},"attr":{"id":"28462","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"28464","ColType":"Number","ColValue":"105"}},
+{"data":{"title":"VendorID"},"attr":{"id":"28466","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"28468","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"28470","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BootProtocol"},"attr":{"id":"28472","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"28474","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"28475","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"28477","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"28479","ColType":"Number","ColValue":"6"}}]}]},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"28481","ColType":"String","ColValue":""}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"28483","ColType":"String","ColValue":"Apple, Inc"}},
+{"data":{"title":"Product"},"attr":{"id":"28485","ColType":"String","ColValue":"Apple Keyboard"}},
+{"data":{"title":"LocationID"},"attr":{"id":"28487","ColType":"Number","ColValue":"18446744073663545344"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"28489","ColType":"Number","ColValue":"13"}}
+]

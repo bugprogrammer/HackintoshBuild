@@ -1,0 +1,18 @@
+[
+{"data":{"title":"Write Time Out Duration"},"attr":{"id":"78686","ColType":"Number","ColValue":"15000"}},
+{"data":{"title":"Read Time Out Duration"},"attr":{"id":"78688","ColType":"Number","ColValue":"15000"}},
+{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"78690","ColType":"String","ColValue":"Internal"}},
+{"data":{"title":"Revision"},"attr":{"id":"78692","ColType":"String","ColValue":"1.56    "}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"78694","ColType":"String","ColValue":"com.apple.iokit.IOAHCISerialATAPI"}},
+{"data":{"title":"Retry Count"},"attr":{"id":"78696","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOClass"},"attr":{"id":"78698","ColType":"String","ColValue":"IOAHCISerialATAPI"}},
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"78700","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"78702","ColType":"String","ColValue":"SATA"}},{"data":{"title":"AHCI Port Number"},"attr":{"id":"78704","ColType":"Number","ColValue":"0"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"78706","ColType":"String","ColValue":"Internal"}},{"data":{"title":"Port Speed"},"attr":{"id":"78708","ColType":"String","ColValue":"1.5 Gigabit"}},{"data":{"title":"ATAPI"},"attr":{"id":"78710","ColType":"Boolean","ColValue":"Yes"}}]},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"78712","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"78714","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"Serial Number"},"attr":{"id":"78716","ColType":"String","ColValue":""}},
+{"data":{"title":"Model"},"attr":{"id":"78718","ColType":"String","ColValue":"PIONEER BD-RW   BDR-206D                "}},
+{"data":{"title":"Physical Interconnect"},"attr":{"id":"78720","ColType":"String","ColValue":"SATA"}},
+{"data":{"title":"ATAPI"},"attr":{"id":"78722","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"78724","ColType":"String","ColValue":"IOAHCIDevice"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"78726","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"78728","ColType":"Number","ColValue":"1"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"78730","ColType":"Number","ColValue":"1"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"78732","ColType":"Number","ColValue":"1"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"78734","ColType":"Number","ColValue":"1"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"78736","ColType":"Number","ColValue":"1"}}]}
+]

@@ -1,0 +1,9 @@
+[
+{"data":{"title":"_ADR"},"attr":{"id":"82873","ColType":"Number","ColValue":"1638402"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"82875","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"82876","ColType":"Data","ColValue":"&lt;2200000007000000&gt;"}}]},
+{"data":{"title":"name"},"attr":{"id":"82878","ColType":"Data","ColValue":"&lt;\"INT34BA\"&gt;"}},
+{"data":{"title":"IODeviceMemory"},"attr":{"id":"82880","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"82881","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"82882","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"82884","ColType":"Number","ColValue":"4261634048"}},{"data":{"title":"length"},"attr":{"id":"82886","ColType":"Number","ColValue":"4096"}}]}]}]},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"82888","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"82889","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"_STA"},"attr":{"id":"82891","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"device-properties"},"attr":{"id":"82893","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"82895","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"uart-channel-number"},"attr":{"id":"82897","ColType":"Data","ColValue":"&lt;0200000000000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"82899","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/URT2@190002"}}]}
+]

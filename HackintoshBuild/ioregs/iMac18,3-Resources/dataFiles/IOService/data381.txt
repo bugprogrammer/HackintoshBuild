@@ -1,0 +1,20 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"24922","ColType":"Number","ColValue":"50475"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"24924","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"Transport"},"attr":{"id":"24926","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"24928","ColType":"Number","ColValue":"4613"}},
+{"data":{"title":"VendorID"},"attr":{"id":"24930","ColType":"Number","ColValue":"1133"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"24932","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"24934","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"MaxInputReportSize"},"attr":{"id":"24936","ColType":"Number","ColValue":"8"}},
+{"data":{"title":"ReportDescriptor"},"attr":{"id":"24938","ColType":"Data","ColValue":"&lt;05010906a1019508750115002501050719e029e7810281039505050819012905910295017503910195067508150026ff00050719002aff008100c0&gt;"}},
+{"data":{"title":"MaxFeatureReportSize"},"attr":{"id":"24940","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"MaxOutputReportSize"},"attr":{"id":"24942","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"24944","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"24945","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"24947","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"24949","ColType":"Number","ColValue":"6"}}]}]},
+{"data":{"title":"BootProtocol"},"attr":{"id":"24951","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"24953","ColType":"String","ColValue":""}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"24955","ColType":"String","ColValue":"Logitech"}},
+{"data":{"title":"Product"},"attr":{"id":"24957","ColType":"String","ColValue":"USB Receiver"}},
+{"data":{"title":"LocationID"},"attr":{"id":"24959","ColType":"Number","ColValue":"338886656"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"24961","ColType":"Number","ColValue":"0"}}
+]

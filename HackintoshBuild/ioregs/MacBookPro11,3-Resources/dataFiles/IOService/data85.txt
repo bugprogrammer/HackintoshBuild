@@ -1,0 +1,14 @@
+[
+{"data":{"title":"DVDSupported"},"attr":{"id":"6493","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"6495","ColType":"String","ColValue":"com.apple.driver.ApplePlatformEnabler"}},
+{"data":{"title":"IONameMatched"},"attr":{"id":"6497","ColType":"String","ColValue":"IOPlatformEnabler"}},
+{"data":{"title":"IOClass"},"attr":{"id":"6499","ColType":"String","ColValue":"ApplePlatformEnabler"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"6501","ColType":"Number","ColValue":"20000"}},
+{"data":{"title":"ODSSupported"},"attr":{"id":"6503","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"6505","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IONameMatch"},"attr":{"id":"6507","ColType":"String","ColValue":"IOPlatformEnabler"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"6509","ColType":"String","ColValue":"ApplePlatformEnablerUserClient"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"6511","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CFB68B9A-40AF-437A-AFFE-FE671C6193C5"},"attr":{"id":"6513","ColType":"String","ColValue":"ApplePlatformEnabler.kext/Contents/PlugIns/ApplePlatformEnablerLib.plugin"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"6515","ColType":"String","ColValue":"IOPlatformPluginDevice"}},
+{"data":{"title":"SSAltDefault"},"attr":{"id":"6517","ColType":"Boolean","ColValue":"Yes"}}
+]

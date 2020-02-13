@@ -1,0 +1,22 @@
+[
+{"data":{"title":"CountryCode"},"attr":{"id":"27063","ColType":"Number","ColValue":"13"}},
+{"data":{"title":"StandardType"},"attr":{"id":"27065","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"27067","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"27069","ColType":"String","ColValue":"com.apple.iokit.IOHIDFamily"}},
+{"data":{"title":"HIDEventServiceProperties"},"attr":{"id":"27071","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"HIDKeyboardModifierMappingPairs"},"attr":{"id":"27073","ColType":"Array","ColValue":"0_values"},"children":[]}]},
+{"data":{"title":"ProductID"},"attr":{"id":"27075","ColType":"Number","ColValue":"524"}},
+{"data":{"title":"IOPersonalityPublisher"},"attr":{"id":"27077","ColType":"String","ColValue":"com.apple.iokit.IOHIDEventDriver"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"27079","ColType":"Number","ColValue":"1056"}},
+{"data":{"title":"Product"},"attr":{"id":"27081","ColType":"String","ColValue":"Apple Extended USB Keyboard"}},
+{"data":{"title":"BootProtocol"},"attr":{"id":"27083","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"VendorIDSource"},"attr":{"id":"27085","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"27087","ColType":"Number","ColValue":"1200"}},
+{"data":{"title":"IOClass"},"attr":{"id":"27089","ColType":"String","ColValue":"IOHIDEventDriver"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"27091","ColType":"String","ColValue":"IOHIDInterface"}},
+{"data":{"title":"Transport"},"attr":{"id":"27093","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"27095","ColType":"String","ColValue":"Mitsumi Electric"}},
+{"data":{"title":"VendorID"},"attr":{"id":"27097","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"27099","ColType":"String","ColValue":""}},
+{"data":{"title":"LocationID"},"attr":{"id":"27101","ColType":"Number","ColValue":"18446744073612242944"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"27103","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"27104","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"27106","ColType":"Number","ColValue":"1"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"27108","ColType":"Number","ColValue":"6"}}]}]}
+]

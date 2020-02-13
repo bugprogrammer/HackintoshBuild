@@ -1,0 +1,23 @@
+[
+{"data":{"title":"Revision"},"attr":{"id":"10279","ColType":"Data","ColValue":"&lt;0103&gt;"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"10281","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"10283","ColType":"String","ColValue":"com.apple.driver.usb.AppleUSBXHCIPCI"}},
+{"data":{"title":"kUSBSleepPortCurrentLimit"},"attr":{"id":"10285","ColType":"Number","ColValue":"3000"}},
+{"data":{"title":"name"},"attr":{"id":"10287","ColType":"Data","ColValue":"&lt;\"XHC2\"&gt;"}},
+{"data":{"title":"IOPCIPrimaryMatch"},"attr":{"id":"10289","ColType":"String","ColValue":"0x15d48086"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"10291","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"10293","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"UsbCompanionLS"},"attr":{"id":"10295","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"10296","ColType":"String","ColValue":"XHC1"}}]},
+{"data":{"title":"IOClass"},"attr":{"id":"10298","ColType":"String","ColValue":"AppleUSBXHCIAR"}},
+{"data":{"title":"kUSBWakePortCurrentLimit"},"attr":{"id":"10300","ColType":"Number","ColValue":"3000"}},
+{"data":{"title":"UsbCompanionHS"},"attr":{"id":"10302","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"10303","ColType":"String","ColValue":"XHC1"}}]},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"10305","ColType":"String","ColValue":"IOPCIDevice"}},
+{"data":{"title":"UsbCompanionFS"},"attr":{"id":"10307","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"10308","ColType":"String","ColValue":"XHC1"}}]},
+{"data":{"title":"locationID"},"attr":{"id":"10310","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"64bit"},"attr":{"id":"10312","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"10314","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"10316","ColType":"Number","ColValue":"0"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"10318","ColType":"Number","ColValue":"0"}},{"data":{"title":"MaxPowerState"},"attr":{"id":"10320","ColType":"Number","ColValue":"3"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"10322","ColType":"Number","ColValue":"0"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"10324","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"10326","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"controller-statistics"},"attr":{"id":"10328","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"kControllerStatPowerStateTime"},"attr":{"id":"10330","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"kPowerStateSleep"},"attr":{"id":"10332","ColType":"String","ColValue":"15328400ms (31%)"}},{"data":{"title":"kPowerStateOn"},"attr":{"id":"10334","ColType":"String","ColValue":"1812493ms (3%)"}},{"data":{"title":"kPowerStateOff"},"attr":{"id":"10336","ColType":"String","ColValue":"11743112ms (24%)"}},{"data":{"title":"kPowerStateSuspended"},"attr":{"id":"10338","ColType":"String","ColValue":"19518038ms (40%)"}}]},{"data":{"title":"kControllerStatSpuriousInterruptCount"},"attr":{"id":"10340","ColType":"Number","ColValue":"0"}},{"data":{"title":"kControllerStatIOCount"},"attr":{"id":"10342","ColType":"Number","ColValue":"30178"}}]},
+{"data":{"title":"IOPCITunnelCompatible"},"attr":{"id":"10344","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"kUSBSleepSupported"},"attr":{"id":"10346","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"device-properties"},"attr":{"id":"10348","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"10350","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"UsbCompanionControllerPresent"},"attr":{"id":"10352","ColType":"Number","ColValue":"1"}},{"data":{"title":"USBBusNumber"},"attr":{"id":"10354","ColType":"Number","ColValue":"0"}},{"data":{"title":"acpi-path"},"attr":{"id":"10356","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP05@1c0004/UPSB@0/DSB2@20000/XHC2@0"}},{"data":{"title":"AAPL,xhci-clock-id"},"attr":{"id":"10358","ColType":"Number","ColValue":"1"}}]}
+]

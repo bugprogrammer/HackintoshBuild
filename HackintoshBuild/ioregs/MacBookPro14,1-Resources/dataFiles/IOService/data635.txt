@@ -1,0 +1,14 @@
+[
+{"data":{"title":"IOTTYSuffix"},"attr":{"id":"131323","ColType":"String","ColValue":""}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"131325","ColType":"String","ColValue":"com.apple.iokit.IOSerialFamily"}},
+{"data":{"title":"IOClass"},"attr":{"id":"131327","ColType":"String","ColValue":"IOSerialBSDClient"}},
+{"data":{"title":"IOTTYBaseName"},"attr":{"id":"131329","ColType":"String","ColValue":"AirPods-WirelessiAP-5"}},
+{"data":{"title":"IOSerialBSDClientType"},"attr":{"id":"131331","ColType":"String","ColValue":"IORS232SerialStream"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"131333","ColType":"Number","ColValue":"1000"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"131335","ColType":"String","ColValue":"IOBSD"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"131337","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"IOTTYDevice"},"attr":{"id":"131339","ColType":"String","ColValue":"AirPods-WirelessiAP-5"}},
+{"data":{"title":"IOCalloutDevice"},"attr":{"id":"131341","ColType":"String","ColValue":"/dev/cu.AirPods-WirelessiAP-5"}},
+{"data":{"title":"IODialinDevice"},"attr":{"id":"131343","ColType":"String","ColValue":"/dev/tty.AirPods-WirelessiAP-5"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"131345","ColType":"String","ColValue":"IOSerialStreamSync"}}
+]

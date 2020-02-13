@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"4190","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"_ADR"},"attr":{"id":"4192","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"4194","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"4196","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"4198","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"4200","ColType":"Number","ColValue":"0"}}]},
+{"data":{"title":"device-properties"},"attr":{"id":"4202","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"4204","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"PCI-Thunderbolt"},"attr":{"id":"4206","ColType":"Number","ColValue":"1"}},{"data":{"title":"acpi-path"},"attr":{"id":"4208","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PEG2@10002/UPSB@0"}}]},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"4210","ColType":"Boolean","ColValue":"Yes"}}
+]

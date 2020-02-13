@@ -1,0 +1,5 @@
+[
+{"data":{"title":"acpi-device"},"attr":{"id":"3820","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"3822","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PEG2@10002/SSD0@0"}},
+{"data":{"title":"use-msi"},"attr":{"id":"3824","ColType":"Number","ColValue":"1"}}
+]

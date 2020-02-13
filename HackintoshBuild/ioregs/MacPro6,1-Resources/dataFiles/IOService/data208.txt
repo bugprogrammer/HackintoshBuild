@@ -1,0 +1,19 @@
+[
+{"data":{"title":"USBPortType"},"attr":{"id":"10708","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"idProduct"},"attr":{"id":"10710","ColType":"Number","ColValue":"42243"}},
+{"data":{"title":"AppleUSBAlternateServiceRegistryID"},"attr":{"id":"10712","ColType":"Number","ColValue":"4294968948"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"10714","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bAlternateSetting"},"attr":{"id":"10716","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"10718","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"2d9786c6-9ef3-11d4-ad51-000a27052861"},"attr":{"id":"10720","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"USBSpeed"},"attr":{"id":"10722","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"AppleUSBAudioStreamPropertiesReady"},"attr":{"id":"10724","ColType":"String","ColValue":"Yes"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"10726","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOClassNameOverride"},"attr":{"id":"10728","ColType":"String","ColValue":"IOUSBInterface"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"10730","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"10732","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"idVendor"},"attr":{"id":"10734","ColType":"Number","ColValue":"16700"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"10736","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"locationID"},"attr":{"id":"10738","ColType":"Number","ColValue":"1188096"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"10740","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"bcdDevice"},"attr":{"id":"10742","ColType":"Number","ColValue":"272"}}
+]

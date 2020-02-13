@@ -1,0 +1,15 @@
+[
+{"data":{"title":"IOAudioDeviceModelID"},"attr":{"id":"15517","ColType":"String","ColValue":"Logitech Camera:046D:0821"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"15519","ColType":"String","ColValue":"com.apple.driver.AppleUSBAudio"}},
+{"data":{"title":"IOClass"},"attr":{"id":"15521","ColType":"String","ColValue":"AppleUSBAudioDevice"}},
+{"data":{"title":"IOAudioDeviceManufacturerName"},"attr":{"id":"15523","ColType":"String","ColValue":"Unknown Manufacturer"}},
+{"data":{"title":"IOAudioDeviceTransportType"},"attr":{"id":"15525","ColType":"Number","ColValue":"1970496032"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"15527","ColType":"Number","ColValue":"50000"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"15529","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"15531","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOAudioDeviceCanBeDefaults"},"attr":{"id":"15533","ColType":"Number","ColValue":"7"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"15535","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"15537","ColType":"Number","ColValue":"1"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"15539","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"15541","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"IOAudioDeviceName"},"attr":{"id":"15543","ColType":"String","ColValue":"Logitech Camera"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"15545","ColType":"String","ColValue":"IOUSBInterface"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"15547","ColType":"Number","ColValue":"1"}}
+]

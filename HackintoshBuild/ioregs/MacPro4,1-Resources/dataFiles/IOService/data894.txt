@@ -1,0 +1,18 @@
+[
+{"data":{"title":"NCQ"},"attr":{"id":"36364","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"36366","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"Physical Block Size"},"attr":{"id":"36368","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"Revision"},"attr":{"id":"36370","ColType":"String","ColValue":"05.01D05"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"36372","ColType":"String","ColValue":"com.apple.iokit.IOAHCIBlockStorage"}},
+{"data":{"title":"IOClass"},"attr":{"id":"36374","ColType":"String","ColValue":"AppleAHCIDiskDriver"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"36376","ColType":"String","ColValue":"not serializable"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"36378","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"SATA Features"},"attr":{"id":"36380","ColType":"Number","ColValue":"14"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"36382","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"Serial Number"},"attr":{"id":"36384","ColType":"String","ColValue":"     WD-WCATR4921892"}},
+{"data":{"title":"Model"},"attr":{"id":"36386","ColType":"String","ColValue":"WDC WD1002FAEX-00Z3A0                   "}},
+{"data":{"title":"Logical Block Size"},"attr":{"id":"36388","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"36390","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"IOProviderClass"},"attr":{"id":"36392","ColType":"String","ColValue":"IOAHCIDevice"}},
+{"data":{"title":"Queue Depth"},"attr":{"id":"36394","ColType":"Number","ColValue":"32"}}
+]

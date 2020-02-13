@@ -1,0 +1,20 @@
+[
+{"data":{"title":"Leaf"},"attr":{"id":"3088","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Writable"},"attr":{"id":"3090","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BSD Minor"},"attr":{"id":"3092","ColType":"Number","ColValue":"6"}},
+{"data":{"title":"IOBusyInterest"},"attr":{"id":"3094","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"3096","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"Partition ID"},"attr":{"id":"3098","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"Preferred Block Size"},"attr":{"id":"3100","ColType":"Number","ColValue":"512"}},
+{"data":{"title":"BSD Major"},"attr":{"id":"3102","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"BSD Name"},"attr":{"id":"3104","ColType":"String","ColValue":"disk2s1"}},
+{"data":{"title":"Size"},"attr":{"id":"3106","ColType":"Number","ColValue":"64252541952"}},
+{"data":{"title":"Content Hint"},"attr":{"id":"3108","ColType":"String","ColValue":"DOS_FAT_32"}},
+{"data":{"title":"Base"},"attr":{"id":"3110","ColType":"Number","ColValue":"1024"}},
+{"data":{"title":"Removable"},"attr":{"id":"3112","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"Open"},"attr":{"id":"3114","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"BSD Unit"},"attr":{"id":"3116","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"Whole"},"attr":{"id":"3118","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"Content"},"attr":{"id":"3120","ColType":"String","ColValue":"DOS_FAT_32"}},
+{"data":{"title":"Ejectable"},"attr":{"id":"3122","ColType":"Boolean","ColValue":"Yes"}}
+]

@@ -1,0 +1,12 @@
+[
+{"data":{"title":"ConsoleFlag"},"attr":{"id":"74585","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"CoreCaptureFlag"},"attr":{"id":"74587","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"Id"},"attr":{"id":"74589","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"CoreCaptureLevel"},"attr":{"id":"74591","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"StreamHeader"},"attr":{"id":"74593","ColType":"Data","ColValue":"&lt;0500000000007373&gt;"}},
+{"data":{"title":"Name"},"attr":{"id":"74595","ColType":"String","ColValue":"bpfIO80211Awdl"}},
+{"data":{"title":"ConsoleLevel"},"attr":{"id":"74597","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"MiscInfo"},"attr":{"id":"74599","ColType":"Number","ColValue":"150"}},
+{"data":{"title":"LogIdentifier"},"attr":{"id":"74601","ColType":"String","ColValue":"IO80211Awdl"}},
+{"data":{"title":"IOClass"},"attr":{"id":"74603","ColType":"String","ColValue":"CCLogStream"}}
+]

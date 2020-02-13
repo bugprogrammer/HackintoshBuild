@@ -1,0 +1,8 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"36719","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"36721","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"compatible"},"attr":{"id":"36723","ColType":"Data","ColValue":"&lt;\"smbus\"&gt;"}},
+{"data":{"title":"contains-device"},"attr":{"id":"36725","ColType":"String","ColValue":"true"}},
+{"data":{"title":"device-properties"},"attr":{"id":"36727","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"36729","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SBUS@1f0004/BUS0@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"36731","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"bus-architecture"},"attr":{"id":"36733","ColType":"String","ColValue":"ICH"}}
+]

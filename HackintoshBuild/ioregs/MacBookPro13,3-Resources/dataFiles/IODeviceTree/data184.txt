@@ -1,0 +1,5 @@
+[
+{"data":{"title":"apple-coprocessor-version"},"attr":{"id":"6597","ColType":"Data","ColValue":"&lt;0000010000000000&gt;"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"6599","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/XHC1@140000/RHUB@0/ASOC@0"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"6601","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}
+]

@@ -1,0 +1,21 @@
+[
+{"data":{"title":"device-id"},"attr":{"id":"34067","ColType":"Data","ColValue":"&lt;4e240000&gt;"}},
+{"data":{"title":"vendor-id"},"attr":{"id":"34069","ColType":"Data","ColValue":"&lt;86800000&gt;"}},
+{"data":{"title":"ranges"},"attr":{"id":"34071","ColType":"Data","ColValue":"&lt;0000008200000000000000d00000008200000000000000d00000000000001000000000c20000000000000000000000c2000000000000000000000000000000000000008100000000000000000000008100000000000000000000000000000000&gt;"}},
+{"data":{"title":"pcidebug"},"attr":{"id":"34073","ColType":"String","ColValue":"0:30:0(7:7)"}},
+{"data":{"title":"IOName"},"attr":{"id":"34075","ColType":"String","ColValue":"pci-bridge"}},
+{"data":{"title":"revision-id"},"attr":{"id":"34077","ColType":"Data","ColValue":"&lt;90000000&gt;"}},
+{"data":{"title":"reg"},"attr":{"id":"34079","ColType":"Data","ColValue":"&lt;00f0000000000000000000000000000000000000&gt;"}},
+{"data":{"title":"acpi-path"},"attr":{"id":"34081","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/P32@1e0000"}},
+{"data":{"title":"IOPCIConfigured"},"attr":{"id":"34083","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"built-in"},"attr":{"id":"34085","ColType":"Data","ColValue":"&lt;00&gt;"}},
+{"data":{"title":"class-code"},"attr":{"id":"34087","ColType":"Data","ColValue":"&lt;01040600&gt;"}},
+{"data":{"title":"IOPCIResourced"},"attr":{"id":"34089","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"acpi-device"},"attr":{"id":"34091","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
+{"data":{"title":"compatible"},"attr":{"id":"34093","ColType":"Data","ColValue":"&lt;\"pci8086,244e\",\"pciclass,060401\"&gt;"}},
+{"data":{"title":"#size-cells"},"attr":{"id":"34095","ColType":"Data","ColValue":"&lt;02000000&gt;"}},
+{"data":{"title":"name"},"attr":{"id":"34097","ColType":"String","ColValue":"pci-bridge"}},
+{"data":{"title":"#address-cells"},"attr":{"id":"34099","ColType":"Data","ColValue":"&lt;03000000&gt;"}},
+{"data":{"title":"IOPowerManagement"},"attr":{"id":"34101","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"ChildrenPowerState"},"attr":{"id":"34103","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"34105","ColType":"Number","ColValue":"1"}}]},
+{"data":{"title":"IODTPersist"},"attr":{"id":"34107","ColType":"Data","ColValue":"&lt;a2b159878ccc5987&gt;"}}
+]

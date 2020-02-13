@@ -1,0 +1,6 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"4015","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"_ADR"},"attr":{"id":"4017","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"device-properties"},"attr":{"id":"4019","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"sata-express-power-off"},"attr":{"id":"4021","ColType":"Number","ColValue":"1"}},{"data":{"title":"acpi-path"},"attr":{"id":"4023","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP05@1c0004/SSD0@0"}},{"data":{"title":"use-msi"},"attr":{"id":"4025","ColType":"Number","ColValue":"1"}},{"data":{"title":"acpi-device"},"attr":{"id":"4027","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
+{"data":{"title":"acpi-pci-pm"},"attr":{"id":"4029","ColType":"Boolean","ColValue":"Yes"}}
+]

@@ -2,8 +2,8 @@
 //  ViewControllerOther.swift
 //  HackintoshBuild
 //
-//  Created by 刘靖禹 on 2020/1/17.
-//  Copyright © 2020 Arabaku. All rights reserved.
+//  Created by bugprogrammer on 2020/1/17.
+//  Copyright © 2020 bugprogrammer,Arabaku. All rights reserved.
 //
 
 import Cocoa
@@ -71,6 +71,20 @@ class ViewControllerOther: NSViewController {
         progressBar.isHidden = true
         
         runBuildScripts("spctl", "已开启未知来源安装")
+    }
+    
+    @IBAction func timeMachineOptimize(_ sender: Any) {
+        output.string = ""
+        progressBar.isHidden = true
+        
+        runBuildScripts("timeMachineOptimize", "时间机器已经满血运行，注意：如果用NAS备份，请使用AFP协议")
+    }
+    
+    @IBAction func timeMachineReset(_ sender: Any) {
+        output.string = ""
+        progressBar.isHidden = true
+        
+        runBuildScripts("timeMachineReset", "时间机器已经恢复默认状态")
     }
     
     func runBuildScripts(_ shell: String,_ alertText: String) {

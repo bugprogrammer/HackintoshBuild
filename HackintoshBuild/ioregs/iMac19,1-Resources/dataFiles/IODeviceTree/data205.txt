@@ -1,0 +1,15 @@
+[
+{"data":{"title":"efi-boot-device-data"},"attr":{"id":"9592","ColType":"Data","ColValue":"&lt;02010c00d041030a0000000001010600001b0101060000000316100001000000002538dcce77c02904012a0002000000062c010000000000d7a2660000000000a37d83a77b949b43951fc8ac60194a1d020204032400f7fc74be7c0bf349914701f4042e6842641f18eaaddc6748b2c4da073c9e5e697fff0400&gt;"}},
+{"data":{"title":"backlight-level"},"attr":{"id":"9594","ColType":"Data","ColValue":"&lt;ffff&gt;"}},
+{"data":{"title":"bluetoothInternalControllerInfo"},"attr":{"id":"9596","ColType":"Data","ColValue":"&lt;7b00ac050000000038f9d384e846&gt;"}},
+{"data":{"title":"IDInstallerDataV2"},"attr":{"id":"9598","ColType":"Data","ColValue":"&lt;e00562706c6973743030a101d3020304050607533130300004e010335136576372617368656451315f10166b6579207265636f76657279206173730035ec616e74080a1115191b2325001001ce010100f29e0800f6e300003e0600000000000000&gt;"}},
+{"data":{"title":"efi-boot-device"},"attr":{"id":"9600","ColType":"Data","ColValue":"&lt;\"<array><dict><key>IOMatch</key><dict><key>IOProviderClass</key><string>IOMedia</string><key>IOPropertyMatch</key><dict><key>UUID</key><string>EA181F64-DCAD-4867-B2C4-DA073C9E5E69</string></dict></dict><key>BLLastBSDName</key><string>disk3s2</string></dict></array>\"&gt;"}},
+{"data":{"title":"LocationServicesEnabled"},"attr":{"id":"9602","ColType":"Data","ColValue":"&lt;01&gt;"}},
+{"data":{"title":"display-config"},"attr":{"id":"9604","ColType":"Data","ColValue":"&lt;000025017308ffff0100&gt;"}},
+{"data":{"title":"SystemAudioVolumeDB"},"attr":{"id":"9606","ColType":"Data","ColValue":"&lt;dd&gt;"}},
+{"data":{"title":"EFIBluetoothDelay"},"attr":{"id":"9608","ColType":"Data","ColValue":"&lt;b80b&gt;"}},
+{"data":{"title":"SystemAudioVolume"},"attr":{"id":"9610","ColType":"Data","ColValue":"&lt;37&gt;"}},
+{"data":{"title":"bluetoothActiveControllerInfo"},"attr":{"id":"9612","ColType":"Data","ColValue":"&lt;7b00ac0502000000000038f9d384e846&gt;"}},
+{"data":{"title":"fmm-computer-name"},"attr":{"id":"9614","ColType":"Data","ColValue":"&lt;\"experience’s iMac\"&gt;"}},
+{"data":{"title":"HW_BOOT_DATA"},"attr":{"id":"9616","ColType":"Data","ColValue":"&lt;01000000073200000000372214000000000000000000000000330000001702171500000000000000000000000034000000454017160000000000000000000000003500000013571717000000000000000000000000360000003728001800000000000000000000000037000000083100180000000000000000000000003800000059310018000000000000000000000000390000005134001800000000000000000000000030000000003421120000000000000000000000003100000019402113000000000000000000000000&gt;"}}
+]

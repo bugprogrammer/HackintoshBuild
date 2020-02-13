@@ -1,0 +1,9 @@
+[
+{"data":{"title":"vendor"},"attr":{"id":"3298","ColType":"Data","ColValue":"&lt;\"Apple Inc.\"&gt;"}},
+{"data":{"title":"fv-main-address"},"attr":{"id":"3300","ColType":"Number","ColValue":"18446744073702641664"}},
+{"data":{"title":"rom-size"},"attr":{"id":"3302","ColType":"Number","ColValue":"8388608"}},
+{"data":{"title":"version"},"attr":{"id":"3304","ColType":"Data","ColValue":"&lt;\"IM171.88Z.0105.B05.1511031741\"&gt;"}},
+{"data":{"title":"fv-main-size"},"attr":{"id":"3306","ColType":"Number","ColValue":"1404928"}},
+{"data":{"title":"release-date"},"attr":{"id":"3308","ColType":"Data","ColValue":"&lt;\"11/03/2015\"&gt;"}},
+{"data":{"title":"apple-rom-info"},"attr":{"id":"3310","ColType":"Data","ColValue":"&lt;4170706c6520524f4d2056657273696f6e0a202042494f532049443a202020202020494d3137312e38385a2e303130352e4230352e313531313033313734310a20204275696c742062793a20202020205f61747373657276657240786170703135370a2020446174653a202020202020202020547565204e6f762020332031373a34313a343420323031350a20205265766973696f6e3a20202020203130352e352028422649290a2020524f4d2056657273696f6e3a20204f6666696369616c204275696c640a2020436f6d70696c65723a20202020204170706c65204c4c564d2076657273696f6e20362e312e302028636c616e672d3630322e302e35332920286261736564206f6e204c4c564d20332e362e3073766e290a00&gt;"}}
+]

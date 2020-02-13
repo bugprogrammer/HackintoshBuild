@@ -1,0 +1,7 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"5931","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"_ADR"},"attr":{"id":"5933","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"_UID"},"attr":{"id":"5935","ColType":"String","ColValue":"1"}},
+{"data":{"title":"compatible"},"attr":{"id":"5937","ColType":"Data","ColValue":"&lt;\"apple-uart-soc-als\"&gt;"}},
+{"data":{"title":"device-properties"},"attr":{"id":"5939","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"stopBits"},"attr":{"id":"5941","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},{"data":{"title":"parity"},"attr":{"id":"5943","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},{"data":{"title":"dataBits"},"attr":{"id":"5945","ColType":"Data","ColValue":"&lt;0800000000000000&gt;"}},{"data":{"title":"baud"},"attr":{"id":"5947","ColType":"Data","ColValue":"&lt;00c2010000000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"5949","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/URT2@190000/MALS@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"5951","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
+]

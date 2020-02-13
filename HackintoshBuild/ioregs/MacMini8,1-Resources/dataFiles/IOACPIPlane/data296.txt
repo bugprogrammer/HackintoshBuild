@@ -1,0 +1,8 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"6547","ColType":"Number","ColValue":"15"}},
+{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"6549","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"6550","ColType":"Data","ColValue":"&lt;1200000007000000&gt;"}}]},
+{"data":{"title":"_ADR"},"attr":{"id":"6552","ColType":"Number","ColValue":"1376258"}},
+{"data":{"title":"_UID"},"attr":{"id":"6554","ColType":"String","ColValue":"3"}},
+{"data":{"title":"IOInterruptControllers"},"attr":{"id":"6556","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"6557","ColType":"String","ColValue":"io-apic-0"}}]},
+{"data":{"title":"device-properties"},"attr":{"id":"6559","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"i2c-pin-scl"},"attr":{"id":"6561","ColType":"Data","ColValue":"&lt;0700000000000000&gt;"}},{"data":{"title":"acpi-device"},"attr":{"id":"6563","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"i2c-channel-number"},"attr":{"id":"6565","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},{"data":{"title":"i2c-pin-sda"},"attr":{"id":"6567","ColType":"Data","ColValue":"&lt;0600000000000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"6569","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/I2C2@150002"}}]}
+]

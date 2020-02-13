@@ -1,0 +1,18 @@
+[
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"8816","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"2d9786c6-9ef3-11d4-ad51-000a27052861"},"attr":{"id":"8818","ColType":"String","ColValue":"IOUSBFamily.kext/Contents/PlugIns/IOUSBLib.bundle"}}]},
+{"data":{"title":"idProduct"},"attr":{"id":"8820","ColType":"Number","ColValue":"34065"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"8822","ColType":"String","ColValue":"IOUSBInterfaceUserClientV3"}},
+{"data":{"title":"iInterface"},"attr":{"id":"8824","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bAlternateSetting"},"attr":{"id":"8826","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bConfigurationValue"},"attr":{"id":"8828","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"8830","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOUserClientCrossEndianCompatible"},"attr":{"id":"8832","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"bInterfaceProtocol"},"attr":{"id":"8834","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bInterfaceNumber"},"attr":{"id":"8836","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"bInterfaceSubClass"},"attr":{"id":"8838","ColType":"Number","ColValue":"2"}},
+{"data":{"title":"idVendor"},"attr":{"id":"8840","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"bInterfaceClass"},"attr":{"id":"8842","ColType":"Number","ColValue":"14"}},
+{"data":{"title":"locationID"},"attr":{"id":"8844","ColType":"Number","ColValue":"437321728"}},
+{"data":{"title":"bNumEndpoints"},"attr":{"id":"8846","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"bcdDevice"},"attr":{"id":"8848","ColType":"Number","ColValue":"29225"}}
+]

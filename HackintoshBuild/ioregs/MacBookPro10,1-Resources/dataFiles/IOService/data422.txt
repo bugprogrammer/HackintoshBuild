@@ -1,0 +1,6 @@
+[
+{"data":{"title":"_STA"},"attr":{"id":"56604","ColType":"Number","ColValue":"18446744073709551615"}},
+{"data":{"title":"acpi-wake-system-state"},"attr":{"id":"56606","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"name"},"attr":{"id":"56608","ColType":"Data","ColValue":"&lt;\"ACPI0003\"&gt;"}},
+{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"56610","ColType":"Number","ColValue":"35"}}
+]

@@ -1,0 +1,16 @@
+[
+{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"18295","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"IOMaximumBlockCountWrite"},"attr":{"id":"18297","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"com.apple.corestorage.lvg.name"},"attr":{"id":"18299","ColType":"String","ColValue":"Macintosh HD"}},
+{"data":{"title":"IOMaximumSegmentByteCountRead"},"attr":{"id":"18301","ColType":"Number","ColValue":"4194304"}},
+{"data":{"title":"IOPolledInterface"},"attr":{"id":"18303","ColType":"Boolean","ColValue":"No"}},
+{"data":{"title":"com.apple.corestorage.lvg.uuid"},"attr":{"id":"18305","ColType":"String","ColValue":"5B142BEA-22BF-4E8E-B087-350FE431BB0A"}},
+{"data":{"title":"com.apple.corestorage.lvg.physicalVolumes"},"attr":{"id":"18307","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"18308","ColType":"String","ColValue":"EC895F2F-42F6-4753-BE92-E5031B3F08D0"}}]},
+{"data":{"title":"com.apple.corestorage.lvg.status"},"attr":{"id":"18310","ColType":"String","ColValue":"Online"}},
+{"data":{"title":"IOMaximumSegmentCountWrite"},"attr":{"id":"18312","ColType":"Number","ColValue":"256"}},
+{"data":{"title":"com.apple.corestorage.lvg.type"},"attr":{"id":"18314","ColType":"String","ColValue":"LVM"}},
+{"data":{"title":"IOGeneralInterest"},"attr":{"id":"18316","ColType":"String","ColValue":"IOCommand is not serializable"}},
+{"data":{"title":"IOMaximumSegmentCountRead"},"attr":{"id":"18318","ColType":"Number","ColValue":"256"}},
+{"data":{"title":"IOMaximumBlockCountRead"},"attr":{"id":"18320","ColType":"Number","ColValue":"65536"}},
+{"data":{"title":"IOMaximumSegmentByteCountWrite"},"attr":{"id":"18322","ColType":"Number","ColValue":"4194304"}}
+]

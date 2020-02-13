@@ -1,0 +1,9 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"120109","ColType":"String","ColValue":"IOResources"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"120111","ColType":"String","ColValue":"AppleHV"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"120113","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"IOResourceMatch"},"attr":{"id":"120115","ColType":"String","ColValue":"IOKit"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"120117","ColType":"String","ColValue":"com.apple.driver.AppleHV"}},
+{"data":{"title":"IOUserClientClass"},"attr":{"id":"120119","ColType":"String","ColValue":"AppleHVClient"}},
+{"data":{"title":"IOClass"},"attr":{"id":"120121","ColType":"String","ColValue":"AppleHV"}}
+]

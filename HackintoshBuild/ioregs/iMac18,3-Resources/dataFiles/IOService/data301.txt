@@ -1,0 +1,10 @@
+[
+{"data":{"title":"IOProviderClass"},"attr":{"id":"8810","ColType":"String","ColValue":"IOHDACodecFunction"}},
+{"data":{"title":"IOMatchCategory"},"attr":{"id":"8812","ColType":"String","ColValue":"IODefaultMatchCategory"}},
+{"data":{"title":"HDMIDPAudioCapabilities"},"attr":{"id":"8814","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOProbeScore"},"attr":{"id":"8816","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"IOHDACodecFunctionGroupType"},"attr":{"id":"8818","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"vendorcodecID"},"attr":{"id":"8820","ColType":"Number","ColValue":"268610049"}},
+{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"8822","ColType":"String","ColValue":"com.apple.driver.AppleHDA"}},
+{"data":{"title":"IOClass"},"attr":{"id":"8824","ColType":"String","ColValue":"AppleHDACodecGeneric"}}
+]

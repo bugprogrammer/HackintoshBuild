@@ -1,0 +1,8 @@
+[
+{"data":{"title":"Protocol Characteristics"},"attr":{"id":"35732","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"35734","ColType":"String","ColValue":"Internal"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"35736","ColType":"String","ColValue":"SATA"}}]},
+{"data":{"title":"Device Characteristics"},"attr":{"id":"35738","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Block Size"},"attr":{"id":"35740","ColType":"Number","ColValue":"512"}},{"data":{"title":"SATA Features"},"attr":{"id":"35742","ColType":"Number","ColValue":"14"}},{"data":{"title":"Product Name"},"attr":{"id":"35744","ColType":"String","ColValue":"WDC WD10EADS-65L5B1                     "}},{"data":{"title":"Product Revision Level"},"attr":{"id":"35746","ColType":"String","ColValue":"01.01A01"}},{"data":{"title":"Logical Block Size"},"attr":{"id":"35748","ColType":"Number","ColValue":"512"}},{"data":{"title":"Medium Type"},"attr":{"id":"35750","ColType":"String","ColValue":"Rotational"}},{"data":{"title":"Serial Number"},"attr":{"id":"35752","ColType":"String","ColValue":"     WD-WCAU4A880061"}}]},
+{"data":{"title":"SMART Capable"},"attr":{"id":"35754","ColType":"Boolean","ColValue":"Yes"}},
+{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"35756","ColType":"Number","ColValue":"4"}},
+{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"35758","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"24514B7A-2804-11D6-8A02-003065704866"},"attr":{"id":"35760","ColType":"String","ColValue":"SMARTLib.plugin"}}]},
+{"data":{"title":"device-type"},"attr":{"id":"35762","ColType":"String","ColValue":"Generic"}}
+]

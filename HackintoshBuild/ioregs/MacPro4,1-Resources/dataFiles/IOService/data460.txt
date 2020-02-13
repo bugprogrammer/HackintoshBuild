@@ -1,0 +1,17 @@
+[
+{"data":{"title":"ProductID"},"attr":{"id":"14908","ColType":"Number","ColValue":"37404"}},
+{"data":{"title":"Transport"},"attr":{"id":"14910","ColType":"String","ColValue":"USB"}},
+{"data":{"title":"LocationID"},"attr":{"id":"14912","ColType":"Number","ColValue":"18446744073612165120"}},
+{"data":{"title":"VersionNumber"},"attr":{"id":"14914","ColType":"Number","ColValue":"277"}},
+{"data":{"title":"VendorID"},"attr":{"id":"14916","ColType":"Number","ColValue":"1452"}},
+{"data":{"title":"PrimaryUsage"},"attr":{"id":"14918","ColType":"Number","ColValue":"1"}},
+{"data":{"title":"ReportInterval"},"attr":{"id":"14920","ColType":"Number","ColValue":"8000"}},
+{"data":{"title":"BootProtocol"},"attr":{"id":"14922","ColType":"Number","ColValue":"0"}},
+{"data":{"title":"DeviceUsagePairs"},"attr":{"id":"14924","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"14925","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DeviceUsagePage"},"attr":{"id":"14927","ColType":"Number","ColValue":"128"}},{"data":{"title":"DeviceUsage"},"attr":{"id":"14929","ColType":"Number","ColValue":"1"}}]}]},
+{"data":{"title":"HIDDefaultBehavior"},"attr":{"id":"14931","ColType":"String","ColValue":"Display"}},
+{"data":{"title":"SerialNumber"},"attr":{"id":"14933","ColType":"String","ColValue":"0201B697"}},
+{"data":{"title":"Manufacturer"},"attr":{"id":"14935","ColType":"String","ColValue":"Apple Computer, Inc."}},
+{"data":{"title":"PrimaryUsagePage"},"attr":{"id":"14937","ColType":"Number","ColValue":"128"}},
+{"data":{"title":"Product"},"attr":{"id":"14939","ColType":"String","ColValue":"Apple Cinema HD Display"}},
+{"data":{"title":"CountryCode"},"attr":{"id":"14941","ColType":"Number","ColValue":"0"}}
+]
