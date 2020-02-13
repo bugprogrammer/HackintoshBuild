@@ -1,9 +1,0 @@
-[
-{"data":{"title":"IOProviderClass"},"attr":{"id":"4453","ColType":"String","ColValue":"IOFramebuffer"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"4455","ColType":"String","ColValue":"AppleUpstreamUserClientDriver"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"4457","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"4459","ColType":"String","ColValue":"IOKit"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"4461","ColType":"String","ColValue":"com.apple.driver.AppleUpstreamUserClient"}},
-{"data":{"title":"IOUserClientClass"},"attr":{"id":"4463","ColType":"String","ColValue":"AppleUpstreamUserClient"}},
-{"data":{"title":"IOClass"},"attr":{"id":"4465","ColType":"String","ColValue":"AppleUpstreamUserClientDriver"}}
-]

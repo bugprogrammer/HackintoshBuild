@@ -1,3 +1,0 @@
-[
-{"data":{"title":"IOPowerManagement"},"attr":{"id":"21028","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"DevicePowerState"},"attr":{"id":"21030","ColType":"Number","ColValue":"2"}},{"data":{"title":"DriverPowerState"},"attr":{"id":"21032","ColType":"Number","ColValue":"1"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"21034","ColType":"Number","ColValue":"2"}}]}
-]

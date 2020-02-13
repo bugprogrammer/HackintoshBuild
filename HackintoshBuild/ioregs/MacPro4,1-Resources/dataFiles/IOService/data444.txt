@@ -1,8 +1,0 @@
-[
-{"data":{"title":"IOMaximumSegmentCountRead"},"attr":{"id":"13540","ColType":"Number","ColValue":"32"}},
-{"data":{"title":"Device Characteristics"},"attr":{"id":"13542","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Product Revision Level"},"attr":{"id":"13544","ColType":"String","ColValue":"PMAP"}},{"data":{"title":"Vendor Name"},"attr":{"id":"13546","ColType":"String","ColValue":"UFD 2.0"}},{"data":{"title":"Product Name"},"attr":{"id":"13548","ColType":"String","ColValue":"Silicon-Power16G"}}]},
-{"data":{"title":"IOMaximumSegmentCountWrite"},"attr":{"id":"13550","ColType":"Number","ColValue":"32"}},
-{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"13552","ColType":"Number","ColValue":"4"}},
-{"data":{"title":"Protocol Characteristics"},"attr":{"id":"13554","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"13556","ColType":"String","ColValue":"USB"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"13558","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"13560","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"13562","ColType":"Number","ColValue":"30000"}}]},
-{"data":{"title":"device-type"},"attr":{"id":"13564","ColType":"String","ColValue":"Generic"}}
-]

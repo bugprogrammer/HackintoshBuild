@@ -1,9 +1,0 @@
-[
-{"data":{"title":"IOProviderClass"},"attr":{"id":"17594","ColType":"String","ColValue":"IOMedia"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"17596","ColType":"String","ColValue":"IOStorage"}},
-{"data":{"title":"Content Mask"},"attr":{"id":"17598","ColType":"String","ColValue":"GUID_partition_scheme"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"17600","ColType":"Number","ColValue":"4000"}},
-{"data":{"title":"IOPropertyMatch"},"attr":{"id":"17602","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Whole"},"attr":{"id":"17604","ColType":"Boolean","ColValue":"Yes"}}]},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"17606","ColType":"String","ColValue":"com.apple.iokit.IOStorageFamily"}},
-{"data":{"title":"IOClass"},"attr":{"id":"17608","ColType":"String","ColValue":"IOGUIDPartitionScheme"}}
-]

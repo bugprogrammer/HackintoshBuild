@@ -1,6 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"3003","ColType":"Number","ColValue":"18446744073709551615"}},
-{"data":{"title":"_ADR"},"attr":{"id":"3005","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOPowerManagement"},"attr":{"id":"3007","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"MaxPowerState"},"attr":{"id":"3009","ColType":"Number","ColValue":"2"}},{"data":{"title":"CurrentPowerState"},"attr":{"id":"3011","ColType":"Number","ColValue":"0"}},{"data":{"title":"CapabilityFlags"},"attr":{"id":"3013","ColType":"Number","ColValue":"0"}}]},
-{"data":{"title":"device-properties"},"attr":{"id":"3015","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"3017","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP05@1c0004/SSD0@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"3019","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"use-msi"},"attr":{"id":"3021","ColType":"Number","ColValue":"1"}},{"data":{"title":"deep-idle"},"attr":{"id":"3023","ColType":"Number","ColValue":"1"}},{"data":{"title":"nvme-self-refresh"},"attr":{"id":"3025","ColType":"Number","ColValue":"1"}}]}
-]

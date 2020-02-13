@@ -1,7 +1,0 @@
-[
-{"data":{"title":"IOProbeScore"},"attr":{"id":"93870","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"93872","ColType":"String","ColValue":"IODefaultMatchCategory"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"93874","ColType":"String","ColValue":"com.apple.iokit.IOHDAFamily"}},
-{"data":{"title":"IOClass"},"attr":{"id":"93876","ColType":"String","ColValue":"IOHDACodecDriver"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"93878","ColType":"String","ColValue":"IOHDACodecDevice"}}
-]

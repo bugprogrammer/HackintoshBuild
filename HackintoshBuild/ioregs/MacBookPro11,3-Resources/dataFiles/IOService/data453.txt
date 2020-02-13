@@ -1,6 +1,0 @@
-[
-{"data":{"title":"Device Characteristics"},"attr":{"id":"64139","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Product Revision Level"},"attr":{"id":"64141","ColType":"String","ColValue":"1007"}},{"data":{"title":"Vendor Name"},"attr":{"id":"64143","ColType":"String","ColValue":"WD"}},{"data":{"title":"Product Name"},"attr":{"id":"64145","ColType":"String","ColValue":"My Passport 0822"}}]},
-{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"64147","ColType":"Number","ColValue":"4"}},
-{"data":{"title":"Protocol Characteristics"},"attr":{"id":"64149","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"64151","ColType":"String","ColValue":"USB"}},{"data":{"title":"SCSI Logical Unit Number"},"attr":{"id":"64153","ColType":"Number","ColValue":"0"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"64155","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"64157","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"64159","ColType":"Number","ColValue":"30000"}}]},
-{"data":{"title":"device-type"},"attr":{"id":"64161","ColType":"String","ColValue":"Generic"}}
-]

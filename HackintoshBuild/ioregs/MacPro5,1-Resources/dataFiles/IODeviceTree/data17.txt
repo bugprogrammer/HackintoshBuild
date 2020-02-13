@@ -1,8 +1,0 @@
-[
-{"data":{"title":"name"},"attr":{"id":"2438","ColType":"Data","ColValue":"&lt;\"platform\"&gt;"}},
-{"data":{"title":"SystemSerialNumber"},"attr":{"id":"2440","ColType":"Data","ColValue":"&lt;\"C\",\"K\",\"1\",\"5\",\"1\",\"0\",\"7\",\"6\",\"E\",\"U\",\"H\"&gt;"}},
-{"data":{"title":"Model"},"attr":{"id":"2442","ColType":"Data","ColValue":"&lt;4d0061006300500072006f0035002c0031000000&gt;"}},
-{"data":{"title":"system-id"},"attr":{"id":"2444","ColType":"Data","ColValue":"&lt;d7238a6bc13af25c9165d7b7ace17cdc&gt;"}},
-{"data":{"title":"DevicePathsSupported"},"attr":{"id":"2446","ColType":"Data","ColValue":"&lt;01000000&gt;"}},
-{"data":{"title":"FSBFrequency"},"attr":{"id":"2448","ColType":"Data","ColValue":"&lt;2f6bed0700000000&gt;"}}
-]

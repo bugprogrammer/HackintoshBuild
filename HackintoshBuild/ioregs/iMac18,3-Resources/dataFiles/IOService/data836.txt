@@ -1,9 +1,0 @@
-[
-{"data":{"title":"IOProviderClass"},"attr":{"id":"174269","ColType":"String","ColValue":"IOResources"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"174271","ColType":"String","ColValue":"DirectHWService"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"174273","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"174275","ColType":"String","ColValue":"IOKit"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"174277","ColType":"String","ColValue":"org.apple.dont.block.DirectHW"}},
-{"data":{"title":"IOUserClientClass"},"attr":{"id":"174279","ColType":"String","ColValue":"DirectHWUserClient"}},
-{"data":{"title":"IOClass"},"attr":{"id":"174281","ColType":"String","ColValue":"DirectHWService"}}
-]

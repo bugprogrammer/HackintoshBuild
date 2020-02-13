@@ -1,9 +1,0 @@
-[
-{"data":{"title":"IOProviderClass"},"attr":{"id":"55508","ColType":"String","ColValue":"IOResources"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"55510","ColType":"String","ColValue":"IOHIDResource"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"55512","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"55514","ColType":"String","ColValue":"IOBSD"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"55516","ColType":"String","ColValue":"com.apple.iokit.IOHIDFamily"}},
-{"data":{"title":"IOUserClientClass"},"attr":{"id":"55518","ColType":"String","ColValue":"IOHIDResourceDeviceUserClient"}},
-{"data":{"title":"IOClass"},"attr":{"id":"55520","ColType":"String","ColValue":"IOHIDResource"}}
-]

@@ -1,8 +1,0 @@
-[
-{"data":{"title":"name"},"attr":{"id":"93493","ColType":"String","ColValue":"LpssEmbDev00000000"}},
-{"data":{"title":"compatible"},"attr":{"id":"93495","ColType":"String","ColValue":"apple-uart-ssdc"}},
-{"data":{"title":"parity"},"attr":{"id":"93497","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"baud"},"attr":{"id":"93499","ColType":"Number","ColValue":"1250000"}},
-{"data":{"title":"dataBits"},"attr":{"id":"93501","ColType":"Number","ColValue":"8"}},
-{"data":{"title":"stopBits"},"attr":{"id":"93503","ColType":"Number","ColValue":"1"}}
-]

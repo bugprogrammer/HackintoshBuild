@@ -1,9 +1,0 @@
-[
-{"data":{"title":"vendor"},"attr":{"id":"2096","ColType":"Data","ColValue":"&lt;\"Apple Inc.\"&gt;"}},
-{"data":{"title":"fv-main-address"},"attr":{"id":"2098","ColType":"Number","ColValue":"18446744073702801408"}},
-{"data":{"title":"rom-size"},"attr":{"id":"2100","ColType":"Number","ColValue":"8388608"}},
-{"data":{"title":"version"},"attr":{"id":"2102","ColType":"Data","ColValue":"&lt;\"MBP112.88Z.0138.B07.1402121134\"&gt;"}},
-{"data":{"title":"fv-main-size"},"attr":{"id":"2104","ColType":"Number","ColValue":"1703936"}},
-{"data":{"title":"release-date"},"attr":{"id":"2106","ColType":"Data","ColValue":"&lt;\"02/12/2014\"&gt;"}},
-{"data":{"title":"apple-rom-info"},"attr":{"id":"2108","ColType":"Data","ColValue":"&lt;4170706c6520524f4d2056657273696f6e0a202042494f532049443a2020202020204d42503131320a20204275696c742062793a2020202020726f6f74407361756d6f6e0a2020446174653a202020202020202020576564204665622031322031313a33323a31342050535420323031340a20205265766973696f6e3a20202020203133382e372e307e312028422649290a20204275696c64636176652049443a20313531320a2020524f4d2056657273696f6e3a2020303133385f4200&gt;"}}
-]

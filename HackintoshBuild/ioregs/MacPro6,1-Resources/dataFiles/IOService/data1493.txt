@@ -1,7 +1,0 @@
-[
-{"data":{"title":"IOPMIsPowerManaged"},"attr":{"id":"88072","ColType":"Boolean","ColValue":"Yes"}},
-{"data":{"title":"compatible"},"attr":{"id":"88074","ColType":"String","ColValue":"AVVirtualDisplay"}},
-{"data":{"title":"displayNum"},"attr":{"id":"88076","ColType":"Number","ColValue":"2"}},
-{"data":{"title":"AAPL,gray-value"},"attr":{"id":"88078","ColType":"Data","ColValue":"&lt;00000000&gt;"}},
-{"data":{"title":"AAPL,gray-page"},"attr":{"id":"88080","ColType":"Data","ColValue":"&lt;01000000&gt;"}}
-]

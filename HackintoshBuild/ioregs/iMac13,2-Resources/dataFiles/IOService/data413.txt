@@ -1,8 +1,0 @@
-[
-{"data":{"title":"IOProbeScore"},"attr":{"id":"17646","ColType":"Number","ColValue":"30000"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"17648","ColType":"String","ColValue":"IOMediaBSDClient"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"17650","ColType":"String","ColValue":"IOBSD"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"17652","ColType":"String","ColValue":"com.apple.iokit.IOStorageFamily"}},
-{"data":{"title":"IOClass"},"attr":{"id":"17654","ColType":"String","ColValue":"IOMediaBSDClient"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"17656","ColType":"String","ColValue":"IOMedia"}}
-]

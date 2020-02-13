@@ -1,8 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"91609","ColType":"Number","ColValue":"11"}},
-{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"91611","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"91612","ColType":"Data","ColValue":"&lt;0600000000000000&gt;"}}]},
-{"data":{"title":"compatible"},"attr":{"id":"91614","ColType":"Data","ColValue":"&lt;\"smc-thurley\"&gt;"}},
-{"data":{"title":"name"},"attr":{"id":"91616","ColType":"Data","ColValue":"&lt;\"APP0001\"&gt;"}},
-{"data":{"title":"IOInterruptControllers"},"attr":{"id":"91618","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"91619","ColType":"String","ColValue":"io-apic-0"}}]},
-{"data":{"title":"IODeviceMemory"},"attr":{"id":"91621","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"91622","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"91623","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"91625","ColType":"Number","ColValue":"768"}},{"data":{"title":"length"},"attr":{"id":"91627","ColType":"Number","ColValue":"32"}}]}]}]}
-]

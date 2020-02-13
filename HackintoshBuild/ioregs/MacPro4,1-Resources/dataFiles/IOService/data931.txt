@@ -1,9 +1,0 @@
-[
-{"data":{"title":"IOProviderClass"},"attr":{"id":"37275","ColType":"String","ColValue":"IOPlatformExpert"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"37277","ColType":"String","ColValue":"AppleRawPhysicalMemoryAddressSpace"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"37279","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"37281","ColType":"String","ColValue":"IOKit"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37283","ColType":"String","ColValue":"com.apple.iokit.AppleProfileFamily"}},
-{"data":{"title":"AppleRawAddressSpaceType"},"attr":{"id":"37285","ColType":"String","ColValue":"Physical Memory"}},
-{"data":{"title":"IOClass"},"attr":{"id":"37287","ColType":"String","ColValue":"AppleRawPhysicalMemoryAddressSpace"}}
-]

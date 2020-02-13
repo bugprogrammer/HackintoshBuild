@@ -1,4 +1,0 @@
-[
-{"data":{"title":"IOUserClientCreator"},"attr":{"id":"64225","ColType":"String","ColValue":"pid 90, loginwindow"}},
-{"data":{"title":"DebugState"},"attr":{"id":"64227","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"EventQueueMap"},"attr":{"id":"64229","ColType":"Array","ColValue":"0_values"},"children":[]},{"data":{"title":"Privileged"},"attr":{"id":"64231","ColType":"Boolean","ColValue":"Yes"}}]}
-]

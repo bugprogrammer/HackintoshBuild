@@ -1,6 +1,0 @@
-[
-{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"37057","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"37058","ColType":"Data","ColValue":"&lt;0200000000000000&gt;"}}]},
-{"data":{"title":"device_type"},"attr":{"id":"37060","ColType":"Data","ColValue":"&lt;\"power-button\"&gt;"}},
-{"data":{"title":"IOInterruptControllers"},"attr":{"id":"37062","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"37063","ColType":"String","ColValue":"ACPIEventController"}}]},
-{"data":{"title":"acpi-wake-type"},"attr":{"id":"37065","ColType":"Number","ColValue":"1"}}
-]

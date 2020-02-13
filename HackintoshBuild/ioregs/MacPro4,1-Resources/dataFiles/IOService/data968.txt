@@ -1,7 +1,0 @@
-[
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"37800","ColType":"String","ColValue":"AppleProfileRegisterStateAction"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"37802","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37804","ColType":"String","ColValue":"com.apple.driver.AppleProfileRegisterStateAction"}},
-{"data":{"title":"IOClass"},"attr":{"id":"37806","ColType":"String","ColValue":"AppleProfileRegisterStateAction"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"37808","ColType":"String","ColValue":"AppleProfileOSHooks"}}
-]

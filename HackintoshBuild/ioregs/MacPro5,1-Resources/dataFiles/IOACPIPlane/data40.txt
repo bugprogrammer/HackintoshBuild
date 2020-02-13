@@ -1,8 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"3094","ColType":"Number","ColValue":"18446744073709551615"}},
-{"data":{"title":"_ADR"},"attr":{"id":"3096","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"3098","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3099","ColType":"Data","ColValue":"&lt;1f00000000000000&gt;"}}]},
-{"data":{"title":"device-properties"},"attr":{"id":"3101","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"fwhub"},"attr":{"id":"3103","ColType":"Data","ColValue":"&lt;00000000&gt;"}},{"data":{"title":"fwswappedbib"},"attr":{"id":"3105","ColType":"Data","ColValue":"&lt;01000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"3107","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP05@1c0004/FWBR@0/FRWR@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"3109","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
-{"data":{"title":"acpi-pci-pm"},"attr":{"id":"3111","ColType":"Boolean","ColValue":"Yes"}},
-{"data":{"title":"IOInterruptControllers"},"attr":{"id":"3113","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3114","ColType":"String","ColValue":"ACPIEventController"}}]}
-]

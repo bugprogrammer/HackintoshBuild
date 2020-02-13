@@ -1,8 +1,0 @@
-[
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"32826","ColType":"String","ColValue":"AppleEFIRuntime"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"32828","ColType":"String","ColValue":"ACPI"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"32830","ColType":"String","ColValue":"com.apple.driver.AppleEFIRuntime"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"32832","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOClass"},"attr":{"id":"32834","ColType":"String","ColValue":"AppleEFIRuntime"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"32836","ColType":"String","ColValue":"AppleACPIPlatformExpert"}}
-]

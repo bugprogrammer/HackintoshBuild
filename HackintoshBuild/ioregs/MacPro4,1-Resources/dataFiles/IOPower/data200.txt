@@ -1,4 +1,0 @@
-[
-{"data":{"title":"Heuristic-ID"},"attr":{"id":"21578","ColType":"Data","ColValue":"&lt;ffffffff&gt;"}},
-{"data":{"title":"IOPowerManagement"},"attr":{"id":"21580","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"21582","ColType":"Number","ColValue":"0"}}]}
-]

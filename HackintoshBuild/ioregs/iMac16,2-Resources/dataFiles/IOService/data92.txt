@@ -1,7 +1,0 @@
-[
-{"data":{"title":"name"},"attr":{"id":"3518","ColType":"Data","ColValue":"&lt;\"CPU5\"&gt;"}},
-{"data":{"title":"processor-index"},"attr":{"id":"3520","ColType":"Number","ColValue":"5"}},
-{"data":{"title":"device_type"},"attr":{"id":"3522","ColType":"Data","ColValue":"&lt;\"processor\"&gt;"}},
-{"data":{"title":"processor-id"},"attr":{"id":"3524","ColType":"Number","ColValue":"6"}},
-{"data":{"title":"cpu-type"},"attr":{"id":"3526","ColType":"Data","ColValue":"&lt;0606&gt;"}}
-]

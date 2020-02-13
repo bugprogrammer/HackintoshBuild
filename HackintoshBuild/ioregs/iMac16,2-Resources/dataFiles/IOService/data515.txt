@@ -1,8 +1,0 @@
-[
-{"data":{"title":"autodiskmount"},"attr":{"id":"21150","ColType":"Boolean","ColValue":"Yes"}},
-{"data":{"title":"Device Characteristics"},"attr":{"id":"21152","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Vendor Name"},"attr":{"id":"21154","ColType":"String","ColValue":"Apple"}},{"data":{"title":"Product Name"},"attr":{"id":"21156","ColType":"String","ColValue":"Disk Image"}},{"data":{"title":"Product Revision Level"},"attr":{"id":"21158","ColType":"String","ColValue":"10.11v415"}}]},
-{"data":{"title":"throttle-unit"},"attr":{"id":"21160","ColType":"Number","ColValue":"1"}},
-{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"21162","ColType":"Number","ColValue":"4"}},
-{"data":{"title":"Protocol Characteristics"},"attr":{"id":"21164","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"21166","ColType":"String","ColValue":"File"}},{"data":{"title":"Virtual Interface Location Path"},"attr":{"id":"21168","ColType":"Data","ColValue":"&lt;\"/Users/evdakimov/Downloads/XQuartz-2.7.9.dmg\"&gt;"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"21170","ColType":"String","ColValue":"Virtual Interface"}}]},
-{"data":{"title":"device-type"},"attr":{"id":"21172","ColType":"String","ColValue":"Generic"}}
-]

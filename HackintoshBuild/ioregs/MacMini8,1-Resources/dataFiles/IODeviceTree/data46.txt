@@ -1,5 +1,0 @@
-[
-{"data":{"title":"acpi-device"},"attr":{"id":"3412","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},
-{"data":{"title":"uart-channel-number"},"attr":{"id":"3414","ColType":"Data","ColValue":"&lt;0200000000000000&gt;"}},
-{"data":{"title":"acpi-path"},"attr":{"id":"3416","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/URT2@190002"}}
-]

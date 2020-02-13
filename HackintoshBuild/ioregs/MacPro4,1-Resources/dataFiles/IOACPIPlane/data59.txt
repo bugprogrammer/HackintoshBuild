@@ -1,7 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"2860","ColType":"Number","ColValue":"15"}},
-{"data":{"title":"acpi-wake-system-state"},"attr":{"id":"2862","ColType":"Number","ColValue":"3"}},
-{"data":{"title":"_ADR"},"attr":{"id":"2864","ColType":"Number","ColValue":"1900544"}},
-{"data":{"title":"device-properties"},"attr":{"id":"2866","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"device-id"},"attr":{"id":"2868","ColType":"Data","ColValue":"&lt;343a0000&gt;"}},{"data":{"title":"built-in"},"attr":{"id":"2870","ColType":"Data","ColValue":"&lt;00&gt;"}},{"data":{"title":"device_type"},"attr":{"id":"2872","ColType":"Data","ColValue":"&lt;\"UHCI\"&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"2874","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/UHC1@1d0000"}},{"data":{"title":"acpi-device"},"attr":{"id":"2876","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
-{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"2878","ColType":"Number","ColValue":"3"}}
-]

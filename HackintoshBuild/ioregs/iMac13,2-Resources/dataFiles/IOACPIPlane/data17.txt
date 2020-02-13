@@ -1,5 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"2230","ColType":"Number","ColValue":"18446744073709551615"}},
-{"data":{"title":"_ADR"},"attr":{"id":"2232","ColType":"Number","ColValue":"1"}},
-{"data":{"title":"device-properties"},"attr":{"id":"2234","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"2236","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"acpi-path"},"attr":{"id":"2238","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/P0P2@10000/HDAU@1"}},{"data":{"title":"hda-gfx"},"attr":{"id":"2240","ColType":"Data","ColValue":"&lt;\"onboard-1\"&gt;"}}]}
-]

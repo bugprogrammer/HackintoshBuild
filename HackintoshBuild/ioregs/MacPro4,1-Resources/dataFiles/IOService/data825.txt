@@ -1,9 +1,0 @@
-[
-{"data":{"title":"FireWire Speed"},"attr":{"id":"34228","ColType":"Number","ColValue":"2"}},
-{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"34230","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"B54BC8F8-D53B-11D5-A1A1-0003934B81A0"},"attr":{"id":"34232","ColType":"String","ColValue":"IOFireWireAVC.kext/Contents/PlugIns/IOFireWireAVCLib.plugin"}},{"data":{"title":"CDCFCA94-F197-11D4-87E6-000502072F80"},"attr":{"id":"34234","ColType":"String","ColValue":"IOFireWireFamily.kext/Contents/PlugIns/IOFireWireLib.plugin"}}]},
-{"data":{"title":"GUID"},"attr":{"id":"34236","ColType":"Number","ColValue":"8598180942706816"}},
-{"data":{"title":"FireWire Device ROM"},"attr":{"id":"34238","ColType":"Data","ColValue":"&lt;0404b38c31333934e000a052001e8c0000cdf8800009aad83800000503000a27810000071700000a8100000d0c0083c08d000011d1000013d10000150007ac7500000000000000004170706c6520436f6d70757465722c20496e632e0005ddde00000000000000004d6163696e746f73680000000002b576001e8c0000cdf8800002f8d21200005e130000010002c8b11200005e13000002&gt;"}},
-{"data":{"title":"FireWire Self IDs"},"attr":{"id":"34240","ColType":"Data","ColValue":"&lt;807f8852&gt;"}},
-{"data":{"title":"IOUserClientClass"},"attr":{"id":"34242","ColType":"String","ColValue":"IOFireWireUserClient"}},
-{"data":{"title":"FireWire Node ID"},"attr":{"id":"34244","ColType":"Number","ColValue":"65472"}}
-]

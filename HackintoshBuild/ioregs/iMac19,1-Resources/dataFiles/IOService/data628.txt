@@ -1,9 +1,0 @@
-[
-{"data":{"title":"IOProviderClass"},"attr":{"id":"39034","ColType":"String","ColValue":"IOResources"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"39036","ColType":"String","ColValue":"AppleSystemPolicy"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"39038","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"39040","ColType":"String","ColValue":"IOBSD"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"39042","ColType":"String","ColValue":"com.apple.AppleSystemPolicy"}},
-{"data":{"title":"IOUserClientClass"},"attr":{"id":"39044","ColType":"String","ColValue":"AppleSystemPolicyUserClient"}},
-{"data":{"title":"IOClass"},"attr":{"id":"39046","ColType":"String","ColValue":"AppleSystemPolicy"}}
-]

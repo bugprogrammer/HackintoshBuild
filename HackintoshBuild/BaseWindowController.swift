@@ -128,7 +128,7 @@ class BaseWindowController: NSWindowController {
 extension BaseWindowController: NSToolbarDelegate {
     
     func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier,  ioregIdentifier, otherIdentifier]
+        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier]
     }
     
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {

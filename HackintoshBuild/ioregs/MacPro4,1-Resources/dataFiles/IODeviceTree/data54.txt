@@ -1,6 +1,0 @@
-[
-{"data":{"title":"name"},"attr":{"id":"2508","ColType":"String","ColValue":"pci8086,44"}},
-{"data":{"title":"device-id"},"attr":{"id":"2510","ColType":"Data","ColValue":"&lt;44000000&gt;"}},
-{"data":{"title":"acpi-path"},"attr":{"id":"2512","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/MCHC@0"}},
-{"data":{"title":"acpi-device"},"attr":{"id":"2514","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}
-]

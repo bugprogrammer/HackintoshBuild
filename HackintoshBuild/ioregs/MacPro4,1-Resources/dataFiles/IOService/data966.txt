@@ -1,7 +1,0 @@
-[
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"37780","ColType":"String","ColValue":"AppleProfileCallstackAction"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"37782","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37784","ColType":"String","ColValue":"com.apple.driver.AppleProfileCallstackAction"}},
-{"data":{"title":"IOClass"},"attr":{"id":"37786","ColType":"String","ColValue":"AppleProfileCallstackAction"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"37788","ColType":"String","ColValue":"AppleProfileOSHooks"}}
-]

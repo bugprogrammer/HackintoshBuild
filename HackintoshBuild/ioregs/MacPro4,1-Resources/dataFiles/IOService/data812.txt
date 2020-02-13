@@ -1,9 +1,0 @@
-[
-{"data":{"title":"Content Table"},"attr":{"id":"33876","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"0x05"},"attr":{"id":"33878","ColType":"String","ColValue":"CD_ROM_Mode_2_Form_2"}},{"data":{"title":"0x03"},"attr":{"id":"33880","ColType":"String","ColValue":"CD_ROM_Mode_2"}},{"data":{"title":"0x01"},"attr":{"id":"33882","ColType":"String","ColValue":"CD_DA"}},{"data":{"title":"0x04"},"attr":{"id":"33884","ColType":"String","ColValue":"CD_ROM_Mode_2_Form_1"}},{"data":{"title":"0x02"},"attr":{"id":"33886","ColType":"String","ColValue":"CD_ROM_Mode_1"}}]},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"33888","ColType":"String","ColValue":"IOCDMedia"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"33890","ColType":"String","ColValue":"IOStorage"}},
-{"data":{"title":"Content Mask"},"attr":{"id":"33892","ColType":"String","ColValue":"CD_partition_scheme"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"33894","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"33896","ColType":"String","ColValue":"com.apple.iokit.IOCDStorageFamily"}},
-{"data":{"title":"IOClass"},"attr":{"id":"33898","ColType":"String","ColValue":"IOCDPartitionScheme"}}
-]

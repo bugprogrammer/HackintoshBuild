@@ -1,8 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"2828","ColType":"Number","ColValue":"18446744073709551615"}},
-{"data":{"title":"acpi-wake-system-state"},"attr":{"id":"2830","ColType":"Number","ColValue":"4"}},
-{"data":{"title":"_ADR"},"attr":{"id":"2832","ColType":"Number","ColValue":"1769472"}},
-{"data":{"title":"device-properties"},"attr":{"id":"2834","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"PinConfigurations"},"attr":{"id":"2836","ColType":"Data","ColValue":"&lt;20402b00120110900001a69030e04b00&gt;"}},{"data":{"title":"acpi-device"},"attr":{"id":"2838","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"layout-id"},"attr":{"id":"2840","ColType":"Data","ColValue":"&lt;5c000000&gt;"}},{"data":{"title":"platformFamily"},"attr":{"id":"2842","ColType":"Data","ColValue":"&lt;00&gt;"}},{"data":{"title":"MaximumBootBeepVolume"},"attr":{"id":"2844","ColType":"Data","ColValue":"&lt;4d&gt;"}},{"data":{"title":"multiEQDevicePresence"},"attr":{"id":"2846","ColType":"Data","ColValue":"&lt;00000100&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"2848","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/HDEF@1b0000"}},{"data":{"title":"MaximumBootBeepVolumeAlt"},"attr":{"id":"2850","ColType":"Data","ColValue":"&lt;4d&gt;"}}]},
-{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"2852","ColType":"Number","ColValue":"9"}},
-{"data":{"title":"acpi-pci-pm"},"attr":{"id":"2854","ColType":"Boolean","ColValue":"Yes"}}
-]

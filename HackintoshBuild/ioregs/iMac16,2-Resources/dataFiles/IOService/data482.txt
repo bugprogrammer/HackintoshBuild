@@ -1,8 +1,0 @@
-[
-{"data":{"title":"autodiskmount"},"attr":{"id":"20217","ColType":"Boolean","ColValue":"Yes"}},
-{"data":{"title":"Device Characteristics"},"attr":{"id":"20219","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Vendor Name"},"attr":{"id":"20221","ColType":"String","ColValue":"Apple"}},{"data":{"title":"Product Name"},"attr":{"id":"20223","ColType":"String","ColValue":"Disk Image"}},{"data":{"title":"Product Revision Level"},"attr":{"id":"20225","ColType":"String","ColValue":"10.11v415"}}]},
-{"data":{"title":"throttle-unit"},"attr":{"id":"20227","ColType":"Number","ColValue":"1"}},
-{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"20229","ColType":"Number","ColValue":"4"}},
-{"data":{"title":"Protocol Characteristics"},"attr":{"id":"20231","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"20233","ColType":"String","ColValue":"File"}},{"data":{"title":"Virtual Interface Location Path"},"attr":{"id":"20235","ColType":"Data","ColValue":"&lt;\"/Users/evdakimov/Downloads/javaforosx.dmg\"&gt;"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"20237","ColType":"String","ColValue":"Virtual Interface"}}]},
-{"data":{"title":"device-type"},"attr":{"id":"20239","ColType":"String","ColValue":"Generic"}}
-]

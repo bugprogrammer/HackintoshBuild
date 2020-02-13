@@ -1,9 +1,0 @@
-[
-{"data":{"title":"IOProviderClass"},"attr":{"id":"167530","ColType":"String","ColValue":"IOResources"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"167532","ColType":"String","ColValue":"org_virtualbox_SupDrv"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"167534","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"167536","ColType":"String","ColValue":"IOKit"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"167538","ColType":"String","ColValue":"org.virtualbox.kext.VBoxDrv"}},
-{"data":{"title":"IOUserClientClass"},"attr":{"id":"167540","ColType":"String","ColValue":"org_virtualbox_SupDrvClient"}},
-{"data":{"title":"IOClass"},"attr":{"id":"167542","ColType":"String","ColValue":"org_virtualbox_SupDrv"}}
-]

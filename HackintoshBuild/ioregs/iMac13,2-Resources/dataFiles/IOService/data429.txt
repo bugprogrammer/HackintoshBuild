@@ -1,6 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"18424","ColType":"Number","ColValue":"15"}},
-{"data":{"title":"_ADR"},"attr":{"id":"18426","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"compatible"},"attr":{"id":"18428","ColType":"Data","ColValue":"&lt;\"smbus-blc\"&gt;"}},
-{"data":{"title":"device-properties"},"attr":{"id":"18430","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"command"},"attr":{"id":"18432","ColType":"Number","ColValue":"81"}},{"data":{"title":"type"},"attr":{"id":"18434","ColType":"Number","ColValue":"1296253779"}},{"data":{"title":"acpi-device"},"attr":{"id":"18436","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"acpi-path"},"attr":{"id":"18438","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SBUS@1f0003/BUS0@0/BLC0@0"}},{"data":{"title":"refnum"},"attr":{"id":"18440","ColType":"Number","ColValue":"0"}},{"data":{"title":"address"},"attr":{"id":"18442","ColType":"Number","ColValue":"110"}}]}
-]

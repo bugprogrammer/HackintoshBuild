@@ -1,3 +1,0 @@
-[
-{"data":{"title":"IOPowerManagement"},"attr":{"id":"2264","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"CurrentPowerState"},"attr":{"id":"2266","ColType":"Number","ColValue":"4"}},{"data":{"title":"DevicePowerState"},"attr":{"id":"2268","ColType":"Number","ColValue":"4"}},{"data":{"title":"PowerOverrideOn"},"attr":{"id":"2270","ColType":"Boolean","ColValue":"Yes"}},{"data":{"title":"ChildrenPowerState"},"attr":{"id":"2272","ColType":"Number","ColValue":"4"}}]}
-]

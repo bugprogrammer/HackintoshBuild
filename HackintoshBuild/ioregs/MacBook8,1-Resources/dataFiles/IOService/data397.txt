@@ -1,9 +1,0 @@
-[
-{"data":{"title":"Vendor ID"},"attr":{"id":"6925","ColType":"Number","ColValue":"2599"}},
-{"data":{"title":"Board ID"},"attr":{"id":"6927","ColType":"Number","ColValue":"23"}},
-{"data":{"title":"UUID"},"attr":{"id":"6929","ColType":"String","ColValue":"2B40000B-0180-4DAE-8649-8354431900F5"}},
-{"data":{"title":"RID"},"attr":{"id":"6931","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"Version"},"attr":{"id":"6933","ColType":"Number","ColValue":"137216"}},
-{"data":{"title":"Device ID"},"attr":{"id":"6935","ColType":"Number","ColValue":"24"}},
-{"data":{"title":"Address"},"attr":{"id":"6937","ColType":"Number","ColValue":"36"}}
-]

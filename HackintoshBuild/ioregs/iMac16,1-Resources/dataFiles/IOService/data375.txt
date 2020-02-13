@@ -1,8 +1,0 @@
-[
-{"data":{"title":"IOProbeScore"},"attr":{"id":"38559","ColType":"Number","ColValue":"4096"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"38561","ColType":"String","ColValue":"AppleThunderboltIPService"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"38563","ColType":"String","ColValue":"com.apple.driver.AppleThunderboltIP"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"38565","ColType":"String","ColValue":"IOKit"}},
-{"data":{"title":"IOClass"},"attr":{"id":"38567","ColType":"String","ColValue":"AppleThunderboltIPService"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"38569","ColType":"String","ColValue":"IOThunderboltLocalNode"}}
-]

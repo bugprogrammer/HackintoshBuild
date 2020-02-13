@@ -1,8 +1,0 @@
-[
-{"data":{"title":"autodiskmount"},"attr":{"id":"71430","ColType":"Boolean","ColValue":"Yes"}},
-{"data":{"title":"Device Characteristics"},"attr":{"id":"71432","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Vendor Name"},"attr":{"id":"71434","ColType":"String","ColValue":"Apple"}},{"data":{"title":"Product Name"},"attr":{"id":"71436","ColType":"String","ColValue":"Disk Image"}},{"data":{"title":"Product Revision Level"},"attr":{"id":"71438","ColType":"String","ColValue":"10.10v396"}}]},
-{"data":{"title":"throttle-unit"},"attr":{"id":"71440","ColType":"Number","ColValue":"1"}},
-{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"71442","ColType":"Number","ColValue":"4"}},
-{"data":{"title":"Protocol Characteristics"},"attr":{"id":"71444","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"71446","ColType":"String","ColValue":"File"}},{"data":{"title":"Virtual Interface Location Path"},"attr":{"id":"71448","ColType":"Data","ColValue":"&lt;\"/Users/arinabalerina/Downloads/CreativeCloudInstaller (1).dmg\"&gt;"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"71450","ColType":"String","ColValue":"Virtual Interface"}}]},
-{"data":{"title":"device-type"},"attr":{"id":"71452","ColType":"String","ColValue":"Generic"}}
-]

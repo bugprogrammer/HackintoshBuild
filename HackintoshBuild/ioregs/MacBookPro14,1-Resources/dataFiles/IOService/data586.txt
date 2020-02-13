@@ -1,8 +1,0 @@
-[
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"129277","ColType":"String","ColValue":"com_apple_filesystems_hfs_encodings"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"129279","ColType":"String","ColValue":"IOBSD"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"129281","ColType":"String","ColValue":"com.apple.filesystems.hfs.encodings.kext"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"129283","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOClass"},"attr":{"id":"129285","ColType":"String","ColValue":"com_apple_filesystems_hfs_encodings"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"129287","ColType":"String","ColValue":"IOResources"}}
-]

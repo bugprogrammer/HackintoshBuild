@@ -1,4 +1,0 @@
-[
-{"data":{"title":"acpi-path"},"attr":{"id":"3252","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/IGPU@20000/DD03@3"}},
-{"data":{"title":"acpi-device"},"attr":{"id":"3254","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}
-]

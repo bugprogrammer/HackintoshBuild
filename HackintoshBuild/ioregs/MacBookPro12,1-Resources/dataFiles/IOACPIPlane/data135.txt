@@ -1,9 +1,0 @@
-[
-{"data":{"title":"_ADR"},"attr":{"id":"4190","ColType":"Number","ColValue":"1376260"}},
-{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"4192","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4193","ColType":"Data","ColValue":"&lt;1500000007000000&gt;"}}]},
-{"data":{"title":"_UID"},"attr":{"id":"4195","ColType":"String","ColValue":"2"}},
-{"data":{"title":"compatible"},"attr":{"id":"4197","ColType":"Data","ColValue":"&lt;\"INT33C1\"&gt;"}},
-{"data":{"title":"IOInterruptControllers"},"attr":{"id":"4199","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4200","ColType":"String","ColValue":"io-apic-0"}}]},
-{"data":{"title":"_STA"},"attr":{"id":"4202","ColType":"Number","ColValue":"15"}},
-{"data":{"title":"device-properties"},"attr":{"id":"4204","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"gspi-channel-number"},"attr":{"id":"4206","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},{"data":{"title":"gspi-pin-cs"},"attr":{"id":"4208","ColType":"Data","ColValue":"&lt;5700000000000000&gt;"}},{"data":{"title":"acpi-device"},"attr":{"id":"4210","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"gspi-pin-mosi"},"attr":{"id":"4212","ColType":"Data","ColValue":"&lt;5900000000000000&gt;"}},{"data":{"title":"gspi-pin-clk"},"attr":{"id":"4214","ColType":"Data","ColValue":"&lt;5800000000000000&gt;"}},{"data":{"title":"gspi-sysclk-period"},"attr":{"id":"4216","ColType":"Data","ColValue":"&lt;0a00000000000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"4218","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/SPI1@150004"}},{"data":{"title":"gspi-pin-miso"},"attr":{"id":"4220","ColType":"Data","ColValue":"&lt;5a00000000000000&gt;"}}]}
-]

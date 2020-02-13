@@ -1,6 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"3864","ColType":"Number","ColValue":"11"}},
-{"data":{"title":"name"},"attr":{"id":"3866","ColType":"Data","ColValue":"&lt;\"APP0006\"&gt;"}},
-{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"3868","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3869","ColType":"Data","ColValue":"&lt;1c00000001000000&gt;"}}]},
-{"data":{"title":"IOInterruptControllers"},"attr":{"id":"3871","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3872","ColType":"String","ColValue":"ACPIEventController"}}]}
-]

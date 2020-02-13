@@ -1,8 +1,0 @@
-[
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"42786","ColType":"String","ColValue":"com_apple_BootCache"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"42788","ColType":"String","ColValue":"IOBSD"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"42790","ColType":"String","ColValue":"com.apple.BootCache"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"42792","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOClass"},"attr":{"id":"42794","ColType":"String","ColValue":"com_apple_BootCache"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"42796","ColType":"String","ColValue":"IOResources"}}
-]

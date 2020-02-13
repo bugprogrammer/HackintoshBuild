@@ -1,8 +1,0 @@
-[
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"37299","ColType":"String","ColValue":"KextAudit"}},
-{"data":{"title":"IOUserClientClass"},"attr":{"id":"37301","ColType":"String","ColValue":"KextAuditUserClient"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37303","ColType":"String","ColValue":"com.apple.private.KextAudit"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"37305","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOClass"},"attr":{"id":"37307","ColType":"String","ColValue":"KextAudit"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"37309","ColType":"String","ColValue":"AppleSMC"}}
-]

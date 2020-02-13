@@ -1,4 +1,0 @@
-[
-{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"3557","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3558","ColType":"Data","ColValue":"&lt;1600000000000000&gt;"}}]},
-{"data":{"title":"IOInterruptControllers"},"attr":{"id":"3560","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"3561","ColType":"String","ColValue":"ACPIEventController"}}]}
-]

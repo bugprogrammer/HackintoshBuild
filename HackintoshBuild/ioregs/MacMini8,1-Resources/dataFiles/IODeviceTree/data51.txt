@@ -1,5 +1,0 @@
-[
-{"data":{"title":"local-mac-address"},"attr":{"id":"3634","ColType":"Data","ColValue":"&lt;f01898ed866e&gt;"}},
-{"data":{"title":"acpi-path"},"attr":{"id":"3636","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PEG0@10000/XGBE@0"}},
-{"data":{"title":"acpi-device"},"attr":{"id":"3638","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}
-]

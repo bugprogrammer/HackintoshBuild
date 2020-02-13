@@ -1,6 +1,0 @@
-[
-{"data":{"title":"IOI2CSupportedCommFlags"},"attr":{"id":"5980","ColType":"Number","ColValue":"2"}},
-{"data":{"title":"IOI2CBusType"},"attr":{"id":"5982","ColType":"Number","ColValue":"1"}},
-{"data":{"title":"IOI2CTransactionTypes"},"attr":{"id":"5984","ColType":"Number","ColValue":"31"}},
-{"data":{"title":"IOI2CInterfaceID"},"attr":{"id":"5986","ColType":"Number","ColValue":"6316034594596454400"}}
-]

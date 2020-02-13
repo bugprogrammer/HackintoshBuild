@@ -1,8 +1,0 @@
-[
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"102250","ColType":"String","ColValue":"at_obdev_LSNKE"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"102252","ColType":"String","ColValue":"IOBSD"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"102254","ColType":"String","ColValue":"at.obdev.nke.LittleSnitch"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"102256","ColType":"Number","ColValue":"18446744073709551615"}},
-{"data":{"title":"IOClass"},"attr":{"id":"102258","ColType":"String","ColValue":"at_obdev_LSNKE"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"102260","ColType":"String","ColValue":"IOResources"}}
-]

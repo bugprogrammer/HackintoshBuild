@@ -1,7 +1,0 @@
-[
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"5117","ColType":"String","ColValue":"ApplePerformanceMonitor"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"5119","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"5121","ColType":"String","ColValue":"com.apple.driver.AppleIntelNehalemProfile"}},
-{"data":{"title":"IOClass"},"attr":{"id":"5123","ColType":"String","ColValue":"AppleIntelNehalemPerformanceMonitor"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"5125","ColType":"String","ColValue":"AppleACPICPU"}}
-]

@@ -1,9 +1,0 @@
-[
-{"data":{"title":"IOProviderClass"},"attr":{"id":"120123","ColType":"String","ColValue":"IOResources"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"120125","ColType":"String","ColValue":"IOAVBNub"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"120127","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"120129","ColType":"String","ColValue":"IOTimeSyncClockManager"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"120131","ColType":"String","ColValue":"com.apple.iokit.IOAVBFamily"}},
-{"data":{"title":"IOUserClientClass"},"attr":{"id":"120133","ColType":"String","ColValue":"IOAVBNubUserClient"}},
-{"data":{"title":"IOClass"},"attr":{"id":"120135","ColType":"String","ColValue":"IOAVBNub"}}
-]

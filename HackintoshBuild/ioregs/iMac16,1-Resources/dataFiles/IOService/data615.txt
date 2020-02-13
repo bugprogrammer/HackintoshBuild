@@ -1,8 +1,0 @@
-[
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"119777","ColType":"String","ColValue":"IOSurfaceRoot"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"119779","ColType":"String","ColValue":"IOKit"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"119781","ColType":"String","ColValue":"com.apple.iokit.IOSurface"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"119783","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"IOClass"},"attr":{"id":"119785","ColType":"String","ColValue":"IOSurfaceRoot"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"119787","ColType":"String","ColValue":"IOResources"}}
-]

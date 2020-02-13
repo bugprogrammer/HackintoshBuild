@@ -1,8 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"193632","ColType":"Number","ColValue":"18446744073709551615"}},
-{"data":{"title":"_UID"},"attr":{"id":"193634","ColType":"String","ColValue":"0"}},
-{"data":{"title":"name"},"attr":{"id":"193636","ColType":"Data","ColValue":"&lt;\"PNP0C09\"&gt;"}},
-{"data":{"title":"IOGeneralInterest"},"attr":{"id":"193638","ColType":"String","ColValue":"IOCommand is not serializable"}},
-{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"193640","ColType":"Number","ColValue":"111"}},
-{"data":{"title":"IODeviceMemory"},"attr":{"id":"193642","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"193643","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"193644","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"193646","ColType":"Number","ColValue":"98"}},{"data":{"title":"length"},"attr":{"id":"193648","ColType":"Number","ColValue":"1"}}]}]},{"data":{"title":"1"},"attr":{"id":"193649","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"193650","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"address"},"attr":{"id":"193652","ColType":"Number","ColValue":"102"}},{"data":{"title":"length"},"attr":{"id":"193654","ColType":"Number","ColValue":"1"}}]}]}]}
-]

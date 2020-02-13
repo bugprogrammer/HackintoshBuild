@@ -1,9 +1,0 @@
-[
-{"data":{"title":"IOProviderClass"},"attr":{"id":"92428","ColType":"String","ColValue":"IOResources"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"92430","ColType":"String","ColValue":"ApplePolicyControl"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"92432","ColType":"Number","ColValue":"1000"}},
-{"data":{"title":"IOResourceMatch"},"attr":{"id":"92434","ColType":"String","ColValue":"IOKit"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"92436","ColType":"String","ColValue":"com.apple.driver.ApplePolicyControl"}},
-{"data":{"title":"IOUserClientClass"},"attr":{"id":"92438","ColType":"String","ColValue":"AppleGraphicsPolicyClient"}},
-{"data":{"title":"IOClass"},"attr":{"id":"92440","ColType":"String","ColValue":"ApplePolicyControl"}}
-]

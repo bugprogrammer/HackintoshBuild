@@ -1,5 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"4548","ColType":"Number","ColValue":"18446744073709551615"}},
-{"data":{"title":"_ADR"},"attr":{"id":"4550","ColType":"Number","ColValue":"4"}},
-{"data":{"title":"device-properties"},"attr":{"id":"4552","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"UsbPowerSource"},"attr":{"id":"4554","ColType":"Number","ColValue":"2"}},{"data":{"title":"acpi-device"},"attr":{"id":"4556","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"kUSBSleepPortCurrentLimit"},"attr":{"id":"4558","ColType":"Number","ColValue":"3000"}},{"data":{"title":"kUSBWakePortCurrentLimit"},"attr":{"id":"4560","ColType":"Number","ColValue":"3000"}},{"data":{"title":"UsbCPortNumber"},"attr":{"id":"4562","ColType":"Number","ColValue":"1"}},{"data":{"title":"UsbCompanionPortPresent"},"attr":{"id":"4564","ColType":"Number","ColValue":"1"}},{"data":{"title":"acpi-path"},"attr":{"id":"4566","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP05@1c0004/UPSB@0/DSB2@20000/XHC2@0/RHUB@0/SSP2@4"}}]}
-]

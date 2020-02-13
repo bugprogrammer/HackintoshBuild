@@ -1,8 +1,0 @@
-[
-{"data":{"title":"autodiskmount"},"attr":{"id":"20579","ColType":"Boolean","ColValue":"Yes"}},
-{"data":{"title":"Device Characteristics"},"attr":{"id":"20581","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Vendor Name"},"attr":{"id":"20583","ColType":"String","ColValue":"Apple"}},{"data":{"title":"Product Name"},"attr":{"id":"20585","ColType":"String","ColValue":"Disk Image"}},{"data":{"title":"Product Revision Level"},"attr":{"id":"20587","ColType":"String","ColValue":"10.11v415"}}]},
-{"data":{"title":"throttle-unit"},"attr":{"id":"20589","ColType":"Number","ColValue":"1"}},
-{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"20591","ColType":"Number","ColValue":"4"}},
-{"data":{"title":"Protocol Characteristics"},"attr":{"id":"20593","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"20595","ColType":"String","ColValue":"File"}},{"data":{"title":"Virtual Interface Location Path"},"attr":{"id":"20597","ColType":"Data","ColValue":"&lt;\"/Users/evdakimov/Downloads/jre-8u91-macosx-x64.dmg\"&gt;"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"20599","ColType":"String","ColValue":"Virtual Interface"}}]},
-{"data":{"title":"device-type"},"attr":{"id":"20601","ColType":"String","ColValue":"Generic"}}
-]

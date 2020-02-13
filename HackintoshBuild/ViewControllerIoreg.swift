@@ -2,8 +2,8 @@
 //  ViewControllerIoreg.swift
 //  HackintoshBuild
 //
-//  Created by wbx on 2020/2/12.
-//  Copyright © 2020 wbx. All rights reserved.
+//  Created by bugprogrammer on 2020/2/12.
+//  Copyright © 2020 bugprogrammer. All rights reserved.
 //
 
 import Cocoa
@@ -44,17 +44,16 @@ class ViewControllerIoreg: NSViewController {
         medolBox.addItems(withObjectValues: medolList)
         medolBox.selectItem(at: 0)
         medolBox.isSelectable = false
-        loadWeb(medolList[0] + "-IORegFileViewer")
+        loadWeb("https://ioregs.bugprogrammer.me/" + medolList[0] + "-IORegFileViewer.html")
     }
     
     @IBAction func selectedMedol(_ sender: NSComboBox) {
-        loadWeb(medolList[sender.indexOfSelectedItem] + "-IORegFileViewer")
+        loadWeb("https://ioregs.bugprogrammer.me/" + medolList[sender.indexOfSelectedItem] + "-IORegFileViewer.html")
     }
     
     func loadWeb(_ name: String) {
-        webview.configuration.preferences.setValue(true, forKey: "allowFileAccessFromFileURLs")
-        let localFilePath = Bundle.main.url(forResource: name, withExtension: "html")
-        let request = URLRequest(url: localFilePath!)
+        let ioregs = URL(string: name)
+        let request = URLRequest(url: ioregs!)
         webview.load(request)
     }
     

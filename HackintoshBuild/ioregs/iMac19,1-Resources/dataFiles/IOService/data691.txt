@@ -1,9 +1,0 @@
-[
-{"data":{"title":"LocationID"},"attr":{"id":"85948","ColType":"Number","ColValue":"2001467503"}},
-{"data":{"title":"bInterfaceNumber"},"attr":{"id":"85950","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"idVendor"},"attr":{"id":"85952","ColType":"Number","ColValue":"76"}},
-{"data":{"title":"idProduct"},"attr":{"id":"85954","ColType":"Number","ColValue":"615"}},
-{"data":{"title":"VendorIDSource"},"attr":{"id":"85956","ColType":"Number","ColValue":"1"}},
-{"data":{"title":"KeyholeReportID"},"attr":{"id":"85958","ColType":"Number","ColValue":"240"}},
-{"data":{"title":"Bluetooth Product Name"},"attr":{"id":"85960","ColType":"String","ColValue":"Magic Keyboard"}}
-]

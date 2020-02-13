@@ -1,9 +1,0 @@
-[
-{"data":{"title":"_ADR"},"attr":{"id":"4918","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"device-properties"},"attr":{"id":"4920","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"stopBits"},"attr":{"id":"4922","ColType":"Data","ColValue":"&lt;0100000000000000&gt;"}},{"data":{"title":"parity"},"attr":{"id":"4924","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},{"data":{"title":"dataBits"},"attr":{"id":"4926","ColType":"Data","ColValue":"&lt;0800000000000000&gt;"}},{"data":{"title":"baud"},"attr":{"id":"4928","ColType":"Data","ColValue":"&lt;c0c62d0000000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"4930","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/URT0@1e0000/BLTH@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"4932","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]},
-{"data":{"title":"name"},"attr":{"id":"4934","ColType":"Data","ColValue":"&lt;\"BCM2E7C\"&gt;"}},
-{"data":{"title":"_UID"},"attr":{"id":"4936","ColType":"String","ColValue":"1"}},
-{"data":{"title":"compatible"},"attr":{"id":"4938","ColType":"Data","ColValue":"&lt;\"apple-uart-blth\"&gt;"}},
-{"data":{"title":"_STA"},"attr":{"id":"4940","ColType":"Number","ColValue":"15"}},
-{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"4942","ColType":"Number","ColValue":"111"}}
-]

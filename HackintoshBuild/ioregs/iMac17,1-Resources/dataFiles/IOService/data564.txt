@@ -1,9 +1,0 @@
-[
-{"data":{"title":"LocationID"},"attr":{"id":"30645","ColType":"Number","ColValue":"1272772352"}},
-{"data":{"title":"bInterfaceNumber"},"attr":{"id":"30647","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"idVendor"},"attr":{"id":"30649","ColType":"Number","ColValue":"76"}},
-{"data":{"title":"idProduct"},"attr":{"id":"30651","ColType":"Number","ColValue":"613"}},
-{"data":{"title":"VendorIDSource"},"attr":{"id":"30653","ColType":"Number","ColValue":"1"}},
-{"data":{"title":"KeyholeReportID"},"attr":{"id":"30655","ColType":"Number","ColValue":"240"}},
-{"data":{"title":"Bluetooth Product Name"},"attr":{"id":"30657","ColType":"String","ColValue":"Magic Trackpad 2"}}
-]

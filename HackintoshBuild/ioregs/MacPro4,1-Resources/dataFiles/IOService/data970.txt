@@ -1,7 +1,0 @@
-[
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"37820","ColType":"String","ColValue":"AppleProfileTimestampAction"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"37822","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37824","ColType":"String","ColValue":"com.apple.driver.AppleProfileTimestampAction"}},
-{"data":{"title":"IOClass"},"attr":{"id":"37826","ColType":"String","ColValue":"AppleProfileTimestampAction"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"37828","ColType":"String","ColValue":"AppleProfileOSHooks"}}
-]

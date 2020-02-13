@@ -1,6 +1,0 @@
-[
-{"data":{"title":"Device Characteristics"},"attr":{"id":"89500","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Product Revision Level"},"attr":{"id":"89502","ColType":"String","ColValue":"8.02"}},{"data":{"title":"Vendor Name"},"attr":{"id":"89504","ColType":"String","ColValue":"SanDisk"}},{"data":{"title":"Product Name"},"attr":{"id":"89506","ColType":"String","ColValue":"Cruzer"}}]},
-{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"89508","ColType":"Number","ColValue":"4"}},
-{"data":{"title":"Protocol Characteristics"},"attr":{"id":"89510","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect"},"attr":{"id":"89512","ColType":"String","ColValue":"USB"}},{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"89514","ColType":"String","ColValue":"External"}},{"data":{"title":"Read Time Out Duration"},"attr":{"id":"89516","ColType":"Number","ColValue":"30000"}},{"data":{"title":"Write Time Out Duration"},"attr":{"id":"89518","ColType":"Number","ColValue":"30000"}}]},
-{"data":{"title":"device-type"},"attr":{"id":"89520","ColType":"String","ColValue":"Generic"}}
-]

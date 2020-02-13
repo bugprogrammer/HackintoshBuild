@@ -1,9 +1,0 @@
-[
-{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"54716","ColType":"Number","ColValue":"4"}},
-{"data":{"title":"Protocol Characteristics"},"attr":{"id":"54718","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"54720","ColType":"String","ColValue":"Internal"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"54722","ColType":"String","ColValue":"SATA"}}]},
-{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"54724","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"24514B7A-2804-11D6-8A02-003065704866"},"attr":{"id":"54726","ColType":"String","ColValue":"SMARTLib.plugin"}}]},
-{"data":{"title":"Device Characteristics"},"attr":{"id":"54728","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Block Size"},"attr":{"id":"54730","ColType":"Number","ColValue":"4096"}},{"data":{"title":"SATA Features"},"attr":{"id":"54732","ColType":"Number","ColValue":"30"}},{"data":{"title":"Product Name"},"attr":{"id":"54734","ColType":"String","ColValue":"APPLE SSD SM768E                        "}},{"data":{"title":"Product Revision Level"},"attr":{"id":"54736","ColType":"String","ColValue":"CXM90A1Q"}},{"data":{"title":"Logical Block Size"},"attr":{"id":"54738","ColType":"Number","ColValue":"512"}},{"data":{"title":"Medium Type"},"attr":{"id":"54740","ColType":"String","ColValue":"Solid State"}},{"data":{"title":"Serial Number"},"attr":{"id":"54742","ColType":"String","ColValue":"S119NYAC717591      "}}]},
-{"data":{"title":"IOStorageFeatures"},"attr":{"id":"54744","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Unmap"},"attr":{"id":"54746","ColType":"Boolean","ColValue":"Yes"}}]},
-{"data":{"title":"SMART Capable"},"attr":{"id":"54748","ColType":"Boolean","ColValue":"Yes"}},
-{"data":{"title":"device-type"},"attr":{"id":"54750","ColType":"String","ColValue":"Generic"}}
-]

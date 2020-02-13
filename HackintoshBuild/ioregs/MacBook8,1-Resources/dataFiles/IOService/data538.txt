@@ -1,6 +1,0 @@
-[
-{"data":{"title":"Id"},"attr":{"id":"99318","ColType":"Number","ColValue":"1"}},
-{"data":{"title":"LogIdentifier"},"attr":{"id":"99320","ColType":"String","ColValue":"Brcm4360"}},
-{"data":{"title":"IOClass"},"attr":{"id":"99322","ColType":"String","ColValue":"CCDataStream"}},
-{"data":{"title":"Name"},"attr":{"id":"99324","ColType":"String","ColValue":"StateSnapshots"}}
-]

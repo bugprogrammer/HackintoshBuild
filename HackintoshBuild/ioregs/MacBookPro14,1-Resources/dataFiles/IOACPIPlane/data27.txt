@@ -1,5 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"2962","ColType":"Number","ColValue":"18446744073709551615"}},
-{"data":{"title":"_ADR"},"attr":{"id":"2964","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"device-properties"},"attr":{"id":"2966","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"2968","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/RP01@1c0000/SSD0@0"}},{"data":{"title":"acpi-device"},"attr":{"id":"2970","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"nvme-LPSR-during-S3-S4"},"attr":{"id":"2972","ColType":"Number","ColValue":"1"}},{"data":{"title":"deep-idle"},"attr":{"id":"2974","ColType":"Number","ColValue":"1"}},{"data":{"title":"use-msi"},"attr":{"id":"2976","ColType":"Number","ColValue":"1"}}]}
-]

@@ -1,9 +1,0 @@
-[
-{"data":{"title":"IOProviderClass"},"attr":{"id":"11919","ColType":"String","ColValue":"IOFireWireLocalNode"}},
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"11921","ColType":"String","ColValue":"IOFireWireAVCProtocol"}},
-{"data":{"title":"IOProviderMergeProperties"},"attr":{"id":"11923","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"IOCFPlugInTypes"},"attr":{"id":"11925","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"B54BC8F8-D53B-11D5-A1A1-0003934B81A0"},"attr":{"id":"11927","ColType":"String","ColValue":"IOFireWireAVC.kext/Contents/PlugIns/IOFireWireAVCLib.plugin"}}]}]},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"11929","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"11931","ColType":"String","ColValue":"com.apple.iokit.IOFireWireFamily"}},
-{"data":{"title":"IOPersonalityPublisher"},"attr":{"id":"11933","ColType":"String","ColValue":"com.apple.iokit.IOFireWireAVC"}},
-{"data":{"title":"IOClass"},"attr":{"id":"11935","ColType":"String","ColValue":"IOFireWireUserClientIniter"}}
-]

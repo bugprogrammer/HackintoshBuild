@@ -1,8 +1,0 @@
-[
-{"data":{"title":"autodiskmount"},"attr":{"id":"165350","ColType":"Boolean","ColValue":"Yes"}},
-{"data":{"title":"Device Characteristics"},"attr":{"id":"165352","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Vendor Name"},"attr":{"id":"165354","ColType":"String","ColValue":"Apple"}},{"data":{"title":"Product Name"},"attr":{"id":"165356","ColType":"String","ColValue":"Disk Image"}},{"data":{"title":"Product Revision Level"},"attr":{"id":"165358","ColType":"String","ColValue":"10.12v444.20.3"}}]},
-{"data":{"title":"throttle-unit"},"attr":{"id":"165360","ColType":"Number","ColValue":"1"}},
-{"data":{"title":"IOMinimumSegmentAlignmentByteCount"},"attr":{"id":"165362","ColType":"Number","ColValue":"4"}},
-{"data":{"title":"Protocol Characteristics"},"attr":{"id":"165364","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"Physical Interconnect Location"},"attr":{"id":"165366","ColType":"String","ColValue":"File"}},{"data":{"title":"Virtual Interface Location Path"},"attr":{"id":"165368","ColType":"Data","ColValue":"&lt;\"/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/decryptedFile.dmg\"&gt;"}},{"data":{"title":"Physical Interconnect"},"attr":{"id":"165370","ColType":"String","ColValue":"Virtual Interface"}}]},
-{"data":{"title":"device-type"},"attr":{"id":"165372","ColType":"String","ColValue":"Generic"}}
-]

@@ -1,7 +1,0 @@
-[
-{"data":{"title":"IOMatchCategory"},"attr":{"id":"37810","ColType":"String","ColValue":"AppleProfileThreadInfoAction"}},
-{"data":{"title":"IOProbeScore"},"attr":{"id":"37812","ColType":"Number","ColValue":"0"}},
-{"data":{"title":"CFBundleIdentifier"},"attr":{"id":"37814","ColType":"String","ColValue":"com.apple.driver.AppleProfileThreadInfoAction"}},
-{"data":{"title":"IOClass"},"attr":{"id":"37816","ColType":"String","ColValue":"AppleProfileThreadInfoAction"}},
-{"data":{"title":"IOProviderClass"},"attr":{"id":"37818","ColType":"String","ColValue":"AppleProfileOSHooks"}}
-]

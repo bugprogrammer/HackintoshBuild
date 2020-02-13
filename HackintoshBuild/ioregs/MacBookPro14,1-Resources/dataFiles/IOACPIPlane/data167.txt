@@ -1,7 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"4900","ColType":"Number","ColValue":"15"}},
-{"data":{"title":"IOInterruptSpecifiers"},"attr":{"id":"4902","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4903","ColType":"Data","ColValue":"&lt;1400000007000000&gt;"}}]},
-{"data":{"title":"_ADR"},"attr":{"id":"4905","ColType":"Number","ColValue":"1966080"}},
-{"data":{"title":"IOInterruptControllers"},"attr":{"id":"4907","ColType":"Array","ColValue":"0_values"},"children":[{"data":{"title":"0"},"attr":{"id":"4908","ColType":"String","ColValue":"io-apic-0"}}]},
-{"data":{"title":"device-properties"},"attr":{"id":"4910","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-device"},"attr":{"id":"4912","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}},{"data":{"title":"uart-channel-number"},"attr":{"id":"4914","ColType":"Data","ColValue":"&lt;0000000000000000&gt;"}},{"data":{"title":"acpi-path"},"attr":{"id":"4916","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/URT0@1e0000"}}]}
-]

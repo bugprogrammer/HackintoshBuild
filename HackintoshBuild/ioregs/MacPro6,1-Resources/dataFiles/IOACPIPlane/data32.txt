@@ -1,8 +1,0 @@
-[
-{"data":{"title":"_STA"},"attr":{"id":"3354","ColType":"Number","ColValue":"18446744073709551615"}},
-{"data":{"title":"_ADR"},"attr":{"id":"3356","ColType":"Number","ColValue":"65536"}},
-{"data":{"title":"acpi-pci-pm"},"attr":{"id":"3358","ColType":"Boolean","ColValue":"Yes"}},
-{"data":{"title":"acpi-pci-routing-table"},"attr":{"id":"3360","ColType":"Data","ColValue":"&lt;1800000000000000ffff0000000000001a000000000000001800000001000000ffff0000000000001c000000000000001800000002000000ffff0000000000001d000000000000001800000003000000ffff0000000000001e00000000000000000000000000000000000000000000000000000000000000&gt;"}},
-{"data":{"title":"acpi-wake-gpe"},"attr":{"id":"3362","ColType":"Number","ColValue":"9"}},
-{"data":{"title":"device-properties"},"attr":{"id":"3364","ColType":"Dictionary","ColValue":"0_values"},"children":[{"data":{"title":"acpi-path"},"attr":{"id":"3366","ColType":"String","ColValue":"IOACPIPlane:/_SB/PCI0@0/PEG0@10000"}},{"data":{"title":"acpi-device"},"attr":{"id":"3368","ColType":"String","ColValue":"IOACPIPlatformDevice is not serializable"}}]}
-]
