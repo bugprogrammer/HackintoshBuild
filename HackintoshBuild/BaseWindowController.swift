@@ -46,6 +46,10 @@ class BaseWindowController: NSWindowController {
         return MyTool.getViewControllerFromMain(ViewControllerOther.self)
     }()
     
+    lazy var payVC: ViewControllerPay = {
+        return MyTool.getViewControllerFromMain(ViewControllerPay.self)
+    }()
+    
     let buildIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.buildIdentifier")
     let efiIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.efiIdentifier")
     let diskIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.diskIdentifier")
@@ -54,6 +58,7 @@ class BaseWindowController: NSWindowController {
     let infoIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.infoIdentifier")
     let ioregIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.ioregIdentifier")
     let otherIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.otherIdentifier")
+    let payIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.payIdentifier")
     
     lazy var toolBar: NSToolbar = {
         let toolBar = NSToolbar(identifier: "bugprogrammer.HackintoshBuild.NSToolbar.MyToolbar")
@@ -128,15 +133,15 @@ class BaseWindowController: NSWindowController {
 extension BaseWindowController: NSToolbarDelegate {
     
     func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier]
+        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier]
+        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier]
+        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
@@ -196,6 +201,13 @@ extension BaseWindowController: NSToolbarDelegate {
             toolbarItem?.paletteLabel = "其他小功能"
             toolbarItem?.toolTip = "其他一些可能需要的东西"
             toolbarItem?.image = MyAsset.NSToolbarItem_Other.image
+            
+        case payIdentifier:
+            toolbarItem?.label = "关于捐赠"
+            toolbarItem?.paletteLabel = "关于捐赠"
+            toolbarItem?.toolTip = "酌情捐赠"
+            toolbarItem?.image = MyAsset.NSToolbarItem_Pay.image
+            
         default:
             toolbarItem = nil
             break
@@ -231,6 +243,9 @@ extension BaseWindowController: NSToolbarDelegate {
             break
         case otherIdentifier:
             self.window?.contentViewController = otherVC
+            break
+        case payIdentifier:
+            self.window?.contentViewController = payVC
             break
         default:
             break
