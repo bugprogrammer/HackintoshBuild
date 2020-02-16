@@ -22,41 +22,47 @@ class ViewControllerInfo: NSViewController {
     @IBOutlet weak var bootLoaderCheck: NSComboBox!
     @IBOutlet weak var refreshButton: NSButton!
     @IBOutlet var outputTableView: NSTextView!
-    
+    @IBOutlet weak var versionLabel: NSTextField!
     
     let taskQueue = DispatchQueue.global(qos: .background)
+    let lock = NSLock()
     let kextPath = Bundle.main.path(forResource: "AppleIntelInfo", ofType: "kext")
+    let bdmesg = Bundle.main.path(forResource: "bdmesg", ofType: "")
     var output: String = ""
     var bootLoaderTypeArr: [String] = ["请选择引导类型","OpenCore","Clover"]
     var bootLoaderType: String = ""
     var nsDictionary: NSDictionary?
     var fileManager = FileManager.default
+    var BLArr: [String] = []
+    var efiArr: [String] = []
+    var amlArr: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        versionLabel.stringValue = ""
         refreshButton.isEnabled = false
-        runBuildScripts("kextInfo",[])
+        runBuildScripts("kextInfo", [])
         bootLoaderCheck.numberOfVisibleItems = bootLoaderTypeArr.count
         bootLoaderCheck.addItems(withObjectValues: bootLoaderTypeArr)
         bootLoaderCheck.selectItem(at: 0)
         bootLoaderCheck.isSelectable = false
         
         let SLEString = self.HackinChanged("/System/Library/Extensions/", ".kext")
-                if SLEString.isEmpty {
-                    self.SLETextView.string = "SLE未添加任何第三方Kexts"
-                }
-                else {
-                    self.SLETextView.string.append(SLEString)
-                }
+        if SLEString.isEmpty {
+            self.SLETextView.string = "SLE未添加任何第三方Kexts"
+        }
+        else {
+            self.SLETextView.string.append(SLEString)
+        }
 
         let LEString = self.HackinChanged("/Library/Extensions/", ".kext")
-            if LEString.isEmpty {
-                self.LETextView.string = "LE未添加任何第三方Kexts"
-            }
-            else {
-                self.LETextView.string.append(LEString)
-            }
+        if LEString.isEmpty {
+            self.LETextView.string = "LE未添加任何第三方Kexts"
+        }
+        else {
+            self.LETextView.string.append(LEString)
+        }
         
     }
     
@@ -73,105 +79,87 @@ class ViewControllerInfo: NSViewController {
         efiTextView.string = ""
         amlTextView.string = ""
         
-        var BLArr: [String] = []
         if self.bootLoaderType == "OpenCore" {
-            BLKextsLabel.stringValue = "OpenCore下的Kexts"
-            BLArr = self.findFiles("/Volumes/EFI/EFI/OC/Kexts/", ".kext")
+            autoSelect("OpenCore")
         }
         else if self.bootLoaderType == "Clover"  {
-            BLKextsLabel.stringValue = "Clover下的Kexts"
-            BLArr = self.findFiles("/Volumes/EFI/EFI/Clover/kexts/", ".kext")
+            autoSelect("Clover")
         }
         else {
-            BLKextsLabel.stringValue = "请选择引导类型"
-            BLArr.append("reset")
+            autoSelect("reset")
         }
-            if BLArr.isEmpty {
-                if !fileManager.fileExists(atPath: "/Volumes/EFI/EFI/" ) {
-                    self.BLTextView.string = "尚未挂载EFI分区"
-                }
-                else {
-                    self.BLTextView.string = "神马情况？EFI下没有Kexts？？？"
-                }
-            }
-            else if BLArr[0] == "reset" {
-                self.BLTextView.string = ""
-            }
-            else {
-                for kext in BLArr {
-                    //self.BLTextView.string.append(kext.components(separatedBy: "/").last! + "\n")
-                    self.BLTextView.string.append(kext + "\n")
-                }
-            }
         
-        var efiArr: [String] = []
-        if self.bootLoaderType == "OpenCore" {
+        self.BLTextView.string = getArr(BLArr, "神马情况？EFI下没有Kexts？？？")
+        self.efiTextView.string = getArr(efiArr, "神马情况？EFI下没有.efi驱动？？？")
+        self.amlTextView.string = getArr(amlArr, "您未使用任何SSDT")
+    }
+    
+    func autoSelect(_ blType: String) {
+        if blType == "OpenCore" {
+            versionLabel.stringValue = ""
+            runBuildScripts("OCVersion", [])
+            BLKextsLabel.stringValue = "OpenCore下的Kexts"
+            BLArr = self.findFiles("/Volumes/EFI/EFI/OC/Kexts/", ".kext")
+            
             BLEfiLabel.stringValue = "OpenCore下的efi文件"
             efiArr = self.findFiles("/Volumes/EFI/EFI/OC/Drivers/", ".efi")
-        }
-        else if self.bootLoaderType == "Clover" {
-            BLEfiLabel.stringValue = "Clover下的efi文件"
-            efiArr = self.findFiles("/Volumes/EFI/EFI/Clover/", ".efi")
-        }
-        else {
-            BLEfiLabel.stringValue = "请选择引导类型"
-            efiArr.append("reset")
-        }
-        
-            if efiArr.isEmpty {
-                if !fileManager.fileExists(atPath: "/Volumes/EFI/EFI/" ) {
-                    self.efiTextView.string = "尚未挂载EFI分区"
-                }
-                else {
-                    self.efiTextView.string = "神马情况？EFI下没有.efi驱动？？？"
-                }
-                
-            }
-            else if efiArr[0] == "reset" {
-                self.efiTextView.string = ""
-            }
-            else {
-                for efi in efiArr {
-                    //self.efiTextView.string.append(efi.components(separatedBy: "/").last! + "\n")
-                    self.efiTextView.string.append(efi + "\n")
-                }
-            }
-        var amlArr: [String] = []
-        if self.bootLoaderType == "OpenCore" {
+            
             BLSsdtLabel.stringValue = "OpenCore下的ssdt文件"
             amlArr = self.findFiles("/Volumes/EFI/EFI/OC/ACPI/", ".aml")
         }
-        else if self.bootLoaderType == "Clover" {
+        
+        else if blType == "Clover" {
+            versionLabel.stringValue = ""
+            runBuildScripts("CloverVersion", [bdmesg!])
+            BLKextsLabel.stringValue = "Clover下的Kexts"
+            BLArr = self.findFiles("/Volumes/EFI/EFI/Clover/kexts/", ".kext")
+            
+            BLEfiLabel.stringValue = "Clover下的efi文件"
+            efiArr = self.findFiles("/Volumes/EFI/EFI/Clover/", ".efi")
+            
             BLSsdtLabel.stringValue = "Clover下的ssdt文件"
             amlArr = self.findFiles("/Volumes/EFI/EFI/Clover/ACPI/patched/", ".aml")
         }
-        else {
-            BLSsdtLabel.stringValue = "请选择引导类型"
-            amlArr.append("reset")
-        }
         
-        if amlArr.isEmpty {
+        else {
+            versionLabel.stringValue = ""
+            
+            BLKextsLabel.stringValue = "请选择引导类型"
+            BLArr = ["reset"]
+            
+            BLEfiLabel.stringValue = "请选择引导类型"
+            efiArr = ["reset"]
+            
+            BLSsdtLabel.stringValue = "请选择引导类型"
+            amlArr = ["reset"]
+        }
+    }
+    
+    func getArr(_ item: [String],_ text: String) -> String {
+        var outputtext: String = ""
+        
+        if item.isEmpty {
             if !fileManager.fileExists(atPath: "/Volumes/EFI/EFI/" ) {
-                self.amlTextView.string = "尚未挂载EFI分区"
+                outputtext = "尚未挂载EFI分区"
             }
             else {
-                self.amlTextView.string = "您未使用任何SSDT"
+                outputtext = text
             }
         }
-        else if amlArr[0] == "reset" {
-            self.amlTextView.string = ""
+        else if item == ["reset"] {
+            outputtext = ""
         }
         else {
-            for aml in amlArr {
-                self.amlTextView.string.append(aml + "\n")
+            for files in item {
+                outputtext += files + "\n"
             }
         }
+        return outputtext
     }
     
     func HackinChanged(_ path: String,_ filterTypes: String) -> String {
         var fileString:String = ""
         let files = findFiles(path, filterTypes)
-        //MyLog(files)
         for file in files {
             var url: String = ""
             if fileManager.fileExists(atPath: path + file + "/Contents/info.plist" ) {
@@ -181,7 +169,6 @@ class ViewControllerInfo: NSViewController {
                 url = "/info.plist"
             }
             if getPlist(path + file + url) {
-                //fileString.append(file.components(separatedBy: "/").last! + "\n")
                 fileString.append(file + "\n")
             }
         }
@@ -194,7 +181,6 @@ class ViewControllerInfo: NSViewController {
 
         while let filename = enumerator?.nextObject() as? String {
             if filename.extension == filterTypes {
-                //files.append(filename.components(separatedBy: "/").last!)
                 files.append(filename)
             }
         }
@@ -212,15 +198,39 @@ class ViewControllerInfo: NSViewController {
                 task.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
+                        self.lock.lock()
                         if shell == "kextInfo" {
                             self.loadedTextView.string.append(self.output)
                             self.runBuildScripts("AppleIntelInfo", [self.kextPath!])
+                        }
+                        else if shell == "CloverVersion" {
+                            if self.output != "" {
+                                self.versionLabel.stringValue = "本地Clover版本：" + self.output
+                            }
+                            AraHUDViewController.shared.hideHUD()
+                        }
+                        else if shell == "OCVersion" {
+                            if self.output.count >= 3 {
+                                var str: String = ""
+                                let version = self.output.filter { !" \n".contains($0) }
+                                for item in version {
+                                    if item == version.last {
+                                        str.append(item)
+                                    }
+                                    else {
+                                        str.append(String(item) + ".")
+                                    }
+                                }
+                                self.versionLabel.stringValue = "本地OpenCore版本：" + str
+                            }
+                            AraHUDViewController.shared.hideHUD()
                         }
                         else {
                             self.refreshButton.isEnabled = true
                             AraHUDViewController.shared.hideHUD()
                             self.outputTableView.string.append(self.output)
                         }
+                        self.lock.unlock()
                     })
                 }
                 self.taskOutPut(task)
@@ -240,7 +250,6 @@ class ViewControllerInfo: NSViewController {
             if output.count > 0 {
                 outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
                 let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-                //MyLog(outputString)
                 DispatchQueue.main.async(execute: {
                     let previousOutput = self.output
                     let nextOutput = previousOutput + outputString
@@ -256,7 +265,6 @@ class ViewControllerInfo: NSViewController {
         let keysArr = nsDictionary!.allKeys as! [String]
         for key in keysArr {
             if key == "CFBundleIdentifier" {
-                MyLog(nsDictionary![key] as! String)
                 let CFBundleIdentifier = nsDictionary![key] as! String
                 let itemsArr: [String] = ["com.apple","com.Accusys","com.Areca","com.ATTO","com.CalDigit","com.intel","com.highpoint-tech","com.promise"
                 ,"com.softraid","org.virtualbox"]
@@ -281,3 +289,4 @@ extension String {
         }
     }
 }
+
