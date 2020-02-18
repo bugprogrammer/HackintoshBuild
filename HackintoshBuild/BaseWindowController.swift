@@ -84,7 +84,7 @@ class BaseWindowController: NSWindowController {
         self.window?.toolbar = toolBar
         toolBar.selectedItemIdentifier = buildIdentifier
         self.window?.contentViewController = buildVC
-        
+        self.window?.setContentSize(NSSize(width: 790, height: 630))
         runBuildScripts("sipStatus", [], "")
     }
     
@@ -222,30 +222,39 @@ extension BaseWindowController: NSToolbarDelegate {
         switch item.itemIdentifier {
         case buildIdentifier:
             self.window?.contentViewController = buildVC
+            self.window?.setContentSize(NSSize(width: 790, height: 630))
             break
         case efiIdentifier:
             self.window?.contentViewController = EFIVC
+            self.window?.setContentSize(NSSize(width: 790, height: 630))
             break
         case diskIdentifier:
             self.window?.contentViewController = diskVC
+            self.window?.setContentSize(NSSize(width: 790, height: 630))
             break
         case nvramIdentifier:
             self.window?.contentViewController = nvramVC
+            self.window?.setContentSize(NSSize(width: 790, height: 630))
             break
         case lockIdentifier:
             self.window?.contentViewController = lockVC
+            self.window?.setContentSize(NSSize(width: 790, height: 630))
             break
         case infoIdentifier:
             self.window?.contentViewController = infoVC
+            self.window?.setContentSize(NSSize(width: 1200, height: 630))
             break
         case ioregIdentifier:
             self.window?.contentViewController = ioregVC
+            self.window?.setContentSize(NSSize(width: 1200, height: 630))
             break
         case otherIdentifier:
             self.window?.contentViewController = otherVC
+            self.window?.setContentSize(NSSize(width: 790, height: 630))
             break
         case payIdentifier:
             self.window?.contentViewController = payVC
+            self.window?.setContentSize(NSSize(width: 790, height: 630))
             break
         default:
             break
