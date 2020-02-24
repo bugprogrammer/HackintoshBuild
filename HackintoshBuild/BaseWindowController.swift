@@ -11,6 +11,7 @@ import GitHubUpdates
 
 public var isSIPStatusEnabled: Bool? = nil
 public var proxy: String? = UserDefaults.standard.string(forKey: "proxy")
+public var isMoved: Bool = false
 
 class BaseWindowController: NSWindowController {
 
@@ -62,8 +63,6 @@ class BaseWindowController: NSWindowController {
     
     lazy var toolBar: NSToolbar = {
         let toolBar = NSToolbar(identifier: "bugprogrammer.HackintoshBuild.NSToolbar.MyToolbar")
-//        toolBar.allowsUserCustomization = false
-//        toolBar.autosavesConfiguration = false
         toolBar.displayMode = .iconAndLabel
         toolBar.sizeMode = .default
         toolBar.delegate = self
@@ -85,6 +84,8 @@ class BaseWindowController: NSWindowController {
         toolBar.selectedItemIdentifier = buildIdentifier
         self.window?.contentViewController = buildVC
         self.window?.setContentSize(NSSize(width: 790, height: 630))
+        self.window?.styleMask.remove(.resizable)
+
         runBuildScripts("sipStatus", [], "")
     }
     
@@ -242,11 +243,11 @@ extension BaseWindowController: NSToolbarDelegate {
             break
         case infoIdentifier:
             self.window?.contentViewController = infoVC
-            self.window?.setContentSize(NSSize(width: 1200, height: 630))
+            self.window?.setContentSize(NSSize(width: 1200, height: 710))
             break
         case ioregIdentifier:
             self.window?.contentViewController = ioregVC
-            self.window?.setContentSize(NSSize(width: 1200, height: 630))
+            self.window?.setContentSize(NSSize(width: 1200, height: 710))
             break
         case otherIdentifier:
             self.window?.contentViewController = otherVC
