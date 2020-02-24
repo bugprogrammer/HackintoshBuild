@@ -19,7 +19,16 @@ export http_proxy=$proxy
 export https_proxy=$proxy
 fi
 
-git clone https://github.com/bugprogrammer/hackintosh.git
+if [[ $4 == "" ]]; then
+    logs=/dev/null
+else
+    if [ -e $4/efi.log ]; then
+        rm -f $4/efi.log
+    fi
+    logs=$4/efi.log
+fi
+
+git clone https://github.com/bugprogrammer/hackintosh.git >> $logs
 
 cd hackintosh
 
@@ -28,8 +37,12 @@ nameArr=(`echo $nameList | tr ',' ' '`)
 
 for i in ${nameArr[*]}; do
     mkdir ../../Release/$i
-    git checkout $i
+    echo "正在获取"$i"的EFI"
+    git checkout $i >> $logs
     cp -Rf * ../../Release/$i
 done;
 
+if [[ $4 != "" ]]; then
+    open $4/efi.log
+fi
 open $url/$dir/Release

@@ -21,24 +21,36 @@
 		11D5C27823D1B11300461A78 /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27723D1B11300461A78 /* BaseWindowController.swift */; };
 		11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27923D1B63700461A78 /* MyAsset.swift */; };
 		6A0D773D23C7A917003F5C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0D773C23C7A744003F5C3A /* Main.storyboard */; };
-		6A1E689023EDD26A0070A11E /* timeMachineReset.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A1E688F23EDD26A0070A11E /* timeMachineReset.command */; };
+		6A1E571C23F31AB5004E8430 /* ViewControllerIoreg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1E571B23F31AB5004E8430 /* ViewControllerIoreg.swift */; };
+		6A20F6B223F80BA700E69F60 /* OCVersion.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A20F6B123F80BA700E69F60 /* OCVersion.command */; };
+		6A21D45923EE869B007D7CE9 /* timeMachineOptimize.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A21D45623EE869B007D7CE9 /* timeMachineOptimize.command */; };
+		6A21D45A23EE869B007D7CE9 /* timeMachineReset.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A21D45823EE869B007D7CE9 /* timeMachineReset.command */; };
 		6A2D271123DF324100238E46 /* ViewControllerNvram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D271023DF324100238E46 /* ViewControllerNvram.swift */; };
 		6A2D271423DF364300238E46 /* nvramKeys.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A2D271323DF364300238E46 /* nvramKeys.command */; };
-		6A35D15523EDCE500077C92E /* timeMachineOptimize.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A35D15423EDCE500077C92E /* timeMachineOptimize.command */; };
+		6A36D49823F85BD500CD042B /* CloverVersion.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A36D49723F85BD500CD042B /* CloverVersion.command */; };
 		6A427D1323E459BD00A0B4E3 /* ViewControllerLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A427D1223E459BC00A0B4E3 /* ViewControllerLock.swift */; };
 		6A427D1623E4618F00A0B4E3 /* changeLockPicture.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */; };
 		6A4A9FA323E59F86008D8EF8 /* sipStatus.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A4A9FA223E59F86008D8EF8 /* sipStatus.command */; };
+		6A4B7E8B23F9B63300A6EFFF /* alipay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AE76A6D23F9B4F900B931F1 /* alipay.jpg */; };
+		6A4B7E8C23F9B63300A6EFFF /* wechatpay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AE76A6E23F9B4F900B931F1 /* wechatpay.jpg */; };
+		6A4B7E8F23F9B70F00A6EFFF /* bdmesg in Resources */ = {isa = PBXBuildFile; fileRef = 6A4B7E8E23F9B6BA00A6EFFF /* bdmesg */; };
 		6A7649DA23E2BB5C00F6D89A /* nvramValues.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A7649D923E2BB5C00F6D89A /* nvramValues.command */; };
 		6A7A718C23D82DAE0082FA94 /* ViewControllerDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A718B23D82DAE0082FA94 /* ViewControllerDisk.swift */; };
 		6A7A719123D845DB0082FA94 /* diskInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A7A718F23D845DB0082FA94 /* diskInfo.command */; };
+		6A87220523F5B4C100D77EEF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A87220323F5B4C100D77EEF /* WebKit.framework */; };
+		6A8E53CF23F3FEEE001E59D3 /* AppleIntelInfo.kext in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E53CE23F3FEEE001E59D3 /* AppleIntelInfo.kext */; };
+		6A8E53D123F40289001E59D3 /* AppleIntelInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E53D023F40289001E59D3 /* AppleIntelInfo.command */; };
 		6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6EE0623E5859900BF15FD /* resetLockPicture.command */; };
 		6AAB82CA23D205E300ACFB81 /* ViewControllerEFI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB82C923D205E300ACFB81 /* ViewControllerEFI.swift */; };
 		6AAB82D023D22C0E00ACFB81 /* getEFI.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB82CF23D22C0E00ACFB81 /* getEFI.command */; };
 		6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AB8B6FB23D582FC00A993C5 /* spctl.command */; };
+		6AC3981F23EA8FEC0090A56A /* ViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC3981E23EA8FEC0090A56A /* ViewControllerInfo.swift */; };
+		6AC3982123EA94820090A56A /* kextInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AC3982023EA94820090A56A /* kextInfo.command */; };
 		6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */; };
 		6ADAEFA623C23DA5008ECF4B /* ViewControllerBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */; };
 		6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA723C23DA6008ECF4B /* Assets.xcassets */; };
 		6ADAEFBB23C257E5008ECF4B /* Hackintosh_build.command in Resources */ = {isa = PBXBuildFile; fileRef = 6ADAEFBA23C257E5008ECF4B /* Hackintosh_build.command */; };
+		6AE76A6523F9AC7C00B931F1 /* ViewControllerPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE76A6423F9AC7C00B931F1 /* ViewControllerPay.swift */; };
 		6AE8345023D8B28B005BADCF /* diskMount.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8344F23D8B28B005BADCF /* diskMount.command */; };
 /* End PBXBuildFile section */
 
@@ -80,20 +92,29 @@
 		11D5C27723D1B11300461A78 /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
 		11D5C27923D1B63700461A78 /* MyAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsset.swift; sourceTree = "<group>"; };
 		6A0D773C23C7A744003F5C3A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6A1E688F23EDD26A0070A11E /* timeMachineReset.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = timeMachineReset.command; sourceTree = "<group>"; };
+		6A1E571B23F31AB5004E8430 /* ViewControllerIoreg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerIoreg.swift; sourceTree = "<group>"; };
+		6A20F6B123F80BA700E69F60 /* OCVersion.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = OCVersion.command; sourceTree = "<group>"; };
+		6A21D45623EE869B007D7CE9 /* timeMachineOptimize.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = timeMachineOptimize.command; sourceTree = "<group>"; };
+		6A21D45823EE869B007D7CE9 /* timeMachineReset.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = timeMachineReset.command; sourceTree = "<group>"; };
 		6A2D271023DF324100238E46 /* ViewControllerNvram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNvram.swift; sourceTree = "<group>"; };
 		6A2D271323DF364300238E46 /* nvramKeys.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = nvramKeys.command; sourceTree = "<group>"; };
-		6A35D15423EDCE500077C92E /* timeMachineOptimize.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = timeMachineOptimize.command; sourceTree = "<group>"; };
+		6A36D49723F85BD500CD042B /* CloverVersion.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = CloverVersion.command; sourceTree = "<group>"; };
 		6A427D1223E459BC00A0B4E3 /* ViewControllerLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLock.swift; sourceTree = "<group>"; };
 		6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = changeLockPicture.command; sourceTree = "<group>"; };
 		6A4A9FA223E59F86008D8EF8 /* sipStatus.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = sipStatus.command; sourceTree = "<group>"; };
+		6A4B7E8E23F9B6BA00A6EFFF /* bdmesg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = bdmesg; sourceTree = "<group>"; };
 		6A7649D923E2BB5C00F6D89A /* nvramValues.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = nvramValues.command; sourceTree = "<group>"; };
 		6A7A718B23D82DAE0082FA94 /* ViewControllerDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDisk.swift; sourceTree = "<group>"; };
 		6A7A718F23D845DB0082FA94 /* diskInfo.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = diskInfo.command; sourceTree = "<group>"; };
+		6A87220323F5B4C100D77EEF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6A8E53CE23F3FEEE001E59D3 /* AppleIntelInfo.kext */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.kernel-extension"; path = AppleIntelInfo.kext; sourceTree = "<group>"; };
+		6A8E53D023F40289001E59D3 /* AppleIntelInfo.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppleIntelInfo.command; sourceTree = "<group>"; };
 		6AA6EE0623E5859900BF15FD /* resetLockPicture.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = resetLockPicture.command; sourceTree = "<group>"; };
 		6AAB82C923D205E300ACFB81 /* ViewControllerEFI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEFI.swift; sourceTree = "<group>"; };
 		6AAB82CF23D22C0E00ACFB81 /* getEFI.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = getEFI.command; sourceTree = "<group>"; };
 		6AB8B6FB23D582FC00A993C5 /* spctl.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = spctl.command; sourceTree = "<group>"; };
+		6AC3981E23EA8FEC0090A56A /* ViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfo.swift; sourceTree = "<group>"; };
+		6AC3982023EA94820090A56A /* kextInfo.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = kextInfo.command; sourceTree = "<group>"; };
 		6ADAEFA023C23DA5008ECF4B /* HackintoshBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackintoshBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuild.swift; sourceTree = "<group>"; };
@@ -101,6 +122,9 @@
 		6ADAEFAC23C23DA6008ECF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ADAEFAD23C23DA6008ECF4B /* HackintoshBuild.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackintoshBuild.entitlements; sourceTree = "<group>"; };
 		6ADAEFBA23C257E5008ECF4B /* Hackintosh_build.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Hackintosh_build.command; sourceTree = "<group>"; };
+		6AE76A6423F9AC7C00B931F1 /* ViewControllerPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPay.swift; sourceTree = "<group>"; };
+		6AE76A6D23F9B4F900B931F1 /* alipay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alipay.jpg; sourceTree = "<group>"; };
+		6AE76A6E23F9B4F900B931F1 /* wechatpay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wechatpay.jpg; sourceTree = "<group>"; };
 		6AE8344F23D8B28B005BADCF /* diskMount.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = diskMount.command; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A87220523F5B4C100D77EEF /* WebKit.framework in Frameworks */,
 				11A5716923D6EBAC00437951 /* GitHubUpdates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,10 +197,23 @@
 				6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */,
 				6AA6EE0623E5859900BF15FD /* resetLockPicture.command */,
 				6A4A9FA223E59F86008D8EF8 /* sipStatus.command */,
-				6A35D15423EDCE500077C92E /* timeMachineOptimize.command */,
-				6A1E688F23EDD26A0070A11E /* timeMachineReset.command */,
+				6AC3982023EA94820090A56A /* kextInfo.command */,
+				6A21D45623EE869B007D7CE9 /* timeMachineOptimize.command */,
+				6A21D45823EE869B007D7CE9 /* timeMachineReset.command */,
+				6A8E53D023F40289001E59D3 /* AppleIntelInfo.command */,
+				6A20F6B123F80BA700E69F60 /* OCVersion.command */,
+				6A36D49723F85BD500CD042B /* CloverVersion.command */,
 			);
 			path = Command;
+			sourceTree = "<group>";
+		};
+		6A4B7E8D23F9B6BA00A6EFFF /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				6A4B7E8E23F9B6BA00A6EFFF /* bdmesg */,
+				6A8E53CE23F3FEEE001E59D3 /* AppleIntelInfo.kext */,
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 		6ADAEF9723C23DA5008ECF4B = {
@@ -198,25 +236,40 @@
 		6ADAEFA223C23DA5008ECF4B /* HackintoshBuild */ = {
 			isa = PBXGroup;
 			children = (
+				6AE76A6C23F9B4F900B931F1 /* Pay */,
+				6A4B7E8D23F9B6BA00A6EFFF /* tools */,
 				11A5716323D6EB4200437951 /* GitHubUpdates.xcodeproj */,
 				6A1A664323D1E824009E24EC /* Command */,
 				1193974A23D1C7690096297C /* Global */,
 				11D5C27723D1B11300461A78 /* BaseWindowController.swift */,
+				6AE76A6423F9AC7C00B931F1 /* ViewControllerPay.swift */,
+				6AC3981E23EA8FEC0090A56A /* ViewControllerInfo.swift */,
 				6A427D1223E459BC00A0B4E3 /* ViewControllerLock.swift */,
 				6A2D271023DF324100238E46 /* ViewControllerNvram.swift */,
 				6A7A718B23D82DAE0082FA94 /* ViewControllerDisk.swift */,
 				6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */,
 				1193974623D1BF380096297C /* ViewControllerOther.swift */,
 				6AAB82C923D205E300ACFB81 /* ViewControllerEFI.swift */,
+				6A1E571B23F31AB5004E8430 /* ViewControllerIoreg.swift */,
 				6A0D773C23C7A744003F5C3A /* Main.storyboard */,
 				11D5C27B23D1B63A00461A78 /* Supporting Files */,
 			);
 			path = HackintoshBuild;
 			sourceTree = "<group>";
 		};
+		6AE76A6C23F9B4F900B931F1 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				6AE76A6D23F9B4F900B931F1 /* alipay.jpg */,
+				6AE76A6E23F9B4F900B931F1 /* wechatpay.jpg */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
 		6AECB88A23D4B7260069B099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A87220323F5B4C100D77EEF /* WebKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,23 +349,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A4B7E8F23F9B70F00A6EFFF /* bdmesg in Resources */,
+				6A4B7E8B23F9B63300A6EFFF /* alipay.jpg in Resources */,
+				6A4B7E8C23F9B63300A6EFFF /* wechatpay.jpg in Resources */,
 				6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */,
+				6A36D49823F85BD500CD042B /* CloverVersion.command in Resources */,
 				6A7649DA23E2BB5C00F6D89A /* nvramValues.command in Resources */,
 				6A0D773D23C7A917003F5C3A /* Main.storyboard in Resources */,
 				6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */,
 				6AE8345023D8B28B005BADCF /* diskMount.command in Resources */,
+				6AC3982123EA94820090A56A /* kextInfo.command in Resources */,
 				6ADAEFBB23C257E5008ECF4B /* Hackintosh_build.command in Resources */,
 				6A427D1623E4618F00A0B4E3 /* changeLockPicture.command in Resources */,
 				116D2D8D23D6C540001FED06 /* rebuildCache.command in Resources */,
 				6A7A719123D845DB0082FA94 /* diskInfo.command in Resources */,
 				6A1E689023EDD26A0070A11E /* timeMachineReset.command in Resources */,
 				6AAB82D023D22C0E00ACFB81 /* getEFI.command in Resources */,
+				6A21D45923EE869B007D7CE9 /* timeMachineOptimize.command in Resources */,
 				6A4A9FA323E59F86008D8EF8 /* sipStatus.command in Resources */,
 				116D2D8B23D6C528001FED06 /* unlockSLE.command in Resources */,
 				6A2D271423DF364300238E46 /* nvramKeys.command in Resources */,
-				6A35D15523EDCE500077C92E /* timeMachineOptimize.command in Resources */,
+				6A8E53CF23F3FEEE001E59D3 /* AppleIntelInfo.kext in Resources */,
+				6A8E53D123F40289001E59D3 /* AppleIntelInfo.command in Resources */,
 				117B27B023E9485C00581352 /* AraHUDView.xib in Resources */,
+				6A21D45A23EE869B007D7CE9 /* timeMachineReset.command in Resources */,
 				6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */,
+				6A20F6B223F80BA700E69F60 /* OCVersion.command in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,13 +386,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */,
+				6AC3981F23EA8FEC0090A56A /* ViewControllerInfo.swift in Sources */,
 				117B27B423E957C600581352 /* AraHUDView.swift in Sources */,
+				6AE76A6523F9AC7C00B931F1 /* ViewControllerPay.swift in Sources */,
 				1193974C23D1C7BA0096297C /* MyLog.swift in Sources */,
 				1158FAB023D6E1610095FED5 /* main.swift in Sources */,
 				6A427D1323E459BD00A0B4E3 /* ViewControllerLock.swift in Sources */,
 				6ADAEFA623C23DA5008ECF4B /* ViewControllerBuild.swift in Sources */,
 				11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */,
 				6A2D271123DF324100238E46 /* ViewControllerNvram.swift in Sources */,
+				6A1E571C23F31AB5004E8430 /* ViewControllerIoreg.swift in Sources */,
 				1193974723D1BF380096297C /* ViewControllerOther.swift in Sources */,
 				6AAB82CA23D205E300ACFB81 /* ViewControllerEFI.swift in Sources */,
 				117B27B223E94B8E00581352 /* AraHUDViewController.swift in Sources */,
@@ -464,7 +529,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = LM4G3WSD5B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -477,7 +542,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.5;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,7 +559,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = LM4G3WSD5B;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -507,7 +572,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.5;
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -3,7 +3,7 @@
 //  HackintoshBuild
 //
 //  Created by bugprogrammer on 2020/1/31.
-//  Copyright © 2020 bugprogrammer. All rights reserved.
+//  Copyright © 2020 bugprogrammer,Arabaku. All rights reserved.
 //
 
 import Cocoa

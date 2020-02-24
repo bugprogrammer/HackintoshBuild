@@ -7,4 +7,3 @@ on run argv
     do shell script "cd /Library/Caches/Desktop\\ Pictures/" & quoted form of userUUID & "; cp -f " & quoted form of (item 1 of argv) & " lockscreen.png" with administrator privileges
     return "success"
 end run
-

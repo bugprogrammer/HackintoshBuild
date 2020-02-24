@@ -19,10 +19,12 @@ class ViewControllerBuild: NSViewController {
     @IBOutlet weak var pluginsView: NSTableView!
     
     @IBOutlet var buildLocation: NSPathControl!
+    @IBOutlet weak var logsLocation: NSPathControl!
     
     @IBOutlet weak var proxyTextField: NSTextField!
     
     let taskQueue = DispatchQueue.global(qos: .background)
+    let alert = NSAlert()
     
     let pluginsList: [String] = [
         "Clover(时间较长)",
@@ -45,7 +47,8 @@ class ViewControllerBuild: NSViewController {
         "IntelMausiEthernet",
         "AtherosE2200Ethernet",
         "RTL8111",
-        "NVMeFix"
+        "NVMeFix",
+        "MacProMemoryNotificationDisabler"
     ]
     
     override func viewWillAppear() {
@@ -95,15 +98,21 @@ class ViewControllerBuild: NSViewController {
         UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
         if let buildURL = buildLocation.url {
             UserDefaults.standard.set(buildURL, forKey: "kextLocation")
-            var arguments: [String] = []
-            itemsSting = itemsArr.joined(separator: ",")
-            arguments.append(buildURL.path)
-            arguments.append(itemsSting)
-            arguments.append(proxyTextField.stringValue)
-            runBuildScripts(arguments)
-            MyLog(arguments)
+                var arguments: [String] = []
+                itemsSting = itemsArr.joined(separator: ",")
+                arguments.append(buildURL.path)
+                arguments.append(itemsSting)
+                arguments.append(proxyTextField.stringValue)
+                arguments.append(logsLocation.url?.path ?? "")
+                if itemsSting != "" {
+                    runBuildScripts(arguments)
+                }
+                else {
+                    alert.messageText = "未选择任何条目"
+                    alert.runModal()
+                }
+                MyLog(arguments)
         } else {
-            let alert = NSAlert()
             alert.messageText = "请先选择存储位置！"
             alert.runModal()
         }
