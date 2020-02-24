@@ -243,11 +243,11 @@ extension BaseWindowController: NSToolbarDelegate {
             break
         case infoIdentifier:
             self.window?.contentViewController = infoVC
-            self.window?.setContentSize(NSSize(width: 1200, height: 710))
+            self.window?.setContentSize(NSSize(width: 1200, height: 630))
             break
         case ioregIdentifier:
             self.window?.contentViewController = ioregVC
-            self.window?.setContentSize(NSSize(width: 1200, height: 710))
+            self.window?.setContentSize(NSSize(width: 1200, height: 630))
             break
         case otherIdentifier:
             self.window?.contentViewController = otherVC
