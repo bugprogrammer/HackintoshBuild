@@ -16,6 +16,8 @@ class ViewControllerOther: NSViewController {
     @IBOutlet weak var unclockButton: NSButton!
     @IBOutlet weak var rebuildButton: NSButton!
     @IBOutlet weak var spctlButton: NSButton!
+    @IBOutlet weak var showButton: NSButton!
+    @IBOutlet weak var hiddenButton: NSButton!
     
     let taskQueue = DispatchQueue.global(qos: .background)
     
@@ -24,6 +26,7 @@ class ViewControllerOther: NSViewController {
         // Do view setup here.
         progressBar.isHidden = true
         spctlButton.isEnabled = true
+        
         guard let enabled = isSIPStatusEnabled else {
             sipLable.textColor = NSColor.red
             sipLable.stringValue = "SIP 状态未知"
@@ -50,7 +53,7 @@ class ViewControllerOther: NSViewController {
         progressBar.isHidden = true
         
         if #available(OSX 10.15, *) {
-            runBuildScripts("unlockSLE", "SLE 解锁成功")
+            runBuildScripts("unlockSLE", [], "SLE 解锁成功")
         } else {
             let alert = NSAlert()
             alert.messageText = "系统版本低于 10.15，无需解锁"
@@ -63,36 +66,51 @@ class ViewControllerOther: NSViewController {
         output.string = ""
         self.progressBar.startAnimation(self)
         
-        runBuildScripts("rebuildCache", "修复权限以及重建缓存成功")
+        runBuildScripts("rebuildCache", [], "修复权限以及重建缓存成功")
     }
     
     @IBAction func spctl(_ sender: Any) {
         output.string = ""
         progressBar.isHidden = true
         
-        runBuildScripts("spctl", "已开启未知来源安装")
+        runBuildScripts("spctl", [], "已开启未知来源安装")
     }
         
     @IBAction func timeMachineOptimize(_ sender: Any) {
         output.string = ""
         progressBar.isHidden = true
         
-        runBuildScripts("timeMachineOptimize", "时间机器已经满血运行，注意：如果用NAS备份，请使用AFP协议")
+        runBuildScripts("timeMachine", ["0"], "时间机器已经满血运行，注意：如果用NAS备份，请使用AFP协议")
     }
     
     @IBAction func timeMachineReset(_ sender: Any) {
         output.string = ""
         progressBar.isHidden = true
         
-        runBuildScripts("timeMachineReset", "时间机器已经恢复默认状态")
+        runBuildScripts("timeMachine", ["1"], "时间机器已经恢复默认状态")
+    }
+        
+    @IBAction func showFiles(_ sender: Any) {
+        output.string = ""
+        progressBar.isHidden = true
+        
+        runBuildScripts("showhiddenFiles", ["true"], "已显示隐藏文件")
     }
     
-    func runBuildScripts(_ shell: String,_ alertText: String) {
+    @IBAction func hiddenFiles(_ sender: Any) {
+        output.string = ""
+        progressBar.isHidden = true
+        
+        runBuildScripts("showhiddenFiles", ["false"], "隐藏文件状态已恢复")
+    }
+    
+    func runBuildScripts(_ shell: String,_ arguments: [String],_ alertText: String) {
         AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
                 task.launchPath = path
+                task.arguments = arguments
                 task.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }

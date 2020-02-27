@@ -26,6 +26,8 @@ class ViewControllerBuild: NSViewController {
     let taskQueue = DispatchQueue.global(qos: .background)
     let alert = NSAlert()
     
+    let toolspath = Bundle.main.path(forResource: "nasm", ofType: "")
+    
     let pluginsList: [String] = [
         "Clover(时间较长)",
         "OpenCore",
@@ -104,6 +106,8 @@ class ViewControllerBuild: NSViewController {
                 arguments.append(itemsSting)
                 arguments.append(proxyTextField.stringValue)
                 arguments.append(logsLocation.url?.path ?? "")
+                arguments.append(toolspath!)
+                
                 if itemsSting != "" {
                     runBuildScripts(arguments)
                 }

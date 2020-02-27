@@ -21,6 +21,7 @@ class BaseWindowController: NSWindowController {
     
     lazy var EFIVC: ViewControllerEFI = {
         return MyTool.getViewControllerFromMain(ViewControllerEFI.self)
+        
     }()
     
     lazy var diskVC: ViewControllerDisk = {

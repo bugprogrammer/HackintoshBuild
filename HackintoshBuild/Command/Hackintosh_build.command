@@ -19,6 +19,21 @@ export http_proxy=$proxy
 export https_proxy=$proxy
 fi
 
+path=$5
+if [ "$(nasm -v)" = "" ] || [ "$(nasm -v | grep Apple)" != "" ]; then
+echo "您尚未安装nasm,现在为您安装"
+osascript <<EOF
+do shell script "mkdir -p /usr/local/bin || exit 1; cp ${path%/*}/nasm /usr/local/bin/ || exit 1; cp ${path%/*}/ndisasm /usr/local/bin/ || exit 1" with prompt "安装nsam需要授权" with administrator privileges
+EOF
+fi
+
+if [ "$(which mtoc.NEW)" == "" ] || [ "$(which mtoc)" == "" ]; then
+echo "您尚未安装mtoc,现在为您安装"
+osascript <<EOF
+do shell script "mkdir -p /usr/local/bin || exit 1; cp ${path%/*}/mtoc /usr/local/bin/mtoc || exit 1; cp ${path%/*}/mtoc /usr/local/bin/mtoc.NEW || exit 1" with prompt "安装mtoc需要授权" with administrator privileges
+EOF
+fi
+
 buildArray=(
 'Clover,https://github.com/CloverHackyColor/CloverBootloader.git'
 'OpenCore,https://github.com/acidanthera/OpenCorePkg.git'
