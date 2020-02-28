@@ -70,6 +70,7 @@ class ViewControllerLock: NSViewController {
                 let task = Process()
                 task.launchPath = path
                 task.arguments = arguments
+                task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
                 task.terminationHandler = { task in
                     DispatchQueue.main.async(execute: {
                         AraHUDViewController.shared.hideHUD()

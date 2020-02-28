@@ -96,6 +96,7 @@ class BaseWindowController: NSWindowController {
                 let task = Process()
                 task.launchPath = path
                 task.arguments = arguments
+                task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
                 self.taskOutPut(task)
                 task.launch()
                 task.waitUntilExit()

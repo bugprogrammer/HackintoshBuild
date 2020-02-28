@@ -155,6 +155,7 @@ class ViewControllerBuild: NSViewController {
                 self.buildTask = Process()
                 self.buildTask.launchPath = path
                 self.buildTask.arguments = arguments
+                self.buildTask.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
                 self.buildTask.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }

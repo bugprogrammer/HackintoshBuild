@@ -11,8 +11,6 @@ mkdir -p $dir/Release
 mkdir -p $dir/Sources
 cd $dir/Sources
 
-export PATH=$PATH:/usr/local/bin
-
 proxy=$3
 if [ $proxy!='' ]; then
 export http_proxy=$proxy

@@ -130,6 +130,7 @@ class ViewControllerEFI: NSViewController {
                 self.efiTask = Process()
                 self.efiTask.launchPath = path
                 self.efiTask.arguments = arguments
+                self.efiTask.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
                 self.efiTask.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
