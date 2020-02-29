@@ -4,11 +4,10 @@ start=$(date +%s)
 url=$1
 cd $url
 dir=hackintosh_Plugins
-if [ -e $dir ]; then
-    rm -rf $dir
+if [ ! -e $dir ]; then
+    mkdir -p $dir/Release
+    mkdir -p $dir/Sources
 fi
-mkdir -p $dir/Release
-mkdir -p $dir/Sources
 cd $dir/Sources
 
 proxy=$3
@@ -76,9 +75,15 @@ for i in ${selectedArray[*]}; do
     if [[ $4 != "" ]]; then
         logs=$4/buildlog/${buildArray[$i]%,*}.log
     fi
+    echo "正在编译"${buildArray[$i]%,*}
+    if [ -e ../Release/${buildArray[$i]%,*} ]; then
+        rm -rf ../Release/${buildArray[$i]%,*}
+    fi
     mkdir -p ../Release/${buildArray[$i]%,*}/Release
     mkdir -p ../Release/${buildArray[$i]%,*}/Debug
-    echo "正在编译"${buildArray[$i]%,*}
+    if [ -e ./${buildArray[$i]%,*} ]; then
+        rm -rf ./${buildArray[$i]%,*}
+    fi
     git clone -q ${buildArray[$i]##*,} ${buildArray[$i]%,*} -b master --depth=1
     pushd ${buildArray[$i]%,*}
     if [ ${buildArray[$i]%,*} == 'Clover' ]; then
