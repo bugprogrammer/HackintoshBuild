@@ -9,6 +9,7 @@ arr=($(diskutil list | grep EFI | awk {'print $NF'}))
 for element in ${arr[@]}
 do
 echo -n $(diskutil info ${element%s*} | grep 'Device / Media Name' | awk -F: {'print $2'} | sed 's/^[ \t]*//g'):
+echo -n $(diskutil info ${element} | grep 'Volume Name' | awk -F: {'print $2'} | sed 's/^[ \t]*//g'):
 echo -n $(diskutil info ${element} | grep 'Partition Type' | awk -F: {'print $2'} | sed 's/^[ \t]*//g'):
 echo -n $(diskutil info ${element} | grep 'Mounted' | awk -F: {'print $2'} | sed 's/^[ \t]*//g'):
 echo -n $(diskutil info ${element} | grep 'Disk Size' | awk -F: {'print $2'} | sed 's/^[ \t]*//g') | awk 'BEGIN{ORS=""}{print $1,$2;}'
