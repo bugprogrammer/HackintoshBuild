@@ -93,7 +93,7 @@ class ViewControllerDisk: NSViewController {
                                 self.arrayPartition.removeFirst()
                             }
                             
-                            for i in 0..<self.arrayPartition.count-1 {
+                            for i in 0..<self.arrayPartition.count {
                                 var diskFinal = self.arrayPartition[i].components(separatedBy: ":")
                                 if diskFinal.last == self.arrayPartition.last {
                                     diskFinal.append("当前引导分区")
@@ -104,9 +104,6 @@ class ViewControllerDisk: NSViewController {
                                 self.diskInfoObject.append(DiskInfoObject(diskFinal[0],diskFinal[1],NSLocalizedString(diskFinal[2], comment: ""),diskFinal[3],diskFinal[4],diskFinal[5]))
                                 MyLog(diskFinal.count)
                                 MyLog(diskFinal)
-                            }
-                            if !self.arrayPartition.last!.contains(" ") {
-                                self.arrayPartition.removeLast()
                             }
                             self.diskTableView.reloadData()
                         } else if shell == "diskMount" {

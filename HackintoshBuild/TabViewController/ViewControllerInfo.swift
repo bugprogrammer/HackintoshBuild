@@ -30,7 +30,7 @@ class ViewControllerInfo: NSTabViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        runBuildScripts("systeminfo", ["SPHardwareDataType"])
+        runBuildScripts("systeminfo")
     }
     
     func Convert(_ str: String) -> String {
@@ -43,13 +43,12 @@ class ViewControllerInfo: NSTabViewController {
         return hexStr.uppercased()
     }
     
-        func runBuildScripts(_ shell: String,_ arguments: [String]) {
+        func runBuildScripts(_ shell: String) {
         AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
                 task.launchPath = path
-                task.arguments = arguments
                 task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
                 task.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in
