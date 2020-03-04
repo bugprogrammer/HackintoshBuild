@@ -36,8 +36,8 @@ class BaseWindowController: NSWindowController {
         return MyTool.getViewControllerFromMain(ViewControllerLock.self)
     }()
     
-    lazy var infoVC: ViewControllerInfo = {
-        return MyTool.getViewControllerFromMain(ViewControllerInfo.self)
+    lazy var infoVC: TabViewControllerInfo = {
+        return MyTool.getViewControllerFromMain(TabViewControllerInfo.self)
     }()
     
     lazy var ioregVC: ViewControllerIoreg = {
@@ -241,11 +241,11 @@ extension BaseWindowController: NSToolbarDelegate {
             break
         case lockIdentifier:
             self.window?.contentViewController = lockVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
+            self.window?.setContentSize(NSSize(width: 650, height: 630))
             break
         case infoIdentifier:
             self.window?.contentViewController = infoVC
-            self.window?.setContentSize(NSSize(width: 1200, height: 630))
+            self.window?.setContentSize(NSSize(width: 650, height: 630))
             break
         case ioregIdentifier:
             self.window?.contentViewController = ioregVC

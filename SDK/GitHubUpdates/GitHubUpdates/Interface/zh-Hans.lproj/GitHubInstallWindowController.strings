@@ -1,0 +1,21 @@
+
+/* Class = "NSButtonCell"; title = "Install"; ObjectID = "DD4-qi-VFA"; */
+"DD4-qi-VFA.title" = "Install";
+
+/* Class = "NSTextFieldCell"; title = "Multiline Label"; ObjectID = "MC3-ae-g9b"; */
+"MC3-ae-g9b.title" = "Multiline Label";
+
+/* Class = "NSTextFieldCell"; title = "Release notes:"; ObjectID = "NLq-HZ-LlN"; */
+"NLq-HZ-LlN.title" = "Release notes:";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "Q2g-mU-a3g"; */
+"Q2g-mU-a3g.title" = "Cancel";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "Window";
+
+/* Class = "NSButtonCell"; title = "View on GitHub"; ObjectID = "eAm-HI-FOi"; */
+"eAm-HI-FOi.title" = "View on GitHub";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "fNd-wh-IDG"; */
+"fNd-wh-IDG.title" = "Label";

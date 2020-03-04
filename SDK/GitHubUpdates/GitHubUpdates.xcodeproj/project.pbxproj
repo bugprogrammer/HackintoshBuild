@@ -87,6 +87,8 @@
 		05F1E5FA1EF3A06D0045C4CD /* GitHubTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GitHubTemplate.pdf; sourceTree = "<group>"; };
 		05F82B251EF32EA700EC8A93 /* GitHubUpdates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GitHubUpdates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F82B291EF32EA700EC8A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A723E14240C1DD0007EB3AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/GitHubProgressWindowController.strings"; sourceTree = "<group>"; };
+		6A723E15240C1DD0007EB3AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/GitHubInstallWindowController.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 05F82B1B1EF32EA700EC8A93;
 			productRefGroup = 05F82B261EF32EA700EC8A93 /* Products */;
@@ -316,6 +319,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				052C70911EF370E1000B8D06 /* Base */,
+				6A723E15240C1DD0007EB3AD /* zh-Hans */,
 			);
 			name = GitHubInstallWindowController.xib;
 			sourceTree = "<group>";
@@ -324,6 +328,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				05ED06591EF33C7D00C61AFA /* Base */,
+				6A723E14240C1DD0007EB3AD /* zh-Hans */,
 			);
 			name = GitHubProgressWindowController.xib;
 			sourceTree = "<group>";

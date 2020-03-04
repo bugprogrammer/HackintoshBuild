@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  HackintoshBuild
+
+  Created by wbx on 2020/3/2.
+  Copyright © 2020 wbx. All rights reserved.
+*/
+
+"Model Name" = "型号名称";
+"Model Identifier" = "型号标识符";
+"Processor Name" = "CPU名称";
+"Processor Speed" = "CPU频率";
+"Number of Processors" = "CPU数目";
+"Total Number of Cores" = "核心数量";
+"L2 Cache (per Core)" = "L2缓存";
+"L3 Cache" = "L3缓存";
+"Hyper-Threading Technology" = "超线程技术";
+"Memory" = "内存";
+"Boot ROM Version" = "Boot ROM版本";
+"SMC Version (system)" = "SMC版本";
+"Serial Number (system)" = "序列号";
+"Hardware UUID" = "UUID";
+"System Version" = "系统版本";
+"Kernel Version" = "内核版本";
+"Boot Volume" = "启动宗卷";
+"Boot Mode" = "启动模式";
+"Computer Name" = "主机名";
+"User Name" = "用户名";
+"Secure Virtual Memory" = "安全虚拟内存";
+"System Integrity Protection" = "系统完整性保护(SIP)";
+"Enabled" = "已启用";
+"Disabled" = "已禁用";
+"Normal" = "正常模式";
+"Chipset Model" = "显卡型号";
+"Bus" = "插槽类型";
+"PCIe Lane Width" = "PCIe Lane宽度";
+"VRAM (Total)" = "显存大小";
+"Vendor" = "供应商";
+"Device ID" = "设备id";
+"Revision ID" = "修正版id";
+"ROM Revision" = "ROM版本";
+"EFI Driver Version" = "EFI驱动程序版本";
+"Yes" = "已挂载";
+"No" = "未挂载";
