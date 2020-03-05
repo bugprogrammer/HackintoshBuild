@@ -10,14 +10,14 @@ import Cocoa
 
 class ViewControllerDisk: NSViewController {
     
-    @objcMembers class DiskInfoObject: NSObject {
-        dynamic var name: String = ""
-        dynamic var volume: String = ""
-        dynamic var type: String = ""
-        dynamic var mounted: String = ""
-        dynamic var size: String = ""
-        dynamic var bsd: String = ""
-        dynamic var isboot: String = ""
+    class DiskInfoObject {
+        var name: String = ""
+        var volume: String = ""
+        var type: String = ""
+        var mounted: String = ""
+        var size: String = ""
+        var bsd: String = ""
+        var isboot: String = ""
         
         init(_ name: String, _ volume: String, _ type: String, _ mounted: String, _ size: String, _ bsd: String, _ isboot: String) {
             self.name = name
@@ -30,7 +30,7 @@ class ViewControllerDisk: NSViewController {
         }
     }
     
-    @objc dynamic var diskInfoObject: [DiskInfoObject] = []
+    var diskInfoObject: [DiskInfoObject] = []
         
     @IBOutlet weak var diskTableView: NSTableView!
     @IBOutlet weak var refreshButton: NSButton!
@@ -51,33 +51,6 @@ class ViewControllerDisk: NSViewController {
         diskInfoObject = []
         diskTableView.reloadData()
         runBuildScripts("diskInfo",[])
-    }
-    
-    @IBAction func diskTools(_ sender: NSButton) {
-        index = diskTableView.row(for: sender)
-
-        refreshButton.isEnabled = false
-        if diskInfoObject[index].mounted == "未挂载" {
-            runBuildScripts("diskMount", [diskInfoObject[index].bsd])
-        }
-        else {
-            runBuildScripts("diskUnmount", [diskInfoObject[index].bsd])
-        }
-
-    }
-    
-    @IBAction func openEFI(_ sender: NSButton) {
-        index = diskTableView.row(for: sender)
-
-        refreshButton.isEnabled = false
-        if diskInfoObject[index].mounted == "未挂载" {
-            let alert = NSAlert()
-            alert.messageText = "未挂载，无法打开"
-            alert.runModal()
-        }
-        else {
-            runBuildScripts("openEFI", [diskInfoObject[index].volume])
-        }
     }
     
     @IBAction func Refresh(_ sender: Any) {
@@ -178,8 +151,87 @@ extension ViewControllerDisk: NSTableViewDataSource {
         return diskInfoObject.count
     }
     
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        return diskInfoObject[row]
+}
+
+extension ViewControllerDisk: NSTableViewDelegate {
+    
+    func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        
+        if tableColumn != nil {
+            let identifier = tableColumn!.identifier.rawValue
+            
+            switch identifier {
+            case "icon":
+                return NSImageView(image: MyAsset.NSToolbarItem_Disk.image)
+            case "name":
+                let textField = NSTextField(string: self.diskInfoObject[row].name)
+                textField.alignment = .left
+                return textField
+            case "type":
+                let textField = NSTextField(string: self.diskInfoObject[row].type)
+                textField.alignment = .center
+                return textField
+            case "state":
+                let textField = NSTextField(string: self.diskInfoObject[row].mounted)
+                textField.alignment = .center
+                return textField
+            case "size":
+                let textField = NSTextField(string: self.diskInfoObject[row].size)
+                textField.alignment = .center
+                return textField
+            case "bsd":
+                let textField = NSTextField(string: self.diskInfoObject[row].bsd)
+                textField.alignment = .center
+                return textField
+            case "boot":
+                let textField = NSTextField(string: self.diskInfoObject[row].isboot)
+                textField.alignment = .center
+                return textField
+            case "mount":
+                let button = NSButton()
+                button.action = #selector(mountButtonAction(_:))
+                button.title = self.diskInfoObject[row].mounted == "未挂载" ? "挂载" : "取消挂载"
+                button.tag = self.diskInfoObject[row].mounted == "未挂载" ? 0 : 1
+                return button
+            case "open":
+                let button = NSButton()
+                button.action = #selector(openButtonAction(_:))
+                button.title = "打开"
+                button.tag = self.diskInfoObject[row].mounted == "未挂载" ? 0 : 1
+                return button
+            default:
+                return nil
+            }
+        }
+        return nil
+    }
+    
+    @objc func mountButtonAction(_ sender: NSButton) {
+        index = diskTableView.row(for: sender)
+        refreshButton.isEnabled = false
+        
+        if sender.tag == 0 {
+            runBuildScripts("diskMount", [diskInfoObject[index].bsd])
+        } else {
+            runBuildScripts("diskUnmount", [diskInfoObject[index].bsd])
+        }
+    }
+    
+    @objc func openButtonAction(_ sender: NSButton) {
+        index = diskTableView.row(for: sender)
+        refreshButton.isEnabled = false
+        
+        if sender.tag == 0 {
+            let alert = NSAlert()
+            alert.messageText = "未挂载，无法打开"
+            alert.runModal()
+        } else {
+            runBuildScripts("openEFI", [diskInfoObject[index].volume])
+        }
     }
     
 }
