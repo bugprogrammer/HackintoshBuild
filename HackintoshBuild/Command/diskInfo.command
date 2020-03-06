@@ -5,18 +5,14 @@ if [ "$u" != "" ]; then
     boot=$(diskutil info $u | grep 'Device Identifier' | awk '{print $NF}')
 fi
 arr=($(diskutil list | grep EFI | awk {'print $NF'}))
-#echo "数组的元素为: ${arr[*]}"
 for element in ${arr[@]}
 do
 echo -n $(diskutil info ${element%s*} | grep 'Device / Media Name' | awk -F: {'print $2'} | sed 's/^[ \t]*//g'):
-echo -n $(diskutil info ${element} | grep 'Volume Name' | awk -F: {'print $2'} | sed 's/^[ \t]*//g'):
-echo -n $(diskutil info ${element} | grep 'Partition Type' | awk -F: {'print $2'} | sed 's/^[ \t]*//g'):
-echo -n $(diskutil info ${element} | grep 'Mounted' | awk -F: {'print $2'} | sed 's/^[ \t]*//g'):
-echo -n $(diskutil info ${element} | grep 'Disk Size' | awk -F: {'print $2'} | sed 's/^[ \t]*//g') | awk 'BEGIN{ORS=""}{print $1,$2;}'
+echo -n $(diskutil list | grep $element | awk -F: {'print $2'} | sed 's/^[ \t]*//g' | sed 's/[ ][ ]*/:/g' | sed 's/\t//g'):
 if [ $boot == $element ]; then
-    echo -n :$element:
+    echo -n $(diskutil info ${element} | grep 'Mounted' | awk -F: {'print $2'} | sed 's/^[ \t]*//g'):
     echo "当前引导分区"
 else
-    echo :$element
+    echo $(diskutil info ${element} | grep 'Mounted' | awk -F: {'print $2'} | sed 's/^[ \t]*//g')
 fi
 done

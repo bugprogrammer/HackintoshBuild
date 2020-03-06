@@ -12,20 +12,20 @@ class ViewControllerDisk: NSViewController {
     
     class DiskInfoObject {
         var name: String = ""
-        var volume: String = ""
         var type: String = ""
-        var mounted: String = ""
+        var volume: String = ""
         var size: String = ""
         var bsd: String = ""
+        var mounted: String = ""
         var isboot: String = ""
         
-        init(_ name: String, _ volume: String, _ type: String, _ mounted: String, _ size: String, _ bsd: String, _ isboot: String) {
+        init(_ name: String, _ type: String, _ volume: String, _ size: String, _ bsd: String, _ mounted: String, _ isboot: String) {
             self.name = name
-            self.volume = volume
             self.type = type
-            self.mounted = mounted
+            self.volume = volume
             self.size = size
             self.bsd = bsd
+            self.mounted = mounted
             self.isboot = isboot
         }
     }
@@ -87,10 +87,15 @@ class ViewControllerDisk: NSViewController {
                             
                             for i in 0..<self.arrayPartition.count {
                                 var diskFinal = self.arrayPartition[i].components(separatedBy: ":")
-                                if diskFinal.count < 7 {
+                                if diskFinal.count < 8 {
+                                    if diskFinal.count == 6 {
+                                        diskFinal.insert("", at: 2)
+                                    }
                                     diskFinal.append("")
                                 }
-                                self.diskInfoObject.append(DiskInfoObject(diskFinal[0],diskFinal[1],diskFinal[2],NSLocalizedString(diskFinal[3], comment: ""),diskFinal[4],diskFinal[5],diskFinal[6]))
+                                MyLog(diskFinal)
+                                diskFinal = self.arrTools(diskFinal, 4, 5)
+                                self.diskInfoObject.append(DiskInfoObject(diskFinal[0],diskFinal[1],diskFinal[2],diskFinal[3],diskFinal[4],NSLocalizedString(diskFinal[5], comment: ""),diskFinal[6]))
                                 MyLog(diskFinal.count)
                                 MyLog(diskFinal)
                             }
@@ -145,6 +150,13 @@ class ViewControllerDisk: NSViewController {
                 })
             }
         }
+    }
+    
+    func arrTools(_ arr: [String], _ i: Int, _ j: Int) -> [String] {
+        var arr = arr
+        arr[i-1] = arr[i-1] + arr[j-1]
+        arr = arr.filter{$0 != arr[j-1]}
+        return arr
     }
 }
 
