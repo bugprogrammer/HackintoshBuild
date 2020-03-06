@@ -27,3 +27,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 }
 
+class VerticallyCenteredTextFieldCell: NSTextFieldCell {
+
+    override func drawingRect(forBounds theRect: NSRect) -> NSRect {
+        var newRect:NSRect = super.drawingRect(forBounds: theRect)
+        let textSize:NSSize = self.cellSize(forBounds: theRect)
+        let heightDelta:CGFloat = newRect.size.height - textSize.height
+        if heightDelta > 0 {
+            newRect.size.height = textSize.height
+            newRect.origin.y += heightDelta * 0.5
+        }
+        return newRect
+    }
+}
+

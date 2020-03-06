@@ -51,6 +51,9 @@ class ViewControllerDisk: NSViewController {
         diskInfoObject = []
         diskTableView.reloadData()
         runBuildScripts("diskInfo",[])
+        diskTableView.tableColumns.forEach { (column) in
+            column.headerCell.alignment = .center
+        }
     }
     
     @IBAction func Refresh(_ sender: Any) {
@@ -163,45 +166,80 @@ extension ViewControllerDisk: NSTableViewDelegate {
         
         if tableColumn != nil {
             let identifier = tableColumn!.identifier.rawValue
-            
             switch identifier {
             case "icon":
                 return NSImageView(image: MyAsset.NSToolbarItem_Disk.image)
             case "name":
-                let textField = NSTextField(string: self.diskInfoObject[row].name)
-                textField.alignment = .left
+                let textField = NSTextField()
+                textField.cell = VerticallyCenteredTextFieldCell()
+                textField.stringValue = self.diskInfoObject[row].name
+                textField.alignment = .center
+                textField.isBordered = false
                 return textField
             case "type":
-                let textField = NSTextField(string: self.diskInfoObject[row].type)
+                let textField = NSTextField()
+                textField.cell = VerticallyCenteredTextFieldCell()
+                textField.stringValue = self.diskInfoObject[row].type
                 textField.alignment = .center
+                textField.isBordered = false
                 return textField
             case "state":
-                let textField = NSTextField(string: self.diskInfoObject[row].mounted)
+                let textField = NSTextField()
+                textField.cell = VerticallyCenteredTextFieldCell()
+                textField.stringValue = self.diskInfoObject[row].mounted
                 textField.alignment = .center
+                textField.isBordered = false
                 return textField
             case "size":
-                let textField = NSTextField(string: self.diskInfoObject[row].size)
+                let textField = NSTextField()
+                textField.cell = VerticallyCenteredTextFieldCell()
+                textField.stringValue = self.diskInfoObject[row].size
                 textField.alignment = .center
+                textField.isBordered = false
                 return textField
             case "bsd":
-                let textField = NSTextField(string: self.diskInfoObject[row].bsd)
+                let textField = NSTextField()
+                textField.cell = VerticallyCenteredTextFieldCell()
+                textField.stringValue = self.diskInfoObject[row].bsd
                 textField.alignment = .center
+                textField.isBordered = false
                 return textField
             case "boot":
-                let textField = NSTextField(string: self.diskInfoObject[row].isboot)
-                textField.alignment = .center
-                return textField
+                let button = NSButton()
+                button.setButtonType(.radio)
+                button.bezelStyle = .inline
+                button.title = ""
+                button.alignment = .right
+                if self.diskInfoObject[row].isboot == "当前引导分区" {
+                    button.state = .on
+                }
+                else {
+                    button.isHidden = true
+                }
+                return button
             case "mount":
                 let button = NSButton()
                 button.action = #selector(mountButtonAction(_:))
-                button.title = self.diskInfoObject[row].mounted == "未挂载" ? "挂载" : "取消挂载"
+                button.bezelStyle = .recessed
+                button.isBordered = false
+                if self.diskInfoObject[row].mounted == "未挂载" {
+                    button.image = NSImage(named: "mount.png")
+                }
+                else {
+                    button.image = NSImage(named: "unmount.png")
+                }
                 button.tag = self.diskInfoObject[row].mounted == "未挂载" ? 0 : 1
                 return button
             case "open":
                 let button = NSButton()
                 button.action = #selector(openButtonAction(_:))
-                button.title = "打开"
+                button.bezelStyle = .recessed
+                button.isBordered = false
+                button.image = NSImage(named: "open.png")
                 button.tag = self.diskInfoObject[row].mounted == "未挂载" ? 0 : 1
+                if self.diskInfoObject[row].mounted == "未挂载" {
+                    button.isEnabled = false
+                }
                 return button
             default:
                 return nil
@@ -233,5 +271,4 @@ extension ViewControllerDisk: NSTableViewDelegate {
             runBuildScripts("openEFI", [diskInfoObject[index].volume])
         }
     }
-    
 }

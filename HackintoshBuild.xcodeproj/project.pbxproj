@@ -22,6 +22,9 @@
 		11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27923D1B63700461A78 /* MyAsset.swift */; };
 		6A0D773D23C7A917003F5C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0D773C23C7A744003F5C3A /* Main.storyboard */; };
 		6A0DC962241041E3000E9775 /* openEFI.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A0DC961241041E3000E9775 /* openEFI.command */; };
+		6A1490752411515200F47EBA /* mount.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A1490742411515200F47EBA /* mount.png */; };
+		6A1490772411517A00F47EBA /* unmount.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A1490762411517A00F47EBA /* unmount.png */; };
+		6A14907B2411523300F47EBA /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A14907A2411523200F47EBA /* open.png */; };
 		6A1E571C23F31AB5004E8430 /* ViewControllerIoreg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1E571B23F31AB5004E8430 /* ViewControllerIoreg.swift */; };
 		6A20F6B223F80BA700E69F60 /* OCVersion.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A20F6B123F80BA700E69F60 /* OCVersion.command */; };
 		6A21D45923EE869B007D7CE9 /* timeMachine.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A21D45623EE869B007D7CE9 /* timeMachine.command */; };
@@ -38,8 +41,6 @@
 		6A723DE8240BEE30007EB3AD /* systeminfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A723DE7240BEE30007EB3AD /* systeminfo.command */; };
 		6A723E11240C1D94007EB3AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A723E13240C1D94007EB3AD /* Localizable.strings */; };
 		6A723E18240E71DE007EB3AD /* diskUnmount.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A723E17240E71DE007EB3AD /* diskUnmount.command */; };
-		6A723E46240EB1CC007EB3AD /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A723E45240EB1CB007EB3AD /* open.png */; };
-		6A723E48240EB649007EB3AD /* unmount.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A723E47240EB649007EB3AD /* unmount.png */; };
 		6A7649DA23E2BB5C00F6D89A /* nvramValues.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A7649D923E2BB5C00F6D89A /* nvramValues.command */; };
 		6A7A718C23D82DAE0082FA94 /* ViewControllerDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A718B23D82DAE0082FA94 /* ViewControllerDisk.swift */; };
 		6A7A719123D845DB0082FA94 /* diskInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A7A718F23D845DB0082FA94 /* diskInfo.command */; };
@@ -106,6 +107,9 @@
 		11D5C27923D1B63700461A78 /* MyAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsset.swift; sourceTree = "<group>"; };
 		6A0D773C23C7A744003F5C3A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A0DC961241041E3000E9775 /* openEFI.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = openEFI.command; sourceTree = "<group>"; };
+		6A1490742411515200F47EBA /* mount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mount.png; sourceTree = "<group>"; };
+		6A1490762411517A00F47EBA /* unmount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unmount.png; sourceTree = "<group>"; };
+		6A14907A2411523200F47EBA /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open.png; sourceTree = "<group>"; };
 		6A1E571B23F31AB5004E8430 /* ViewControllerIoreg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerIoreg.swift; sourceTree = "<group>"; };
 		6A20F6B123F80BA700E69F60 /* OCVersion.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = OCVersion.command; sourceTree = "<group>"; };
 		6A21D45623EE869B007D7CE9 /* timeMachine.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = timeMachine.command; sourceTree = "<group>"; };
@@ -121,8 +125,6 @@
 		6A723E12240C1D94007EB3AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6A723E16240C1DD0007EB3AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6A723E17240E71DE007EB3AD /* diskUnmount.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = diskUnmount.command; sourceTree = "<group>"; };
-		6A723E45240EB1CB007EB3AD /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open.png; sourceTree = "<group>"; };
-		6A723E47240EB649007EB3AD /* unmount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unmount.png; sourceTree = "<group>"; };
 		6A7649D923E2BB5C00F6D89A /* nvramValues.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = nvramValues.command; sourceTree = "<group>"; };
 		6A7A718B23D82DAE0082FA94 /* ViewControllerDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDisk.swift; sourceTree = "<group>"; };
 		6A7A718F23D845DB0082FA94 /* diskInfo.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = diskInfo.command; sourceTree = "<group>"; };
@@ -281,8 +283,9 @@
 		6ADAEFA223C23DA5008ECF4B /* HackintoshBuild */ = {
 			isa = PBXGroup;
 			children = (
-				6A723E45240EB1CB007EB3AD /* open.png */,
-				6A723E47240EB649007EB3AD /* unmount.png */,
+				6A14907A2411523200F47EBA /* open.png */,
+				6A1490742411515200F47EBA /* mount.png */,
+				6A1490762411517A00F47EBA /* unmount.png */,
 				6AE76A6C23F9B4F900B931F1 /* Pay */,
 				6A4B7E8D23F9B6BA00A6EFFF /* tools */,
 				11A5716323D6EB4200437951 /* GitHubUpdates.xcodeproj */,
@@ -398,10 +401,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1490772411517A00F47EBA /* unmount.png in Resources */,
 				6A4B7E8F23F9B70F00A6EFFF /* bdmesg in Resources */,
 				6A4B7E8B23F9B63300A6EFFF /* alipay.jpg in Resources */,
+				6A1490752411515200F47EBA /* mount.png in Resources */,
 				6A4B7E8C23F9B63300A6EFFF /* wechatpay.jpg in Resources */,
 				6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */,
+				6A14907B2411523300F47EBA /* open.png in Resources */,
 				6A36D49823F85BD500CD042B /* CloverVersion.command in Resources */,
 				6A7649DA23E2BB5C00F6D89A /* nvramValues.command in Resources */,
 				6A723E18240E71DE007EB3AD /* diskUnmount.command in Resources */,
@@ -411,7 +417,6 @@
 				6AEC979A2407C98F00674533 /* nasm in Resources */,
 				6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */,
 				6AE8345023D8B28B005BADCF /* diskMount.command in Resources */,
-				6A723E46240EB1CC007EB3AD /* open.png in Resources */,
 				6AC3982123EA94820090A56A /* kextInfo.command in Resources */,
 				6ADAEFBB23C257E5008ECF4B /* Hackintosh_build.command in Resources */,
 				6A427D1623E4618F00A0B4E3 /* changeLockPicture.command in Resources */,
@@ -420,7 +425,6 @@
 				6AAB82D023D22C0E00ACFB81 /* getEFI.command in Resources */,
 				6A0DC962241041E3000E9775 /* openEFI.command in Resources */,
 				6A21D45923EE869B007D7CE9 /* timeMachine.command in Resources */,
-				6A723E48240EB649007EB3AD /* unmount.png in Resources */,
 				6A4A9FA323E59F86008D8EF8 /* sipStatus.command in Resources */,
 				6AEC97972407C97D00674533 /* mtoc in Resources */,
 				116D2D8B23D6C528001FED06 /* unlockSLE.command in Resources */,
@@ -605,7 +609,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = B84MTH5WF4;
+				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -635,7 +639,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = B84MTH5WF4;
+				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
