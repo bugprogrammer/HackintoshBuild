@@ -39,6 +39,7 @@ class ViewControllerDisk: NSViewController {
     var arrayPartition:[String] = []
     var index: Int = 0
     let taskQueue = DispatchQueue.global(qos: .background)
+    var flag: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,13 +47,16 @@ class ViewControllerDisk: NSViewController {
     
     override func viewWillAppear() {
         super.viewWillAppear()
-        refreshButton.isEnabled = false
-        arrayPartition = []
-        diskInfoObject = []
-        diskTableView.reloadData()
-        runBuildScripts("diskInfo",[])
-        diskTableView.tableColumns.forEach { (column) in
-            column.headerCell.alignment = .center
+        if flag == 0 {
+            refreshButton.isEnabled = false
+            arrayPartition = []
+            diskInfoObject = []
+            diskTableView.reloadData()
+            runBuildScripts("diskInfo",[])
+            diskTableView.tableColumns.forEach { (column) in
+                column.headerCell.alignment = .center
+            }
+            flag = 1
         }
     }
     

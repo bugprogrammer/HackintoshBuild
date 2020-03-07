@@ -15,12 +15,24 @@ class ViewControllerAppleIntelInfo: NSTabViewController {
     @IBOutlet var outputInfo: NSTextView!
     let taskQueue = DispatchQueue.global(qos: .background)
     let url = Bundle.main.path(forResource: "AppleIntelInfo", ofType: "kext")
+    @IBOutlet weak var sipLabel: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         refreshButton.isEnabled = false
-        runBuildScripts("AppleIntelInfo", [url!])
+        guard let enabled = isSIPStatusEnabled else {
+            sipLabel.textColor = NSColor.red
+            sipLabel.stringValue = "SIP 状态未知"
+            return
+        }
+        if enabled {
+            sipLabel.textColor = NSColor.red
+            sipLabel.stringValue = "SIP 未关闭，请先关闭 SIP"
+        } else {
+            sipLabel.textColor = NSColor.green
+            sipLabel.stringValue = "SIP 已关闭"
+            runBuildScripts("AppleIntelInfo", [url!])
+        }
     }
     
     @IBAction func Refresh(_ sender: Any) {

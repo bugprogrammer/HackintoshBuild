@@ -19,8 +19,9 @@ class ViewControllerConfig: NSTabViewController {
     @IBOutlet var BLTextView: NSTextView!
     @IBOutlet var efiTextView: NSTextView!
     @IBOutlet var amlTextView: NSTextView!
-    @IBOutlet weak var bootLoaderCheck: NSComboBox!
+    @IBOutlet weak var bootLoaderCheck: NSPopUpButton!
     @IBOutlet weak var versionLabel: NSTextField!
+    @IBOutlet weak var sipLabel: NSTextField!
     
     let taskQueue = DispatchQueue.global(qos: .background)
     let lock = NSLock()
@@ -37,14 +38,24 @@ class ViewControllerConfig: NSTabViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //view.setContentSize(NSSize(width: 790, height: 630))
+        guard let enabled = isSIPStatusEnabled else {
+            sipLabel.textColor = NSColor.red
+            sipLabel.stringValue = "SIP 状态未知"
+            return
+        }
+        if enabled {
+            sipLabel.textColor = NSColor.red
+            sipLabel.stringValue = "SIP 未关闭，请先关闭 SIP"
+        } else {
+            sipLabel.textColor = NSColor.green
+            sipLabel.stringValue = "SIP 已关闭"
+        }
         view.setFrameSize(NSSize(width: 790, height: 630))
         
         versionLabel.stringValue = ""
         runBuildScripts("kextInfo", [])
-        bootLoaderCheck.numberOfVisibleItems = bootLoaderTypeArr.count
-        bootLoaderCheck.addItems(withObjectValues: bootLoaderTypeArr)
+        bootLoaderCheck.addItems(withTitles: bootLoaderTypeArr)
         bootLoaderCheck.selectItem(at: 0)
-        bootLoaderCheck.isSelectable = false
         
         let SLEString = self.HackinChanged("/System/Library/Extensions/", ".kext")
         if SLEString.isEmpty {
@@ -63,7 +74,7 @@ class ViewControllerConfig: NSTabViewController {
         }
     }
     
-    @IBAction func bootloaderSelected(_ sender: NSComboBox) {
+    @IBAction func bootloaderSelected(_ sender: NSPopUpButton) {
             bootLoaderType = bootLoaderTypeArr[sender.indexOfSelectedItem]
             
             BLTextView.string = ""

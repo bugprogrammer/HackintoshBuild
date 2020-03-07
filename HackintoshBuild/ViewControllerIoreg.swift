@@ -12,7 +12,7 @@ import WebKit
 class ViewControllerIoreg: NSViewController {
     
     @IBOutlet weak var webview: WKWebView!
-    @IBOutlet weak var medolBox: NSComboBox!
+    @IBOutlet weak var medolBox: NSPopUpButtonCell!
     
     var medolList: [String] =
     [
@@ -40,14 +40,12 @@ class ViewControllerIoreg: NSViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
-        medolBox.numberOfVisibleItems = medolList.count
-        medolBox.addItems(withObjectValues: medolList)
+        medolBox.addItems(withTitles: medolList)
         medolBox.selectItem(at: 0)
-        medolBox.isSelectable = false
         loadWeb("https://ioregs.bugprogrammer.me/" + medolList[0] + "-IORegFileViewer.html")
     }
     
-    @IBAction func selectedMedol(_ sender: NSComboBox) {
+    @IBAction func selectedMedol(_ sender: NSPopUpButtonCell) {
         loadWeb("https://ioregs.bugprogrammer.me/" + medolList[sender.indexOfSelectedItem] + "-IORegFileViewer.html")
     }
     
