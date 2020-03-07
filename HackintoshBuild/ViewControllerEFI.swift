@@ -18,9 +18,11 @@ class ViewControllerEFI: NSViewController {
     @IBOutlet var efiStartButton: NSButton!
     @IBOutlet var efiStopButton: NSButton!
     @IBOutlet weak var proxyTextField: NSTextField!
+    @IBOutlet weak var selectAllButton: NSButton!
     
     let taskQueue = DispatchQueue.global(qos: .background)
     let alert = NSAlert()
+    var selectAll: Int = 0
     
     let efiList: [String] = [
         "ASRock-Z390-itx+9900K+Vega56",
@@ -111,6 +113,7 @@ class ViewControllerEFI: NSViewController {
     }
     
     @IBAction func selected(_ sender: NSButton) {
+        selectAllButton.state = .off
         switch sender.state {
         case .on:
             itemsArr.append(efiList[efiTableView.row(for: sender)])
@@ -119,6 +122,30 @@ class ViewControllerEFI: NSViewController {
         case .mixed:
             MyLog("mixed")
         default:break
+        }
+        if itemsArr.count == efiList.count {
+            selectAllButton.state = .on
+        }
+        MyLog(itemsArr)
+    }
+    
+    @IBAction func SelectAll(_ sender: NSButton) {
+        switch sender.state {
+        case .on:
+            itemsArr = []
+            selectAll = 1
+            efiTableView.reloadData()
+            for i in 0..<efiList.count {
+                itemsArr.append(efiList[i])
+            }
+        case .off:
+            selectAll = 0
+            efiTableView.reloadData()
+            itemsArr = []
+        case .mixed:
+            MyLog("mixed")
+        default:
+            break
         }
         MyLog(itemsArr)
     }
@@ -172,9 +199,42 @@ extension ViewControllerEFI: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
         return efiList.count
     }
+}
+
+extension ViewControllerEFI: NSTableViewDelegate {
     
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        return efiList[row]
+    func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        
+        if tableColumn != nil {
+            let identifier = tableColumn!.identifier.rawValue
+            switch identifier {
+            case "check":
+                let button = NSButton()
+                button.setButtonType(.switch)
+                button.bezelStyle = .inline
+                button.title = ""
+                button.alignment = .right
+                button.action = #selector(selected(_:))
+                if selectAll == 1 {
+                    button.state = .on
+                }
+                return button
+            case "items":
+                let textField = NSTextField()
+                textField.cell = VerticallyCenteredTextFieldCell()
+                textField.stringValue = self.efiList[row]
+                textField.alignment = .left
+                textField.isBordered = false
+                return textField
+            default:
+                return nil
+            }
+        }
+        return nil
     }
     
 }

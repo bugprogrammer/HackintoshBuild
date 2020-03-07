@@ -10,9 +10,9 @@ import Cocoa
 
 class ViewControllerInfo: NSTabViewController {
     
-    @objcMembers class Info: NSObject {
-        dynamic var key: String = ""
-        dynamic var value: String = ""
+    class Info: NSObject {
+        var key: String = ""
+        var value: String = ""
         
         init(_ key: String, _ value: String) {
             self.key = key
@@ -22,7 +22,7 @@ class ViewControllerInfo: NSTabViewController {
 
     var outputArr: [String] = []
     var output: String = ""
-    @objc dynamic var info: [Info] = []
+    var info: [Info] = []
     
     @IBOutlet weak var infoTableView: NSTableView!
     
@@ -105,8 +105,38 @@ extension ViewControllerInfo: NSTableViewDataSource {
         return info.count
     }
     
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        return info[row]
+}
+
+extension ViewControllerInfo: NSTableViewDelegate {
+    
+    func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        
+        if tableColumn != nil {
+            let identifier = tableColumn!.identifier.rawValue
+            switch identifier {
+            case "keys":
+                let textField = NSTextField()
+                textField.cell = VerticallyCenteredTextFieldCell()
+                textField.stringValue = self.info[row].key
+                textField.alignment = .left
+                textField.isBordered = false
+            return textField
+            case "values":
+                let textField = NSTextField()
+                textField.cell = VerticallyCenteredTextFieldCell()
+                textField.stringValue = self.info[row].value
+                textField.alignment = .left
+                textField.isBordered = false
+            return textField
+            default:
+                return nil
+            }
+        }
+        return nil
     }
     
 }

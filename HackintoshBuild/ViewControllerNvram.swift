@@ -97,8 +97,31 @@ extension ViewControllerNvram: NSTableViewDataSource {
         return keysArr.count
     }
     
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        return keysArr[row]
+}
+
+extension ViewControllerNvram: NSTableViewDelegate {
+    
+    func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        
+        if tableColumn != nil {
+            let identifier = tableColumn!.identifier.rawValue
+            switch identifier {
+            case "value":
+                let textField = NSTextField()
+                textField.cell = VerticallyCenteredTextFieldCell()
+                textField.stringValue = self.keysArr[row]
+                textField.alignment = .left
+                textField.isBordered = false
+                return textField
+            default:
+                return nil
+            }
+        }
+        return nil
     }
     
 }

@@ -23,8 +23,10 @@ class ViewControllerBuild: NSViewController {
     
     @IBOutlet weak var proxyTextField: NSTextField!
     
+    @IBOutlet weak var selectAllButton: NSButton!
     let taskQueue = DispatchQueue.global(qos: .background)
     let alert = NSAlert()
+    var selectAll: Int = 0
     
     let toolspath = Bundle.main.path(forResource: "nasm", ofType: "")
     
@@ -130,6 +132,7 @@ class ViewControllerBuild: NSViewController {
     }
     
     @IBAction func CheckClicked(_ sender: NSButton) {
+        selectAllButton.state = .off
         switch sender.state {
         case .on:
             itemsArr.append(String(pluginsView.row(for: sender)))
@@ -139,8 +142,33 @@ class ViewControllerBuild: NSViewController {
             MyLog("mixed")
         default: break
         }
+        if itemsArr.count == pluginsList.count {
+            selectAllButton.state = .on
+        }
         MyLog(itemsArr)
     }
+    
+    @IBAction func SelectAll(_ sender: NSButton) {
+        switch sender.state {
+        case .on:
+            itemsArr = []
+            selectAll = 1
+            pluginsView.reloadData()
+            for i in 0..<pluginsList.count {
+                itemsArr.append(String(i))
+            }
+        case .off:
+            selectAll = 0
+            pluginsView.reloadData()
+            itemsArr = []
+        case .mixed:
+            MyLog("mixed")
+        default:
+            break
+        }
+        MyLog(itemsArr)
+    }
+    
     
     override var representedObject: Any? {
         didSet {
@@ -198,11 +226,6 @@ extension ViewControllerBuild: NSTableViewDataSource {
     func numberOfRows(in tableView: NSTableView) -> Int {
         return pluginsList.count
     }
-    
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        return pluginsList[row]
-    }
-    
 }
 
 extension ViewControllerBuild: NSTextFieldDelegate {
@@ -214,3 +237,42 @@ extension ViewControllerBuild: NSTextFieldDelegate {
     }
     
 }
+
+extension ViewControllerBuild: NSTableViewDelegate {
+    
+    func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        
+        if tableColumn != nil {
+            let identifier = tableColumn!.identifier.rawValue
+            switch identifier {
+            case "check":
+                let button = NSButton()
+                button.setButtonType(.switch)
+                button.bezelStyle = .inline
+                button.title = ""
+                button.alignment = .right
+                button.action = #selector(CheckClicked(_:))
+                if selectAll == 1 {
+                    button.state = .on
+                }
+                return button
+            case "items":
+                let textField = NSTextField()
+                textField.cell = VerticallyCenteredTextFieldCell()
+                textField.stringValue = self.pluginsList[row]
+                textField.alignment = .left
+                textField.isBordered = false
+                return textField
+            default:
+                return nil
+            }
+        }
+        return nil
+    }
+    
+}
+
