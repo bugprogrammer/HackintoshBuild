@@ -41,7 +41,7 @@ buildArray=(
 'AppleALC,https://github.com/acidanthera/AppleALC.git'
 'ATH9KFixup,https://github.com/chunnann/ATH9KFixup.git'
 'BT4LEContinuityFixup,https://github.com/acidanthera/BT4LEContinuityFixup.git'
-'CPUFriend,https://github.com/PMheart/CPUFriend.git'
+'CPUFriend,https://github.com/acidanthera/CPUFriend.git'
 'HibernationFixup,https://github.com/acidanthera/HibernationFixup.git'
 'NoTouchID,https://github.com/al3xtjames/NoTouchID.git'
 'RTCMemoryFixup,https://github.com/acidanthera/RTCMemoryFixup.git'

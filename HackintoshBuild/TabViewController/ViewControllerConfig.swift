@@ -2,13 +2,13 @@
 //  ViewControllerConfig.swift
 //  HackintoshBuild
 //
-//  Created by wbx on 2020/2/29.
-//  Copyright © 2020 wbx. All rights reserved.
+//  Created by bugprogrammer on 2020/2/29.
+//  Copyright © 2020 bugprogrammer. All rights reserved.
 //
 
 import Cocoa
 
-class ViewControllerConfig: NSTabViewController {
+class ViewControllerConfig: NSViewController {
     
     @IBOutlet weak var BLKextsLabel: NSTextField!
     @IBOutlet weak var BLEfiLabel: NSTextField!
@@ -22,12 +22,13 @@ class ViewControllerConfig: NSTabViewController {
     @IBOutlet weak var bootLoaderCheck: NSPopUpButton!
     @IBOutlet weak var versionLabel: NSTextField!
     @IBOutlet weak var sipLabel: NSTextField!
+    @IBOutlet weak var removeAllButton: NSButton!
     
     let taskQueue = DispatchQueue.global(qos: .background)
     let lock = NSLock()
     let bdmesg = Bundle.main.path(forResource: "bdmesg", ofType: "")
     var output: String = ""
-    var bootLoaderTypeArr: [String] = ["自动检测","OpenCore","Clover"]
+    var bootLoaderTypeArr: [String] = ["请选择引导器类型","OpenCore","Clover"]
     var bootLoaderType: String = ""
     var nsDictionary: NSDictionary?
     var fileManager = FileManager.default
@@ -188,7 +189,7 @@ class ViewControllerConfig: NSTabViewController {
             }
             return files
         }
-        
+    
         func runBuildScripts(_ shell: String,_ arguments: [String]) {
             AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
             self.output = ""
@@ -226,6 +227,21 @@ class ViewControllerConfig: NSTabViewController {
                                         }
                                     }
                                     self.versionLabel.stringValue = "本地OpenCore版本：" + str
+                                }
+                                AraHUDViewController.shared.hideHUD()
+                            }
+                            if shell == "remove" {
+                                let SLEString = self.HackinChanged("/System/Library/Extensions/", ".kext")
+                                if SLEString.isEmpty {
+                                    self.SLETextView.string = "SLE未添加任何第三方Kexts"
+                                }
+                                else {
+                                    self.SLETextView.string.append(SLEString)
+                                }
+                                if self.output.contains("success") {
+                                    let alert = NSAlert()
+                                    alert.messageText = "删除成功"
+                                    alert.runModal()
                                 }
                                 AraHUDViewController.shared.hideHUD()
                             }

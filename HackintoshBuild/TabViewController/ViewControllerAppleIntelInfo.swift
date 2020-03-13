@@ -2,13 +2,13 @@
 //  ViewControllerAppleIntelInfo.swift
 //  HackintoshBuild
 //
-//  Created by wbx on 2020/2/29.
-//  Copyright © 2020 wbx. All rights reserved.
+//  Created by bugprogrammer on 2020/2/29.
+//  Copyright © 2020 bugprogrammer. All rights reserved.
 //
 
 import Cocoa
 
-class ViewControllerAppleIntelInfo: NSTabViewController {
+class ViewControllerAppleIntelInfo: NSViewController {
 
     @IBOutlet weak var refreshButton: NSButton!
     var output: String = ""
@@ -20,6 +20,10 @@ class ViewControllerAppleIntelInfo: NSTabViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshButton.isEnabled = false
+        refreshButton.image = NSImage(named: "refresh-1x.png")
+        refreshButton.bezelStyle = .recessed
+        refreshButton.isBordered = false
+        
         guard let enabled = isSIPStatusEnabled else {
             sipLabel.textColor = NSColor.red
             sipLabel.stringValue = "SIP 状态未知"

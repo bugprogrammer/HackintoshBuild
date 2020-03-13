@@ -2,8 +2,8 @@
 //  TabViewControllerInfo.swift
 //  HackintoshBuild
 //
-//  Created by wbx on 2020/2/29.
-//  Copyright © 2020 wbx. All rights reserved.
+//  Created by bugprogrammer on 2020/2/29.
+//  Copyright © 2020 bugprogrammer. All rights reserved.
 //
 
 import Cocoa

@@ -44,6 +44,7 @@
 		6A7649DA23E2BB5C00F6D89A /* nvramValues.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A7649D923E2BB5C00F6D89A /* nvramValues.command */; };
 		6A7A718C23D82DAE0082FA94 /* ViewControllerDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A718B23D82DAE0082FA94 /* ViewControllerDisk.swift */; };
 		6A7A719123D845DB0082FA94 /* diskInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A7A718F23D845DB0082FA94 /* diskInfo.command */; };
+		6A81546D2418C743003782E1 /* downloadAll.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A81546B2418C743003782E1 /* downloadAll.png */; };
 		6A817EAE240AB70E003224DE /* TabViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EAD240AB70E003224DE /* TabViewControllerInfo.swift */; };
 		6A817EB0240ABE74003224DE /* ViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EAF240ABE74003224DE /* ViewControllerInfo.swift */; };
 		6A817EB2240ABEA6003224DE /* ViewControllerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EB1240ABEA6003224DE /* ViewControllerConfig.swift */; };
@@ -53,10 +54,19 @@
 		6A8E53CF23F3FEEE001E59D3 /* AppleIntelInfo.kext in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E53CE23F3FEEE001E59D3 /* AppleIntelInfo.kext */; };
 		6A8E53D123F40289001E59D3 /* AppleIntelInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E53D023F40289001E59D3 /* AppleIntelInfo.command */; };
 		6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6EE0623E5859900BF15FD /* resetLockPicture.command */; };
+		6AAB654124154A0200116D13 /* kextLastest.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB654024154A0200116D13 /* kextLastest.command */; };
+		6AAB65462416294F00116D13 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB65442416294F00116D13 /* download.png */; };
+		6AAB6551241631BB00116D13 /* update.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB6550241631BB00116D13 /* update.png */; };
+		6AAB65532416329B00116D13 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB65522416329B00116D13 /* refresh.png */; };
+		6AAB65572416375600116D13 /* refresh-1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB65562416375500116D13 /* refresh-1x.png */; };
+		6AAB65592416C0F500116D13 /* download.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB65582416C0F500116D13 /* download.command */; };
 		6AAB82CA23D205E300ACFB81 /* ViewControllerEFI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB82C923D205E300ACFB81 /* ViewControllerEFI.swift */; };
 		6AAB82D023D22C0E00ACFB81 /* getEFI.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB82CF23D22C0E00ACFB81 /* getEFI.command */; };
+		6AAFC6902414CD550059A609 /* kextscurrentVersion.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAFC68F2414CD550059A609 /* kextscurrentVersion.command */; };
 		6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AB8B6FB23D582FC00A993C5 /* spctl.command */; };
 		6AC3982123EA94820090A56A /* kextInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AC3982023EA94820090A56A /* kextInfo.command */; };
+		6AD2F3AF241BA99A00E0609F /* open-1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AD2F3AE241BA99A00E0609F /* open-1x.png */; };
+		6AD2F3B1241BAABE00E0609F /* openFinder.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AD2F3B0241BAABE00E0609F /* openFinder.command */; };
 		6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */; };
 		6ADAEFA623C23DA5008ECF4B /* ViewControllerBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */; };
 		6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA723C23DA6008ECF4B /* Assets.xcassets */; };
@@ -128,6 +138,7 @@
 		6A7649D923E2BB5C00F6D89A /* nvramValues.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = nvramValues.command; sourceTree = "<group>"; };
 		6A7A718B23D82DAE0082FA94 /* ViewControllerDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDisk.swift; sourceTree = "<group>"; };
 		6A7A718F23D845DB0082FA94 /* diskInfo.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = diskInfo.command; sourceTree = "<group>"; };
+		6A81546B2418C743003782E1 /* downloadAll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downloadAll.png; sourceTree = "<group>"; };
 		6A817EAD240AB70E003224DE /* TabViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewControllerInfo.swift; sourceTree = "<group>"; };
 		6A817EAF240ABE74003224DE /* ViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfo.swift; sourceTree = "<group>"; };
 		6A817EB1240ABEA6003224DE /* ViewControllerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConfig.swift; sourceTree = "<group>"; };
@@ -137,10 +148,19 @@
 		6A8E53CE23F3FEEE001E59D3 /* AppleIntelInfo.kext */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.kernel-extension"; path = AppleIntelInfo.kext; sourceTree = "<group>"; };
 		6A8E53D023F40289001E59D3 /* AppleIntelInfo.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppleIntelInfo.command; sourceTree = "<group>"; };
 		6AA6EE0623E5859900BF15FD /* resetLockPicture.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = resetLockPicture.command; sourceTree = "<group>"; };
+		6AAB654024154A0200116D13 /* kextLastest.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = kextLastest.command; sourceTree = "<group>"; };
+		6AAB65442416294F00116D13 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		6AAB6550241631BB00116D13 /* update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = update.png; sourceTree = "<group>"; };
+		6AAB65522416329B00116D13 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		6AAB65562416375500116D13 /* refresh-1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh-1x.png"; sourceTree = "<group>"; };
+		6AAB65582416C0F500116D13 /* download.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = download.command; sourceTree = "<group>"; };
 		6AAB82C923D205E300ACFB81 /* ViewControllerEFI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEFI.swift; sourceTree = "<group>"; };
 		6AAB82CF23D22C0E00ACFB81 /* getEFI.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = getEFI.command; sourceTree = "<group>"; };
+		6AAFC68F2414CD550059A609 /* kextscurrentVersion.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kextscurrentVersion.command; sourceTree = "<group>"; };
 		6AB8B6FB23D582FC00A993C5 /* spctl.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = spctl.command; sourceTree = "<group>"; };
 		6AC3982023EA94820090A56A /* kextInfo.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = kextInfo.command; sourceTree = "<group>"; };
+		6AD2F3AE241BA99A00E0609F /* open-1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open-1x.png"; sourceTree = "<group>"; };
+		6AD2F3B0241BAABE00E0609F /* openFinder.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = openFinder.command; sourceTree = "<group>"; };
 		6ADAEFA023C23DA5008ECF4B /* HackintoshBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackintoshBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuild.swift; sourceTree = "<group>"; };
@@ -235,6 +255,10 @@
 				6A54B4742408159A000BCFE7 /* showhiddenFiles.command */,
 				6A723DE7240BEE30007EB3AD /* systeminfo.command */,
 				6A0DC961241041E3000E9775 /* openEFI.command */,
+				6AAFC68F2414CD550059A609 /* kextscurrentVersion.command */,
+				6AAB654024154A0200116D13 /* kextLastest.command */,
+				6AAB65582416C0F500116D13 /* download.command */,
+				6AD2F3B0241BAABE00E0609F /* openFinder.command */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -263,6 +287,22 @@
 			path = TabViewController;
 			sourceTree = "<group>";
 		};
+		6AAB654924162A2700116D13 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6A81546B2418C743003782E1 /* downloadAll.png */,
+				6AAB65562416375500116D13 /* refresh-1x.png */,
+				6AAB65522416329B00116D13 /* refresh.png */,
+				6AAB6550241631BB00116D13 /* update.png */,
+				6AAB65442416294F00116D13 /* download.png */,
+				6A14907A2411523200F47EBA /* open.png */,
+				6AD2F3AE241BA99A00E0609F /* open-1x.png */,
+				6A1490742411515200F47EBA /* mount.png */,
+				6A1490762411517A00F47EBA /* unmount.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		6ADAEF9723C23DA5008ECF4B = {
 			isa = PBXGroup;
 			children = (
@@ -283,9 +323,7 @@
 		6ADAEFA223C23DA5008ECF4B /* HackintoshBuild */ = {
 			isa = PBXGroup;
 			children = (
-				6A14907A2411523200F47EBA /* open.png */,
-				6A1490742411515200F47EBA /* mount.png */,
-				6A1490762411517A00F47EBA /* unmount.png */,
+				6AAB654924162A2700116D13 /* images */,
 				6AE76A6C23F9B4F900B931F1 /* Pay */,
 				6A4B7E8D23F9B6BA00A6EFFF /* tools */,
 				11A5716323D6EB4200437951 /* GitHubUpdates.xcodeproj */,
@@ -406,6 +444,7 @@
 				6A4B7E8B23F9B63300A6EFFF /* alipay.jpg in Resources */,
 				6A1490752411515200F47EBA /* mount.png in Resources */,
 				6A4B7E8C23F9B63300A6EFFF /* wechatpay.jpg in Resources */,
+				6AD2F3B1241BAABE00E0609F /* openFinder.command in Resources */,
 				6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */,
 				6A14907B2411523300F47EBA /* open.png in Resources */,
 				6A36D49823F85BD500CD042B /* CloverVersion.command in Resources */,
@@ -415,26 +454,35 @@
 				6AEC979B2407C98F00674533 /* ndisasm in Resources */,
 				6A0D773D23C7A917003F5C3A /* Main.storyboard in Resources */,
 				6AEC979A2407C98F00674533 /* nasm in Resources */,
+				6AAFC6902414CD550059A609 /* kextscurrentVersion.command in Resources */,
 				6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */,
 				6AE8345023D8B28B005BADCF /* diskMount.command in Resources */,
+				6AAB65572416375600116D13 /* refresh-1x.png in Resources */,
 				6AC3982123EA94820090A56A /* kextInfo.command in Resources */,
 				6ADAEFBB23C257E5008ECF4B /* Hackintosh_build.command in Resources */,
 				6A427D1623E4618F00A0B4E3 /* changeLockPicture.command in Resources */,
 				116D2D8D23D6C540001FED06 /* rebuildCache.command in Resources */,
 				6A7A719123D845DB0082FA94 /* diskInfo.command in Resources */,
 				6AAB82D023D22C0E00ACFB81 /* getEFI.command in Resources */,
+				6AAB6551241631BB00116D13 /* update.png in Resources */,
 				6A0DC962241041E3000E9775 /* openEFI.command in Resources */,
+				6AD2F3AF241BA99A00E0609F /* open-1x.png in Resources */,
 				6A21D45923EE869B007D7CE9 /* timeMachine.command in Resources */,
+				6AAB65462416294F00116D13 /* download.png in Resources */,
 				6A4A9FA323E59F86008D8EF8 /* sipStatus.command in Resources */,
 				6AEC97972407C97D00674533 /* mtoc in Resources */,
 				116D2D8B23D6C528001FED06 /* unlockSLE.command in Resources */,
+				6AAB65532416329B00116D13 /* refresh.png in Resources */,
 				6A2D271423DF364300238E46 /* nvramKeys.command in Resources */,
 				6A8E53CF23F3FEEE001E59D3 /* AppleIntelInfo.kext in Resources */,
+				6A81546D2418C743003782E1 /* downloadAll.png in Resources */,
 				6A8E53D123F40289001E59D3 /* AppleIntelInfo.command in Resources */,
 				6A723E11240C1D94007EB3AD /* Localizable.strings in Resources */,
 				6A54B4752408159A000BCFE7 /* showhiddenFiles.command in Resources */,
 				117B27B023E9485C00581352 /* AraHUDView.xib in Resources */,
+				6AAB65592416C0F500116D13 /* download.command in Resources */,
 				6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */,
+				6AAB654124154A0200116D13 /* kextLastest.command in Resources */,
 				6A20F6B223F80BA700E69F60 /* OCVersion.command in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

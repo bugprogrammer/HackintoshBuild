@@ -47,6 +47,9 @@ class ViewControllerDisk: NSViewController {
     
     override func viewWillAppear() {
         super.viewWillAppear()
+        refreshButton.image = NSImage(named: "refresh.png")
+        refreshButton.bezelStyle = .recessed
+        refreshButton.isBordered = false
         if flag == 0 {
             refreshButton.isEnabled = false
             arrayPartition = []

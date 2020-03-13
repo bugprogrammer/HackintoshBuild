@@ -22,6 +22,9 @@ class ViewControllerNvram: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        refreshButton.image = NSImage(named: "refresh.png")
+        refreshButton.bezelStyle = .recessed
+        refreshButton.isBordered = false
         runBuildScripts("nvramKeys",[])
         nvramTableView.target = self
         nvramTableView.action = #selector(tableViewClick(_:))
