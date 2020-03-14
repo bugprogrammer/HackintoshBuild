@@ -2049,12 +2049,12 @@
         <!--Tab View Controller Info-->
         <scene sceneID="8Sl-SY-FXG">
             <objects>
-                <tabViewController storyboardIdentifier="TabViewControllerInfo" selectedTabViewItemIndex="0" id="LxL-7c-QBz" userLabel="Tab View Controller Info" customClass="TabViewControllerInfo" customModule="HackintoshBuild" customModuleProvider="target" sceneMemberID="viewController">
+                <tabViewController storyboardIdentifier="TabViewControllerInfo" selectedTabViewItemIndex="3" id="LxL-7c-QBz" userLabel="Tab View Controller Info" customClass="TabViewControllerInfo" customModule="HackintoshBuild" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="关于本机" identifier="" id="rgR-hC-lod"/>
                         <tabViewItem label="EFI配置信息" id="H6i-bn-8u5"/>
                         <tabViewItem label="AppleIntelInfo信息" id="btJ-P5-2ml"/>
-                        <tabViewItem label="Kexts更新" id="eeb-Pb-cpN"/>
+                        <tabViewItem label="Kexts下载" id="eeb-Pb-cpN"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="Juu-2K-csT" userLabel="Tabless Tab View ">
                         <rect key="frame" x="0.0" y="0.0" width="650" height="630"/>

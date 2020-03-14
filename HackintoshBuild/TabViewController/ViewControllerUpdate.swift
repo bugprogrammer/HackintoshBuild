@@ -23,6 +23,7 @@ class ViewControllerUpdate: NSViewController {
     var flag: Int = 0
     var isRunning: [Bool] = []
     var isDownloadAll: Bool = false
+    var isRefresh: Bool = false
     var pathDownload: String = ""
     
     let kexts: [String] = [
@@ -127,9 +128,19 @@ class ViewControllerUpdate: NSViewController {
     
     @objc func downloads(_ sender: NSButton) {
         //Lilu-1.4.2-RELEASE.zip
-        isDownloadAll = false
         let row = tableview.row(for: sender)
-        downloadUpdate(row, pathDownload)
+        isDownloadAll = false
+        if Lastest[row] == "网络错误" {
+            downloadAllButton.isEnabled = false
+            isRunning[row] = true
+            isRefresh = true
+            flag = url.count - 1
+            runBuildScripts("kextLastest", [url[row]])
+            tableview.reloadData(forRowIndexes: IndexSet([Int](0..<kexts.count)), columnIndexes: [3])
+        }
+        else {
+            downloadUpdate(row, pathDownload)
+        }
     }
     
     @IBAction func downloadsAll(_ sender: NSButton) {
@@ -178,7 +189,7 @@ class ViewControllerUpdate: NSViewController {
                 task.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
-                        //self.lock.lock()
+                        self.lock.lock()
                         if shell == "kextscurrentVersion" {
                             self.flag = self.flag + 1
                             if self.output == "" {
@@ -197,24 +208,41 @@ class ViewControllerUpdate: NSViewController {
                             }
                         }
                         else if shell == "kextLastest" {
-                            self.flag = self.flag + 1
-                            if self.output == "" {
-                                self.Lastest.append("")
+                            if !self.isRefresh {
+                                self.flag = self.flag + 1
+                                if self.output == "" {
+                                    self.Lastest.append("网络错误")
+                                }
+                                else {
+                                    self.Lastest.append(self.output.components(separatedBy: "\n").first!)
+                                }
+                                MyLog(self.Lastest)
+                                self.tableview.reloadData(forRowIndexes: [self.flag-1], columnIndexes: [2,3])
+                                if self.flag < self.url.count {
+                                    self.runBuildScripts("kextLastest", [self.url[self.flag]])
+                                }
+                                if self.flag == self.url.count {
+                                    self.refreshButton.isEnabled = true
+                                    if self.pathDownload != "" && !self.Lastest.contains("网络错误") {
+                                        self.downloadAllButton.isEnabled = true
+                                    }
+                                    self.flag = 0
+                                }
+                                self.tableview.reloadData(forRowIndexes: IndexSet([Int](0..<self.kexts.count)), columnIndexes: [3])
                             }
                             else {
-                                self.Lastest.append(self.output.components(separatedBy: "\n").first!)
-                            }
-                            MyLog(self.Lastest)
-                            self.tableview.reloadData(forRowIndexes: [self.flag-1], columnIndexes: [2,3])
-                            if self.flag < self.url.count {
-                                self.runBuildScripts("kextLastest", [self.url[self.flag]])
-                            }
-                            if self.flag == self.url.count {
-                                self.refreshButton.isEnabled = true
-                                if self.pathDownload != "" {
+                                if self.output == "" {
+                                    self.Lastest[self.url.firstIndex(of: arguments[0])!] = "网络错误"
+                                }
+                                else {
+                                    self.Lastest[self.url.firstIndex(of: arguments[0])!] = self.output.components(separatedBy: "\n").first!
+                                }
+                                self.isRefresh = false
+                                if self.pathDownload != "" && !self.Lastest.contains("网络错误") {
                                     self.downloadAllButton.isEnabled = true
                                 }
-                                self.flag = 0
+                                self.isRunning[self.url.firstIndex(of: arguments[0])!] = false
+                                self.tableview.reloadData(forRowIndexes: IndexSet([Int](0..<self.kexts.count)), columnIndexes: [2,3])
                             }
                         }
                         else if shell == "download" {
@@ -232,17 +260,17 @@ class ViewControllerUpdate: NSViewController {
                                 self.isDownloadAll = false
                             }
                             
-                            if self.isDownloadAll == false {
+                            if self.isDownloadAll == false && self.Lastest.count == self.kexts.count {
                                 self.downloadAllButton.isEnabled = true
                                 self.refreshButton.isEnabled = true
                             }
                             self.tableview.reloadData(forRowIndexes: IndexSet([Int](0..<self.kexts.count)), columnIndexes: [3])
                         }
-                        //self.lock.unlock()
+                        self.lock.unlock()
                     })
                 }
                 if shell != "download" {
-                    self.taskOutPut(task)
+                     self.taskOutPut(task)
                 }
                 task.launch()
                 task.waitUntilExit()
@@ -311,7 +339,7 @@ extension ViewControllerUpdate: NSTableViewDelegate {
                 let textField = NSTextField()
                 textField.cell = VerticallyCenteredTextFieldCell()
                 textField.stringValue = ""
-                if Lastest != [] {
+                if Lastest.count >= row + 1 {
                     textField.stringValue = self.Lastest[row]
                 }
                 textField.alignment = .center
@@ -320,19 +348,28 @@ extension ViewControllerUpdate: NSTableViewDelegate {
             case "download":
                 var view = NSView()
                 if isRunning != [] && isRunning[row] == false {
-                    let button = NSButton()
-                    button.action = #selector(downloads(_:))
-                    button.bezelStyle = .recessed
-                    button.isBordered = false
-                    button.image = NSImage(named: "download.png")
-                    if pathDownload != "" && Lastest.count >= row + 1 && Lastest[row] != "" && isDownloadAll == false {
-                        button.isEnabled = true
-                    }
-                    else {
-                        button.isEnabled = false
-                    }
-                    button.alignment = .center
-                    view = button as NSView
+                        let button = NSButton()
+                        button.action = #selector(downloads(_:))
+                        button.bezelStyle = .recessed
+                        button.isBordered = false
+                        button.image = NSImage(named: "download.png")
+                        if pathDownload != "" && Lastest.count >= row + 1 && Lastest[row] != "" && Lastest[row] != "网络错误" && isDownloadAll == false && !isRunning.contains(true) {
+                            button.isEnabled = true
+                        }
+                        else if Lastest.count >= row + 1 && Lastest[row] == "网络错误" {
+                            button.image = NSImage(named: "refresh-2x.png")
+                            if Lastest.count == kexts.count && !isRunning.contains(true) {
+                                button.isEnabled = true
+                            }
+                            else {
+                                button.isEnabled = false
+                            }
+                        }
+                        else {
+                            button.isEnabled = false
+                        }
+                        button.alignment = .center
+                        view = button as NSView
                 }
                 else {
                     let progress = NSProgressIndicator()
