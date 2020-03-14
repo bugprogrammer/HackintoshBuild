@@ -132,6 +132,7 @@ class ViewControllerUpdate: NSViewController {
         isDownloadAll = false
         if Lastest[row] == "网络错误" {
             downloadAllButton.isEnabled = false
+            refreshButton.isEnabled = false
             isRunning[row] = true
             isRefresh = true
             flag = url.count - 1
@@ -238,6 +239,7 @@ class ViewControllerUpdate: NSViewController {
                                     self.Lastest[self.url.firstIndex(of: arguments[0])!] = self.output.components(separatedBy: "\n").first!
                                 }
                                 self.isRefresh = false
+                                self.refreshButton.isEnabled = true
                                 if self.pathDownload != "" && !self.Lastest.contains("网络错误") {
                                     self.downloadAllButton.isEnabled = true
                                 }
