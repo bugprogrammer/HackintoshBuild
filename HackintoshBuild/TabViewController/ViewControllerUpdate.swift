@@ -17,6 +17,7 @@ class ViewControllerUpdate: NSViewController {
     @IBOutlet weak var openButton: NSButton!
     
     let taskQueue = DispatchQueue.global(qos: .background)
+
     let downloadGroup = DispatchGroup()
     var output: String = ""
     let lock = NSLock()
@@ -135,13 +136,16 @@ class ViewControllerUpdate: NSViewController {
             refreshButton.isEnabled = false
             isRunning[row] = true
             isRefresh = true
-            flag = url.count - 1
-            runBuildScripts("kextLastest", [url[row]])
-            tableview.reloadData(forRowIndexes: IndexSet([Int](0..<kexts.count)), columnIndexes: [3])
+            flag = self.url.count - 1
+            runBuildScripts("kextLastest", [self.url[row]])
+            tableview.reloadData(forRowIndexes: IndexSet([Int](0..<self.kexts.count)), columnIndexes: [3])
         }
         else {
+            downloadGroup.enter()
             downloadUpdate(row, pathDownload)
+            downloadGroup.leave()
         }
+        
     }
     
     @IBAction func downloadsAll(_ sender: NSButton) {
