@@ -230,6 +230,9 @@ class ViewControllerUpdate: NSViewController {
             let alert = NSAlert()
             alert.messageText = "所选目录不可写"
             alert.runModal()
+            downloadButton.isEnabled = true
+            proxyTextField.isEnabled = true
+            downloadPath.isEnabled = true
         }
     }
     
