@@ -54,16 +54,17 @@ class ViewControllerInfo: NSViewController {
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
                         self.outputArr = self.output.components(separatedBy: "\n")
-                        MyLog(self.outputArr)
+    
                         if self.outputArr.first!.isEmpty {
                             self.outputArr.removeFirst()
                         }
                         if self.outputArr.last!.isEmpty {
                             self.outputArr.removeLast()
                         }
+                        MyLog(self.outputArr)
                         for infoStr in self.outputArr {
                             var infoArr = infoStr.components(separatedBy: ":")
-                            if infoArr[0] == "核显ig-platform-id" {
+                            if infoArr[0] == "核显ig-platform-id" && infoArr[1] != "" {
                                 infoArr[1] = "0x" + self.Convert(infoArr[1])
                             }
                             self.info.append(Info(NSLocalizedString(infoArr[0], comment: ""),NSLocalizedString(infoArr[1].trimmingCharacters(in: .whitespaces), comment: "")))
