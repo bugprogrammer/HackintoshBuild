@@ -1,9 +1,5 @@
 #!/bin/bash
 
-volume=$1
+mount=$(diskutil info $1 | grep 'Mount Point' | awk -F: {'print $2'} | sed 's/^[ \t]*//g')
 
-if [ $volume != "" ]; then
-    open /Volumes/$volume
-else
-    open /Volumes
-fi
+open "${mount}"

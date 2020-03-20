@@ -57,7 +57,7 @@ class ViewControllerAppleIntelInfo: NSViewController {
                 task.terminationHandler = { task in
                 DispatchQueue.main.async(execute: { [weak self] in
                     guard let `self` = self else { return }
-                    if self.output.contains("AppleIntelInfo.kext v2.9 Copyright © 2012-2017 Pike R. Alpha. All rights reserved.") {
+                    if !self.output.isEmpty {
                         self.outputInfo.string = self.output
                     }
                     else {

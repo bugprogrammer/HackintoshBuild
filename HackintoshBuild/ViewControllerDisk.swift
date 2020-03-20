@@ -34,6 +34,7 @@ class ViewControllerDisk: NSViewController {
         
     @IBOutlet weak var diskTableView: NSTableView!
     @IBOutlet weak var refreshButton: NSButton!
+    let bdmesg = Bundle.main.path(forResource: "bdmesg", ofType: "")
     
     var diskInfo:String = ""
     var arrayPartition:[String] = []
@@ -55,7 +56,7 @@ class ViewControllerDisk: NSViewController {
             arrayPartition = []
             diskInfoObject = []
             diskTableView.reloadData()
-            runBuildScripts("diskInfo",[])
+            runBuildScripts("diskInfo",[bdmesg!])
             diskTableView.tableColumns.forEach { (column) in
                 column.headerCell.alignment = .center
             }
@@ -68,7 +69,7 @@ class ViewControllerDisk: NSViewController {
         arrayPartition = []
         diskInfoObject = []
         diskTableView.reloadData()
-        runBuildScripts("diskInfo",[])
+        runBuildScripts("diskInfo",[bdmesg!])
     }
     func runBuildScripts(_ shell: String,_ arguments: [String]) {
         AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
@@ -287,7 +288,7 @@ extension ViewControllerDisk: NSTableViewDelegate {
             alert.messageText = "未挂载，无法打开"
             alert.runModal()
         } else {
-            runBuildScripts("openEFI", [diskInfoObject[index].volume])
+            runBuildScripts("openEFI", [diskInfoObject[index].bsd])
         }
     }
 }

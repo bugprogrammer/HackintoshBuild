@@ -148,6 +148,7 @@ class ViewControllerUpdate: NSViewController {
         switch sender.state {
         case .on:
             itemsArr = []
+            itemFlag = []
             selectAll = true
             tableview.reloadData(forRowIndexes: IndexSet([Int](0..<self.kexts.count)), columnIndexes: [0])
             for i in 0..<kexts.count {
@@ -215,14 +216,21 @@ class ViewControllerUpdate: NSViewController {
         isStart = true
         let items = itemsArr.joined(separator: ",")
         var arguments: [String] = []
-        arguments.append(pathDownload)
-        arguments.append(proxyTextField.stringValue)
-        arguments.append(items)
-        runBuildScripts("download", arguments)
-        for item in itemFlag {
-            isRunning[item] = true
+        if FileManager.default.isWritableFile(atPath: pathDownload) {
+            arguments.append(pathDownload)
+            arguments.append(proxyTextField.stringValue)
+            arguments.append(items)
+            runBuildScripts("download", arguments)
+            for item in itemFlag {
+                isRunning[item] = true
+            }
+            tableview.reloadData(forRowIndexes: IndexSet([Int](0..<kexts.count)), columnIndexes: [0,4])
         }
-        tableview.reloadData(forRowIndexes: IndexSet([Int](0..<kexts.count)), columnIndexes: [0,4])
+        else {
+            let alert = NSAlert()
+            alert.messageText = "所选目录不可写"
+            alert.runModal()
+        }
     }
     
     func getURL(_ row: Int) -> String {

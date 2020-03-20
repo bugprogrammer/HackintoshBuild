@@ -121,11 +121,7 @@ class ViewControllerOther: NSViewController {
                         AraHUDViewController.shared.hideHUD()
                         
                         let alert = NSAlert()
-                        if self.output.string.contains("success") {
-                            alert.messageText = alertText
-                        } else {
-                            alert.messageText = "操作失败"
-                        }
+                        alert.messageText = alertText
                         alert.runModal()
                     })
                 }

@@ -44,7 +44,7 @@ class ViewControllerInfo: NSViewController {
     }
     
         func runBuildScripts(_ shell: String) {
-        AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
+        //AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
@@ -69,7 +69,7 @@ class ViewControllerInfo: NSViewController {
                             self.info.append(Info(NSLocalizedString(infoArr[0], comment: ""),NSLocalizedString(infoArr[1].trimmingCharacters(in: .whitespaces), comment: "")))
                         }
                         self.infoTableView.reloadData()
-                        AraHUDViewController.shared.hideHUD()
+                        //AraHUDViewController.shared.hideHUD()
                     })
                 }
                 self.taskOutPut(task)

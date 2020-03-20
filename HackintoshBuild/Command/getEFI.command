@@ -4,7 +4,7 @@ echo -e '\n正在获取Bugprogrammer的Hackintosh仓库，请稍后:'
 echo '-------------------------------------'
 
 url=$1
-cd $url
+cd "$url"
 dir=hackintosh_EFI
 if [ -e $dir ]; then
     rm -rf $dir
@@ -45,4 +45,4 @@ done;
 if [[ $4 != "" ]]; then
     open $4/efi.log
 fi
-open $url/$dir/Release
+open "$url/$dir/Release"

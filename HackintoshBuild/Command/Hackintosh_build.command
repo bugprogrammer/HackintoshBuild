@@ -32,7 +32,6 @@ EOF
 fi
 
 buildArray=(
-'Clover,https://github.com/CloverHackyColor/CloverBootloader.git'
 'OpenCore,https://github.com/acidanthera/OpenCorePkg.git'
 'n-d-k-OpenCore,https://github.com/n-d-k/OpenCorePkg.git'
 'AppleSupportPkg,https://github.com/acidanthera/AppleSupportPkg.git'
@@ -86,14 +85,13 @@ for i in ${selectedArray[*]}; do
     fi
     git clone -q ${buildArray[$i]##*,} ${buildArray[$i]%,*} -b master --depth=1
     pushd ${buildArray[$i]%,*}
-    if [ ${buildArray[$i]%,*} == 'Clover' ]; then
-        sed -ig 's/break/exit 0/g' ./buildme
-        echo 6 | ./buildme >> $logs || exit 1
-        cp -Rf CloverPackage/sym/* ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
-        echo ${buildArray[$i]%,*}"编译成功"
-        rm -rf ~/Desktop/$dir/Release/${buildArray[$i]%,*}/Debug >> $logs || exit 1
-    elif [[ $bootLoader =~ ${buildArray[$i]%,*} ]]; then
-        ./*.tool >> $logs || exit 1
+
+    if [[ $bootLoader =~ ${buildArray[$i]%,*} ]]; then
+        if [[ ${buildArray[$i]%,*} == "n-d-k-OpenCore" ]]; then
+            ./ndk-macbuild.tool >> $logs || exit 1
+        else
+            ./macbuild.tool >> $logs || exit 1
+        fi
         cp Binaries/RELEASE/*.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
 
         cp Binaries/DEBUG/*.zip ../../Release/${buildArray[$i]%,*}/Debug >> $logs || exit 1

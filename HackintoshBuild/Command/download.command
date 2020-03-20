@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd $1
+cd "$1"
 proxy=$2
 if [ $proxy!='' ]; then
 export http_proxy=$proxy

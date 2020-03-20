@@ -1,3 +1,3 @@
 #!/bin/bash
 
-open $1
+open "$1"

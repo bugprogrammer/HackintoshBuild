@@ -22,12 +22,12 @@ extension NSImage {
             return NSImage(asset: self)
         }
         
+        case NSToolbarItem_Info = "NSToolbarItem_Info"
         case NSToolbarItem_Build = "NSToolbarItem_Build"
         case NSToolbarItem_EFI = "NSToolbarItem_EFI"
         case NSToolbarItem_Disk = "NSToolbarItem_Disk"
         case NSToolbarItem_Nvram = "NSToolbarItem_Nvram"
         case NSToolbarItem_Lock = "NSToolbarItem_Lock"
-        case NSToolbarItem_Info = "NSToolbarItem_Info"
         case NSToolbarItem_Ioreg = "NSToolbarItem_Ioreg"
         case NSToolbarItem_Other = "NSToolbarItem_Other"
         case NSToolbarItem_Pay = "NSToolbarItem_Pay"

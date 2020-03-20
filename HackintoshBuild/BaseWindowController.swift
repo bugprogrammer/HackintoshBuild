@@ -14,6 +14,10 @@ public var proxy: String? = UserDefaults.standard.string(forKey: "proxy")
 public var isMoved: Bool = false
 
 class BaseWindowController: NSWindowController {
+    
+    lazy var infoVC: TabViewControllerInfo = {
+        return MyTool.getViewControllerFromMain(TabViewControllerInfo.self)
+    }()
 
     lazy var buildVC: ViewControllerBuild = {
         return MyTool.getViewControllerFromMain(ViewControllerBuild.self)
@@ -36,10 +40,6 @@ class BaseWindowController: NSWindowController {
         return MyTool.getViewControllerFromMain(ViewControllerLock.self)
     }()
     
-    lazy var infoVC: TabViewControllerInfo = {
-        return MyTool.getViewControllerFromMain(TabViewControllerInfo.self)
-    }()
-    
     lazy var ioregVC: ViewControllerIoreg = {
         return MyTool.getViewControllerFromMain(ViewControllerIoreg.self)
     }()
@@ -52,12 +52,12 @@ class BaseWindowController: NSWindowController {
         return MyTool.getViewControllerFromMain(ViewControllerPay.self)
     }()
     
+    let infoIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.infoIdentifier")
     let buildIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.buildIdentifier")
     let efiIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.efiIdentifier")
     let diskIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.diskIdentifier")
     let nvramIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.nvramIdentifier")
     let lockIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.lockIdentifier")
-    let infoIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.infoIdentifier")
     let ioregIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.ioregIdentifier")
     let otherIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.otherIdentifier")
     let payIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.payIdentifier")
@@ -82,8 +82,8 @@ class BaseWindowController: NSWindowController {
         updater.repository = "HackintoshBuild"
         
         self.window?.toolbar = toolBar
-        toolBar.selectedItemIdentifier = buildIdentifier
-        self.window?.contentViewController = buildVC
+        toolBar.selectedItemIdentifier = infoIdentifier
+        self.window?.contentViewController = infoVC
         self.window?.setContentSize(NSSize(width: 790, height: 630))
         self.window?.styleMask.remove(.resizable)
 
@@ -136,20 +136,27 @@ class BaseWindowController: NSWindowController {
 extension BaseWindowController: NSToolbarDelegate {
     
     func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
+        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
+        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, infoIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
+        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
         var toolbarItem: NSToolbarItem? = NSToolbarItem(itemIdentifier: itemIdentifier)
         switch itemIdentifier {
+        case infoIdentifier:
+            toolbarItem?.label = "系统详情"
+            toolbarItem?.paletteLabel = "系统详情"
+            toolbarItem?.toolTip = "系统详情"
+            toolbarItem?.image = MyAsset.NSToolbarItem_Info.image
+            break
+            
         case buildIdentifier:
             toolbarItem?.label = "编译"
             toolbarItem?.paletteLabel = "编译"
@@ -185,13 +192,6 @@ extension BaseWindowController: NSToolbarDelegate {
             toolbarItem?.image = MyAsset.NSToolbarItem_Lock.image
             break
             
-        case infoIdentifier:
-            toolbarItem?.label = "系统详情"
-            toolbarItem?.paletteLabel = "系统详情"
-            toolbarItem?.toolTip = "系统详情"
-            toolbarItem?.image = MyAsset.NSToolbarItem_Info.image
-            break
-            
         case ioregIdentifier:
             toolbarItem?.label = "白苹果ioreg信息"
             toolbarItem?.paletteLabel = "白苹果ioreg信息"
@@ -223,6 +223,10 @@ extension BaseWindowController: NSToolbarDelegate {
      
     @objc func toolbarItemDidTapped(_ item: NSToolbarItem) {
         switch item.itemIdentifier {
+        case infoIdentifier:
+            self.window?.contentViewController = infoVC
+            self.window?.setContentSize(NSSize(width: 790, height: 630))
+            break
         case buildIdentifier:
             self.window?.contentViewController = buildVC
             self.window?.setContentSize(NSSize(width: 790, height: 630))
@@ -241,10 +245,6 @@ extension BaseWindowController: NSToolbarDelegate {
             break
         case lockIdentifier:
             self.window?.contentViewController = lockVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
-            break
-        case infoIdentifier:
-            self.window?.contentViewController = infoVC
             self.window?.setContentSize(NSSize(width: 790, height: 630))
             break
         case ioregIdentifier:

@@ -27,11 +27,11 @@ class ViewControllerBuild: NSViewController {
     let taskQueue = DispatchQueue.global(qos: .background)
     let alert = NSAlert()
     var selectAll: Int = 0
+    var isRunning: Bool = false
     
     let toolspath = Bundle.main.path(forResource: "nasm", ofType: "")
     
     let pluginsList: [String] = [
-        "Clover(时间较长)",
         "OpenCore",
         "n-d-k-OpenCore",
         "AppleSupportPkg",
@@ -64,7 +64,7 @@ class ViewControllerBuild: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resetStatus(isRunning: false)
+        isRunning = resetStatus(isRunning: false)
         
         proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
         proxyTextField.delegate = self
@@ -82,20 +82,29 @@ class ViewControllerBuild: NSViewController {
     var itemsArr: [String] = []
     var itemsSting: String = ""
     
-    private func resetStatus(isRunning: Bool) {
+    private func resetStatus(isRunning: Bool) -> Bool {
         if isRunning {
             stopButton.isEnabled = true
             progressBar.isHidden = false
             buildText.string = ""
             buildButton.isEnabled = false
             progressBar.startAnimation(self)
+            buildLocation.isEnabled = false
+            logsLocation.isEnabled = false
+            proxyTextField.isEnabled = false
+            selectAllButton.isEnabled = false
         } else {
             stopButton.isEnabled = false
             buildButton.isEnabled = true
             progressBar.stopAnimation(self)
             progressBar.doubleValue = 0.0
             progressBar.isHidden = true
+            buildLocation.isEnabled = true
+            logsLocation.isEnabled = true
+            proxyTextField.isEnabled = true
+            selectAllButton.isEnabled = true
         }
+        return isRunning
     }
     
     @IBAction func startBuild(_ sender: Any) {
@@ -104,18 +113,24 @@ class ViewControllerBuild: NSViewController {
             UserDefaults.standard.set(buildURL, forKey: "kextLocation")
                 var arguments: [String] = []
                 itemsSting = itemsArr.joined(separator: ",")
-                arguments.append(buildURL.path)
-                arguments.append(itemsSting)
-                arguments.append(proxyTextField.stringValue)
-                arguments.append(logsLocation.url?.path ?? "")
-                arguments.append(toolspath!)
-                
-                if itemsSting != "" {
-                    runBuildScripts(arguments)
+                if buildURL.path.contains(" ") || !FileManager.default.isWritableFile(atPath: buildURL.path) {
+                    alert.messageText = "所选目录不可写或存在空格"
+                    alert.runModal()
                 }
                 else {
-                    alert.messageText = "未选择任何条目"
-                    alert.runModal()
+                    arguments.append(buildURL.path)
+                    arguments.append(itemsSting)
+                    arguments.append(proxyTextField.stringValue)
+                    arguments.append(logsLocation.url?.path ?? "")
+                    arguments.append(toolspath!)
+                    
+                    if itemsSting != "" {
+                        runBuildScripts(arguments)
+                    }
+                    else {
+                        alert.messageText = "未选择任何条目"
+                        alert.runModal()
+                    }
                 }
                 MyLog(arguments)
         } else {
@@ -177,7 +192,8 @@ class ViewControllerBuild: NSViewController {
     }
     
     func runBuildScripts(_ arguments: [String]) {
-        self.resetStatus(isRunning: true)
+        self.isRunning = self.resetStatus(isRunning: true)
+        pluginsView.reloadData(forRowIndexes: IndexSet([Int](0..<pluginsList.count)), columnIndexes: [0])
         taskQueue.async {
             if let path = Bundle.main.path(forResource: "Hackintosh_build", ofType:"command") {
                 self.buildTask = Process()
@@ -187,7 +203,8 @@ class ViewControllerBuild: NSViewController {
                 self.buildTask.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
-                        self.resetStatus(isRunning: false)
+                        self.isRunning = self.resetStatus(isRunning: false)
+                        self.pluginsView.reloadData(forRowIndexes: IndexSet([Int](0..<self.pluginsList.count)), columnIndexes: [0])
                     })
                 }
                 self.buildOutPut(self.buildTask)
@@ -256,6 +273,19 @@ extension ViewControllerBuild: NSTableViewDelegate {
                 button.title = ""
                 button.alignment = .right
                 button.action = #selector(CheckClicked(_:))
+                if isRunning {
+                    if itemsArr.contains(String(row)) {
+                        button.state = .on
+                    }
+                    button.isEnabled = false
+                }
+                else {
+                    if itemsArr.contains(String(row)) {
+                        button.state = .on
+                    }
+                    button.isEnabled = true
+                }
+                
                 if selectAll == 1 {
                     button.state = .on
                 }
