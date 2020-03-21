@@ -53,7 +53,12 @@ class ViewControllerNvram: NSViewController {
                                 self.keysArr.removeFirst()
                             }
                             self.nvramTableView.reloadData()
-                            self.runBuildScripts("nvramValues", [self.keysArr[0]])
+                            if !self.keysArr.isEmpty {
+                                self.runBuildScripts("nvramValues", [self.keysArr[0]])
+                            }
+                            else {
+                                self.runBuildScripts("nvramKeys",[])
+                            }
                         }
                         else {
                             self.nvramTextView.string = self.nvramInfo
