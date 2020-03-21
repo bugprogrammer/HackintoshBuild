@@ -17,6 +17,8 @@
 "Hyper-Threading Technology" = "超线程技术";
 "Memory" = "内存";
 "Boot ROM Version" = "Boot ROM版本";
+"Apple ROM Info" = "Apple ROM版本";
+"Clover Version" = "Clover版本";
 "SMC Version (system)" = "SMC版本";
 "Serial Number (system)" = "序列号";
 "Hardware UUID" = "UUID";

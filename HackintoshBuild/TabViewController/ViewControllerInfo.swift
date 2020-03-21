@@ -61,13 +61,21 @@ class ViewControllerInfo: NSViewController {
                         if self.outputArr.last!.isEmpty {
                             self.outputArr.removeLast()
                         }
-                        MyLog(self.outputArr)
+                        
                         for infoStr in self.outputArr {
+                            var flag: Bool = false
                             var infoArr = infoStr.components(separatedBy: ":")
                             if infoArr[0] == "核显ig-platform-id" && infoArr[1] != "" {
                                 infoArr[1] = "0x" + self.Convert(infoArr[1])
                             }
-                            self.info.append(Info(NSLocalizedString(infoArr[0], comment: ""),NSLocalizedString(infoArr[1].trimmingCharacters(in: .whitespaces), comment: "")))
+                            for item in self.info {
+                                if item.key.replacingOccurrences(of: " ", with: "").uppercased() == infoArr[0].replacingOccurrences(of: " ", with: "").uppercased() {
+                                    flag = true
+                                }
+                            }
+                            if !flag {
+                                self.info.append(Info(NSLocalizedString(infoArr[0].trimmingCharacters(in: .whitespaces), comment: ""),NSLocalizedString(infoArr[1].trimmingCharacters(in: .whitespaces), comment: "")))
+                            }
                         }
                         self.infoTableView.reloadData()
                         //AraHUDViewController.shared.hideHUD()
