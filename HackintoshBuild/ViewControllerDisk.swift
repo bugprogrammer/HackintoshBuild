@@ -39,7 +39,7 @@ class ViewControllerDisk: NSViewController {
     var diskInfo:String = ""
     var arrayPartition:[String] = []
     var index: Int = 0
-    let taskQueue = DispatchQueue.global(qos: .background)
+    let taskQueue = DispatchQueue.global(qos: .default)
     var flag: Int = 0
     
     override func viewDidLoad() {
@@ -48,7 +48,9 @@ class ViewControllerDisk: NSViewController {
     
     override func viewWillAppear() {
         super.viewWillAppear()
-        refreshButton.image = NSImage(named: "refresh.png")
+        let image = MyAsset.refresh.image
+        image.isTemplate = true
+        refreshButton.image = image
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
         if flag == 0 {
@@ -188,7 +190,9 @@ extension ViewControllerDisk: NSTableViewDelegate {
             let identifier = tableColumn!.identifier.rawValue
             switch identifier {
             case "icon":
-                return NSImageView(image: MyAsset.NSToolbarItem_Disk.image)
+                let image = MyAsset.NSToolbarItem_Disk.image
+                image.isTemplate = true
+                return NSImageView(image: image)
             case "name":
                 let textField = NSTextField()
                 textField.cell = VerticallyCenteredTextFieldCell()
@@ -243,10 +247,14 @@ extension ViewControllerDisk: NSTableViewDelegate {
                 button.bezelStyle = .recessed
                 button.isBordered = false
                 if self.diskInfoObject[row].mounted == "未挂载" {
-                    button.image = NSImage(named: "mount.png")
+                    let image = MyAsset.mount.image
+                    image.isTemplate = true
+                    button.image = image
                 }
                 else {
-                    button.image = NSImage(named: "unmount.png")
+                    let image = MyAsset.unmount.image
+                    image.isTemplate = true
+                    button.image = image
                 }
                 button.tag = self.diskInfoObject[row].mounted == "未挂载" ? 0 : 1
                 return button
@@ -255,7 +263,9 @@ extension ViewControllerDisk: NSTableViewDelegate {
                 button.action = #selector(openButtonAction(_:))
                 button.bezelStyle = .recessed
                 button.isBordered = false
-                button.image = NSImage(named: "open.png")
+                let image = MyAsset.open.image
+                image.isTemplate = true
+                button.image = image
                 button.tag = self.diskInfoObject[row].mounted == "未挂载" ? 0 : 1
                 if self.diskInfoObject[row].mounted == "未挂载" {
                     button.isEnabled = false

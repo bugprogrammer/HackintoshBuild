@@ -20,7 +20,7 @@ class ViewControllerEFI: NSViewController {
     @IBOutlet weak var proxyTextField: NSTextField!
     @IBOutlet weak var selectAllButton: NSButton!
     
-    let taskQueue = DispatchQueue.global(qos: .background)
+    let taskQueue = DispatchQueue.global(qos: .default)
     let alert = NSAlert()
     var selectAll: Int = 0
     var isRunning: Bool = false

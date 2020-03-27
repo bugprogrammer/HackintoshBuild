@@ -31,6 +31,14 @@ extension NSImage {
         case NSToolbarItem_Ioreg = "NSToolbarItem_Ioreg"
         case NSToolbarItem_Other = "NSToolbarItem_Other"
         case NSToolbarItem_Pay = "NSToolbarItem_Pay"
+        case complate = "complate"
+        case downloadAll = "downloadAll"
+        case mount = "mount"
+        case open = "open"
+        case open1 = "open1"
+        case refresh = "refresh"
+        case refresh1 = "refresh1"
+        case unmount = "unmount"
     }
     
     convenience init!(asset: Asset) {

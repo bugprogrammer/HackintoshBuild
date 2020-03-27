@@ -70,7 +70,7 @@ class BaseWindowController: NSWindowController {
         return toolBar
     }()
     
-    let taskQueue = DispatchQueue.global(qos: .background)
+    let taskQueue = DispatchQueue.global(qos: .default)
     var outputPipe: Pipe!
     var sipStatusOutPut: String = ""
     
@@ -154,62 +154,82 @@ extension BaseWindowController: NSToolbarDelegate {
             toolbarItem?.label = "系统详情"
             toolbarItem?.paletteLabel = "系统详情"
             toolbarItem?.toolTip = "系统详情"
-            toolbarItem?.image = MyAsset.NSToolbarItem_Info.image
+            let image = MyAsset.NSToolbarItem_Info.image
+            image.isTemplate = true
+            toolbarItem?.image = image
             break
             
         case buildIdentifier:
             toolbarItem?.label = "编译"
             toolbarItem?.paletteLabel = "编译"
             toolbarItem?.toolTip = "编译一些常用的引导/驱动"
-            toolbarItem?.image = MyAsset.NSToolbarItem_Build.image
+            let image = MyAsset.NSToolbarItem_Build.image
+            image.isTemplate = true
+            toolbarItem?.image = image
             break
             
         case efiIdentifier:
             toolbarItem?.label = "常见机型EFI分享"
             toolbarItem?.paletteLabel = "常见机型EFI分享"
             toolbarItem?.toolTip = "常见机型EFI分享"
-            toolbarItem?.image = MyAsset.NSToolbarItem_EFI.image
+            let image = MyAsset.NSToolbarItem_EFI.image
+            image.isTemplate = true
+            toolbarItem?.image = image
             break
             
         case diskIdentifier:
             toolbarItem?.label = "EFI分区挂载"
             toolbarItem?.paletteLabel = "EFI分区挂载"
             toolbarItem?.toolTip = "EFI分区挂载"
-            toolbarItem?.image = MyAsset.NSToolbarItem_Disk.image
+            let image = MyAsset.NSToolbarItem_Disk.image
+            image.isTemplate = true
+            toolbarItem?.image = image
             break
             
         case nvramIdentifier:
             toolbarItem?.label = "NVRAM信息"
             toolbarItem?.paletteLabel = "NVRAM信息"
             toolbarItem?.toolTip = "NVRAM信息"
-            toolbarItem?.image = MyAsset.NSToolbarItem_Nvram.image
+            let image = MyAsset.NSToolbarItem_Nvram.image
+            image.isTemplate = true
+            toolbarItem?.image = image
             break
             
         case lockIdentifier:
             toolbarItem?.label = "更换登录壁纸"
             toolbarItem?.paletteLabel = "更换登录壁纸"
             toolbarItem?.toolTip = "更换登录壁纸"
-            toolbarItem?.image = MyAsset.NSToolbarItem_Lock.image
+            let image = MyAsset.NSToolbarItem_Lock.image
+            image.isTemplate = true
+            toolbarItem?.image = image
             break
             
         case ioregIdentifier:
             toolbarItem?.label = "白苹果ioreg信息"
             toolbarItem?.paletteLabel = "白苹果ioreg信息"
             toolbarItem?.toolTip = "白苹果ioreg信息"
-            toolbarItem?.image = MyAsset.NSToolbarItem_Ioreg.image
+            let image = MyAsset.NSToolbarItem_Ioreg.image
+            image.isTemplate = true
+            toolbarItem?.image = image
             break
             
         case otherIdentifier:
             toolbarItem?.label = "其他小功能"
             toolbarItem?.paletteLabel = "其他小功能"
             toolbarItem?.toolTip = "其他一些可能需要的东西"
-            toolbarItem?.image = MyAsset.NSToolbarItem_Other.image
+            let image = MyAsset.NSToolbarItem_Other.image
+            image.isTemplate = true
+            toolbarItem?.image = image
+            break
             
         case payIdentifier:
             toolbarItem?.label = "关于捐赠"
             toolbarItem?.paletteLabel = "关于捐赠"
             toolbarItem?.toolTip = "酌情捐赠"
-            toolbarItem?.image = MyAsset.NSToolbarItem_Pay.image
+            let image = MyAsset.NSToolbarItem_Pay.image
+            image.isTemplate = true
+            toolbarItem?.image = image
+            break
             
         default:
             toolbarItem = nil

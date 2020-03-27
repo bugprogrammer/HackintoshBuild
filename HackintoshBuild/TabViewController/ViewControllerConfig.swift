@@ -24,7 +24,7 @@ class ViewControllerConfig: NSViewController {
     @IBOutlet weak var sipLabel: NSTextField!
     @IBOutlet weak var removeAllButton: NSButton!
     
-    let taskQueue = DispatchQueue.global(qos: .background)
+    let taskQueue = DispatchQueue.global(qos: .default)
     let lock = NSLock()
     let bdmesg = Bundle.main.path(forResource: "bdmesg", ofType: "")
     var output: String = ""
@@ -48,10 +48,9 @@ class ViewControllerConfig: NSViewController {
             sipLabel.textColor = NSColor.red
             sipLabel.stringValue = "SIP 未关闭，请先关闭 SIP"
         } else {
-            sipLabel.textColor = NSColor.green
+            sipLabel.textColor = NSColor(named: "ColorGreen")
             sipLabel.stringValue = "SIP 已关闭"
         }
-        view.setFrameSize(NSSize(width: 790, height: 630))
         
         versionLabel.stringValue = ""
         runBuildScripts("kextInfo", [])

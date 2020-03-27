@@ -18,7 +18,7 @@ class ViewControllerUpdate: NSViewController {
     @IBOutlet weak var selectAllButton: NSButton!
     
     @IBOutlet weak var proxyTextField: NSTextField!
-    let taskQueue = DispatchQueue.global(qos: .background)
+    let taskQueue = DispatchQueue.global(qos: .default)
     var task: Process!
 
     var output: String = ""
@@ -75,17 +75,23 @@ class ViewControllerUpdate: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        refreshButton.image = NSImage(named: "refresh.png")
+        let refresh = MyAsset.refresh.image
+        let downloadAll = MyAsset.downloadAll.image
+        let open = MyAsset.open1.image
+        refresh.isTemplate = true
+        downloadAll.isTemplate = true
+        open.isTemplate = true
+        refreshButton.image = refresh
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
         refreshButton.isEnabled = false
         refreshButton.toolTip = "刷新"
-        downloadButton.image = NSImage(named: "downloadAll.png")
+        downloadButton.image = downloadAll
         downloadButton.isBordered = false
         downloadButton.bezelStyle = .recessed
         downloadButton.isEnabled = false
         downloadButton.toolTip = "下载"
-        openButton.image = NSImage(named: "open-1x.png")
+        openButton.image = open
         openButton.bezelStyle = .recessed
         openButton.isBordered = false
         openButton.isEnabled = false

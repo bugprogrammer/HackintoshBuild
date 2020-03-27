@@ -19,7 +19,7 @@ class ViewControllerOther: NSViewController {
     @IBOutlet weak var showButton: NSButton!
     @IBOutlet weak var hiddenButton: NSButton!
     
-    let taskQueue = DispatchQueue.global(qos: .background)
+    let taskQueue = DispatchQueue.global(qos: .default)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class ViewControllerOther: NSViewController {
             unclockButton.isEnabled = false
             rebuildButton.isEnabled = false
         } else {
-            sipLable.textColor = NSColor.green
+            sipLable.textColor = NSColor(named: "ColorGreen")
             sipLable.stringValue = "SIP 已关闭"
             unclockButton.isEnabled = true
             rebuildButton.isEnabled = true
@@ -142,7 +142,6 @@ class ViewControllerOther: NSViewController {
             if output.count > 0 {
                 outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
                 let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-                MyLog(outputString)
                 DispatchQueue.main.async(execute: {
                     let previousOutput = self.output.string
                     let nextOutput = previousOutput + "\n" + outputString

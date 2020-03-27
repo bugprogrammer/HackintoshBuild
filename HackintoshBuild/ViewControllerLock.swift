@@ -15,7 +15,7 @@ class ViewControllerLock: NSViewController {
     @IBOutlet weak var lockImageView: NSImageView!
     @IBOutlet weak var locationImage: NSPathControl!
     
-    let taskQueue = DispatchQueue.global(qos: .background)
+    let taskQueue = DispatchQueue.global(qos: .default)
     var output: String = ""
     
     override func viewDidLoad() {

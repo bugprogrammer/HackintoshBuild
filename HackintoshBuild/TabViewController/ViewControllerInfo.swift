@@ -26,7 +26,7 @@ class ViewControllerInfo: NSViewController {
     
     @IBOutlet weak var infoTableView: NSTableView!
     
-    let taskQueue = DispatchQueue.global(qos: .background)
+    let taskQueue = DispatchQueue.global(qos: .default)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,14 +54,14 @@ class ViewControllerInfo: NSViewController {
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
                         self.outputArr = self.output.components(separatedBy: "\n")
-    
+                        
                         if self.outputArr.first!.isEmpty {
                             self.outputArr.removeFirst()
                         }
                         if self.outputArr.last!.isEmpty {
                             self.outputArr.removeLast()
                         }
-                        
+                                            
                         for infoStr in self.outputArr {
                             var flag: Bool = false
                             var infoArr = infoStr.components(separatedBy: ":")

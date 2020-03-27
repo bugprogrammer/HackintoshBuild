@@ -13,14 +13,16 @@ class ViewControllerAppleIntelInfo: NSViewController {
     @IBOutlet weak var refreshButton: NSButton!
     var output: String = ""
     @IBOutlet var outputInfo: NSTextView!
-    let taskQueue = DispatchQueue.global(qos: .background)
+    let taskQueue = DispatchQueue.global(qos: .default)
     let url = Bundle.main.path(forResource: "AppleIntelInfo", ofType: "kext")
     @IBOutlet weak var sipLabel: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshButton.isEnabled = false
-        refreshButton.image = NSImage(named: "refresh-1x.png")
+        let image = MyAsset.refresh1.image
+        image.isTemplate = true
+        refreshButton.image = image
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
         
@@ -33,7 +35,7 @@ class ViewControllerAppleIntelInfo: NSViewController {
             sipLabel.textColor = NSColor.red
             sipLabel.stringValue = "SIP 未关闭，请先关闭 SIP"
         } else {
-            sipLabel.textColor = NSColor.green
+            sipLabel.textColor = NSColor(named: "ColorGreen")
             sipLabel.stringValue = "SIP 已关闭"
             runBuildScripts("AppleIntelInfo", [url!])
         }
