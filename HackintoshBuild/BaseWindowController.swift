@@ -44,6 +44,14 @@ class BaseWindowController: NSWindowController {
         return MyTool.getViewControllerFromMain(ViewControllerIoreg.self)
     }()
     
+    lazy var gpuVC: ViewControllerGPU = {
+        return MyTool.getViewControllerFromMain(ViewControllerGPU.self)
+    }()
+    
+    lazy var osVC: ViewControllerOS = {
+        return MyTool.getViewControllerFromMain(ViewControllerOS.self)
+    }()
+    
     lazy var otherVC: ViewControllerOther = {
         return MyTool.getViewControllerFromMain(ViewControllerOther.self)
     }()
@@ -59,6 +67,8 @@ class BaseWindowController: NSWindowController {
     let nvramIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.nvramIdentifier")
     let lockIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.lockIdentifier")
     let ioregIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.ioregIdentifier")
+    let gpuIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.gpuIdentifier")
+    let osIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.osIdentifier")
     let otherIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.otherIdentifier")
     let payIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.payIdentifier")
     
@@ -136,15 +146,15 @@ class BaseWindowController: NSWindowController {
 extension BaseWindowController: NSToolbarDelegate {
     
     func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
+        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, gpuIdentifier, osIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
+        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, gpuIdentifier, osIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, otherIdentifier, payIdentifier]
+        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, gpuIdentifier, osIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
@@ -213,6 +223,24 @@ extension BaseWindowController: NSToolbarDelegate {
             toolbarItem?.image = image
             break
             
+        case gpuIdentifier:
+            toolbarItem?.label = "显卡优化"
+            toolbarItem?.paletteLabel = "显卡优化"
+            toolbarItem?.toolTip = "显卡优化"
+            let image = MyAsset.NSToolbarItem_GPU.image
+            image.isTemplate = true
+            toolbarItem?.image = image
+            break
+            
+//        case osIdentifier:
+//            toolbarItem?.label = "镜像下载"
+//            toolbarItem?.paletteLabel = "镜像下载"
+//            toolbarItem?.toolTip = "镜像下载"
+//            let image = MyAsset.NSToolbarItem_OS.image
+//            image.isTemplate = true
+//            toolbarItem?.image = image
+//            break
+            
         case otherIdentifier:
             toolbarItem?.label = "其他小功能"
             toolbarItem?.paletteLabel = "其他小功能"
@@ -270,6 +298,14 @@ extension BaseWindowController: NSToolbarDelegate {
         case ioregIdentifier:
             self.window?.contentViewController = ioregVC
             self.window?.setContentSize(NSSize(width: 1200, height: 630))
+            break
+        case gpuIdentifier:
+            self.window?.contentViewController = gpuVC
+            self.window?.setContentSize(NSSize(width: 790, height: 630))
+            break
+        case osIdentifier:
+            self.window?.contentViewController = osVC
+            self.window?.setContentSize(NSSize(width: 790, height: 630))
             break
         case otherIdentifier:
             self.window?.contentViewController = otherVC

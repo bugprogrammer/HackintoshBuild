@@ -52,8 +52,8 @@ class ViewControllerNvram: NSViewController {
       do {
         let highlightr = Highlightr()
         highlightr!.setTheme(to: "paraiso-dark")
-        let xml = try XMLDocument.init(xmlString: xmlString)
-        let data = xml.xmlData(options: .nodePrettyPrint)
+        let xml = try XMLDocument.init(xmlString: xmlString, options: [[.nodePrettyPrint, .nodeCompactEmptyElement, .documentTidyXML]])
+        let data = xml.xmlData(options: [[.nodePrettyPrint]])
         let str:String? = String(data: data, encoding: .utf8)
         let nvStr = str?.replacingOccurrences(of: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n", with: "")
         let highlightedCode = highlightr!.highlight(nvStr!, as: "xml")

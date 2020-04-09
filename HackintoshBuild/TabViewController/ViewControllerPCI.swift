@@ -28,6 +28,7 @@ class ViewControllerPCI: NSViewController {
     var pciArray: [String] = []
     let gfxutil = Bundle.main.path(forResource: "gfxutil", ofType: "")
     let taskQueue = DispatchQueue.global(qos: .default)
+    let lock = NSLock()
 
     @IBOutlet weak var pciTableView: NSTableView!
     @IBOutlet var pciTextView: NSTextView!
@@ -61,60 +62,63 @@ class ViewControllerPCI: NSViewController {
         alert.messageText = "已复制到剪贴板"
         alert.runModal()
     }
-
-    func runBuildScripts(_ shell: String, _ arguments: [String]) {
-        taskQueue.async {
-            if let path = Bundle.main.path(forResource: shell, ofType:"command") {
-                let task = Process()
-                task.launchPath = path
-                task.arguments = arguments
-                task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
-                task.terminationHandler = { task in
-                    DispatchQueue.main.async(execute: { [weak self] in
-                        guard let `self` = self else { return }
-                        if shell == "pci" {
-                            MyLog(self.output)
-                            self.pciArray = self.output.components(separatedBy: "\n")
-                            if self.pciArray.last == "" {
-                                self.pciArray.removeLast()
-                            }
-                            if self.pciArray.first == "" {
-                                self.pciArray.removeFirst()
-                            }
-                            for item in self.pciArray {
-                                let pciFinal = item.trimmingCharacters(in: .whitespaces).components(separatedBy: " ")
-                                self.pci.append(PCI("0x" + pciFinal[0].uppercased(), "0x" + pciFinal[1].uppercased(), pciFinal[2], pciFinal[3]))
-                            }
-                            self.pciTableView.reloadData()
-                        }
-                    })
-                }
-                self.taskOutPut(task)
-                task.launch()
-                task.waitUntilExit()
-            }
-        }
-    }
     
-    func taskOutPut(_ task:Process) {
-        output = ""
-        let outputPipe = Pipe()
-        task.standardOutput = outputPipe
-        outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading, queue: nil) { notification in
-            let output = outputPipe.fileHandleForReading.availableData
-            if output.count > 0 {
-                outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-                DispatchQueue.main.async(execute: {
-                    let previousOutput = self.output
-                    let nextOutput = previousOutput + outputString
-                    self.output = nextOutput
-                })
+    func runBuildScripts(_ shell: String, _ arguments: [String]) {
+        self.output = ""
+            taskQueue.async {
+                if let path = Bundle.main.path(forResource: shell, ofType:"command") {
+                    var massa: Int32 = 0
+                    var slave: Int32 = 0
+                    var tt: termios = termios()
+                    openpty(&massa, &slave, nil, &tt, nil)
+                    
+                    let task = Process()
+                    task.launchPath = path
+                    task.arguments = arguments
+                    task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
+                    
+                    let outputPipe = Pipe()
+                    outputPipe.fileHandleForReading.readabilityHandler = { handle in
+                        let data = handle.readDataToEndOfFile()
+                        if data.count > 0 {
+                            let outputString = String(data: data, encoding: String.Encoding.utf8) ?? ""
+                            OperationQueue.main.addOperation { [weak self] in
+                                guard let `self` = self else { return }
+                                self.lock.lock()
+                                let previousOutput = self.output
+                                let nextOutput = previousOutput + outputString
+                                self.output = nextOutput
+                                if shell == "pci" {
+                                    MyLog(self.output)
+                                    self.pciArray = self.output.components(separatedBy: "\n")
+                                    if self.pciArray.last == "" {
+                                        self.pciArray.removeLast()
+                                    }
+                                    if self.pciArray.first == "" {
+                                        self.pciArray.removeFirst()
+                                    }
+                                    for item in self.pciArray {
+                                        let pciFinal = item.trimmingCharacters(in: .whitespaces).components(separatedBy: " ")
+                                        self.pci.append(PCI("0x" + pciFinal[0].uppercased(), "0x" + pciFinal[1].uppercased(), pciFinal[2], pciFinal[3]))
+                                    }
+                                    self.pciTableView.reloadData()
+                                }
+                                self.lock.unlock()
+                            }
+                        } else if (data.count == 0 && !task.isRunning) {
+                            handle.readabilityHandler = nil
+                        }
+                    }
+
+                    // Fake tty:
+                    task.standardInput = FileHandle(fileDescriptor: slave)
+                    task.standardOutput = outputPipe
+                    task.standardError = outputPipe
+                    task.launch()
+    //                task.waitUntilExit()
+                }
             }
         }
-    }
     
 }
 

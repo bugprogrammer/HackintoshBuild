@@ -459,7 +459,7 @@ extension ViewControllerUpdate: NSTableViewDelegate {
                 else {
                     if isStart && itemFlag.contains(row) {
                         let button = NSButton()
-                        button.image = NSImage(named: "complate.png")
+                        button.image = MyAsset.complate.image
                         button.bezelStyle = .recessed
                         button.isBordered = false
                         view = button as NSView

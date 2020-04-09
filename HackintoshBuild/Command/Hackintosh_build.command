@@ -88,8 +88,13 @@ for i in ${selectedArray[*]}; do
 
     if [[ $bootLoader =~ ${buildArray[$i]%,*} ]]; then
         if [[ ${buildArray[$i]%,*} == "n-d-k-OpenCore" ]]; then
+            cp -rf ${path%/*}/macbuild-ndk.tool ./ndk-macbuild.tool
             ./ndk-macbuild.tool >> $logs || exit 1
+        elif [[ ${buildArray[$i]%,*} == "OpenCore" ]]; then
+            cp -rf ${path%/*}/macbuild-oc.tool ./macbuild.tool
+            ./macbuild.tool >> $logs || exit 1
         else
+            cp -rf ${path%/*}/macbuild-asp.tool ./macbuild.tool
             ./macbuild.tool >> $logs || exit 1
         fi
         cp Binaries/RELEASE/*.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1

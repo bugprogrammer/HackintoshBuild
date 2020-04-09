@@ -2063,6 +2063,7 @@
                         <tabViewItem label="Kexts下载" id="eeb-Pb-cpN"/>
                         <tabViewItem label="PCI信息" id="MKT-Eh-3w0"/>
                     </tabViewItems>
+                    <viewControllerTransitionOptions key="transitionOptions"/>
                     <tabView key="tabView" type="noTabsNoBorder" id="Juu-2K-csT" userLabel="Tabless Tab View ">
                         <rect key="frame" x="0.0" y="0.0" width="790" height="630"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -3072,7 +3073,7 @@
                                 <rect key="frame" x="51" y="295" width="71" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="已选择条目" id="l4O-DH-AlZ">
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -3108,7 +3109,7 @@
                                 <rect key="frame" x="51" y="174" width="111" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="已复制设备地址" id="mu0-si-2ln">
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -3124,6 +3125,109 @@
                 <customObject id="Dgd-Kx-Gkp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1666" y="-728"/>
+        </scene>
+        <!--View Controller GPU-->
+        <scene sceneID="1ys-wE-gLs">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerGPU" id="RHU-FQ-YQT" userLabel="View Controller GPU" customClass="ViewControllerGPU" customModule="HackintoshBuild" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="W4W-YG-Hf1">
+                        <rect key="frame" x="0.0" y="0.0" width="790" height="630"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zIb-HE-SLX">
+                                <rect key="frame" x="18" y="567" width="118" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="5nK-1j-d8R">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <menu key="menu" id="okA-Ix-n8T"/>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="select:" target="RHU-FQ-YQT" id="szr-wv-vFx"/>
+                                </connections>
+                            </popUpButton>
+                            <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vE-PO-Qz1">
+                                <rect key="frame" x="150" y="106" width="620" height="485"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="XUy-Jm-zB8">
+                                    <rect key="frame" x="0.0" y="0.0" width="605" height="485"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="NxG-63-oO4">
+                                            <rect key="frame" x="0.0" y="0.0" width="605" height="485"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="605" height="485"/>
+                                            <size key="maxSize" width="620" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="sXr-rs-GzS">
+                                    <rect key="frame" x="-100" y="-100" width="225" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="PU2-Ep-frh">
+                                    <rect key="frame" x="605" y="0.0" width="15" height="485"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <pathControl verticalHuggingPriority="750" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3A-8S-tdM">
+                                <rect key="frame" x="11" y="493" width="116" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <pathCell key="cell" selectable="YES" editable="YES" alignment="left" pathStyle="popUp" id="tzs-Jj-xRH">
+                                    <font key="font" metaFont="system"/>
+                                </pathCell>
+                                <connections>
+                                    <action selector="selectPath:" target="RHU-FQ-YQT" id="Ug8-QG-kdy"/>
+                                </connections>
+                            </pathControl>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ed5-oQ-O2F">
+                                <rect key="frame" x="20" y="531" width="58" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="导出路径" id="waV-4P-SP1">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xP2-5t-9MI">
+                                <rect key="frame" x="355" y="47" width="81" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EjJ-wt-Vt7">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="export:" target="RHU-FQ-YQT" id="omP-zI-r4p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="exportButton" destination="xP2-5t-9MI" id="r9O-vZ-PHj"/>
+                        <outlet property="exportURL" destination="N3A-8S-tdM" id="JEQ-Rj-lRT"/>
+                        <outlet property="gpuLists" destination="zIb-HE-SLX" id="uoI-e3-DKY"/>
+                        <outlet property="plistTextView" destination="NxG-63-oO4" id="LL6-wQ-cta"/>
+                    </connections>
+                </viewController>
+                <customObject id="HqT-Aw-ESM" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2489" y="-728"/>
+        </scene>
+        <!--View Controller OS-->
+        <scene sceneID="0h8-LF-vvj">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerOS" id="AWC-2i-h6d" userLabel="View Controller OS" customClass="ViewControllerOS" customModule="HackintoshBuild" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="91s-FS-41Q">
+                        <rect key="frame" x="0.0" y="0.0" width="790" height="630"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="Hqb-tP-bwo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3315" y="-728"/>
         </scene>
     </scenes>
     <resources>
