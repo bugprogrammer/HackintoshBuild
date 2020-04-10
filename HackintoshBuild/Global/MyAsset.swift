@@ -42,6 +42,8 @@ extension NSImage {
         case refresh1 = "refresh1"
         case unmount = "unmount"
         case export = "export"
+        case run = "run"
+        case stop = "stop"
     }
     
     convenience init!(asset: Asset) {

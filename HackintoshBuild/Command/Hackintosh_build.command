@@ -48,7 +48,7 @@ buildArray=(
 'VirtualSMC,https://github.com/acidanthera/VirtualSMC.git'
 'acidanthera_WhateverGreen,https://github.com/acidanthera/WhateverGreen.git'
 'bugprogrammer_WhateverGreen,https://github.com/bugprogrammer/WhateverGreen.git'
-'IntelMausiEthernet,https://github.com/Mieze/IntelMausiEthernet.git'
+'IntelMausi,https://github.com/acidanthera/IntelMausi.git'
 'AtherosE2200Ethernet,https://github.com/Mieze/AtherosE2200Ethernet.git'
 'RTL8111,https://github.com/Mieze/RTL8111_driver_for_OS_X.git'
 'NVMeFix,https://github.com/acidanthera/NVMeFix.git'

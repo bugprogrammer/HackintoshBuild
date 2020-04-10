@@ -49,6 +49,17 @@ class ViewControllerEFI: NSViewController {
         super.viewDidLoad()
         
         isRunning = resetStatus(isRunning: false)
+        let imagebuild = NSImage(named: "NSTouchBarPlayTemplate")
+        imagebuild?.isTemplate = true
+        efiStartButton.image = imagebuild
+        efiStartButton.isBordered = false
+        efiStartButton.bezelStyle = .recessed
+        
+        let imagestop = NSImage(named: "NSTouchBarRecordStopTemplate")
+        imagestop?.isTemplate = true
+        efiStopButton.image = imagestop
+        efiStopButton.isBordered = false
+        efiStopButton.bezelStyle = .recessed
         
         proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
         proxyTextField.delegate = self

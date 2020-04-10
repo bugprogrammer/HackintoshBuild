@@ -48,7 +48,7 @@ class ViewControllerBuild: NSViewController {
         "VirtualSMC",
         "acidanthera_WhateverGreen",
         "bugprogrammer_WhateverGreen",
-        "IntelMausiEthernet",
+        "IntelMausi",
         "AtherosE2200Ethernet",
         "RTL8111",
         "NVMeFix",
@@ -65,6 +65,17 @@ class ViewControllerBuild: NSViewController {
         super.viewDidLoad()
         
         isRunning = resetStatus(isRunning: false)
+        let imagebuild = NSImage(named: "NSTouchBarPlayTemplate")
+        imagebuild?.isTemplate = true
+        buildButton.image = imagebuild
+        buildButton.isBordered = false
+        buildButton.bezelStyle = .recessed
+        
+        let imagestop = NSImage(named: "NSTouchBarRecordStopTemplate")
+        imagestop?.isTemplate = true
+        stopButton.image = imagestop
+        stopButton.isBordered = false
+        stopButton.bezelStyle = .recessed
         
         proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
         proxyTextField.delegate = self
