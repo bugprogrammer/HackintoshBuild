@@ -14,7 +14,7 @@ class ViewControllerAppleIntelInfo: NSViewController {
     var output: String = ""
     @IBOutlet var outputInfo: NSTextView!
     let taskQueue = DispatchQueue.global(qos: .default)
-    let url = Bundle.main.path(forResource: "AppleIntelInfo", ofType: "kext")
+    let url = Bundle.main.path(forResource: "AppleIntelInfo", ofType: "kext", inDirectory: "tools")
     @IBOutlet weak var sipLabel: NSTextField!
     
     override func viewDidLoad() {

@@ -26,7 +26,7 @@ class ViewControllerPCI: NSViewController {
     var pci: [PCI] = []
     var output: String = ""
     var pciArray: [String] = []
-    let gfxutil = Bundle.main.path(forResource: "gfxutil", ofType: "")
+    let gfxutil = Bundle.main.path(forResource: "gfxutil", ofType: "", inDirectory: "tools")
     let taskQueue = DispatchQueue.global(qos: .default)
     let lock = NSLock()
 

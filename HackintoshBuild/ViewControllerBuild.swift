@@ -29,7 +29,7 @@ class ViewControllerBuild: NSViewController {
     var selectAll: Int = 0
     var isRunning: Bool = false
     
-    let toolspath = Bundle.main.path(forResource: "nasm", ofType: "")
+    let toolspath = Bundle.main.path(forResource: "nasm", ofType: "", inDirectory: "tools")
     
     let pluginsList: [String] = [
         "OpenCore",

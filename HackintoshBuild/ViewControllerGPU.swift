@@ -17,9 +17,9 @@ class ViewControllerGPU: NSViewController {
     @IBOutlet weak var exportURL: NSPathControl!
     
     let gpuArray: [String] = ["Vega 56", "Vega 64", "VII", "RX 5700", "RX 5700 XT"]
-    let gfxutil = Bundle.main.path(forResource: "gfxutil", ofType: nil)
-    let pathPlist = Bundle.main.path(forResource:"config", ofType: "plist")
-    let url = Bundle.main.url(forResource:"config", withExtension: "plist")
+    let gfxutil = Bundle.main.path(forResource: "gfxutil", ofType: nil, inDirectory: "tools")
+    let pathPlist = Bundle.main.path(forResource:"config", ofType: "plist", inDirectory: "plists")
+    let url = Bundle.main.url(forResource:"config", withExtension: "plist", subdirectory: "plists")
     let taskQueue = DispatchQueue.global(qos: .default)
     var dict: NSMutableDictionary = NSMutableDictionary()
     var dict2: Dictionary = Dictionary<String, Any>()
@@ -74,12 +74,7 @@ class ViewControllerGPU: NSViewController {
             }
             else {
                 dict2 = dict["devicepath"] as! Dictionary<String, Any>
-                if devicePath != "" {
-                    dict[devicePath] = dict2
-                }
-                else {
-                    dict["无GFX0设备"] = dict2
-                }
+                dict[devicePath] = dict2
                 dict.removeObject(forKey: "devicepath")
             }
             
@@ -203,7 +198,7 @@ class ViewControllerGPU: NSViewController {
                 let outputPipe = Pipe()
                 outputPipe.fileHandleForReading.readabilityHandler = { handle in
                     let data = handle.readDataToEndOfFile()
-                    if data.count > 0 {
+//                    if data.count > 0 {
                         let outputString = String(data: data, encoding: String.Encoding.utf8) ?? ""
                         OperationQueue.main.addOperation { [weak self] in
                             guard let `self` = self else { return }
@@ -216,7 +211,9 @@ class ViewControllerGPU: NSViewController {
                                 self.runBuildScripts("ports", [])
                             } else if shell == "ports" {
                                 self.ports = self.output.components(separatedBy: "\n").first!
-                                MyLog(self.ports)
+                                if self.pathGPU == "" {
+                                    self.pathGPU = "无GFX0设备"
+                                }
                                 self.getPlist(self.pathGPU, self.select, Int(self.ports) ?? 0)
                                 self.runBuildScripts("printPlist", [self.pathPlist!])
                             } else if shell == "printPlist" {
@@ -224,7 +221,7 @@ class ViewControllerGPU: NSViewController {
                             }
                             self.lock.unlock()
                         }
-                    } else if (data.count == 0 && !task.isRunning) {
+                     if (!task.isRunning) {
                         handle.readabilityHandler = nil
                     }
                 }

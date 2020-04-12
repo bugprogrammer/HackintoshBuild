@@ -26,7 +26,7 @@ class ViewControllerConfig: NSViewController {
     
     let taskQueue = DispatchQueue.global(qos: .default)
     let lock = NSLock()
-    let bdmesg = Bundle.main.path(forResource: "bdmesg", ofType: "")
+    let bdmesg = Bundle.main.path(forResource: "bdmesg", ofType: "", inDirectory: "tools")
     var output: String = ""
     var bootLoaderTypeArr: [String] = ["请选择引导器类型","OpenCore","Clover"]
     var bootLoaderType: String = ""

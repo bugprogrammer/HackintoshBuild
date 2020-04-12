@@ -34,7 +34,7 @@ class ViewControllerDisk: NSViewController {
         
     @IBOutlet weak var diskTableView: NSTableView!
     @IBOutlet weak var refreshButton: NSButton!
-    let bdmesg = Bundle.main.path(forResource: "bdmesg", ofType: "")
+    let bdmesg = Bundle.main.path(forResource: "bdmesg", ofType: "", inDirectory: "tools")
     
     var diskInfo:String = ""
     var arrayPartition:[String] = []
