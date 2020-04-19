@@ -24,7 +24,7 @@ do shell script "mkdir -p /usr/local/bin || exit 1; cp ${path%/*}/nasm /usr/loca
 EOF
 fi
 
-if [ "$(which mtoc.NEW)" == "" ] || [ "$(which mtoc)" == "" ]; then
+if [ "$(which mtoc)" == "" ]; then
 echo "您尚未安装mtoc,现在为您安装"
 osascript <<EOF
 do shell script "mkdir -p /usr/local/bin || exit 1; cp ${path%/*}/mtoc /usr/local/bin/mtoc || exit 1; cp ${path%/*}/mtoc /usr/local/bin/mtoc.NEW || exit 1" with prompt "安装mtoc需要授权" with administrator privileges

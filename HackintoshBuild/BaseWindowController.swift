@@ -232,14 +232,14 @@ extension BaseWindowController: NSToolbarDelegate {
             toolbarItem?.image = image
             break
             
-//        case osIdentifier:
-//            toolbarItem?.label = "镜像下载"
-//            toolbarItem?.paletteLabel = "镜像下载"
-//            toolbarItem?.toolTip = "镜像下载"
-//            let image = MyAsset.NSToolbarItem_OS.image
-//            image.isTemplate = true
-//            toolbarItem?.image = image
-//            break
+        case osIdentifier:
+            toolbarItem?.label = "镜像下载"
+            toolbarItem?.paletteLabel = "镜像下载"
+            toolbarItem?.toolTip = "镜像下载"
+            let image = MyAsset.NSToolbarItem_OS.image
+            image.isTemplate = true
+            toolbarItem?.image = image
+            break
             
         case otherIdentifier:
             toolbarItem?.label = "其他小功能"

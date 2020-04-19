@@ -44,6 +44,9 @@ extension NSImage {
         case export = "export"
         case run = "run"
         case stop = "stop"
+        case highsierra = "highsierra"
+        case mojave = "mojave"
+        case catalina = "catalina"
     }
     
     convenience init!(asset: Asset) {
