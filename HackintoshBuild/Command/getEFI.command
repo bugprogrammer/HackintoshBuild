@@ -11,7 +11,7 @@ if [ -e $dir ]; then
 fi
 mkdir -p $dir/Release
 mkdir -p $dir/Sources
-cd $dir/Sources
+cd "$dir/Sources"
 
 proxy=$3
 if [ $proxy!='' ]; then

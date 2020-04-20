@@ -2,13 +2,13 @@
 
 start=$(date +%s)
 url=$1
-cd $url
+cd "$url"
 dir=hackintosh_Plugins
 if [ ! -e $dir ]; then
     mkdir -p $dir/Release
     mkdir -p $dir/Sources
 fi
-cd $dir/Sources
+cd "$dir/Sources"
 
 proxy=$3
 if [ $proxy!='' ]; then
@@ -135,7 +135,7 @@ done;
 if [[ $4 != "" ]]; then
     open $4/buildlog/
 fi
-open $url/$dir/Release
+open "$url/$dir/Release"
 
 end=$(date +%s)
 take=$(( end - start ))
