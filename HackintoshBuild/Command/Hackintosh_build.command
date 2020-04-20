@@ -17,6 +17,35 @@ export https_proxy=$proxy
 fi
 
 path=$5
+
+mtoc_hash=$(curl -L "https://github.com/acidanthera/ocbuild/raw/master/external/mtoc-mac64.sha256") || exit 1
+
+if [ "${mtoc_hash}" = "" ]; then
+  echo "Cannot obtain the latest compatible mtoc hash!"
+  exit 1
+fi
+
+valid_mtoc=false
+if [ "$(which mtoc)" != "" ]; then
+  mtoc_path=$(which mtoc)
+  mtoc_hash_user=$(shasum -a 256 "${mtoc_path}" | cut -d' ' -f1)
+  if [ "${mtoc_hash}" = "${mtoc_hash_user}" ]; then
+    valid_mtoc=true
+  elif [ "${IGNORE_MTOC_VERSION}" = "1" ]; then
+    echo "Forcing the use of UNKNOWN mtoc version due to IGNORE_MTOC_VERSION=1"
+    valid_mtoc=true
+  elif [ "${mtoc_path}" != "/usr/local/bin/mtoc" ]; then
+    echo "Custom UNKNOWN mtoc is installed to ${mtoc_path}!"
+    echo "Hint: Remove this mtoc or use IGNORE_MTOC_VERSION=1 at your own risk."
+    exit 1
+  else
+    echo "Found incompatible mtoc installed to ${mtoc_path}!"
+    echo "Expected SHA-256: ${mtoc_hash}"
+    echo "Found SHA-256:    ${mtoc_hash_user}"
+    echo "Hint: Reinstall this mtoc or use IGNORE_MTOC_VERSION=1 at your own risk."
+  fi
+fi
+
 if [ "$(nasm -v)" = "" ] || [ "$(nasm -v | grep Apple)" != "" ]; then
 echo "您尚未安装nasm,现在为您安装"
 osascript <<EOF
@@ -24,8 +53,8 @@ do shell script "mkdir -p /usr/local/bin || exit 1; cp ${path%/*}/nasm /usr/loca
 EOF
 fi
 
-if [ "$(which mtoc)" == "" ]; then
-echo "您尚未安装mtoc,现在为您安装"
+if ! $valid_mtoc; then
+echo "尚未安装mtoc或mtoc版本不符,现在为您安装"
 osascript <<EOF
 do shell script "mkdir -p /usr/local/bin || exit 1; cp ${path%/*}/mtoc /usr/local/bin/mtoc || exit 1; cp ${path%/*}/mtoc /usr/local/bin/mtoc.NEW || exit 1" with prompt "安装mtoc需要授权" with administrator privileges
 EOF
@@ -88,13 +117,8 @@ for i in ${selectedArray[*]}; do
 
     if [[ $bootLoader =~ ${buildArray[$i]%,*} ]]; then
         if [[ ${buildArray[$i]%,*} == "n-d-k-OpenCore" ]]; then
-            cp -rf ${path%/*}/macbuild-ndk.tool ./ndk-macbuild.tool
             ./ndk-macbuild.tool >> $logs || exit 1
-        elif [[ ${buildArray[$i]%,*} == "OpenCore" ]]; then
-            cp -rf ${path%/*}/macbuild-oc.tool ./macbuild.tool
-            ./macbuild.tool >> $logs || exit 1
         else
-            cp -rf ${path%/*}/macbuild-asp.tool ./macbuild.tool
             ./macbuild.tool >> $logs || exit 1
         fi
         cp Binaries/RELEASE/*.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
