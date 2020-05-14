@@ -34,11 +34,16 @@ class ViewControllerNvram: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let image = MyAsset.refresh.image
-        image.isTemplate = true
+    }
+    
+    override func viewWillAppear() {
+        let image = NSImage(named: "NSRefreshFreestandingTemplate")
+        image?.size = CGSize(width: 64.0, height: 64.0)
+        image!.isTemplate = true
         refreshButton.image = image
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
+        refreshButton.toolTip = "刷新NVRAM信息"
         nvramTableView.target = self
         nvramTableView.action = #selector(tableViewClick(_:))
         runBuildScripts("nvram", [])

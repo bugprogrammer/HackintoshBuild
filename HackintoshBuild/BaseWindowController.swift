@@ -52,6 +52,10 @@ class BaseWindowController: NSWindowController {
         return MyTool.getViewControllerFromMain(ViewControllerOS.self)
     }()
     
+    lazy var compareVC: ViewControllerCompare = {
+        return MyTool.getViewControllerFromMain(ViewControllerCompare.self)
+    }()
+    
     lazy var otherVC: ViewControllerOther = {
         return MyTool.getViewControllerFromMain(ViewControllerOther.self)
     }()
@@ -69,6 +73,7 @@ class BaseWindowController: NSWindowController {
     let ioregIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.ioregIdentifier")
     let gpuIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.gpuIdentifier")
     let osIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.osIdentifier")
+    let compareIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.compareIdentifier")
     let otherIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.otherIdentifier")
     let payIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.payIdentifier")
     
@@ -146,15 +151,15 @@ class BaseWindowController: NSWindowController {
 extension BaseWindowController: NSToolbarDelegate {
     
     func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, gpuIdentifier, osIdentifier, otherIdentifier, payIdentifier]
+        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, gpuIdentifier, osIdentifier, compareIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, gpuIdentifier, osIdentifier, otherIdentifier, payIdentifier]
+        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, gpuIdentifier, osIdentifier, compareIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, gpuIdentifier, osIdentifier, otherIdentifier, payIdentifier]
+        return [infoIdentifier, buildIdentifier, efiIdentifier, diskIdentifier, nvramIdentifier, lockIdentifier, ioregIdentifier, gpuIdentifier, osIdentifier, compareIdentifier, otherIdentifier, payIdentifier]
     }
     
     func toolbar(_ toolbar: NSToolbar, itemForItemIdentifier itemIdentifier: NSToolbarItem.Identifier, willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
@@ -240,6 +245,15 @@ extension BaseWindowController: NSToolbarDelegate {
             image.isTemplate = true
             toolbarItem?.image = image
             break
+        
+        case compareIdentifier:
+            toolbarItem?.label = "文件对比"
+            toolbarItem?.paletteLabel = "文件对比"
+            toolbarItem?.toolTip = "文件对比"
+            let image = MyAsset.NSToolbarItem_Compare.image
+            image.isTemplate = true
+            toolbarItem?.image = image
+            break
             
         case otherIdentifier:
             toolbarItem?.label = "其他小功能"
@@ -306,6 +320,10 @@ extension BaseWindowController: NSToolbarDelegate {
         case osIdentifier:
             self.window?.contentViewController = osVC
             self.window?.setContentSize(NSSize(width: 790, height: 630))
+            break
+        case compareIdentifier:
+            self.window?.contentViewController = compareVC
+            self.window?.setContentSize(NSSize(width: 1200, height: 630))
             break
         case otherIdentifier:
             self.window?.contentViewController = otherVC

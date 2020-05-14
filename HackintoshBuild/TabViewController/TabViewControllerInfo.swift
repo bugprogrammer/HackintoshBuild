@@ -12,5 +12,5 @@ class TabViewControllerInfo: NSTabViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }    
+    }
 }

@@ -10,57 +10,89 @@ import Cocoa
 
 class ViewControllerPCI: NSViewController {
     
-    class PCI {
-        var vid: String = ""
-        var pid: String = ""
-        var ioreg: String = ""
-        var devicepath: String = ""
-        
-        init(_ vid: String, _ pid: String, _ ioreg: String, _ devicepath: String) {
-            self.vid = vid
-            self.pid = pid
-            self.ioreg = ioreg
-            self.devicepath = devicepath
-        }
+    struct Info: Codable {
+        let Name: String
+        let Vendor: String
     }
-    var pci: [PCI] = []
+    struct ID: Codable {
+        let VendorID: String
+        let DeviceID: String
+    }
+    struct Class: Codable {
+        let ClassName: String
+    }
+    struct PCI: Codable {
+        let Info: Info
+        let ID: ID
+        let BDF: String
+        let Class: Class
+    }
+    var pci: [PCI]?
     var output: String = ""
-    var pciArray: [String] = []
     let gfxutil = Bundle.main.path(forResource: "gfxutil", ofType: "", inDirectory: "tools")
+    let dspci = Bundle.main.path(forResource: "dspci", ofType: "", inDirectory: "tools")
     let taskQueue = DispatchQueue.global(qos: .default)
     let lock = NSLock()
+    let keys: [String] = ["供应商id", "设备id", "供应商名称", "设备类型", "设备名称", "ioreg地址", "设备地址"]
+    var value: [String] = []
+    var ioregArr: [String] = []
+    var devicepathArr: [String] = []
+    var BDF: String = ""
 
+    @IBOutlet weak var refreshButton: NSButton!
+    @IBOutlet weak var ioregTextField: NSTextField!
     @IBOutlet weak var pciTableView: NSTableView!
-    @IBOutlet var pciTextView: NSTextView!
-    @IBOutlet var copyTextView: NSTextView!
-    
+    @IBOutlet weak var infoTableView: NSTableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        refreshButton.isBordered = false
+        refreshButton.bezelStyle = .recessed
+        let image = NSImage(named: "NSRefreshFreestandingTemplate")
+        image?.isTemplate = true
+        image?.size = CGSize(width: 20.0, height: 20.0)
+        refreshButton.image = image
+        refreshButton.action = #selector(refresh)
+        refreshButton.toolTip = "刷新PCI信息"
         pciTableView.tableColumns.forEach { (column) in
             column.headerCell.alignment = .left
         }
-        runBuildScripts("pci", [gfxutil!])
+        var arguments: [String] = []
+        arguments.append(dspci!)
+        runBuildScripts("dspci", arguments)
+        MyLog(arguments)
         pciTableView.target = self
+        pciTableView.delegate = self
+        pciTableView.dataSource = self
         pciTableView.action = #selector(tableViewClick(_:))
         pciTableView.doubleAction = #selector(tableViewDoubleClick(_:))
     }
     
     @objc func tableViewClick(_ sender: AnyObject) {
-        pciTextView.string = ""
-        pciTextView.string.append("供应商id" + "\t" + "\t" + pci[pciTableView.selectedRow].vid + "\n")
-        pciTextView.string.append("设备id" + "\t" + "\t" + pci[pciTableView.selectedRow].pid + "\n")
-        pciTextView.string.append("ioreg地址" + "\t" + "\t" + pci[pciTableView.selectedRow].ioreg + "\n")
-        pciTextView.string.append("设备地址" + "\t" + "\t" + pci[pciTableView.selectedRow].devicepath)
+        value = ["0x" + pci![pciTableView.selectedRow].ID.VendorID.uppercased(), "0x" + pci![pciTableView.selectedRow].ID.DeviceID.uppercased(), pci![pciTableView.selectedRow].Info.Vendor, pci![pciTableView.selectedRow].Class.ClassName, pci![pciTableView.selectedRow].Info.Name, ioregArr[pciTableView.selectedRow], devicepathArr[pciTableView.selectedRow]]
+        infoTableView.reloadData()
+
+    }
+    
+    @objc func refresh() {
+        value = []
+        pciTableView.reloadData()
+        infoTableView.reloadData()
+        ioregTextField.stringValue = ""
+        var arguments: [String] = []
+        arguments.append(dspci!)
+        runBuildScripts("dspci", arguments)
     }
     
     @objc func tableViewDoubleClick(_ sender: AnyObject) {
-        let pasteBoard = NSPasteboard.general
-        pasteBoard.clearContents()
-        pasteBoard.setString(pci[pciTableView.selectedRow].devicepath, forType: .string)
-        copyTextView.string = pci[pciTableView.selectedRow].devicepath
-        let alert = NSAlert()
-        alert.messageText = "已复制到剪贴板"
-        alert.runModal()
+        if pciTableView.selectedRow != -1 {
+            let pasteBoard = NSPasteboard.general
+            pasteBoard.clearContents()
+            pasteBoard.setString(devicepathArr[pciTableView.selectedRow], forType: .string)
+            ioregTextField.stringValue = devicepathArr[pciTableView.selectedRow]
+            let alert = NSAlert()
+            alert.messageText = "已复制到剪贴板"
+            alert.runModal()
+        }
     }
     
     func runBuildScripts(_ shell: String, _ arguments: [String]) {
@@ -80,7 +112,7 @@ class ViewControllerPCI: NSViewController {
                     let outputPipe = Pipe()
                     outputPipe.fileHandleForReading.readabilityHandler = { handle in
                         let data = handle.readDataToEndOfFile()
-                        if data.count > 0 {
+                        //if data.count > 0 {
                             let outputString = String(data: data, encoding: String.Encoding.utf8) ?? ""
                             OperationQueue.main.addOperation { [weak self] in
                                 guard let `self` = self else { return }
@@ -88,24 +120,51 @@ class ViewControllerPCI: NSViewController {
                                 let previousOutput = self.output
                                 let nextOutput = previousOutput + outputString
                                 self.output = nextOutput
-                                if shell == "pci" {
+                                if shell == "dspci" {
+                                    if let jsonData = (self.output as NSString).data(using: String.Encoding.utf8.rawValue) {
+                                        self.pci = try? JSONDecoder().decode([PCI].self, from: jsonData as Data)
+                                        self.pci = self.pci!.sorted(by: { $0.BDF < $1.BDF })
+                                        MyLog(self.pci)
+                                        for i in 0..<self.pci!.count {
+                                            self.BDF.append(self.pci![i].BDF)
+                                            if i != self.pci!.count - 1 {
+                                                self.BDF.append(",")
+                                            }
+                                        }
+                                        MyLog(self.BDF)
+                                        var arguments: [String] = []
+                                        arguments.append(self.gfxutil!)
+                                        arguments.append(self.BDF)
+                                        self.runBuildScripts("pcipath", arguments)
+                                    }
+                                }
+                                
+                                if shell == "pcipath" {
                                     MyLog(self.output)
-                                    self.pciArray = self.output.components(separatedBy: "\n")
-                                    if self.pciArray.last == "" {
-                                        self.pciArray.removeLast()
+                                    var pathArr = self.output.components(separatedBy: "\n")
+                                    if pathArr.first == "" {
+                                        pathArr.removeFirst()
                                     }
-                                    if self.pciArray.first == "" {
-                                        self.pciArray.removeFirst()
+                                    if pathArr.last == "" {
+                                        pathArr.removeLast()
                                     }
-                                    for item in self.pciArray {
-                                        let pciFinal = item.trimmingCharacters(in: .whitespaces).components(separatedBy: " ")
-                                        self.pci.append(PCI("0x" + pciFinal[0].uppercased(), "0x" + pciFinal[1].uppercased(), pciFinal[2], pciFinal[3]))
+                                    for path in pathArr {
+                                        var FinalArr = path.components(separatedBy: " = ")
+                                        if FinalArr.first == "" {
+                                            FinalArr.removeFirst()
+                                        }
+                                        if FinalArr.last == "" {
+                                            FinalArr.removeLast()
+                                        }
+                                        self.ioregArr.append(FinalArr[0].replacingOccurrences(of: "\n", with: ""))
+                                        self.devicepathArr.append(FinalArr[1].replacingOccurrences(of: "\n", with: ""))
                                     }
                                     self.pciTableView.reloadData()
                                 }
+                                
                                 self.lock.unlock()
                             }
-                        } else if (data.count == 0 && !task.isRunning) {
+                            if (!task.isRunning) {
                             handle.readabilityHandler = nil
                         }
                     }
@@ -123,57 +182,114 @@ class ViewControllerPCI: NSViewController {
 }
 
 extension ViewControllerPCI: NSTableViewDataSource {
-    
+
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return pci.count
+        if tableView == self.pciTableView {
+            return pci?.count ?? 0
+        }
+        else {
+            return keys.count
+        }
     }
+
 }
 
 extension ViewControllerPCI: NSTableViewDelegate {
-    
+
     func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
         return true
     }
-    
+
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        
-        if tableColumn != nil {
-            let identifier = tableColumn!.identifier.rawValue
-            switch identifier {
-            case "vid":
-                let textField = NSTextField()
-                textField.cell = VerticallyCenteredTextFieldCell()
-                textField.stringValue = self.pci[row].vid
-                textField.alignment = .left
-                textField.isBordered = false
-            return textField
-            case "pid":
-                let textField = NSTextField()
-                textField.cell = VerticallyCenteredTextFieldCell()
-                textField.stringValue = self.pci[row].pid
-                textField.alignment = .left
-                textField.isBordered = false
-            return textField
-            case "ioreg":
-                let textField = NSTextField()
-                textField.cell = VerticallyCenteredTextFieldCell()
-                textField.stringValue = self.pci[row].ioreg
-                textField.alignment = .left
-                textField.isBordered = false
+
+        if tableView == self.pciTableView {
+            if tableColumn != nil {
+                let identifier = tableColumn!.identifier.rawValue
+                switch identifier {
+                case "vid":
+                    let textField = NSTextField()
+                    textField.cell = VerticallyCenteredTextFieldCell()
+                    textField.stringValue = "0x" + self.pci![row].ID.VendorID.uppercased()
+                    textField.alignment = .left
+                    textField.isBordered = false
                 return textField
-            case "devicepath":
-                let textField = NSTextField()
-                textField.cell = VerticallyCenteredTextFieldCell()
-                textField.stringValue = self.pci[row].devicepath
-                textField.alignment = .left
-                textField.isBordered = false
+                case "pid":
+                    let textField = NSTextField()
+                    textField.cell = VerticallyCenteredTextFieldCell()
+                    textField.stringValue = "0x" + self.pci![row].ID.DeviceID.uppercased()
+                    textField.alignment = .left
+                    textField.isBordered = false
                 return textField
-            
-            default:
-                return nil
+                case "vendor":
+                    let textField = NSTextField()
+                    textField.cell = VerticallyCenteredTextFieldCell()
+                    textField.stringValue = self.pci![row].Info.Vendor
+                    textField.alignment = .left
+                    textField.isBordered = false
+                return textField
+                case "type":
+                    let textField = NSTextField()
+                    textField.cell = VerticallyCenteredTextFieldCell()
+                    textField.stringValue = self.pci![row].Class.ClassName
+                    textField.alignment = .left
+                    textField.isBordered = false
+                    return textField
+                case "model":
+                    let textField = NSTextField()
+                    textField.cell = VerticallyCenteredTextFieldCell()
+                    textField.stringValue = self.pci![row].Info.Name
+                    textField.alignment = .left
+                    textField.isBordered = false
+                    return textField
+                case "ioreg":
+                    let textField = NSTextField()
+                    textField.cell = VerticallyCenteredTextFieldCell()
+                    textField.stringValue = self.ioregArr[row]
+                    textField.alignment = .left
+                    textField.isBordered = false
+                    return textField
+                case "devicepath":
+                    let textField = NSTextField()
+                    textField.cell = VerticallyCenteredTextFieldCell()
+                    textField.stringValue = self.devicepathArr[row]
+                    textField.alignment = .left
+                    textField.isBordered = false
+                    return textField
+
+                default:
+                    return nil
+                }
             }
+            return nil
         }
-        return nil
+        else {
+            if tableColumn != nil {
+                let identifier = tableColumn!.identifier.rawValue
+                switch identifier {
+                case "keys":
+                    if value != [] {
+                        let textField = NSTextField()
+                            textField.cell = VerticallyCenteredTextFieldCell()
+                            textField.stringValue = self.keys[row]
+                            textField.alignment = .left
+                            textField.isBordered = false
+                        return textField
+                    }
+                case "values":
+                    if value != [] {
+                        let textField = NSTextField()
+                            textField.cell = VerticallyCenteredTextFieldCell()
+                            textField.stringValue = self.value[row]
+                            textField.alignment = .left
+                            textField.isBordered = false
+                        return textField
+                    }
+                default:
+                    return nil
+                }
+            }
+            return nil
+        }
+
     }
 }
-

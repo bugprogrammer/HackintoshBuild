@@ -11,8 +11,7 @@ import Cocoa
 class ViewControllerOther: NSViewController {
     
     @IBOutlet weak var sipLable: NSTextField!
-    @IBOutlet var output: NSTextView!
-    @IBOutlet var progressBar: NSProgressIndicator!
+    @IBOutlet var textview: NSTextView!
     @IBOutlet weak var unclockButton: NSButton!
     @IBOutlet weak var rebuildButton: NSButton!
     @IBOutlet weak var spctlButton: NSButton!
@@ -23,8 +22,6 @@ class ViewControllerOther: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
-        progressBar.isHidden = true
         spctlButton.isEnabled = true
         
         guard let enabled = isSIPStatusEnabled else {
@@ -49,8 +46,7 @@ class ViewControllerOther: NSViewController {
     
     @IBAction func unlockSLE(_ sender: Any) {
         
-        output.string = ""
-        progressBar.isHidden = true
+        textview.string = ""
         
         if #available(OSX 10.15, *) {
             runBuildScripts("unlockSLE", [], "SLE 解锁成功")
@@ -62,44 +58,37 @@ class ViewControllerOther: NSViewController {
     }
     
     @IBAction func rebuildCache(_ sender: Any) {
-        progressBar.isHidden = false
-        output.string = ""
-        self.progressBar.startAnimation(self)
+        textview.string = ""
         
         runBuildScripts("rebuildCache", [], "修复权限以及重建缓存成功")
     }
     
     @IBAction func spctl(_ sender: Any) {
-        output.string = ""
-        progressBar.isHidden = true
+        textview.string = ""
         
         runBuildScripts("spctl", [], "已开启未知来源安装")
     }
         
     @IBAction func timeMachineOptimize(_ sender: Any) {
-        output.string = ""
-        progressBar.isHidden = true
+        textview.string = ""
         
         runBuildScripts("timeMachine", ["0"], "时间机器已经满血运行，注意：如果用NAS备份，请使用AFP协议")
     }
     
     @IBAction func timeMachineReset(_ sender: Any) {
-        output.string = ""
-        progressBar.isHidden = true
+        textview.string = ""
         
         runBuildScripts("timeMachine", ["1"], "时间机器已经恢复默认状态")
     }
         
     @IBAction func showFiles(_ sender: Any) {
-        output.string = ""
-        progressBar.isHidden = true
+        textview.string = ""
         
         runBuildScripts("showhiddenFiles", ["true"], "已显示隐藏文件")
     }
     
     @IBAction func hiddenFiles(_ sender: Any) {
-        output.string = ""
-        progressBar.isHidden = true
+        textview.string = ""
         
         runBuildScripts("showhiddenFiles", ["false"], "隐藏文件状态已恢复")
     }
@@ -115,13 +104,15 @@ class ViewControllerOther: NSViewController {
                 task.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
-                        self.progressBar.isHidden = true
-                        self.progressBar.stopAnimation(self)
-                        self.progressBar.doubleValue = 0.0
                         AraHUDViewController.shared.hideHUD()
-                        
+                            
                         let alert = NSAlert()
-                        alert.messageText = alertText
+                        if self.textview.string != "" {
+                            alert.messageText = alertText
+                        }
+                        else {
+                            alert.messageText = "操作失败"
+                        }
                         alert.runModal()
                     })
                 }
@@ -143,12 +134,11 @@ class ViewControllerOther: NSViewController {
                 outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
                 let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
                 DispatchQueue.main.async(execute: {
-                    let previousOutput = self.output.string
+                    let previousOutput = self.textview.string
                     let nextOutput = previousOutput + "\n" + outputString
-                    self.output.string = nextOutput
+                    self.textview.string = nextOutput
                     let range = NSRange(location:nextOutput.count,length:0)
-                    self.output.scrollRangeToVisible(range)
-                    self.progressBar.increment(by: 1.9)
+                    self.textview.scrollRangeToVisible(range)
                 })
             }
         }

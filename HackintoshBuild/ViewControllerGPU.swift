@@ -41,6 +41,7 @@ class ViewControllerGPU: NSViewController {
         exportButton.bezelStyle = .recessed
         exportButton.image = image
         exportButton.isEnabled = false
+        exportButton.toolTip = "导出显卡优化文件"
         if let exportURL = UserDefaults.standard.url(forKey: "exportURL") {
             if filemanager.fileExists(atPath: exportURL.path) {
                 self.exportURL.url = exportURL
@@ -165,14 +166,16 @@ class ViewControllerGPU: NSViewController {
     }
         
     @IBAction func export(_ sender: Any) {
+        var toUrl = exportPath + "/gpu_" + select + ".plist"
         if filemanager.isWritableFile(atPath: exportPath) {
-            if filemanager.fileExists(atPath: exportPath + "/gpu_" + select + ".plist") {
-                try! filemanager.copyItem(atPath: exportPath + "/gpu_" + select + ".plist", toPath: exportPath + "/gpu_" + select + Date().milliStamp + ".plist")
+            if filemanager.fileExists(atPath: toUrl) {
+                toUrl = toUrl.replacingOccurrences(of: ".plist", with: "_" + Date().milliStamp + ".plist")
+                try! filemanager.copyItem(atPath: pathPlist!, toPath: toUrl)
             }
             else {
-                try! filemanager.copyItem(atPath: pathPlist!, toPath: exportPath + "/gpu_" + select + ".plist")
+                try! filemanager.copyItem(atPath: pathPlist!, toPath: toUrl)
             }
-            NSWorkspace.shared.activateFileViewerSelecting([URL(fileURLWithPath: exportPath + "/gpu_" + select + ".plist")])
+            NSWorkspace.shared.activateFileViewerSelecting([URL(fileURLWithPath: toUrl)])
         }
         else {
             let alert = NSAlert()

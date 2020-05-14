@@ -48,11 +48,13 @@ class ViewControllerDisk: NSViewController {
     
     override func viewWillAppear() {
         super.viewWillAppear()
-        let image = MyAsset.refresh.image
-        image.isTemplate = true
+        let image = NSImage(named: "NSRefreshFreestandingTemplate")
+        image?.size = CGSize(width: 64.0, height: 64.0)
+        image!.isTemplate = true
         refreshButton.image = image
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
+        refreshButton.toolTip = "刷新EFI列表"
         if flag == 0 {
             refreshButton.isEnabled = false
             arrayPartition = []
@@ -250,11 +252,13 @@ extension ViewControllerDisk: NSTableViewDelegate {
                     let image = MyAsset.mount.image
                     image.isTemplate = true
                     button.image = image
+                    button.toolTip = "挂着当前EFI分区"
                 }
                 else {
                     let image = MyAsset.unmount.image
                     image.isTemplate = true
                     button.image = image
+                    button.toolTip = "卸载当前EFI分区"
                 }
                 button.tag = self.diskInfoObject[row].mounted == "未挂载" ? 0 : 1
                 return button
@@ -270,6 +274,7 @@ extension ViewControllerDisk: NSTableViewDelegate {
                 if self.diskInfoObject[row].mounted == "未挂载" {
                     button.isEnabled = false
                 }
+                button.toolTip = "打开当前EFI分区"
                 return button
             default:
                 return nil

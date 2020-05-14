@@ -19,12 +19,6 @@ class ViewControllerAppleIntelInfo: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        refreshButton.isEnabled = false
-        let image = MyAsset.refresh1.image
-        image.isTemplate = true
-        refreshButton.image = image
-        refreshButton.bezelStyle = .recessed
-        refreshButton.isBordered = false
         
         guard let enabled = isSIPStatusEnabled else {
             sipLabel.textColor = NSColor.red
@@ -39,6 +33,17 @@ class ViewControllerAppleIntelInfo: NSViewController {
             sipLabel.stringValue = "SIP 已关闭"
             runBuildScripts("AppleIntelInfo", [url!])
         }
+    }
+    
+    override func viewWillAppear() {
+        refreshButton.isEnabled = false
+        let image = NSImage(named: "NSRefreshFreestandingTemplate")
+        image?.size = CGSize(width: 20.0, height: 20.0)
+        image!.isTemplate = true
+        refreshButton.image = image
+        refreshButton.bezelStyle = .recessed
+        refreshButton.isBordered = false
+        refreshButton.toolTip = "刷新AppleIntelInfo信息"
     }
     
     @IBAction func Refresh(_ sender: Any) {

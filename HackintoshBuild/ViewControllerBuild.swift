@@ -70,12 +70,14 @@ class ViewControllerBuild: NSViewController {
         buildButton.image = imagebuild
         buildButton.isBordered = false
         buildButton.bezelStyle = .recessed
+        buildButton.toolTip = "编译"
         
         let imagestop = NSImage(named: "NSTouchBarRecordStopTemplate")
         imagestop?.isTemplate = true
         stopButton.image = imagestop
         stopButton.isBordered = false
         stopButton.bezelStyle = .recessed
+        stopButton.toolTip = "停止"
         
         proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
         proxyTextField.delegate = self

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,11 +20,16 @@
 		11A5716A23D6EBAC00437951 /* GitHubUpdates.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11A5716823D6EB4200437951 /* GitHubUpdates.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11D5C27823D1B11300461A78 /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27723D1B11300461A78 /* BaseWindowController.swift */; };
 		11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27923D1B63700461A78 /* MyAsset.swift */; };
-		6A046F2A242F40C3004FFFD5 /* pci.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A046F29242F40C3004FFFD5 /* pci.command */; };
 		6A046F2E242F4170004FFFD5 /* ViewControllerPCI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A046F2D242F4170004FFFD5 /* ViewControllerPCI.swift */; };
 		6A046F35242F8747004FFFD5 /* ViewControllerGPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A046F34242F8747004FFFD5 /* ViewControllerGPU.swift */; };
 		6A0D773D23C7A917003F5C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0D773C23C7A744003F5C3A /* Main.storyboard */; };
 		6A0DC962241041E3000E9775 /* openEFI.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A0DC961241041E3000E9775 /* openEFI.command */; };
+		6A188A3824619E8500CBE5B7 /* ViewControllerOpenCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A188A3724619E8500CBE5B7 /* ViewControllerOpenCore.swift */; };
+		6A188A3E2461C87700CBE5B7 /* syncDatas.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A188A3D2461C87700CBE5B7 /* syncDatas.command */; };
+		6A188A4124624D3900CBE5B7 /* SwiftyMarkdown in Frameworks */ = {isa = PBXBuildFile; productRef = 6A188A4024624D3900CBE5B7 /* SwiftyMarkdown */; };
+		6A188A4A2464EA9500CBE5B7 /* dspci.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A188A492464EA9500CBE5B7 /* dspci.command */; };
+		6A188A4C2464F94700CBE5B7 /* pcipath.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A188A4B2464F94700CBE5B7 /* pcipath.command */; };
+		6A188AAB24659CC200CBE5B7 /* ViewControllerCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A188AAA24659CC200CBE5B7 /* ViewControllerCompare.swift */; };
 		6A1E571C23F31AB5004E8430 /* ViewControllerIoreg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1E571B23F31AB5004E8430 /* ViewControllerIoreg.swift */; };
 		6A20F6B223F80BA700E69F60 /* OCVersion.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A20F6B123F80BA700E69F60 /* OCVersion.command */; };
 		6A21D45923EE869B007D7CE9 /* timeMachine.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A21D45623EE869B007D7CE9 /* timeMachine.command */; };
@@ -44,6 +49,7 @@
 		6A54B4752408159A000BCFE7 /* showhiddenFiles.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A54B4742408159A000BCFE7 /* showhiddenFiles.command */; };
 		6A5F0DF024311AAE002C6865 /* paths.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A5F0DEF24311AAE002C6865 /* paths.command */; };
 		6A5F0DF224311B61002C6865 /* ports.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A5F0DF124311B61002C6865 /* ports.command */; };
+		6A6B939D2469ADE800562B96 /* mergely in Resources */ = {isa = PBXBuildFile; fileRef = 6A6B939C2469ADE800562B96 /* mergely */; };
 		6A723DE8240BEE30007EB3AD /* systeminfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A723DE7240BEE30007EB3AD /* systeminfo.command */; };
 		6A723E11240C1D94007EB3AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A723E13240C1D94007EB3AD /* Localizable.strings */; };
 		6A723E18240E71DE007EB3AD /* diskUnmount.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A723E17240E71DE007EB3AD /* diskUnmount.command */; };
@@ -69,6 +75,8 @@
 		6AB7A19E2434AD2800BA8690 /* printPlist.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AB7A19D2434AD2800BA8690 /* printPlist.command */; };
 		6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AB8B6FB23D582FC00A993C5 /* spctl.command */; };
 		6AC3982123EA94820090A56A /* kextInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AC3982023EA94820090A56A /* kextInfo.command */; };
+		6AC473B92456EF49001C9F17 /* macserial.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AC473B82456EF49001C9F17 /* macserial.command */; };
+		6AC473BB245751E9001C9F17 /* ViewControllerSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC473BA245751E9001C9F17 /* ViewControllerSerial.swift */; };
 		6AD2F3B1241BAABE00E0609F /* openFinder.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AD2F3B0241BAABE00E0609F /* openFinder.command */; };
 		6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */; };
 		6ADAEFA623C23DA5008ECF4B /* ViewControllerBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */; };
@@ -133,11 +141,15 @@
 		11A5716323D6EB4200437951 /* GitHubUpdates.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GitHubUpdates.xcodeproj; path = SDK/GitHubUpdates/GitHubUpdates.xcodeproj; sourceTree = SOURCE_ROOT; };
 		11D5C27723D1B11300461A78 /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
 		11D5C27923D1B63700461A78 /* MyAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsset.swift; sourceTree = "<group>"; };
-		6A046F29242F40C3004FFFD5 /* pci.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = pci.command; sourceTree = "<group>"; };
 		6A046F2D242F4170004FFFD5 /* ViewControllerPCI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPCI.swift; sourceTree = "<group>"; };
 		6A046F34242F8747004FFFD5 /* ViewControllerGPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerGPU.swift; sourceTree = "<group>"; };
 		6A0D773C23C7A744003F5C3A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A0DC961241041E3000E9775 /* openEFI.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = openEFI.command; sourceTree = "<group>"; };
+		6A188A3724619E8500CBE5B7 /* ViewControllerOpenCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerOpenCore.swift; sourceTree = "<group>"; };
+		6A188A3D2461C87700CBE5B7 /* syncDatas.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = syncDatas.command; sourceTree = "<group>"; };
+		6A188A492464EA9500CBE5B7 /* dspci.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = dspci.command; sourceTree = "<group>"; };
+		6A188A4B2464F94700CBE5B7 /* pcipath.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = pcipath.command; sourceTree = "<group>"; };
+		6A188AAA24659CC200CBE5B7 /* ViewControllerCompare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCompare.swift; sourceTree = "<group>"; };
 		6A1E571B23F31AB5004E8430 /* ViewControllerIoreg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerIoreg.swift; sourceTree = "<group>"; };
 		6A20F6B123F80BA700E69F60 /* OCVersion.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = OCVersion.command; sourceTree = "<group>"; };
 		6A21D45623EE869B007D7CE9 /* timeMachine.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = timeMachine.command; sourceTree = "<group>"; };
@@ -155,6 +167,7 @@
 		6A54B4742408159A000BCFE7 /* showhiddenFiles.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = showhiddenFiles.command; sourceTree = "<group>"; };
 		6A5F0DEF24311AAE002C6865 /* paths.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = paths.command; sourceTree = "<group>"; };
 		6A5F0DF124311B61002C6865 /* ports.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = ports.command; sourceTree = "<group>"; };
+		6A6B939C2469ADE800562B96 /* mergely */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mergely; sourceTree = "<group>"; };
 		6A723DE7240BEE30007EB3AD /* systeminfo.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = systeminfo.command; sourceTree = "<group>"; };
 		6A723E12240C1D94007EB3AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6A723E16240C1DD0007EB3AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -180,6 +193,8 @@
 		6AB7A19D2434AD2800BA8690 /* printPlist.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = printPlist.command; sourceTree = "<group>"; };
 		6AB8B6FB23D582FC00A993C5 /* spctl.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = spctl.command; sourceTree = "<group>"; };
 		6AC3982023EA94820090A56A /* kextInfo.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kextInfo.command; sourceTree = "<group>"; };
+		6AC473B82456EF49001C9F17 /* macserial.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = macserial.command; sourceTree = "<group>"; };
+		6AC473BA245751E9001C9F17 /* ViewControllerSerial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSerial.swift; sourceTree = "<group>"; };
 		6AD2F3B0241BAABE00E0609F /* openFinder.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = openFinder.command; sourceTree = "<group>"; };
 		6ADAEFA023C23DA5008ECF4B /* HackintoshBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackintoshBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +218,7 @@
 				6A7AC9E3242E32570008A43A /* Highlightr.framework in Frameworks */,
 				6A87220523F5B4C100D77EEF /* WebKit.framework in Frameworks */,
 				11A5716923D6EBAC00437951 /* GitHubUpdates.framework in Frameworks */,
+				6A188A4124624D3900CBE5B7 /* SwiftyMarkdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +269,24 @@
 		6A046F28242F408F004FFFD5 /* PCI */ = {
 			isa = PBXGroup;
 			children = (
-				6A046F29242F40C3004FFFD5 /* pci.command */,
+				6A188A492464EA9500CBE5B7 /* dspci.command */,
+				6A188A4B2464F94700CBE5B7 /* pcipath.command */,
 			);
 			path = PCI;
+			sourceTree = "<group>";
+		};
+		6A188A3C2461C60E00CBE5B7 /* OpenCore */ = {
+			isa = PBXGroup;
+			children = (
+				6A188A3D2461C87700CBE5B7 /* syncDatas.command */,
+			);
+			path = OpenCore;
 			sourceTree = "<group>";
 		};
 		6A1A664323D1E824009E24EC /* Command */ = {
 			isa = PBXGroup;
 			children = (
+				6A188A3C2461C60E00CBE5B7 /* OpenCore */,
 				6A48CC46244CC0B600AFC97A /* downloados */,
 				6A5F0DEE24311A98002C6865 /* GPU */,
 				6A046F28242F408F004FFFD5 /* PCI */,
@@ -338,6 +364,7 @@
 		6A3FDF0D242720160078BE86 /* About */ = {
 			isa = PBXGroup;
 			children = (
+				6AC473B82456EF49001C9F17 /* macserial.command */,
 				6A8E53D023F40289001E59D3 /* AppleIntelInfo.command */,
 				6A723DE7240BEE30007EB3AD /* systeminfo.command */,
 				6AD2F3B0241BAABE00E0609F /* openFinder.command */,
@@ -388,6 +415,8 @@
 				6A817EB5240ABEF4003224DE /* ViewControllerUpdate.swift */,
 				6A817EAD240AB70E003224DE /* TabViewControllerInfo.swift */,
 				6A046F2D242F4170004FFFD5 /* ViewControllerPCI.swift */,
+				6AC473BA245751E9001C9F17 /* ViewControllerSerial.swift */,
+				6A188A3724619E8500CBE5B7 /* ViewControllerOpenCore.swift */,
 			);
 			path = TabViewController;
 			sourceTree = "<group>";
@@ -412,6 +441,7 @@
 		6ADAEFA223C23DA5008ECF4B /* HackintoshBuild */ = {
 			isa = PBXGroup;
 			children = (
+				6A6B939C2469ADE800562B96 /* mergely */,
 				6A2468022441B647001B7D29 /* plists */,
 				6A2468002441B4F1001B7D29 /* tools */,
 				6A7AC9D9242E324B0008A43A /* Highlightr.xcodeproj */,
@@ -430,6 +460,7 @@
 				6A1E571B23F31AB5004E8430 /* ViewControllerIoreg.swift */,
 				6A046F34242F8747004FFFD5 /* ViewControllerGPU.swift */,
 				6A8E38D024362F4D00A09CE7 /* ViewControllerOS.swift */,
+				6A188AAA24659CC200CBE5B7 /* ViewControllerCompare.swift */,
 				6A817EB7240ABF17003224DE /* TabViewController */,
 				6A0D773C23C7A744003F5C3A /* Main.storyboard */,
 				11D5C27B23D1B63A00461A78 /* Supporting Files */,
@@ -474,6 +505,9 @@
 			dependencies = (
 			);
 			name = HackintoshBuild;
+			packageProductDependencies = (
+				6A188A4024624D3900CBE5B7 /* SwiftyMarkdown */,
+			);
 			productName = HackintoshBuild;
 			productReference = 6ADAEFA023C23DA5008ECF4B /* HackintoshBuild.app */;
 			productType = "com.apple.product-type.application";
@@ -503,6 +537,9 @@
 				"zh-Hans",
 			);
 			mainGroup = 6ADAEF9723C23DA5008ECF4B;
+			packageReferences = (
+				6A188A3F24624D3900CBE5B7 /* XCRemoteSwiftPackageReference "SwiftyMarkdown" */,
+			);
 			productRefGroup = 6ADAEFA123C23DA5008ECF4B /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -554,11 +591,14 @@
 				6A4B7E8B23F9B63300A6EFFF /* alipay.jpg in Resources */,
 				6A5F0DF224311B61002C6865 /* ports.command in Resources */,
 				6A4B7E8C23F9B63300A6EFFF /* wechatpay.jpg in Resources */,
+				6A6B939D2469ADE800562B96 /* mergely in Resources */,
 				6AD2F3B1241BAABE00E0609F /* openFinder.command in Resources */,
 				6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */,
 				6A36D49823F85BD500CD042B /* CloverVersion.command in Resources */,
 				6A723E18240E71DE007EB3AD /* diskUnmount.command in Resources */,
+				6AC473B92456EF49001C9F17 /* macserial.command in Resources */,
 				6A723DE8240BEE30007EB3AD /* systeminfo.command in Resources */,
+				6A188A4C2464F94700CBE5B7 /* pcipath.command in Resources */,
 				6A0D773D23C7A917003F5C3A /* Main.storyboard in Resources */,
 				6AAFC6902414CD550059A609 /* kextscurrentVersion.command in Resources */,
 				6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */,
@@ -576,13 +616,14 @@
 				6A48CC53244CC1ED00AFC97A /* versionInfo.command in Resources */,
 				6A0DC962241041E3000E9775 /* openEFI.command in Resources */,
 				6AEBA71B2427C4550062DFD3 /* nvram.command in Resources */,
+				6A188A4A2464EA9500CBE5B7 /* dspci.command in Resources */,
 				6A21D45923EE869B007D7CE9 /* timeMachine.command in Resources */,
 				6A48CC50244CC1ED00AFC97A /* makeInstaller.command in Resources */,
 				6A4A9FA323E59F86008D8EF8 /* sipStatus.command in Resources */,
 				116D2D8B23D6C528001FED06 /* unlockSLE.command in Resources */,
 				6A2468032441B647001B7D29 /* plists in Resources */,
+				6A188A3E2461C87700CBE5B7 /* syncDatas.command in Resources */,
 				6A8E53D123F40289001E59D3 /* AppleIntelInfo.command in Resources */,
-				6A046F2A242F40C3004FFFD5 /* pci.command in Resources */,
 				6A723E11240C1D94007EB3AD /* Localizable.strings in Resources */,
 				6A54B4752408159A000BCFE7 /* showhiddenFiles.command in Resources */,
 				117B27B023E9485C00581352 /* AraHUDView.xib in Resources */,
@@ -602,13 +643,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A188AAB24659CC200CBE5B7 /* ViewControllerCompare.swift in Sources */,
 				6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */,
+				6A188A3824619E8500CBE5B7 /* ViewControllerOpenCore.swift in Sources */,
 				117B27B423E957C600581352 /* AraHUDView.swift in Sources */,
 				6A8E38D124362F4D00A09CE7 /* ViewControllerOS.swift in Sources */,
 				6AE76A6523F9AC7C00B931F1 /* ViewControllerPay.swift in Sources */,
 				6A817EAE240AB70E003224DE /* TabViewControllerInfo.swift in Sources */,
 				1193974C23D1C7BA0096297C /* MyLog.swift in Sources */,
 				1158FAB023D6E1610095FED5 /* main.swift in Sources */,
+				6AC473BB245751E9001C9F17 /* ViewControllerSerial.swift in Sources */,
 				6A427D1323E459BD00A0B4E3 /* ViewControllerLock.swift in Sources */,
 				6ADAEFA623C23DA5008ECF4B /* ViewControllerBuild.swift in Sources */,
 				11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */,
@@ -764,10 +808,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HackintoshBuild/HackintoshBuild.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -780,7 +824,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.9;
+				MARKETING_VERSION = 2.0;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -794,10 +838,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HackintoshBuild/HackintoshBuild.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -810,7 +854,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 1.9;
+				MARKETING_VERSION = 2.0;
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -841,6 +885,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A188A3F24624D3900CBE5B7 /* XCRemoteSwiftPackageReference "SwiftyMarkdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimonFairbairn/SwiftyMarkdown";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A188A4024624D3900CBE5B7 /* SwiftyMarkdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A188A3F24624D3900CBE5B7 /* XCRemoteSwiftPackageReference "SwiftyMarkdown" */;
+			productName = SwiftyMarkdown;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6ADAEF9823C23DA5008ECF4B /* Project object */;
 }

@@ -54,12 +54,14 @@ class ViewControllerEFI: NSViewController {
         efiStartButton.image = imagebuild
         efiStartButton.isBordered = false
         efiStartButton.bezelStyle = .recessed
+        efiStartButton.toolTip = "获取EFI"
         
         let imagestop = NSImage(named: "NSTouchBarRecordStopTemplate")
         imagestop?.isTemplate = true
         efiStopButton.image = imagestop
         efiStopButton.isBordered = false
         efiStopButton.bezelStyle = .recessed
+        efiStopButton.toolTip = "停止"
         
         proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
         proxyTextField.delegate = self

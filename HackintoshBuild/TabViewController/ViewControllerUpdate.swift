@@ -75,28 +75,6 @@ class ViewControllerUpdate: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let refresh = MyAsset.refresh.image
-        let downloadAll = MyAsset.downloadAll.image
-        let open = MyAsset.open1.image
-        refresh.isTemplate = true
-        downloadAll.isTemplate = true
-        open.isTemplate = true
-        refreshButton.image = refresh
-        refreshButton.bezelStyle = .recessed
-        refreshButton.isBordered = false
-        refreshButton.isEnabled = false
-        refreshButton.toolTip = "刷新"
-        downloadButton.image = downloadAll
-        downloadButton.isBordered = false
-        downloadButton.bezelStyle = .recessed
-        downloadButton.isEnabled = false
-        downloadButton.toolTip = "下载"
-        openButton.image = open
-        openButton.bezelStyle = .recessed
-        openButton.isBordered = false
-        openButton.isEnabled = false
-        openButton.toolTip = "打开下载目录"
-        selectAllButton.isEnabled = false
         
         tableview.tableColumns.forEach { (column) in
             column.headerCell.alignment = .center
@@ -123,6 +101,29 @@ class ViewControllerUpdate: NSViewController {
         super.viewWillAppear()
         
         proxyTextField.stringValue = proxy ?? ""
+        let refresh = NSImage(named: "NSRefreshFreestandingTemplate")
+        let downloadAll = MyAsset.downloadAll.image
+        let open = MyAsset.open1.image
+        refresh!.isTemplate = true
+        refresh?.size = NSSize(width: 64.0, height: 64.0)
+        downloadAll.isTemplate = true
+        open.isTemplate = true
+        refreshButton.image = refresh
+        refreshButton.bezelStyle = .recessed
+        refreshButton.isBordered = false
+        refreshButton.isEnabled = false
+        refreshButton.toolTip = "刷新"
+        downloadButton.image = downloadAll
+        downloadButton.isBordered = false
+        downloadButton.bezelStyle = .recessed
+        downloadButton.isEnabled = false
+        downloadButton.toolTip = "下载"
+        openButton.image = open
+        openButton.bezelStyle = .recessed
+        openButton.isBordered = false
+        openButton.isEnabled = false
+        openButton.toolTip = "打开下载目录"
+        selectAllButton.isEnabled = false
     }
     
     @objc func CheckClicked(_ sender: NSButton) {
