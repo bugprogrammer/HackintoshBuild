@@ -121,9 +121,15 @@ for i in ${selectedArray[*]}; do
         else
             ./macbuild.tool >> $logs || exit 1
         fi
-        cp Binaries/RELEASE/*.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
+        if [ -e Binaries/RELEASE/ ]; then
+            cp Binaries/RELEASE/*.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
 
-        cp Binaries/DEBUG/*.zip ../../Release/${buildArray[$i]%,*}/Debug >> $logs || exit 1
+            cp Binaries/DEBUG/*.zip ../../Release/${buildArray[$i]%,*}/Debug >> $logs || exit 1
+        else
+            cp Binaries/*-RELEASE.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
+
+            cp Binaries/*-DEBUG.zip ../../Release/${buildArray[$i]%,*}/Debug >> $logs || exit 1
+        fi
 
         echo ${buildArray[$i]%,*}"编译成功"
     else

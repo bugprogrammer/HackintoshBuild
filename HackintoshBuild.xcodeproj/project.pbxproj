@@ -66,6 +66,7 @@
 		6A8E38D124362F4D00A09CE7 /* ViewControllerOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E38D024362F4D00A09CE7 /* ViewControllerOS.swift */; };
 		6A8E53D123F40289001E59D3 /* AppleIntelInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E53D023F40289001E59D3 /* AppleIntelInfo.command */; };
 		6A94A5E2244CDE7C0084A93D /* exit.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A94A5E1244CDE7C0084A93D /* exit.command */; };
+		6AA130DF24744E6F00ECD331 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AA130DB24744E6F00ECD331 /* README.md */; };
 		6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6EE0623E5859900BF15FD /* resetLockPicture.command */; };
 		6AAB654124154A0200116D13 /* kextLastest.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB654024154A0200116D13 /* kextLastest.command */; };
 		6AAB65592416C0F500116D13 /* download.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB65582416C0F500116D13 /* download.command */; };
@@ -184,6 +185,7 @@
 		6A8E38D024362F4D00A09CE7 /* ViewControllerOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerOS.swift; sourceTree = "<group>"; };
 		6A8E53D023F40289001E59D3 /* AppleIntelInfo.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppleIntelInfo.command; sourceTree = "<group>"; };
 		6A94A5E1244CDE7C0084A93D /* exit.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = exit.command; sourceTree = "<group>"; };
+		6AA130DB24744E6F00ECD331 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6AA6EE0623E5859900BF15FD /* resetLockPicture.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = resetLockPicture.command; sourceTree = "<group>"; };
 		6AAB654024154A0200116D13 /* kextLastest.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kextLastest.command; sourceTree = "<group>"; };
 		6AAB65582416C0F500116D13 /* download.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = download.command; sourceTree = "<group>"; };
@@ -424,6 +426,7 @@
 		6ADAEF9723C23DA5008ECF4B = {
 			isa = PBXGroup;
 			children = (
+				6AA130DB24744E6F00ECD331 /* README.md */,
 				6ADAEFA223C23DA5008ECF4B /* HackintoshBuild */,
 				6ADAEFA123C23DA5008ECF4B /* Products */,
 				6AECB88A23D4B7260069B099 /* Frameworks */,
@@ -596,6 +599,7 @@
 				6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */,
 				6A36D49823F85BD500CD042B /* CloverVersion.command in Resources */,
 				6A723E18240E71DE007EB3AD /* diskUnmount.command in Resources */,
+				6AA130DF24744E6F00ECD331 /* README.md in Resources */,
 				6AC473B92456EF49001C9F17 /* macserial.command in Resources */,
 				6A723DE8240BEE30007EB3AD /* systeminfo.command in Resources */,
 				6A188A4C2464F94700CBE5B7 /* pcipath.command in Resources */,
