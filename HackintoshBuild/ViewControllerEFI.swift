@@ -26,6 +26,7 @@ class ViewControllerEFI: NSViewController {
     var isRunning: Bool = false
     
     let efiList: [String] = [
+        "Z490-AORUS-ELETE+10900K+RX5700XT",
         "ASRock-Z390-itx+9900K+Vega56",
         "ASRock-Z390-itx+9900K+rx5700XT",
         "H110+8100+hd7850",

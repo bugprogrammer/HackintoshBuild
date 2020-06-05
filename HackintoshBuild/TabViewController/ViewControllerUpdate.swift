@@ -75,6 +75,13 @@ class ViewControllerUpdate: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let open = MyAsset.open1.image
+        open.isTemplate = true
+        openButton.image = open
+        openButton.bezelStyle = .recessed
+        openButton.isBordered = false
+        openButton.isEnabled = false
+        openButton.toolTip = "打开下载目录"
         
         tableview.tableColumns.forEach { (column) in
             column.headerCell.alignment = .center
@@ -103,11 +110,9 @@ class ViewControllerUpdate: NSViewController {
         proxyTextField.stringValue = proxy ?? ""
         let refresh = NSImage(named: "NSRefreshFreestandingTemplate")
         let downloadAll = MyAsset.downloadAll.image
-        let open = MyAsset.open1.image
         refresh!.isTemplate = true
         refresh?.size = NSSize(width: 64.0, height: 64.0)
         downloadAll.isTemplate = true
-        open.isTemplate = true
         refreshButton.image = refresh
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
@@ -118,11 +123,6 @@ class ViewControllerUpdate: NSViewController {
         downloadButton.bezelStyle = .recessed
         downloadButton.isEnabled = false
         downloadButton.toolTip = "下载"
-        openButton.image = open
-        openButton.bezelStyle = .recessed
-        openButton.isBordered = false
-        openButton.isEnabled = false
-        openButton.toolTip = "打开下载目录"
         selectAllButton.isEnabled = false
     }
     
@@ -246,7 +246,7 @@ class ViewControllerUpdate: NSViewController {
     func getURL(_ row: Int) -> String {
         var downloadURL: String = ""
         
-        if "BT4LEContinuityFixup RTCMemoryFixup".contains(kexts[row]) {
+        if "BT4LEContinuityFixup".contains(kexts[row]) {
             downloadURL = url[row] + "/releases/download/v" + Lastest[row] + "/" + kexts[row] + "-" + Lastest[row] + "-RELEASE.zip"
         }
         else if kexts[row] == "RealtekRTL8111" {

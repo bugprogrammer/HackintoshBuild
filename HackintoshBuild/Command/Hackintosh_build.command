@@ -62,8 +62,6 @@ fi
 
 buildArray=(
 'OpenCore,https://github.com/acidanthera/OpenCorePkg.git'
-'n-d-k-OpenCore,https://github.com/n-d-k/OpenCorePkg.git'
-'AppleSupportPkg,https://github.com/acidanthera/AppleSupportPkg.git'
 'Lilu,https://github.com/acidanthera/Lilu.git'
 'AirportBrcmFixup,https://github.com/acidanthera/AirportBrcmFixup.git'
 'AppleALC,https://github.com/acidanthera/AppleALC.git'
@@ -86,7 +84,7 @@ buildArray=(
 
 liluPlugins='AirportBrcmFixup AppleALC ATH9KFixup BT4LEContinuityFixup CPUFriend HibernationFixup NoTouchID RTCMemoryFixup SystemProfilerMemoryFixup VirtualSMC acidanthera_WhateverGreen bugprogrammer_WhateverGreen NVMeFix MacProMemoryNotificationDisabler'
 
-bootLoader='OpenCore n-d-k-OpenCore AppleSupportPkg'
+bootLoader='OpenCore'
 
 if [[ $4 == "" ]]; then
     logs=/dev/null
@@ -116,11 +114,7 @@ for i in ${selectedArray[*]}; do
     pushd ${buildArray[$i]%,*}
 
     if [[ $bootLoader =~ ${buildArray[$i]%,*} ]]; then
-        if [[ ${buildArray[$i]%,*} == "n-d-k-OpenCore" ]]; then
-            ./ndk-macbuild.tool >> $logs || exit 1
-        else
-            ./macbuild.tool >> $logs || exit 1
-        fi
+        ./build_oc.tool >> $logs || exit 1
         if [ -e Binaries/RELEASE/ ]; then
             cp Binaries/RELEASE/*.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
 

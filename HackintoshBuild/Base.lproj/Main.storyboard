@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
-        <plugIn identifier="com.apple.WebKit2IBPlugin" version="16096"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="16097"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -3589,8 +3589,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" doubleValue="50" displayedWhenStopped="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Yui-OO-rL8">
-                                <rect key="frame" x="126" y="32" width="32" height="32"/>
+                            <progressIndicator wantsLayer="YES" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="uCY-QV-L7G">
+                                <rect key="frame" x="103" y="32" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </progressIndicator>
                         </subviews>
@@ -3599,7 +3599,7 @@
                         <outlet property="CatalinaButton" destination="BlS-j1-pby" id="2sD-Y5-cg6"/>
                         <outlet property="HighSierraButton" destination="dTS-oT-SfC" id="ppa-Ft-z3m"/>
                         <outlet property="MojaveButton" destination="1lf-n6-QZE" id="g0k-lA-3cq"/>
-                        <outlet property="bar" destination="Yui-OO-rL8" id="RxN-0U-akY"/>
+                        <outlet property="bar" destination="uCY-QV-L7G" id="Lv3-RU-JIs"/>
                         <outlet property="downloadPath" destination="Dnu-xa-GHj" id="wmg-pr-IDv"/>
                         <outlet property="popCatalogs" destination="50m-zg-4bf" id="k1Z-Ee-6kW"/>
                         <outlet property="tableview" destination="Ozl-lm-SwV" id="HxH-OX-WJY"/>

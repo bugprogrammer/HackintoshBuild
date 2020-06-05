@@ -33,8 +33,6 @@ class ViewControllerBuild: NSViewController {
     
     let pluginsList: [String] = [
         "OpenCore",
-        "n-d-k-OpenCore",
-        "AppleSupportPkg",
         "Lilu",
         "AirportBrcmFixup",
         "AppleALC",
