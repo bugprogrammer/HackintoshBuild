@@ -61,12 +61,14 @@ class ViewControllerInfo: NSViewController {
                         if self.outputArr.last!.isEmpty {
                             self.outputArr.removeLast()
                         }
-                                            
+//                        MyLog(self.outputArr)
                         for infoStr in self.outputArr {
                             var flag: Bool = false
                             var infoArr = infoStr.components(separatedBy: ":")
                             if infoArr[0] == "核显 ig-platform-id" && infoArr[1] != "" {
                                 infoArr[1] = "0x" + self.Convert(infoArr[1])
+                            } else if infoArr [0] == "Processor Name" {
+                                infoArr[1] = self.getProcessorName()
                             }
                             for item in self.info {
                                 if item.key.replacingOccurrences(of: " ", with: "").uppercased() == infoArr[0].replacingOccurrences(of: " ", with: "").uppercased() {
@@ -78,7 +80,6 @@ class ViewControllerInfo: NSViewController {
                             }
                         }
                         
-                        MyLog(self.outputArr)
                         self.infoTableView.reloadData()
                         //AraHUDViewController.shared.hideHUD()
                     })
@@ -107,6 +108,14 @@ class ViewControllerInfo: NSViewController {
                 })
             }
         }
+    }
+    
+    func getProcessorName() -> String {
+        var size = 0
+        sysctlbyname("machdep.cpu.brand_string", nil, &size, nil, 0)
+        var buffer = [CChar](repeating: 0, count: size)
+        sysctlbyname("machdep.cpu.brand_string", &buffer, &size, nil, 0)
+        return String(cString: buffer)
     }
 }
 

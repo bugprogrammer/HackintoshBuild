@@ -20,36 +20,50 @@ class ViewControllerAppleIntelInfo: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let enabled = isSIPStatusEnabled else {
-            sipLabel.textColor = NSColor.red
-            sipLabel.stringValue = "SIP 状态未知"
-            return
-        }
-        if enabled {
-            sipLabel.textColor = NSColor.red
-            sipLabel.stringValue = "SIP 未关闭，请先关闭 SIP"
-        } else {
-            sipLabel.textColor = NSColor(named: "ColorGreen")
-            sipLabel.stringValue = "SIP 已关闭"
-            runBuildScripts("AppleIntelInfo", [url!])
-        }
-    }
-    
-    override func viewWillAppear() {
-        refreshButton.isEnabled = false
         let image = NSImage(named: "NSRefreshFreestandingTemplate")
         image?.size = CGSize(width: 20.0, height: 20.0)
         image!.isTemplate = true
         refreshButton.image = image
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
-        refreshButton.toolTip = "刷新AppleIntelInfo信息"
+        refreshButton.toolTip = "刷新 AppleIntelInfo 信息"
+        
+        guard let enabled = isSIPStatusEnabled else {
+            sipLabel.textColor = NSColor.red
+            sipLabel.stringValue = "SIP 状态未知，无法使用本功能"
+            refreshButton.isEnabled = false
+            return
+        }
+        if enabled {
+            sipLabel.textColor = NSColor.red
+            sipLabel.stringValue = "SIP 未关闭，无法使用本功能"
+            refreshButton.isEnabled = false
+        } else {
+            sipLabel.textColor = NSColor(named: "ColorGreen")
+            sipLabel.stringValue = "SIP 已关闭"
+            refreshButton.isEnabled = true
+        }
     }
     
-    @IBAction func Refresh(_ sender: Any) {
-        outputInfo.string = ""
-        refreshButton.isEnabled = false
-        runBuildScripts("AppleIntelInfo", [url!])
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        Refresh(nil)
+    }
+    
+    @IBAction func Refresh(_ sender: Any?) {
+        if MyTool.isAMDProcessor() {
+            let alert = NSAlert()
+            alert.messageText = "AMD CPU 无法使用本功能"
+            alert.runModal()
+            return
+        }
+        
+        guard let enabled = isSIPStatusEnabled else { return }
+        if !enabled {
+            outputInfo.string = ""
+            refreshButton.isEnabled = false
+            runBuildScripts("AppleIntelInfo", [url!])
+        }
     }
     
     func runBuildScripts(_ shell: String,_ arguments: [String]) {

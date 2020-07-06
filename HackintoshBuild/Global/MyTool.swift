@@ -24,4 +24,23 @@ final class MyTool {
         }
     }
     
+    static func isAMDProcessor() -> Bool {
+        var size = 0
+        sysctlbyname("machdep.cpu.vendor", nil, &size, nil, 0)
+        var buffer = [CChar](repeating: 0, count: size)
+        sysctlbyname("machdep.cpu.vendor", &buffer, &size, nil, 0)
+        let vendor = String(cString: buffer)
+        
+        let pattern: String = ".*amd.*"
+        if let regex = try? NSRegularExpression(pattern: pattern, options: [.caseInsensitive]) {
+            let matches = regex.matches(in: vendor, options: [], range: NSMakeRange(0, vendor.count))
+            if matches.count == 1 && matches[0].range.location != NSNotFound {
+                return true
+            } else {
+                return false
+            }
+        }
+        return false
+    }
+    
 }
