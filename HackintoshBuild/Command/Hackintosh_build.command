@@ -18,6 +18,11 @@ fi
 
 path=$5
 
+echo -e "正在检测编译环境完整性：\n"
+
+################# nasm ##################
+echo "正在验证 mtoc"
+
 mtoc_hash=$(curl -L "https://github.com/acidanthera/ocbuild/raw/master/external/mtoc-mac64.sha256") || exit 1
 
 if [ "${mtoc_hash}" = "" ]; then
@@ -46,19 +51,51 @@ if [ "$(which mtoc)" != "" ]; then
   fi
 fi
 
-if [ "$(nasm -v)" = "" ] || [ "$(nasm -v | grep Apple)" != "" ]; then
-echo "您尚未安装nasm,现在为您安装"
+if ! $valid_mtoc; then
+echo "尚未安装 mtoc 或 mtoc 版本不符，现在为您安装"
 osascript <<EOF
-do shell script "mkdir -p /usr/local/bin || exit 1; cp ${path%/*}/nasm /usr/local/bin/ || exit 1; cp ${path%/*}/ndisasm /usr/local/bin/ || exit 1" with prompt "安装nsam需要授权" with administrator privileges
+do shell script "mkdir -p /usr/local/bin || exit 1; cp ${path%/*}/mtoc /usr/local/bin/mtoc || exit 1; cp ${path%/*}/mtoc /usr/local/bin/mtoc.NEW || exit 1" with prompt "安装 mtoc 需要授权" with administrator privileges
 EOF
 fi
 
-if ! $valid_mtoc; then
-echo "尚未安装mtoc或mtoc版本不符,现在为您安装"
+################# nasm ##################
+echo "正在验证 nasm"
+
+if [ "$(nasm -v)" = "" ] || [ "$(nasm -v | grep Apple)" != "" ]; then
+echo "您尚未安装 nasm，现在为您安装"
 osascript <<EOF
-do shell script "mkdir -p /usr/local/bin || exit 1; cp ${path%/*}/mtoc /usr/local/bin/mtoc || exit 1; cp ${path%/*}/mtoc /usr/local/bin/mtoc.NEW || exit 1" with prompt "安装mtoc需要授权" with administrator privileges
+do shell script "mkdir -p /usr/local/bin || exit 1; cp ${path%/*}/nasm /usr/local/bin/ || exit 1; cp ${path%/*}/ndisasm /usr/local/bin/ || exit 1" with prompt "安装 nsam 需要授权" with administrator privileges
 EOF
 fi
+
+################# xcodebuild ##################
+echo "正在验证 xcodebuild"
+
+if [ "$(xcodebuild -version)" = "" ]; then
+echo "未找到 xcodebuild，正在检测 Xcode"
+if [ -d "/Applications/Xcode.app" ]; then
+echo "检测到 Xcode.app，执行 xcode-select"
+osascript <<EOF
+do shell script "xcode-select --switch /Applications/Xcode.app/Contents/Developer" with prompt "xcode-select 需要授权" with administrator privileges
+EOF
+elif [ -d "/Applications/Xcode-beta.app" ]; then
+echo "检测到 Xcode-beta.app，执行 xcode-select"
+osascript <<EOF
+do shell script "xcode-select --switch /Applications/Xcode-beta.app/Contents/Developer" with prompt "xcode-select 需要授权" with administrator privileges
+EOF
+else
+echo "未找到 Xcode，请先安装 Xcode"
+exit 1
+fi
+fi
+
+if [ "$(xcodebuild -version)" = "" ]; then
+    echo $(xcodebuild -version)
+    echo "xcodebuild 环境检测失败，程序结束。"
+    exit 1
+fi
+
+echo "环境完整性验证完成，进入编译阶段。"
 
 buildArray=(
 'OpenCore,https://github.com/acidanthera/OpenCorePkg.git'
@@ -101,7 +138,6 @@ for i in ${selectedArray[*]}; do
     if [[ $4 != "" ]]; then
         logs=$4/buildlog/${buildArray[$i]%,*}.log
     fi
-    echo "正在编译"${buildArray[$i]%,*}
     if [ -e ../Release/${buildArray[$i]%,*} ]; then
         rm -rf ../Release/${buildArray[$i]%,*}
     fi
@@ -110,10 +146,13 @@ for i in ${selectedArray[*]}; do
     if [ -e ./${buildArray[$i]%,*} ]; then
         rm -rf ./${buildArray[$i]%,*}
     fi
+    echo "正在下载源码："${buildArray[$i]%,*}
     git clone -q ${buildArray[$i]##*,} ${buildArray[$i]%,*} -b master --depth=1
-    pushd ${buildArray[$i]%,*}
+    pushd ${buildArray[$i]%,*} >> $logs
 
     if [[ $bootLoader =~ ${buildArray[$i]%,*} ]]; then
+        echo "正在编译："${buildArray[$i]%,*}
+        echo "（该过程需要下载较多依赖，请保持网络畅通，耗时较长请耐心等待。如中途停止请生成日志查看原因。）"
         ./build_oc.tool >> $logs || exit 1
         if [ -e Binaries/RELEASE/ ]; then
             cp Binaries/RELEASE/*.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
@@ -125,35 +164,40 @@ for i in ${selectedArray[*]}; do
             cp Binaries/*-DEBUG.zip ../../Release/${buildArray[$i]%,*}/Debug >> $logs || exit 1
         fi
 
-        echo ${buildArray[$i]%,*}"编译成功"
+        echo "编译成功："${buildArray[$i]%,*}
     else
         if [[ $liluPlugins =~ ${buildArray[$i]%,*} ]]; then
             if [ ! -e *.kext ]; then
-                echo ${buildArray[$i]%,*}"源码包里没有Lilu，现在编译Lilu"
+                echo "编译 "${buildArray[$i]%,*}" 需要依赖 Lilu"
                 if [ ! -e $url/$dir/Sources/Lilu/build/Debug/Lilu.kext ]; then
-                    pushd $url/$dir/Sources
+                    pushd $url/$dir/Sources >> $logs
+                    echo "未找到缓存，正在下载源码：Lilu"
                     git clone -q https://github.com/acidanthera/Lilu.git -b master --depth=1 && cd Lilu
+                    echo "正在编译：Lilu"
                     xcodebuild -configuration Debug >> $logs || exit 1
-                    popd
+                    popd >> $logs
+                    echo "正在拷贝：Lilu"
                     cp -Rf $url/$dir/Sources/Lilu/build/Debug/Lilu.kext . >> $logs || exit 1
                 else
+                    echo "找到缓存，正在拷贝：Lilu"
                     cp -Rf $url/$dir/Sources/Lilu/build/Debug/Lilu.kext . >> $logs || exit 1
                 fi
             fi
         fi
+        echo "正在编译："${buildArray[$i]%,*}
         xcodebuild -configuration Release >> $logs || exit 1
         xcodebuild -configuration Debug >> $logs || exit 1
         if [ -e build/Release/*.zip ]; then
             cp -Rf build/Release/*.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
             cp -Rf build/Debug/*.zip ../../Release/${buildArray[$i]%,*}/Debug >> $logs || exit 1
-            echo ${buildArray[$i]%,*}"编译成功"
+            echo "编译成功："${buildArray[$i]%,*}
         else
             cp -Rf build/Release/*.kext ../../Release/${buildArray[$i]%,*}/Release/${buildArray[$i]%,*}-Release.kext >> $logs || exit 1
             cp -Rf build/Debug/*.kext ../../Release/${buildArray[$i]%,*}/Debug/${buildArray[$i]%,*}-Debug.kext >> $logs || exit 1
-            echo ${buildArray[$i]%,*}"编译成功"
+            echo "编译成功："${buildArray[$i]%,*}
         fi
     fi
-    popd
+    popd >> $logs
 done;
 
 if [[ $4 != "" ]]; then
@@ -163,4 +207,4 @@ open "$url/$dir/Release"
 
 end=$(date +%s)
 take=$(( end - start ))
-echo 编译结束程序执行了${take}秒.
+echo 编译结束程序执行了${take}秒。
