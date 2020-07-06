@@ -1,5 +1,5 @@
 HackintoshBuild Changelog
-==================
+=========================
 
 #### v2.2
 - 支持 AMD CPUs
