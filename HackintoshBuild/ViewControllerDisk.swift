@@ -11,22 +11,20 @@ import Cocoa
 class ViewControllerDisk: NSViewController {
     
     class DiskInfoObject {
-        var name: String = ""
-        var type: String = ""
-        var volume: String = ""
-        var size: String = ""
-        var bsd: String = ""
-        var mounted: String = ""
-        var isboot: String = ""
+        var name: String
+        var type: String
+        var size: String
+        var bsd: String
+        var isMounted: Bool
+        var isBoot: String
         
-        init(_ name: String, _ type: String, _ volume: String, _ size: String, _ bsd: String, _ mounted: String, _ isboot: String) {
+        init(name: String, type: String, size: String, bsd: String, isMounted: Bool, isBoot: String) {
             self.name = name
             self.type = type
-            self.volume = volume
             self.size = size
             self.bsd = bsd
-            self.mounted = mounted
-            self.isboot = isboot
+            self.isMounted = isMounted
+            self.isBoot = isBoot
         }
     }
     
@@ -54,7 +52,7 @@ class ViewControllerDisk: NSViewController {
         refreshButton.image = image
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
-        refreshButton.toolTip = "刷新EFI列表"
+        refreshButton.toolTip = "刷新 EFI 列表"
         if flag == 0 {
             refreshButton.isEnabled = false
             arrayPartition = []
@@ -97,18 +95,20 @@ class ViewControllerDisk: NSViewController {
                                 self.arrayPartition.removeFirst()
                             }
                             
-                            for i in 0..<self.arrayPartition.count {
+                            for i in 0 ..< self.arrayPartition.count {
                                 var diskFinal = self.arrayPartition[i].components(separatedBy: ":")
-                                if diskFinal.count < 8 {
-                                    if diskFinal.count == 6 {
-                                        diskFinal.insert("", at: 2)
-                                    }
+                                if diskFinal.count == 6 {
                                     diskFinal.append("")
                                 }
-                                MyLog(diskFinal)
-                                diskFinal = self.arrTools(diskFinal, 4, 5)
-                                self.diskInfoObject.append(DiskInfoObject(diskFinal[0],diskFinal[1],diskFinal[2],diskFinal[3],diskFinal[4],NSLocalizedString(diskFinal[5], comment: ""),diskFinal[6]))
-                                MyLog(diskFinal.count)
+                                diskFinal = self.arrTools(diskFinal, 3, 4)
+                                self.diskInfoObject.append(DiskInfoObject(
+                                    name: diskFinal[0],
+                                    type: diskFinal[1],
+                                    size: diskFinal[2],
+                                    bsd: diskFinal[3],
+                                    isMounted: diskFinal[4].lowercased() != "no",
+                                    isBoot: diskFinal[5])
+                                )
                                 MyLog(diskFinal)
                             }
                             self.diskTableView.reloadData()
@@ -116,7 +116,7 @@ class ViewControllerDisk: NSViewController {
                             let alert = NSAlert()
                             if self.diskInfo.contains("mounted") {
                                 alert.messageText = "EFI 挂载成功"
-                                self.diskInfoObject[self.index].mounted = "已挂载"
+                                self.diskInfoObject[self.index].isMounted = true
                                 self.diskTableView.reloadData()
                             } else {
                                 alert.messageText = "EFI 挂载失败"
@@ -127,10 +127,10 @@ class ViewControllerDisk: NSViewController {
                             let alert = NSAlert()
                             if self.diskInfo.contains("unmounted") {
                                 alert.messageText = "EFI 卸载成功"
-                                self.diskInfoObject[self.index].mounted = "未挂载"
+                                self.diskInfoObject[self.index].isMounted = false
                                 self.diskTableView.reloadData()
                             } else {
-                                alert.messageText = "EFI 挂载失败"
+                                alert.messageText = "EFI 卸载失败"
                             }
                             alert.runModal()
                         }
@@ -166,7 +166,7 @@ class ViewControllerDisk: NSViewController {
     
     func arrTools(_ arr: [String], _ i: Int, _ j: Int) -> [String] {
         var arr = arr
-        arr[i-1] = arr[i-1] + arr[j-1]
+        arr[i-1] = arr[i-1] + " " + arr[j-1]
         arr = arr.filter{$0 != arr[j-1]}
         return arr
     }
@@ -212,7 +212,7 @@ extension ViewControllerDisk: NSTableViewDelegate {
             case "state":
                 let textField = NSTextField()
                 textField.cell = VerticallyCenteredTextFieldCell()
-                textField.stringValue = self.diskInfoObject[row].mounted
+                textField.stringValue = self.diskInfoObject[row].isMounted ? "已挂载" : "未挂载"
                 textField.alignment = .center
                 textField.isBordered = false
                 return textField
@@ -236,7 +236,7 @@ extension ViewControllerDisk: NSTableViewDelegate {
                 button.bezelStyle = .inline
                 button.title = ""
                 button.alignment = .right
-                if self.diskInfoObject[row].isboot == "当前引导分区" {
+                if self.diskInfoObject[row].isBoot == "当前引导分区" {
                     button.state = .on
                 }
                 else {
@@ -248,19 +248,19 @@ extension ViewControllerDisk: NSTableViewDelegate {
                 button.action = #selector(mountButtonAction(_:))
                 button.bezelStyle = .recessed
                 button.isBordered = false
-                if self.diskInfoObject[row].mounted == "未挂载" {
+                if !self.diskInfoObject[row].isMounted {
                     let image = MyAsset.mount.image
                     image.isTemplate = true
                     button.image = image
-                    button.toolTip = "挂着当前EFI分区"
+                    button.toolTip = "挂载当前 EFI 分区"
                 }
                 else {
                     let image = MyAsset.unmount.image
                     image.isTemplate = true
                     button.image = image
-                    button.toolTip = "卸载当前EFI分区"
+                    button.toolTip = "卸载当前 EFI 分区"
                 }
-                button.tag = self.diskInfoObject[row].mounted == "未挂载" ? 0 : 1
+                button.tag = self.diskInfoObject[row].isMounted ? 1 : 0
                 return button
             case "open":
                 let button = NSButton()
@@ -270,11 +270,11 @@ extension ViewControllerDisk: NSTableViewDelegate {
                 let image = MyAsset.open.image
                 image.isTemplate = true
                 button.image = image
-                button.tag = self.diskInfoObject[row].mounted == "未挂载" ? 0 : 1
-                if self.diskInfoObject[row].mounted == "未挂载" {
+                button.tag = self.diskInfoObject[row].isMounted ? 1 : 0
+                if !self.diskInfoObject[row].isMounted {
                     button.isEnabled = false
                 }
-                button.toolTip = "打开当前EFI分区"
+                button.toolTip = "打开当前 EFI 分区"
                 return button
             default:
                 return nil

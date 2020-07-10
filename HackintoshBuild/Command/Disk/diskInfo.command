@@ -11,8 +11,16 @@ fi
 arr=($(diskutil list | grep EFI | awk {'print $NF'}))
 for element in ${arr[@]}
 do
+# 磁盘名
 echo -n $(diskutil info ${element%s*} | grep 'Device / Media Name' | awk -F: {'print $2'} | sed 's/^[ \t]*//g'):
-echo -n $(diskutil list | grep $element | awk -F: {'print $2'} | sed 's/^[ \t]*//g' | sed 's/[ ][ ]*/:/g' | sed 's/\t//g'):
+# 分区类型
+echo -n $(diskutil info $element | grep 'Partition Type' | awk {'print $3'} | sed 's/^[ \t]*//g'):
+# 分区容量 1
+echo -n $(diskutil info $element | grep 'Disk Size' | awk {'print $3'} | sed 's/^[ \t]*//g'):
+# 分区容量 2
+echo -n $(diskutil info $element | grep 'Disk Size' | awk {'print $4'} | sed 's/^[ \t]*//g'):
+# 标识符
+echo -n $element:
 if [ $boot == $element ]; then
     echo -n $(diskutil info ${element} | grep 'Mounted' | awk -F: {'print $2'} | sed 's/^[ \t]*//g'):
     echo "当前引导分区"
