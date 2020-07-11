@@ -8,15 +8,15 @@
 
 import Cocoa
 
-class ViewControllerEFI: NSViewController {
-
-    @IBOutlet var efiLocation: NSPathControl!
+class ShareObject: BaseObject {
+    
+    @IBOutlet weak var efiLocation: NSPathControl!
     @IBOutlet weak var logsLocation: NSPathControl!
     @IBOutlet weak var efiTableView: NSTableView!
-    @IBOutlet var progressBar: NSProgressIndicator!
+    @IBOutlet weak var progressBar: NSProgressIndicator!
     @IBOutlet var efiOutPut: NSTextView!
-    @IBOutlet var efiStartButton: NSButton!
-    @IBOutlet var efiStopButton: NSButton!
+    @IBOutlet weak var efiStartButton: NSButton!
+    @IBOutlet weak var efiStopButton: NSButton!
     @IBOutlet weak var proxyTextField: NSTextField!
     @IBOutlet weak var selectAllButton: NSButton!
     
@@ -40,14 +40,11 @@ class ViewControllerEFI: NSViewController {
         "dell-7000"
     ]
     
-    override func viewWillAppear() {
-        super.viewWillAppear()
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
         proxyTextField.stringValue = proxy ?? ""
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(proxyChanged(_:)), name: NSNotification.Name("proxyChanged"), object: nil)
         
         isRunning = resetStatus(isRunning: false)
         let imagebuild = NSImage(named: "NSTouchBarPlayTemplate")
@@ -75,6 +72,10 @@ class ViewControllerEFI: NSViewController {
         }
         
         self.efiTableView.reloadData()
+    }
+    
+    @objc func proxyChanged(_ noti: Notification) {
+        proxyTextField.stringValue = proxy ?? ""
     }
     
     var efiTask: Process!
@@ -107,7 +108,7 @@ class ViewControllerEFI: NSViewController {
         return isRunning
     }
     
-    @IBAction func efiStart(_ sender: Any) {
+    @IBAction func startButtonDidClicked(_ sender: NSButton) {
         UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
         if let efiURL = efiLocation.url {
             UserDefaults.standard.set(efiURL, forKey: "efiLocation")
@@ -138,13 +139,13 @@ class ViewControllerEFI: NSViewController {
         }
     }
         
-    @IBAction func efiStop(_ sender: Any) {
+    @IBAction func stopButtonDidClicked(_ sender: NSButton) {
         if efiTask.suspend() {
             efiTask.terminate()
         }
     }
     
-    @IBAction func selected(_ sender: NSButton) {
+    @objc func selected(_ sender: NSButton) {
         selectAllButton.state = .off
         switch sender.state {
         case .on:
@@ -163,7 +164,7 @@ class ViewControllerEFI: NSViewController {
         MyLog(itemsArr)
     }
     
-    @IBAction func SelectAll(_ sender: NSButton) {
+    @IBAction func selectAllButtonDidClicked(_ sender: NSButton) {
         switch sender.state {
         case .on:
             itemsArr = []
@@ -232,14 +233,14 @@ class ViewControllerEFI: NSViewController {
     }
 }
 
-extension ViewControllerEFI: NSTableViewDataSource {
+extension ShareObject: NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return efiList.count
     }
 }
 
-extension ViewControllerEFI: NSTableViewDelegate {
+extension ShareObject: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
         return true
@@ -256,6 +257,7 @@ extension ViewControllerEFI: NSTableViewDelegate {
                 button.bezelStyle = .inline
                 button.title = ""
                 button.alignment = .right
+                button.target = self
                 button.action = #selector(selected(_:))
                 if isRunning {
                     if itemFlag.contains(String(row)) {
@@ -289,11 +291,12 @@ extension ViewControllerEFI: NSTableViewDelegate {
     
 }
 
-extension ViewControllerEFI: NSTextFieldDelegate {
+extension ShareObject: NSTextFieldDelegate {
     
     func controlTextDidChange(_ obj: Notification) {
         if let textField = obj.object as? NSTextField {
             proxy = textField.stringValue
+            NotificationCenter.default.post(name: NSNotification.Name.ProxyChanged, object: nil)
         }
     }
     

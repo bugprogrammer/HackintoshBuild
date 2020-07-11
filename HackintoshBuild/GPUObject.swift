@@ -9,7 +9,7 @@
 import Cocoa
 import Highlightr
 
-class ViewControllerGPU: NSViewController {
+class GPUObject: BaseObject {
 
     @IBOutlet weak var gpuLists: NSPopUpButton!
     @IBOutlet var plistTextView: NSTextView!
@@ -31,12 +31,24 @@ class ViewControllerGPU: NSViewController {
     let filemanager = FileManager.default
     let lock = NSLock()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 7 { return }
+        if !once { return }
+        once = false
+        
+        runBuildScripts("paths", [gfxutil!])
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
         let image = MyAsset.export.image
         image.isTemplate = true
         gpuLists.addItems(withTitles: gpuArray)
-        runBuildScripts("paths", [gfxutil!])
+        
         exportButton.isBordered = false
         exportButton.bezelStyle = .recessed
         exportButton.image = image

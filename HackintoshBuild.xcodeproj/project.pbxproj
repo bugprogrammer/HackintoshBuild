@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1123BA4E24B85A4600091680 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1123BA4D24B85A4600091680 /* MainMenu.xib */; };
+		114FEDB924B9DDA80045777D /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114FEDB824B9DDA80045777D /* BaseObject.swift */; };
 		1158FAB023D6E1610095FED5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158FAAF23D6E1610095FED5 /* main.swift */; };
 		116D2D8B23D6C528001FED06 /* unlockSLE.command in Resources */ = {isa = PBXBuildFile; fileRef = 116D2D8A23D6C528001FED06 /* unlockSLE.command */; };
 		116D2D8D23D6C540001FED06 /* rebuildCache.command in Resources */ = {isa = PBXBuildFile; fileRef = 116D2D8C23D6C540001FED06 /* rebuildCache.command */; };
@@ -21,7 +23,7 @@
 		11D5C27823D1B11300461A78 /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27723D1B11300461A78 /* BaseWindowController.swift */; };
 		11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27923D1B63700461A78 /* MyAsset.swift */; };
 		6A046F2E242F4170004FFFD5 /* ViewControllerPCI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A046F2D242F4170004FFFD5 /* ViewControllerPCI.swift */; };
-		6A046F35242F8747004FFFD5 /* ViewControllerGPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A046F34242F8747004FFFD5 /* ViewControllerGPU.swift */; };
+		6A046F35242F8747004FFFD5 /* GPUObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A046F34242F8747004FFFD5 /* GPUObject.swift */; };
 		6A0D773D23C7A917003F5C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A0D773C23C7A744003F5C3A /* Main.storyboard */; };
 		6A0DC962241041E3000E9775 /* openEFI.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A0DC961241041E3000E9775 /* openEFI.command */; };
 		6A188A3824619E8500CBE5B7 /* ViewControllerOpenCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A188A3724619E8500CBE5B7 /* ViewControllerOpenCore.swift */; };
@@ -30,14 +32,14 @@
 		6A188A4A2464EA9500CBE5B7 /* dspci.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A188A492464EA9500CBE5B7 /* dspci.command */; };
 		6A188A4C2464F94700CBE5B7 /* pcipath.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A188A4B2464F94700CBE5B7 /* pcipath.command */; };
 		6A188AAB24659CC200CBE5B7 /* ViewControllerCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A188AAA24659CC200CBE5B7 /* ViewControllerCompare.swift */; };
-		6A1E571C23F31AB5004E8430 /* ViewControllerIoreg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1E571B23F31AB5004E8430 /* ViewControllerIoreg.swift */; };
+		6A1E571C23F31AB5004E8430 /* IORegObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1E571B23F31AB5004E8430 /* IORegObject.swift */; };
 		6A20F6B223F80BA700E69F60 /* OCVersion.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A20F6B123F80BA700E69F60 /* OCVersion.command */; };
 		6A21D45923EE869B007D7CE9 /* timeMachine.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A21D45623EE869B007D7CE9 /* timeMachine.command */; };
 		6A2468012441B4F1001B7D29 /* tools in Resources */ = {isa = PBXBuildFile; fileRef = 6A2468002441B4F1001B7D29 /* tools */; };
 		6A2468032441B647001B7D29 /* plists in Resources */ = {isa = PBXBuildFile; fileRef = 6A2468022441B647001B7D29 /* plists */; };
-		6A2D271123DF324100238E46 /* ViewControllerNvram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D271023DF324100238E46 /* ViewControllerNvram.swift */; };
+		6A2D271123DF324100238E46 /* NvramObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D271023DF324100238E46 /* NvramObject.swift */; };
 		6A36D49823F85BD500CD042B /* CloverVersion.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A36D49723F85BD500CD042B /* CloverVersion.command */; };
-		6A427D1323E459BD00A0B4E3 /* ViewControllerLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A427D1223E459BC00A0B4E3 /* ViewControllerLock.swift */; };
+		6A427D1323E459BD00A0B4E3 /* LockPicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A427D1223E459BC00A0B4E3 /* LockPicObject.swift */; };
 		6A427D1623E4618F00A0B4E3 /* changeLockPicture.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */; };
 		6A48CC50244CC1ED00AFC97A /* makeInstaller.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A48CC4C244CC1EC00AFC97A /* makeInstaller.command */; };
 		6A48CC51244CC1ED00AFC97A /* downloadCatalogs.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A48CC4D244CC1EC00AFC97A /* downloadCatalogs.command */; };
@@ -53,12 +55,12 @@
 		6A723DE8240BEE30007EB3AD /* systeminfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A723DE7240BEE30007EB3AD /* systeminfo.command */; };
 		6A723E11240C1D94007EB3AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A723E13240C1D94007EB3AD /* Localizable.strings */; };
 		6A723E18240E71DE007EB3AD /* diskUnmount.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A723E17240E71DE007EB3AD /* diskUnmount.command */; };
-		6A7A718C23D82DAE0082FA94 /* ViewControllerDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A718B23D82DAE0082FA94 /* ViewControllerDisk.swift */; };
+		6A7A718C23D82DAE0082FA94 /* DiskObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A718B23D82DAE0082FA94 /* DiskObject.swift */; };
 		6A7A719123D845DB0082FA94 /* diskInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A7A718F23D845DB0082FA94 /* diskInfo.command */; };
 		6A7AC9E3242E32570008A43A /* Highlightr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7AC9E2242E324B0008A43A /* Highlightr.framework */; };
 		6A7AC9E4242E32570008A43A /* Highlightr.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7AC9E2242E324B0008A43A /* Highlightr.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6A817EAE240AB70E003224DE /* TabViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EAD240AB70E003224DE /* TabViewControllerInfo.swift */; };
-		6A817EB0240ABE74003224DE /* ViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EAF240ABE74003224DE /* ViewControllerInfo.swift */; };
+		6A817EB0240ABE74003224DE /* InfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EAF240ABE74003224DE /* InfoObject.swift */; };
 		6A817EB2240ABEA6003224DE /* ViewControllerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EB1240ABEA6003224DE /* ViewControllerConfig.swift */; };
 		6A817EB4240ABEDA003224DE /* ViewControllerAppleIntelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EB3240ABEDA003224DE /* ViewControllerAppleIntelInfo.swift */; };
 		6A817EB6240ABEF4003224DE /* ViewControllerUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EB5240ABEF4003224DE /* ViewControllerUpdate.swift */; };
@@ -70,7 +72,7 @@
 		6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6EE0623E5859900BF15FD /* resetLockPicture.command */; };
 		6AAB654124154A0200116D13 /* kextLastest.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB654024154A0200116D13 /* kextLastest.command */; };
 		6AAB65592416C0F500116D13 /* download.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB65582416C0F500116D13 /* download.command */; };
-		6AAB82CA23D205E300ACFB81 /* ViewControllerEFI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB82C923D205E300ACFB81 /* ViewControllerEFI.swift */; };
+		6AAB82CA23D205E300ACFB81 /* ShareObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB82C923D205E300ACFB81 /* ShareObject.swift */; };
 		6AAB82D023D22C0E00ACFB81 /* getEFI.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB82CF23D22C0E00ACFB81 /* getEFI.command */; };
 		6AAFC6902414CD550059A609 /* kextscurrentVersion.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAFC68F2414CD550059A609 /* kextscurrentVersion.command */; };
 		6AB7A19E2434AD2800BA8690 /* printPlist.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AB7A19D2434AD2800BA8690 /* printPlist.command */; };
@@ -80,7 +82,7 @@
 		6AC473BB245751E9001C9F17 /* ViewControllerSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC473BA245751E9001C9F17 /* ViewControllerSerial.swift */; };
 		6AD2F3B1241BAABE00E0609F /* openFinder.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AD2F3B0241BAABE00E0609F /* openFinder.command */; };
 		6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */; };
-		6ADAEFA623C23DA5008ECF4B /* ViewControllerBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */; };
+		6ADAEFA623C23DA5008ECF4B /* BuildObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA523C23DA5008ECF4B /* BuildObject.swift */; };
 		6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA723C23DA6008ECF4B /* Assets.xcassets */; };
 		6ADAEFBB23C257E5008ECF4B /* Hackintosh_build.command in Resources */ = {isa = PBXBuildFile; fileRef = 6ADAEFBA23C257E5008ECF4B /* Hackintosh_build.command */; };
 		6AE76A6523F9AC7C00B931F1 /* ViewControllerPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE76A6423F9AC7C00B931F1 /* ViewControllerPay.swift */; };
@@ -128,6 +130,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1123BA4D24B85A4600091680 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		114FEDB824B9DDA80045777D /* BaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
 		1158FAAF23D6E1610095FED5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		116A2DFD243EEB1C00F00674 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		116A2E01243EFDAE00F00674 /* gfxutil */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = gfxutil; path = HackintoshBuild/test/gfxutil; sourceTree = "<group>"; };
@@ -143,7 +147,7 @@
 		11D5C27723D1B11300461A78 /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
 		11D5C27923D1B63700461A78 /* MyAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsset.swift; sourceTree = "<group>"; };
 		6A046F2D242F4170004FFFD5 /* ViewControllerPCI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPCI.swift; sourceTree = "<group>"; };
-		6A046F34242F8747004FFFD5 /* ViewControllerGPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerGPU.swift; sourceTree = "<group>"; };
+		6A046F34242F8747004FFFD5 /* GPUObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUObject.swift; sourceTree = "<group>"; };
 		6A0D773C23C7A744003F5C3A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A0DC961241041E3000E9775 /* openEFI.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = openEFI.command; sourceTree = "<group>"; };
 		6A188A3724619E8500CBE5B7 /* ViewControllerOpenCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerOpenCore.swift; sourceTree = "<group>"; };
@@ -151,14 +155,14 @@
 		6A188A492464EA9500CBE5B7 /* dspci.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = dspci.command; sourceTree = "<group>"; };
 		6A188A4B2464F94700CBE5B7 /* pcipath.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = pcipath.command; sourceTree = "<group>"; };
 		6A188AAA24659CC200CBE5B7 /* ViewControllerCompare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCompare.swift; sourceTree = "<group>"; };
-		6A1E571B23F31AB5004E8430 /* ViewControllerIoreg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerIoreg.swift; sourceTree = "<group>"; };
+		6A1E571B23F31AB5004E8430 /* IORegObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IORegObject.swift; sourceTree = "<group>"; };
 		6A20F6B123F80BA700E69F60 /* OCVersion.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = OCVersion.command; sourceTree = "<group>"; };
 		6A21D45623EE869B007D7CE9 /* timeMachine.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = timeMachine.command; sourceTree = "<group>"; };
 		6A2468002441B4F1001B7D29 /* tools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tools; sourceTree = "<group>"; };
 		6A2468022441B647001B7D29 /* plists */ = {isa = PBXFileReference; lastKnownFileType = folder; path = plists; sourceTree = "<group>"; };
-		6A2D271023DF324100238E46 /* ViewControllerNvram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNvram.swift; sourceTree = "<group>"; };
+		6A2D271023DF324100238E46 /* NvramObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NvramObject.swift; sourceTree = "<group>"; };
 		6A36D49723F85BD500CD042B /* CloverVersion.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CloverVersion.command; sourceTree = "<group>"; };
-		6A427D1223E459BC00A0B4E3 /* ViewControllerLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLock.swift; sourceTree = "<group>"; };
+		6A427D1223E459BC00A0B4E3 /* LockPicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockPicObject.swift; sourceTree = "<group>"; };
 		6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = changeLockPicture.command; sourceTree = "<group>"; };
 		6A48CC4C244CC1EC00AFC97A /* makeInstaller.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = makeInstaller.command; sourceTree = "<group>"; };
 		6A48CC4D244CC1EC00AFC97A /* downloadCatalogs.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = downloadCatalogs.command; sourceTree = "<group>"; };
@@ -173,11 +177,11 @@
 		6A723E12240C1D94007EB3AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6A723E16240C1DD0007EB3AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6A723E17240E71DE007EB3AD /* diskUnmount.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = diskUnmount.command; sourceTree = "<group>"; };
-		6A7A718B23D82DAE0082FA94 /* ViewControllerDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDisk.swift; sourceTree = "<group>"; };
+		6A7A718B23D82DAE0082FA94 /* DiskObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskObject.swift; sourceTree = "<group>"; };
 		6A7A718F23D845DB0082FA94 /* diskInfo.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = diskInfo.command; sourceTree = "<group>"; };
 		6A7AC9D9242E324B0008A43A /* Highlightr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Highlightr.xcodeproj; path = SDK/Highlightr/Highlightr.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6A817EAD240AB70E003224DE /* TabViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewControllerInfo.swift; sourceTree = "<group>"; };
-		6A817EAF240ABE74003224DE /* ViewControllerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInfo.swift; sourceTree = "<group>"; };
+		6A817EAF240ABE74003224DE /* InfoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoObject.swift; sourceTree = "<group>"; };
 		6A817EB1240ABEA6003224DE /* ViewControllerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConfig.swift; sourceTree = "<group>"; };
 		6A817EB3240ABEDA003224DE /* ViewControllerAppleIntelInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAppleIntelInfo.swift; sourceTree = "<group>"; };
 		6A817EB5240ABEF4003224DE /* ViewControllerUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUpdate.swift; sourceTree = "<group>"; };
@@ -189,7 +193,7 @@
 		6AA6EE0623E5859900BF15FD /* resetLockPicture.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = resetLockPicture.command; sourceTree = "<group>"; };
 		6AAB654024154A0200116D13 /* kextLastest.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kextLastest.command; sourceTree = "<group>"; };
 		6AAB65582416C0F500116D13 /* download.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = download.command; sourceTree = "<group>"; };
-		6AAB82C923D205E300ACFB81 /* ViewControllerEFI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEFI.swift; sourceTree = "<group>"; };
+		6AAB82C923D205E300ACFB81 /* ShareObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareObject.swift; sourceTree = "<group>"; };
 		6AAB82CF23D22C0E00ACFB81 /* getEFI.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = getEFI.command; sourceTree = "<group>"; };
 		6AAFC68F2414CD550059A609 /* kextscurrentVersion.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kextscurrentVersion.command; sourceTree = "<group>"; };
 		6AB7A19D2434AD2800BA8690 /* printPlist.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = printPlist.command; sourceTree = "<group>"; };
@@ -200,7 +204,7 @@
 		6AD2F3B0241BAABE00E0609F /* openFinder.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = openFinder.command; sourceTree = "<group>"; };
 		6ADAEFA023C23DA5008ECF4B /* HackintoshBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackintoshBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuild.swift; sourceTree = "<group>"; };
+		6ADAEFA523C23DA5008ECF4B /* BuildObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildObject.swift; sourceTree = "<group>"; };
 		6ADAEFA723C23DA6008ECF4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ADAEFAC23C23DA6008ECF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ADAEFAD23C23DA6008ECF4B /* HackintoshBuild.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackintoshBuild.entitlements; sourceTree = "<group>"; };
@@ -244,6 +248,7 @@
 				1193974823D1C1390096297C /* MyTool.swift */,
 				11D5C27923D1B63700461A78 /* MyAsset.swift */,
 				1193974B23D1C7BA0096297C /* MyLog.swift */,
+				114FEDB824B9DDA80045777D /* BaseObject.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -408,10 +413,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A817EB7240ABF17003224DE /* TabViewController */ = {
+		6A817EB7240ABF17003224DE /* TabViewObject */ = {
 			isa = PBXGroup;
 			children = (
-				6A817EAF240ABE74003224DE /* ViewControllerInfo.swift */,
+				6A817EAF240ABE74003224DE /* InfoObject.swift */,
 				6A817EB1240ABEA6003224DE /* ViewControllerConfig.swift */,
 				6A817EB3240ABEDA003224DE /* ViewControllerAppleIntelInfo.swift */,
 				6A817EB5240ABEF4003224DE /* ViewControllerUpdate.swift */,
@@ -420,7 +425,7 @@
 				6AC473BA245751E9001C9F17 /* ViewControllerSerial.swift */,
 				6A188A3724619E8500CBE5B7 /* ViewControllerOpenCore.swift */,
 			);
-			path = TabViewController;
+			path = TabViewObject;
 			sourceTree = "<group>";
 		};
 		6ADAEF9723C23DA5008ECF4B = {
@@ -453,19 +458,20 @@
 				6A1A664323D1E824009E24EC /* Command */,
 				1193974A23D1C7690096297C /* Global */,
 				11D5C27723D1B11300461A78 /* BaseWindowController.swift */,
+				6A817EB7240ABF17003224DE /* TabViewObject */,
+				6ADAEFA523C23DA5008ECF4B /* BuildObject.swift */,
+				6AAB82C923D205E300ACFB81 /* ShareObject.swift */,
+				6A7A718B23D82DAE0082FA94 /* DiskObject.swift */,
+				6A2D271023DF324100238E46 /* NvramObject.swift */,
+				6A427D1223E459BC00A0B4E3 /* LockPicObject.swift */,
+				6A1E571B23F31AB5004E8430 /* IORegObject.swift */,
+				6A046F34242F8747004FFFD5 /* GPUObject.swift */,
 				6AE76A6423F9AC7C00B931F1 /* ViewControllerPay.swift */,
-				6A427D1223E459BC00A0B4E3 /* ViewControllerLock.swift */,
-				6A2D271023DF324100238E46 /* ViewControllerNvram.swift */,
-				6A7A718B23D82DAE0082FA94 /* ViewControllerDisk.swift */,
-				6ADAEFA523C23DA5008ECF4B /* ViewControllerBuild.swift */,
 				1193974623D1BF380096297C /* ViewControllerOther.swift */,
-				6AAB82C923D205E300ACFB81 /* ViewControllerEFI.swift */,
-				6A1E571B23F31AB5004E8430 /* ViewControllerIoreg.swift */,
-				6A046F34242F8747004FFFD5 /* ViewControllerGPU.swift */,
 				6A8E38D024362F4D00A09CE7 /* ViewControllerOS.swift */,
 				6A188AAA24659CC200CBE5B7 /* ViewControllerCompare.swift */,
-				6A817EB7240ABF17003224DE /* TabViewController */,
 				6A0D773C23C7A744003F5C3A /* Main.storyboard */,
+				1123BA4D24B85A4600091680 /* MainMenu.xib */,
 				11D5C27B23D1B63A00461A78 /* Supporting Files */,
 				6A723E13240C1D94007EB3AD /* Localizable.strings */,
 			);
@@ -592,6 +598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A4B7E8B23F9B63300A6EFFF /* alipay.jpg in Resources */,
+				1123BA4E24B85A4600091680 /* MainMenu.xib in Resources */,
 				6A5F0DF224311B61002C6865 /* ports.command in Resources */,
 				6A4B7E8C23F9B63300A6EFFF /* wechatpay.jpg in Resources */,
 				6A6B939D2469ADE800562B96 /* mergely in Resources */,
@@ -657,23 +664,24 @@
 				1193974C23D1C7BA0096297C /* MyLog.swift in Sources */,
 				1158FAB023D6E1610095FED5 /* main.swift in Sources */,
 				6AC473BB245751E9001C9F17 /* ViewControllerSerial.swift in Sources */,
-				6A427D1323E459BD00A0B4E3 /* ViewControllerLock.swift in Sources */,
-				6ADAEFA623C23DA5008ECF4B /* ViewControllerBuild.swift in Sources */,
+				6A427D1323E459BD00A0B4E3 /* LockPicObject.swift in Sources */,
+				6ADAEFA623C23DA5008ECF4B /* BuildObject.swift in Sources */,
 				11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */,
 				6A046F2E242F4170004FFFD5 /* ViewControllerPCI.swift in Sources */,
-				6A2D271123DF324100238E46 /* ViewControllerNvram.swift in Sources */,
-				6A817EB0240ABE74003224DE /* ViewControllerInfo.swift in Sources */,
-				6A1E571C23F31AB5004E8430 /* ViewControllerIoreg.swift in Sources */,
+				6A2D271123DF324100238E46 /* NvramObject.swift in Sources */,
+				6A817EB0240ABE74003224DE /* InfoObject.swift in Sources */,
+				6A1E571C23F31AB5004E8430 /* IORegObject.swift in Sources */,
 				1193974723D1BF380096297C /* ViewControllerOther.swift in Sources */,
-				6AAB82CA23D205E300ACFB81 /* ViewControllerEFI.swift in Sources */,
+				6AAB82CA23D205E300ACFB81 /* ShareObject.swift in Sources */,
 				6A817EB4240ABEDA003224DE /* ViewControllerAppleIntelInfo.swift in Sources */,
 				6A817EB2240ABEA6003224DE /* ViewControllerConfig.swift in Sources */,
 				117B27B223E94B8E00581352 /* AraHUDViewController.swift in Sources */,
-				6A046F35242F8747004FFFD5 /* ViewControllerGPU.swift in Sources */,
+				6A046F35242F8747004FFFD5 /* GPUObject.swift in Sources */,
 				6A817EB6240ABEF4003224DE /* ViewControllerUpdate.swift in Sources */,
 				11D5C27823D1B11300461A78 /* BaseWindowController.swift in Sources */,
+				114FEDB924B9DDA80045777D /* BaseObject.swift in Sources */,
 				1193974923D1C1390096297C /* MyTool.swift in Sources */,
-				6A7A718C23D82DAE0082FA94 /* ViewControllerDisk.swift in Sources */,
+				6A7A718C23D82DAE0082FA94 /* DiskObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,7 +836,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 3.0;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -858,7 +866,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 3.0;
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";

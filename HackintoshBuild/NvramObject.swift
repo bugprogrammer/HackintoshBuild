@@ -9,7 +9,7 @@
 import Cocoa
 import Highlightr
 
-class ViewControllerNvram: NSViewController {
+class NvramObject: BaseObject {
     
     class NVRAM: NSObject {
         var key: String = ""
@@ -27,33 +27,41 @@ class ViewControllerNvram: NSViewController {
     @IBOutlet var nvramTextView: NSTextView!
     @IBOutlet weak var nvramTableView: NSTableView!
     
-    var nvramInfo:String = ""
-    var keysArr:[String] = []
+    var nvramInfo: String = ""
+    var keysArr: [String] = []
     
     let taskQueue = DispatchQueue.global(qos: .default)
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    override func viewWillAppear() {
-        let image = NSImage(named: "NSRefreshFreestandingTemplate")
-        image?.size = CGSize(width: 64.0, height: 64.0)
-        image!.isTemplate = true
-        refreshButton.image = image
-        refreshButton.bezelStyle = .recessed
-        refreshButton.isBordered = false
-        refreshButton.toolTip = "刷新NVRAM信息"
-        nvramTableView.target = self
-        nvramTableView.action = #selector(tableViewClick(_:))
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 4 { return }
+        if !once { return }
+        once = false
+        
         runBuildScripts("nvram", [])
     }
     
-    @IBAction func Refresh(_ sender: Any) {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        let image = NSImage(named: "NSRefreshFreestandingTemplate")
+        image?.size = CGSize(width: 64.0, height: 64.0)
+        image?.isTemplate = true
+        refreshButton.image = image
+        refreshButton.bezelStyle = .recessed
+        refreshButton.isBordered = false
+        refreshButton.toolTip = "刷新 NVRAM 信息"
+        nvramTableView.target = self
+        nvramTableView.action = #selector(tableViewClick(_:))
+    }
+    
+    @IBAction func refreshButtonDidClicked(_ sender: NSButton) {
         runBuildScripts("nvram",[])
     }
     
-    func prettyFormat(xmlString:String) -> NSAttributedString? {
+    func prettyFormat(xmlString: String) -> NSAttributedString? {
       do {
         let highlightr = Highlightr()
         highlightr!.setTheme(to: "paraiso-dark")
@@ -148,7 +156,7 @@ class ViewControllerNvram: NSViewController {
 
 }
 
-extension ViewControllerNvram: NSTableViewDataSource {
+extension NvramObject: NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return keysArr.count
@@ -156,10 +164,14 @@ extension ViewControllerNvram: NSTableViewDataSource {
     
 }
 
-extension ViewControllerNvram: NSTableViewDelegate {
+extension NvramObject: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
         return true
+    }
+    
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        return 19
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {

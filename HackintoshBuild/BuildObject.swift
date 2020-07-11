@@ -8,22 +8,18 @@
 
 import Cocoa
 
-class ViewControllerBuild: NSViewController {
+class BuildObject: BaseObject {
     
     @IBOutlet var buildText: NSTextView!
-    @IBOutlet var stopButton: NSButton!
-    
-    @IBOutlet var progressBar: NSProgressIndicator!
-    
-    @IBOutlet var buildButton: NSButton!
+    @IBOutlet weak var stopButton: NSButton!
+    @IBOutlet weak var buildButton: NSButton!
+    @IBOutlet weak var progressBar: NSProgressIndicator!
     @IBOutlet weak var pluginsView: NSTableView!
-    
-    @IBOutlet var buildLocation: NSPathControl!
+    @IBOutlet weak var buildLocation: NSPathControl!
     @IBOutlet weak var logsLocation: NSPathControl!
-    
     @IBOutlet weak var proxyTextField: NSTextField!
-    
     @IBOutlet weak var selectAllButton: NSButton!
+    
     let taskQueue = DispatchQueue.global(qos: .default)
     let alert = NSAlert()
     var selectAll: Int = 0
@@ -53,14 +49,11 @@ class ViewControllerBuild: NSViewController {
         "MacProMemoryNotificationDisabler"
     ]
     
-    override func viewWillAppear() {
-        super.viewWillAppear()
+    override func awakeFromNib() {
+        super.awakeFromNib()
         
         proxyTextField.stringValue = proxy ?? ""
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(proxyChanged(_:)), name: NSNotification.Name.ProxyChanged, object: nil)
         
         isRunning = resetStatus(isRunning: false)
         let imagebuild = NSImage(named: "NSTouchBarPlayTemplate")
@@ -87,6 +80,10 @@ class ViewControllerBuild: NSViewController {
             }
         }
         self.pluginsView.reloadData()
+    }
+    
+    @objc func proxyChanged(_ noti: Notification) {
+        proxyTextField.stringValue = proxy ?? ""
     }
     
     var buildTask: Process!
@@ -118,7 +115,7 @@ class ViewControllerBuild: NSViewController {
         return isRunning
     }
     
-    @IBAction func startBuild(_ sender: Any) {
+    @IBAction func startButtonDidClicked(_ sender: NSButton) {
         UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
         if let buildURL = buildLocation.url {
             UserDefaults.standard.set(buildURL, forKey: "kextLocation")
@@ -148,16 +145,15 @@ class ViewControllerBuild: NSViewController {
             alert.messageText = "请先选择存储位置！"
             alert.runModal()
         }
-            
     }
     
-    @IBAction func stopBuild(_ sender: Any) {
+    @IBAction func stopButtonDidClicked(_ sender: NSButton) {
         if buildTask.suspend() {
             buildTask.terminate()
         }
     }
     
-    @IBAction func CheckClicked(_ sender: NSButton) {
+    @objc func checkClicked(_ sender: NSButton) {
         selectAllButton.state = .off
         switch sender.state {
         case .on:
@@ -174,7 +170,7 @@ class ViewControllerBuild: NSViewController {
         MyLog(itemsArr)
     }
     
-    @IBAction func SelectAll(_ sender: NSButton) {
+    @IBAction func seleceAllButtonDidClicked(_ sender: NSButton) {
         switch sender.state {
         case .on:
             itemsArr = []
@@ -193,13 +189,6 @@ class ViewControllerBuild: NSViewController {
             break
         }
         MyLog(itemsArr)
-    }
-    
-    
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
     }
     
     func runBuildScripts(_ arguments: [String]) {
@@ -249,24 +238,25 @@ class ViewControllerBuild: NSViewController {
 
 }
 
-extension ViewControllerBuild: NSTableViewDataSource {
+extension BuildObject: NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return pluginsList.count
     }
 }
 
-extension ViewControllerBuild: NSTextFieldDelegate {
+extension BuildObject: NSTextFieldDelegate {
     
     func controlTextDidChange(_ obj: Notification) {
         if let textField = obj.object as? NSTextField {
             proxy = textField.stringValue
+            NotificationCenter.default.post(name: NSNotification.Name("proxyChanged"), object: nil)
         }
     }
     
 }
 
-extension ViewControllerBuild: NSTableViewDelegate {
+extension BuildObject: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
         return true
@@ -283,7 +273,8 @@ extension ViewControllerBuild: NSTableViewDelegate {
                 button.bezelStyle = .inline
                 button.title = ""
                 button.alignment = .right
-                button.action = #selector(CheckClicked(_:))
+                button.target = self
+                button.action = #selector(checkClicked(_:))
                 if isRunning {
                     if itemsArr.contains(String(row)) {
                         button.state = .on

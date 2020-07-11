@@ -19,50 +19,50 @@ class BaseWindowController: NSWindowController {
         return MyTool.getViewControllerFromMain(TabViewControllerInfo.self)
     }()
 
-    lazy var buildVC: ViewControllerBuild = {
-        return MyTool.getViewControllerFromMain(ViewControllerBuild.self)
-    }()
+//    lazy var buildVC: ViewControllerBuild = {
+//        return MyTool.getViewControllerFromMain(ViewControllerBuild.self)
+//    }()
     
-    lazy var EFIVC: ViewControllerEFI = {
-        return MyTool.getViewControllerFromMain(ViewControllerEFI.self)
-        
-    }()
+//    lazy var EFIVC: ViewControllerEFI = {
+//        return MyTool.getViewControllerFromMain(ViewControllerEFI.self)
+//
+//    }()
     
-    lazy var diskVC: ViewControllerDisk = {
-        return MyTool.getViewControllerFromMain(ViewControllerDisk.self)
-    }()
+//    lazy var diskVC: ViewControllerDisk = {
+//        return MyTool.getViewControllerFromMain(ViewControllerDisk.self)
+//    }()
     
-    lazy var nvramVC: ViewControllerNvram = {
-        return MyTool.getViewControllerFromMain(ViewControllerNvram.self)
-    }()
-    
-    lazy var lockVC: ViewControllerLock = {
-        return MyTool.getViewControllerFromMain(ViewControllerLock.self)
-    }()
-    
-    lazy var ioregVC: ViewControllerIoreg = {
-        return MyTool.getViewControllerFromMain(ViewControllerIoreg.self)
-    }()
-    
-    lazy var gpuVC: ViewControllerGPU = {
-        return MyTool.getViewControllerFromMain(ViewControllerGPU.self)
-    }()
-    
-    lazy var osVC: ViewControllerOS = {
-        return MyTool.getViewControllerFromMain(ViewControllerOS.self)
-    }()
-    
-    lazy var compareVC: ViewControllerCompare = {
-        return MyTool.getViewControllerFromMain(ViewControllerCompare.self)
-    }()
-    
-    lazy var otherVC: ViewControllerOther = {
-        return MyTool.getViewControllerFromMain(ViewControllerOther.self)
-    }()
-    
-    lazy var payVC: ViewControllerPay = {
-        return MyTool.getViewControllerFromMain(ViewControllerPay.self)
-    }()
+//    lazy var nvramVC: ViewControllerNvram = {
+//        return MyTool.getViewControllerFromMain(ViewControllerNvram.self)
+//    }()
+//    
+//    lazy var lockVC: ViewControllerLock = {
+//        return MyTool.getViewControllerFromMain(ViewControllerLock.self)
+//    }()
+//    
+//    lazy var ioregVC: ViewControllerIoreg = {
+//        return MyTool.getViewControllerFromMain(ViewControllerIoreg.self)
+//    }()
+//    
+//    lazy var gpuVC: ViewControllerGPU = {
+//        return MyTool.getViewControllerFromMain(ViewControllerGPU.self)
+//    }()
+//    
+//    lazy var osVC: ViewControllerOS = {
+//        return MyTool.getViewControllerFromMain(ViewControllerOS.self)
+//    }()
+//    
+//    lazy var compareVC: ViewControllerCompare = {
+//        return MyTool.getViewControllerFromMain(ViewControllerCompare.self)
+//    }()
+//    
+//    lazy var otherVC: ViewControllerOther = {
+//        return MyTool.getViewControllerFromMain(ViewControllerOther.self)
+//    }()
+//    
+//    lazy var payVC: ViewControllerPay = {
+//        return MyTool.getViewControllerFromMain(ViewControllerPay.self)
+//    }()
     
     let infoIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.infoIdentifier")
     let buildIdentifier = NSToolbarItem.Identifier(rawValue: "bugprogrammer.HackintoshBuild.NSToolbarItem.buildIdentifier")
@@ -284,57 +284,57 @@ extension BaseWindowController: NSToolbarDelegate {
     }
      
     @objc func toolbarItemDidTapped(_ item: NSToolbarItem) {
-        switch item.itemIdentifier {
-        case infoIdentifier:
-            self.window?.contentViewController = infoVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
-            break
-        case buildIdentifier:
-            self.window?.contentViewController = buildVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
-            break
-        case efiIdentifier:
-            self.window?.contentViewController = EFIVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
-            break
-        case diskIdentifier:
-            self.window?.contentViewController = diskVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
-            break
-        case nvramIdentifier:
-            self.window?.contentViewController = nvramVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
-            break
-        case lockIdentifier:
-            self.window?.contentViewController = lockVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
-            break
-        case ioregIdentifier:
-            self.window?.contentViewController = ioregVC
-            self.window?.setContentSize(NSSize(width: 1200, height: 630))
-            break
-        case gpuIdentifier:
-            self.window?.contentViewController = gpuVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
-            break
-        case osIdentifier:
-            self.window?.contentViewController = osVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
-            break
-        case compareIdentifier:
-            self.window?.contentViewController = compareVC
-            self.window?.setContentSize(NSSize(width: 1200, height: 630))
-            break
-        case otherIdentifier:
-            self.window?.contentViewController = otherVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
-            break
-        case payIdentifier:
-            self.window?.contentViewController = payVC
-            self.window?.setContentSize(NSSize(width: 790, height: 630))
-            break
-        default:
-            break
-        }
+//        switch item.itemIdentifier {
+//        case infoIdentifier:
+//            self.window?.contentViewController = infoVC
+//            self.window?.setContentSize(NSSize(width: 790, height: 630))
+//            break
+//        case buildIdentifier:
+//            self.window?.contentViewController = buildVC
+//            self.window?.setContentSize(NSSize(width: 790, height: 630))
+//            break
+//        case efiIdentifier:
+//            self.window?.contentViewController = EFIVC
+//            self.window?.setContentSize(NSSize(width: 790, height: 630))
+//            break
+//        case diskIdentifier:
+//            self.window?.contentViewController = diskVC
+//            self.window?.setContentSize(NSSize(width: 790, height: 630))
+//            break
+//        case nvramIdentifier:
+//            self.window?.contentViewController = nvramVC
+//            self.window?.setContentSize(NSSize(width: 790, height: 630))
+//            break
+//        case lockIdentifier:
+//            self.window?.contentViewController = lockVC
+//            self.window?.setContentSize(NSSize(width: 790, height: 630))
+//            break
+//        case ioregIdentifier:
+//            self.window?.contentViewController = ioregVC
+//            self.window?.setContentSize(NSSize(width: 1200, height: 630))
+//            break
+//        case gpuIdentifier:
+//            self.window?.contentViewController = gpuVC
+//            self.window?.setContentSize(NSSize(width: 790, height: 630))
+//            break
+//        case osIdentifier:
+//            self.window?.contentViewController = osVC
+//            self.window?.setContentSize(NSSize(width: 790, height: 630))
+//            break
+//        case compareIdentifier:
+//            self.window?.contentViewController = compareVC
+//            self.window?.setContentSize(NSSize(width: 1200, height: 630))
+//            break
+//        case otherIdentifier:
+//            self.window?.contentViewController = otherVC
+//            self.window?.setContentSize(NSSize(width: 790, height: 630))
+//            break
+//        case payIdentifier:
+//            self.window?.contentViewController = payVC
+//            self.window?.setContentSize(NSSize(width: 790, height: 630))
+//            break
+//        default:
+//            break
+//        }
     }
 }

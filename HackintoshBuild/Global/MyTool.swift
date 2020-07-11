@@ -8,10 +8,17 @@
 
 import Cocoa
 
+public let minSizeForNormal = NSSize(width: 800, height: 666)
+public let minSizeForBig = NSSize(width: 1200, height: 666)
+public var beforeSize: CGSize = minSizeForNormal
+
+public var isFullScreen: Bool = false
+public var willFullScreen: Bool = false
+public var willExitFullScreen: Bool = false
+
 /**
  用此类封装可能常用的工具
  */
-
 final class MyTool {
     
     static func getViewControllerFromMain<T>(_ aClass: T.Type) -> T {
@@ -43,4 +50,25 @@ final class MyTool {
         return false
     }
     
+}
+
+extension Notification.Name {
+    
+    static let ProxyChanged = Notification.Name("bugprogrammer.HackintoshBuild.notification.name.proxyChanged")
+    static let TapChanged = Notification.Name("bugprogrammer.HackintoshBuild.notification.name.tapChanged")
+    
+}
+
+class VerticallyCenteredTextFieldCell: NSTextFieldCell {
+
+    override func drawingRect(forBounds theRect: NSRect) -> NSRect {
+        var newRect:NSRect = super.drawingRect(forBounds: theRect)
+        let textSize:NSSize = self.cellSize(forBounds: theRect)
+        let heightDelta:CGFloat = newRect.size.height - textSize.height
+        if heightDelta > 0 {
+            newRect.size.height = textSize.height
+            newRect.origin.y += heightDelta * 0.5
+        }
+        return newRect
+    }
 }

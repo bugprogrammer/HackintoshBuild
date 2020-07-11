@@ -8,9 +8,9 @@
 
 import Cocoa
 
-class ViewControllerInfo: NSViewController {
+class InfoObject: NSObject {
     
-    class Info: NSObject {
+    class Info {
         var key: String = ""
         var value: String = ""
         
@@ -24,16 +24,23 @@ class ViewControllerInfo: NSViewController {
     var output: String = ""
     var info: [Info] = []
     
+    
     @IBOutlet weak var infoTableView: NSTableView!
     
     let taskQueue = DispatchQueue.global(qos: .default)
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override init() {
+        super.init()
+        
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
         runBuildScripts("systeminfo")
     }
     
-    func Convert(_ str: String) -> String {
+    func convert(_ str: String) -> String {
         var hexStr: String = ""
         let arr = Array(str)
         for index in stride(from: arr.count-1, to: 0, by: -2) {
@@ -66,7 +73,7 @@ class ViewControllerInfo: NSViewController {
                             var flag: Bool = false
                             var infoArr = infoStr.components(separatedBy: ":")
                             if infoArr[0] == "核显 ig-platform-id" && infoArr[1] != "" {
-                                infoArr[1] = "0x" + self.Convert(infoArr[1])
+                                infoArr[1] = "0x" + self.convert(infoArr[1])
                             } else if infoArr [0] == "Processor Name" {
                                 infoArr[1] = self.getProcessorName()
                             }
@@ -101,11 +108,9 @@ class ViewControllerInfo: NSViewController {
             if output.count > 0 {
                 outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
                 let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-                DispatchQueue.main.async(execute: {
-                    let previousOutput = self.output
-                    let nextOutput = previousOutput + outputString
-                    self.output = nextOutput
-                })
+                let previousOutput = self.output
+                let nextOutput = previousOutput + outputString
+                self.output = nextOutput
             }
         }
     }
@@ -119,7 +124,7 @@ class ViewControllerInfo: NSViewController {
     }
 }
 
-extension ViewControllerInfo: NSTableViewDataSource {
+extension InfoObject: NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return info.count
@@ -127,10 +132,14 @@ extension ViewControllerInfo: NSTableViewDataSource {
     
 }
 
-extension ViewControllerInfo: NSTableViewDelegate {
+extension InfoObject: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
         return true
+    }
+    
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        return 19
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {

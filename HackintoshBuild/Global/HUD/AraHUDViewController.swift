@@ -13,6 +13,7 @@ class AraHUDViewController: NSObject {
     static let shared = AraHUDViewController()
     
     private var currentHUD: AraHUDView?
+    private(set) var isShowing: Bool = false
     
     func showHUDWithTitle(title: String) {
         if currentHUD != nil {
@@ -32,11 +33,14 @@ class AraHUDViewController: NSObject {
             }
         }
         
+        guard let window = NSApplication.shared.keyWindow else {
+            return
+        }
         (currentHUD?.viewWithTag(1) as? NSTextField)?.stringValue = title
         currentHUD?.setAccessibilityEnabled(false)
-        currentHUD?.frame = (NSApplication.shared.keyWindow?.contentView!.frame)!
+        currentHUD?.frame = window.contentView!.bounds
         currentHUD?.progressIndicator.startAnimation(nil)
-        NSApplication.shared.keyWindow?.contentView?.addSubview(currentHUD!)
+        window.contentView!.addSubview(currentHUD!)
     }
     
     func hideHUD() {

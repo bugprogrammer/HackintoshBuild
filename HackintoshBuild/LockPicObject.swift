@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewControllerLock: NSViewController {
+class LockPicObject: BaseObject {
     
     @IBOutlet weak var replaceButton: NSButton!
     @IBOutlet weak var resetButton: NSButton!
@@ -18,9 +18,9 @@ class ViewControllerLock: NSViewController {
     let taskQueue = DispatchQueue.global(qos: .default)
     var output: String = ""
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
         replaceButton.isEnabled = false
         resetButton.isEnabled = true
     }
@@ -35,7 +35,7 @@ class ViewControllerLock: NSViewController {
             lockImageView.image = NSImage()
             replaceButton.isEnabled = false
             let alert = NSAlert()
-            alert.messageText = "请选择PNG格式图片"
+            alert.messageText = "请选择 PNG 格式图片"
             alert.runModal()
             return false
         }
@@ -51,14 +51,14 @@ class ViewControllerLock: NSViewController {
         }
     }
     
-    @IBAction func Replace(_ sender: Any) {
+    @IBAction func replaceButtonDidClicked(_ sender: Any) {
         if let urlImage = locationImage.url {
             MyLog(urlImage.path)
             runBuildScripts("changeLockPicture", [urlImage.path], "替换完成")
         }
     }
     
-    @IBAction func Reset(_ sender: Any) {
+    @IBAction func resetButtonDidClicked(_ sender: Any) {
         runBuildScripts("resetLockPicture", [], "重置完成")
     }
     

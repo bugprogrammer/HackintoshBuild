@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewControllerDisk: NSViewController {
+class DiskObject: BaseObject {
     
     class DiskInfoObject {
         var name: String
@@ -32,6 +32,7 @@ class ViewControllerDisk: NSViewController {
         
     @IBOutlet weak var diskTableView: NSTableView!
     @IBOutlet weak var refreshButton: NSButton!
+    
     let bdmesg = Bundle.main.path(forResource: "bdmesg", ofType: "", inDirectory: "tools")
     
     var diskInfo:String = ""
@@ -40,39 +41,44 @@ class ViewControllerDisk: NSViewController {
     let taskQueue = DispatchQueue.global(qos: .default)
     var flag: Int = 0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 3 { return }
+        if !once { return }
+        once = false
+        
+        refreshButton.isEnabled = false
+        arrayPartition = []
+        diskInfoObject = []
+        diskTableView.reloadData()
+        runBuildScripts("diskInfo", [bdmesg!])
+        diskTableView.tableColumns.forEach { (column) in
+            column.headerCell.alignment = .center
+        }
     }
     
-    override func viewWillAppear() {
-        super.viewWillAppear()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
         let image = NSImage(named: "NSRefreshFreestandingTemplate")
         image?.size = CGSize(width: 64.0, height: 64.0)
-        image!.isTemplate = true
+        image?.isTemplate = true
         refreshButton.image = image
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
         refreshButton.toolTip = "刷新 EFI 列表"
-        if flag == 0 {
-            refreshButton.isEnabled = false
-            arrayPartition = []
-            diskInfoObject = []
-            diskTableView.reloadData()
-            runBuildScripts("diskInfo",[bdmesg!])
-            diskTableView.tableColumns.forEach { (column) in
-                column.headerCell.alignment = .center
-            }
-            flag = 1
-        }
     }
     
-    @IBAction func Refresh(_ sender: Any) {
+    @IBAction func refreshDidClicked(_ sender: NSButton) {
         refreshButton.isEnabled = false
         arrayPartition = []
         diskInfoObject = []
         diskTableView.reloadData()
         runBuildScripts("diskInfo",[bdmesg!])
     }
+    
     func runBuildScripts(_ shell: String,_ arguments: [String]) {
         AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
         taskQueue.async {
@@ -172,7 +178,7 @@ class ViewControllerDisk: NSViewController {
     }
 }
 
-extension ViewControllerDisk: NSTableViewDataSource {
+extension DiskObject: NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return diskInfoObject.count
@@ -180,7 +186,7 @@ extension ViewControllerDisk: NSTableViewDataSource {
     
 }
 
-extension ViewControllerDisk: NSTableViewDelegate {
+extension DiskObject: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
         return true
@@ -245,6 +251,7 @@ extension ViewControllerDisk: NSTableViewDelegate {
                 return button
             case "mount":
                 let button = NSButton()
+                button.target = self
                 button.action = #selector(mountButtonAction(_:))
                 button.bezelStyle = .recessed
                 button.isBordered = false
@@ -264,6 +271,7 @@ extension ViewControllerDisk: NSTableViewDelegate {
                 return button
             case "open":
                 let button = NSButton()
+                button.target = self
                 button.action = #selector(openButtonAction(_:))
                 button.bezelStyle = .recessed
                 button.isBordered = false
