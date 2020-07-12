@@ -1,10 +1,10 @@
 HackintoshBuild Changelog
 =========================
 
-#### v2.2
+#### v3.0
+- 重构 UI，适配 Big Sur
 - 支持 AMD CPUs
 - 优化编译流程，修复找不到 xcodebuild 导致编译失败
-- 文档规范化中英文格式
 - 修复 EFI 分区挂载在某些情况下显示错误
 
 #### v2.1
