@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class DiskObject: BaseObject {
+class DiskObject: OutBaseObject {
     
     class DiskInfoObject {
         var name: String
@@ -80,7 +80,7 @@ class DiskObject: BaseObject {
     }
     
     func runBuildScripts(_ shell: String,_ arguments: [String]) {
-        AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
+        AraHUDViewController.shared.showHUDWithTitle()
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()

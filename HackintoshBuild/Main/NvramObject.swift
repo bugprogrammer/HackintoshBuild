@@ -9,7 +9,7 @@
 import Cocoa
 import Highlightr
 
-class NvramObject: BaseObject {
+class NvramObject: OutBaseObject {
     
     class NVRAM: NSObject {
         var key: String = ""

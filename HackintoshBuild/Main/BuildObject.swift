@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class BuildObject: BaseObject {
+class BuildObject: OutBaseObject {
     
     @IBOutlet var buildText: NSTextView!
     @IBOutlet weak var stopButton: NSButton!
@@ -52,9 +52,6 @@ class BuildObject: BaseObject {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        proxyTextField.stringValue = proxy ?? ""
-        NotificationCenter.default.addObserver(self, selector: #selector(proxyChanged(_:)), name: NSNotification.Name.ProxyChanged, object: nil)
-        
         isRunning = resetStatus(isRunning: false)
         let imagebuild = NSImage(named: "NSTouchBarPlayTemplate")
         imagebuild?.isTemplate = true
@@ -82,8 +79,14 @@ class BuildObject: BaseObject {
         self.pluginsView.reloadData()
     }
     
-    @objc func proxyChanged(_ noti: Notification) {
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 1 { return }
         proxyTextField.stringValue = proxy ?? ""
+        if !once { return }
+        once = false
     }
     
     var buildTask: Process!

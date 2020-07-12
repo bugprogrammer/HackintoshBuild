@@ -16,6 +16,9 @@ public var isFullScreen: Bool = false
 public var willFullScreen: Bool = false
 public var willExitFullScreen: Bool = false
 
+public var isSIPStatusEnabled: Bool? = nil
+public var proxy: String? = UserDefaults.standard.string(forKey: "proxy")
+
 /**
  用此类封装可能常用的工具
  */
@@ -56,6 +59,7 @@ extension Notification.Name {
     
     static let ProxyChanged = Notification.Name("bugprogrammer.HackintoshBuild.notification.name.proxyChanged")
     static let TapChanged = Notification.Name("bugprogrammer.HackintoshBuild.notification.name.tapChanged")
+    static let InTapChanged = Notification.Name("bugprogrammer.HackintoshBuild.notification.name.inTapChanged")
     
 }
 

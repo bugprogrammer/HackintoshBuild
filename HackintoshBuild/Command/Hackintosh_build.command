@@ -20,7 +20,7 @@ path=$5
 
 echo -e "正在检测编译环境完整性：\n"
 
-################# nasm ##################
+################# mtoc ##################
 echo "正在验证 mtoc"
 
 mtoc_hash=$(curl -L "https://github.com/acidanthera/ocbuild/raw/master/external/mtoc-mac64.sha256") || exit 1

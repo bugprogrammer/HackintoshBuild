@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import GitHubUpdates
 
 //@NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -14,19 +15,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     
     let taskQueue = DispatchQueue.global(qos: .default)
-    public var isSIPStatusEnabled: Bool? = nil
     var outputPipe: Pipe!
     var sipStatusOutPut: String = ""
+    var lastIndex = 0
     
     @IBOutlet weak var toolBar: NSToolbar!
     @IBOutlet weak var mainTabView: NSTabView!
-
+    @IBOutlet weak var inTabView: NSTabView!
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        runSIPScripts("sipStatus", [], "")
-        toolBar.selectedItemIdentifier = NSToolbarItem.Identifier(rawValue: "0")
         
-        window.center()
+        let updater = GitHubUpdater()
+        updater.user = "bugprogrammer"
+        updater.repository = "HackintoshBuild"
+        updater.checkForUpdatesInBackground()
+        
+        runSIPScripts("sipStatus", [], "")
         
         if let width = UserDefaults.standard.value(forKey: "windowSizeWidth") as? CGFloat, let height = UserDefaults.standard.value(forKey: "windowSizeHeight") as? CGFloat  {
             let size = CGSize(width: width, height: height)
@@ -35,6 +40,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         } else {
             window.setContentSize(minSizeForNormal)
         }
+        
+        // NSToolbar 适配深色和浅色模式
+        for item in toolBar.items {
+            item.image?.isTemplate = true
+        }
+        
+        toolBar.selectedItemIdentifier = NSToolbarItem.Identifier(rawValue: "0")
+        inTabView.selectTabViewItem(at: 0)
+        window.center()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -62,6 +76,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func runSIPScripts(_ shell: String,_ arguments: [String], _ alertText: String) {
+        AraHUDViewController.shared.showHUDWithTitle(title: "正在整理必要信息")
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
@@ -71,6 +86,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 self.taskOutPut(task)
                 task.launch()
                 task.waitUntilExit()
+                task.terminationHandler = { task in
+                    DispatchQueue.main.async {
+                        AraHUDViewController.shared.hideHUD()
+                    }
+                }
             }
         }
     }
@@ -93,18 +113,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 let matches = regex.matches(in: self.sipStatusOutPut, options: [], range: NSMakeRange(0, self.sipStatusOutPut.count))
                 if matches.count == 1 && matches[0].range.location != NSNotFound {
                     MyLog("SIP status: enabled.")
-                    self.isSIPStatusEnabled = true
+                    isSIPStatusEnabled = true
                 } else {
                     MyLog("SIP status: disabled.")
-                    self.isSIPStatusEnabled = false
+                    isSIPStatusEnabled = false
                 }
             }
         }
     }
 
     @IBAction func toolBarDidClicked(_ sender: NSToolbarItem) {
-        let index = Int(sender.itemIdentifier.rawValue)!
+        if AraHUDViewController.shared.isShowing {
+            toolBar.selectedItemIdentifier = NSToolbarItem.Identifier(rawValue: String(lastIndex))
+            return
+        }
         
+        let index = Int(sender.itemIdentifier.rawValue)!
+        lastIndex = index
         // 两页需要设置最小值
         // 如果用户已经拖的比这个值大了，就不管了
         // 需要记忆用户拉的大小
@@ -122,6 +147,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         self.mainTabView.selectTabViewItem(at: index)
         NotificationCenter.default.post(name: NSNotification.Name.TapChanged, object: index)
+    }
+}
+
+extension AppDelegate: NSTabViewDelegate {
+    func tabView(_ tabView: NSTabView, shouldSelect tabViewItem: NSTabViewItem?) -> Bool {
+        if AraHUDViewController.shared.isShowing {
+            return false
+        }
+        return true
+    }
+    
+    func tabView(_ tabView: NSTabView, didSelect tabViewItem: NSTabViewItem?) {
+        guard let identifier = tabViewItem?.identifier as? String else { return }
+        let index = Int(identifier)!
+        NotificationCenter.default.post(name: NSNotification.Name.InTapChanged, object: index)
     }
 }
 

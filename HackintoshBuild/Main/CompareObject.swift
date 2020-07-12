@@ -9,12 +9,20 @@
 import Cocoa
 import WebKit
 
-class ViewControllerCompare: NSViewController {
+class CompareObject: OutBaseObject {
 
     @IBOutlet weak var webview: WKWebView!
+    
     let mergely = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "mergely")
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 9 { return }
+        if !once { return }
+        once = false
+        
         webview.loadFileURL(mergely!, allowingReadAccessTo: mergely!)
         let request = URLRequest(url: mergely!)
         webview.load(request)

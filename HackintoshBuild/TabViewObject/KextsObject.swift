@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewControllerUpdate: NSViewController {
+class KextsObject: InBaseObject {
 
     @IBOutlet weak var refreshButton: NSButton!
     @IBOutlet weak var tableview: NSTableView!
@@ -16,8 +16,8 @@ class ViewControllerUpdate: NSViewController {
     @IBOutlet weak var downloadButton: NSButton!
     @IBOutlet weak var openButton: NSButton!
     @IBOutlet weak var selectAllButton: NSButton!
-    
     @IBOutlet weak var proxyTextField: NSTextField!
+    
     let taskQueue = DispatchQueue.global(qos: .default)
     var task: Process!
 
@@ -73,8 +73,9 @@ class ViewControllerUpdate: NSViewController {
     var currentVersion: [String] = []
     var Lastest: [String] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
         let open = MyAsset.open1.image
         open.isTemplate = true
         openButton.image = open
@@ -101,13 +102,6 @@ class ViewControllerUpdate: NSViewController {
         proxyTextField.delegate = self
         proxyTextField.refusesFirstResponder = true
         
-        runBuildScripts("kextscurrentVersion", ["Lilu"])
-    }
-    
-    override func viewWillAppear() {
-        super.viewWillAppear()
-        
-        proxyTextField.stringValue = proxy ?? ""
         let refresh = NSImage(named: "NSRefreshFreestandingTemplate")
         let downloadAll = MyAsset.downloadAll.image
         refresh!.isTemplate = true
@@ -116,17 +110,29 @@ class ViewControllerUpdate: NSViewController {
         refreshButton.image = refresh
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
-        refreshButton.isEnabled = false
         refreshButton.toolTip = "刷新"
         downloadButton.image = downloadAll
-        downloadButton.isBordered = false
         downloadButton.bezelStyle = .recessed
-        downloadButton.isEnabled = false
+        downloadButton.isBordered = false
         downloadButton.toolTip = "下载"
+    }
+    
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 3 { return }
+        proxyTextField.stringValue = proxy ?? ""
+        if !once { return }
+        once = false
+        
+        runBuildScripts("kextscurrentVersion", ["Lilu"])
+        refreshButton.isEnabled = false
+        downloadButton.isEnabled = false
         selectAllButton.isEnabled = false
     }
     
-    @objc func CheckClicked(_ sender: NSButton) {
+    @objc func checkClicked(_ sender: NSButton) {
         selectAllButton.state = .off
         switch sender.state {
         case .on:
@@ -151,7 +157,7 @@ class ViewControllerUpdate: NSViewController {
         MyLog(itemsArr)
     }
     
-    @IBAction func SelectAll(_ sender: NSButton) {
+    @IBAction func selectAllButtonDidClicked(_ sender: NSButton) {
         switch sender.state {
         case .on:
             itemsArr = []
@@ -194,7 +200,7 @@ class ViewControllerUpdate: NSViewController {
         }
     }
     
-    @IBAction func Resfresh(_ sender: Any) {
+    @IBAction func resfreshButtonDidClicked(_ sender: Any) {
         selectAllButton.state = .off
         selectAll = false
         isStart = false
@@ -212,7 +218,7 @@ class ViewControllerUpdate: NSViewController {
         runBuildScripts("kextscurrentVersion", ["Lilu"])
     }
     
-    @IBAction func downloads(_ sender: NSButton) {
+    @IBAction func downloadButtonDidClicked(_ sender: NSButton) {
         //Lilu-1.4.2-RELEASE.zip
         UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
         downloadButton.isEnabled = false
@@ -268,7 +274,7 @@ class ViewControllerUpdate: NSViewController {
         return downloadURL
     }
     
-    @IBAction func open(_ sender: Any) {
+    @IBAction func openButtonDidClicked(_ sender: NSButton) {
         runBuildScripts("openFinder", [pathDownload])
     }
     
@@ -367,14 +373,14 @@ class ViewControllerUpdate: NSViewController {
     
 }
 
-extension ViewControllerUpdate: NSTableViewDataSource {
+extension KextsObject: NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return kexts.count
     }
 }
 
-extension ViewControllerUpdate: NSTextFieldDelegate {
+extension KextsObject: NSTextFieldDelegate {
     
     func controlTextDidChange(_ obj: Notification) {
         if let textField = obj.object as? NSTextField {
@@ -384,10 +390,14 @@ extension ViewControllerUpdate: NSTextFieldDelegate {
     
 }
 
-extension ViewControllerUpdate: NSTableViewDelegate {
+extension KextsObject: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
         return true
+    }
+    
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        return 19
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
@@ -401,7 +411,8 @@ extension ViewControllerUpdate: NSTableViewDelegate {
                 button.bezelStyle = .inline
                 button.title = ""
                 button.alignment = .right
-                button.action = #selector(CheckClicked(_:))
+                button.target = self
+                button.action = #selector(checkClicked(_:))
                 
                 if Lastest.count >= row + 1 && !isRunning.contains(true) {
                     if itemFlag.contains(row) {

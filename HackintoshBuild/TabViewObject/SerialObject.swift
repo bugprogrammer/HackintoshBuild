@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewControllerSerial: NSViewController {
+class SerialObject: InBaseObject {
 
     @IBOutlet weak var MedolList: NSPopUpButton!
     @IBOutlet weak var refreshButton: NSButton!
@@ -23,28 +23,36 @@ class ViewControllerSerial: NSViewController {
     var keysArr: [String] = ["机型", "序列号", "MLB", "UUID"]
     var valuesArr: [String] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    override func viewWillAppear() {
-        super.viewWillAppear()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
         refreshButton.isBordered = false
         refreshButton.bezelStyle = .recessed
         let image = NSImage(named: "NSRefreshFreestandingTemplate")
         image?.isTemplate = true
-        image?.size = CGSize(width: 20.0, height: 20.0)
+        image?.size = CGSize(width: 40, height: 40)
         refreshButton.image = image
+        refreshButton.target = self
         refreshButton.action = #selector(refresh)
         refreshButton.toolTip = "生成新的序列号信息"
+        tableview.target = self
         tableview.doubleAction = #selector(tableViewDoubleClick)
+        MedolList.target = self
         MedolList.action = #selector(getMacSerial)
         getMedolsList(medolsurl!)
+    }
+    
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 5 { return }
         var arguments: [String] = []
         arguments.append(macserialurl!)
         arguments.append(medolArr[0])
-        
         runBuildScripts("macserial", arguments)
+        if !once { return }
+        once = false
     }
     
     func getMedolsList(_ models: String) {
@@ -134,17 +142,21 @@ class ViewControllerSerial: NSViewController {
     }
 }
 
-extension ViewControllerSerial: NSTableViewDataSource {
+extension SerialObject: NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return valuesArr.count
     }
 }
 
-extension ViewControllerSerial: NSTableViewDelegate {
+extension SerialObject: NSTableViewDelegate {
 
     func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
         return true
+    }
+    
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        return 19
     }
 
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {

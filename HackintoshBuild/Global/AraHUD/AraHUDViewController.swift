@@ -15,7 +15,7 @@ class AraHUDViewController: NSObject {
     private var currentHUD: AraHUDView?
     private(set) var isShowing: Bool = false
     
-    func showHUDWithTitle(title: String) {
+    func showHUDWithTitle(title: String = "任务执行中") {
         if currentHUD != nil {
             currentHUD?.removeFromSuperview()
         }
@@ -36,6 +36,7 @@ class AraHUDViewController: NSObject {
         guard let window = NSApplication.shared.keyWindow else {
             return
         }
+        isShowing = true
         (currentHUD?.viewWithTag(1) as? NSTextField)?.stringValue = title
         currentHUD?.setAccessibilityEnabled(false)
         currentHUD?.frame = window.contentView!.bounds
@@ -44,6 +45,7 @@ class AraHUDViewController: NSObject {
     }
     
     func hideHUD() {
+        isShowing = false
         if currentHUD == nil {
             return
         }

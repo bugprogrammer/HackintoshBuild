@@ -8,22 +8,25 @@
 
 import Cocoa
 
-class ViewControllerOther: NSViewController {
+class OtherObject: OutBaseObject {
     
     @IBOutlet weak var sipLable: NSTextField!
     @IBOutlet var textview: NSTextView!
     @IBOutlet weak var unclockButton: NSButton!
     @IBOutlet weak var rebuildButton: NSButton!
     @IBOutlet weak var spctlButton: NSButton!
-    @IBOutlet weak var showButton: NSButton!
-    @IBOutlet weak var hiddenButton: NSButton!
     
     let taskQueue = DispatchQueue.global(qos: .default)
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        spctlButton.isEnabled = true
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
         
+        let index = noti.object as! Int
+        if index != 10 { return }
+        if !once { return }
+        once = false
+        
+        spctlButton.isEnabled = true
         guard let enabled = isSIPStatusEnabled else {
             sipLable.textColor = NSColor.red
             sipLable.stringValue = "SIP 状态未知"
@@ -94,7 +97,7 @@ class ViewControllerOther: NSViewController {
     }
     
     func runBuildScripts(_ shell: String,_ arguments: [String],_ alertText: String) {
-        AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
+        AraHUDViewController.shared.showHUDWithTitle()
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()

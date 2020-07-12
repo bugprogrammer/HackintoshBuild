@@ -8,25 +8,23 @@
 
 import Cocoa
 
-class ViewControllerAppleIntelInfo: NSViewController {
+class AppleIntelInfoObject: InBaseObject {
 
     @IBOutlet weak var refreshButton: NSButton!
-    var output: String = ""
     @IBOutlet var outputInfo: NSTextView!
-    let taskQueue = DispatchQueue.global(qos: .default)
-    let url = Bundle.main.path(forResource: "AppleIntelInfo", ofType: "kext", inDirectory: "tools")
     @IBOutlet weak var sipLabel: NSTextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var output: String = ""
+    let taskQueue = DispatchQueue.global(qos: .default)
+    let url = Bundle.main.path(forResource: "AppleIntelInfo", ofType: "kext", inDirectory: "tools")
+    
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
         
-        let image = NSImage(named: "NSRefreshFreestandingTemplate")
-        image?.size = CGSize(width: 20.0, height: 20.0)
-        image!.isTemplate = true
-        refreshButton.image = image
-        refreshButton.bezelStyle = .recessed
-        refreshButton.isBordered = false
-        refreshButton.toolTip = "刷新 AppleIntelInfo 信息"
+        let index = noti.object as! Int
+        if index != 2 { return }
+        if !once { return }
+        once = false
         
         guard let enabled = isSIPStatusEnabled else {
             sipLabel.textColor = NSColor.red
@@ -43,14 +41,21 @@ class ViewControllerAppleIntelInfo: NSViewController {
             sipLabel.stringValue = "SIP 已关闭"
             refreshButton.isEnabled = true
         }
+        
+        refreshButtonDidClicked(nil)
     }
     
-    override func viewDidAppear() {
-        super.viewDidAppear()
-        Refresh(nil)
+    override func awakeFromNib() {
+        let image = NSImage(named: "NSRefreshFreestandingTemplate")
+        image?.size = CGSize(width: 20.0, height: 20.0)
+        image!.isTemplate = true
+        refreshButton.image = image
+        refreshButton.bezelStyle = .recessed
+        refreshButton.isBordered = false
+        refreshButton.toolTip = "刷新 AppleIntelInfo 信息"
     }
     
-    @IBAction func Refresh(_ sender: Any?) {
+    @IBAction func refreshButtonDidClicked(_ sender: NSButton?) {
         if MyTool.isAMDProcessor() {
             let alert = NSAlert()
             alert.messageText = "AMD CPU 无法使用本功能"
@@ -68,7 +73,7 @@ class ViewControllerAppleIntelInfo: NSViewController {
     
     func runBuildScripts(_ shell: String,_ arguments: [String]) {
         self.output = ""
-        AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
+        AraHUDViewController.shared.showHUDWithTitle()
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()

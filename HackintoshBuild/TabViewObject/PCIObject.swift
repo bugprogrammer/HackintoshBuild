@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewControllerPCI: NSViewController {
+class PCIObject: InBaseObject {
     
     struct Info: Codable {
         let Name: String
@@ -43,28 +43,39 @@ class ViewControllerPCI: NSViewController {
     @IBOutlet weak var ioregTextField: NSTextField!
     @IBOutlet weak var pciTableView: NSTableView!
     @IBOutlet weak var infoTableView: NSTableView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
         refreshButton.isBordered = false
         refreshButton.bezelStyle = .recessed
         let image = NSImage(named: "NSRefreshFreestandingTemplate")
         image?.isTemplate = true
-        image?.size = CGSize(width: 20.0, height: 20.0)
+        image?.size = CGSize(width: 20, height: 20)
         refreshButton.image = image
+        refreshButton.target = self
         refreshButton.action = #selector(refresh)
-        refreshButton.toolTip = "刷新PCI信息"
+        refreshButton.toolTip = "刷新 PCI 信息"
         pciTableView.tableColumns.forEach { (column) in
             column.headerCell.alignment = .left
         }
-        var arguments: [String] = []
-        arguments.append(dspci!)
-        runBuildScripts("dspci", arguments)
-        MyLog(arguments)
         pciTableView.target = self
-        pciTableView.delegate = self
-        pciTableView.dataSource = self
         pciTableView.action = #selector(tableViewClick(_:))
         pciTableView.doubleAction = #selector(tableViewDoubleClick(_:))
+    }
+    
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 4 { return }
+        if !once { return }
+        once = false
+        
+        var arguments: [String] = []
+        arguments.append(dspci!)
+        MyLog(arguments)
+        runBuildScripts("dspci", arguments)
     }
     
     @objc func tableViewClick(_ sender: AnyObject) {
@@ -181,7 +192,7 @@ class ViewControllerPCI: NSViewController {
     
 }
 
-extension ViewControllerPCI: NSTableViewDataSource {
+extension PCIObject: NSTableViewDataSource {
 
     func numberOfRows(in tableView: NSTableView) -> Int {
         if tableView == self.pciTableView {
@@ -194,10 +205,14 @@ extension ViewControllerPCI: NSTableViewDataSource {
 
 }
 
-extension ViewControllerPCI: NSTableViewDelegate {
+extension PCIObject: NSTableViewDelegate {
 
     func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
         return true
+    }
+    
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        return 19
     }
 
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {

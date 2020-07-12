@@ -9,7 +9,7 @@
 import Cocoa
 import Highlightr
 
-class GPUObject: BaseObject {
+class GPUObject: OutBaseObject {
 
     @IBOutlet weak var gpuLists: NSPopUpButton!
     @IBOutlet var plistTextView: NSTextView!

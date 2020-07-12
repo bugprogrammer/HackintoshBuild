@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewControllerOS: NSViewController {
+class OSObject: OutBaseObject {
 
     @IBOutlet weak var popCatalogs: NSPopUpButton!
     @IBOutlet weak var downloadPath: NSPathControl!
@@ -34,8 +34,9 @@ class ViewControllerOS: NSViewController {
     var versionDict: NSMutableDictionary = [:]
     var selectVersionList: [String] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
         HighSierraButton.isBordered = false
         HighSierraButton.bezelStyle = .recessed
         HighSierraButton.image = MyAsset.highsierra.image
@@ -58,11 +59,15 @@ class ViewControllerOS: NSViewController {
         
         bar.isHidden = true
         
+        HighSierraButton.target = self
         HighSierraButton.action = #selector(downloadHighSierra)
+        MojaveButton.target = self
         MojaveButton.action = #selector(downloadMojave)
+        CatalinaButton.target = self
         CatalinaButton.action = #selector(downloadCatalina)
         
         popCatalogs.addItems(withTitles: catalogsArr)
+        tableview.target = self
         tableview.doubleAction = #selector(tableViewDoubleClick)
         
         if let downloadURL = UserDefaults.standard.url(forKey: "OSLocation") {
@@ -279,14 +284,14 @@ class ViewControllerOS: NSViewController {
     }
 }
 
-extension ViewControllerOS: NSTableViewDataSource {
+extension OSObject: NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return selectVersionList.count
     }
 }
 
-extension ViewControllerOS: NSTableViewDelegate {
+extension OSObject: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, shouldTrackCell cell: NSCell, for tableColumn: NSTableColumn?, row: Int) -> Bool {
         return true

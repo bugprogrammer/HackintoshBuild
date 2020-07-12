@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class BaseObject: NSObject {
+class OutBaseObject: NSObject {
     
     var once: Bool = true
     

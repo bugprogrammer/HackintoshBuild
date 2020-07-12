@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class InfoObject: NSObject {
+class InfoObject: InBaseObject {
     
     class Info {
         var key: String = ""
@@ -29,11 +29,6 @@ class InfoObject: NSObject {
     
     let taskQueue = DispatchQueue.global(qos: .default)
     
-    override init() {
-        super.init()
-        
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -51,7 +46,6 @@ class InfoObject: NSObject {
     }
     
         func runBuildScripts(_ shell: String) {
-        //AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
@@ -88,7 +82,6 @@ class InfoObject: NSObject {
                         }
                         
                         self.infoTableView.reloadData()
-                        //AraHUDViewController.shared.hideHUD()
                     })
                 }
                 self.taskOutPut(task)

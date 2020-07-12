@@ -10,7 +10,7 @@ import Cocoa
 import Highlightr
 import SwiftyMarkdown
 
-class ViewControllerOpenCore: NSViewController {
+class OpenCoreObject: InBaseObject {
     
     @IBOutlet var simpleText: NSTextView!
     @IBOutlet weak var configLabel: NSTextField!
@@ -28,18 +28,20 @@ class ViewControllerOpenCore: NSViewController {
     var exportPath: String = ""
     let filemanager = FileManager.default
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
         statusBar.isHidden = true
-        versionLabel.stringValue = ""
-        configLabel.stringValue = ""
+        versionLabel.stringValue = "加载中……"
+        configLabel.stringValue = "加载中……"
         exportButton.isEnabled = false
         let exportImg = MyAsset.export.image
         exportImg.isTemplate = true
         exportButton.image = exportImg
         exportButton.bezelStyle = .recessed
         exportButton.isBordered = false
-        exportButton.toolTip = "导出SimpleFull.plst"
+        exportButton.toolTip = "导出 SimpleFull.plst"
+        exportButton.target = self
         exportButton.action = #selector(exportSimple)
         
         if let exportURL = UserDefaults.standard.url(forKey: "exportURL") {
@@ -49,6 +51,16 @@ class ViewControllerOpenCore: NSViewController {
                 exportButton.isEnabled = true
             }
         }
+    }
+    
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 6 { return }
+        if !once { return }
+        once = false
+        
         runBuildScripts("syncDatas", [location!])
     }
     
@@ -121,8 +133,8 @@ class ViewControllerOpenCore: NSViewController {
     }
     
     func select(_ num: Int) {
-        self.versionLabel.stringValue = self.versionList[num] + "修改日志"
-        self.configLabel.stringValue = self.versionList[num] + "配置模版"
+        self.versionLabel.stringValue = self.versionList[num] + " 修改日志"
+        self.configLabel.stringValue = self.versionList[num] + " 配置模版"
         let url = self.location! + "/OpenCoreVersions/" + self.versionList[num].replacingOccurrences(of: "OpenCore-", with: "")
         do {
             let changeLog = try String(contentsOfFile: url + "/Changelog.md", encoding: String.Encoding.utf8)

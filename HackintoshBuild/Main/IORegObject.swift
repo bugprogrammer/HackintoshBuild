@@ -9,7 +9,7 @@
 import Cocoa
 import WebKit
 
-class IORegObject: BaseObject {
+class IORegObject: OutBaseObject {
     
     @IBOutlet weak var webview: WKWebView!
     @IBOutlet weak var medolBox: NSPopUpButtonCell!

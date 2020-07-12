@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ShareObject: BaseObject {
+class ShareObject: OutBaseObject {
     
     @IBOutlet weak var efiLocation: NSPathControl!
     @IBOutlet weak var logsLocation: NSPathControl!
@@ -43,9 +43,6 @@ class ShareObject: BaseObject {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        proxyTextField.stringValue = proxy ?? ""
-        NotificationCenter.default.addObserver(self, selector: #selector(proxyChanged(_:)), name: NSNotification.Name("proxyChanged"), object: nil)
-        
         isRunning = resetStatus(isRunning: false)
         let imagebuild = NSImage(named: "NSTouchBarPlayTemplate")
         imagebuild?.isTemplate = true
@@ -74,8 +71,14 @@ class ShareObject: BaseObject {
         self.efiTableView.reloadData()
     }
     
-    @objc func proxyChanged(_ noti: Notification) {
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 2 { return }
         proxyTextField.stringValue = proxy ?? ""
+        if !once { return }
+        once = false
     }
     
     var efiTask: Process!

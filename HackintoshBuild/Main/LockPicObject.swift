@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class LockPicObject: BaseObject {
+class LockPicObject: OutBaseObject {
     
     @IBOutlet weak var replaceButton: NSButton!
     @IBOutlet weak var resetButton: NSButton!
@@ -64,7 +64,7 @@ class LockPicObject: BaseObject {
     
     func runBuildScripts(_ shell: String,_ arguments: [String], _ alertText: String) {
         output = ""
-        AraHUDViewController.shared.showHUDWithTitle(title: "正在进行中")
+        AraHUDViewController.shared.showHUDWithTitle()
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
