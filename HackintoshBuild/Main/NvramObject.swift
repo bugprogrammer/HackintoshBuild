@@ -23,7 +23,6 @@ class NvramObject: OutBaseObject {
     
     var nvram: [NVRAM] = []
 
-    @IBOutlet weak var refreshButton: NSButton!
     @IBOutlet var nvramTextView: NSTextView!
     @IBOutlet weak var nvramTableView: NSTableView!
     
@@ -49,16 +48,8 @@ class NvramObject: OutBaseObject {
         let image = NSImage(named: "NSRefreshFreestandingTemplate")
         image?.size = CGSize(width: 64.0, height: 64.0)
         image?.isTemplate = true
-        refreshButton.image = image
-        refreshButton.bezelStyle = .recessed
-        refreshButton.isBordered = false
-        refreshButton.toolTip = "刷新 NVRAM 信息"
         nvramTableView.target = self
         nvramTableView.action = #selector(tableViewClick(_:))
-    }
-    
-    @IBAction func refreshButtonDidClicked(_ sender: NSButton) {
-        runBuildScripts("nvram",[])
     }
     
     func prettyFormat(xmlString: String) -> NSAttributedString? {

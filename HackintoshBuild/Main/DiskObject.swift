@@ -46,6 +46,7 @@ class DiskObject: OutBaseObject {
         
         let index = noti.object as! Int
         if index != 3 { return }
+        
         if !once { return }
         once = false
         

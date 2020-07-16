@@ -17,6 +17,7 @@ public var willFullScreen: Bool = false
 public var willExitFullScreen: Bool = false
 
 public var isSIPStatusEnabled: Bool? = nil
+public var isSnapshotStatusEnabled: Bool? = nil
 public var proxy: String? = UserDefaults.standard.string(forKey: "proxy")
 
 /**

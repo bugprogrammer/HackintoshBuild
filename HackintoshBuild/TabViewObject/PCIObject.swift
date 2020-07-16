@@ -39,7 +39,6 @@ class PCIObject: InBaseObject {
     var devicepathArr: [String] = []
     var BDF: String = ""
 
-    @IBOutlet weak var refreshButton: NSButton!
     @IBOutlet weak var ioregTextField: NSTextField!
     @IBOutlet weak var pciTableView: NSTableView!
     @IBOutlet weak var infoTableView: NSTableView!
@@ -47,15 +46,9 @@ class PCIObject: InBaseObject {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        refreshButton.isBordered = false
-        refreshButton.bezelStyle = .recessed
         let image = NSImage(named: "NSRefreshFreestandingTemplate")
         image?.isTemplate = true
         image?.size = CGSize(width: 20, height: 20)
-        refreshButton.image = image
-        refreshButton.target = self
-        refreshButton.action = #selector(refresh)
-        refreshButton.toolTip = "刷新 PCI 信息"
         pciTableView.tableColumns.forEach { (column) in
             column.headerCell.alignment = .left
         }
@@ -82,16 +75,6 @@ class PCIObject: InBaseObject {
         value = ["0x" + pci![pciTableView.selectedRow].ID.VendorID.uppercased(), "0x" + pci![pciTableView.selectedRow].ID.DeviceID.uppercased(), pci![pciTableView.selectedRow].Info.Vendor, pci![pciTableView.selectedRow].Class.ClassName, pci![pciTableView.selectedRow].Info.Name, ioregArr[pciTableView.selectedRow], devicepathArr[pciTableView.selectedRow]]
         infoTableView.reloadData()
 
-    }
-    
-    @objc func refresh() {
-        value = []
-        pciTableView.reloadData()
-        infoTableView.reloadData()
-        ioregTextField.stringValue = ""
-        var arguments: [String] = []
-        arguments.append(dspci!)
-        runBuildScripts("dspci", arguments)
     }
     
     @objc func tableViewDoubleClick(_ sender: AnyObject) {

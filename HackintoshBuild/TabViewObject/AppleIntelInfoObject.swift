@@ -60,6 +60,15 @@ class AppleIntelInfoObject: InBaseObject {
             let alert = NSAlert()
             alert.messageText = "AMD CPU 无法使用本功能"
             alert.runModal()
+            refreshButton.isEnabled = false
+            return
+        }
+        
+        if #available(OSX 10.16, *) {
+            let alert = NSAlert()
+            alert.messageText = "macOS Big Sur无法使用本功能"
+            alert.runModal()
+            refreshButton.isEnabled = false
             return
         }
         

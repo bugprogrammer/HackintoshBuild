@@ -17,6 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let taskQueue = DispatchQueue.global(qos: .default)
     var outputPipe: Pipe!
     var sipStatusOutPut: String = ""
+    var snapshotOutPut: String = ""
     var lastIndex = 0
     
     @IBOutlet weak var toolBar: NSToolbar!
@@ -75,6 +76,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    
+    
     func runSIPScripts(_ shell: String,_ arguments: [String], _ alertText: String) {
         AraHUDViewController.shared.showHUDWithTitle(title: "正在整理必要信息")
         taskQueue.async {
@@ -83,7 +86,33 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 task.launchPath = path
                 task.arguments = arguments
                 task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
+                task.terminationHandler = { task in
+                    DispatchQueue.main.async(execute: { [weak self] in
+                        guard let `self` = self else { return }
+                        self.runSnapshotScripts("Snapshot", [], "")
+                    })
+                }
                 self.taskOutPut(task)
+                task.launch()
+                task.waitUntilExit()
+                task.terminationHandler = { task in
+                    DispatchQueue.main.async {
+                        AraHUDViewController.shared.hideHUD()
+                    }
+                }
+            }
+        }
+    }
+    
+    func runSnapshotScripts(_ shell: String,_ arguments: [String], _ alertText: String) {
+        AraHUDViewController.shared.showHUDWithTitle(title: "正在整理必要信息")
+        taskQueue.async {
+            if let path = Bundle.main.path(forResource: shell, ofType:"command") {
+                let task = Process()
+                task.launchPath = path
+                task.arguments = arguments
+                task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
+                self.taskOutPutSnapshot(task)
                 task.launch()
                 task.waitUntilExit()
                 task.terminationHandler = { task in
@@ -118,6 +147,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     MyLog("SIP status: disabled.")
                     isSIPStatusEnabled = false
                 }
+            }
+        }
+    }
+    
+    func taskOutPutSnapshot(_ task:Process) {
+        self.snapshotOutPut = ""
+        outputPipe = Pipe()
+        task.standardOutput = outputPipe
+        outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading, queue: nil) { [weak self] notification in
+            guard let `self` = self else { return }
+            let output = self.outputPipe.fileHandleForReading.availableData
+            let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+            let previousOutput = self.snapshotOutPut
+            let nextOutput = previousOutput + outputString
+            self.snapshotOutPut = nextOutput
+
+            if self.snapshotOutPut.replacingOccurrences(of: "\n", with: "") == "enabled" {
+                MyLog("Snapshot status: enabled.")
+                isSnapshotStatusEnabled = true
+            } else {
+                MyLog("Snapshot status: disabled.")
+                isSnapshotStatusEnabled = false
             }
         }
     }

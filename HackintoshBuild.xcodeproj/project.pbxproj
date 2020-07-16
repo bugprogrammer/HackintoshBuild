@@ -25,6 +25,7 @@
 		6A046F2E242F4170004FFFD5 /* PCIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A046F2D242F4170004FFFD5 /* PCIObject.swift */; };
 		6A046F35242F8747004FFFD5 /* GPUObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A046F34242F8747004FFFD5 /* GPUObject.swift */; };
 		6A0DC962241041E3000E9775 /* openEFI.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A0DC961241041E3000E9775 /* openEFI.command */; };
+		6A1181AB24BF04EA0091AF99 /* rebuildCacheBS.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A1181AA24BF04EA0091AF99 /* rebuildCacheBS.command */; };
 		6A188A3824619E8500CBE5B7 /* OpenCoreObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A188A3724619E8500CBE5B7 /* OpenCoreObject.swift */; };
 		6A188A3E2461C87700CBE5B7 /* syncDatas.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A188A3D2461C87700CBE5B7 /* syncDatas.command */; };
 		6A188A4124624D3900CBE5B7 /* SwiftyMarkdown in Frameworks */ = {isa = PBXBuildFile; productRef = 6A188A4024624D3900CBE5B7 /* SwiftyMarkdown */; };
@@ -68,6 +69,7 @@
 		6A94A5E2244CDE7C0084A93D /* exit.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A94A5E1244CDE7C0084A93D /* exit.command */; };
 		6AA130DF24744E6F00ECD331 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AA130DB24744E6F00ECD331 /* README.md */; };
 		6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6EE0623E5859900BF15FD /* resetLockPicture.command */; };
+		6AAA503D24BC47FB00D8E7FC /* Snapshot.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAA503924BC47FB00D8E7FC /* Snapshot.command */; };
 		6AAB654124154A0200116D13 /* kextLastest.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB654024154A0200116D13 /* kextLastest.command */; };
 		6AAB65592416C0F500116D13 /* download.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB65582416C0F500116D13 /* download.command */; };
 		6AAB82CA23D205E300ACFB81 /* ShareObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB82C923D205E300ACFB81 /* ShareObject.swift */; };
@@ -146,6 +148,7 @@
 		6A046F2D242F4170004FFFD5 /* PCIObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCIObject.swift; sourceTree = "<group>"; };
 		6A046F34242F8747004FFFD5 /* GPUObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUObject.swift; sourceTree = "<group>"; };
 		6A0DC961241041E3000E9775 /* openEFI.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = openEFI.command; sourceTree = "<group>"; };
+		6A1181AA24BF04EA0091AF99 /* rebuildCacheBS.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = rebuildCacheBS.command; sourceTree = "<group>"; };
 		6A188A3724619E8500CBE5B7 /* OpenCoreObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCoreObject.swift; sourceTree = "<group>"; };
 		6A188A3D2461C87700CBE5B7 /* syncDatas.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = syncDatas.command; sourceTree = "<group>"; };
 		6A188A492464EA9500CBE5B7 /* dspci.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = dspci.command; sourceTree = "<group>"; };
@@ -186,6 +189,7 @@
 		6A94A5E1244CDE7C0084A93D /* exit.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = exit.command; sourceTree = "<group>"; };
 		6AA130DB24744E6F00ECD331 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6AA6EE0623E5859900BF15FD /* resetLockPicture.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = resetLockPicture.command; sourceTree = "<group>"; };
+		6AAA503924BC47FB00D8E7FC /* Snapshot.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Snapshot.command; sourceTree = "<group>"; };
 		6AAB654024154A0200116D13 /* kextLastest.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kextLastest.command; sourceTree = "<group>"; };
 		6AAB65582416C0F500116D13 /* download.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = download.command; sourceTree = "<group>"; };
 		6AAB82C923D205E300ACFB81 /* ShareObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareObject.swift; sourceTree = "<group>"; };
@@ -320,6 +324,7 @@
 				6ADAEFBA23C257E5008ECF4B /* Hackintosh_build.command */,
 				6AAB82CF23D22C0E00ACFB81 /* getEFI.command */,
 				6A4A9FA223E59F86008D8EF8 /* sipStatus.command */,
+				6AAA503924BC47FB00D8E7FC /* Snapshot.command */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 				6AB8B6FB23D582FC00A993C5 /* spctl.command */,
 				6A21D45623EE869B007D7CE9 /* timeMachine.command */,
 				6A54B4742408159A000BCFE7 /* showhiddenFiles.command */,
+				6A1181AA24BF04EA0091AF99 /* rebuildCacheBS.command */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -616,6 +622,7 @@
 				6ADAEFBB23C257E5008ECF4B /* Hackintosh_build.command in Resources */,
 				6A427D1623E4618F00A0B4E3 /* changeLockPicture.command in Resources */,
 				116D2D8D23D6C540001FED06 /* rebuildCache.command in Resources */,
+				6AAA503D24BC47FB00D8E7FC /* Snapshot.command in Resources */,
 				6A7A719123D845DB0082FA94 /* diskInfo.command in Resources */,
 				6A2468012441B4F1001B7D29 /* tools in Resources */,
 				6AB7A19E2434AD2800BA8690 /* printPlist.command in Resources */,
@@ -630,6 +637,7 @@
 				6A48CC50244CC1ED00AFC97A /* makeInstaller.command in Resources */,
 				6A4A9FA323E59F86008D8EF8 /* sipStatus.command in Resources */,
 				116D2D8B23D6C528001FED06 /* unlockSLE.command in Resources */,
+				6A1181AB24BF04EA0091AF99 /* rebuildCacheBS.command in Resources */,
 				6A2468032441B647001B7D29 /* plists in Resources */,
 				6A188A3E2461C87700CBE5B7 /* syncDatas.command in Resources */,
 				6A8E53D123F40289001E59D3 /* AppleIntelInfo.command in Resources */,
@@ -820,7 +828,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2;
-				DEVELOPMENT_TEAM = B84MTH5WF4;
+				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -850,7 +858,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2;
-				DEVELOPMENT_TEAM = B84MTH5WF4;
+				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

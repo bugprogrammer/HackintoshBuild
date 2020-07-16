@@ -45,8 +45,8 @@ extension NSImage {
         case run = "run"
         case stop = "stop"
         case highsierra = "HighSierra"
-        case mojave = "Mojave"
-        case catalina = "Catalina"
+        case mojave = "mojave"
+        case catalina = "catalina"
         case NSToolbarItem_Compare = "NSToolbarItem_Compare"
     }
     

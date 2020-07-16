@@ -12,6 +12,7 @@ do shell script "chmod -v -R 755 /System/Library/Extensions > /dev/null" with pr
 do shell script "chmod -v -R 755 /Library/Extensions > /dev/null" with prompt "重建缓存需要授权" with administrator privileges
 do shell script "chown -v -R root:wheel /Library/Extensions > /dev/null" with prompt "重建缓存需要授权" with administrator privileges
 do shell script "touch /Library/Extensions > /dev/null" with prompt "重建缓存需要授权" with administrator privileges
-do shell script "kextcache -i / > /dev/null > /dev/null" with prompt "重建缓存需要授权" with administrator privileges
+do shell script "kmutil install --update-all > /dev/null" with prompt "重建缓存需要授权" with administrator privileges
+do shell script "kcditto > /dev/null" with prompt "重建缓存需要授权" with administrator privileges
 
 return "success"
