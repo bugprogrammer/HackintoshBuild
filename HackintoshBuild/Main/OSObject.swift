@@ -12,21 +12,20 @@ class OSObject: OutBaseObject {
 
     @IBOutlet weak var popCatalogs: NSPopUpButton!
     @IBOutlet weak var downloadPath: NSPathControl!
-    @IBOutlet weak var HighSierraButton: NSButton!
-    @IBOutlet weak var MojaveButton: NSButton!
-    @IBOutlet weak var CatalinaButton: NSButton!
     @IBOutlet weak var tableview: NSTableView!
     @IBOutlet var textview: NSTextView!
     @IBOutlet weak var bar: NSProgressIndicator!
+    @IBOutlet weak var popVersion: NSPopUpButton!
     
     let catalogsArr: [String] = ["Developer", "Beta", "Public"]
-    let catalogsDict: NSDictionary = ["Developer": "https://swscan.apple.com/content/catalogs/others/index-10.16seed-10.16-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Beta": "https://swscan.apple.com/content/catalogs/others/index-10.16beta-10.16-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Public": "https://swscan.apple.com/content/catalogs/others/index-10.16-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog"]
+    let catalogsDict: NSDictionary = ["Developer": "https://swscan.apple.com/content/catalogs/others/index-10.15seed-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Beta": "https://swscan.apple.com/content/catalogs/others/index-10.15beta-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Public": "https://swscan.apple.com/content/catalogs/others/index-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog"]
+    let versionPopList: [String] = ["macOS Big Sur - 10.16", "macOS Catalina - 10.15", "macOS Mojave - 10.14", "macOS High Sierra - 10.13"]
     let filemanager = FileManager.default
     let taskQueue = DispatchQueue.global(qos: .default)
     let alert = NSAlert()
     var downloadLocation: String = ""
     var output: String = ""
-    var selectVersion: String = ""
+    var selectedVersion: String = ""
     var productsArr: [String] = []
     var distsArr: [String] = []
     var distsStr: String = ""
@@ -37,48 +36,19 @@ class OSObject: OutBaseObject {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        HighSierraButton.isBordered = false
-        HighSierraButton.bezelStyle = .recessed
-        HighSierraButton.image = MyAsset.highsierra.image
-        HighSierraButton.frame.size = CGSize(width: 100.0, height: 100.0)
-        
-        MojaveButton.isBordered = false
-        MojaveButton.bezelStyle = .recessed
-        MojaveButton.image = MyAsset.mojave.image
-        MojaveButton.frame.size = CGSize(width: 100.0, height: 100.0)
-        
-        CatalinaButton.isBordered = false
-        CatalinaButton.bezelStyle = .recessed
-        CatalinaButton.image = MyAsset.catalina.image
-        CatalinaButton.frame.size = CGSize(width: 100.0, height: 100.0)
-        
-        HighSierraButton.isEnabled = false
-        MojaveButton.isEnabled = false
-        CatalinaButton.isEnabled = false
-        tableview.isEnabled = false
-        
-        bar.isHidden = true
-        
-        HighSierraButton.target = self
-        HighSierraButton.action = #selector(downloadHighSierra)
-        MojaveButton.target = self
-        MojaveButton.action = #selector(downloadMojave)
-        CatalinaButton.target = self
-        CatalinaButton.action = #selector(downloadCatalina)
-        
         popCatalogs.addItems(withTitles: catalogsArr)
+        popVersion.addItems(withTitles: versionPopList)
         tableview.target = self
         tableview.doubleAction = #selector(tableViewDoubleClick)
+        //popVersion.action = #selector(selectVersion)
         
         if let downloadURL = UserDefaults.standard.url(forKey: "OSLocation") {
             if filemanager.fileExists(atPath: downloadURL.path) {
                 self.downloadPath.url = downloadURL
                 downloadLocation = downloadURL.path
-                HighSierraButton.isEnabled = true
-                MojaveButton.isEnabled = true
-                CatalinaButton.isEnabled = true
                 tableview.isEnabled = true
                 UserDefaults.standard.set(downloadLocation, forKey: "OStmp")
+                selectVersion()
             }
         }
     }
@@ -86,20 +56,16 @@ class OSObject: OutBaseObject {
     func setStatus(_ isRunning: Bool) {
         if isRunning {
             popCatalogs.isEnabled = false
+            popVersion.isEnabled = false
             downloadPath.isEnabled = false
-            HighSierraButton.isEnabled = false
-            MojaveButton.isEnabled = false
-            CatalinaButton.isEnabled = false
             tableview.isEnabled = false
             bar.isHidden = false
             bar.startAnimation(self)
         }
         else {
             popCatalogs.isEnabled = true
+            popVersion.isEnabled = true
             downloadPath.isEnabled = true
-            HighSierraButton.isEnabled = true
-            MojaveButton.isEnabled = true
-            CatalinaButton.isEnabled = true
             tableview.isEnabled = true
             bar.isHidden = true
             bar.stopAnimation(self)
@@ -109,9 +75,6 @@ class OSObject: OutBaseObject {
     @IBAction func path(_ sender: Any) {
         if let url = downloadPath.url {
             downloadLocation = url.path
-            HighSierraButton.isEnabled = true
-            MojaveButton.isEnabled = true
-            CatalinaButton.isEnabled = true
             tableview.isEnabled = true
             UserDefaults.standard.set(url, forKey: "OSLocation")
             UserDefaults.standard.set(downloadLocation, forKey: "OStmp")
@@ -127,15 +90,40 @@ class OSObject: OutBaseObject {
         let Products = dict!["Products"] as! NSDictionary
         for key in Products.allKeys {
             let keyDict = Products[key] as! NSDictionary
-            if keyDict.allKeys.contains(where: {$0 as! String == "ExtendedMetaInfo"}) && keyDict.allKeys.contains(where: {$0 as! String == "Distributions"}) && keyDict.allKeys.contains(where: {$0 as! String == "ServerMetadataURL"}) {
+            if keyDict.allKeys.contains(where: {$0 as! String == "ExtendedMetaInfo"}) && keyDict.allKeys.contains(where: {$0 as! String == "Distributions"}) {
                 let Distributions = keyDict["Distributions"] as! NSDictionary
                 let ExtendedMetaInfo = keyDict["ExtendedMetaInfo"] as! NSDictionary
+                let Packages = keyDict["Packages"] as! [NSDictionary]
+                let subPackages = Packages[0]
                 if ExtendedMetaInfo.allKeys.contains(where: {$0 as! String == "InstallAssistantPackageIdentifiers"}) {
                     let InstallAssistantPackageIdentifiers = ExtendedMetaInfo["InstallAssistantPackageIdentifiers"] as! NSDictionary
-                    if InstallAssistantPackageIdentifiers.allKeys.contains(where: {$0 as! String == "OSInstall"}) && InstallAssistantPackageIdentifiers["OSInstall"] as! String == "com.apple.mpkg.OSInstall" && Distributions.allKeys.contains(where: {$0 as! String == "zh_CN"}) {
-                        let ServerMetadataURL: String = keyDict["ServerMetadataURL"] as! String
-                        productsArr.append(ServerMetadataURL.replacingOccurrences(of: "/InstallAssistantAuto.smd", with: ""))
-                        distsArr.append(Distributions["zh_CN"] as! String)
+                    if selectedVersion != " 10.16" {
+                        if InstallAssistantPackageIdentifiers.allKeys.contains(where: {$0 as! String == "OSInstall"}) && InstallAssistantPackageIdentifiers["OSInstall"] as! String == "com.apple.mpkg.OSInstall" {
+                            let URL: String = subPackages["URL"] as! String
+                            productsArr.append(URL)
+                            if Distributions.allKeys.contains(where: {$0 as! String == "zh_CN"}) {
+                                distsArr.append(Distributions["zh_CN"] as! String)
+                            }
+                            else {
+                                distsArr.append(Distributions["English"] as! String)
+                            }
+                        }
+                    } else if selectedVersion == " 10.16" {
+                        if InstallAssistantPackageIdentifiers.allKeys.contains(where: {$0 as! String == "SharedSupport"}) {
+                            let SharedSupport = InstallAssistantPackageIdentifiers["SharedSupport"] as! String
+                            if SharedSupport.contains("macOS1016") {
+                                let URL: String = subPackages["URL"] as! String
+                                productsArr.append(URL)
+                                MyLog(productsArr)
+                                if Distributions.allKeys.contains(where: {$0 as! String == "zh_CN"}) {
+                                    distsArr.append(Distributions["zh_CN"] as! String)
+                                }
+                                else {
+                                    distsArr.append(Distributions["English"] as! String)
+                                    MyLog(distsArr)
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -167,18 +155,14 @@ class OSObject: OutBaseObject {
         return dict
     }
     
-    @objc func downloadHighSierra() {
-        selectVersion = "10.13"
-        downloadCatalogs()
+    
+    @IBAction func selectVersionButton(_ sender: Any) {
+        selectVersion()
     }
     
-    @objc func downloadMojave() {
-        selectVersion = "10.14"
-        downloadCatalogs()
-    }
-    
-    @objc func downloadCatalina() {
-        selectVersion = "10.15"
+    func selectVersion() {
+        selectedVersion = versionPopList[popVersion.indexOfSelectedItem].components(separatedBy: "-").last!
+        MyLog(selectedVersion)
         downloadCatalogs()
     }
     
@@ -190,6 +174,7 @@ class OSObject: OutBaseObject {
                 var arguments: [String] = []
                 arguments.append(downloadLocation)
                 arguments.append(versionDict[selectVersionList[tableview.selectedRow]] as! String)
+                arguments.append(selectedVersion)
                 runBuildScripts("downloadInstaller", arguments)
             }
         }
@@ -234,7 +219,7 @@ class OSObject: OutBaseObject {
                             }
                             self.versionDict = self.arrtoDict(self.versionArr, self.productsArr)
                             for version in self.versionDict.allKeys as! [String] {
-                                if version.contains(self.selectVersion) {
+                                if version.contains(self.selectedVersion) {
                                     self.selectVersionList.append(version)
                                 }
                             }
