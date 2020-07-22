@@ -47,8 +47,8 @@ class AppleIntelInfoObject: InBaseObject {
     
     override func awakeFromNib() {
         let image = NSImage(named: "NSRefreshFreestandingTemplate")
-        image?.size = CGSize(width: 20.0, height: 20.0)
-        image!.isTemplate = true
+        image?.size = CGSize(width: 64.0, height: 64.0)
+        image?.isTemplate = true
         refreshButton.image = image
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false

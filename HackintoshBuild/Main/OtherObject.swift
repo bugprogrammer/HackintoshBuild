@@ -87,8 +87,13 @@ class OtherObject: OutBaseObject {
                 sipLable.textColor = NSColor.green
                 sipLable.stringValue = "SIP 已关闭"
                 snapshotLabel.stringValue = ""
-                unclockButton.isEnabled = true
                 rebuildButton.isEnabled = true
+                if #available(OSX 10.15, *) {
+                    unclockButton.isEnabled = true
+                }
+                else {
+                    unclockButton.isEnabled = false
+                }
             }
         }
     }
@@ -96,14 +101,8 @@ class OtherObject: OutBaseObject {
     @IBAction func unlockSLE(_ sender: Any) {
         
         textview.string = ""
-        
-        if #available(OSX 10.15, *) {
-            runBuildScripts("unlockSLE", [], "SLE 解锁成功")
-        } else {
-            let alert = NSAlert()
-            alert.messageText = "系统版本低于 10.15，无需解锁"
-            alert.runModal()
-        }
+                
+        runBuildScripts("unlockSLE", [], "SLE 解锁成功")
     }
     
     @IBAction func rebuildCache(_ sender: Any) {
