@@ -20,6 +20,8 @@ for i in ${selectedArray[*]}; do
         echo bugprogrammer_$dirname
     elif [[ $i =~ "MacProMemoryNotificationDisabler" ]]; then
         echo "MacProMemoryNotificationDisabler"
+    elif [[ $i =~ "VoodooPS2Controller" ]]; then
+        echo "VoodooPS2"
     else
         echo $dirname
     fi
