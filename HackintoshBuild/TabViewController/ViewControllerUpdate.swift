@@ -262,6 +262,12 @@ class ViewControllerUpdate: NSViewController {
         else if kexts[row] == "MacProMemoryNotificationDisabler" {
             downloadURL = url[row] + "/releases/download/v" + Lastest[row] + "/" + "MPMND" + "-v" + Lastest[row] + "-Release.zip"
         }
+        else if kexts[row] == "VoodooPS2" {
+            downloadURL = url[row] + "/releases/download/" + Lastest[row] + "/" + "VoodooPS2Controller" + "-" + Lastest[row] + "-RELEASE.zip"
+        }
+        else if kexts[row] == "VoodooI2C" {
+            downloadURL = url[row] + "/releases/download/" + Lastest[row] + "/" + kexts[row] + "-" + Lastest[row] + ".zip"
+        }
         else if "acidanthera_WhateverGreen bugprogrammer_WhateverGreen".contains(kexts[row]) {
             downloadURL = url[row] + "/releases/download/" + Lastest[row] + "/" + "WhateverGreen" + "-" + Lastest[row] + "-RELEASE.zip"
         }
