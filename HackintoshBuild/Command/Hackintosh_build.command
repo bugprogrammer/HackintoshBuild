@@ -117,9 +117,12 @@ buildArray=(
 'RTL8111,https://github.com/Mieze/RTL8111_driver_for_OS_X.git'
 'NVMeFix,https://github.com/acidanthera/NVMeFix.git'
 'MacProMemoryNotificationDisabler,https://github.com/IOIIIO/MacProMemoryNotificationDisabler.git'
+'VoodooPS2,https://github.com/acidanthera/VoodooPS2.git'
+'VoodooI2C,https://github.com/VoodooI2C/VoodooI2C.git'
 )
 
 liluPlugins='AirportBrcmFixup AppleALC ATH9KFixup BT4LEContinuityFixup CPUFriend HibernationFixup NoTouchID RTCMemoryFixup SystemProfilerMemoryFixup VirtualSMC acidanthera_WhateverGreen bugprogrammer_WhateverGreen NVMeFix MacProMemoryNotificationDisabler'
+voodooInputPlugins='VoodooPS2 VoodooI2C'
 
 bootLoader='OpenCore'
 
@@ -169,31 +172,67 @@ for i in ${selectedArray[*]}; do
         if [[ $liluPlugins =~ ${buildArray[$i]%,*} ]]; then
             if [ ! -e *.kext ]; then
                 echo "编译 "${buildArray[$i]%,*}" 需要依赖 Lilu"
-                if [ ! -e $url/$dir/Sources/Lilu/build/Debug/Lilu.kext ]; then
+                if [ ! -e $url/$dir/Sources/Lilu.kext ]; then
                     pushd $url/$dir/Sources >> $logs
-                    echo "未找到缓存，正在下载源码：Lilu"
-                    git clone -q https://github.com/acidanthera/Lilu.git -b master --depth=1 && cd Lilu
-                    echo "正在编译：Lilu"
-                    xcodebuild -configuration Debug >> $logs || exit 1
+                    echo "未找到缓存，正在下载源码并编译：Lilu"
+                    src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/acidanthera/Lilu/master/Lilu/Scripts/bootstrap.sh) && eval "$src" >> $logs || exit 1
                     popd >> $logs
                     echo "正在拷贝：Lilu"
-                    cp -Rf $url/$dir/Sources/Lilu/build/Debug/Lilu.kext . >> $logs || exit 1
+                    cp -Rf $url/$dir/Sources/Lilu.kext . >> $logs || exit 1
                 else
                     echo "找到缓存，正在拷贝：Lilu"
-                    cp -Rf $url/$dir/Sources/Lilu/build/Debug/Lilu.kext . >> $logs || exit 1
+                    cp -Rf $url/$dir/Sources/Lilu.kext . >> $logs || exit 1
+                fi
+            fi
+        elif [[ $voodooInputPlugins =~ ${buildArray[$i]%,*} ]]; then
+            if [ ! -e *.kext ]; then
+                echo "编译 "${buildArray[$i]%,*}" 需要依赖 VoodooInput"
+                if [ ! -e $url/$dir/Sources/VoodooInput ]; then
+                    pushd $url/$dir/Sources >> $logs
+                    echo "未找到缓存，正在下载源码并编译：VoodooInput"
+                    src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/acidanthera/VoodooInput/master/VoodooInput/Scripts/bootstrap.sh) && eval "$src" >> $logs || exit 1
+                    popd >> $logs
+                    echo "正在拷贝：VoodooInput"
+                    if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
+                        cp -Rf $url/$dir/Sources/VoodooInput ./Dependencies/ >> $logs || exit 1
+                    else
+                        cp -Rf $url/$dir/Sources/VoodooInput . >> $logs || exit 1
+                    fi
+                else
+                    echo "找到缓存，正在拷贝：VoodooInput"
+                    if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
+                        cp -Rf $url/$dir/Sources/VoodooInput ./Dependencies/ >> $logs || exit 1
+                    else
+                        cp -Rf $url/$dir/Sources/VoodooInput . >> $logs || exit 1
+                    fi
                 fi
             fi
         fi
         echo "正在编译："${buildArray[$i]%,*}
-        xcodebuild -configuration Release >> $logs || exit 1
-        xcodebuild -configuration Debug >> $logs || exit 1
+        if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
+            git submodule init >> $logs && git submodule update >> $logs
+            echo "VoodooI2C: 从 Build Phrase 中移除 Linting 和 Generate Documentation 来避免安装 cpplint 和 cldoc"
+            lintingPhr=$(grep -n "Linting" VoodooI2C/VoodooI2C.xcodeproj/project.pbxproj) && lintingPhr=${lintingPhr%%:*}
+            sed -i '' "${lintingPhr}d" VoodooI2C/VoodooI2C.xcodeproj/project.pbxproj
+            gDPhr=$(grep -n "Generate Documentation" VoodooI2C/VoodooI2C.xcodeproj/project.pbxproj) && gDPhr=${gDPhr%%:*}
+            sed -i '' "${gDPhr}d" VoodooI2C/VoodooI2C.xcodeproj/project.pbxproj
+            xcodebuild -scheme VoodooI2C -configuration Release -derivedDataPath build >> $logs || exit 1
+            xcodebuild -scheme VoodooI2C -configuration Debug -derivedDataPath build >> $logs || exit 1
+        else
+            xcodebuild -configuration Release >> $logs || exit 1
+            xcodebuild -configuration Debug >> $logs || exit 1
+        fi
         if [ -e build/Release/*.zip ]; then
             cp -Rf build/Release/*.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
             cp -Rf build/Debug/*.zip ../../Release/${buildArray[$i]%,*}/Debug >> $logs || exit 1
             echo "编译成功："${buildArray[$i]%,*}
+        elif [ -e build/Products/Release/*.zip ]; then
+            cp -Rf build/Products/Release/*.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
+            cp -Rf build/Products/Debug/*.zip ../../Release/${buildArray[$i]%,*}/Debug >> $logs || exit 1
+            echo "编译成功："${buildArray[$i]%,*}
         else
-            cp -Rf build/Release/*.kext ../../Release/${buildArray[$i]%,*}/Release/${buildArray[$i]%,*}-Release.kext >> $logs || exit 1
-            cp -Rf build/Debug/*.kext ../../Release/${buildArray[$i]%,*}/Debug/${buildArray[$i]%,*}-Debug.kext >> $logs || exit 1
+            cp -Rf build/Release/*.kext ../../Release/${buildArray[$i]%,*}/Release/${buildArray[$i]%,*}-Release.kext >> $logs || cp -Rf build/Build/Products/Release/*.kext ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
+            cp -Rf build/Debug/*.kext ../../Release/${buildArray[$i]%,*}/Debug/${buildArray[$i]%,*}-Debug.kext >> $logs || cp -Rf build/Build/Products/Debug/*.kext ../../Release/${buildArray[$i]%,*}/Debug >> $logs || exit 1
             echo "编译成功："${buildArray[$i]%,*}
         fi
     fi

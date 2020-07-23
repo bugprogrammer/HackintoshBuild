@@ -48,7 +48,9 @@ class ViewControllerUpdate: NSViewController {
         "AtherosE2200Ethernet",
         "RealtekRTL8111",
         "NVMeFix",
-        "MacProMemoryNotificationDisabler"
+        "MacProMemoryNotificationDisabler",
+        "VoodooPS2",
+        "VoodooI2C"
     ]
     
     let url: [String] = [
@@ -67,7 +69,9 @@ class ViewControllerUpdate: NSViewController {
         "https://github.com/Mieze/AtherosE2200Ethernet",
         "https://github.com/Mieze/RTL8111_driver_for_OS_X",
         "https://github.com/acidanthera/NVMeFix",
-        "https://github.com/IOIIIO/MacProMemoryNotificationDisabler"
+        "https://github.com/IOIIIO/MacProMemoryNotificationDisabler",
+        "https://github.com/acidanthera/VoodooPS2",
+        "https://github.com/VoodooI2C/VoodooI2C"
     ]
     
     var currentVersion: [String] = []
