@@ -37,5 +37,7 @@ for i in ${arr[*]}; do
                 echo "macOS Catalina "$version")"
             elif [[ $version =~ "10.16" ]]; then
                 echo "macOS Big Sur "$version")"
+            elif [[ $version =~ "11.0" ]]; then
+                echo "macOS Big Sur "$version")"
         fi
 done

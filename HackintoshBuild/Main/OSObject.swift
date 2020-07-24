@@ -19,7 +19,7 @@ class OSObject: OutBaseObject {
     
     let catalogsArr: [String] = ["Developer", "Beta", "Public"]
     let catalogsDict: NSDictionary = ["Developer": "https://swscan.apple.com/content/catalogs/others/index-10.15seed-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Beta": "https://swscan.apple.com/content/catalogs/others/index-10.15beta-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Public": "https://swscan.apple.com/content/catalogs/others/index-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog"]
-    let versionPopList: [String] = ["macOS Big Sur - 10.16", "macOS Catalina - 10.15", "macOS Mojave - 10.14", "macOS High Sierra - 10.13"]
+    let versionPopList: [String] = ["macOS Big Sur - 11.0", "macOS Catalina - 10.15", "macOS Mojave - 10.14", "macOS High Sierra - 10.13"]
     let filemanager = FileManager.default
     let taskQueue = DispatchQueue.global(qos: .default)
     let alert = NSAlert()
@@ -97,7 +97,7 @@ class OSObject: OutBaseObject {
                 let subPackages = Packages[0]
                 if ExtendedMetaInfo.allKeys.contains(where: {$0 as! String == "InstallAssistantPackageIdentifiers"}) {
                     let InstallAssistantPackageIdentifiers = ExtendedMetaInfo["InstallAssistantPackageIdentifiers"] as! NSDictionary
-                    if selectedVersion != " 10.16" {
+                    if selectedVersion != " 11.0" {
                         if InstallAssistantPackageIdentifiers.allKeys.contains(where: {$0 as! String == "OSInstall"}) && InstallAssistantPackageIdentifiers["OSInstall"] as! String == "com.apple.mpkg.OSInstall" {
                             let URL: String = subPackages["URL"] as! String
                             productsArr.append(URL)
@@ -108,7 +108,7 @@ class OSObject: OutBaseObject {
                                 distsArr.append(Distributions["English"] as! String)
                             }
                         }
-                    } else if selectedVersion == " 10.16" {
+                    } else if selectedVersion == " 11.0" {
                         if InstallAssistantPackageIdentifiers.allKeys.contains(where: {$0 as! String == "SharedSupport"}) {
                             let SharedSupport = InstallAssistantPackageIdentifiers["SharedSupport"] as! String
                             if SharedSupport.contains("macOS1016") {
@@ -175,6 +175,7 @@ class OSObject: OutBaseObject {
                 arguments.append(downloadLocation)
                 arguments.append(versionDict[selectVersionList[tableview.selectedRow]] as! String)
                 arguments.append(selectedVersion)
+                MyLog(arguments)
                 runBuildScripts("downloadInstaller", arguments)
             }
         }
@@ -209,7 +210,7 @@ class OSObject: OutBaseObject {
                             self.runBuildScripts("versionInfo", [self.distsStr])
                         }
                         if shell == "versionInfo" {
-                            //MyLog(self.output)
+                            MyLog(self.output)
                             self.versionArr = self.output.components(separatedBy: "\n")
                             if self.versionArr.first == "" {
                                 self.versionArr.removeFirst()

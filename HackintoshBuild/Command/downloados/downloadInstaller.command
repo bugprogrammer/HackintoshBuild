@@ -9,7 +9,7 @@ fi
 mkdir "macOSInstaller/installer"
 cd "macOSInstaller/installer"
 
-if [ "$version" != " 10.16" ]; then
+if [[ "$version" != " 10.16" ]] && [[ "$version" != " 11.0" ]]; then
     echo "正在下载AppleDiagnostics.dmg"
     curl -OL# ${url%/*}/AppleDiagnostics.dmg
     echo "正在下载AppleDiagnostics.chunklist"

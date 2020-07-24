@@ -19,7 +19,7 @@ class CompareObject: OutBaseObject {
         super.willAppear(noti)
         
         let index = noti.object as! Int
-        if index != 9 { return }
+        if index != 8 { return }
         if !once { return }
         once = false
         

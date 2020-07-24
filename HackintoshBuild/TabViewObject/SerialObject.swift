@@ -31,7 +31,6 @@ class SerialObject: InBaseObject {
         let image = NSImage(named: "NSRefreshFreestandingTemplate")
         image?.isTemplate = true
         image?.size = CGSize(width: 64, height: 64)
-        MyLog(image?.size)
         refreshButton.image = image
         refreshButton.target = self
         refreshButton.action = #selector(refresh)

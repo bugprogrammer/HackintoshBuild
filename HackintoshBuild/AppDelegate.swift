@@ -185,7 +185,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // 两页需要设置最小值
         // 如果用户已经拖的比这个值大了，就不管了
         // 需要记忆用户拉的大小
-        if (index != 6) && (index != 9) {
+        if (index != 6) && (index != 8) {
             window.minSize = minSizeForNormal
             if !isFullScreen && !willFullScreen && !willExitFullScreen {
                 window.setContentSize(beforeSize)
@@ -224,7 +224,7 @@ extension AppDelegate: NSWindowDelegate {
         
         if let identifier = toolBar.selectedItemIdentifier?.rawValue {
             if let index = Int(identifier) {
-                if (index != 6) && (index != 9) {
+                if (index != 6) && (index != 8) {
                     beforeSize = window.contentView!.bounds.size
                 }
             }
@@ -250,12 +250,25 @@ extension AppDelegate: NSWindowDelegate {
         
         if let identifier = toolBar.selectedItemIdentifier?.rawValue {
             if let index = Int(identifier) {
-                if (index != 6) && (index != 9) {
+                if (index != 6) && (index != 8) {
                     window.setContentSize(beforeSize)
                 }
             }
         }
     }
     
+}
+
+extension Date {
+    var timeStamp: String {
+        let timeInterval: TimeInterval = self.timeIntervalSince1970
+        let timeStamp = Int(timeInterval)
+        return "\(timeStamp)"
+    }
+    var milliStamp: String {
+        let timeInterval: TimeInterval = self.timeIntervalSince1970
+        let millisecond = CLongLong(round(timeInterval*1000))
+        return "\(millisecond)"
+    }
 }
 

@@ -18,12 +18,13 @@ class OtherObject: OutBaseObject {
     @IBOutlet weak var spctlButton: NSButton!
     
     let taskQueue = DispatchQueue.global(qos: .default)
+    let radeonBoost = Bundle.main.url(forResource: "RadeonBoost", withExtension: "kext", subdirectory: "tools")
     
     override func willAppear(_ noti: Notification) {
         super.willAppear(noti)
         
         let index = noti.object as! Int
-        if index != 10 { return }
+        if index != 9 { return }
         if !once { return }
         once = false
         
@@ -146,6 +147,20 @@ class OtherObject: OutBaseObject {
         runBuildScripts("showhiddenFiles", ["false"], "隐藏文件状态已恢复")
     }
     
+    @IBAction func RadeonBoost(_ sender: Any) {
+        let filemanager = FileManager.default
+        let atUrl = radeonBoost
+        var toUrl = "/Users/wbx/Desktop/RadeonBoost.kext"
+        
+        if !filemanager.fileExists(atPath: "/Users/wbx/Desktop/RadeonBoost.kext") {
+            try! filemanager.copyItem(at: atUrl!, to: URL(fileURLWithPath: toUrl))
+        }
+        else {
+            toUrl = toUrl.replacingOccurrences(of: "RadeonBoost.kext", with: "RadeonBoost-" + Date().milliStamp + ".kext")
+            try! filemanager.copyItem(at: atUrl!, to: URL(fileURLWithPath: toUrl))
+        }
+        NSWorkspace.shared.activateFileViewerSelecting([URL(fileURLWithPath: toUrl)])
+    }
     func runBuildScripts(_ shell: String,_ arguments: [String],_ alertText: String) {
         AraHUDViewController.shared.showHUDWithTitle()
         taskQueue.async {
