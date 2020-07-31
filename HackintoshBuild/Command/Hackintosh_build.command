@@ -174,7 +174,7 @@ for i in ${selectedArray[*]}; do
                     echo "未找到缓存，正在下载源码：Lilu"
                     git clone -q https://github.com/acidanthera/Lilu.git -b master --depth=1 && cd Lilu
                     echo "正在编译：Lilu"
-                    xcodebuild -configuration Debug >> $logs || exit 1
+                    xcodebuild -configuration Debug -arch x86_64 >> $logs || exit 1
                     popd >> $logs
                     echo "正在拷贝：Lilu"
                     cp -Rf $url/$dir/Sources/Lilu/build/Debug/Lilu.kext . >> $logs || exit 1
@@ -185,8 +185,8 @@ for i in ${selectedArray[*]}; do
             fi
         fi
         echo "正在编译："${buildArray[$i]%,*}
-        xcodebuild -configuration Release >> $logs || exit 1
-        xcodebuild -configuration Debug >> $logs || exit 1
+        xcodebuild -configuration Release -arch x86_64 >> $logs || exit 1
+        xcodebuild -configuration Debug -arch x86_64 >> $logs || exit 1
         if [ -e build/Release/*.zip ]; then
             cp -Rf build/Release/*.zip ../../Release/${buildArray[$i]%,*}/Release >> $logs || exit 1
             cp -Rf build/Debug/*.zip ../../Release/${buildArray[$i]%,*}/Debug >> $logs || exit 1

@@ -62,6 +62,9 @@
 		6A817EB2240ABEA6003224DE /* ConfigObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EB1240ABEA6003224DE /* ConfigObject.swift */; };
 		6A817EB4240ABEDA003224DE /* AppleIntelInfoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EB3240ABEDA003224DE /* AppleIntelInfoObject.swift */; };
 		6A817EB6240ABEF4003224DE /* KextsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A817EB5240ABEF4003224DE /* KextsObject.swift */; };
+		6A83161724D10C0A001FD148 /* InstallKextsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A83161624D10C0A001FD148 /* InstallKextsObject.swift */; };
+		6A83161D24D1EBE3001FD148 /* NSDraggingInfo+FilePathURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A83161B24D1EBE3001FD148 /* NSDraggingInfo+FilePathURL.swift */; };
+		6A83161E24D1EBE3001FD148 /* DragDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A83161C24D1EBE3001FD148 /* DragDropView.swift */; };
 		6A87220523F5B4C100D77EEF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A87220323F5B4C100D77EEF /* WebKit.framework */; };
 		6A8E38D124362F4D00A09CE7 /* OSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E38D024362F4D00A09CE7 /* OSObject.swift */; };
 		6A8E53D123F40289001E59D3 /* AppleIntelInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E53D023F40289001E59D3 /* AppleIntelInfo.command */; };
@@ -181,6 +184,9 @@
 		6A817EB1240ABEA6003224DE /* ConfigObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigObject.swift; sourceTree = "<group>"; };
 		6A817EB3240ABEDA003224DE /* AppleIntelInfoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleIntelInfoObject.swift; sourceTree = "<group>"; };
 		6A817EB5240ABEF4003224DE /* KextsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KextsObject.swift; sourceTree = "<group>"; };
+		6A83161624D10C0A001FD148 /* InstallKextsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallKextsObject.swift; sourceTree = "<group>"; };
+		6A83161B24D1EBE3001FD148 /* NSDraggingInfo+FilePathURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDraggingInfo+FilePathURL.swift"; sourceTree = "<group>"; };
+		6A83161C24D1EBE3001FD148 /* DragDropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragDropView.swift; sourceTree = "<group>"; };
 		6A87220323F5B4C100D77EEF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6A8E38D024362F4D00A09CE7 /* OSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSObject.swift; sourceTree = "<group>"; };
 		6A8E53D023F40289001E59D3 /* AppleIntelInfo.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppleIntelInfo.command; sourceTree = "<group>"; };
@@ -239,6 +245,7 @@
 				6A8E38D024362F4D00A09CE7 /* OSObject.swift */,
 				6A188AAA24659CC200CBE5B7 /* CompareObject.swift */,
 				1193974623D1BF380096297C /* OtherObject.swift */,
+				6A83161624D10C0A001FD148 /* InstallKextsObject.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -257,6 +264,8 @@
 			isa = PBXGroup;
 			children = (
 				117B27AB23E947CF00581352 /* AraHUD */,
+				6A83161C24D1EBE3001FD148 /* DragDropView.swift */,
+				6A83161B24D1EBE3001FD148 /* NSDraggingInfo+FilePathURL.swift */,
 				1193974823D1C1390096297C /* MyTool.swift */,
 				11D5C27923D1B63700461A78 /* MyAsset.swift */,
 				1193974B23D1C7BA0096297C /* MyLog.swift */,
@@ -659,6 +668,7 @@
 			files = (
 				6A188AAB24659CC200CBE5B7 /* CompareObject.swift in Sources */,
 				6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */,
+				6A83161724D10C0A001FD148 /* InstallKextsObject.swift in Sources */,
 				6A188A3824619E8500CBE5B7 /* OpenCoreObject.swift in Sources */,
 				117B27B423E957C600581352 /* AraHUDView.swift in Sources */,
 				6A8E38D124362F4D00A09CE7 /* OSObject.swift in Sources */,
@@ -675,6 +685,7 @@
 				1193974723D1BF380096297C /* OtherObject.swift in Sources */,
 				6AAB82CA23D205E300ACFB81 /* ShareObject.swift in Sources */,
 				6A817EB4240ABEDA003224DE /* AppleIntelInfoObject.swift in Sources */,
+				6A83161E24D1EBE3001FD148 /* DragDropView.swift in Sources */,
 				6A817EB2240ABEA6003224DE /* ConfigObject.swift in Sources */,
 				117B27B223E94B8E00581352 /* AraHUDViewController.swift in Sources */,
 				113FD05C24BADF7A00D8F64F /* InBaseObject.swift in Sources */,
@@ -682,6 +693,7 @@
 				114FEDB924B9DDA80045777D /* OutBaseObject.swift in Sources */,
 				1193974923D1C1390096297C /* MyTool.swift in Sources */,
 				6A7A718C23D82DAE0082FA94 /* DiskObject.swift in Sources */,
+				6A83161D24D1EBE3001FD148 /* NSDraggingInfo+FilePathURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

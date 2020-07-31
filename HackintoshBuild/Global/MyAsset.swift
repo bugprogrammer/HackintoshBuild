@@ -33,6 +33,7 @@ extension NSImage {
         case NSToolbarItem_Pay = "NSToolbarItem_Pay"
         case NSToolbarItem_GPU = "NSToolbarItem_GPU"
         case NSToolbarItem_OS = "NSToolbarItem_OS"
+        case NSToolbarItem_Kexts = "NSToolbarItem_Kexts"
         case complate = "complate"
         case downloadAll = "downloadAll"
         case mount = "mount"

@@ -24,7 +24,7 @@ class OtherObject: OutBaseObject {
         super.willAppear(noti)
         
         let index = noti.object as! Int
-        if index != 9 { return }
+        if index != 10 { return }
         if !once { return }
         once = false
         
@@ -48,7 +48,7 @@ class OtherObject: OutBaseObject {
             if sipEnabled && !snapshotEnabled {
                 sipLable.textColor = NSColor.red
                 sipLable.stringValue = "SIP 未关闭，请先关闭 SIP"
-                snapshotLabel.textColor = NSColor.green
+                snapshotLabel.textColor = NSColor(named: "ColorGreen")
                 snapshotLabel.stringValue = "快照 已删除"
                 unclockButton.isEnabled = false
                 rebuildButton.isEnabled = false
@@ -72,7 +72,7 @@ class OtherObject: OutBaseObject {
             else {
                 sipLable.textColor = NSColor(named: "ColorGreen")
                 sipLable.stringValue = "SIP 已关闭"
-                snapshotLabel.textColor = NSColor.green
+                snapshotLabel.textColor = NSColor(named: "ColorGreen")
                 snapshotLabel.stringValue = "快照 已删除"
                 unclockButton.isEnabled = true
                 rebuildButton.isEnabled = true
@@ -85,7 +85,7 @@ class OtherObject: OutBaseObject {
                 unclockButton.isEnabled = false
                 rebuildButton.isEnabled = false
             } else {
-                sipLable.textColor = NSColor.green
+                sipLable.textColor = NSColor(named: "ColorGreen")
                 sipLable.stringValue = "SIP 已关闭"
                 snapshotLabel.stringValue = ""
                 rebuildButton.isEnabled = true
