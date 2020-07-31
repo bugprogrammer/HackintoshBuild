@@ -62,13 +62,6 @@ class DiskObject: OutBaseObject {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        let image = NSImage(named: "NSRefreshFreestandingTemplate")
-        image?.size = CGSize(width: 64.0, height: 64.0)
-        image?.isTemplate = true
-        refreshButton.image = image
-        refreshButton.bezelStyle = .recessed
-        refreshButton.isBordered = false
         refreshButton.toolTip = "刷新 EFI 列表"
     }
     

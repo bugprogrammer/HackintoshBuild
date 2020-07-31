@@ -697,8 +697,8 @@
             <rect key="contentRect" x="196" y="207" width="800" height="666"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
             <value key="minSize" type="size" width="800" height="666"/>
-            <view key="contentView" id="DcO-cN-SNw">
-                <rect key="frame" x="0.0" y="0.0" width="800" height="666"/>
+            <view key="contentView" misplaced="YES" id="DcO-cN-SNw">
+                <rect key="frame" x="0.0" y="0.0" width="800" height="589"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <tabView drawsBackground="NO" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="nGT-ER-5Zk">
@@ -2667,18 +2667,18 @@
                             </tabViewItem>
                             <tabViewItem label="Disk" identifier="" id="3yi-fa-1K6">
                                 <view key="view" id="w4h-wN-pBw">
-                                    <rect key="frame" x="0.0" y="0.0" width="760" height="640"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="760" height="632"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="34" horizontalPageScroll="10" verticalLineScroll="34" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB8-96-NUN">
-                                            <rect key="frame" x="13" y="149" width="735" height="417"/>
+                                            <rect key="frame" x="13" y="149" width="735" height="409"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <clipView key="contentView" drawsBackground="NO" id="lAX-Ml-l4f">
-                                                <rect key="frame" x="1" y="1" width="733" height="415"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <rect key="frame" x="1" y="1" width="733" height="407"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="32" rowSizeStyle="large" headerView="76K-g5-ea1" viewBased="YES" id="98c-VP-Jyx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="733" height="390"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="733" height="382"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <size key="intercellSpacing" width="3" height="2"/>
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -3058,11 +3058,11 @@
                                             </tableHeaderView>
                                         </scrollView>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GD1-Rs-qWU">
-                                            <rect key="frame" x="350" y="52" width="59" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                            <buttonCell key="cell" type="push" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cYb-32-ScM">
+                                            <rect key="frame" x="348" y="31.5" width="64" height="83.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSRefreshFreestandingTemplate" imagePosition="only" alternateImage="NS" inset="2" id="cYb-32-ScM">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
+                                                <font key="font" metaFont="system" size="45"/>
                                             </buttonCell>
                                             <connections>
                                                 <action selector="refreshDidClicked:" target="hHF-FM-TdI" id="zzY-w2-oXy"/>
@@ -3073,22 +3073,22 @@
                             </tabViewItem>
                             <tabViewItem label="Nvram" identifier="" id="tWa-cD-6sK">
                                 <view key="view" id="T1i-rf-xx1">
-                                    <rect key="frame" x="0.0" y="0.0" width="760" height="563"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="760" height="555"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujz-JF-B7k">
-                                            <rect key="frame" x="35" y="117" width="690" height="219"/>
+                                            <rect key="frame" x="35" y="117" width="690" height="215"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="rNA-Mt-9Ip">
-                                                <rect key="frame" x="0.0" y="0.0" width="675" height="219"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="675" height="215"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="Txf-XM-zLw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="675" height="219"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="675" height="215"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        <size key="minSize" width="675" height="219"/>
+                                                        <size key="minSize" width="675" height="215"/>
                                                         <size key="maxSize" width="875" height="10000000"/>
                                                         <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     </textView>
@@ -3099,19 +3099,19 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="vFs-R8-ail">
-                                                <rect key="frame" x="675" y="0.0" width="15" height="219"/>
+                                                <rect key="frame" x="675" y="0.0" width="15" height="215"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
                                         <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="44" horizontalPageScroll="10" verticalLineScroll="44" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QG-s4-bsR">
-                                            <rect key="frame" x="35" y="343" width="690" height="174"/>
+                                            <rect key="frame" x="35" y="337" width="690" height="172"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                             <clipView key="contentView" id="ocz-PE-Fef">
-                                                <rect key="frame" x="1" y="1" width="688" height="172"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <rect key="frame" x="1" y="1" width="688" height="170"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="42" rowSizeStyle="automatic" headerView="7Uz-fd-h4K" viewBased="YES" id="KK8-jP-REG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="688" height="147"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="688" height="145"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <size key="intercellSpacing" width="3" height="2"/>
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -3894,7 +3894,7 @@
             <connections>
                 <outlet property="delegate" destination="o4N-cs-edg" id="7Kv-76-rxj"/>
             </connections>
-            <point key="canvasLocation" x="-35" y="-58"/>
+            <point key="canvasLocation" x="-35" y="-58.5"/>
         </window>
         <customObject id="aR8-Fd-GIL" customClass="GitHubUpdater">
             <userDefinedRuntimeAttributes>
@@ -4054,6 +4054,8 @@
         </customObject>
     </objects>
     <resources>
+        <image name="NS" width="128" height="128"/>
+        <image name="NSRefreshFreestandingTemplate" width="15" height="15"/>
         <image name="NSRefreshTemplate" width="14" height="16"/>
         <image name="NSToolbarItem_Build" width="32" height="32"/>
         <image name="NSToolbarItem_Compare" width="32" height="32"/>
