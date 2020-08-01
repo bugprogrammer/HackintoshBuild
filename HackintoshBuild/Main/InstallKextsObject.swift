@@ -14,6 +14,8 @@ class InstallKextsObject: OutBaseObject {
     @IBOutlet weak var snapshotLabel: NSTextField!
     @IBOutlet weak var textField: NSTextField!
     
+    let taskQueue = DispatchQueue.global(qos: .default)
+    
     override func willAppear(_ noti: Notification) {
         super.willAppear(noti)
         
@@ -28,7 +30,8 @@ class InstallKextsObject: OutBaseObject {
         dragDropView.usedArrowImage = false
         dragDropView.setup({ (file) in
             if sip {
-                
+                MyLog(file.absoluteString.replacingOccurrences(of: "file://", with: ""))
+                self.runBuildScripts("kextsInstaller", [file.absoluteString.replacingOccurrences(of: "file://", with: "").replacingOccurrences(of: "\n", with: "")])
             } else {
                 let alert = NSAlert()
                 alert.messageText = "sip或快照未解锁，不能安装Kexts"
@@ -36,7 +39,15 @@ class InstallKextsObject: OutBaseObject {
             }
         }) { (files) in
             if sip {
-                
+                var kexts: String = ""
+                for file in files {
+                    kexts.append(file.absoluteString.replacingOccurrences(of: "file://", with: "") + ",")
+                }
+                if kexts.last == "," {
+                    kexts.removeLast()
+                }
+                MyLog(kexts)
+                self.runBuildScripts("kextsInstaller", [kexts.replacingOccurrences(of: "\n", with: "")])
             } else {
                 let alert = NSAlert()
                 alert.messageText = "sip或快照未解锁，不能安装Kexts"
@@ -111,6 +122,41 @@ class InstallKextsObject: OutBaseObject {
             }
         }
         return status
+    }
+    
+    func runBuildScripts(_ shell: String,_ arguments: [String]) {
+        AraHUDViewController.shared.showHUDWithTitle()
+        taskQueue.async {
+            if let path = Bundle.main.path(forResource: shell, ofType:"command") {
+                let task = Process()
+                task.launchPath = path
+                task.arguments = arguments
+                MyLog(arguments)
+                task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
+                //self.taskOutPut(task)
+                task.launch()
+                task.waitUntilExit()
+            }
+        }
+    }
+    
+    func taskOutPut(_ task:Process) {
+        let outputPipe = Pipe()
+        task.standardOutput = outputPipe
+        outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) { notification in
+            let output = outputPipe.fileHandleForReading.availableData
+            if output.count > 0 {
+                outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
+                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
+                DispatchQueue.main.async(execute: {
+                    let previousOutput = self.textField.stringValue
+                    let nextOutput = previousOutput + outputString
+                    self.textField.stringValue = nextOutput
+                })
+            }
+        }
     }
 }
 

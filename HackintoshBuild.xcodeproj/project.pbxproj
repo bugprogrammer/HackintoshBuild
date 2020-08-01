@@ -38,6 +38,7 @@
 		6A2468032441B647001B7D29 /* plists in Resources */ = {isa = PBXBuildFile; fileRef = 6A2468022441B647001B7D29 /* plists */; };
 		6A2D271123DF324100238E46 /* NvramObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D271023DF324100238E46 /* NvramObject.swift */; };
 		6A36D49823F85BD500CD042B /* CloverVersion.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A36D49723F85BD500CD042B /* CloverVersion.command */; };
+		6A3BBF1324D4772700C22732 /* kextsInstaller.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A3BBF1224D4772700C22732 /* kextsInstaller.command */; };
 		6A427D1323E459BD00A0B4E3 /* LockPicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A427D1223E459BC00A0B4E3 /* LockPicObject.swift */; };
 		6A427D1623E4618F00A0B4E3 /* changeLockPicture.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */; };
 		6A48CC50244CC1ED00AFC97A /* makeInstaller.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A48CC4C244CC1EC00AFC97A /* makeInstaller.command */; };
@@ -162,6 +163,7 @@
 		6A2468022441B647001B7D29 /* plists */ = {isa = PBXFileReference; lastKnownFileType = folder; path = plists; sourceTree = "<group>"; };
 		6A2D271023DF324100238E46 /* NvramObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NvramObject.swift; sourceTree = "<group>"; };
 		6A36D49723F85BD500CD042B /* CloverVersion.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CloverVersion.command; sourceTree = "<group>"; };
+		6A3BBF1224D4772700C22732 /* kextsInstaller.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = kextsInstaller.command; sourceTree = "<group>"; };
 		6A427D1223E459BC00A0B4E3 /* LockPicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockPicObject.swift; sourceTree = "<group>"; };
 		6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = changeLockPicture.command; sourceTree = "<group>"; };
 		6A48CC4C244CC1EC00AFC97A /* makeInstaller.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = makeInstaller.command; sourceTree = "<group>"; };
@@ -380,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				6AC3982023EA94820090A56A /* kextInfo.command */,
+				6A3BBF1224D4772700C22732 /* kextsInstaller.command */,
 			);
 			path = Kext;
 			sourceTree = "<group>";
@@ -615,6 +618,7 @@
 				6A6B939D2469ADE800562B96 /* mergely in Resources */,
 				6AD2F3B1241BAABE00E0609F /* openFinder.command in Resources */,
 				6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */,
+				6A3BBF1324D4772700C22732 /* kextsInstaller.command in Resources */,
 				6A36D49823F85BD500CD042B /* CloverVersion.command in Resources */,
 				6A723E18240E71DE007EB3AD /* diskUnmount.command in Resources */,
 				6AA130DF24744E6F00ECD331 /* README.md in Resources */,
@@ -836,7 +840,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2;
-				DEVELOPMENT_TEAM = B84MTH5WF4;
+				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -866,7 +870,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2;
-				DEVELOPMENT_TEAM = B84MTH5WF4;
+				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
