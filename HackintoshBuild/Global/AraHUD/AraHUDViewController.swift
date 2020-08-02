@@ -8,14 +8,22 @@
 
 import Cocoa
 
-class AraHUDViewController: NSObject {
+final class AraHUDViewController: NSObject {
     
     static let shared = AraHUDViewController()
     
     private var currentHUD: AraHUDView?
     private(set) var isShowing: Bool = false
     
-    func showHUDWithTitle(title: String = "任务执行中") {
+    func showHUD() {
+        showHUDWithTitle("任务执行中")
+    }
+    
+    func showHUDWithTitle(_ title: String) {
+        showHUDWithTitle(title, onView: nil)
+    }
+    
+    func showHUDWithTitle(_ title: String, onView theView: NSView? = nil) {
         if currentHUD != nil {
             currentHUD?.removeFromSuperview()
         }
@@ -33,15 +41,21 @@ class AraHUDViewController: NSObject {
             }
         }
         
-        guard let window = NSApplication.shared.keyWindow else {
-            return
-        }
         isShowing = true
         (currentHUD?.viewWithTag(1) as? NSTextField)?.stringValue = title
         currentHUD?.setAccessibilityEnabled(false)
-        currentHUD?.frame = window.contentView!.bounds
         currentHUD?.progressIndicator.startAnimation(nil)
-        window.contentView!.addSubview(currentHUD!)
+        if theView == nil {
+            let delegate = NSApplication.shared.delegate as! AppDelegate
+            guard let view = delegate.window.contentView else {
+                return
+            }
+            currentHUD?.frame = view.bounds
+            view.addSubview(currentHUD!)
+        } else {
+            currentHUD?.frame = theView!.bounds
+            theView!.addSubview(currentHUD!)
+        }
     }
     
     func hideHUD() {

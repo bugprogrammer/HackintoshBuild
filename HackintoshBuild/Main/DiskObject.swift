@@ -74,7 +74,7 @@ class DiskObject: OutBaseObject {
     }
     
     func runBuildScripts(_ shell: String,_ arguments: [String]) {
-        AraHUDViewController.shared.showHUDWithTitle()
+        AraHUDViewController.shared.showHUD()
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()

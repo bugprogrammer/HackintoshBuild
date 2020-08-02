@@ -26,43 +26,41 @@ class InstallKextsObject: OutBaseObject {
         
         let sip = sipStatus()
         
+        dragDropView.backgroundColor = NSColor(named: "ColorGray")
         dragDropView.acceptedFileExtensions = ["kext"]
         dragDropView.usedArrowImage = false
         dragDropView.setup({ (file) in
             if sip {
-                MyLog(file.absoluteString.replacingOccurrences(of: "file://", with: ""))
-                self.runBuildScripts("kextsInstaller", [file.absoluteString.replacingOccurrences(of: "file://", with: "").replacingOccurrences(of: "\n", with: "")])
+                var url = file.absoluteString.replacingOccurrences(of: "file://", with: "")
+                url = url.replacingOccurrences(of: "\n", with: "")
+                url.remove(at: url.index(before: url.endIndex))
+                MyLog(url)
+                self.runBuildScripts("kextsInstaller", [url])
             } else {
                 let alert = NSAlert()
-                alert.messageText = "sip或快照未解锁，不能安装Kexts"
+                alert.messageText = "sip 或快照未解锁，不能安装 Kexts"
                 alert.runModal()
             }
         }) { (files) in
             if sip {
                 var kexts: String = ""
                 for file in files {
-                    kexts.append(file.absoluteString.replacingOccurrences(of: "file://", with: "") + ",")
+                    var url = file.absoluteString.replacingOccurrences(of: "file://", with: "")
+                    url = url.replacingOccurrences(of: "\n", with: "")
+                    url.remove(at: url.index(before: url.endIndex))
+                    kexts.append(url + ",")
                 }
                 if kexts.last == "," {
                     kexts.removeLast()
                 }
                 MyLog(kexts)
-                self.runBuildScripts("kextsInstaller", [kexts.replacingOccurrences(of: "\n", with: "")])
+                self.runBuildScripts("kextsInstaller", [kexts])
             } else {
                 let alert = NSAlert()
-                alert.messageText = "sip或快照未解锁，不能安装Kexts"
+                alert.messageText = "sip 或快照未解锁，不能安装 Kexts"
                 alert.runModal()
             }
         }
-        
-    }
-        
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        dragDropView.backgroundColor = NSColor(named: "ColorGray")
-        textField.isEnabled = false
-        textField.stringValue = "拖入要安装的Kexts，可以一次多个"
     }
     
     func sipStatus() -> Bool {
@@ -124,8 +122,8 @@ class InstallKextsObject: OutBaseObject {
         return status
     }
     
-    func runBuildScripts(_ shell: String,_ arguments: [String]) {
-        AraHUDViewController.shared.showHUDWithTitle()
+    func runBuildScripts(_ shell: String, _ arguments: [String]) {
+        AraHUDViewController.shared.showHUD()
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
@@ -133,6 +131,11 @@ class InstallKextsObject: OutBaseObject {
                 task.arguments = arguments
                 MyLog(arguments)
                 task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
+                task.terminationHandler = { _ in
+                    DispatchQueue.main.async {
+                        AraHUDViewController.shared.hideHUD()
+                    }
+                }
                 //self.taskOutPut(task)
                 task.launch()
                 task.waitUntilExit()

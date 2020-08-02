@@ -79,7 +79,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     
     func runSIPScripts(_ shell: String,_ arguments: [String], _ alertText: String) {
-        AraHUDViewController.shared.showHUDWithTitle(title: "正在整理必要信息")
+        AraHUDViewController.shared.showHUDWithTitle("正在整理必要信息", onView: window.contentView)
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
@@ -105,7 +105,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func runSnapshotScripts(_ shell: String,_ arguments: [String], _ alertText: String) {
-        AraHUDViewController.shared.showHUDWithTitle(title: "正在整理必要信息")
+        AraHUDViewController.shared.showHUDWithTitle("正在整理必要信息", onView: window.contentView)
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()

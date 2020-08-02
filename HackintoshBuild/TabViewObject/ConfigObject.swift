@@ -200,7 +200,7 @@ class ConfigObject: InBaseObject {
     }
 
     func runBuildScripts(_ shell: String,_ arguments: [String]) {
-        AraHUDViewController.shared.showHUDWithTitle()
+        AraHUDViewController.shared.showHUD()
         self.output = ""
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {

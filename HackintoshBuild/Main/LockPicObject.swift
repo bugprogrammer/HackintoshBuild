@@ -64,7 +64,7 @@ class LockPicObject: OutBaseObject {
     
     func runBuildScripts(_ shell: String,_ arguments: [String], _ alertText: String) {
         output = ""
-        AraHUDViewController.shared.showHUDWithTitle()
+        AraHUDViewController.shared.showHUD()
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
