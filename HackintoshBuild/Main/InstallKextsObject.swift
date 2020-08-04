@@ -13,6 +13,7 @@ class InstallKextsObject: OutBaseObject {
     @IBOutlet weak var sipLabel: NSTextField!
     @IBOutlet weak var snapshotLabel: NSTextField!
     @IBOutlet weak var textField: NSTextField!
+    @IBOutlet weak var statusBar: NSProgressIndicator!
     
     let taskQueue = DispatchQueue.global(qos: .default)
     
@@ -123,7 +124,7 @@ class InstallKextsObject: OutBaseObject {
     }
     
     func runBuildScripts(_ shell: String, _ arguments: [String]) {
-        AraHUDViewController.shared.showHUD()
+        statusBar.startAnimation(self)
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
@@ -133,10 +134,14 @@ class InstallKextsObject: OutBaseObject {
                 task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
                 task.terminationHandler = { _ in
                     DispatchQueue.main.async {
-                        AraHUDViewController.shared.hideHUD()
+                        self.textField.stringValue = "拖入要安装的Kexts，可以一次多个"
+                        self.statusBar.stopAnimation(self)
+                        let alert = NSAlert()
+                        alert.messageText = "安装Kexts完成"
+                        alert.runModal()
                     }
                 }
-                //self.taskOutPut(task)
+                self.taskOutPut(task)
                 task.launch()
                 task.waitUntilExit()
             }
@@ -145,21 +150,17 @@ class InstallKextsObject: OutBaseObject {
     
     func taskOutPut(_ task:Process) {
         let outputPipe = Pipe()
-        task.standardOutput = outputPipe
-        outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading , queue: nil) { notification in
-            let output = outputPipe.fileHandleForReading.availableData
-            if output.count > 0 {
-                outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-                DispatchQueue.main.async(execute: {
-                    let previousOutput = self.textField.stringValue
-                    let nextOutput = previousOutput + outputString
-                    self.textField.stringValue = nextOutput
-                })
-            }
+        outputPipe.fileHandleForReading.readabilityHandler = { handle in
+            let data = handle.availableData
+            if data.count == 0 { return }
+            let outputString = String(data: data, encoding: String.Encoding.utf8) ?? ""
+            DispatchQueue.main.async(execute: {
+                MyLog(outputString)
+                self.textField.stringValue = outputString
+            })
         }
+        task.standardOutput = outputPipe
+        task.standardError = outputPipe
     }
 }
 

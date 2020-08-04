@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17140" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17140"/>
-        <plugIn identifier="com.apple.WebKit2IBPlugin" version="17140"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="16097"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -697,38 +697,38 @@
             <rect key="contentRect" x="196" y="207" width="800" height="666"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
             <value key="minSize" type="size" width="800" height="666"/>
-            <view key="contentView" id="DcO-cN-SNw">
-                <rect key="frame" x="0.0" y="0.0" width="800" height="666"/>
+            <view key="contentView" misplaced="YES" id="DcO-cN-SNw">
+                <rect key="frame" x="0.0" y="0.0" width="800" height="730"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <tabView drawsBackground="NO" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="nGT-ER-5Zk">
-                        <rect key="frame" x="20" y="34" width="760" height="632"/>
+                        <rect key="frame" x="20" y="58" width="760" height="640"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="System" identifier="System" id="MKw-W7-uPi">
                                 <view key="view" id="fhW-E3-XCI">
-                                    <rect key="frame" x="0.0" y="0.0" width="760" height="632"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="760" height="640"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gX0-Jz-0lP">
-                                            <rect key="frame" x="-4" y="-30" width="768" height="648"/>
+                                            <rect key="frame" x="-4" y="-30" width="768" height="656"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <font key="font" metaFont="system"/>
                                             <tabViewItems>
                                                 <tabViewItem label="关于本机" identifier="0" id="VAd-Dp-0Y9">
                                                     <view key="view" id="qMn-fl-Z9Q">
-                                                        <rect key="frame" x="10" y="33" width="748" height="602"/>
+                                                        <rect key="frame" x="10" y="33" width="748" height="610"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="44" horizontalPageScroll="10" verticalLineScroll="44" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lv-AV-zyr">
-                                                                <rect key="frame" x="17" y="32" width="714" height="558"/>
+                                                                <rect key="frame" x="17" y="32" width="714" height="566"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <clipView key="contentView" id="yAT-SL-NCT">
-                                                                    <rect key="frame" x="1" y="1" width="712" height="556"/>
+                                                                    <rect key="frame" x="1" y="1" width="712" height="564"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" enabled="NO" rowHeight="42" rowSizeStyle="automatic" headerView="Dm8-13-qoA" viewBased="YES" id="Z5P-0F-vky">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="712" height="531"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="712" height="539"/>
                                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                             <size key="intercellSpacing" width="3" height="2"/>
                                                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -3513,15 +3513,15 @@
                             </tabViewItem>
                             <tabViewItem label="Kexts" identifier="Kexts" id="RgE-TR-GJ1" userLabel="Kexts">
                                 <view key="view" id="JB7-VW-zf0">
-                                    <rect key="frame" x="0.0" y="0.0" width="760" height="632"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="760" height="640"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <customView id="LAq-AE-qV6" customClass="DragDropView" customModule="HackintoshBuild" customModuleProvider="target">
-                                            <rect key="frame" x="144" y="134" width="473" height="435"/>
+                                            <rect key="frame" x="144" y="138" width="473" height="442"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ljn-tG-1nU">
-                                                    <rect key="frame" x="83" y="200" width="306" height="35"/>
+                                                    <rect key="frame" x="83" y="203" width="306" height="35"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" alignment="center" title="拖入要安装的Kexts，可以一次多个" id="L6i-LK-Crq">
                                                         <font key="font" metaFont="system" size="17"/>
@@ -3532,7 +3532,7 @@
                                             </subviews>
                                         </customView>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bt5-6G-v1u">
-                                            <rect key="frame" x="314" y="85" width="129" height="16"/>
+                                            <rect key="frame" x="315" y="101" width="129" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="Xlb-gq-MIa">
                                                 <font key="font" usesAppearanceFont="YES"/>
@@ -3541,7 +3541,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1PS-EH-mu9">
-                                            <rect key="frame" x="315" y="55" width="129" height="16"/>
+                                            <rect key="frame" x="315" y="68" width="129" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="csp-nP-KRi">
                                                 <font key="font" metaFont="system"/>
@@ -3549,6 +3549,10 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <progressIndicator fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="tRA-Zb-VuR">
+                                            <rect key="frame" x="364" y="20" width="32" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        </progressIndicator>
                                     </subviews>
                                 </view>
                             </tabViewItem>
@@ -4039,6 +4043,7 @@
                 <outlet property="dragDropView" destination="LAq-AE-qV6" id="unD-P7-27b"/>
                 <outlet property="sipLabel" destination="bt5-6G-v1u" id="xDs-86-a4n"/>
                 <outlet property="snapshotLabel" destination="1PS-EH-mu9" id="DB6-kM-Blq"/>
+                <outlet property="statusBar" destination="tRA-Zb-VuR" id="RoL-TP-UeJ"/>
                 <outlet property="textField" destination="ljn-tG-1nU" id="9mV-5z-71v"/>
             </connections>
         </customObject>
@@ -4055,8 +4060,8 @@
     </objects>
     <resources>
         <image name="NS" width="128" height="128"/>
-        <image name="NSRefreshFreestandingTemplate" width="15" height="15"/>
-        <image name="NSRefreshTemplate" width="14" height="16"/>
+        <image name="NSRefreshFreestandingTemplate" width="14" height="14"/>
+        <image name="NSRefreshTemplate" width="11" height="15"/>
         <image name="NSToolbarItem_Build" width="32" height="32"/>
         <image name="NSToolbarItem_Compare" width="32" height="32"/>
         <image name="NSToolbarItem_Disk" width="32" height="32"/>
@@ -4069,8 +4074,8 @@
         <image name="NSToolbarItem_OS" width="32" height="32"/>
         <image name="NSToolbarItem_Other" width="24" height="24"/>
         <image name="NSToolbarItem_Pay" width="32" height="32"/>
-        <image name="NSTouchBarPlayTemplate" width="12" height="13"/>
-        <image name="NSTouchBarRecordStopTemplate" width="14" height="13"/>
+        <image name="NSTouchBarPlayTemplate" width="14" height="30"/>
+        <image name="NSTouchBarRecordStopTemplate" width="12" height="30"/>
         <image name="alipay" width="400" height="400"/>
         <image name="wechatpay" width="400" height="400"/>
     </resources>
