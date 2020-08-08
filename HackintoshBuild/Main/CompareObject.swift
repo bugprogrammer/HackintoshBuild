@@ -45,16 +45,16 @@ class CompareObject: OutBaseObject {
         
         if !checkXcode() {
             let alert = NSAlert()
-            alert.messageText = "尚未安装Xcode，请先安装Xcode"
+            alert.messageText = "尚未安装 Xcode，请先安装 Xcode"
             alert.runModal()
             textFieldLeft.textColor = .red
             textFieldRight.textColor = .red
-            textFieldLeft.stringValue = "请安装Xcode"
-            textFieldRight.stringValue = "请安装Xcode"
+            textFieldLeft.stringValue = "请安装 Xcode"
+            textFieldRight.stringValue = "请安装 Xcode"
             return
         }
-        dragDropViewLeft.acceptedFileExtensions = ["plist"]
-        dragDropViewRight.acceptedFileExtensions = ["plist"]
+        dragDropViewLeft.acceptedFileExtensions = ["plist", "txt", "xml"]
+        dragDropViewRight.acceptedFileExtensions = ["plist", "txt", "xml"]
         dragDropViewLeft.setup({ (file) in
             self.imageViewLeft.isHidden = false
             let image = MyAsset.file.image
@@ -117,7 +117,7 @@ class CompareObject: OutBaseObject {
     
     func checkXcode() -> Bool {
         let filemanager = FileManager.default
-        if filemanager.fileExists(atPath: "/Applications/Xcode.app") {
+        if filemanager.fileExists(atPath: "/Applications/Xcode.app") || filemanager.fileExists(atPath: "/Applications/Xcode-beta.app") {
             return true
         } else {
             return false

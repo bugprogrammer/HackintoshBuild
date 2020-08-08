@@ -26,12 +26,11 @@ class SerialObject: InBaseObject {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        let image = MyAsset.shuaxin.image
+        image.isTemplate = true
+        refreshButton.image = image
         refreshButton.isBordered = false
         refreshButton.bezelStyle = .recessed
-        let image = NSImage(named: "NSRefreshFreestandingTemplate")
-        image?.isTemplate = true
-        image?.size = CGSize(width: 64, height: 64)
-        refreshButton.image = image
         refreshButton.target = self
         refreshButton.action = #selector(refresh)
         refreshButton.toolTip = "生成新的序列号信息"

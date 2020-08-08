@@ -41,6 +41,7 @@ extension NSImage {
         case open1 = "open1"
         case refresh = "refresh"
         case refresh1 = "refresh1"
+        case shuaxin = "shuaxin"
         case unmount = "unmount"
         case export = "export"
         case run = "run"

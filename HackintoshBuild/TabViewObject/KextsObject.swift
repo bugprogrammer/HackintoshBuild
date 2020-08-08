@@ -102,12 +102,11 @@ class KextsObject: InBaseObject {
         proxyTextField.delegate = self
         proxyTextField.refusesFirstResponder = true
         
-        let refresh = NSImage(named: "NSRefreshFreestandingTemplate")
         let downloadAll = MyAsset.downloadAll.image
-        refresh!.isTemplate = true
-        refresh?.size = NSSize(width: 64.0, height: 64.0)
         downloadAll.isTemplate = true
-        refreshButton.image = refresh
+        let shuaxin = MyAsset.shuaxin.image
+        shuaxin.isTemplate = true
+        refreshButton.image = shuaxin
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
         refreshButton.toolTip = "刷新"

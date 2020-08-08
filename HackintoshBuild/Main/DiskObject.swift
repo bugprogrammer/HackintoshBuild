@@ -50,6 +50,9 @@ class DiskObject: OutBaseObject {
         if !once { return }
         once = false
         
+        let image = MyAsset.shuaxin.image
+        image.isTemplate = true
+        refreshButton.image = image
         refreshButton.isEnabled = false
         arrayPartition = []
         diskInfoObject = []
