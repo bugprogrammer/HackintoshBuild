@@ -10,10 +10,21 @@ import Cocoa
 import WebKit
 
 class CompareObject: OutBaseObject {
-
-    @IBOutlet weak var webview: WKWebView!
     
-    let mergely = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "mergely")
+    @IBOutlet weak var dragDropViewLeft: DragDropView!
+    @IBOutlet weak var dragDropViewRight: DragDropView!
+    @IBOutlet weak var imageViewLeft: NSImageView!
+    @IBOutlet weak var imageViewRight: NSImageView!
+    @IBOutlet weak var textFieldLeft: NSTextField!
+    @IBOutlet weak var textFieldRight: NSTextField!
+    @IBOutlet weak var fileNameLeft: NSTextField!
+    @IBOutlet weak var fileNameRight: NSTextField!
+    @IBOutlet weak var compareButton: NSButton!
+    
+    var isFileLeft: Bool = false
+    var isFileRight: Bool = false
+    var fileLeftPath: String = ""
+    var fileRightPath: String = ""
     
     override func willAppear(_ noti: Notification) {
         super.willAppear(noti)
@@ -23,9 +34,94 @@ class CompareObject: OutBaseObject {
         if !once { return }
         once = false
         
-        webview.loadFileURL(mergely!, allowingReadAccessTo: mergely!)
-        let request = URLRequest(url: mergely!)
-        webview.load(request)
+        imageViewLeft.isHidden = true
+        imageViewRight.isHidden = true
+        compareButton.isEnabled = false
+        
+        dragDropViewLeft.backgroundColor = NSColor(named: "ColorGray")
+        dragDropViewLeft.usedArrowImage = false
+        dragDropViewRight.backgroundColor = NSColor(named: "ColorGray")
+        dragDropViewRight.usedArrowImage = false
+        
+        if !checkXcode() {
+            let alert = NSAlert()
+            alert.messageText = "尚未安装Xcode，请先安装Xcode"
+            alert.runModal()
+            textFieldLeft.textColor = .red
+            textFieldRight.textColor = .red
+            textFieldLeft.stringValue = "请安装Xcode"
+            textFieldRight.stringValue = "请安装Xcode"
+            return
+        }
+        dragDropViewLeft.acceptedFileExtensions = ["plist"]
+        dragDropViewRight.acceptedFileExtensions = ["plist"]
+        dragDropViewLeft.setup({ (file) in
+            self.imageViewLeft.isHidden = false
+            let image = MyAsset.file.image
+            image.isTemplate = true
+            self.imageViewLeft.image = image
+            self.dragDropViewLeft.backgroundColor = NSColor.clear
+            self.textFieldLeft.isHidden = true
+            self.fileNameLeft.stringValue = file.absoluteString.components(separatedBy: "/").last!
+            self.isFileLeft = true
+            if self.isFileLeft && self.isFileRight {
+                self.compareButton.isEnabled = true
+            }
+            self.fileLeftPath = file.absoluteString
+            
+        }) { (files) in
+            let alert = NSAlert()
+            alert.messageText = "只支持拖入一个文件"
+            alert.runModal()
+        }
+        
+        dragDropViewRight.setup({ (file) in
+            self.imageViewRight.isHidden = false
+            let image = MyAsset.file.image
+            image.isTemplate = true
+            self.imageViewRight.image = image
+            self.dragDropViewRight.backgroundColor = NSColor.clear
+            self.textFieldRight.isHidden = true
+            self.fileNameRight.stringValue = file.absoluteString.components(separatedBy: "/").last!
+            self.isFileRight = true
+            if self.isFileLeft && self.isFileRight {
+                self.compareButton.isEnabled = true
+            }
+            self.fileRightPath = file.absoluteString
+        }) { (files) in
+            let alert = NSAlert()
+            alert.messageText = "只支持拖入一个文件"
+            alert.runModal()
+        }
+    }
+    
+    @IBAction func compareFiles(_ sender: Any) {
+        let task = Process()
+
+        task.launchPath = "/usr/bin/opendiff"
+        task.arguments = [fileLeftPath.components(separatedBy: "//").last! as String, fileRightPath.components(separatedBy: "//").last! as String]
+        task.launch()
+        
+        dragDropViewLeft.backgroundColor = NSColor(named: "ColorGray")
+        dragDropViewRight.backgroundColor = NSColor(named: "ColorGray")
+        imageViewLeft.isHidden = true
+        imageViewRight.isHidden = true
+        textFieldLeft.isHidden = false
+        textFieldRight.isHidden = false
+        compareButton.isEnabled = false
+        isFileLeft = false
+        isFileRight = false
+        fileNameLeft.stringValue = ""
+        fileNameRight.stringValue = ""
+    }
+    
+    func checkXcode() -> Bool {
+        let filemanager = FileManager.default
+        if filemanager.fileExists(atPath: "/Applications/Xcode.app") {
+            return true
+        } else {
+            return false
+        }
     }
     
 }

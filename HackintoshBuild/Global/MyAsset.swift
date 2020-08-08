@@ -49,6 +49,8 @@ extension NSImage {
         case mojave = "mojave"
         case catalina = "catalina"
         case NSToolbarItem_Compare = "NSToolbarItem_Compare"
+        case file = "file"
+        case compare = "compare"
     }
     
     convenience init!(asset: Asset) {

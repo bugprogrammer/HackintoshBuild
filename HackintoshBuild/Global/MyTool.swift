@@ -64,6 +64,36 @@ extension Notification.Name {
     
 }
 
+extension Date {
+    var timeStamp: String {
+        let timeInterval: TimeInterval = self.timeIntervalSince1970
+        let timeStamp = Int(timeInterval)
+        return "\(timeStamp)"
+    }
+    var milliStamp: String {
+        let timeInterval: TimeInterval = self.timeIntervalSince1970
+        let millisecond = CLongLong(round(timeInterval*1000))
+        return "\(millisecond)"
+    }
+}
+
+extension DragDropView {
+
+    var backgroundColor: NSColor? {
+        get {
+            if let colorRef = self.layer?.backgroundColor {
+                return NSColor(cgColor: colorRef)
+            } else {
+                return nil
+            }
+        }
+        set {
+            self.wantsLayer = true
+            self.layer?.backgroundColor = newValue?.cgColor
+        }
+    }
+}
+
 class VerticallyCenteredTextFieldCell: NSTextFieldCell {
 
     override func drawingRect(forBounds theRect: NSRect) -> NSRect {

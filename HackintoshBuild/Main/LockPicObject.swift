@@ -13,49 +13,47 @@ class LockPicObject: OutBaseObject {
     @IBOutlet weak var replaceButton: NSButton!
     @IBOutlet weak var resetButton: NSButton!
     @IBOutlet weak var lockImageView: NSImageView!
-    @IBOutlet weak var locationImage: NSPathControl!
+    @IBOutlet weak var dragDropView: DragDropView!
+    @IBOutlet weak var textFiled: NSTextField!
     
     let taskQueue = DispatchQueue.global(qos: .default)
     var output: String = ""
+    var imageURL: URL!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         replaceButton.isEnabled = false
         resetButton.isEnabled = true
-    }
-    
-    func selectedImage(_ url: String) -> Bool {
-        let url = NSURL(fileURLWithPath: url)
-        if url.pathExtension!.uppercased() == "PNG" {
-            let image: NSImage = NSImage(contentsOf: url as URL)!
-            lockImageView.image = image
-            return true
-        } else {
-            lockImageView.image = NSImage()
-            replaceButton.isEnabled = false
+        lockImageView.isHidden = true
+        
+        dragDropView.backgroundColor = NSColor(named: "ColorGray")
+        dragDropView.acceptedFileExtensions = ["png"]
+        dragDropView.usedArrowImage = false
+        dragDropView.setup({ (file) in
+            self.lockImageView.isHidden = false
+            self.dragDropView.backgroundColor = NSColor.clear
+            self.textFiled.isHidden = true
+            self.selectedImage(file)
+            self.imageURL = file
+        }) { (files) in
             let alert = NSAlert()
-            alert.messageText = "请选择 PNG 格式图片"
+            alert.messageText = "只支持拖入一张壁纸"
             alert.runModal()
-            return false
         }
     }
     
-    @IBAction func showPicture(_ sender: Any) {
-        if let urlImage = locationImage.url {
-            let isPNG = selectedImage(urlImage.path)
-            if isPNG {
-                replaceButton.isEnabled = true
-                resetButton.isEnabled = true
-            }
-        }
+    func selectedImage(_ url: URL) {
+        let image: NSImage = NSImage(contentsOf: url)!
+        image.size = lockImageView.frame.size
+        lockImageView.imageScaling = .scaleAxesIndependently
+        lockImageView.image = image
+        replaceButton.isEnabled = true
     }
     
     @IBAction func replaceButtonDidClicked(_ sender: Any) {
-        if let urlImage = locationImage.url {
-            MyLog(urlImage.path)
-            runBuildScripts("changeLockPicture", [urlImage.path], "替换完成")
-        }
+        MyLog(imageURL.absoluteString.replacingOccurrences(of: "file://", with: ""))
+        runBuildScripts("changeLockPicture", [imageURL.absoluteString.replacingOccurrences(of: "file://", with: "")], "替换完成")
     }
     
     @IBAction func resetButtonDidClicked(_ sender: Any) {
@@ -64,7 +62,6 @@ class LockPicObject: OutBaseObject {
     
     func runBuildScripts(_ shell: String,_ arguments: [String], _ alertText: String) {
         output = ""
-        AraHUDViewController.shared.showHUD()
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
@@ -73,7 +70,6 @@ class LockPicObject: OutBaseObject {
                 task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
                 task.terminationHandler = { task in
                     DispatchQueue.main.async(execute: {
-                        AraHUDViewController.shared.hideHUD()
                         let alert = NSAlert()
                         if self.output.contains("success") {
                             alert.messageText = alertText
@@ -81,6 +77,10 @@ class LockPicObject: OutBaseObject {
                             alert.messageText = "操作失败"
                         }
                         alert.runModal()
+                        self.dragDropView.backgroundColor = NSColor(named: "ColorGray")
+                        self.lockImageView.isHidden = true
+                        self.textFiled.isHidden = false
+                        self.replaceButton.isEnabled = false
                     })
                 }
                 self.taskOutPut(task)
