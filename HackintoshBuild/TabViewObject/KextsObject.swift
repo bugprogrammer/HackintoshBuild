@@ -104,9 +104,9 @@ class KextsObject: InBaseObject {
         
         let downloadAll = MyAsset.downloadAll.image
         downloadAll.isTemplate = true
-        let shuaxin = MyAsset.shuaxin.image
+        let shuaxin = MyAsset.refresh.image
         shuaxin.isTemplate = true
-        refreshButton.image = shuaxin
+        refreshButton.image = MyAsset.refresh.image
         refreshButton.bezelStyle = .recessed
         refreshButton.isBordered = false
         refreshButton.toolTip = "刷新"

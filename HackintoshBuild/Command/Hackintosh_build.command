@@ -68,6 +68,27 @@ do shell script "mkdir -p /usr/local/bin || exit 1; cp ${path%/*}/nasm /usr/loca
 EOF
 fi
 
+################# iasl ########################
+echo "正在验证 iasl"
+
+if [ "$(iasl -v)" = "" ]; then
+echo "Missing iasl!"
+echo "Download the latest iasl from https://acpica.org/downloads"
+# On Darwin we can install prebuilt iasl. On Linux let users handle it.
+pushd /tmp >/dev/null || exit 1
+rm -rf iasl-macosx.zip
+curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/iasl-macosx.zip" || exit 1
+iaslzip=$(cat iasl-macosx.zip)
+rm -rf iasl
+curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/${iaslzip}" || exit 1
+unzip -q "${iaslzip}" iasl || exit 1
+osascript <<EOF
+do shell script "sudo mkdir -p /usr/local/bin || exit 1; sudo mv iasl /usr/local/bin/ || exit 1" with prompt "安装 iasl 需要授权" with administrator privileges
+EOF
+rm -rf "${iaslzip}" iasl
+popd >/dev/null || exit 1
+fi
+
 ################# xcodebuild ##################
 echo "正在验证 xcodebuild"
 

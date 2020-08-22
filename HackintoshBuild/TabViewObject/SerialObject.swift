@@ -26,7 +26,7 @@ class SerialObject: InBaseObject {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        let image = MyAsset.shuaxin.image
+        let image = MyAsset.refresh.image
         image.isTemplate = true
         refreshButton.image = image
         refreshButton.isBordered = false

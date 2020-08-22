@@ -7,19 +7,24 @@
 //
 
 import Cocoa
+import Alamofire
 
 class OSObject: OutBaseObject {
 
     @IBOutlet weak var popCatalogs: NSPopUpButton!
     @IBOutlet weak var downloadPath: NSPathControl!
-    @IBOutlet weak var tableview: NSTableView!
-    @IBOutlet var textview: NSTextView!
+    @IBOutlet weak var versionTableView: NSTableView!
     @IBOutlet weak var bar: NSProgressIndicator!
     @IBOutlet weak var popVersion: NSPopUpButton!
+    @IBOutlet weak var downloadTableView: NSTableView!
     
+    var isDownloading: Bool = false
+    var downloadProgress: Double = 0.0
     let catalogsArr: [String] = ["Developer", "Beta", "Public"]
     let catalogsDict: NSDictionary = ["Developer": "https://swscan.apple.com/content/catalogs/others/index-10.15seed-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Beta": "https://swscan.apple.com/content/catalogs/others/index-10.15beta-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Public": "https://swscan.apple.com/content/catalogs/others/index-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog"]
     let versionPopList: [String] = ["macOS Big Sur - 11.0", "macOS Catalina - 10.15", "macOS Mojave - 10.14", "macOS High Sierra - 10.13"]
+    let downloadStatus: [String] = ["正在下载AppleDiagnostics.dmg", "正在下载AppleDiagnostics.chunklist", "正在下载BaseSystem.dmg", "正在下载BaseSystem.chunklist", "正在下载InstallInfo.plist", "正在下载InstallESDDmg.pkg", "正在制作镜像"]
+    let downloadStatusBS: [String] = ["正在下载InstallInfo.plist", "正在下载UpdateBrain.zip", "正在下载MajorOSInfo.pkg", "正在下载Info.plist", "正在下载InstallAssistant.pkg", "正在下载BuildManifest.plist", "正在制作镜像"]
     let filemanager = FileManager.default
     let taskQueue = DispatchQueue.global(qos: .default)
     let alert = NSAlert()
@@ -33,22 +38,39 @@ class OSObject: OutBaseObject {
     var versionDict: NSMutableDictionary = [:]
     var selectVersionList: [String] = []
     
+    let queue : OperationQueue = {
+        let que : OperationQueue = OperationQueue()
+        que.maxConcurrentOperationCount = 1
+        return que
+    }()
+    
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 7 { return }
+        if !once { return }
+        once = false
+        selectVersion()
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         popCatalogs.addItems(withTitles: catalogsArr)
         popVersion.addItems(withTitles: versionPopList)
-        tableview.target = self
-        tableview.doubleAction = #selector(tableViewDoubleClick)
+        versionTableView.target = self
+        versionTableView.doubleAction = #selector(tableViewDoubleClick)
+        downloadTableView.isEnabled = false
         //popVersion.action = #selector(selectVersion)
         
         if let downloadURL = UserDefaults.standard.url(forKey: "OSLocation") {
             if filemanager.fileExists(atPath: downloadURL.path) {
                 self.downloadPath.url = downloadURL
                 downloadLocation = downloadURL.path
-                tableview.isEnabled = true
+                versionTableView.isEnabled = true
                 UserDefaults.standard.set(downloadLocation, forKey: "OStmp")
-                selectVersion()
+                //selectVersion()
             }
         }
     }
@@ -58,24 +80,20 @@ class OSObject: OutBaseObject {
             popCatalogs.isEnabled = false
             popVersion.isEnabled = false
             downloadPath.isEnabled = false
-            tableview.isEnabled = false
-            bar.isHidden = false
-            bar.startAnimation(self)
+            versionTableView.isEnabled = false
         }
         else {
             popCatalogs.isEnabled = true
             popVersion.isEnabled = true
             downloadPath.isEnabled = true
-            tableview.isEnabled = true
-            bar.isHidden = true
-            bar.stopAnimation(self)
+            versionTableView.isEnabled = true
         }
     }
     
     @IBAction func path(_ sender: Any) {
         if let url = downloadPath.url {
             downloadLocation = url.path
-            tableview.isEnabled = true
+            versionTableView.isEnabled = true
             UserDefaults.standard.set(url, forKey: "OSLocation")
             UserDefaults.standard.set(downloadLocation, forKey: "OStmp")
         }
@@ -133,13 +151,40 @@ class OSObject: OutBaseObject {
     func downloadCatalogs() {
         if filemanager.isWritableFile(atPath: downloadLocation) {
             setStatus(true)
-            textview.string = ""
+            bar.isHidden = false
+            bar.startAnimation(self)
             selectVersionList = []
-            tableview.reloadData()
-            var arguments: [String] = []
-            arguments.append(downloadLocation)
-            arguments.append(catalogsDict[catalogsArr[popCatalogs.indexOfSelectedItem]] as! String)
-            runBuildScripts("downloadCatalogs", arguments)
+            versionTableView.reloadData()
+            if filemanager.fileExists(atPath: downloadLocation + "/macOSInstaller/catalogs") {
+                try! filemanager.removeItem(atPath: downloadLocation + "/macOSInstaller/catalogs")
+            }
+            try! filemanager.createDirectory(atPath: downloadLocation + "/macOSInstaller/catalogs", withIntermediateDirectories: true,
+            attributes: nil)
+            let destination: DownloadRequest.Destination = { _, _ in
+                let fileURL = URL(fileURLWithPath: self.downloadLocation + "/macOSInstaller/catalogs/catalogs.plist")
+                
+                return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+            }
+
+            AF.download(catalogsDict[catalogsArr[popCatalogs.indexOfSelectedItem]] as! String, to: destination).responseData { response in
+                debugPrint(response)
+                switch response.result {
+                case .success(_):
+                    self.getProductOS()
+                    MyLog(self.productsArr)
+                    MyLog(self.distsArr)
+                    for dist in self.distsArr {
+                        self.distsStr.append(dist)
+                        if dist != self.distsArr.last {
+                            self.distsStr.append(",")
+                        }
+                    }
+                    //MyLog(self.distsStr)
+                    self.runBuildScripts("versionInfo", [self.distsStr])
+                case .failure(_):
+                    break
+                }
+            }
         }
         else {
             alert.messageText = "所选下载目录不可写"
@@ -157,6 +202,8 @@ class OSObject: OutBaseObject {
     
     
     @IBAction func selectVersionButton(_ sender: Any) {
+        isDownloading = false
+        downloadTableView.reloadData()
         selectVersion()
     }
     
@@ -168,20 +215,76 @@ class OSObject: OutBaseObject {
     
     @objc func tableViewDoubleClick() {
         if filemanager.isWritableFile(atPath: downloadLocation) {
-            if tableview.selectedRow != -1 {
+            if versionTableView.selectedRow != -1 {
                 setStatus(true)
-                textview.string = ""
-                var arguments: [String] = []
-                arguments.append(downloadLocation)
-                arguments.append(versionDict[selectVersionList[tableview.selectedRow]] as! String)
-                arguments.append(selectedVersion)
-                MyLog(arguments)
-                runBuildScripts("downloadInstaller", arguments)
+                if filemanager.fileExists(atPath: downloadLocation + "/macOSInstaller/installer") {
+                    try! filemanager.removeItem(atPath: downloadLocation + "/macOSInstaller/installer")
+                }
+                try! filemanager.createDirectory(atPath: downloadLocation + "/macOSInstaller/installer", withIntermediateDirectories: true,
+                attributes: nil)
+                
+                if selectedVersion == " 11.0" {
+                    downloadOS(["/InstallInfo.plist", "/UpdateBrain.zip", "/MajorOSInfo.pkg", "/Info.plist", "/InstallAssistant.pkg", "/BuildManifest.plist"])
+                } else if selectedVersion != " 11.0" {
+                    downloadOS(["/AppleDiagnostics.dmg", "/AppleDiagnostics.chunklist", "/BaseSystem.dmg", "/BaseSystem.chunklist", "/InstallInfo.plist", "/InstallESDDmg.pkg"])
+                }
             }
         }
         else {
             alert.messageText = "所选下载目录不可写"
             alert.runModal()
+        }
+    }
+    
+    func downloadOS(_ list: [String]) {
+        
+        isDownloading = true
+        var first: Bool = true
+        let urlStr = versionDict[selectVersionList[versionTableView.selectedRow]] as! String
+        var urlArr = urlStr.components(separatedBy: "/")
+        urlArr.removeLast()
+        let url = urlArr.joined(separator: "/")
+        
+        for i in 0..<list.count {
+            let semaphore = DispatchSemaphore(value: 0)
+            let op : BlockOperation = BlockOperation { [weak self] in
+                let destination: DownloadRequest.Destination = { _, _ in
+                    let fileURL = URL(fileURLWithPath: self!.downloadLocation + "/macOSInstaller/installer" + list[i])
+                    
+                    return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+                }
+
+                AF.download(url + list[i], to: destination).downloadProgress { progress in
+                    print("Download Progress: \(progress.fractionCompleted)")
+                    self?.downloadProgress = progress.fractionCompleted
+                    self!.downloadTableView.reloadData(forRowIndexes: [i], columnIndexes: [0,1])
+                }.responseData { response in
+                    debugPrint(response)
+                    switch response.result {
+                    case .success(_):
+                        self?.downloadProgress = 1
+                        self!.downloadTableView.reloadData(forRowIndexes: [i], columnIndexes: [0,1])
+                        if i == list.count - 1 {
+                            self?.downloadProgress = 0.0
+                            self?.downloadTableView.reloadData(forRowIndexes: [list.count], columnIndexes: [0,1])
+                            self!.runBuildScripts("makeInstaller", [self!.downloadLocation])
+                        }
+                    case .failure(_):
+                        if first {
+                            self!.alert.messageText = "下载失败，请重试"
+                            self!.alert.runModal()
+                            first = false
+                            self!.isDownloading = false
+                            self!.downloadTableView.reloadData()
+                            self!.setStatus(false)
+                        }
+                    }
+                    semaphore.signal()
+                }
+                semaphore.wait()
+            }
+            
+            queue.addOperation(op)
         }
     }
     
@@ -196,19 +299,6 @@ class OSObject: OutBaseObject {
                 task.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
-                        if shell == "downloadCatalogs" {
-                            self.getProductOS()
-                            //MyLog(self.productsArr)
-                            //MyLog(self.distsArr)
-                            for dist in self.distsArr {
-                                self.distsStr.append(dist)
-                                if dist != self.distsArr.last {
-                                    self.distsStr.append(",")
-                                }
-                            }
-                            //MyLog(self.distsStr)
-                            self.runBuildScripts("versionInfo", [self.distsStr])
-                        }
                         if shell == "versionInfo" {
                             MyLog(self.output)
                             self.versionArr = self.output.components(separatedBy: "\n")
@@ -224,14 +314,25 @@ class OSObject: OutBaseObject {
                                     self.selectVersionList.append(version)
                                 }
                             }
-                            self.tableview.reloadData()
+                            self.versionTableView.reloadData()
                             self.setStatus(false)
-                        }
-                        if shell == "downloadInstaller" {
-                            self.runBuildScripts("makeInstaller", [self.downloadLocation])
+                            self.bar.isHidden = true
+                            self.bar.stopAnimation(self)
                         }
                         if shell == "makeInstaller" {
-                            self.setStatus(false)
+                            if self.output.contains("failed") {
+                                self.setStatus(false)
+                                self.alert.messageText = "下载不完整，镜像制作失败"
+                                self.alert.runModal()
+                                self.isDownloading = false
+                                self.downloadTableView.reloadData()
+                            } else {
+                                self.setStatus(false)
+                                self.downloadProgress = 1.0
+                                self.downloadTableView.reloadData(forRowIndexes: [self.downloadStatus.count - 1], columnIndexes: [0,1])
+                                self.alert.messageText = "制作镜像完成,位于应用程序下"
+                                self.alert.runModal()
+                            }
                         }
                     })
                 }
@@ -254,16 +355,9 @@ class OSObject: OutBaseObject {
                 outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
                 let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
                 DispatchQueue.main.async(execute: {
-                    if shell != "downloadInstaller" && shell != "makeInstaller" {
-                        let previousOutput = self.output
-                        let nextOutput = previousOutput + outputString
-                        self.output = nextOutput
-                    }
-                    else {
-                        let previousOutput = self.textview.string
-                        let nextOutput = previousOutput + outputString
-                        self.textview.string = nextOutput
-                    }
+                    let previousOutput = self.output
+                    let nextOutput = previousOutput + outputString
+                    self.output = nextOutput
                 })
             }
         }
@@ -273,7 +367,17 @@ class OSObject: OutBaseObject {
 extension OSObject: NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return selectVersionList.count
+        var count: Int = 0
+        if tableView == versionTableView {
+            count = selectVersionList.count
+        } else if tableView == downloadTableView {
+            if selectedVersion == " 11.0" {
+                count = downloadStatusBS.count
+            } else if selectedVersion != " 11.0" {
+                count = downloadStatus.count
+            }
+        }
+        return count
     }
 }
 
@@ -284,23 +388,75 @@ extension OSObject: NSTableViewDelegate {
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        
-        if tableColumn != nil {
-            let identifier = tableColumn!.identifier.rawValue
-            switch identifier {
-            case "version":
-                let textField = NSTextField()
-                textField.cell = VerticallyCenteredTextFieldCell()
-                textField.stringValue = self.selectVersionList[row]
-                textField.alignment = .left
-                textField.isBordered = false
-                return textField
-            default:
-                return nil
+        if tableView == versionTableView {
+            if tableColumn != nil {
+                let identifier = tableColumn!.identifier.rawValue
+                switch identifier {
+                case "version":
+                    let textField = NSTextField()
+                    textField.cell = VerticallyCenteredTextFieldCell()
+                    textField.stringValue = self.selectVersionList[row]
+                    textField.alignment = .left
+                    textField.isBordered = false
+                    return textField
+                default:
+                    return nil
+                }
             }
+            return nil
+        } else if tableView == downloadTableView && isDownloading {
+            if tableColumn != nil {
+                let identifier = tableColumn!.identifier.rawValue
+                switch identifier {
+                case "downloading":
+                    let textField = NSTextField()
+                    textField.cell = VerticallyCenteredTextFieldCell()
+                    if selectedVersion == " 11.0" {
+                        textField.stringValue = self.downloadStatusBS[row]
+                    } else if selectedVersion != " 11.0" {
+                        textField.stringValue = self.downloadStatus[row]
+                    }
+                    textField.alignment = .left
+                    textField.isBordered = false
+
+                    return textField
+                case "status":
+                    var view = NSView()
+                    
+                    if downloadProgress < 1 {
+                        let progress = NSProgressIndicator()
+                        progress.style = .spinning
+                        progress.controlSize = NSControl.ControlSize(rawValue: 5)!
+                        progress.sizeToFit()
+                        progress.isHidden = false
+                        if downloadStatus[row] == "正在制作镜像" {
+                            progress.isIndeterminate = true
+                            progress.startAnimation(self)
+                        } else {
+                            progress.isIndeterminate = false
+                            progress.minValue = 0
+                            progress.maxValue = 1
+                            progress.doubleValue = downloadProgress
+                        }
+                        
+                        view = progress
+                    } else {
+                        let button = NSButton()
+                        button.image = MyAsset.complate.image
+                        button.bezelStyle = .recessed
+                        button.isBordered = false
+                        
+                        view = button
+                    }
+                    
+                    return view
+                default:
+                    return nil
+                }
+            }
+            return nil
         }
         return nil
     }
-    
 }
 

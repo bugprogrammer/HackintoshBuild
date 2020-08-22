@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo "开始制作镜像"
+isfolder=false
+isbase=false
+
 cd "$1/macOSInstaller/installer"
 
 if [ ! -e InstallAssistant.pkg ]; then
@@ -15,15 +17,25 @@ if [ ! -e InstallAssistant.pkg ]; then
 
     FOLDERS=(/Volumes/*)
     for folder in "${FOLDERS[@]}"; do
-        [[ -d "$folder" && "$folder" =~ "Base System" ]] && basePath="$folder"
+        if [[ -d "$folder" && "$folder" =~ "Base System" ]]; then
+            basePath="$folder"
+            isfolder=true
+        fi
     done
 
     for file in "$basePath/"*; do
         if [[ $file == *.app ]]; then
             let index=${#name_array[@]}
             name_array[$index]="${file##*/}"
+            isbase=true
         fi
     done
+    
+    if [ !$isfolder || !$isbase ]; then
+        echo "failed"
+        exit 1
+    fi
+    
     installAppName=${name_array[0]}
 
     cp -Rf "$basePath/$installAppName" .
@@ -52,9 +64,8 @@ if [ ! -e InstallAssistant.pkg ]; then
     mv -f "${installAppName}" /Applications
 else
 osascript <<EOF
-do shell script "installer -pkg ./InstallAssistant.pkg -target /Applications" with prompt "制作镜像需要授权" with administrator privileges
+do shell script "installer -pkg ./InstallAssistant.pkg -target /Applications; if [ \$? -eq 1 ]; then\n echo \"failed\" \n fi" with prompt "制作镜像需要授权" with administrator privileges
 EOF
 fi
 
-echo "制作完成，位于应用程序文件夹下"
 rm -rf "$1/macOSInstaller"

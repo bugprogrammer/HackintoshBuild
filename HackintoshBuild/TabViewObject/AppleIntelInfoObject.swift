@@ -46,7 +46,7 @@ class AppleIntelInfoObject: InBaseObject {
     }
     
     override func awakeFromNib() {
-        let image = MyAsset.shuaxin.image
+        let image = MyAsset.refresh1.image
         image.isTemplate = true
         refreshButton.image = image
         refreshButton.bezelStyle = .recessed
@@ -63,19 +63,18 @@ class AppleIntelInfoObject: InBaseObject {
             return
         }
         
-        if #available(OSX 10.16, *) {
-            let alert = NSAlert()
-            alert.messageText = "macOS Big Sur无法使用本功能"
-            alert.runModal()
-            refreshButton.isEnabled = false
-            return
-        }
-        
         guard let enabled = isSIPStatusEnabled else { return }
         if !enabled {
             outputInfo.string = ""
             refreshButton.isEnabled = false
-            runBuildScripts("AppleIntelInfo", [url!])
+            if #available(OSX 10.16, *) {
+                runBuildScripts("AppleIntelInfoBS", [url!])
+//                let alert = NSAlert()
+//                alert.messageText = "Big Sur暂不支持此功能"
+//                alert.runModal()
+            } else {
+                runBuildScripts("AppleIntelInfo", [url!])
+            }
         }
     }
     

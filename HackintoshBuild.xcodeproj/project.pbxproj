@@ -38,6 +38,7 @@
 		6A2468032441B647001B7D29 /* plists in Resources */ = {isa = PBXBuildFile; fileRef = 6A2468022441B647001B7D29 /* plists */; };
 		6A2D271123DF324100238E46 /* NvramObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D271023DF324100238E46 /* NvramObject.swift */; };
 		6A36D49823F85BD500CD042B /* CloverVersion.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A36D49723F85BD500CD042B /* CloverVersion.command */; };
+		6A396E3524E3138E00E7E7C3 /* AppleIntelInfoBS.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A396E3424E3138E00E7E7C3 /* AppleIntelInfoBS.command */; };
 		6A3BBF1324D4772700C22732 /* kextsInstaller.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A3BBF1224D4772700C22732 /* kextsInstaller.command */; };
 		6A427D1323E459BD00A0B4E3 /* LockPicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A427D1223E459BC00A0B4E3 /* LockPicObject.swift */; };
 		6A427D1623E4618F00A0B4E3 /* changeLockPicture.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */; };
@@ -81,6 +82,7 @@
 		6AB7A19E2434AD2800BA8690 /* printPlist.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AB7A19D2434AD2800BA8690 /* printPlist.command */; };
 		6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AB8B6FB23D582FC00A993C5 /* spctl.command */; };
 		6AC3982123EA94820090A56A /* kextInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AC3982023EA94820090A56A /* kextInfo.command */; };
+		6AC42A0A24ECA8D50095C464 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6AC42A0924ECA8D50095C464 /* Alamofire */; };
 		6AC473B92456EF49001C9F17 /* macserial.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AC473B82456EF49001C9F17 /* macserial.command */; };
 		6AC473BB245751E9001C9F17 /* SerialObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC473BA245751E9001C9F17 /* SerialObject.swift */; };
 		6AD2F3B1241BAABE00E0609F /* openFinder.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AD2F3B0241BAABE00E0609F /* openFinder.command */; };
@@ -163,6 +165,7 @@
 		6A2468022441B647001B7D29 /* plists */ = {isa = PBXFileReference; lastKnownFileType = folder; path = plists; sourceTree = "<group>"; };
 		6A2D271023DF324100238E46 /* NvramObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NvramObject.swift; sourceTree = "<group>"; };
 		6A36D49723F85BD500CD042B /* CloverVersion.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = CloverVersion.command; sourceTree = "<group>"; };
+		6A396E3424E3138E00E7E7C3 /* AppleIntelInfoBS.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppleIntelInfoBS.command; sourceTree = "<group>"; };
 		6A3BBF1224D4772700C22732 /* kextsInstaller.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = kextsInstaller.command; sourceTree = "<group>"; };
 		6A427D1223E459BC00A0B4E3 /* LockPicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockPicObject.swift; sourceTree = "<group>"; };
 		6A427D1523E4618F00A0B4E3 /* changeLockPicture.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = changeLockPicture.command; sourceTree = "<group>"; };
@@ -225,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC42A0A24ECA8D50095C464 /* Alamofire in Frameworks */,
 				6A7AC9E3242E32570008A43A /* Highlightr.framework in Frameworks */,
 				6A87220523F5B4C100D77EEF /* WebKit.framework in Frameworks */,
 				11A5716923D6EBAC00437951 /* GitHubUpdates.framework in Frameworks */,
@@ -406,6 +410,7 @@
 				6AAB654024154A0200116D13 /* kextLastest.command */,
 				6AAFC68F2414CD550059A609 /* kextscurrentVersion.command */,
 				6AAB65582416C0F500116D13 /* download.command */,
+				6A396E3424E3138E00E7E7C3 /* AppleIntelInfoBS.command */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -530,6 +535,7 @@
 			name = HackintoshBuild;
 			packageProductDependencies = (
 				6A188A4024624D3900CBE5B7 /* SwiftyMarkdown */,
+				6AC42A0924ECA8D50095C464 /* Alamofire */,
 			);
 			productName = HackintoshBuild;
 			productReference = 6ADAEFA023C23DA5008ECF4B /* HackintoshBuild.app */;
@@ -562,6 +568,7 @@
 			mainGroup = 6ADAEF9723C23DA5008ECF4B;
 			packageReferences = (
 				6A188A3F24624D3900CBE5B7 /* XCRemoteSwiftPackageReference "SwiftyMarkdown" */,
+				6AC42A0824ECA8D50095C464 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 6ADAEFA123C23DA5008ECF4B /* Products */;
 			projectDirPath = "";
@@ -625,6 +632,7 @@
 				6AC473B92456EF49001C9F17 /* macserial.command in Resources */,
 				6A723DE8240BEE30007EB3AD /* systeminfo.command in Resources */,
 				6A188A4C2464F94700CBE5B7 /* pcipath.command in Resources */,
+				6A396E3524E3138E00E7E7C3 /* AppleIntelInfoBS.command in Resources */,
 				6AAFC6902414CD550059A609 /* kextscurrentVersion.command in Resources */,
 				6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */,
 				6AE8345023D8B28B005BADCF /* diskMount.command in Resources */,
@@ -840,7 +848,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2;
-				DEVELOPMENT_TEAM = B84MTH5WF4;
+				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -870,7 +878,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.2;
-				DEVELOPMENT_TEAM = B84MTH5WF4;
+				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -923,6 +931,14 @@
 				minimumVersion = 1.2.1;
 			};
 		};
+		6AC42A0824ECA8D50095C464 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -930,6 +946,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6A188A3F24624D3900CBE5B7 /* XCRemoteSwiftPackageReference "SwiftyMarkdown" */;
 			productName = SwiftyMarkdown;
+		};
+		6AC42A0924ECA8D50095C464 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AC42A0824ECA8D50095C464 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
