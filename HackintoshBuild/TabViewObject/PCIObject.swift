@@ -31,7 +31,9 @@ class PCIObject: InBaseObject {
     var output: String = ""
     let gfxutil = Bundle.main.path(forResource: "gfxutil", ofType: "", inDirectory: "tools")
     let dspci = Bundle.main.path(forResource: "dspci", ofType: "", inDirectory: "tools")
+    let DPCI = Bundle.main.path(forResource: "README", ofType: "md", inDirectory: "DPCIManager")
     let taskQueue = DispatchQueue.global(qos: .default)
+    let filemanager = FileManager.default
     let lock = NSLock()
     let keys: [String] = ["供应商id", "设备id", "供应商名称", "设备类型", "设备名称", "ioreg地址", "设备地址"]
     var value: [String] = []
@@ -42,19 +44,25 @@ class PCIObject: InBaseObject {
     @IBOutlet weak var ioregTextField: NSTextField!
     @IBOutlet weak var pciTableView: NSTableView!
     @IBOutlet weak var infoTableView: NSTableView!
+    @IBOutlet weak var updateButton: NSButton!
+    @IBOutlet weak var updateBar: NSProgressIndicator!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        let image = NSImage(named: "NSRefreshFreestandingTemplate")
-        image?.isTemplate = true
-        image?.size = CGSize(width: 20, height: 20)
+        let image = MyAsset.update.image
+        updateButton.isBordered = false
+        updateButton.bezelStyle = .recessed
+        updateButton.image = image
+        updateButton.toolTip = "更新PCI设备数据库"
+        
         pciTableView.tableColumns.forEach { (column) in
             column.headerCell.alignment = .left
         }
         pciTableView.target = self
         pciTableView.action = #selector(tableViewClick(_:))
         pciTableView.doubleAction = #selector(tableViewDoubleClick(_:))
+        infoTableView.isEnabled = false
     }
     
     override func willAppear(_ noti: Notification) {
@@ -65,10 +73,7 @@ class PCIObject: InBaseObject {
         if !once { return }
         once = false
         
-        var arguments: [String] = []
-        arguments.append(dspci!)
-        MyLog(arguments)
-        runBuildScripts("dspci", arguments)
+        runBuildScripts("dspci", [dspci!])
     }
     
     @objc func tableViewClick(_ sender: AnyObject) {
@@ -87,6 +92,25 @@ class PCIObject: InBaseObject {
             alert.messageText = "已复制到剪贴板"
             alert.runModal()
         }
+    }
+    
+    func setStatus(_ isRunning: Bool) {
+        if isRunning {
+            updateBar.isHidden = false
+            updateBar.startAnimation(self)
+            updateButton.isEnabled = false
+            pciTableView.isEnabled = false
+        } else {
+            updateBar.isHidden = true
+            updateBar.stopAnimation(self)
+            updateButton.isEnabled = true
+            pciTableView.isEnabled = true
+        }
+    }
+    
+    @IBAction func updatePCIIDS(_ sender: Any) {
+        setStatus(true)
+        runBuildScripts("update", [dspci!])
     }
     
     func runBuildScripts(_ shell: String, _ arguments: [String]) {
@@ -154,6 +178,16 @@ class PCIObject: InBaseObject {
                                         self.devicepathArr.append(FinalArr[1].replacingOccurrences(of: "\n", with: ""))
                                     }
                                     self.pciTableView.reloadData()
+                                }
+                                
+                                if shell == "update" {
+                                    self.setStatus(false)
+                                    
+                                    let alert = NSAlert()
+                                    alert.messageText = "PCI数据库更新成功"
+                                    alert.runModal()
+                                    
+                                    self.runBuildScripts("dspci", arguments)
                                 }
                                 
                                 self.lock.unlock()

@@ -52,6 +52,7 @@ extension NSImage {
         case NSToolbarItem_Compare = "NSToolbarItem_Compare"
         case file = "file"
         case compare = "compare"
+        case update = "update"
     }
     
     convenience init!(asset: Asset) {

@@ -37,8 +37,6 @@ class ConfigObject: InBaseObject {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
     }
     
     override func willAppear(_ noti: Notification) {

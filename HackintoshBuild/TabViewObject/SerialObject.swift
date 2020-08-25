@@ -10,11 +10,12 @@ import Cocoa
 
 class SerialObject: InBaseObject {
 
+    @IBOutlet weak var updateBar: NSProgressIndicator!
+    @IBOutlet weak var updateButton: NSButton!
     @IBOutlet weak var MedolList: NSPopUpButton!
     @IBOutlet weak var refreshButton: NSButton!
     @IBOutlet weak var tableview: NSTableView!
     
-    let medolsurl = Bundle.main.path(forResource: "models", ofType: "txt", inDirectory: "tools")
     let macserialurl = Bundle.main.path(forResource: "macserial", ofType: nil, inDirectory: "tools")
     let taskQueue = DispatchQueue.global(qos: .default)
     
@@ -38,7 +39,11 @@ class SerialObject: InBaseObject {
         tableview.doubleAction = #selector(tableViewDoubleClick)
         MedolList.target = self
         MedolList.action = #selector(getMacSerial)
-        getMedolsList(medolsurl!)
+        let image1 = MyAsset.update.image
+        updateButton.image = image1
+        updateButton.isBordered = false
+        updateButton.bezelStyle = .recessed
+        updateButton.toolTip = "更新机型数据库"
     }
     
     override func willAppear(_ noti: Notification) {
@@ -46,22 +51,20 @@ class SerialObject: InBaseObject {
         
         let index = noti.object as! Int
         if index != 5 { return }
-        var arguments: [String] = []
-        arguments.append(macserialurl!)
-        arguments.append(medolArr[0])
-        runBuildScripts("macserial", arguments)
+        //runBuildScripts("macserial", arguments)
+        runBuildScripts("getModelList", [macserialurl!])
         if !once { return }
         once = false
     }
     
-    func getMedolsList(_ models: String) {
-        do {
-            let file = try String(contentsOfFile: models)
-            medolArr = file.components(separatedBy: "\n")
-            MedolList.addItems(withTitles: medolArr)
-        } catch let error {
-            MyLog("Fatal Error: \(error.localizedDescription)")
-        }
+    @IBAction func updateModel(_ sender: Any) {
+        MedolList.isEnabled = false
+        updateButton.isEnabled = false
+        refreshButton.isEnabled = false
+        tableview.isEnabled = false
+        updateBar.isHidden = false
+        updateBar.startAnimation(self)
+        runBuildScripts("updateModel", [macserialurl!])
     }
     
     @objc func refresh() {
@@ -102,7 +105,24 @@ class SerialObject: InBaseObject {
                 task.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in
                         guard let `self` = self else { return }
-                         MyLog(self.output)
+                        if shell == "getModelList" {
+                            var args: [String] = []
+                            self.medolArr = self.output.components(separatedBy: "\n")
+                            if self.medolArr.first == "" {
+                                self.medolArr.removeFirst()
+                            }
+                            if self.medolArr.last == "" {
+                                self.medolArr.removeLast()
+                            }
+                            self.MedolList.addItems(withTitles: self.medolArr)
+                            MyLog(self.medolArr)
+                            args.append(self.macserialurl!)
+                            args.append(self.medolArr[self.MedolList.indexOfSelectedItem])
+                            self.runBuildScripts("macserial", args)
+                        }
+                        
+                        if shell == "macserial" {
+                            MyLog(self.output)
                             self.valuesArr = self.output.components(separatedBy: " | ")
                             if self.valuesArr.first == "" {
                                 self.valuesArr.removeFirst()
@@ -112,6 +132,21 @@ class SerialObject: InBaseObject {
                             }
                             MyLog(self.valuesArr)
                             self.tableview.reloadData()
+                        }
+                        if shell == "updateModel" {
+                            self.MedolList.isEnabled = true
+                            self.updateButton.isEnabled = true
+                            self.refreshButton.isEnabled = true
+                            self.tableview.isEnabled = true
+                            self.updateBar.isHidden = true
+                            self.updateBar.stopAnimation(self)
+                            
+                            let alert = NSAlert()
+                            alert.messageText = "机型数据库更新成功"
+                            alert.runModal()
+                            
+                            self.runBuildScripts("getModelList", [self.macserialurl!])
+                        }
                     })
                 }
                 self.taskOutPut(task)
