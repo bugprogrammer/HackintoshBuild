@@ -68,10 +68,10 @@ class AppleIntelInfoObject: InBaseObject {
             outputInfo.string = ""
             refreshButton.isEnabled = false
             if #available(OSX 10.16, *) {
-                runBuildScripts("AppleIntelInfoBS", [url!])
-//                let alert = NSAlert()
-//                alert.messageText = "Big Sur暂不支持此功能"
-//                alert.runModal()
+//                runBuildScripts("AppleIntelInfoBS", [url!])
+                let alert = NSAlert()
+                alert.messageText = "Big Sur暂不支持此功能"
+                alert.runModal()
             } else {
                 runBuildScripts("AppleIntelInfo", [url!])
             }

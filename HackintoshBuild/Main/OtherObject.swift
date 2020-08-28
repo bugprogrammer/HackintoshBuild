@@ -109,12 +109,7 @@ class OtherObject: OutBaseObject {
     @IBAction func rebuildCache(_ sender: Any) {
         textview.string = ""
         
-        if #available(OSX 10.16, *) {
-            runBuildScripts("rebuildCacheBS", [], "修复权限以及重建缓存成功")
-        }
-        else {
-            runBuildScripts("rebuildCache", [], "修复权限以及重建缓存成功")
-        }
+        runBuildScripts("rebuildCache", [], "修复权限以及重建缓存成功")
     }
     
     @IBAction func spctl(_ sender: Any) {

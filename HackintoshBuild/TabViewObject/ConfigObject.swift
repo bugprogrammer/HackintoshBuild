@@ -212,7 +212,7 @@ class ConfigObject: InBaseObject {
                         self.lock.lock()
                         
                         if shell == "kextInfo" {
-                            self.loadedTextView.string.append(self.output)
+                            self.loadedTextView.string.append(self.output.replacingOccurrences(of: "to release\n", with: ""))
                             AraHUDViewController.shared.hideHUD()
                         }
                         if shell == "CloverVersion" {

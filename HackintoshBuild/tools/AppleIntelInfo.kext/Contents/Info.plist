@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>18F108f</string>
+	<string>20A5354i</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.0</string>
+	<string>2.9</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,21 +25,23 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>3.0</string>
+	<string>2.9</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>10E1001</string>
+	<string>12A8169g</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>GM</string>
+	<string>11.0</string>
 	<key>DTSDKBuild</key>
-	<string>18E219</string>
+	<string>20A5323l</string>
 	<key>DTSDKName</key>
-	<string>macosx10.14</string>
+	<string>macosx11.0</string>
 	<key>DTXcode</key>
-	<string>1020</string>
+	<string>1200</string>
 	<key>DTXcodeBuild</key>
-	<string>10E1001</string>
+	<string>12A8169g</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>AppleIntelInfo</key>
@@ -55,7 +57,7 @@
 			<key>IOResourceMatch</key>
 			<string>IOKit</string>
 			<key>enableHWP</key>
-			<true/>
+			<false/>
 			<key>logCStates</key>
 			<true/>
 			<key>logIGPU</key>
@@ -68,6 +70,8 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.11</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2014-2017 Pike R. Alpha. All rights reserved.</string>
 	<key>OSBundleLibraries</key>

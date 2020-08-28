@@ -24,7 +24,6 @@
 		11D5C27A23D1B63700461A78 /* MyAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D5C27923D1B63700461A78 /* MyAsset.swift */; };
 		6A046F2E242F4170004FFFD5 /* PCIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A046F2D242F4170004FFFD5 /* PCIObject.swift */; };
 		6A0DC962241041E3000E9775 /* openEFI.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A0DC961241041E3000E9775 /* openEFI.command */; };
-		6A1181AB24BF04EA0091AF99 /* rebuildCacheBS.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A1181AA24BF04EA0091AF99 /* rebuildCacheBS.command */; };
 		6A188A3824619E8500CBE5B7 /* OpenCoreObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A188A3724619E8500CBE5B7 /* OpenCoreObject.swift */; };
 		6A188A3E2461C87700CBE5B7 /* syncDatas.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A188A3D2461C87700CBE5B7 /* syncDatas.command */; };
 		6A188A4124624D3900CBE5B7 /* SwiftyMarkdown in Frameworks */ = {isa = PBXBuildFile; productRef = 6A188A4024624D3900CBE5B7 /* SwiftyMarkdown */; };
@@ -151,7 +150,6 @@
 		11D5C27923D1B63700461A78 /* MyAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsset.swift; sourceTree = "<group>"; };
 		6A046F2D242F4170004FFFD5 /* PCIObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCIObject.swift; sourceTree = "<group>"; };
 		6A0DC961241041E3000E9775 /* openEFI.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = openEFI.command; sourceTree = "<group>"; };
-		6A1181AA24BF04EA0091AF99 /* rebuildCacheBS.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = rebuildCacheBS.command; sourceTree = "<group>"; };
 		6A188A3724619E8500CBE5B7 /* OpenCoreObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCoreObject.swift; sourceTree = "<group>"; };
 		6A188A3D2461C87700CBE5B7 /* syncDatas.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = syncDatas.command; sourceTree = "<group>"; };
 		6A188A492464EA9500CBE5B7 /* dspci.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = dspci.command; sourceTree = "<group>"; };
@@ -348,7 +346,6 @@
 				6AB8B6FB23D582FC00A993C5 /* spctl.command */,
 				6A21D45623EE869B007D7CE9 /* timeMachine.command */,
 				6A54B4742408159A000BCFE7 /* showhiddenFiles.command */,
-				6A1181AA24BF04EA0091AF99 /* rebuildCacheBS.command */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -652,7 +649,6 @@
 				6A48CC50244CC1ED00AFC97A /* makeInstaller.command in Resources */,
 				6A4A9FA323E59F86008D8EF8 /* sipStatus.command in Resources */,
 				116D2D8B23D6C528001FED06 /* unlockSLE.command in Resources */,
-				6A1181AB24BF04EA0091AF99 /* rebuildCacheBS.command in Resources */,
 				6A188A3E2461C87700CBE5B7 /* syncDatas.command in Resources */,
 				6A8E53D123F40289001E59D3 /* AppleIntelInfo.command in Resources */,
 				6A723E11240C1D94007EB3AD /* Localizable.strings in Resources */,

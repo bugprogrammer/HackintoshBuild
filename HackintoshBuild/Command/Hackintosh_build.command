@@ -19,7 +19,6 @@ fi
 path=$5
 
 echo -e "正在检测编译环境完整性：\n"
-
 ################# mtoc ##################
 echo "正在验证 mtoc"
 
@@ -88,7 +87,6 @@ EOF
 rm -rf "${iaslzip}" iasl
 popd >/dev/null || exit 1
 fi
-
 ################# xcodebuild ##################
 echo "正在验证 xcodebuild"
 
