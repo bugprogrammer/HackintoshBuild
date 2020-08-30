@@ -24,7 +24,7 @@ class OtherObject: OutBaseObject {
         super.willAppear(noti)
         
         let index = noti.object as! Int
-        if index != 10 { return }
+        if index != 11 { return }
         if !once { return }
         once = false
         

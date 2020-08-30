@@ -34,10 +34,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         runSIPScripts("sipStatus", [], "")
         
+        window.minSize = minSizeForNormal
         if let width = UserDefaults.standard.value(forKey: "windowSizeWidth") as? CGFloat, let height = UserDefaults.standard.value(forKey: "windowSizeHeight") as? CGFloat  {
             let size = CGSize(width: width, height: height)
-            window.setContentSize(size)
             beforeSize = size
+            if beforeSize.width < minSizeForNormal.width {
+                window.setContentSize(minSizeForNormal)
+            } else {
+                window.setContentSize(beforeSize)
+            }
         } else {
             window.setContentSize(minSizeForNormal)
         }
@@ -188,7 +193,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if (index != 6) {
             window.minSize = minSizeForNormal
             if !isFullScreen && !willFullScreen && !willExitFullScreen {
-                window.setContentSize(beforeSize)
+                if beforeSize.width < minSizeForNormal.width {
+                    window.setContentSize(minSizeForNormal)
+                }
+                else {
+                    window.setContentSize(beforeSize)
+                }
             }
         } else {
             window.minSize = minSizeForBig

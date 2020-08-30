@@ -24,6 +24,8 @@ class ShareObject: OutBaseObject {
     let alert = NSAlert()
     var selectAll: Int = 0
     var isRunning: Bool = false
+    var sharePath: String = ""
+    var logsPath: String = ""
     
     let efiList: [String] = [
         "Z490-AORUS-ELETE+10900K+RX5700XT",
@@ -65,6 +67,14 @@ class ShareObject: OutBaseObject {
         if let efiLocation = UserDefaults.standard.url(forKey: "efiLocation") {
             if FileManager.default.fileExists(atPath: efiLocation.path) {
                 self.efiLocation.url = efiLocation
+                sharePath = efiLocation.path
+            }
+        }
+        
+        if let logsURL = UserDefaults.standard.url(forKey: "logShair") {
+            if FileManager.default.fileExists(atPath: logsURL.path) {
+                self.logsLocation.url = logsURL
+                logsPath = logsURL.path
             }
         }
         
@@ -110,18 +120,35 @@ class ShareObject: OutBaseObject {
         }
         return isRunning
     }
+        
+    @IBAction func setSharePath(_ sender: Any) {
+        if let efiURL = efiLocation.url {
+            UserDefaults.standard.set(efiURL, forKey: "efiLocation")
+            sharePath = efiURL.path
+        }
+    }
+        
+    @IBAction func setLogsPath(_ sender: Any) {
+        if let logsURL = logsLocation.url {
+            UserDefaults.standard.set(logsURL, forKey: "logShair")
+            logsPath = logsURL.path
+        }
+    }
+        
+    @IBAction func setProxy(_ sender: Any) {
+        UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
+    }
     
     @IBAction func startButtonDidClicked(_ sender: NSButton) {
         UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
-        if let efiURL = efiLocation.url {
-            UserDefaults.standard.set(efiURL, forKey: "efiLocation")
+        if sharePath != "" {
             var arguments: [String] = []
             itemsSting = itemsArr.joined(separator: ",")
-            if FileManager.default.isWritableFile(atPath: efiURL.path) {
-                arguments.append(efiURL.path)
+            if FileManager.default.isWritableFile(atPath: sharePath) {
+                arguments.append(sharePath)
                 arguments.append(itemsSting)
                 arguments.append(proxyTextField.stringValue)
-                arguments.append(logsLocation.url?.path ?? "")
+                arguments.append(logsPath)
                 if itemsSting != "" {
                     runBuildScripts(arguments)
                 }

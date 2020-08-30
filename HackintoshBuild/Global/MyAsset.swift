@@ -34,6 +34,7 @@ extension NSImage {
         case NSToolbarItem_GPU = "NSToolbarItem_GPU"
         case NSToolbarItem_OS = "NSToolbarItem_OS"
         case NSToolbarItem_Kexts = "NSToolbarItem_Kexts"
+        case NSToolbarItem_Plugins = "NSToolbarItem_Plugins"
         case complate = "complate"
         case downloadAll = "downloadAll"
         case mount = "mount"
@@ -53,6 +54,9 @@ extension NSImage {
         case file = "file"
         case compare = "compare"
         case update = "update"
+        case download = "download"
+        case full = "full"
+        case failed = "failed"
     }
     
     convenience init!(asset: Asset) {

@@ -24,6 +24,8 @@ class BuildObject: OutBaseObject {
     let alert = NSAlert()
     var selectAll: Int = 0
     var isRunning: Bool = false
+    var kextPath: String = ""
+    var logsPath: String = ""
     
     let toolspath = Bundle.main.path(forResource: "nasm", ofType: "", inDirectory: "tools")
     
@@ -74,8 +76,17 @@ class BuildObject: OutBaseObject {
         if let kextLocation = UserDefaults.standard.url(forKey: "kextLocation") {
             if FileManager.default.fileExists(atPath: kextLocation.path) {
                 self.buildLocation.url = kextLocation
+                kextPath = kextLocation.path
             }
         }
+        
+        if let logsURL = UserDefaults.standard.url(forKey: "logBuild") {
+            if FileManager.default.fileExists(atPath: logsURL.path) {
+                self.logsLocation.url = logsURL
+                logsPath = logsURL.path
+            }
+        }
+        
         self.pluginsView.reloadData()
     }
     
@@ -118,32 +129,48 @@ class BuildObject: OutBaseObject {
         return isRunning
     }
     
-    @IBAction func startButtonDidClicked(_ sender: NSButton) {
-        UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
+    @IBAction func setBuildPath(_ sender: Any) {
         if let buildURL = buildLocation.url {
             UserDefaults.standard.set(buildURL, forKey: "kextLocation")
-                var arguments: [String] = []
-                itemsSting = itemsArr.joined(separator: ",")
-                if buildURL.path.contains(" ") || !FileManager.default.isWritableFile(atPath: buildURL.path) {
-                    alert.messageText = "所选目录不可写或存在空格"
-                    alert.runModal()
+            kextPath = buildURL.path
+        }
+    }
+    
+    @IBAction func setProxy(_ sender: Any) {
+        UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
+    }
+        
+    @IBAction func setLog(_ sender: Any) {
+        if let logsURL = logsLocation.url {
+            UserDefaults.standard.set(logsURL, forKey: "logBuild")
+            logsPath = logsURL.path
+        }
+    }
+    
+    @IBAction func startButtonDidClicked(_ sender: NSButton) {
+        UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
+        if kextPath != "" {
+            var arguments: [String] = []
+            itemsSting = itemsArr.joined(separator: ",")
+            if kextPath.contains(" ") || !FileManager.default.isWritableFile(atPath: kextPath) {
+                alert.messageText = "所选目录不可写或存在空格"
+                alert.runModal()
+            } else {
+                arguments.append(kextPath)
+                arguments.append(itemsSting)
+                arguments.append(proxyTextField.stringValue)
+                arguments.append(logsPath)
+                arguments.append(toolspath!)
+                    
+                if itemsSting != "" {
+                    runBuildScripts(arguments)
                 }
                 else {
-                    arguments.append(buildURL.path)
-                    arguments.append(itemsSting)
-                    arguments.append(proxyTextField.stringValue)
-                    arguments.append(logsLocation.url?.path ?? "")
-                    arguments.append(toolspath!)
-                    
-                    if itemsSting != "" {
-                        runBuildScripts(arguments)
-                    }
-                    else {
-                        alert.messageText = "未选择任何条目"
-                        alert.runModal()
-                    }
+                    alert.messageText = "未选择任何条目"
+                    alert.runModal()
                 }
-                MyLog(arguments)
+            }
+            MyLog(arguments)
         } else {
             alert.messageText = "请先选择存储位置！"
             alert.runModal()
