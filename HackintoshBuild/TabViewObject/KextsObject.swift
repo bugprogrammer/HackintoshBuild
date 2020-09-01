@@ -216,6 +216,10 @@ class KextsObject: InBaseObject {
         tableview.reloadData()
         runBuildScripts("kextscurrentVersion", ["Lilu"])
     }
+        
+    @IBAction func setProxy(_ sender: Any) {
+        UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
+    }
     
     @IBAction func downloadButtonDidClicked(_ sender: NSButton) {
         //Lilu-1.4.2-RELEASE.zip

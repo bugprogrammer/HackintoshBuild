@@ -38,7 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let width = UserDefaults.standard.value(forKey: "windowSizeWidth") as? CGFloat, let height = UserDefaults.standard.value(forKey: "windowSizeHeight") as? CGFloat  {
             let size = CGSize(width: width, height: height)
             beforeSize = size
-            if beforeSize.width < minSizeForNormal.width {
+            if beforeSize.width * beforeSize.height < minSizeForNormal.width * minSizeForNormal.height {
                 window.setContentSize(minSizeForNormal)
             } else {
                 window.setContentSize(beforeSize)
@@ -193,7 +193,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if (index != 6) {
             window.minSize = minSizeForNormal
             if !isFullScreen && !willFullScreen && !willExitFullScreen {
-                if beforeSize.width < minSizeForNormal.width {
+                if beforeSize.width * beforeSize.height < minSizeForNormal.width * minSizeForNormal.height {
                     window.setContentSize(minSizeForNormal)
                 }
                 else {

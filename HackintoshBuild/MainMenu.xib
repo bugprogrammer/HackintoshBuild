@@ -1469,6 +1469,9 @@
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
+                                                                <connections>
+                                                                    <action selector="setProxy:" target="w5g-hG-iVA" id="zkR-ru-24N"/>
+                                                                </connections>
                                                             </textField>
                                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93x-hb-g06">
                                                                 <rect key="frame" x="266" y="751" width="79" height="16"/>
@@ -3835,6 +3838,17 @@
                                                 <action selector="open:" target="9Pr-Cd-H8r" id="CVv-ka-4cW"/>
                                             </connections>
                                         </button>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZsE-XM-Hey">
+                                            <rect key="frame" x="344" y="405" width="87" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WNQ-Oq-NlI">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="refresh:" target="9Pr-Cd-H8r" id="gff-Ps-Kxw"/>
+                                            </connections>
+                                        </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ChG-o3-1QU">
                                             <rect key="frame" x="285" y="547" width="87" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -4370,6 +4384,7 @@
                 <outlet property="fillButton" destination="qIQ-9g-hgj" id="Nji-cu-j6A"/>
                 <outlet property="nameLabel" destination="uRU-8N-5Vb" id="Xgd-H1-Z6Q"/>
                 <outlet property="openButton" destination="Zn5-UZ-V1j" id="YPC-DP-TCs"/>
+                <outlet property="refreshButton" destination="ZsE-XM-Hey" id="f8j-Ow-J2M"/>
             </connections>
         </customObject>
         <customObject id="fZH-rz-M92" customClass="OtherObject" customModule="HackintoshBuild" customModuleProvider="target">

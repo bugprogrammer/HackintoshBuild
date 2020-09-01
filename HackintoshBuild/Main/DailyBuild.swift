@@ -17,6 +17,7 @@ class DailyBuild: OutBaseObject {
     @IBOutlet weak var downloadProgress: NSProgressIndicator!
     @IBOutlet weak var fillButton: NSButton!
     @IBOutlet weak var openButton: NSButton!
+    @IBOutlet weak var refreshButton: NSButton!
     
     let filemanager = FileManager.default
     var downloadPath: String = ""
@@ -47,6 +48,29 @@ class DailyBuild: OutBaseObject {
         openButton.bezelStyle = .recessed
         openButton.image = image1
         
+        let image2 = MyAsset.refresh1.image
+        image2.isTemplate = true
+        refreshButton.isBordered = false
+        refreshButton.bezelStyle = .recessed
+        refreshButton.image = image2
+        refreshButton.isHidden = true
+        
+        getVersion()
+        
+        if filemanager.fileExists(atPath: downloadPath + "/" + name) {
+            openButton.isEnabled = true
+        } else {
+            openButton.isEnabled = false
+        }
+    }
+        
+    @IBAction func refresh(_ sender: Any) {
+        refreshButton.isHidden = true
+        
+        getVersion()
+    }
+    
+    func getVersion() {
         let task = Process()
         let outputPipe = Pipe()
 
@@ -57,15 +81,18 @@ class DailyBuild: OutBaseObject {
         let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
 
         let output = NSString(data: outputData, encoding: String.Encoding.utf8.rawValue)! as String
-        tag = output.components(separatedBy: "\"")[1].components(separatedBy: "/").last!
-        nameLabel.stringValue = "HackinPlugins_" + tag.replacingOccurrences(of: "-", with: "") + ".zip"
-        name = nameLabel.stringValue
-        
-        if filemanager.fileExists(atPath: downloadPath + "/" + name) {
-            openButton.isEnabled = true
+        if output != "" {
+            tag = output.components(separatedBy: "\"")[1].components(separatedBy: "/").last!
+            nameLabel.textColor = NSColor.labelColor
+            nameLabel.stringValue = "HackinPlugins_" + tag.replacingOccurrences(of: "-", with: "") + ".zip"
+            downloadButton.isEnabled = true
         } else {
-            openButton.isEnabled = false
+            nameLabel.textColor = NSColor.systemRed
+            nameLabel.stringValue = "网络错误"
+            downloadButton.isEnabled = false
+            refreshButton.isHidden = false
         }
+        name = nameLabel.stringValue
     }
     
     @IBAction func setPath(_ sender: Any) {
