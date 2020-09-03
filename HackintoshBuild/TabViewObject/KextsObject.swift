@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Alamofire
 
 class KextsObject: InBaseObject {
 
@@ -29,6 +30,14 @@ class KextsObject: InBaseObject {
     var itemFlag: [Int] = []
     var isStart: Bool = false
     var selectAll: Bool = false
+    var downloadProgress: Double = 0.0
+    var isDownloading: Bool = false
+    
+    let queue : OperationQueue = {
+        let que : OperationQueue = OperationQueue()
+        que.maxConcurrentOperationCount = 1
+        return que
+    }()
     
     var isRunning: [Bool] = []
     
@@ -154,6 +163,7 @@ class KextsObject: InBaseObject {
             selectAllButton.state = .on
         }
         MyLog(itemsArr)
+        MyLog(itemFlag)
     }
     
     @IBAction func selectAllButtonDidClicked(_ sender: NSButton) {
@@ -230,17 +240,8 @@ class KextsObject: InBaseObject {
         proxyTextField.isEnabled = false
         downloadPath.isEnabled = false
         isStart = true
-        let items = itemsArr.joined(separator: ",")
-        var arguments: [String] = []
         if FileManager.default.isWritableFile(atPath: pathDownload) {
-            arguments.append(pathDownload)
-            arguments.append(proxyTextField.stringValue)
-            arguments.append(items)
-            runBuildScripts("download", arguments)
-            for item in itemFlag {
-                isRunning[item] = true
-            }
-            tableview.reloadData(forRowIndexes: IndexSet([Int](0..<kexts.count)), columnIndexes: [0,4])
+            downloadKexts(itemsArr)
         }
         else {
             let alert = NSAlert()
@@ -249,6 +250,79 @@ class KextsObject: InBaseObject {
             downloadButton.isEnabled = true
             proxyTextField.isEnabled = true
             downloadPath.isEnabled = true
+        }
+    }
+    
+    func downloadKexts(_ list: [String]){
+        isDownloading = false
+        downloadProgress = 0.0
+        self.tableview.reloadData(forRowIndexes: IndexSet([Int](0..<kexts.count)), columnIndexes: [0,4])
+        let filemanager = FileManager.default
+        if !filemanager.fileExists(atPath: self.pathDownload + "/Kexts") {
+            try! filemanager.createDirectory(atPath: self.pathDownload + "/Kexts", withIntermediateDirectories: true,
+            attributes: nil)
+        }
+        var first: Bool = true
+        
+        for i in 0..<list.count {
+            if filemanager.fileExists(atPath: self.pathDownload + "/Kexts/" + list[i].components(separatedBy: "/").last!) {
+                try! filemanager.removeItem(atPath: self.pathDownload + "/Kexts/" + list[i].components(separatedBy: "/").last!)
+            }
+            let semaphore = DispatchSemaphore(value: 0)
+            let op : BlockOperation = BlockOperation { [weak self] in
+                let destination: DownloadRequest.Destination = { _, _ in
+                    let fileURL = URL(fileURLWithPath: self!.pathDownload + "/Kexts/" + list[i].components(separatedBy: "/").last!)
+                    
+                    return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+                }
+
+                AF.download(list[i], to: destination).downloadProgress { progress in
+                    self!.isDownloading = true
+                    self?.downloadProgress = progress.fractionCompleted
+                    self!.tableview.reloadData(forRowIndexes: [self!.itemFlag[i]], columnIndexes: [0,4])
+                }.responseData { response in
+                    debugPrint(response)
+                    switch response.result {
+                    case .success(_):
+                        self?.downloadProgress = 1
+                        self!.tableview.reloadData(forRowIndexes: [self!.itemFlag[i]], columnIndexes: [0,4])
+                        if i == list.count - 1 {
+                            self!.downloadButton.isEnabled = true
+                            self!.refreshButton.isEnabled = true
+                            self!.selectAllButton.isEnabled = true
+                            self!.proxyTextField.isEnabled = true
+                            self!.downloadPath.isEnabled = true
+                            
+                            if self!.Lastest.count == self!.kexts.count {
+                                self!.refreshButton.isEnabled = true
+                                self!.selectAllButton.isEnabled = true
+                            }
+                        }
+                    case .failure(_):
+                        if first {
+                            let alert = NSAlert()
+                            alert.messageText = "下载失败，请重试"
+                            alert.runModal()
+                            first = false
+                            self!.downloadProgress = 0.0
+                            self!.tableview.reloadData(forRowIndexes: IndexSet([Int](0..<self!.kexts.count)), columnIndexes: [0,4])
+                            self!.downloadButton.isEnabled = true
+                            self!.refreshButton.isEnabled = true
+                            self!.selectAllButton.isEnabled = true
+                            self!.proxyTextField.isEnabled = true
+                            self!.downloadPath.isEnabled = true
+                            if self!.Lastest.count == self!.kexts.count {
+                                self!.refreshButton.isEnabled = true
+                                self!.selectAllButton.isEnabled = true
+                            }
+                        }
+                    }
+                    semaphore.signal()
+                }
+                semaphore.wait()
+            }
+            
+            queue.addOperation(op)
         }
     }
     
@@ -294,6 +368,7 @@ class KextsObject: InBaseObject {
                         guard let `self` = self else { return }
                         self.lock.lock()
                         if shell == "kextscurrentVersion" {
+                            self.output = self.output.replacingOccurrences(of: "Executing: /usr/bin/kmutil showloaded", with: "")
                             self.flag = self.flag + 1
                             if self.output == "" {
                                 self.currentVersion.append("未安装")
@@ -312,6 +387,7 @@ class KextsObject: InBaseObject {
                         }
                         else if shell == "kextLastest" {
                             self.flag = self.flag + 1
+                            MyLog(self.output)
                             if self.output == "" {
                                 self.Lastest.append("网络错误")
                             }
@@ -465,22 +541,32 @@ extension KextsObject: NSTableViewDelegate {
             return textField
             case "status":
                 var view = NSView()
-                if isRunning[row] {
-                    let progress = NSProgressIndicator()
-                    progress.style = .spinning
-                    progress.startAnimation(self)
-                    view = progress as NSView
-                }
-                else {
-                    if isStart && itemFlag.contains(row) {
+                
+                if isDownloading {
+                    if downloadProgress < 1 {
+                        let progress = NSProgressIndicator()
+                        progress.style = .spinning
+                        progress.controlSize = NSControl.ControlSize(rawValue: 5)!
+                        progress.sizeToFit()
+                        progress.isHidden = false
+
+                        progress.isIndeterminate = false
+                        progress.minValue = 0
+                        progress.maxValue = 1
+                        progress.doubleValue = downloadProgress
+                        
+                        view = progress
+                    } else {
                         let button = NSButton()
                         button.image = MyAsset.complate.image
                         button.bezelStyle = .recessed
                         button.isBordered = false
-                        view = button as NSView
+                        
+                        view = button
                     }
+                    
+                    return view
                 }
-                return view
             default:
                 return nil
             }
