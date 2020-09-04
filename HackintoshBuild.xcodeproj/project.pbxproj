@@ -48,8 +48,6 @@
 		6A4B7E8C23F9B63300A6EFFF /* wechatpay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6AE76A6E23F9B4F900B931F1 /* wechatpay.jpg */; };
 		6A53F9E524F240E700FB5612 /* update.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A53F9E424F240E700FB5612 /* update.command */; };
 		6A54B4752408159A000BCFE7 /* showhiddenFiles.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A54B4742408159A000BCFE7 /* showhiddenFiles.command */; };
-		6A5F0DF024311AAE002C6865 /* paths.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A5F0DEF24311AAE002C6865 /* paths.command */; };
-		6A5F0DF224311B61002C6865 /* ports.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A5F0DF124311B61002C6865 /* ports.command */; };
 		6A723DE8240BEE30007EB3AD /* systeminfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A723DE7240BEE30007EB3AD /* systeminfo.command */; };
 		6A723E11240C1D94007EB3AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A723E13240C1D94007EB3AD /* Localizable.strings */; };
 		6A723E18240E71DE007EB3AD /* diskUnmount.command in Resources */ = {isa = PBXBuildFile; fileRef = 6A723E17240E71DE007EB3AD /* diskUnmount.command */; };
@@ -71,18 +69,14 @@
 		6AA130DF24744E6F00ECD331 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6AA130DB24744E6F00ECD331 /* README.md */; };
 		6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AA6EE0623E5859900BF15FD /* resetLockPicture.command */; };
 		6AAA503D24BC47FB00D8E7FC /* Snapshot.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAA503924BC47FB00D8E7FC /* Snapshot.command */; };
-		6AAB654124154A0200116D13 /* kextLastest.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB654024154A0200116D13 /* kextLastest.command */; };
-		6AAB65592416C0F500116D13 /* download.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB65582416C0F500116D13 /* download.command */; };
 		6AAB82CA23D205E300ACFB81 /* ShareObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB82C923D205E300ACFB81 /* ShareObject.swift */; };
 		6AAB82D023D22C0E00ACFB81 /* getEFI.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAB82CF23D22C0E00ACFB81 /* getEFI.command */; };
 		6AAFC6902414CD550059A609 /* kextscurrentVersion.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AAFC68F2414CD550059A609 /* kextscurrentVersion.command */; };
-		6AB7A19E2434AD2800BA8690 /* printPlist.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AB7A19D2434AD2800BA8690 /* printPlist.command */; };
 		6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AB8B6FB23D582FC00A993C5 /* spctl.command */; };
 		6AC3982123EA94820090A56A /* kextInfo.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AC3982023EA94820090A56A /* kextInfo.command */; };
 		6AC42A0A24ECA8D50095C464 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6AC42A0924ECA8D50095C464 /* Alamofire */; };
 		6AC473B92456EF49001C9F17 /* macserial.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AC473B82456EF49001C9F17 /* macserial.command */; };
 		6AC473BB245751E9001C9F17 /* SerialObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC473BA245751E9001C9F17 /* SerialObject.swift */; };
-		6AD2F3B1241BAABE00E0609F /* openFinder.command in Resources */ = {isa = PBXBuildFile; fileRef = 6AD2F3B0241BAABE00E0609F /* openFinder.command */; };
 		6ADAEFA423C23DA5008ECF4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */; };
 		6ADAEFA623C23DA5008ECF4B /* BuildObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA523C23DA5008ECF4B /* BuildObject.swift */; };
 		6ADAEFA823C23DA6008ECF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADAEFA723C23DA6008ECF4B /* Assets.xcassets */; };
@@ -172,8 +166,6 @@
 		6A4A9FA223E59F86008D8EF8 /* sipStatus.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = sipStatus.command; sourceTree = "<group>"; };
 		6A53F9E424F240E700FB5612 /* update.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = update.command; sourceTree = "<group>"; };
 		6A54B4742408159A000BCFE7 /* showhiddenFiles.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = showhiddenFiles.command; sourceTree = "<group>"; };
-		6A5F0DEF24311AAE002C6865 /* paths.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = paths.command; sourceTree = "<group>"; };
-		6A5F0DF124311B61002C6865 /* ports.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = ports.command; sourceTree = "<group>"; };
 		6A723DE7240BEE30007EB3AD /* systeminfo.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = systeminfo.command; sourceTree = "<group>"; };
 		6A723E12240C1D94007EB3AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6A723E16240C1DD0007EB3AD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -195,17 +187,13 @@
 		6AA130DB24744E6F00ECD331 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6AA6EE0623E5859900BF15FD /* resetLockPicture.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = resetLockPicture.command; sourceTree = "<group>"; };
 		6AAA503924BC47FB00D8E7FC /* Snapshot.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Snapshot.command; sourceTree = "<group>"; };
-		6AAB654024154A0200116D13 /* kextLastest.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kextLastest.command; sourceTree = "<group>"; };
-		6AAB65582416C0F500116D13 /* download.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = download.command; sourceTree = "<group>"; };
 		6AAB82C923D205E300ACFB81 /* ShareObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareObject.swift; sourceTree = "<group>"; };
 		6AAB82CF23D22C0E00ACFB81 /* getEFI.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = getEFI.command; sourceTree = "<group>"; };
 		6AAFC68F2414CD550059A609 /* kextscurrentVersion.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kextscurrentVersion.command; sourceTree = "<group>"; };
-		6AB7A19D2434AD2800BA8690 /* printPlist.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = printPlist.command; sourceTree = "<group>"; };
 		6AB8B6FB23D582FC00A993C5 /* spctl.command */ = {isa = PBXFileReference; lastKnownFileType = text; path = spctl.command; sourceTree = "<group>"; };
 		6AC3982023EA94820090A56A /* kextInfo.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = kextInfo.command; sourceTree = "<group>"; };
 		6AC473B82456EF49001C9F17 /* macserial.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = macserial.command; sourceTree = "<group>"; };
 		6AC473BA245751E9001C9F17 /* SerialObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialObject.swift; sourceTree = "<group>"; };
-		6AD2F3B0241BAABE00E0609F /* openFinder.command */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = openFinder.command; sourceTree = "<group>"; };
 		6ADAEFA023C23DA5008ECF4B /* HackintoshBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackintoshBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADAEFA323C23DA5008ECF4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ADAEFA523C23DA5008ECF4B /* BuildObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildObject.swift; sourceTree = "<group>"; };
@@ -324,7 +312,6 @@
 			children = (
 				6A188A3C2461C60E00CBE5B7 /* OpenCore */,
 				6A48CC46244CC0B600AFC97A /* downloados */,
-				6A5F0DEE24311A98002C6865 /* GPU */,
 				6A046F28242F408F004FFFD5 /* PCI */,
 				6A3FDF0D242720160078BE86 /* About */,
 				6A3FDF0B24271FB00078BE86 /* Kext */,
@@ -405,10 +392,7 @@
 				6AC473B82456EF49001C9F17 /* macserial.command */,
 				6A8E53D023F40289001E59D3 /* AppleIntelInfo.command */,
 				6A723DE7240BEE30007EB3AD /* systeminfo.command */,
-				6AD2F3B0241BAABE00E0609F /* openFinder.command */,
-				6AAB654024154A0200116D13 /* kextLastest.command */,
 				6AAFC68F2414CD550059A609 /* kextscurrentVersion.command */,
-				6AAB65582416C0F500116D13 /* download.command */,
 				6A396E3424E3138E00E7E7C3 /* AppleIntelInfoBS.command */,
 				6AEAE17924F2AD4800DC0D96 /* updateModel.command */,
 				6AEAE19B24F5412700DC0D96 /* getModelList.command */,
@@ -424,16 +408,6 @@
 				6A94A5E1244CDE7C0084A93D /* exit.command */,
 			);
 			path = downloados;
-			sourceTree = "<group>";
-		};
-		6A5F0DEE24311A98002C6865 /* GPU */ = {
-			isa = PBXGroup;
-			children = (
-				6A5F0DEF24311AAE002C6865 /* paths.command */,
-				6A5F0DF124311B61002C6865 /* ports.command */,
-				6AB7A19D2434AD2800BA8690 /* printPlist.command */,
-			);
-			path = GPU;
 			sourceTree = "<group>";
 		};
 		6A7AC9DA242E324B0008A43A /* Products */ = {
@@ -617,9 +591,7 @@
 			files = (
 				6A4B7E8B23F9B63300A6EFFF /* alipay.jpg in Resources */,
 				1123BA4E24B85A4600091680 /* MainMenu.xib in Resources */,
-				6A5F0DF224311B61002C6865 /* ports.command in Resources */,
 				6A4B7E8C23F9B63300A6EFFF /* wechatpay.jpg in Resources */,
-				6AD2F3B1241BAABE00E0609F /* openFinder.command in Resources */,
 				6AA6EE0723E5859900BF15FD /* resetLockPicture.command in Resources */,
 				6A3BBF1324D4772700C22732 /* kextsInstaller.command in Resources */,
 				6A36D49823F85BD500CD042B /* CloverVersion.command in Resources */,
@@ -642,7 +614,6 @@
 				6AEAE17A24F2AD4800DC0D96 /* updateModel.command in Resources */,
 				6A7A719123D845DB0082FA94 /* diskInfo.command in Resources */,
 				6A2468012441B4F1001B7D29 /* tools in Resources */,
-				6AB7A19E2434AD2800BA8690 /* printPlist.command in Resources */,
 				6AAB82D023D22C0E00ACFB81 /* getEFI.command in Resources */,
 				6A48CC53244CC1ED00AFC97A /* versionInfo.command in Resources */,
 				6A0DC962241041E3000E9775 /* openEFI.command in Resources */,
@@ -657,11 +628,8 @@
 				6A723E11240C1D94007EB3AD /* Localizable.strings in Resources */,
 				6A54B4752408159A000BCFE7 /* showhiddenFiles.command in Resources */,
 				117B27B023E9485C00581352 /* AraHUDView.xib in Resources */,
-				6A5F0DF024311AAE002C6865 /* paths.command in Resources */,
-				6AAB65592416C0F500116D13 /* download.command in Resources */,
 				6AB8B6FC23D582FC00A993C5 /* spctl.command in Resources */,
 				6A94A5E2244CDE7C0084A93D /* exit.command in Resources */,
-				6AAB654124154A0200116D13 /* kextLastest.command in Resources */,
 				6A20F6B223F80BA700E69F60 /* OCVersion.command in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

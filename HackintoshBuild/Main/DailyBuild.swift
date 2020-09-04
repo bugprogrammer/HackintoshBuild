@@ -55,7 +55,7 @@ class DailyBuild: OutBaseObject {
         refreshButton.image = image2
         refreshButton.isHidden = true
         
-        getVersion()
+        getLatest()
         
         if filemanager.fileExists(atPath: downloadPath + "/" + name) {
             openButton.isEnabled = true
@@ -67,30 +67,28 @@ class DailyBuild: OutBaseObject {
     @IBAction func refresh(_ sender: Any) {
         refreshButton.isHidden = true
         
-        getVersion()
+        getLatest()
     }
     
-    func getVersion() {
-        let task = Process()
-        let outputPipe = Pipe()
+    func getLatest() {
+        let headers: HTTPHeaders = [
+            "Accept": "application/json"
+        ]
 
-        task.launchPath = "/usr/bin/curl"
-        task.arguments = ["-s", "https://github.com/bugprogrammer/HackinPlugins/releases/latest"]
-        task.standardOutput = outputPipe
-        task.launch()
-        let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
-
-        let output = NSString(data: outputData, encoding: String.Encoding.utf8.rawValue)! as String
-        if output != "" {
-            tag = output.components(separatedBy: "\"")[1].components(separatedBy: "/").last!
-            nameLabel.textColor = NSColor.labelColor
-            nameLabel.stringValue = "HackinPlugins_" + tag.replacingOccurrences(of: "-", with: "") + ".zip"
-            downloadButton.isEnabled = true
-        } else {
-            nameLabel.textColor = NSColor.systemRed
-            nameLabel.stringValue = "网络错误"
-            downloadButton.isEnabled = false
-            refreshButton.isHidden = false
+        AF.request("https://github.com/bugprogrammer/HackinPlugins/releases/latest", method: .get, headers: headers).validate().responseJSON { response in
+            switch response.result {
+                case .success(let dict):
+                    self.tag = (dict as! NSDictionary)["tag_name"] as! String
+                    self.nameLabel.textColor = NSColor.labelColor
+                    self.nameLabel.stringValue = "HackinPlugins_" + self.tag.replacingOccurrences(of: "-", with: "") + ".zip"
+                    self.downloadButton.isEnabled = true
+                case .failure(_):
+                    self.nameLabel.textColor = NSColor.systemRed
+                    self.nameLabel.stringValue = "网络错误"
+                    self.downloadButton.isEnabled = false
+                    self.refreshButton.isHidden = false
+                }
+                
         }
         name = nameLabel.stringValue
     }

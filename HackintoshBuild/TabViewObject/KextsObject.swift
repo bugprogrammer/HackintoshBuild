@@ -33,13 +33,17 @@ class KextsObject: InBaseObject {
     var downloadProgress: Double = 0.0
     var isDownloading: Bool = false
     
-    let queue : OperationQueue = {
+    let queueDownload : OperationQueue = {
         let que : OperationQueue = OperationQueue()
         que.maxConcurrentOperationCount = 1
         return que
     }()
     
-    var isRunning: [Bool] = []
+    let queueLatest : OperationQueue = {
+        let que : OperationQueue = OperationQueue()
+        que.maxConcurrentOperationCount = 1
+        return que
+    }()
     
     let kexts: [String] = [
         "Lilu",
@@ -96,14 +100,15 @@ class KextsObject: InBaseObject {
         tableview.tableColumns.forEach { (column) in
             column.headerCell.alignment = .center
         }
-        isRunning = Array(repeating: false, count: kexts.count)
         
         if let downloadURL = UserDefaults.standard.url(forKey: "downloadURL") {
             if FileManager.default.fileExists(atPath: downloadURL.path) {
                 downloadPath.url = downloadURL
                 pathDownload = downloadURL.path
                 tableview.reloadData(forRowIndexes: IndexSet([Int](0..<kexts.count)), columnIndexes: [3])
-                openButton.isEnabled = true
+                if FileManager.default.fileExists(atPath: downloadURL.path + "/Kexts") {
+                    openButton.isEnabled = true
+                }
             }
         }
         
@@ -153,7 +158,7 @@ class KextsObject: InBaseObject {
             MyLog("mixed")
         default: break
         }
-        if !itemsArr.isEmpty && !pathDownload.isEmpty && !isRunning.contains(true) {
+        if !itemsArr.isEmpty && !pathDownload.isEmpty {
             downloadButton.isEnabled = true
         }
         else {
@@ -199,7 +204,9 @@ class KextsObject: InBaseObject {
             UserDefaults.standard.set(downloadURL, forKey: "downloadURL")
             pathDownload = downloadURL.path
             tableview.reloadData(forRowIndexes: IndexSet([Int](0..<kexts.count)), columnIndexes: [3])
-            openButton.isEnabled = true
+            if FileManager.default.fileExists(atPath: downloadURL.path + "/Kexts") {
+                openButton.isEnabled = true
+            }
             if !itemsArr.isEmpty {
                 downloadButton.isEnabled = true
             }
@@ -219,7 +226,6 @@ class KextsObject: InBaseObject {
         selectAllButton.isEnabled = false
         currentVersion = []
         Lastest = []
-        isRunning = Array(repeating: false, count: kexts.count)
         itemFlag = []
         itemsArr = []
         
@@ -239,6 +245,7 @@ class KextsObject: InBaseObject {
         selectAllButton.isEnabled = false
         proxyTextField.isEnabled = false
         downloadPath.isEnabled = false
+        isDownloading = false
         isStart = true
         if FileManager.default.isWritableFile(atPath: pathDownload) {
             downloadKexts(itemsArr)
@@ -254,7 +261,6 @@ class KextsObject: InBaseObject {
     }
     
     func downloadKexts(_ list: [String]){
-        isDownloading = false
         downloadProgress = 0.0
         self.tableview.reloadData(forRowIndexes: IndexSet([Int](0..<kexts.count)), columnIndexes: [0,4])
         let filemanager = FileManager.default
@@ -284,6 +290,7 @@ class KextsObject: InBaseObject {
                     debugPrint(response)
                     switch response.result {
                     case .success(_):
+                        self!.openButton.isEnabled = true
                         self?.downloadProgress = 1
                         self!.tableview.reloadData(forRowIndexes: [self!.itemFlag[i]], columnIndexes: [0,4])
                         if i == list.count - 1 {
@@ -297,6 +304,8 @@ class KextsObject: InBaseObject {
                                 self!.refreshButton.isEnabled = true
                                 self!.selectAllButton.isEnabled = true
                             }
+                            self!.isStart = false
+                            self!.tableview.reloadData(forRowIndexes: IndexSet([Int](0..<self!.kexts.count)), columnIndexes: [0,4])
                         }
                     case .failure(_):
                         if first {
@@ -305,6 +314,7 @@ class KextsObject: InBaseObject {
                             alert.runModal()
                             first = false
                             self!.downloadProgress = 0.0
+                            self!.isStart = false
                             self!.tableview.reloadData(forRowIndexes: IndexSet([Int](0..<self!.kexts.count)), columnIndexes: [0,4])
                             self!.downloadButton.isEnabled = true
                             self!.refreshButton.isEnabled = true
@@ -322,7 +332,40 @@ class KextsObject: InBaseObject {
                 semaphore.wait()
             }
             
-            queue.addOperation(op)
+            queueDownload.addOperation(op)
+        }
+    }
+    
+    func getLatest(_ list: [String]) {
+        for i in 0..<list.count {
+            let semaphore = DispatchSemaphore(value: 0)
+            let op : BlockOperation = BlockOperation { [weak self] in
+                let headers: HTTPHeaders = [
+                    "Accept": "application/json"
+                ]
+
+                AF.request(list[i] + "/releases/latest", method: .get, headers: headers).validate().responseJSON { response in
+                    switch response.result {
+                        case .success(let dict):
+                            self!.Lastest.append(((dict as! NSDictionary)["tag_name"] as! String).replacingOccurrences(of: "v", with: "").replacingOccurrences(of: "V", with: ""))
+                            self!.tableview.reloadData(forRowIndexes: [i], columnIndexes: [0,3])
+                            if i == self!.url.count - 1 {
+                                self!.refreshButton.isEnabled = true
+                                self!.selectAllButton.isEnabled = true
+                            }
+                        case .failure(_):
+                            self!.Lastest.append("网络错误")
+                            self!.tableview.reloadData(forRowIndexes: [i], columnIndexes: [0,3])
+                            if i == self!.url.count - 1 {
+                                self!.refreshButton.isEnabled = true
+                                self!.selectAllButton.isEnabled = true
+                            }
+                        }
+                    semaphore.signal()
+                }
+                semaphore.wait()
+            }
+            queueLatest.addOperation(op)
         }
     }
     
@@ -352,7 +395,7 @@ class KextsObject: InBaseObject {
     }
     
     @IBAction func openButtonDidClicked(_ sender: NSButton) {
-        runBuildScripts("openFinder", [pathDownload])
+        NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: pathDownload + "/Kexts")
     }
     
     func runBuildScripts(_ shell: String,_ arguments: [String]) {
@@ -381,38 +424,8 @@ class KextsObject: InBaseObject {
                                 self.runBuildScripts("kextscurrentVersion", [self.kexts[self.flag]])
                             }
                             if self.flag == self.kexts.count {
-                                self.flag = 0
-                                self.runBuildScripts("kextLastest", [self.url[self.flag]])
+                                self.getLatest(self.url)
                             }
-                        }
-                        else if shell == "kextLastest" {
-                            self.flag = self.flag + 1
-                            MyLog(self.output)
-                            if self.output == "" {
-                                self.Lastest.append("网络错误")
-                            }
-                            else {
-                                self.Lastest.append(self.output.components(separatedBy: "\n").first!)
-                            }
-                            MyLog(self.Lastest)
-                            self.tableview.reloadData(forRowIndexes: [self.flag-1], columnIndexes: [0,3])
-                            if self.flag < self.url.count {
-                                self.runBuildScripts("kextLastest", [self.url[self.flag]])
-                            }
-                            if self.Lastest.count == self.kexts.count {
-                                self.refreshButton.isEnabled = true
-                                self.selectAllButton.isEnabled = true
-                            }
-                        }
-                        else if shell == "download" {
-                            self.downloadButton.isEnabled = true
-                            self.proxyTextField.isEnabled = true
-                            self.downloadPath.isEnabled = true
-                            if self.Lastest.count == self.kexts.count {
-                                self.refreshButton.isEnabled = true
-                                self.selectAllButton.isEnabled = true
-                            }
-                            self.tableview.reloadData(forRowIndexes: IndexSet([Int](0..<self.kexts.count)), columnIndexes: [0,4])
                         }
                         self.lock.unlock()
                     })
@@ -435,16 +448,9 @@ class KextsObject: InBaseObject {
                 outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
                 let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
                 DispatchQueue.main.async(execute: {
-                    if shell != "download" {
-                        let previousOutput = self.output
-                        let nextOutput = previousOutput + outputString
-                        self.output = nextOutput
-                    }
-                    else {
-                        MyLog(outputString)
-                        self.isRunning[self.kexts.firstIndex(of: outputString.components(separatedBy: "\n").first!)!] = false
-                        self.tableview.reloadData(forRowIndexes: IndexSet(self.itemFlag), columnIndexes: [4])
-                    }
+                    let previousOutput = self.output
+                    let nextOutput = previousOutput + outputString
+                    self.output = nextOutput
                 })
             }
         }
@@ -493,7 +499,7 @@ extension KextsObject: NSTableViewDelegate {
                 button.target = self
                 button.action = #selector(checkClicked(_:))
                 
-                if Lastest.count >= row + 1 && !isRunning.contains(true) {
+                if Lastest.count >= row + 1 && !isStart {
                     if itemFlag.contains(row) {
                         MyLog(itemFlag)
                         button.state = .on
@@ -557,12 +563,13 @@ extension KextsObject: NSTableViewDelegate {
                         
                         view = progress
                     } else {
-                        let button = NSButton()
-                        button.image = MyAsset.complate.image
-                        button.bezelStyle = .recessed
-                        button.isBordered = false
-                        
-                        view = button
+                        if itemFlag.contains(row) {
+                            let button = NSButton()
+                            button.image = MyAsset.complate.image
+                            button.bezelStyle = .recessed
+                            button.isBordered = false
+                            view = button
+                        }
                     }
                     
                     return view
