@@ -57,7 +57,7 @@ class DailyBuild: OutBaseObject {
         
         getLatest()
         
-        if filemanager.fileExists(atPath: downloadPath + "/" + name) {
+        if filemanager.fileExists(atPath: downloadPath + "/" + nameLabel.stringValue) {
             openButton.isEnabled = true
         } else {
             openButton.isEnabled = false
@@ -90,7 +90,6 @@ class DailyBuild: OutBaseObject {
                 }
                 
         }
-        name = nameLabel.stringValue
     }
     
     @IBAction func setPath(_ sender: Any) {
@@ -100,9 +99,10 @@ class DailyBuild: OutBaseObject {
         }
     }
     @IBAction func download(_ sender: Any) {
+        name = nameLabel.stringValue
         setStatus(true, true)
         if filemanager.fileExists(atPath: downloadPath + "/" + name) {
-            try! filemanager.removeItem(atPath: downloadPath + "/" + name)
+            try! filemanager.removeItem(atPath: downloadPath + "/" + nameLabel.stringValue)
         }
             
         let destination: DownloadRequest.Destination = { _, _ in
@@ -136,7 +136,7 @@ class DailyBuild: OutBaseObject {
     }
         
     @IBAction func open(_ sender: Any) {
-        NSWorkspace.shared.selectFile(downloadPath + "/" + name, inFileViewerRootedAtPath: "")
+        NSWorkspace.shared.selectFile(downloadPath + "/" + nameLabel.stringValue, inFileViewerRootedAtPath: "")
     }
     
     func setStatus(_ isRunning: Bool, _ isComplace: Bool) {
