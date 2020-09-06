@@ -17,7 +17,6 @@ class KextsObject: InBaseObject {
     @IBOutlet weak var downloadButton: NSButton!
     @IBOutlet weak var openButton: NSButton!
     @IBOutlet weak var selectAllButton: NSButton!
-    @IBOutlet weak var proxyTextField: NSTextField!
     
     let taskQueue = DispatchQueue.global(qos: .default)
     var task: Process!
@@ -112,10 +111,6 @@ class KextsObject: InBaseObject {
             }
         }
         
-        proxyTextField.placeholderString = "http://127.0.0.1:xxxx"
-        proxyTextField.delegate = self
-        proxyTextField.refusesFirstResponder = true
-        
         let downloadAll = MyAsset.downloadAll.image
         downloadAll.isTemplate = true
         let shuaxin = MyAsset.refresh.image
@@ -135,7 +130,6 @@ class KextsObject: InBaseObject {
         
         let index = noti.object as! Int
         if index != 3 { return }
-        proxyTextField.stringValue = proxy ?? ""
         if !once { return }
         once = false
         
@@ -232,18 +226,12 @@ class KextsObject: InBaseObject {
         tableview.reloadData()
         runBuildScripts("kextscurrentVersion", ["Lilu"])
     }
-        
-    @IBAction func setProxy(_ sender: Any) {
-        UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
-    }
     
     @IBAction func downloadButtonDidClicked(_ sender: NSButton) {
         //Lilu-1.4.2-RELEASE.zip
-        UserDefaults.standard.set(proxyTextField.stringValue, forKey: "proxy")
         downloadButton.isEnabled = false
         refreshButton.isEnabled = false
         selectAllButton.isEnabled = false
-        proxyTextField.isEnabled = false
         downloadPath.isEnabled = false
         isDownloading = false
         isStart = true
@@ -255,7 +243,6 @@ class KextsObject: InBaseObject {
             alert.messageText = "所选目录不可写"
             alert.runModal()
             downloadButton.isEnabled = true
-            proxyTextField.isEnabled = true
             downloadPath.isEnabled = true
         }
     }
@@ -297,7 +284,6 @@ class KextsObject: InBaseObject {
                             self!.downloadButton.isEnabled = true
                             self!.refreshButton.isEnabled = true
                             self!.selectAllButton.isEnabled = true
-                            self!.proxyTextField.isEnabled = true
                             self!.downloadPath.isEnabled = true
                             
                             if self!.Lastest.count == self!.kexts.count {
@@ -319,7 +305,6 @@ class KextsObject: InBaseObject {
                             self!.downloadButton.isEnabled = true
                             self!.refreshButton.isEnabled = true
                             self!.selectAllButton.isEnabled = true
-                            self!.proxyTextField.isEnabled = true
                             self!.downloadPath.isEnabled = true
                             if self!.Lastest.count == self!.kexts.count {
                                 self!.refreshButton.isEnabled = true
