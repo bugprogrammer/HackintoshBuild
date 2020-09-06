@@ -31,7 +31,7 @@ if [ ! -e InstallAssistant.pkg ]; then
         fi
     done
     
-    if [ !$isfolder || !$isbase ]; then
+    if [[ "$isfolder" = false || "$isbase" = false ]]; then
         echo "failed"
         exit 1
     fi
