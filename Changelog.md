@@ -6,6 +6,19 @@ HackintoshBuild Changelog
 - 支持 AMD CPUs
 - 优化编译流程，修复找不到 xcodebuild 导致编译失败
 - 修复 EFI 分区挂载在某些情况下显示错误
+- 编译模块以及EFI获取模块新增log路径存储
+- 编译模块新增环境详细校验
+- 更换锁屏壁纸模块改用拖拽方案
+- 镜像下载模块重构，显示下载进度，增强容错
+- 文件对比模块重构(需要安装xcode)
+- 新增Kexts下载模块
+- 新增每日构建下载模块(利用azure pipeline每8小时自动编译Hackintosh全家桶)
+- 新增快照检测
+- 显卡优化更改为kext方案
+- Big Sur下禁用AppleIntelInfo功能
+- Kexts下载模块重构，新增进度显示
+- PCI信息模块新增应用内更新pci.ids数据库
+- 序列号生成模块新增应用内更新SMBIOS数据库
 
 #### v2.1
 - 适配最新 OpenCore 编译
