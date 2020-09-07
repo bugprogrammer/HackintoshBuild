@@ -145,9 +145,10 @@ class OtherObject: OutBaseObject {
     @IBAction func RadeonBoost(_ sender: Any) {
         let filemanager = FileManager.default
         let atUrl = radeonBoost
-        var toUrl = "/Users/wbx/Desktop/RadeonBoost.kext"
+        var toUrl = filemanager.homeDirectoryForCurrentUser.appendingPathComponent("Desktop").absoluteString.replacingOccurrences(of: "file://", with: "") + "RadeonBoost.kext"
+        MyLog(toUrl)
         
-        if !filemanager.fileExists(atPath: "/Users/wbx/Desktop/RadeonBoost.kext") {
+        if !filemanager.fileExists(atPath: toUrl) {
             try! filemanager.copyItem(at: atUrl!, to: URL(fileURLWithPath: toUrl))
         }
         else {
