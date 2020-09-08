@@ -32,7 +32,7 @@ class InstallKextsObject: OutBaseObject {
         dragDropView.usedArrowImage = false
         dragDropView.setup({ (file) in
             if sip {
-                var url = file.absoluteString.replacingOccurrences(of: "file://", with: "")
+                var url = file.absoluteString.urlDecoded().replacingOccurrences(of: "file://", with: "")
                 url = url.replacingOccurrences(of: "\n", with: "")
                 url.remove(at: url.index(before: url.endIndex))
                 MyLog(url)
@@ -46,7 +46,7 @@ class InstallKextsObject: OutBaseObject {
             if sip {
                 var kexts: String = ""
                 for file in files {
-                    var url = file.absoluteString.replacingOccurrences(of: "file://", with: "")
+                    var url = file.absoluteString.urlDecoded().replacingOccurrences(of: "file://", with: "")
                     url = url.replacingOccurrences(of: "\n", with: "")
                     url.remove(at: url.index(before: url.endIndex))
                     kexts.append(url + ",")

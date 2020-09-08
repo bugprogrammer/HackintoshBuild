@@ -67,7 +67,8 @@ class CompareObject: OutBaseObject {
             if self.isFileLeft && self.isFileRight {
                 self.compareButton.isEnabled = true
             }
-            self.fileLeftPath = file.absoluteString
+            self.fileLeftPath = file.absoluteString.urlDecoded()
+            MyLog(self.fileLeftPath)
             
         }) { (files) in
             let alert = NSAlert()
@@ -87,7 +88,7 @@ class CompareObject: OutBaseObject {
             if self.isFileLeft && self.isFileRight {
                 self.compareButton.isEnabled = true
             }
-            self.fileRightPath = file.absoluteString
+            self.fileRightPath = file.absoluteString.urlDecoded()
         }) { (files) in
             let alert = NSAlert()
             alert.messageText = "只支持拖入一个文件"

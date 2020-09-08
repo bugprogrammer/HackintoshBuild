@@ -53,7 +53,7 @@ class LockPicObject: OutBaseObject {
     
     @IBAction func replaceButtonDidClicked(_ sender: Any) {
         MyLog(imageURL.absoluteString.replacingOccurrences(of: "file://", with: ""))
-        runBuildScripts("changeLockPicture", [imageURL.absoluteString.replacingOccurrences(of: "file://", with: "")], "替换完成")
+        runBuildScripts("changeLockPicture", [imageURL.absoluteString.urlDecoded().replacingOccurrences(of: "file://", with: "")], "替换完成")
     }
     
     @IBAction func resetButtonDidClicked(_ sender: Any) {
