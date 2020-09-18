@@ -200,6 +200,11 @@ class OSObject: OutBaseObject {
         return dict
     }
     
+    @IBAction func selectCatalog(_ sender: Any) {
+        isDownloading = false
+        downloadTableView.reloadData()
+        selectVersion()
+    }
     
     @IBAction func selectVersionButton(_ sender: Any) {
         isDownloading = false
