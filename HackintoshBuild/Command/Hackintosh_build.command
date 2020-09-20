@@ -207,30 +207,28 @@ for i in ${selectedArray[*]}; do
             fi
         fi
         if [[ $voodooinputPlugins =~ ${buildArray[$i]%,*} ]]; then
-            if [ ! -e *.kext ]; then
-                echo "编译 "${buildArray[$i]%,*}" 需要依赖 VoodooInput"
-                if [ ! -e $url/$dir/Sources/VoodooInput ]; then
-                    pushd $url/$dir/Sources >> "$logs"
-                    echo "未找到缓存，正在下载源码：VoodooInput"
-                    git clone -q https://github.com/acidanthera/VoodooInput.git -b master --depth=1 && cd VoodooInput
-                    echo "正在编译：VoodooInput"
-                    xcodebuild -configuration Release -arch x86_64 >> "$logs" || exit 1
-                    xcodebuild -configuration Debug -arch x86_64 >> "$logs" || exit 1
-                    mkdir -p build/VoodooInput && cp -Rf build/Release build/VoodooInput && cp -Rf build/Debug build/VoodooInput || exit 1
-                    popd >> "$logs"
-                    echo "正在拷贝：VoodooInput"
-                    if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
-                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput ./Dependencies/ >> "$logs" || exit 1
-                    else
-                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput . >> "$logs" || exit 1
-                    fi
+            echo "编译 "${buildArray[$i]%,*}" 需要依赖 VoodooInput"
+            if [ ! -e $url/$dir/Sources/VoodooInput ]; then
+                pushd $url/$dir/Sources >> "$logs"
+                echo "未找到缓存，正在下载源码：VoodooInput"
+                git clone -q https://github.com/acidanthera/VoodooInput.git -b master --depth=1 && cd VoodooInput
+                echo "正在编译：VoodooInput"
+                xcodebuild -configuration Release -arch x86_64 >> "$logs" || exit 1
+                xcodebuild -configuration Debug -arch x86_64 >> "$logs" || exit 1
+                mkdir -p build/VoodooInput && cp -Rf build/Release build/VoodooInput && cp -Rf build/Debug build/VoodooInput || exit 1
+                popd >> "$logs"
+                echo "正在拷贝：VoodooInput"
+                if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
+                    cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput ./Dependencies/ >> "$logs" || exit 1
                 else
-                    echo "找到缓存，正在拷贝：VoodooInput"
-                    if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
-                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput ./Dependencies/ >> "$logs" || exit 1
-                    else
-                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput . >> "$logs" || exit 1
-                    fi
+                    cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput . >> "$logs" || exit 1
+                fi
+            else
+                echo "找到缓存，正在拷贝：VoodooInput"
+                if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
+                    cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput ./Dependencies/ >> "$logs" || exit 1
+                else
+                    cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput . >> "$logs" || exit 1
                 fi
             fi
         fi
