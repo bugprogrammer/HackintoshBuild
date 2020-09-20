@@ -48,7 +48,9 @@ class BuildObject: OutBaseObject {
         "AtherosE2200Ethernet",
         "RTL8111",
         "NVMeFix",
-        "MacProMemoryNotificationDisabler"
+        "MacProMemoryNotificationDisabler",
+        "VoodooPS2",
+        "VoodooI2C"
     ]
     
     override func awakeFromNib() {

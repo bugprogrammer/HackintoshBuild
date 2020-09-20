@@ -60,7 +60,9 @@ class KextsObject: InBaseObject {
         "AtherosE2200Ethernet",
         "RealtekRTL8111",
         "NVMeFix",
-        "MacProMemoryNotificationDisabler"
+        "MacProMemoryNotificationDisabler",
+        "VoodooPS2",
+        "VoodooI2C"
     ]
     
     let url: [String] = [
@@ -79,7 +81,9 @@ class KextsObject: InBaseObject {
         "https://github.com/Mieze/AtherosE2200Ethernet",
         "https://github.com/Mieze/RTL8111_driver_for_OS_X",
         "https://github.com/acidanthera/NVMeFix",
-        "https://github.com/IOIIIO/MacProMemoryNotificationDisabler"
+        "https://github.com/IOIIIO/MacProMemoryNotificationDisabler",
+        "https://github.com/acidanthera/VoodooPS2",
+        "https://github.com/VoodooI2C/VoodooI2C"
     ]
     
     var currentVersion: [String] = []
@@ -368,6 +372,12 @@ class KextsObject: InBaseObject {
         }
         else if kexts[row] == "MacProMemoryNotificationDisabler" {
             downloadURL = url[row] + "/releases/download/v" + Lastest[row] + "/" + "MPMND" + "-v" + Lastest[row] + "-Release.zip"
+        }
+        else if kexts[row] == "VoodooPS2" {
+            downloadURL = url[row] + "/releases/download/" + Lastest[row] + "/" + "VoodooPS2Controller" + "-" + Lastest[row] + "-RELEASE.zip"
+        }
+        else if kexts[row] == "VoodooI2C" {
+            downloadURL = url[row] + "/releases/download/" + Lastest[row] + "/" + kexts[row] + "-" + Lastest[row] + ".zip"
         }
         else if "acidanthera_WhateverGreen bugprogrammer_WhateverGreen".contains(kexts[row]) {
             downloadURL = url[row] + "/releases/download/" + Lastest[row] + "/" + "WhateverGreen" + "-" + Lastest[row] + "-RELEASE.zip"
