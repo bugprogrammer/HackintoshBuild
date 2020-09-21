@@ -141,6 +141,7 @@ buildArray=(
 )
 
 liluPlugins='AirportBrcmFixup AppleALC ATH9KFixup BT4LEContinuityFixup CPUFriend HibernationFixup NoTouchID RTCMemoryFixup SystemProfilerMemoryFixup VirtualSMC acidanthera_WhateverGreen bugprogrammer_WhateverGreen NVMeFix MacProMemoryNotificationDisabler VoodooPS2'
+mackernelsdkPlugins='AirportBrcmFixup AppleALC BT4LEContinuityFixup CPUFriend HibernationFixup Lilu NoTouchID RTCMemoryFixup VirtualSMC acidanthera_WhateverGreen NVMeFix VoodooInput VoodooPS2'
 voodooinputPlugins='VoodooPS2 VoodooI2C'
 
 bootLoader='OpenCore'
@@ -189,12 +190,24 @@ for i in ${selectedArray[*]}; do
         echo "编译成功："${buildArray[$i]%,*}
     else
         if [[ $liluPlugins =~ ${buildArray[$i]%,*} ]]; then
-            if [ ! -e *.kext ]; then
+            if [ ! -e Lilu.kext ]; then
                 echo "编译 "${buildArray[$i]%,*}" 需要依赖 Lilu"
                 if [ ! -e $url/$dir/Sources/Lilu/build/Debug/Lilu.kext ]; then
                     pushd $url/$dir/Sources >> "$logs"
                     echo "未找到缓存，正在下载源码：Lilu"
                     git clone -q https://github.com/acidanthera/Lilu.git -b master --depth=1 && cd Lilu
+                    echo "编译 Lilu 需要依赖 MacKernelSDK"
+                    if [ ! -e $url/$dir/Sources/MacKernelSDK ]; then
+                        pushd $url/$dir/Sources >> "$logs"
+                        echo "未找到缓存，正在下载源码：MacKernelSDK"
+                        git clone -q https://github.com/acidanthera/MacKernelSDK
+                        popd >> "$logs"
+                        echo "正在拷贝：MacKernelSDK"
+                        cp -Rf $url/$dir/Sources/MacKernelSDK . >> "$logs" || exit 1
+                    else
+                        echo "找到缓存，正在拷贝：MacKernelSDK"
+                        cp -Rf $url/$dir/Sources/MacKernelSDK . >> "$logs" || exit 1
+                    fi
                     echo "正在编译：Lilu"
                     xcodebuild -configuration Debug -arch x86_64 >> "$logs" || exit 1
                     popd >> "$logs"
@@ -206,29 +219,59 @@ for i in ${selectedArray[*]}; do
                 fi
             fi
         fi
-        if [[ $voodooinputPlugins =~ ${buildArray[$i]%,*} ]]; then
-            echo "编译 "${buildArray[$i]%,*}" 需要依赖 VoodooInput"
-            if [ ! -e $url/$dir/Sources/VoodooInput ]; then
-                pushd $url/$dir/Sources >> "$logs"
-                echo "未找到缓存，正在下载源码：VoodooInput"
-                git clone -q https://github.com/acidanthera/VoodooInput.git -b master --depth=1 && cd VoodooInput
-                echo "正在编译：VoodooInput"
-                xcodebuild -configuration Release -arch x86_64 >> "$logs" || exit 1
-                xcodebuild -configuration Debug -arch x86_64 >> "$logs" || exit 1
-                mkdir -p build/VoodooInput && cp -Rf build/Release build/VoodooInput && cp -Rf build/Debug build/VoodooInput || exit 1
-                popd >> "$logs"
-                echo "正在拷贝：VoodooInput"
-                if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
-                    cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput ./Dependencies/ >> "$logs" || exit 1
+        if [[ $mackernelsdkPlugins =~ ${buildArray[$i]%,*} ]]; then
+            if [ ! -e MacKernelSDK ]; then
+                echo "编译 "${buildArray[$i]%,*}" 需要依赖 MacKernelSDK"
+                if [ ! -e $url/$dir/Sources/MacKernelSDK ]; then
+                    pushd $url/$dir/Sources >> "$logs"
+                    echo "未找到缓存，正在下载源码：MacKernelSDK"
+                    git clone -q https://github.com/acidanthera/MacKernelSDK
+                    popd >> "$logs"
+                    echo "正在拷贝：MacKernelSDK"
+                    cp -Rf $url/$dir/Sources/MacKernelSDK . >> "$logs" || exit 1
                 else
-                    cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput . >> "$logs" || exit 1
+                    echo "找到缓存，正在拷贝：MacKernelSDK"
+                    cp -Rf $url/$dir/Sources/MacKernelSDK . >> "$logs" || exit 1
                 fi
-            else
-                echo "找到缓存，正在拷贝：VoodooInput"
-                if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
-                    cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput ./Dependencies/ >> "$logs" || exit 1
+            fi
+        fi
+        if [[ $voodooinputPlugins =~ ${buildArray[$i]%,*} ]]; then
+            if [ ! -e VoodooInput ] && [ ! -e Dependencies/VoodooInput ]; then
+                echo "编译 "${buildArray[$i]%,*}" 需要依赖 VoodooInput"
+                if [ ! -e $url/$dir/Sources/VoodooInput ]; then
+                    pushd $url/$dir/Sources >> "$logs"
+                    echo "未找到缓存，正在下载源码：VoodooInput"
+                    git clone -q https://github.com/acidanthera/VoodooInput.git -b master --depth=1 && cd VoodooInput
+                    echo "编译 VoodooInput 需要依赖 MacKernelSDK"
+                    if [ ! -e $url/$dir/Sources/MacKernelSDK ]; then
+                        pushd $url/$dir/Sources >> "$logs"
+                        echo "未找到缓存，正在下载源码：MacKernelSDK"
+                        git clone -q https://github.com/acidanthera/MacKernelSDK
+                        popd >> "$logs"
+                        echo "正在拷贝：MacKernelSDK"
+                        cp -Rf $url/$dir/Sources/MacKernelSDK . >> "$logs" || exit 1
+                    else
+                        echo "找到缓存，正在拷贝：MacKernelSDK"
+                        cp -Rf $url/$dir/Sources/MacKernelSDK . >> "$logs" || exit 1
+                    fi
+                    echo "正在编译：VoodooInput"
+                    xcodebuild -configuration Release -arch x86_64 >> "$logs" || exit 1
+                    xcodebuild -configuration Debug -arch x86_64 >> "$logs" || exit 1
+                    mkdir -p build/VoodooInput && cp -Rf build/Release build/VoodooInput && cp -Rf build/Debug build/VoodooInput || exit 1
+                    popd >> "$logs"
+                    echo "正在拷贝：VoodooInput"
+                    if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
+                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput ./Dependencies/ >> "$logs" || exit 1
+                    else
+                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput . >> "$logs" || exit 1
+                    fi
                 else
-                    cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput . >> "$logs" || exit 1
+                    echo "找到缓存，正在拷贝：VoodooInput"
+                    if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
+                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput ./Dependencies/ >> "$logs" || exit 1
+                    else
+                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput . >> "$logs" || exit 1
+                    fi
                 fi
             fi
         fi
