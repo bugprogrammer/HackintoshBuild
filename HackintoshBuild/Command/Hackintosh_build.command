@@ -140,8 +140,8 @@ buildArray=(
 'VoodooI2C,https://github.com/VoodooI2C/VoodooI2C.git'
 )
 
-liluPlugins='AirportBrcmFixup AppleALC ATH9KFixup BT4LEContinuityFixup CPUFriend HibernationFixup NoTouchID RTCMemoryFixup SystemProfilerMemoryFixup VirtualSMC acidanthera_WhateverGreen bugprogrammer_WhateverGreen NVMeFix MacProMemoryNotificationDisabler VoodooPS2'
-mackernelsdkPlugins='AirportBrcmFixup AppleALC BT4LEContinuityFixup CPUFriend HibernationFixup Lilu NoTouchID RTCMemoryFixup VirtualSMC acidanthera_WhateverGreen NVMeFix VoodooInput VoodooPS2'
+liluPlugins='AirportBrcmFixup AppleALC ATH9KFixup BT4LEContinuityFixup CPUFriend HibernationFixup NoTouchID RTCMemoryFixup SystemProfilerMemoryFixup VirtualSMC acidanthera_WhateverGreen bugprogrammer_WhateverGreen NVMeFix MacProMemoryNotificationDisabler'
+mackernelsdkPlugins='AirportBrcmFixup AppleALC BT4LEContinuityFixup CPUFriend HibernationFixup Lilu RTCMemoryFixup VirtualSMC acidanthera_WhateverGreen IntelMausi NVMeFix VoodooInput VoodooPS2'
 voodooinputPlugins='VoodooPS2 VoodooI2C'
 
 bootLoader='OpenCore'
