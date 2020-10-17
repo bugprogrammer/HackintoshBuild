@@ -1,6 +1,10 @@
 HackintoshBuild Changelog
 =========================
 
+#### v3.1
+- 适配MacKernelSDK，修复编译功能以及每日构建功能
+- 编译模块新增VoodooI2C、VoodooPS2以及RTL8125
+
 #### v3.0
 - 重构 UI，适配 Big Sur
 - 支持 AMD CPUs
