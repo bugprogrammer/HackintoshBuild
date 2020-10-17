@@ -114,6 +114,14 @@ if [ "$(xcodebuild -version)" = "" ]; then
     exit 1
 fi
 
+############ MacKernelSDK ###################
+
+echo "正在验证MacKernelSDK"
+if [ -e MacKernelSDK ]; then
+    rm -rf MacKernelSDK
+fi
+git clone https://github.com/acidanthera/MacKernelSDK >/dev/null || exit 1
+
 echo "环境完整性验证完成，进入编译阶段。"
 
 buildArray=(
@@ -122,23 +130,23 @@ buildArray=(
 'AirportBrcmFixup,https://github.com/acidanthera/AirportBrcmFixup.git'
 'AppleALC,https://github.com/acidanthera/AppleALC.git'
 'ATH9KFixup,https://github.com/chunnann/ATH9KFixup.git'
-'BT4LEContinuityFixup,https://github.com/acidanthera/BT4LEContinuityFixup.git'
 'CPUFriend,https://github.com/acidanthera/CPUFriend.git'
 'HibernationFixup,https://github.com/acidanthera/HibernationFixup.git'
-'NoTouchID,https://github.com/al3xtjames/NoTouchID.git'
 'RTCMemoryFixup,https://github.com/acidanthera/RTCMemoryFixup.git'
-'SystemProfilerMemoryFixup,https://github.com/Goldfish64/SystemProfilerMemoryFixup.git'
 'VirtualSMC,https://github.com/acidanthera/VirtualSMC.git'
-'acidanthera_WhateverGreen,https://github.com/acidanthera/WhateverGreen.git'
-'bugprogrammer_WhateverGreen,https://github.com/bugprogrammer/WhateverGreen.git'
+'WhateverGreen,https://github.com/acidanthera/WhateverGreen.git'
 'IntelMausi,https://github.com/acidanthera/IntelMausi.git'
 'AtherosE2200Ethernet,https://github.com/Mieze/AtherosE2200Ethernet.git'
 'RTL8111,https://github.com/Mieze/RTL8111_driver_for_OS_X.git'
+'LucyRTL8125Ethernet,https://github.com/Mieze/LucyRTL8125Ethernet.git'
 'NVMeFix,https://github.com/acidanthera/NVMeFix.git'
-'MacProMemoryNotificationDisabler,https://github.com/IOIIIO/MacProMemoryNotificationDisabler.git'
+'VoodooPS2,https://github.com/acidanthera/VoodooPS2.git'
+'VoodooI2C,https://github.com/VoodooI2C/VoodooI2C.git'
 )
 
-liluPlugins='AirportBrcmFixup AppleALC ATH9KFixup BT4LEContinuityFixup CPUFriend HibernationFixup NoTouchID RTCMemoryFixup SystemProfilerMemoryFixup VirtualSMC acidanthera_WhateverGreen bugprogrammer_WhateverGreen NVMeFix MacProMemoryNotificationDisabler'
+liluPlugins='AirportBrcmFixup AppleALC ATH9KFixup CPUFriend HibernationFixup RTCMemoryFixup VirtualSMC WhateverGreen NVMeFix'
+
+voodooinputPlugins='VoodooPS2 VoodooI2C'
 
 bootLoader='OpenCore'
 
@@ -191,9 +199,15 @@ for i in ${selectedArray[*]}; do
                 if [ ! -e $url/$dir/Sources/Lilu/build/Debug/Lilu.kext ]; then
                     pushd $url/$dir/Sources >> "$logs"
                     echo "未找到缓存，正在下载源码：Lilu"
-                    git clone -q https://github.com/acidanthera/Lilu.git -b master --depth=1 && cd Lilu
+                    if [ -e Lilu.kext ]; then
+                        rm -rf Lilu.kext
+                    fi
+                    git clone -q https://github.com/acidanthera/Lilu.git -b master --depth=1
+                    cd Lilu
+                    cp -Rf ../MacKernelSDK . >> "$logs" || exit 1
                     echo "正在编译：Lilu"
-                    xcodebuild -configuration Debug -arch x86_64 >> "$logs" || exit 1
+                    pwd
+                    xcodebuild -configuration Debug -arch x86_64 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO >> "$logs" || exit 1
                     popd >> "$logs"
                     echo "正在拷贝：Lilu"
                     cp -Rf $url/$dir/Sources/Lilu/build/Debug/Lilu.kext . >> "$logs" || exit 1
@@ -203,12 +217,65 @@ for i in ${selectedArray[*]}; do
                 fi
             fi
         fi
+        
+        if [[ $voodooinputPlugins =~ ${buildArray[$i]%,*} ]]; then
+            if [ ! -e VoodooInput ] && [ ! -e Dependencies/VoodooInput ]; then
+                echo "编译 "${buildArray[$i]%,*}" 需要依赖 VoodooInput"
+                if [ ! -e $url/$dir/Sources/VoodooInput/build/VoodooInput/Release/VoodooInput.kext ] || [ ! -e $url/$dir/Sources/VoodooInput/build/VoodooInput/Release/*.zip ] || [ ! -e $url/$dir/Sources/VoodooInput/build/VoodooInput/Debug/VoodooInput.kext ] || [ ! -e $url/$dir/Sources/VoodooInput/build/VoodooInput/Debug/*.zip ]; then
+                    pushd $url/$dir/Sources >> "$logs"
+                    echo "未找到缓存，正在下载源码：VoodooInput"
+                    git clone -q https://github.com/acidanthera/VoodooInput.git -b master --depth=1
+                    cd VoodooInput
+                    cp -Rf ../MacKernelSDK . >> "$logs" || exit 1
+                    echo "正在编译 VoodooInput"
+                    xcodebuild -configuration Release -arch x86_64 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO >> "$logs" || exit 1
+                    xcodebuild -configuration Debug -arch x86_64 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO >> "$logs" || exit 1
+                
+                    mkdir -p build/VoodooInput && cp -Rf build/Release build/VoodooInput && cp -Rf build/Debug build/VoodooInput || exit 1
+                    popd >> "$logs"
+                    echo "正在拷贝：VoodooInput"
+                    if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
+                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput ./Dependencies/ >> "$logs" || exit 1
+                    else
+                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput . >> "$logs" || exit 1
+                    fi
+                else
+                    echo "找到缓存，正在拷贝：VoodooInput"
+                    if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
+                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput ./Dependencies/ >> "$logs" || exit 1
+                    else
+                        cp -Rf $url/$dir/Sources/VoodooInput/build/VoodooInput . >> "$logs" || exit 1
+                    fi
+                fi
+            fi
+        fi
         echo "正在编译："${buildArray[$i]%,*}
-        xcodebuild -configuration Release -arch x86_64 >> "$logs" || exit 1
-        xcodebuild -configuration Debug -arch x86_64 >> "$logs" || exit 1
+        cp -Rf ../MacKernelSDK . >> "$logs" || exit 1
+        if [[ "VoodooI2C" =~ ${buildArray[$i]%,*} ]]; then
+            git submodule init >> "$logs" && git submodule update >> "$logs"
+            echo "VoodooI2C: 从 Build Phrase 中移除 Linting 和 Generate Documentation 来避免安装 cpplint 和 cldoc"
+            lintingPhr=$(grep -n "Linting" VoodooI2C/VoodooI2C.xcodeproj/project.pbxproj) && lintingPhr=${lintingPhr%%:*}
+            /usr/bin/sed -i '' "${lintingPhr}d" VoodooI2C/VoodooI2C.xcodeproj/project.pbxproj
+            gDPhr=$(grep -n "Generate Documentation" VoodooI2C/VoodooI2C.xcodeproj/project.pbxproj) && gDPhr=${gDPhr%%:*}
+            /usr/bin/sed -i '' "${gDPhr}d" VoodooI2C/VoodooI2C.xcodeproj/project.pbxproj
+            xcodebuild -scheme VoodooI2C -configuration Release -derivedDataPath . -arch x86_64 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO >> "$logs" || exit 1
+            xcodebuild -scheme VoodooI2C -configuration Debug -derivedDataPath . -arch x86_64 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO >> "$logs" || exit 1
+        else
+            xcodebuild -configuration Release -arch x86_64 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO >> "$logs" || exit 1
+            xcodebuild -configuration Debug -arch x86_64 CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO >> "$logs" || exit 1
+        fi
+        
         if [ -e build/Release/*.zip ]; then
             cp -Rf build/Release/*.zip ../../Release/${buildArray[$i]%,*}/Release >> "$logs" || exit 1
             cp -Rf build/Debug/*.zip ../../Release/${buildArray[$i]%,*}/Debug >> "$logs" || exit 1
+            echo "编译成功："${buildArray[$i]%,*}
+        elif [ -e build/Products/Release/*.zip ]; then
+            cp -Rf build/Products/Release/*.zip ../../Release/${buildArray[$i]%,*}/Release >> "$logs" || exit 1
+            cp -Rf build/Products/Debug/*.zip ../../Release/${buildArray[$i]%,*}/Debug >> "$logs" || exit 1
+            echo "编译成功："${buildArray[$i]%,*}
+        elif [ -e Build/Products/Release/VoodooI2C.kext ]; then
+            cp -Rf Build/Products/Release/*.kext ../../Release/${buildArray[$i]%,*}/Release >> "$logs" || exit 1
+            cp -Rf Build/Products/Debug/*.kext ../../Release/${buildArray[$i]%,*}/Debug >> "$logs" || exit 1
             echo "编译成功："${buildArray[$i]%,*}
         else
             cp -Rf build/Release/*.kext ../../Release/${buildArray[$i]%,*}/Release/${buildArray[$i]%,*}-Release.kext >> "$logs" || exit 1
@@ -222,6 +289,7 @@ done;
 if [[ "$4" != "" ]]; then
     open "$4/buildlog/"
 fi
+rm -rf "$url/$dir/Sources/MacKernelSDK"
 open "$url/$dir/Release"
 
 end=$(date +%s)

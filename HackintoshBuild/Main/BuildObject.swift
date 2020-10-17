@@ -35,20 +35,18 @@ class BuildObject: OutBaseObject {
         "AirportBrcmFixup",
         "AppleALC",
         "ATH9KFixup",
-        "BT4LEContinuityFixup",
         "CPUFriend",
         "HibernationFixup",
-        "NoTouchID",
         "RTCMemoryFixup",
-        "SystemProfilerMemoryFixup",
         "VirtualSMC",
-        "acidanthera_WhateverGreen",
-        "bugprogrammer_WhateverGreen",
+        "WhateverGreen",
         "IntelMausi",
         "AtherosE2200Ethernet",
         "RTL8111",
+        "LucyRTL8125Ethernet",
         "NVMeFix",
-        "MacProMemoryNotificationDisabler"
+        "VoodooPS2",
+        "VoodooI2C"
     ]
     
     override func awakeFromNib() {
