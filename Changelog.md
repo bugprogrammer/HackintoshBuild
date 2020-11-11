@@ -1,6 +1,9 @@
 HackintoshBuild Changelog
 =========================
 
+#### v3.2
+- 适配macOS Big Sur RC2镜像下载
+
 #### v3.1
 - 适配MacKernelSDK，修复编译功能以及每日构建功能
 - 编译模块新增VoodooI2C、VoodooPS2以及RTL8125
