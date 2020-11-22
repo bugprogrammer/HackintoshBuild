@@ -179,7 +179,7 @@ class OSObject: OutBaseObject {
                             self.distsStr.append(",")
                         }
                     }
-                    //MyLog(self.distsStr)
+                    MyLog(self.distsStr)
                     self.runBuildScripts("versionInfo", [self.distsStr])
                 case .failure(_):
                     break
@@ -315,7 +315,8 @@ class OSObject: OutBaseObject {
                             }
                             self.versionDict = self.arrtoDict(self.versionArr, self.productsArr)
                             for version in self.versionDict.allKeys as! [String] {
-                                if version.contains(self.selectedVersion) {
+                                MyLog(version)
+                                if version.contains(self.selectedVersion.components(separatedBy: ".").first!) {
                                     self.selectVersionList.append(version)
                                 }
                             }
