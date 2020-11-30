@@ -8,7 +8,7 @@
 
 import Cocoa
 
-public let minSizeForNormal = NSSize(width: 860, height: 700)
+public var minSizeForNormal = NSSize(width: 860, height: 700)
 public let minSizeForBig = NSSize(width: 1200, height: 700)
 public var beforeSize: CGSize = minSizeForNormal
 

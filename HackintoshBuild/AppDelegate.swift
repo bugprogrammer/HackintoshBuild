@@ -27,6 +27,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         
+        if #available(OSX 11.0, *) {
+            minSizeForNormal = NSSize(width: 1100, height: 700)
+            toolBar.displayMode = .iconAndLabel
+        }
+        
         let updater = GitHubUpdater()
         updater.user = "bugprogrammer"
         updater.repository = "HackintoshBuild"
@@ -42,6 +47,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 window.setContentSize(minSizeForNormal)
             } else {
                 window.setContentSize(beforeSize)
+                MyLog(beforeSize)
             }
         } else {
             window.setContentSize(minSizeForNormal)
