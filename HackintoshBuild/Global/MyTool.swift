@@ -9,7 +9,7 @@
 import Cocoa
 
 public var minSizeForNormal = NSSize(width: 860, height: 700)
-public let minSizeForBig = NSSize(width: 1200, height: 700)
+public let minSizeForBig = NSSize(width: 1100, height: 700)
 public var beforeSize: CGSize = minSizeForNormal
 
 public var isFullScreen: Bool = false

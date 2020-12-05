@@ -33,6 +33,24 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSToolbarItemValidation {
             toolBar.displayMode = .iconAndLabel
         }
         
+        for item in subTabView.tabViewItems {
+            if MyTool.isAppleSilicon() {
+                if item.label == "EFI配置信息" || item.label == "AppleIntelInfo" || item.label == "PCI信息" {
+                    subTabView.removeTabViewItem(item)
+                }
+            }
+            if #available(OSX 11.0, *) {
+                if item.label == "AppleIntelInfo" {
+                    subTabView.removeTabViewItem(item)
+                }
+            }
+            if MyTool.isAMDProcessor() {
+                if item.label == "AppleIntelInfo" {
+                    subTabView.removeTabViewItem(item)
+                }
+            }
+        }
+        
         let updater = GitHubUpdater()
         updater.user = "bugprogrammer"
         updater.repository = "HackintoshBuild"
@@ -187,16 +205,15 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSToolbarItemValidation {
     }
     
     func validateToolbarItem(_ item: NSToolbarItem) -> Bool {
-        var status: Bool = true
         if MyTool.isAppleSilicon() {
             if item.label == "NVRAM" || item.label == "安装Kexts" {
-                status = false
+                return false
             } else {
-                status = true
+                return true
             }
         }
-        
-        return status
+
+        return true
     }
 
     @IBAction func toolBarDidClicked(_ sender: NSToolbarItem) {

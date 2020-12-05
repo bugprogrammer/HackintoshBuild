@@ -27,73 +27,81 @@ class OtherObject: OutBaseObject {
         if index != 11 { return }
         if !once { return }
         once = false
-        
-        
+                
         spctlButton.isEnabled = true
-        guard let sipEnabled = isSIPStatusEnabled else {
-            sipLable.textColor = NSColor.red
-            sipLable.stringValue = "SIP 状态未知"
+        
+        if MyTool.isAppleSilicon() {
             unclockButton.isEnabled = false
             rebuildButton.isEnabled = false
-            return
-        }
-        if #available(OSX 10.16, *) {
-            guard let snapshotEnabled = isSnapshotStatusEnabled else {
-                snapshotLabel.textColor = NSColor.red
-                snapshotLabel.stringValue = "快照 状态未知"
+            sipLable.textColor = NSColor.red
+            sipLable.stringValue = "Apple芯片不支持以上已禁用功能"
+        } else {
+            guard let sipEnabled = isSIPStatusEnabled else {
+                sipLable.textColor = NSColor.red
+                sipLable.stringValue = "SIP 状态未知"
                 unclockButton.isEnabled = false
                 rebuildButton.isEnabled = false
                 return
             }
-            if sipEnabled && !snapshotEnabled {
-                sipLable.textColor = NSColor.red
-                sipLable.stringValue = "SIP 未关闭，请先关闭 SIP"
-                snapshotLabel.textColor = NSColor(named: "ColorGreen")
-                snapshotLabel.stringValue = "快照 已删除"
-                unclockButton.isEnabled = false
-                rebuildButton.isEnabled = false
-            }
-            else if !sipEnabled && snapshotEnabled {
-                sipLable.textColor = NSColor(named: "ColorGreen")
-                sipLable.stringValue = "SIP 已关闭"
-                snapshotLabel.textColor = NSColor.red
-                snapshotLabel.stringValue = "快照 未删除，请先删除 快照"
-                unclockButton.isEnabled = false
-                rebuildButton.isEnabled = false
-            }
-            else if sipEnabled && snapshotEnabled {
-                sipLable.textColor = NSColor.red
-                sipLable.stringValue = "SIP 未关闭，请先关闭 SIP"
-                snapshotLabel.textColor = NSColor.red
-                snapshotLabel.stringValue = "快照 未删除，请先删除 快照"
-                unclockButton.isEnabled = false
-                rebuildButton.isEnabled = false
-            }
-            else {
-                sipLable.textColor = NSColor(named: "ColorGreen")
-                sipLable.stringValue = "SIP 已关闭"
-                snapshotLabel.textColor = NSColor(named: "ColorGreen")
-                snapshotLabel.stringValue = "快照 已删除"
-                unclockButton.isEnabled = true
-                rebuildButton.isEnabled = true
-            }
-        } else {
-            if sipEnabled {
-                sipLable.textColor = NSColor.red
-                sipLable.stringValue = "SIP 未关闭，请先关闭 SIP"
-                snapshotLabel.stringValue = ""
-                unclockButton.isEnabled = false
-                rebuildButton.isEnabled = false
-            } else {
-                sipLable.textColor = NSColor(named: "ColorGreen")
-                sipLable.stringValue = "SIP 已关闭"
-                snapshotLabel.stringValue = ""
-                rebuildButton.isEnabled = true
-                if #available(OSX 10.15, *) {
-                    unclockButton.isEnabled = true
+            
+            if #available(OSX 11.0, *) {
+                guard let snapshotEnabled = isSnapshotStatusEnabled else {
+                    snapshotLabel.textColor = NSColor.red
+                    snapshotLabel.stringValue = "快照 状态未知"
+                    unclockButton.isEnabled = false
+                    rebuildButton.isEnabled = false
+                    return
+                }
+                if sipEnabled && !snapshotEnabled {
+                    sipLable.textColor = NSColor.red
+                    sipLable.stringValue = "SIP 未关闭，请先关闭 SIP"
+                    snapshotLabel.textColor = NSColor(named: "ColorGreen")
+                    snapshotLabel.stringValue = "快照 已删除"
+                    unclockButton.isEnabled = false
+                    rebuildButton.isEnabled = false
+                }
+                else if !sipEnabled && snapshotEnabled {
+                    sipLable.textColor = NSColor(named: "ColorGreen")
+                    sipLable.stringValue = "SIP 已关闭"
+                    snapshotLabel.textColor = NSColor.red
+                    snapshotLabel.stringValue = "快照 未删除，请先删除 快照"
+                    unclockButton.isEnabled = false
+                    rebuildButton.isEnabled = false
+                }
+                else if sipEnabled && snapshotEnabled {
+                    sipLable.textColor = NSColor.red
+                    sipLable.stringValue = "SIP 未关闭，请先关闭 SIP"
+                    snapshotLabel.textColor = NSColor.red
+                    snapshotLabel.stringValue = "快照 未删除，请先删除 快照"
+                    unclockButton.isEnabled = false
+                    rebuildButton.isEnabled = false
                 }
                 else {
+                    sipLable.textColor = NSColor(named: "ColorGreen")
+                    sipLable.stringValue = "SIP 已关闭"
+                    snapshotLabel.textColor = NSColor(named: "ColorGreen")
+                    snapshotLabel.stringValue = "快照 已删除"
+                    unclockButton.isEnabled = true
+                    rebuildButton.isEnabled = true
+                }
+            } else {
+                if sipEnabled {
+                    sipLable.textColor = NSColor.red
+                    sipLable.stringValue = "SIP 未关闭，请先关闭 SIP"
+                    snapshotLabel.stringValue = ""
                     unclockButton.isEnabled = false
+                    rebuildButton.isEnabled = false
+                } else {
+                    sipLable.textColor = NSColor(named: "ColorGreen")
+                    sipLable.stringValue = "SIP 已关闭"
+                    snapshotLabel.stringValue = ""
+                    rebuildButton.isEnabled = true
+                    if #available(OSX 10.15, *) {
+                        unclockButton.isEnabled = true
+                    }
+                    else {
+                        unclockButton.isEnabled = false
+                    }
                 }
             }
         }

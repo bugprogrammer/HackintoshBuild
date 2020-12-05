@@ -698,12 +698,12 @@
             <rect key="contentRect" x="196" y="207" width="1100" height="700"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
             <value key="minSize" type="size" width="800" height="666"/>
-            <view key="contentView" misplaced="YES" id="DcO-cN-SNw">
+            <view key="contentView" id="DcO-cN-SNw">
                 <rect key="frame" x="0.0" y="0.0" width="1100" height="700"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <tabView drawsBackground="NO" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="nGT-ER-5Zk">
-                        <rect key="frame" x="20" y="34" width="1060" height="638"/>
+                        <rect key="frame" x="20" y="34" width="1060" height="666"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="System" identifier="System" id="MKw-W7-uPi">
@@ -4066,11 +4066,11 @@
                             </tabViewItem>
                             <tabViewItem label="Other" identifier="" id="LcI-nt-lnb">
                                 <view key="view" id="5dH-tX-jci">
-                                    <rect key="frame" x="0.0" y="0.0" width="774" height="822"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1060" height="666"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NFS-PA-TUD" userLabel="一键解锁 10.15 read-only">
-                                            <rect key="frame" x="-7" y="753" width="218" height="32"/>
+                                            <rect key="frame" x="-7" y="597" width="218" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="一键解锁read-only" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iRl-wR-eli" userLabel="一键解锁 10.15 read-only">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -4081,7 +4081,7 @@
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBm-pj-uWP">
-                                            <rect key="frame" x="-7" y="720" width="218" height="32"/>
+                                            <rect key="frame" x="-7" y="564" width="218" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="修复权限以及重建缓存" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lro-DC-guA">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -4092,7 +4092,7 @@
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jnM-d8-MZO">
-                                            <rect key="frame" x="-7" y="687" width="218" height="32"/>
+                                            <rect key="frame" x="-7" y="531" width="218" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="开启安装软件未知来源" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="G11-rf-v5z">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -4103,7 +4103,7 @@
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DVL-1n-rw9">
-                                            <rect key="frame" x="-7" y="654" width="218" height="32"/>
+                                            <rect key="frame" x="-7" y="498" width="218" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="时光机器满速运行" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="DLx-Gx-RFH">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -4114,7 +4114,7 @@
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="map-VR-pQ0">
-                                            <rect key="frame" x="-7" y="621" width="218" height="32"/>
+                                            <rect key="frame" x="-7" y="465" width="218" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="时光机器速度还原" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jeq-z1-bWb">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -4125,7 +4125,7 @@
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UOm-PD-XKn">
-                                            <rect key="frame" x="-7" y="588" width="218" height="32"/>
+                                            <rect key="frame" x="-7" y="432" width="218" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="显示隐藏文件" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MEk-hl-Hcc">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -4136,7 +4136,7 @@
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBl-9n-ryB">
-                                            <rect key="frame" x="-7" y="555" width="218" height="32"/>
+                                            <rect key="frame" x="-7" y="399" width="218" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="恢复隐藏文件状态" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Eym-ps-3LS">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -4147,18 +4147,18 @@
                                             </connections>
                                         </button>
                                         <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEL-b6-lQk">
-                                            <rect key="frame" x="213" y="58" width="549" height="723"/>
+                                            <rect key="frame" x="213" y="58" width="835" height="567"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="jBj-5o-mIx">
-                                                <rect key="frame" x="0.0" y="0.0" width="549" height="723"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="835" height="567"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="5cj-nB-poy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="549" height="723"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="835" height="567"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        <size key="minSize" width="549" height="723"/>
+                                                        <size key="minSize" width="835" height="567"/>
                                                         <size key="maxSize" width="947" height="10000000"/>
                                                         <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     </textView>
@@ -4183,7 +4183,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FeO-9z-Afh">
-                                            <rect key="frame" x="8" y="58" width="180" height="16"/>
+                                            <rect key="frame" x="-2" y="58" width="208" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" id="0BI-2e-pVb">
                                                 <font key="font" metaFont="system"/>
@@ -4192,7 +4192,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBZ-jb-VWQ">
-                                            <rect key="frame" x="-7" y="523" width="218" height="32"/>
+                                            <rect key="frame" x="-7" y="367" width="218" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="显卡优化(RadeonBoost.kext)" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="p2j-iy-XEx">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -4323,9 +4323,9 @@
                             <action selector="toolBarDidClicked:" target="o4N-cs-edg" id="JVh-Hl-wbx"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="559010EC-0E1D-4760-9691-D127AA294450" explicitItemIdentifier="4" label="NVRAM" paletteLabel="NVRAM" image="NSToolbarItem_Nvram" sizingBehavior="auto" selectable="YES" id="MQa-T2-ysc">
+                    <toolbarItem implicitItemIdentifier="9652C0AD-D829-43ED-8E2C-2C3A8BAB3AAB" explicitItemIdentifier="4" label="NVRAM" paletteLabel="NVRAM" image="NSToolbarItem_Nvram" sizingBehavior="auto" selectable="YES" id="EE0-s0-rVc" userLabel="NVRAM">
                         <connections>
-                            <action selector="toolBarDidClicked:" target="o4N-cs-edg" id="hBm-Fj-nrJ"/>
+                            <action selector="toolBarDidClicked:" target="o4N-cs-edg" id="xv0-cD-xDI"/>
                         </connections>
                     </toolbarItem>
                     <toolbarItem implicitItemIdentifier="7FEB80CE-817D-4956-BE46-4D569F3E93BF" explicitItemIdentifier="5" label="更换锁屏壁纸" paletteLabel="更换锁屏壁纸" image="NSToolbarItem_Lock" sizingBehavior="auto" selectable="YES" id="6VH-Tp-lOP">
@@ -4374,7 +4374,7 @@
                     <toolbarItem reference="RoR-OF-07U"/>
                     <toolbarItem reference="Evk-cF-2AQ"/>
                     <toolbarItem reference="dZx-iw-lVq"/>
-                    <toolbarItem reference="MQa-T2-ysc"/>
+                    <toolbarItem reference="EE0-s0-rVc"/>
                     <toolbarItem reference="6VH-Tp-lOP"/>
                     <toolbarItem reference="KyZ-Qx-hNB"/>
                     <toolbarItem reference="PTl-xh-JVv"/>
