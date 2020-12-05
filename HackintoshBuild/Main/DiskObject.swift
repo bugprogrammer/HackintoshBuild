@@ -90,6 +90,12 @@ class DiskObject: OutBaseObject {
                         AraHUDViewController.shared.hideHUD()
                         if shell == "diskInfo" {
                             MyLog(self.diskInfo)
+                            if self.diskInfo == "" {
+                                let alert = NSAlert()
+                                alert.messageText = "本机不存在EFI分区"
+                                alert.runModal()
+                                return
+                            }
                             self.arrayPartition = self.diskInfo.components(separatedBy:"\n")
                             if self.arrayPartition.last == "" {
                                 self.arrayPartition.removeLast()

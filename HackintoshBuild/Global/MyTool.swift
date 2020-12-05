@@ -54,6 +54,24 @@ final class MyTool {
         return false
     }
     
+    static func isAppleSilicon() -> Bool {
+        var isAppleSilicon: Bool = false
+        let task = Process()
+        let outputPipe = Pipe()
+
+        task.launchPath = "/usr/sbin/sysctl"
+        task.arguments = ["-n", "machdep.cpu.brand_string"]
+        task.standardOutput = outputPipe
+        task.launch()
+        let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
+
+        let output = NSString(data: outputData, encoding: String.Encoding.utf8.rawValue)! as String
+        if output.contains("Apple") {
+            isAppleSilicon = true
+        }
+        return isAppleSilicon
+    }
+    
 }
 
 extension Notification.Name {

@@ -10,7 +10,7 @@ import Cocoa
 import GitHubUpdates
 
 //@NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSToolbarItemValidation {
     
     @IBOutlet weak var window: NSWindow!
     
@@ -23,6 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var toolBar: NSToolbar!
     @IBOutlet weak var mainTabView: NSTabView!
     @IBOutlet weak var inTabView: NSTabView!
+    @IBOutlet weak var subTabView: NSTabView!
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -184,6 +185,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
     }
+    
+    func validateToolbarItem(_ item: NSToolbarItem) -> Bool {
+        var status: Bool = true
+        if MyTool.isAppleSilicon() {
+            if item.label == "NVRAM" || item.label == "安装Kexts" {
+                status = false
+            } else {
+                status = true
+            }
+        }
+        
+        return status
+    }
 
     @IBAction func toolBarDidClicked(_ sender: NSToolbarItem) {
         if AraHUDViewController.shared.isShowing {
@@ -223,6 +237,7 @@ extension AppDelegate: NSTabViewDelegate {
         if AraHUDViewController.shared.isShowing {
             return false
         }
+        
         return true
     }
     

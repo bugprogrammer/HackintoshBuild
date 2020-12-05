@@ -44,3 +44,8 @@
 "EFI Driver Version" = "EFI 驱动程序版本";
 "Yes" = "已挂载";
 "No" = "未挂载";
+"Chip" = "芯片";
+"8 (4 performance and 4 efficiency)" = "8核心(4个性能核心+4个能效核心)";
+"System Firmware Version" = "系统固件版本";
+"Provisioning UDID" = "预制UDID";
+"Activation Lock Status" = "激活锁状态";
