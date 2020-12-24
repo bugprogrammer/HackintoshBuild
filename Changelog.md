@@ -1,5 +1,10 @@
 HackintoshBuild Changelog
 =========================
+#### v4.0
+- 适配Apple Silicon Macs
+- 新增"本机app适配Apple Silicon情况"模块
+- 按照硬件架构区分可用功能
+- UI适配Big Sur风格
 
 #### v3.2
 - 适配macOS Big Sur RC2镜像下载
