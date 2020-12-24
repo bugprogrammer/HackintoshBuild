@@ -27,12 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSToolbarItemValidation {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        
-        if #available(OSX 11.0, *) {
-            minSizeForNormal = NSSize(width: 1100, height: 700)
-            toolBar.displayMode = .iconAndLabel
-        }
-        
+        subTabView.selectTabViewItem(at: 0)
         for item in subTabView.tabViewItems {
             if MyTool.isAppleSilicon() {
                 if item.label == "EFI配置信息" || item.label == "AppleIntelInfo" || item.label == "PCI信息" {
@@ -50,6 +45,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSToolbarItemValidation {
                 }
             }
         }
+        
         
         let updater = GitHubUpdater()
         updater.user = "bugprogrammer"
@@ -227,20 +223,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSToolbarItemValidation {
         // 两页需要设置最小值
         // 如果用户已经拖的比这个值大了，就不管了
         // 需要记忆用户拉的大小
-        if (index != 6) {
-            window.minSize = minSizeForNormal
-            if !isFullScreen && !willFullScreen && !willExitFullScreen {
-                if beforeSize.width * beforeSize.height < minSizeForNormal.width * minSizeForNormal.height {
-                    window.setContentSize(minSizeForNormal)
-                }
-                else {
-                    window.setContentSize(beforeSize)
-                }
+        window.minSize = minSizeForNormal
+        if !isFullScreen && !willFullScreen && !willExitFullScreen {
+            if beforeSize.width * beforeSize.height < minSizeForNormal.width * minSizeForNormal.height {
+                window.setContentSize(minSizeForNormal)
             }
-        } else {
-            window.minSize = minSizeForBig
-            if (window.contentView!.bounds.width < minSizeForBig.width) || (window.contentView!.bounds.height < minSizeForBig.height) {
-                window.setContentSize(minSizeForBig)
+            else {
+                window.setContentSize(beforeSize)
             }
         }
         
@@ -270,13 +259,7 @@ extension AppDelegate: NSWindowDelegate {
     func windowDidEndLiveResize(_ notification: Notification) {
         if isFullScreen || willFullScreen || willExitFullScreen { return }
         
-        if let identifier = toolBar.selectedItemIdentifier?.rawValue {
-            if let index = Int(identifier) {
-                if (index != 6) {
-                    beforeSize = window.contentView!.bounds.size
-                }
-            }
-        }
+        beforeSize = window.contentView!.bounds.size
     }
     
     func windowWillEnterFullScreen(_ notification: Notification) {
@@ -296,13 +279,7 @@ extension AppDelegate: NSWindowDelegate {
         isFullScreen = false
         willExitFullScreen = false
         
-        if let identifier = toolBar.selectedItemIdentifier?.rawValue {
-            if let index = Int(identifier) {
-                if (index != 6) {
-                    window.setContentSize(beforeSize)
-                }
-            }
-        }
+        window.setContentSize(beforeSize)
     }
     
 }

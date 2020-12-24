@@ -62,10 +62,6 @@ if [ ! -e InstallAssistant.pkg ]; then
         rm -rf "/Applications/${installAppName}"
     fi
     mv -f "${installAppName}" /Applications
-else
-osascript <<EOF
-do shell script "installer -pkg ./InstallAssistant.pkg -target /Applications; if [ \$? -eq 1 ]; then\n echo \"failed\" \n fi" with prompt "制作镜像需要授权" with administrator privileges
-EOF
 fi
 
 rm -rf "$1/macOSInstaller"

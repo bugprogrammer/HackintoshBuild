@@ -21,7 +21,7 @@ class OSObject: OutBaseObject {
     var isDownloading: Bool = false
     var downloadProgress: Double = 0.0
     let catalogsArr: [String] = ["Developer", "Beta", "Public"]
-    let catalogsDict: NSDictionary = ["Developer": "https://swscan.apple.com/content/catalogs/others/index-10.16seed-10.16-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Beta": "https://swscan.apple.com/content/catalogs/others/index-10.16beta-10.16-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Public": "https://swscan.apple.com/content/catalogs/others/index-10.16-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog"]
+    let catalogsDict: NSDictionary = ["Developer": "https://swscan.apple.com/content/catalogs/others/index-10.15seed-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Beta": "https://swscan.apple.com/content/catalogs/others/index-10.15beta-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Public": "https://swscan.apple.com/content/catalogs/others/index-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog"]
     let versionPopList: [String] = ["macOS Big Sur - 11.0", "macOS Catalina - 10.15", "macOS Mojave - 10.14", "macOS High Sierra - 10.13"]
     let downloadStatus: [String] = ["正在下载AppleDiagnostics.dmg", "正在下载AppleDiagnostics.chunklist", "正在下载BaseSystem.dmg", "正在下载BaseSystem.chunklist", "正在下载InstallInfo.plist", "正在下载InstallESDDmg.pkg", "正在制作镜像"]
     let downloadStatusBS: [String] = ["正在下载InstallInfo.plist", "正在下载UpdateBrain.zip", "正在下载MajorOSInfo.pkg", "正在下载Info.plist", "正在下载InstallAssistant.pkg", "正在下载BuildManifest.plist", "正在制作镜像"]
@@ -263,7 +263,7 @@ class OSObject: OutBaseObject {
                     print("Download Progress: \(progress.fractionCompleted)")
                     self?.downloadProgress = progress.fractionCompleted
                     self!.downloadTableView.reloadData(forRowIndexes: [i], columnIndexes: [0,1])
-                }.responseData { response in
+                }.responseData { [self] response in
                     debugPrint(response)
                     switch response.result {
                     case .success(_):
@@ -272,7 +272,14 @@ class OSObject: OutBaseObject {
                         if i == list.count - 1 {
                             self?.downloadProgress = 0.0
                             self?.downloadTableView.reloadData(forRowIndexes: [list.count], columnIndexes: [0,1])
-                            self!.runBuildScripts("makeInstaller", [self!.downloadLocation])
+                            if self!.selectedVersion != " 11.0" {
+                                self!.runBuildScripts("makeInstaller", [self!.downloadLocation])
+                            } else {
+                                NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: self!.downloadLocation + "/macOSInstaller/installer/InstallAssistant.pkg")
+                                self?.setStatus(false)
+                                self?.downloadProgress = 1.0
+                                self!.downloadTableView.reloadData(forRowIndexes: [self!.downloadStatus.count - 1], columnIndexes: [0,1])
+                            }
                         }
                     case .failure(_):
                         if first {
@@ -316,8 +323,14 @@ class OSObject: OutBaseObject {
                             self.versionDict = self.arrtoDict(self.versionArr, self.productsArr)
                             for version in self.versionDict.allKeys as! [String] {
                                 MyLog(version)
-                                if version.contains(self.selectedVersion.components(separatedBy: ".").first!) {
-                                    self.selectVersionList.append(version)
+                                if self.selectedVersion != " 11.0" {
+                                    if version.contains(self.selectedVersion) {
+                                        self.selectVersionList.append(version)
+                                    }
+                                } else {
+                                    if version.contains("11") {
+                                        self.selectVersionList.append(version)
+                                    }
                                 }
                             }
                             self.versionTableView.reloadData()

@@ -22,14 +22,40 @@ class LockPicObject: OutBaseObject {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    override func willAppear(_ noti: Notification) {
+        super.willAppear(noti)
+        
+        let index = noti.object as! Int
+        if index != 5 { return }
+        if !once { return }
+        once = false
         
         replaceButton.isEnabled = false
         resetButton.isEnabled = true
         lockImageView.isHidden = true
         
         dragDropView.backgroundColor = NSColor(named: "ColorGray")
-        dragDropView.acceptedFileExtensions = ["png"]
         dragDropView.usedArrowImage = false
+        if MyTool.isAppleSilicon() {
+            guard let sipEnabled = isSIPStatusEnabled else {
+                textFiled.textColor = NSColor.red
+                textFiled.stringValue = "SIP 状态未知"
+                replaceButton.isEnabled = false
+                resetButton.isEnabled = false
+                return
+            }
+
+            if sipEnabled {
+                textFiled.textColor = NSColor.red
+                textFiled.stringValue = "Apple Silicon Macs需要关闭SIP使用此功能"
+                replaceButton.isEnabled = false
+                resetButton.isEnabled = false
+                return
+            }
+        }
+        dragDropView.acceptedFileExtensions = ["png"]
         dragDropView.setup({ (file) in
             self.lockImageView.isHidden = false
             self.dragDropView.backgroundColor = NSColor.clear

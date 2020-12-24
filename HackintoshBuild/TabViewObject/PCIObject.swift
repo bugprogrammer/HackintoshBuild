@@ -177,7 +177,9 @@ class PCIObject: InBaseObject {
                                         self.ioregArr.append(FinalArr[0].replacingOccurrences(of: "\n", with: ""))
                                         self.devicepathArr.append(FinalArr[1].replacingOccurrences(of: "\n", with: ""))
                                     }
-                                    self.pciTableView.reloadData()
+                                    if self.pciTableView != nil {
+                                        self.pciTableView.reloadData()
+                                    }
                                 }
                                 
                                 if shell == "update" {

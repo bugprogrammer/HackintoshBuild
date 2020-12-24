@@ -94,6 +94,7 @@ class DiskObject: OutBaseObject {
                                 let alert = NSAlert()
                                 alert.messageText = "本机不存在EFI分区"
                                 alert.runModal()
+                                self.refreshButton.isEnabled = true
                                 return
                             }
                             self.arrayPartition = self.diskInfo.components(separatedBy:"\n")
