@@ -31,8 +31,11 @@ class InfoObject: InBaseObject {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        runBuildScripts("systeminfo")
+        if MyTool.isAppleSilicon() {
+            runBuildScripts("systeminfo", ["Apple Silicon"])
+        } else {
+            runBuildScripts("systeminfo", ["Intel"])
+        }
     }
     
     func convert(_ str: String) -> String {
@@ -45,11 +48,12 @@ class InfoObject: InBaseObject {
         return hexStr.uppercased()
     }
     
-        func runBuildScripts(_ shell: String) {
+        func runBuildScripts(_ shell: String, _ arguments: [String]) {
         taskQueue.async {
             if let path = Bundle.main.path(forResource: shell, ofType:"command") {
                 let task = Process()
                 task.launchPath = path
+                task.arguments = arguments
                 task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
                 task.terminationHandler = { task in
                     DispatchQueue.main.async(execute: { [weak self] in

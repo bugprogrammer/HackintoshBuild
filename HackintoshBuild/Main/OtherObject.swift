@@ -29,7 +29,6 @@ class OtherObject: OutBaseObject {
         once = false
                 
         spctlButton.isEnabled = true
-        
         if MyTool.isAppleSilicon() {
             unclockButton.isEnabled = false
             rebuildButton.isEnabled = false
