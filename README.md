@@ -27,3 +27,4 @@ HackintoshBuild
 - macserial 工具用于生成序列号等信息（已合并到 OpenCore）
 - [AppleIntelInfo](https://github.com/Piker-Alpha/AppleIntelInfo) 用于获取 CPU、IGPU 频率等信息
 - 网友stevezhengshiqi 提供VoodooI2C以及VoodooPS2编译思路
+- DigiDNA的开源项目https://github.com/DigiDNA/Silicon 用于获取app架构分类(Apple Silicon或intel)
