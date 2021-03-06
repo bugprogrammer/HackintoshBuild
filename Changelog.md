@@ -1,5 +1,10 @@
 HackintoshBuild Changelog
 =========================
+
+#### v4.1
+- 参照开源方案 https://github.com/DigiDNA/Silicon MIT License.重构"本机app适配Apple Silicon情况"模块
+- Apple Silicon Macs关于本机不显示Board id、drm仿冒id、核显id等条目
+
 #### v4.0
 - 适配Apple Silicon Macs
 - 新增"本机app适配Apple Silicon情况"模块
