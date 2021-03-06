@@ -4,7 +4,7 @@
 //
 //  Created by bugprogrammer on 2020/12/3.
 //  Copyright © 2020 bugprogrammer. All rights reserved.
-//
+//  参照开源方案 https://github.com/DigiDNA/Silicon MIT License.
 
 import Cocoa
 
@@ -38,7 +38,7 @@ class AppleSiliconObject: InBaseObject {
         
         appleSilicon("/Applications/")
     }
-    
+     
     override func willAppear(_ noti: Notification) {
         super.willAppear(noti)
         
@@ -102,12 +102,13 @@ class AppleSiliconObject: InBaseObject {
                     if fileManager.fileExists(atPath: url + app + "/Contents/MacOS/" + exec, isDirectory: &isDir) {
                         if !isDir.boolValue && URL(fileURLWithPath: url + app + "/Contents/MacOS/" + exec).pathExtension == "" {
                             arch = archs(url + app + "/Contents/MacOS/" + exec)
+
                             if arch != "未知" {
                                 break
                             }
                         }
                     }
-                }                
+                }
                 self.applications.append(Applications(icon: NSWorkspace.shared.icon(forFile: url + app),  name: fileManager.displayName(atPath: url + app), arch: arch, version: version, path: url + app))
             }
             //IOS程序
@@ -125,25 +126,30 @@ class AppleSiliconObject: InBaseObject {
     
     func archs(_ path: String) -> String {
         var arch: String = ""
-        let task = Process()
-        let outputPipe = Pipe()
-
-        task.launchPath = "/usr/bin/lipo"
-        task.arguments = ["-archs", path]
-        task.standardOutput = outputPipe
-        task.launch()
-        let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
-
-        let output = NSString(data: outputData, encoding: String.Encoding.utf8.rawValue)! as String
-        if output.components(separatedBy: "\n").first == "x86_64 arm64" || output.components(separatedBy: "\n").first == "x86_64 arm64e" {
-            arch = "通用"
-        } else if output.components(separatedBy: "\n").first == "x86_64" {
-            arch = "Intel"
-        } else if output.components(separatedBy: "\n").first == "arm64" || output.components(separatedBy: "\n").first == "arm64e" {
-            arch = "仅Apple芯片"
-        } else {
-            arch = "未知"
+        guard let macho = MachOFile( path: path ) else
+        {
+            return "未知"
         }
+        
+        if( macho.architectures.count == 1 )
+        {
+            if( macho.architectures.contains( "arm64" ) )
+            {
+                arch = "仅Apple芯片"
+            } else if( macho.architectures.contains( "x86_64" ) ) {
+                arch = "Intel"
+            } else {
+                arch = "未知"
+            }
+        }
+        else {
+            if( macho.architectures.contains( "arm64" ) ) {
+                arch = "通用"
+            } else {
+                arch = "未知"
+            }
+        }
+        
         return arch
     }
     
