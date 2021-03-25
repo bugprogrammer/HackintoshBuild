@@ -120,7 +120,7 @@ class AppleSiliconObject: InBaseObject {
                 self.applications.append(Applications(icon: NSWorkspace.shared.icon(forFile: url + app), name: fileManager.displayName(atPath: url + app), arch: "IOS", version: version, path: url + app))
             }
         }
-        searchAppList = applications
+        searchAppList = applications 
         tableview.reloadData()
     }
     

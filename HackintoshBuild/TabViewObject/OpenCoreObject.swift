@@ -9,6 +9,7 @@
 import Cocoa
 import Highlightr
 import SwiftyMarkdown
+import Alamofire
 
 class OpenCoreObject: InBaseObject {
     
@@ -21,9 +22,6 @@ class OpenCoreObject: InBaseObject {
     @IBOutlet weak var exportButton: NSButton!
     @IBOutlet weak var exportURL: NSPathControl!
     
-    let location = Bundle.main.path(forResource: "getEFI", ofType: "command")?.replacingOccurrences(of: "/getEFI.command", with: "")
-    let taskQueue = DispatchQueue.global(qos: .default)
-    var output: String = ""
     var versionList: [String] = []
     var exportPath: String = ""
     let filemanager = FileManager.default
@@ -61,62 +59,57 @@ class OpenCoreObject: InBaseObject {
         if !once { return }
         once = false
         
-        runBuildScripts("syncDatas", [location!])
+        syncDatas()
     }
     
-    func runBuildScripts(_ shell: String,_ arguments: [String]) {
-        self.statusBar.isHidden = false
-        self.statusBar.startAnimation(self)
-        self.output = ""
-        taskQueue.async {
-            if let path = Bundle.main.path(forResource: shell, ofType:"command") {
-                let task = Process()
-                task.launchPath = path
-                task.arguments = arguments
-                task.environment = ["PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"]
-                task.terminationHandler = { task in
-                    DispatchQueue.main.async(execute: { [weak self] in
-                        guard let `self` = self else { return }
-                        self.versionList = self.output.components(separatedBy: "\n")
-                        if self.versionList.first == "" {
-                            self.versionList.removeFirst()
-                        }
-                        if self.versionList.last == "" {
-                            self.versionList.removeLast()
-                        }
-                        for i in 0..<self.versionList.count {
-                            self.versionList[i] = "OpenCore-" + self.versionList[i]
-                        }
-                        MyLog(self.versionList)
-                        self.popList.addItems(withTitles: self.versionList)
-                        self.select(0)
-                        self.statusBar.isHidden = true
-                        self.statusBar.stopAnimation(self)
-                    })
-                }
-                self.taskOutPut(task)
-                task.launch()
-                task.waitUntilExit()
+    func syncDatas() {
+        statusBar.isHidden = false
+        statusBar.startAnimation(self)
+        let headers: HTTPHeaders = [
+            "Accept": "application/json"
+        ]
+        AF.request("https://api.github.com/repos/acidanthera/OpenCorePkg/tags", method: .get, headers: headers).validate().responseJSON { response in
+            switch response.result {
+                case .success(let dict):
+                    for tags in dict as! [NSDictionary] {
+                        let tag = tags["name"] as! String
+                        self.versionList.append("OpenCore-" + tag)
+                    }
+                    self.popList.addItems(withTitles: self.versionList)
+                    self.select(0)
+                    for item in self.versionList {
+                        self.downloads("https://raw.githubusercontent.com/acidanthera/OpenCorePkg/" + item.replacingOccurrences(of: "OpenCore-", with: "") + "/Docs/Sample.plist", "Simple-" + item.replacingOccurrences(of: "OpenCore-", with: "") + ".plist")
+                        self.downloads("https://raw.githubusercontent.com/acidanthera/OpenCorePkg/" + item.replacingOccurrences(of: "OpenCore-", with: "") + "/Changelog.md", "Changelog-" + item.replacingOccurrences(of: "OpenCore-", with: "") + ".md")
+                    }
+                    self.statusBar.isHidden = true
+                    self.statusBar.stopAnimation(self)
+                case .failure(_):
+                    MyLog("bugs!!!!")
             }
         }
     }
     
-    func taskOutPut(_ task:Process) {
-        output = ""
-        let outputPipe = Pipe()
-        task.standardOutput = outputPipe
-        outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.NSFileHandleDataAvailable, object: outputPipe.fileHandleForReading, queue: nil) { notification in
-            let output = outputPipe.fileHandleForReading.availableData
-            if output.count > 0 {
-                outputPipe.fileHandleForReading.waitForDataInBackgroundAndNotify()
-                let outputString = String(data: output, encoding: String.Encoding.utf8) ?? ""
-                DispatchQueue.main.async(execute: {
-                    let previousOutput = self.output
-                    let nextOutput = previousOutput + outputString
-                    self.output = nextOutput
-                })
+    func downloads(_ url: String, _ name: String) {
+        if !filemanager.fileExists(atPath: Bundle.main.bundlePath + "/Contents/Resources/tmps") {
+            try! filemanager.createDirectory(atPath: Bundle.main.bundlePath + "/Contents/Resources/tmps", withIntermediateDirectories: true,
+            attributes: nil)
+        } else {
+            if !filemanager.fileExists(atPath: Bundle.main.bundlePath + "/Contents/Resources/tmps/" + name) {
+                let destination: DownloadRequest.Destination = { _, _ in
+                    let fileURL = URL(fileURLWithPath: Bundle.main.bundlePath + "/Contents/Resources/tmps/" + name)
+                    
+                    return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
+                }
+
+                AF.download(url, to: destination).responseData { response in
+                    debugPrint(response)
+                    switch response.result {
+                    case .success(_):
+                        MyLog("OK")
+                    case .failure(_):
+                        break
+                    }
+                }
             }
         }
     }
@@ -127,6 +120,12 @@ class OpenCoreObject: InBaseObject {
         let highlightedCode = highlightr!.highlight(xmlString, as: "xml")
         return highlightedCode
     }
+    
+    func cutChangeLogs(_ changelog: String) -> String {
+        let cutArr = changelog.components(separatedBy: "####")
+
+        return cutArr[0] + "####" + cutArr[1]
+    }
         
     @IBAction func selectVersion(_ sender: Any) {
         select(popList.indexOfSelectedItem)
@@ -135,11 +134,13 @@ class OpenCoreObject: InBaseObject {
     func select(_ num: Int) {
         self.versionLabel.stringValue = self.versionList[num] + " 修改日志"
         self.configLabel.stringValue = self.versionList[num] + " 配置模版"
-        let url = self.location! + "/OpenCoreVersions/" + self.versionList[num].replacingOccurrences(of: "OpenCore-", with: "")
+        let url = Bundle.main.bundlePath + "/Contents/Resources/tmps"
+        let version = versionList[num].replacingOccurrences(of: "OpenCore-", with: "")
         do {
-            let changeLog = try String(contentsOfFile: url + "/Changelog.md", encoding: String.Encoding.utf8)
-            self.changeText.textStorage?.setAttributedString(SwiftyMarkdown(string: changeLog).attributedString())
-            let simpleConfig = try String(contentsOfFile: url + "/SampleFull.plist", encoding: String.Encoding.utf8)
+            let changeLog = try String(contentsOfFile: url + "/Changelog-" + version + ".md", encoding: String.Encoding.utf8)
+            self.changeText.textStorage?.setAttributedString(SwiftyMarkdown(string: cutChangeLogs(changeLog)).attributedString())
+            let simpleConfig = try String(contentsOfFile: url + "/Simple-" + version + ".plist", encoding: String.Encoding.utf8)
+            
             self.simpleText.textStorage?.setAttributedString(self.prettyFormat(xmlString: simpleConfig.replacingOccurrences(of: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n", with: "").replacingOccurrences(of: "<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n", with: "").replacingOccurrences(of: "<plist version=\"1.0\">\n", with: ""))!)
         } catch {
             MyLog("Failed")
@@ -155,11 +156,13 @@ class OpenCoreObject: InBaseObject {
     }
     
     @objc func exportSimple() {
-        let atUrl = location! + "/OpenCoreVersions/" + versionList[popList.indexOfSelectedItem].replacingOccurrences(of: "OpenCore-", with: "") + "/SampleFull.plist"
-        var toUrl = exportPath + "/" + versionList[popList.indexOfSelectedItem] + "-SimpleFull.plist"
+        let url = Bundle.main.bundlePath + "/Contents/Resources/tmps"
+        let version = versionList[popList.indexOfSelectedItem].replacingOccurrences(of: "OpenCore-", with: "")
+        let atUrl = url + "/Simple-" + version + ".plist"
+        var toUrl = exportPath + "/" + versionList[popList.indexOfSelectedItem] + "-Simple.plist"
         if filemanager.isWritableFile(atPath: exportPath) {
             if filemanager.fileExists(atPath: toUrl) {
-                toUrl = toUrl.replacingOccurrences(of: "-SimpleFull.plist", with: "-SimpleFull-" + Date().milliStamp + ".plist" )
+                toUrl = toUrl.replacingOccurrences(of: "-Simple.plist", with: "-Simple-" + Date().milliStamp + ".plist" )
                 try! filemanager.copyItem(atPath: atUrl, toPath: toUrl)
             }
             else {
