@@ -2,7 +2,7 @@
 //  ViewControllerOpenCore.swift
 //  HackintoshBuild
 //
-//  Created by wbx on 2020/5/5.
+//  Created by bugprogrammer on 2020/5/5.
 //  Copyright © 2020 bugprogrammer. All rights reserved.
 //
 
@@ -25,6 +25,15 @@ class OpenCoreObject: InBaseObject {
     var versionList: [String] = []
     var exportPath: String = ""
     let filemanager = FileManager.default
+    var urlArr: [String] = []
+    var nameArr: [String] = []
+    var check: Int = 0
+    
+    let queue : OperationQueue = {
+        let que : OperationQueue = OperationQueue()
+        que.maxConcurrentOperationCount = 1
+        return que
+    }()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -62,9 +71,24 @@ class OpenCoreObject: InBaseObject {
         syncDatas()
     }
     
+    func isRunning(_ status: Bool) {
+        if status {
+            popList.isEnabled = false
+            exportURL.isEnabled = false
+            statusBar.isHidden = false
+            statusBar.startAnimation(nil)
+            exportButton.isEnabled = false
+        } else {
+            popList.isEnabled = true
+            exportURL.isEnabled = true
+            statusBar.isHidden = true
+            statusBar.stopAnimation(nil)
+            exportButton.isEnabled = true
+        }
+    }
+    
     func syncDatas() {
-        statusBar.isHidden = false
-        statusBar.startAnimation(self)
+        isRunning(true)
         let headers: HTTPHeaders = [
             "Accept": "application/json"
         ]
@@ -77,40 +101,71 @@ class OpenCoreObject: InBaseObject {
                     }
                     self.popList.addItems(withTitles: self.versionList)
                     self.select(0)
-                    for item in self.versionList {
-                        self.downloads("https://raw.githubusercontent.com/acidanthera/OpenCorePkg/" + item.replacingOccurrences(of: "OpenCore-", with: "") + "/Docs/Sample.plist", "Simple-" + item.replacingOccurrences(of: "OpenCore-", with: "") + ".plist")
-                        self.downloads("https://raw.githubusercontent.com/acidanthera/OpenCorePkg/" + item.replacingOccurrences(of: "OpenCore-", with: "") + "/Changelog.md", "Changelog-" + item.replacingOccurrences(of: "OpenCore-", with: "") + ".md")
-                    }
-                    self.statusBar.isHidden = true
-                    self.statusBar.stopAnimation(self)
                 case .failure(_):
-                    MyLog("bugs!!!!")
+                    let alert = NSAlert()
+                    alert.messageText = "网络错误，请检查 https://api.github.com 连通性"
+                    alert.runModal()
+                    self.isRunning(true)
+                    self.statusBar.isHidden = true
+                    self.statusBar.stopAnimation(nil)
+                    
+                    break
             }
         }
     }
     
-    func downloads(_ url: String, _ name: String) {
-        if !filemanager.fileExists(atPath: Bundle.main.bundlePath + "/Contents/Resources/tmps") {
+    func downloads(_ url: [String], _ name: [String], _ num: Int) {
+        var first: Bool = true
+        MyLog("download")
+        if filemanager.fileExists(atPath: Bundle.main.bundlePath + "/Contents/Resources/tmps") {
+            try! filemanager.removeItem(atPath: Bundle.main.bundlePath + "/Contents/Resources/tmps")
             try! filemanager.createDirectory(atPath: Bundle.main.bundlePath + "/Contents/Resources/tmps", withIntermediateDirectories: true,
             attributes: nil)
-        } else {
-            if !filemanager.fileExists(atPath: Bundle.main.bundlePath + "/Contents/Resources/tmps/" + name) {
+        }
+        
+        for i in 0..<url.count {
+            let semaphore = DispatchSemaphore(value: 0)
+            let op : BlockOperation = BlockOperation { [weak self] in
                 let destination: DownloadRequest.Destination = { _, _ in
-                    let fileURL = URL(fileURLWithPath: Bundle.main.bundlePath + "/Contents/Resources/tmps/" + name)
+                    let fileURL = URL(fileURLWithPath: Bundle.main.bundlePath + "/Contents/Resources/tmps/" + name[i])
                     
                     return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
                 }
 
-                AF.download(url, to: destination).responseData { response in
+                AF.download(url[i], to: destination).responseData { [self] response in
                     debugPrint(response)
                     switch response.result {
                     case .success(_):
                         MyLog("OK")
+                        self!.show(num)
                     case .failure(_):
-                        break
+                        if first {
+                            first = false
+                            let alert = NSAlert()
+                            alert.messageText = "网络错误，请检查 https://raw.githubusercontent.com 连通性"
+                            alert.runModal()
+                            
+                            self!.versionLabel.stringValue = self!.versionList[num] + " 修改日志"
+                            self!.configLabel.stringValue = self!.versionList[num] + " 配置模版"
+                            
+                            self!.simpleText.textColor = NSColor.white
+                            self!.changeText.string = "网络错误，下载失败"
+                            self!.simpleText.string = "网络错误，下载失败"
+                            
+                            self!.isRunning(true)
+                            self!.statusBar.isHidden = true
+                            self!.statusBar.stopAnimation(nil)
+                            self!.popList.isEnabled = true
+                            
+                            
+                            break
+                        }
                     }
+                    semaphore.signal()
                 }
+                semaphore.wait()
             }
+            queue.addOperation(op)
         }
     }
     
@@ -128,10 +183,24 @@ class OpenCoreObject: InBaseObject {
     }
         
     @IBAction func selectVersion(_ sender: Any) {
-        select(popList.indexOfSelectedItem)
+        if popList.indexOfSelectedItem != check || changeText.string.contains("网络错误") {
+            select(popList.indexOfSelectedItem)
+            check = popList.indexOfSelectedItem
+        }
     }
     
     func select(_ num: Int) {
+        isRunning(true)
+        urlArr = []
+        nameArr = []
+        urlArr.append("https://raw.githubusercontent.com/acidanthera/OpenCorePkg/" + self.versionList[num].replacingOccurrences(of: "OpenCore-", with: "") + "/Docs/Sample.plist")
+        urlArr.append("https://raw.githubusercontent.com/acidanthera/OpenCorePkg/" + self.versionList[num].replacingOccurrences(of: "OpenCore-", with: "") + "/Changelog.md")
+        nameArr.append("Sample-" + self.versionList[num].replacingOccurrences(of: "OpenCore-", with: "") + ".plist")
+        nameArr.append("Changelog-" + self.versionList[num].replacingOccurrences(of: "OpenCore-", with: "") + ".md")
+        downloads(urlArr, nameArr, num)
+    }
+    
+    func show(_ num: Int) {
         self.versionLabel.stringValue = self.versionList[num] + " 修改日志"
         self.configLabel.stringValue = self.versionList[num] + " 配置模版"
         let url = Bundle.main.bundlePath + "/Contents/Resources/tmps"
@@ -139,12 +208,13 @@ class OpenCoreObject: InBaseObject {
         do {
             let changeLog = try String(contentsOfFile: url + "/Changelog-" + version + ".md", encoding: String.Encoding.utf8)
             self.changeText.textStorage?.setAttributedString(SwiftyMarkdown(string: cutChangeLogs(changeLog)).attributedString())
-            let simpleConfig = try String(contentsOfFile: url + "/Simple-" + version + ".plist", encoding: String.Encoding.utf8)
-            
+            let simpleConfig = try String(contentsOfFile: url + "/Sample-" + version + ".plist", encoding: String.Encoding.utf8)
+
             self.simpleText.textStorage?.setAttributedString(self.prettyFormat(xmlString: simpleConfig.replacingOccurrences(of: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n", with: "").replacingOccurrences(of: "<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n", with: "").replacingOccurrences(of: "<plist version=\"1.0\">\n", with: ""))!)
         } catch {
             MyLog("Failed")
         }
+        isRunning(false)
     }
         
     @IBAction func selectLocation(_ sender: Any) {
@@ -158,11 +228,11 @@ class OpenCoreObject: InBaseObject {
     @objc func exportSimple() {
         let url = Bundle.main.bundlePath + "/Contents/Resources/tmps"
         let version = versionList[popList.indexOfSelectedItem].replacingOccurrences(of: "OpenCore-", with: "")
-        let atUrl = url + "/Simple-" + version + ".plist"
-        var toUrl = exportPath + "/" + versionList[popList.indexOfSelectedItem] + "-Simple.plist"
+        let atUrl = url + "/Sample-" + version + ".plist"
+        var toUrl = exportPath + "/" + versionList[popList.indexOfSelectedItem] + "-Sample.plist"
         if filemanager.isWritableFile(atPath: exportPath) {
             if filemanager.fileExists(atPath: toUrl) {
-                toUrl = toUrl.replacingOccurrences(of: "-Simple.plist", with: "-Simple-" + Date().milliStamp + ".plist" )
+                toUrl = toUrl.replacingOccurrences(of: "-Sample.plist", with: "-Sample-" + Date().milliStamp + ".plist" )
                 try! filemanager.copyItem(atPath: atUrl, toPath: toUrl)
             }
             else {
