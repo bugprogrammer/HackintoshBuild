@@ -177,9 +177,9 @@ class OpenCoreObject: InBaseObject {
     }
     
     func cutChangeLogs(_ changelog: String) -> String {
-        let cutArr = changelog.components(separatedBy: "####")
+        let cutArr = changelog.components(separatedBy: "#### ")
 
-        return cutArr[0] + "####" + cutArr[1]
+        return cutArr[0] + "#### " + cutArr[1]
     }
         
     @IBAction func selectVersion(_ sender: Any) {
