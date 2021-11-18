@@ -77,7 +77,6 @@ class ShareObject: OutBaseObject {
                 logsPath = logsURL.path
             }
         }
-        
         self.efiTableView.reloadData()
     }
     

@@ -32,7 +32,9 @@
 		<true/>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2020 bugprogrammer. All rights reserved.</string>
+	<string>作者：bugprogrammer, Arabaku
+QQ 交流群：Hackintosh 极客俱乐部 414114950 
+开源地址：https://github.com/bugprogrammer/HackintoshBuild</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>

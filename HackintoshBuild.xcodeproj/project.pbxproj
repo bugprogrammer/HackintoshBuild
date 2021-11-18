@@ -305,17 +305,9 @@
 			path = PCI;
 			sourceTree = "<group>";
 		};
-		6A188A3C2461C60E00CBE5B7 /* OpenCore */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OpenCore;
-			sourceTree = "<group>";
-		};
 		6A1A664323D1E824009E24EC /* Command */ = {
 			isa = PBXGroup;
 			children = (
-				6A188A3C2461C60E00CBE5B7 /* OpenCore */,
 				6A48CC46244CC0B600AFC97A /* downloados */,
 				6A046F28242F408F004FFFD5 /* PCI */,
 				6A3FDF0D242720160078BE86 /* About */,
@@ -819,7 +811,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.8;
+				CURRENT_PROJECT_VERSION = 1.9;
 				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -832,7 +824,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 4.2;
+				MARKETING_VERSION = 5.0;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -849,7 +841,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.8;
+				CURRENT_PROJECT_VERSION = 1.9;
 				DEVELOPMENT_TEAM = K9J4747QB6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -862,7 +854,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 4.2;
+				MARKETING_VERSION = 5.0;
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = bugprogrammer.HackintoshBuild;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -22,7 +22,7 @@ class OSObject: OutBaseObject {
     var downloadProgress: Double = 0.0
     let catalogsArr: [String] = ["Developer", "Beta", "Public"]
     let catalogsDict: NSDictionary = ["Developer": "https://swscan.apple.com/content/catalogs/others/index-10.15seed-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Beta": "https://swscan.apple.com/content/catalogs/others/index-10.15beta-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog", "Public": "https://swscan.apple.com/content/catalogs/others/index-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog"]
-    let versionPopList: [String] = ["macOS Big Sur - 11.0", "macOS Catalina - 10.15", "macOS Mojave - 10.14", "macOS High Sierra - 10.13"]
+    let versionPopList: [String] = ["macOS Monterey - 12.x", "macOS Big Sur - 11.x", "macOS Catalina - 10.15", "macOS Mojave - 10.14", "macOS High Sierra - 10.13"]
     let downloadStatus: [String] = ["正在下载AppleDiagnostics.dmg", "正在下载AppleDiagnostics.chunklist", "正在下载BaseSystem.dmg", "正在下载BaseSystem.chunklist", "正在下载InstallInfo.plist", "正在下载InstallESDDmg.pkg", "正在制作镜像"]
     let downloadStatusBS: [String] = ["正在下载InstallInfo.plist", "正在下载UpdateBrain.zip", "正在下载MajorOSInfo.pkg", "正在下载Info.plist", "正在下载InstallAssistant.pkg", "正在下载BuildManifest.plist", "正在制作镜像"]
     let filemanager = FileManager.default
@@ -115,7 +115,7 @@ class OSObject: OutBaseObject {
                 let subPackages = Packages[0]
                 if ExtendedMetaInfo.allKeys.contains(where: {$0 as! String == "InstallAssistantPackageIdentifiers"}) {
                     let InstallAssistantPackageIdentifiers = ExtendedMetaInfo["InstallAssistantPackageIdentifiers"] as! NSDictionary
-                    if selectedVersion != " 11.0" {
+                    if selectedVersion.components(separatedBy: ".").first == " 10" {
                         if InstallAssistantPackageIdentifiers.allKeys.contains(where: {$0 as! String == "OSInstall"}) && InstallAssistantPackageIdentifiers["OSInstall"] as! String == "com.apple.mpkg.OSInstall" {
                             let URL: String = subPackages["URL"] as! String
                             productsArr.append(URL)
@@ -126,10 +126,10 @@ class OSObject: OutBaseObject {
                                 distsArr.append(Distributions["English"] as! String)
                             }
                         }
-                    } else if selectedVersion == " 11.0" {
+                    } else {
                         if InstallAssistantPackageIdentifiers.allKeys.contains(where: {$0 as! String == "SharedSupport"}) {
                             let SharedSupport = InstallAssistantPackageIdentifiers["SharedSupport"] as! String
-                            if SharedSupport.contains("macOS1016") || SharedSupport.contains("macOSBigSur") {
+                            if SharedSupport.contains("macOS1016") || SharedSupport.contains("macOSBigSur") || SharedSupport.contains("macOS12") {
                                 let URL: String = subPackages["URL"] as! String
                                 productsArr.append(URL)
                                 MyLog(productsArr)
@@ -228,9 +228,9 @@ class OSObject: OutBaseObject {
                 try! filemanager.createDirectory(atPath: downloadLocation + "/macOSInstaller/installer", withIntermediateDirectories: true,
                 attributes: nil)
                 
-                if selectedVersion == " 11.0" {
+                if selectedVersion.components(separatedBy: ".").first != " 10" {
                     downloadOS(["/InstallInfo.plist", "/UpdateBrain.zip", "/MajorOSInfo.pkg", "/Info.plist", "/InstallAssistant.pkg", "/BuildManifest.plist"])
-                } else if selectedVersion != " 11.0" {
+                } else {
                     downloadOS(["/AppleDiagnostics.dmg", "/AppleDiagnostics.chunklist", "/BaseSystem.dmg", "/BaseSystem.chunklist", "/InstallInfo.plist", "/InstallESDDmg.pkg"])
                 }
             }
@@ -272,7 +272,7 @@ class OSObject: OutBaseObject {
                         if i == list.count - 1 {
                             self?.downloadProgress = 0.0
                             self?.downloadTableView.reloadData(forRowIndexes: [list.count], columnIndexes: [0,1])
-                            if self!.selectedVersion != " 11.0" {
+                            if self!.selectedVersion.components(separatedBy: ".").first == " 10" {
                                 self!.runBuildScripts("makeInstaller", [self!.downloadLocation])
                             } else {
                                 NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: self!.downloadLocation + "/macOSInstaller/installer/InstallAssistant.pkg")
@@ -323,16 +323,17 @@ class OSObject: OutBaseObject {
                             self.versionDict = self.arrtoDict(self.versionArr, self.productsArr)
                             for version in self.versionDict.allKeys as! [String] {
                                 MyLog(version)
-                                if self.selectedVersion != " 11.0" {
+                                if self.selectedVersion.components(separatedBy: ".").first == " 10" {
                                     if version.contains(self.selectedVersion) {
                                         self.selectVersionList.append(version)
                                     }
                                 } else {
-                                    if version.contains("11") {
+                                    if version.contains(self.selectedVersion.components(separatedBy: ".").first!) {
                                         self.selectVersionList.append(version)
                                     }
                                 }
                             }
+                            MyLog(self.selectVersionList)
                             self.versionTableView.reloadData()
                             self.setStatus(false)
                             self.bar.isHidden = true
@@ -390,9 +391,9 @@ extension OSObject: NSTableViewDataSource {
         if tableView == versionTableView {
             count = selectVersionList.count
         } else if tableView == downloadTableView {
-            if selectedVersion == " 11.0" {
+            if selectedVersion.components(separatedBy: ".").first != " 10" {
                 count = downloadStatusBS.count
-            } else if selectedVersion != " 11.0" {
+            } else {
                 count = downloadStatus.count
             }
         }
@@ -430,9 +431,9 @@ extension OSObject: NSTableViewDelegate {
                 case "downloading":
                     let textField = NSTextField()
                     textField.cell = VerticallyCenteredTextFieldCell()
-                    if selectedVersion == " 11.0" {
+                    if selectedVersion.components(separatedBy: ".").first != " 10" {
                         textField.stringValue = self.downloadStatusBS[row]
-                    } else if selectedVersion != " 11.0" {
+                    } else {
                         textField.stringValue = self.downloadStatus[row]
                     }
                     textField.alignment = .left

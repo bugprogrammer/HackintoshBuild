@@ -46,7 +46,8 @@ class BuildObject: OutBaseObject {
         "LucyRTL8125Ethernet",
         "NVMeFix",
         "VoodooPS2",
-        "VoodooI2C"
+        "VoodooI2C",
+        "RestrictEvents"
     ]
     
     override func awakeFromNib() {

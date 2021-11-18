@@ -142,9 +142,10 @@ buildArray=(
 'NVMeFix,https://github.com/acidanthera/NVMeFix.git'
 'VoodooPS2,https://github.com/acidanthera/VoodooPS2.git'
 'VoodooI2C,https://github.com/VoodooI2C/VoodooI2C.git'
+'RestrictEvents,https://github.com/acidanthera/RestrictEvents.git'
 )
 
-liluPlugins='AirportBrcmFixup AppleALC ATH9KFixup CPUFriend HibernationFixup RTCMemoryFixup VirtualSMC WhateverGreen NVMeFix'
+liluPlugins='AirportBrcmFixup AppleALC ATH9KFixup CPUFriend HibernationFixup RTCMemoryFixup VirtualSMC WhateverGreen NVMeFix RestrictEvents'
 
 voodooinputPlugins='VoodooPS2 VoodooI2C'
 

@@ -23,7 +23,7 @@ arr=(`echo $1 | tr ',' ' '`)
 
 for i in ${arr[*]}; do
     type=$(curl -s -f $i | grep suDisabledGroupID)
-    if [[ $type =~ "Beta" ]]; then
+    if [[ $type =~ "Beta" || $type =~ "beta" ]]; then
         type=" Beta"
     else
         type=""
@@ -39,5 +39,8 @@ for i in ${arr[*]}; do
                 echo "macOS Big Sur "$version")"
             elif [[ $version =~ "11" ]]; then
                 echo "macOS Big Sur "$version")"
+            elif [[ $version =~ "12" ]]; then
+                echo "macOS Monterey "$version")"
         fi
 done
+
