@@ -129,7 +129,7 @@ class OSObject: OutBaseObject {
                     } else {
                         if InstallAssistantPackageIdentifiers.allKeys.contains(where: {$0 as! String == "SharedSupport"}) {
                             let SharedSupport = InstallAssistantPackageIdentifiers["SharedSupport"] as! String
-                            if SharedSupport.contains("macOS1016") || SharedSupport.contains("macOSBigSur") || SharedSupport.contains("macOS12") {
+                            if SharedSupport.contains("macOS1016") || SharedSupport.contains("macOSBigSur") || SharedSupport.contains("macOS12") || SharedSupport.contains("macOSMonterey") {
                                 let URL: String = subPackages["URL"] as! String
                                 productsArr.append(URL)
                                 MyLog(productsArr)
